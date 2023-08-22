@@ -15,6 +15,7 @@ namespace Project.Translation.Defines
         public string fileName;
 
         public IdentificationType identificationType;
+        public bool useSeparationCharacter;
         public char separationCharacter;
 
         public List<Define> defines = new List<Define>();
@@ -22,7 +23,7 @@ namespace Project.Translation.Defines
         [System.Serializable]
         public struct Define
         {
-            public string fileId;
+            public string lineId;
             public string[] fieldIds;
         }
     }

@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fileName: Items.txt
   identificationType: 1
+  useSeparationCharacter: 1
   separationCharacter: 126
   defines:
-  - fileId: 0
+  - lineId: 0
     fieldIds:
     - keycard_janitor
     - keycard_janitor_description
-  - fileId: 1
+  - lineId: 1
     fieldIds:
     - keycard_scientist
     - keycard_scientist_description

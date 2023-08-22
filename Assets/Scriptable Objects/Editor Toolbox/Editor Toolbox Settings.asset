@@ -22,7 +22,7 @@ MonoBehaviour:
   largeIconPadding: {x: 0, y: 0.15}
   smallIconPadding: {x: 0.15, y: 0.15}
   customFolders: []
-  useToolboxSceneView: 1
+  useToolboxSceneView: 0
   selectorKey: 306
   useToolboxDrawers: 1
   forceDefaultLists: 1

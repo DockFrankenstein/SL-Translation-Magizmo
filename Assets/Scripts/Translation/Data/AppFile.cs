@@ -10,6 +10,8 @@ namespace Project.Translation.Data
     [Serializable]
     public class AppFile : ISerializationCallbackReceiver  
     {
+        public const string FILE_EXTENSION = "sltmf";
+
         [SerializeField] List<EntryData> _entries = new List<EntryData>();
 
         public Dictionary<string, EntryData> Entries = new Dictionary<string, EntryData>();
