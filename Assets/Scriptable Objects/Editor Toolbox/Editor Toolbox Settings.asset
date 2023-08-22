@@ -25,7 +25,7 @@ MonoBehaviour:
   useToolboxSceneView: 1
   selectorKey: 306
   useToolboxDrawers: 1
-  forceDefaultLists: 0
+  forceDefaultLists: 1
   decoratorDrawerHandlers:
   - typeReference: Toolbox.Editor.Drawers.BeginGroupAttributeDrawer, Toolbox.Editor
   - typeReference: Toolbox.Editor.Drawers.BeginHorizontalAttributeDrawer, Toolbox.Editor

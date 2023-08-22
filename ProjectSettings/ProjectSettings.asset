@@ -667,7 +667,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Standalone: qASIC_CONSOLE;qASIC_OPTIONS;qASIC_INPUT;qASIC_INFO_DISPLAYER;qASIC_CORE
+    Standalone: qASIC_CONSOLE;qASIC_OPTIONS;qASIC_INPUT;qASIC_INFO_DISPLAYER;qASIC_CORE;TOOLBOX_FORCE_DEFAULT_LISTS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

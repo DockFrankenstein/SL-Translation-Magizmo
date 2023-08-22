@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 415d1313a1cd596418ab8a9788397c8b, type: 3}
+  m_Name: Items
+  m_EditorClassIdentifier: 
+  fileName: Items.txt
+  identificationType: 1
+  separationCharacter: 126
+  defines:
+  - fileId: 0
+    fieldIds:
+    - keycard_janitor
+    - keycard_janitor_description
+  - fileId: 1
+    fieldIds:
+    - keycard_scientist
+    - keycard_scientist_description
