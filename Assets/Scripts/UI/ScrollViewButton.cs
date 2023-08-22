@@ -11,6 +11,8 @@ namespace Project.UI
         public Button button;
 
         public bool selected;
+        public bool canUnselect;
+        public bool toggable = true;
 
         [Label("Themes")]
         [BeginGroup("normal")]
@@ -34,6 +36,11 @@ namespace Project.UI
             }
         }
 
+        private void Awake()
+        {
+            ChangeStateSilent(selected);
+        }
+
         public void ChangeState(bool state)
         {
             ChangeStateSilent(state);
@@ -48,7 +55,11 @@ namespace Project.UI
 
         public void ToggleState()
         {
-            ChangeState(!selected);
+            //ignore if can't unselect
+            if (selected && !canUnselect)
+                return;
+
+            ChangeState(toggable ? !selected : selected);
         }
     }
 }

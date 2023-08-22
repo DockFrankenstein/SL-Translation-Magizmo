@@ -16,8 +16,8 @@ namespace qASIC.EditorTools.Internal
         public static void DrawqASICBanner(string bannerLocation = "qASIC/Sprites/qASIC banner", string docs = "https://docs.qasictools.com")
         {
             Texture2D banner = Resources.Load(bannerLocation) as Texture2D;
-            Rect bannerRect = GUILayoutUtility.GetAspectRect((float)banner.width / banner.height).BorderAspectRatioHorizontal(4f);
-            GUI.DrawTexture(bannerRect, banner);
+            //Rect bannerRect = GUILayoutUtility.GetAspectRect((float)banner.width / banner.height).BorderAspectRatioHorizontal(4f);
+            //GUI.DrawTexture(bannerRect, banner);
 
             switch (GUILayout.SelectionGrid(-1, new GUIContent[] { new GUIContent("Asset store"), new GUIContent("Docs"), new GUIContent("Support") }, 3))
             {

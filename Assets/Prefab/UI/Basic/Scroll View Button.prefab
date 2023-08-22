@@ -39,7 +39,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 60}
+  m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6131285651564455650
 CanvasRenderer:
@@ -150,6 +150,7 @@ MonoBehaviour:
   text: {fileID: 6131285652142730962}
   button: {fileID: 8096207278961666573}
   selected: 0
+  canUnselect: 0
   normalTheme:
     m_NormalColor: {r: 0.12941177, g: 0.12941177, b: 0.12941177, a: 1}
     m_HighlightedColor: {r: 0.15, g: 0.15, b: 0.15, a: 1}
