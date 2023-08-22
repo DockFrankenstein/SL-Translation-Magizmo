@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.browar.editor-toolbox": {
+      "version": "https://github.com/arimger/Unity-Editor-Toolbox.git#upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.editorcoroutines": "1.0.0"
+      },
+      "hash": "6f8b60b10671053e0d2002b8e8ac4fa61783953b"
+    },
     "com.unity.2d.animation": {
       "version": "7.0.10",
       "depth": 1,
@@ -97,6 +106,13 @@
     "com.unity.collab-proxy": {
       "version": "2.0.1",
       "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.editorcoroutines": {
+      "version": "1.0.0",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
