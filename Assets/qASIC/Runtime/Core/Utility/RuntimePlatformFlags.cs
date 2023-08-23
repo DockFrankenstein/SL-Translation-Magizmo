@@ -1,9 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static UnityEditor.PlayerSettings;
 using System.Collections.Generic;
 
 namespace qASIC

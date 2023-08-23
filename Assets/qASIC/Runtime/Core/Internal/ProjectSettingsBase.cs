@@ -30,9 +30,9 @@ namespace qASIC.Internal
             return instance;
         }
 
+#if UNITY_EDITOR
         private static t CreateNewInstance<t>(string assetName) where t : ProjectSettingsBase
         {
-#if UNITY_EDITOR
             var path = $"{Application.dataPath}/qASIC/Resources/{instanceLocation}";
             var directoryExists = Directory.Exists(path);
 
@@ -44,7 +44,7 @@ namespace qASIC.Internal
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
             return asset;
-#endif
         }
+#endif
     }
 }

@@ -37,8 +37,7 @@ namespace Project.Translation.Data
 
             if (translation != null)
             {
-                var defines = translation.defines
-                    .SelectMany(x => x.defines.SelectMany(x => x.fieldIds));
+                var defines = translation.GetDefines();
 
                 foreach (var item in defines)
                     file.Entries.Add(item, new EntryData(item));

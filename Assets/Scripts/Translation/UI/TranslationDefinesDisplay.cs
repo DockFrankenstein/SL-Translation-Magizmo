@@ -26,8 +26,7 @@ namespace Project.Translation.UI
 
         public void PopulateList()
         {
-            var items = version.defines
-                .SelectMany(x => x.defines.SelectMany(y => y.fieldIds));
+            var items = version.GetDefines();
 
             foreach (var item in items)
             {
@@ -46,6 +45,7 @@ namespace Project.Translation.UI
 
                     manager.SelectedItem = item;
                 };
+
                 Buttons.Add(item, scrollItem);
             }
         }

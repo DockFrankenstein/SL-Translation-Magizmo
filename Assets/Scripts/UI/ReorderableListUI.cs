@@ -1,0 +1,159 @@
+using System.Collections.Generic;
+using UnityEngine;
+using qASIC;
+using UnityEngine.UI;
+using UnityEngine.Events;
+
+namespace Project.UI
+{
+    public class ReorderableListUI : MonoBehaviour
+    {
+        public RectTransform listTransform;
+        public RectTransform itemsHolder;
+        public RectTransform headerTransform;
+
+        [Space]
+        public float headerHeight = 35f;
+        public float headerSpacing = 2f;
+        public float additionalHeight = 4f;
+        public float minimumItemsHolderHeight = 40f;
+
+        [Space]
+        public ReorderableListUIItem itemTemplate;
+        private List<ReorderableListUIItem> items = new List<ReorderableListUIItem>();
+
+        [Label("Values")]
+        [OnValueChanged(nameof(UpdateItems))]
+        [EditorButton(nameof(UpdateItems))]
+        [SerializeField] List<string> values = new List<string>();
+
+        [Label("Events")]
+        public UnityEvent OnChange;
+
+        public List<string> Values
+        {
+            get => values;
+            set
+            {
+                values = value;
+                UpdateItems();
+            }
+        }
+
+        private void Awake()
+        {
+            if (itemTemplate != null)
+            {
+                itemTemplate.gameObject.SetActive(false);
+                foreach (var value in values)
+                {
+                    var listItem = CreateNewItem();
+                    listItem.input.SetTextWithoutNotify(value);
+                }
+            }
+        }
+
+        private void Update()
+        {
+            if (headerTransform != null)
+                headerTransform.sizeDelta = new Vector2(headerTransform.sizeDelta.x, headerHeight);
+
+            if (itemsHolder != null)
+                itemsHolder.offsetMax = new Vector2(itemsHolder.offsetMax.x, -headerHeight - headerSpacing);
+
+            if (listTransform != null && itemsHolder != null)
+            {
+                var childHeight = 0f;
+                for (int i = 0; i < itemsHolder.childCount; i++)
+                {
+                    var child = itemsHolder.GetChild(i) as RectTransform;
+                    if (!child.gameObject.activeInHierarchy) continue;
+                    childHeight += child.sizeDelta.y;
+                }
+
+                var newSize = new Vector2(listTransform.sizeDelta.x, headerHeight + headerSpacing + additionalHeight +
+                    Mathf.Max(childHeight, minimumItemsHolderHeight));
+
+                bool changed = newSize != listTransform.sizeDelta;
+                listTransform.sizeDelta = newSize;
+
+                if (changed)
+                    LayoutGroupController.Refresh();
+            }
+        }
+
+        public void UpdateItems()
+        {
+            if (!Application.isPlaying)
+                return;
+
+            if (values.Count > items.Count)
+                for (int i = 0; i < values.Count - items.Count; i++)
+                    CreateNewItem();
+
+            if (items.Count > values.Count)
+            {
+                for (int i = values.Count; i < items.Count; i++)
+                {
+                    var item = items[i];
+                    items.Remove(item);
+                    Destroy(item.gameObject);
+                }
+            }
+
+            for (int i = 0; i < items.Count; i++)
+                items[i].input.SetTextWithoutNotify(values[i]);
+
+            OnChange.Invoke();
+        }
+
+        ReorderableListUIItem CreateNewItem()
+        {
+            var listItem = Instantiate(itemTemplate, itemsHolder);
+            listItem.gameObject.SetActive(true);
+            listItem.reorderableList = this;
+            items.Add(listItem);
+            return listItem;
+        }
+
+        public void MoveItem(ReorderableListUIItem item, int amount)
+        {
+            int currentIndex = items.IndexOf(item);
+            int newIndex = currentIndex + amount;
+            newIndex = Mathf.Clamp(newIndex, 0, items.Count - 1);
+
+            if (currentIndex == newIndex)
+                return;
+
+            var value = values[currentIndex];
+            values[currentIndex] = null;
+            values.Insert(newIndex, value);
+            values.RemoveAt(newIndex < currentIndex ? currentIndex + 1 : currentIndex);
+
+            UpdateItems();
+        }
+
+        public void DeleteItem(ReorderableListUIItem item)
+        {
+            var index = items.IndexOf(item);
+            if (!values.IndexInRange(index))
+                return;
+
+            values.RemoveAt(index);
+            UpdateItems();
+        }
+
+        public void UpdateItem(ReorderableListUIItem item)
+        {
+            var index = items.IndexOf(item);
+            values[index] = item.input.text;
+            UpdateItems();
+        }
+
+        public void AddValue()
+        {
+            values.Add(string.Empty);
+            UpdateItems();
+        }
+    }
+}
