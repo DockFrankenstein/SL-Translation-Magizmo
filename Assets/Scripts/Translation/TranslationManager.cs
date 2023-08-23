@@ -7,6 +7,7 @@ using SFB;
 using qASIC.Files;
 using System.Text;
 using System.Linq;
+using qASIC.Input;
 
 namespace Project.Translation
 {
@@ -16,6 +17,12 @@ namespace Project.Translation
 
         public AppFile file = null;
         public string filePath = null;
+
+        [Label("Shortcuts")]
+        [SerializeField] InputMapItemReference i_save;
+        [SerializeField] InputMapItemReference i_load;
+        [SerializeField] InputMapItemReference i_importing;
+        [SerializeField] InputMapItemReference i_exporting;
 
         private string _selectedItem = null;
         public string SelectedItem 
@@ -38,6 +45,21 @@ namespace Project.Translation
         private void Awake()
         {
             file = AppFile.Create(CurrentVersion);
+        }
+
+        private void Update()
+        {
+            if (i_save.GetInputDown())
+                Save();
+
+            if (i_load.GetInputDown())
+                Load();
+
+            if (i_importing.GetInputDown())
+                Import();
+
+            if (i_exporting.GetInputDown())
+                Export();
         }
 
         public void Save()

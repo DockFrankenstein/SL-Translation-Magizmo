@@ -16,7 +16,43 @@ MonoBehaviour:
   groups:
   - itemName: Default
     guid: 66c78ff1-6590-40a3-be34-65f729686bf5
-    items: []
+    items:
+    - rid: 138481828260478976
+    - rid: 138481828260478977
+    - rid: 138481828260478978
+    - rid: 138481828260478979
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 138481828260478976
+      type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
+      data:
+        itemName: Save
+        guid: 30f9dfd3-a698-4281-b5b4-a26eb1d6093e
+        keys:
+        - key_keyboard/LeftControl
+        - key_keyboard/S
+    - rid: 138481828260478977
+      type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
+      data:
+        itemName: Load
+        guid: bfb2050f-1654-4118-8cba-87db80921844
+        keys:
+        - key_keyboard/LeftControl
+        - key_keyboard/O
+    - rid: 138481828260478978
+      type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
+      data:
+        itemName: Import
+        guid: e0b485d0-1c56-476a-888a-c58db9115641
+        keys:
+        - key_keyboard/LeftControl
+        - key_keyboard/I
+    - rid: 138481828260478979
+      type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
+      data:
+        itemName: Export
+        guid: 90a01eb3-91c9-416e-a880-84caca189114
+        keys:
+        - key_keyboard/LeftControl
+        - key_keyboard/E
