@@ -60,7 +60,7 @@ namespace Project.Translation.Data
             }
 
             public string entryId;
-            public string content;
+            public string content = string.Empty;
         }
     }
 }

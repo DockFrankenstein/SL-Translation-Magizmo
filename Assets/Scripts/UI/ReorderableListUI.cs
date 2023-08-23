@@ -40,6 +40,14 @@ namespace Project.UI
             }
         }
 
+        public void ChangeValuesWithoutNotify(List<string> values)
+        {
+            this.values = values;
+            UpdateItems(true);
+        }
+
+        bool _init = false;
+
         private void Awake()
         {
             if (itemTemplate != null)
@@ -51,6 +59,8 @@ namespace Project.UI
                     listItem.input.SetTextWithoutNotify(value);
                 }
             }
+
+            _init = true;
         }
 
         private void Update()
@@ -82,29 +92,31 @@ namespace Project.UI
             }
         }
 
-        public void UpdateItems()
+        public void UpdateItems(bool silent = false)
         {
-            if (!Application.isPlaying)
+            if (!_init)
                 return;
 
             if (values.Count > items.Count)
-                for (int i = 0; i < values.Count - items.Count; i++)
-                    CreateNewItem();
-
-            if (items.Count > values.Count)
             {
-                for (int i = values.Count; i < items.Count; i++)
-                {
-                    var item = items[i];
-                    items.Remove(item);
-                    Destroy(item.gameObject);
-                }
+                var times = values.Count - items.Count;
+                for (int i = 0; i < times; i++)
+                    CreateNewItem();
+            }
+
+
+            while (items.Count > values.Count)
+            {
+                var item = items[values.Count];
+                items.Remove(item);
+                Destroy(item.gameObject);
             }
 
             for (int i = 0; i < items.Count; i++)
                 items[i].input.SetTextWithoutNotify(values[i]);
 
-            OnChange.Invoke();
+            if (!silent)
+                OnChange.Invoke();
         }
 
         ReorderableListUIItem CreateNewItem()
