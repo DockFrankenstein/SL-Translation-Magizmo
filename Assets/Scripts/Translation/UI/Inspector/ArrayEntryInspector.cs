@@ -20,10 +20,7 @@ namespace Project.Translation.UI
             if (manager.file.Entries.ContainsKey(id))
             {
                 var entry = manager.file.Entries[id];
-
-                contentList.ChangeValuesWithoutNotify(entry.content.Contains('\n') ?
-                    entry.content.Split('\n').ToList() :
-                    new List<string>());
+                contentList.ChangeValuesWithoutNotify(entry.content.EntryContentToArray().ToList());
             }
         }
 
@@ -40,7 +37,7 @@ namespace Project.Translation.UI
         private void ContentList_OnChange()
         {
             if (manager.file.Entries.ContainsKey(id))
-                manager.file.Entries[id].content = string.Join("\n", contentList.Values);
+                manager.file.Entries[id].content = contentList.Values.ToEntryContent();
         }
     }
 }

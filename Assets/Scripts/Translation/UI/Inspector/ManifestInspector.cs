@@ -98,7 +98,7 @@ namespace Project.UI
                 if (inspector.manager.file.Entries.ContainsKey(id))
                 {
                     var entry = inspector.manager.file.Entries[id];
-                    list.ChangeValuesWithoutNotify(entry.content.Split('\n').ToList());
+                    list.ChangeValuesWithoutNotify(entry.content.EntryContentToArray().ToList());
                 }
             }
 
@@ -110,7 +110,7 @@ namespace Project.UI
             private void Field_OnValueChanged(ManifestInspector inspector)
             {
                 if (inspector.manager.file.Entries.ContainsKey(id))
-                    inspector.manager.file.Entries[id].content = string.Join("\n", list.Values);
+                    inspector.manager.file.Entries[id].content = list.Values.ToEntryContent();
             }
         }
     }

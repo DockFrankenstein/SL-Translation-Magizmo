@@ -11,6 +11,7 @@ namespace Project.Translation.UI
 
         public override HierarchyItem[] GetItems() =>
             manager.CurrentVersion.defines
+                .Where(x => !x.Hide)
                 .Select(x =>
                 {
                     var a = x.GetDefines().Select(x => new HierarchyItem(x));

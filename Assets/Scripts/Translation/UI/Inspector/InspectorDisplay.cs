@@ -12,6 +12,7 @@ namespace Project.UI
         public InspectorDisplayPanel[] panels;
 
         int _currentPanelIndex = -1;
+        string _selectedId = string.Empty;
 
         public InspectorDisplayPanel CurrentPanel =>
             panels.IndexInRange(_currentPanelIndex) ?
@@ -21,12 +22,13 @@ namespace Project.UI
         private void Awake()
         {
             hierarchy.OnSelect += Hierarchy_OnSelect;
+            manager?.OnImport.AddListener(Manager_OnImport);
 
             foreach (var item in panels)
                 item.manager = manager;
         }
 
-        private void Hierarchy_OnSelect(string id)
+        public void ReloadInspector()
         {
             if (CurrentPanel != null)
             {
@@ -37,12 +39,23 @@ namespace Project.UI
 
             foreach (var panel in panels)
             {
-                if (!panel.ShouldOpen(id)) continue;
+                if (!panel.ShouldOpen(_selectedId)) continue;
                 _currentPanelIndex = System.Array.IndexOf(panels, panel);
-                CurrentPanel.id = id;
+                CurrentPanel.id = _selectedId;
                 CurrentPanel.Initialize();
                 CurrentPanel.gameObject.SetActive(true);
             }
+        }
+
+        private void Hierarchy_OnSelect(string id)
+        {
+            _selectedId = id;
+            ReloadInspector();
+        }
+
+        private void Manager_OnImport()
+        {
+            ReloadInspector();
         }
     }
 }

@@ -3,11 +3,12 @@ using UnityEngine;
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 namespace Project.Translation.Defines.Manifest
 {
     /// <typeparam name="T">Data to serialize</typeparam>
-    public abstract class ManifestDefinesBase<T> : DefinesBase
+    public abstract class ManifestDefinesBase<T> : DefinesBase where T : new()
     {
         public override bool Hide => true;
 
@@ -31,9 +32,9 @@ namespace Project.Translation.Defines.Manifest
             var manifestFile = JsonUtility.FromJson<T>(txt);
             var fields = typeof(T).GetFields();
 
-            foreach (var item in fields)
+            foreach (var field in fields)
             {
-                var attr = ((DefineNameAttribute[])item.GetCustomAttributes(typeof(DefineNameAttribute), false))
+                var attr = ((DefineNameAttribute[])field.GetCustomAttributes(typeof(DefineNameAttribute), false))
                     .FirstOrDefault();
 
                 if (attr == null)
@@ -42,18 +43,18 @@ namespace Project.Translation.Defines.Manifest
                 if (!file.Entries.ContainsKey(attr.Name))
                     file.Entries.Add(attr.Name, new AppFile.EntryData(attr.Name));
 
-                object value = item.GetValue(manifestFile);
+                object value = field.GetValue(manifestFile);
 
                 //convert arrays
                 if (!(value is string) &&
                     value is IEnumerable enumerable)
                 {
-                    List<object> enumItems = new List<object>();
+                    List<string> enumItems = new List<string>();
 
                     foreach (object enumItem in enumerable)
-                        enumItems.Add(enumItem);
+                        enumItems.Add(enumItem?.ToString() ?? string.Empty);
 
-                    value = string.Join("\n", enumItems);
+                    value = enumItems.ToEntryContent();
                 }
 
                 value = value?.ToString() ?? string.Empty;
@@ -64,7 +65,33 @@ namespace Project.Translation.Defines.Manifest
 
         public override string Export(AppFile file)
         {
-            throw new System.NotImplementedException();
+            T holder = new T();
+            var fields = typeof(T).GetFields();
+
+            foreach (var field in fields)
+            {
+                var attr = ((DefineNameAttribute[])field.GetCustomAttributes(typeof(DefineNameAttribute), false))
+                    .FirstOrDefault();
+
+                if (attr == null)
+                    continue;
+
+                //Continue if value does not exist
+                if (!file.Entries.ContainsKey(attr.Name))
+                    continue;
+
+                string entry = file.Entries[attr.Name].content;
+                object value = entry;
+
+                //convert arrays
+                if (field.FieldType.IsArray)
+                    value = entry.EntryContentToArray();
+
+                value = Convert.ChangeType(value, field.FieldType);
+                field.SetValue(holder, value);
+            }
+
+            return JsonUtility.ToJson(holder, true);
         }
     }
 }

@@ -5,8 +5,7 @@ using System;
 using qASIC;
 using SFB;
 using qASIC.Files;
-using System.Text;
-using System.Linq;
+using UnityEngine.Events;
 using qASIC.Input;
 
 namespace Project.Translation
@@ -23,6 +22,10 @@ namespace Project.Translation
         [SerializeField] InputMapItemReference i_load;
         [SerializeField] InputMapItemReference i_importing;
         [SerializeField] InputMapItemReference i_exporting;
+
+        [Label("Events")]
+        public UnityEvent OnImport;
+        public UnityEvent OnExport;
 
         public TranslationVersion CurrentVersion =>
             versions.Length == 0 ?
@@ -95,6 +98,8 @@ namespace Project.Translation
                 var txt = definesFile.Export(file);
                 FileManager.SaveFileWriter($"{paths[0]}/{definesFile.fileName}", txt);
             }
+
+            OnExport.Invoke();
         }
 
         public void Import()
@@ -109,6 +114,8 @@ namespace Project.Translation
                 var txt = FileManager.LoadFileWriter($"{paths[0]}/{definesFile.fileName}");
                 definesFile.Import(file, txt);
             }
+
+            OnImport.Invoke();
         }
     }
 }

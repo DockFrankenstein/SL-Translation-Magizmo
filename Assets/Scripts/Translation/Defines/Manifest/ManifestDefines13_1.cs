@@ -3,7 +3,7 @@ using System;
 
 namespace Project.Translation.Defines.Manifest
 {
-    [CreateAssetMenu(fileName = "New Manifest Defines", menuName = "Scriptable Object/Translation/Defines/Manifest/13.1")]
+    [CreateAssetMenu(fileName = "New Manifest Defines", menuName = "Scriptable Objects/Translation/Defines/Manifest/13.1")]
     public class ManifestDefines13_1 : ManifestDefinesBase<ManifestDefines13_1.ManifestData>
     {
         [Serializable]
