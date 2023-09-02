@@ -193,3 +193,23 @@ MonoBehaviour:
     fieldIds:
     - inv_com45
     - inv_com45_description
+  - lineId: 49
+    fieldIds:
+    - inv_scp1576
+    - inv_scp1576_description
+  - lineId: 50
+    fieldIds:
+    - inv_jailbird
+    - inv_jailbird_description
+  - lineId: 51
+    fieldIds:
+    - inv_scp207_anti
+    - inv_scp207_anti_description
+  - lineId: 48
+    fieldIds:
+    - inv_fr_mg0
+    - inv_fr_mg0_description
+  - lineId: 48
+    fieldIds:
+    - inv_a7
+    - inv_a7_description

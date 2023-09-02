@@ -22,7 +22,8 @@ namespace Project.UI
         private void Awake()
         {
             hierarchy.OnSelect += Hierarchy_OnSelect;
-            manager?.OnImport.AddListener(Manager_OnImport);
+            manager?.OnImport.AddListener(ReloadInspector);
+            manager?.OnLoad.AddListener(ReloadInspector);
 
             foreach (var item in panels)
                 item.manager = manager;
@@ -50,11 +51,6 @@ namespace Project.UI
         private void Hierarchy_OnSelect(string id)
         {
             _selectedId = id;
-            ReloadInspector();
-        }
-
-        private void Manager_OnImport()
-        {
             ReloadInspector();
         }
     }

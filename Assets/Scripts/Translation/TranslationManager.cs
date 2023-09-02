@@ -26,6 +26,8 @@ namespace Project.Translation
         [Label("Events")]
         public UnityEvent OnImport;
         public UnityEvent OnExport;
+        public UnityEvent OnSave;
+        public UnityEvent OnLoad;
 
         public TranslationVersion CurrentVersion =>
             versions.Length == 0 ?
@@ -70,8 +72,8 @@ namespace Project.Translation
                 filePath = path;
             }
 
-
             FileManager.SaveFileJSON(filePath, file, true);
+            OnSave.Invoke();
         }
 
         public void Load()
@@ -84,6 +86,7 @@ namespace Project.Translation
             filePath = paths[0];
 
             FileManager.ReadFileJSON(filePath, file);
+            OnLoad.Invoke();
         }
 
         public void Export()
