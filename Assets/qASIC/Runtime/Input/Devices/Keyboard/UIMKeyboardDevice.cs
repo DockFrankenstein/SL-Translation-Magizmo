@@ -65,13 +65,7 @@ namespace qASIC.Input.Devices
 
         static readonly KeyCode[] KeysToIgnore = new KeyCode[]
         {
-            KeyCode.Mouse0,
-            KeyCode.Mouse1,
-            KeyCode.Mouse2,
-            KeyCode.Mouse3,
-            KeyCode.Mouse4,
-            KeyCode.Mouse5,
-            KeyCode.Mouse6,
+
         };
 
         private static KeyCode[] _avaliableKeys = null;

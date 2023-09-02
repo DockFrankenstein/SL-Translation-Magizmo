@@ -21,6 +21,7 @@ MonoBehaviour:
     - rid: 138481828260478977
     - rid: 138481828260478978
     - rid: 138481828260478979
+    - rid: 886010718781440000
   references:
     version: 2
     RefIds:
@@ -56,3 +57,11 @@ MonoBehaviour:
         keys:
         - key_keyboard/LeftControl
         - key_keyboard/E
+    - rid: 886010718781440000
+      type: {class: InputBinding, ns: qASIC.Input.Map, asm: qASIC}
+      data:
+        itemName: Drag Move
+        guid: e6c583d3-0536-4c24-bd28-b4f9ce5c0975
+        keys:
+        - key_keyboard/Mouse1
+        - key_keyboard/Mouse2
