@@ -91,7 +91,7 @@ namespace Project.Translation
 
         public void Export()
         {
-            var paths = StandaloneFileBrowser.OpenFolderPanel("", "", false);
+            var paths = StandaloneFileBrowser.OpenFolderPanel("", Settings.GeneralSettings.TranslationPath, false);
 
             if (paths.Length == 0)
                 return;
@@ -107,7 +107,7 @@ namespace Project.Translation
 
         public void Import()
         {
-            var paths = StandaloneFileBrowser.OpenFolderPanel("", "", false);
+            var paths = StandaloneFileBrowser.OpenFolderPanel("", Settings.GeneralSettings.TranslationPath, false);
 
             if (paths.Length == 0)
                 return;
