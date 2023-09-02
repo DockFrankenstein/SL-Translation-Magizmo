@@ -2262,6 +2262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 708134782}
+  scrollSpeed: 1.2
   i_drag:
     guid: e6c583d3-0536-4c24-bd28-b4f9ce5c0975
 --- !u!1001 &724619783

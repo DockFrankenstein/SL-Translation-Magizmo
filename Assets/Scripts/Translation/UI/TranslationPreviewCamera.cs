@@ -12,17 +12,16 @@ namespace Project.Translation.UI
     public class TranslationPreviewCamera : MonoBehaviour
     {
         public PanelCamera cam;
+        public float scrollSpeed = 0.2f;
 
         [Label("Input")]
         [SerializeField][MapItemType(MapItemType.InputBinding)] InputMapItemReference i_drag;
-
-        bool _drag;
-        Vector3 _dragMousePos;
 
         private void LateUpdate()
         {
             ReadInput();
             HandleDrag();
+            HandleScroll();
         }
 
         void ReadInput()
@@ -31,11 +30,17 @@ namespace Project.Translation.UI
             {
                 if (i_drag.GetInputDown())
                     BeginDrag();
+
+                _scroll = Input.mouseScrollDelta.y;
             }
 
             if (i_drag.GetInputUp())
                 EndDrag();
         }
+
+        #region Drag
+        bool _drag;
+        Vector3 _dragMousePos;
 
         void BeginDrag()
         {
@@ -60,5 +65,15 @@ namespace Project.Translation.UI
 
             _dragMousePos = newPos;
         }
+        #endregion
+
+        #region Scroll
+        float _scroll;
+
+        void HandleScroll()
+        {
+            cam.Cam.orthographicSize *= Mathf.Pow(scrollSpeed, -_scroll);
+        }
+        #endregion
     }
 }
