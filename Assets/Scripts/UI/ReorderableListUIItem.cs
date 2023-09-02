@@ -1,11 +1,14 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 namespace Project.UI
 {
     public class ReorderableListUIItem : MonoBehaviour
     {
         public TMP_InputField input;
+        public Button upButton;
+        public Button downButton;
 
         [HideInInspector] public ReorderableListUI reorderableList;
 

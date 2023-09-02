@@ -1000,6 +1000,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 7303561101307682746}
+  upButton: {fileID: 7669611004829602347}
+  downButton: {fileID: 7669611003492484926}
   reorderableList: {fileID: 0}
 --- !u!1 &7669611005540023228
 GameObject:

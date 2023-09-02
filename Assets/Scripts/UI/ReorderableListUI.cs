@@ -113,7 +113,11 @@ namespace Project.UI
             }
 
             for (int i = 0; i < items.Count; i++)
+            {
                 items[i].input.SetTextWithoutNotify(values[i]);
+                items[i].upButton.interactable = i != 0;
+                items[i].downButton.interactable = i < items.Count - 1;
+            }
 
             if (!silent)
                 OnChange.Invoke();
@@ -139,7 +143,7 @@ namespace Project.UI
 
             var value = values[currentIndex];
             values[currentIndex] = null;
-            values.Insert(newIndex, value);
+            values.Insert(newIndex < currentIndex ? newIndex : newIndex + 1, value);
             values.RemoveAt(newIndex < currentIndex ? currentIndex + 1 : currentIndex);
 
             UpdateItems();
