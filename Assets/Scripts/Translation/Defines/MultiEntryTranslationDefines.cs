@@ -8,7 +8,7 @@ using System.Text;
 namespace Project.Translation.Defines
 {
     [CreateAssetMenu(fileName = "New Translation Define", menuName = "Scriptable Objects/Translation/Defines/Multi Entry")]
-    public class MultiEntryTranslationDefines : TranslationDefinesBase
+    public class MultiEntryTranslationDefines : DefinesBase
     {
         public enum IdentificationType
         {
@@ -73,10 +73,14 @@ namespace Project.Translation.Defines
                         var splitLine = line.Split(separationCharacter);
 
                         for (int x = 0; x < Mathf.Min(define.fieldIds.Length, splitLine.Length); x++)
+                        {
                             file.Entries[define.fieldIds[x]] = new AppFile.EntryData(define.fieldIds[x], splitLine[x]);
+                            ProjectDebug.LogValueImport(define.fieldIds[x], splitLine[x]);
+                        }
                         break;
                     case false:
                         file.Entries[define.fieldIds[0]] = new AppFile.EntryData(define.fieldIds[0], line);
+                        ProjectDebug.LogValueImport(define.fieldIds[0], line);
                         break;
                 }
             }

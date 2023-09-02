@@ -23,8 +23,8 @@ namespace Project.UI
         private List<ReorderableListUIItem> items = new List<ReorderableListUIItem>();
 
         [Label("Values")]
-        [OnValueChanged(nameof(UpdateItems))]
-        [EditorButton(nameof(UpdateItems))]
+        //[OnValueChanged(nameof(UpdateItems))]
+        //[EditorButton(nameof(UpdateItems))]
         [SerializeField] List<string> values = new List<string>();
 
         [Label("Events")]

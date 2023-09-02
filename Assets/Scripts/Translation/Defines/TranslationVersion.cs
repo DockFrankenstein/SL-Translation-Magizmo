@@ -7,7 +7,7 @@ namespace Project.Translation.Defines
     public class TranslationVersion : ScriptableObject
     {
         public string version;
-        public TranslationDefinesBase[] defines;
+        public DefinesBase[] defines;
 
         public string[] GetDefines() =>
             defines

@@ -3,9 +3,9 @@ using TMPro;
 using UnityEngine.UI;
 using System;
 
-namespace Project.UI
+namespace Project.Translation.UI
 {
-    public class ScrollViewButton : MonoBehaviour
+    public class HierarchyItemDisplay : MonoBehaviour
     {
         public TextMeshProUGUI text;
         public Button button;
@@ -13,6 +13,8 @@ namespace Project.UI
         public bool selected;
         public bool canUnselect;
         public bool toggable = true;
+
+        public HierarchyItem Item { get; private set; }
 
         [Label("Themes")]
         [BeginGroup("normal")]
@@ -29,7 +31,7 @@ namespace Project.UI
             text = GetComponentInChildren<TextMeshProUGUI>();
             button = GetComponent<Button>();
 
-            if (button)
+            if (button != null)
             {
                 normalTheme = button.colors;
                 selectedTheme = button.colors;
@@ -41,6 +43,18 @@ namespace Project.UI
             ChangeStateSilent(selected);
         }
 
+        public void UpdateDisplay()
+        {
+            if (text != null)
+                text.text = Item?.displayText ?? string.Empty;
+        }
+
+        public void UpdateDisplay(HierarchyItem item)
+        {
+            Item = item;
+            UpdateDisplay();
+        }
+
         public void ChangeState(bool state)
         {
             ChangeStateSilent(state);
@@ -50,7 +64,8 @@ namespace Project.UI
         public void ChangeStateSilent(bool state)
         {
             selected = state;
-            button.colors = selected ? selectedTheme : normalTheme;
+            if (button != null)
+                button.colors = selected ? selectedTheme : normalTheme;
         }
 
         public void ToggleState()

@@ -24,19 +24,6 @@ namespace Project.Translation
         [SerializeField] InputMapItemReference i_importing;
         [SerializeField] InputMapItemReference i_exporting;
 
-        private string _selectedItem = null;
-        public string SelectedItem 
-        {
-            get => _selectedItem;
-            set
-            {
-                _selectedItem = value;
-                OnSelectionChange?.Invoke(value);
-            }
-        }
-
-        public event Action<string> OnSelectionChange;
-
         public TranslationVersion CurrentVersion =>
             versions.Length == 0 ?
             null :

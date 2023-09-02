@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Project.Translation.Defines
 {
     [CreateAssetMenu(fileName = "New Translation Define", menuName = "Scriptable Objects/Translation/Defines/Array Entry")]
-    public class ArrayEntryTranslationDefines : TranslationDefinesBase
+    public class ArrayEntryTranslationDefines : DefinesBase
     {
         public string fieldId;
         [TextArea]
@@ -36,7 +36,9 @@ namespace Project.Translation.Defines
             if (!file.Entries.ContainsKey(fieldId))
                 file.Entries.Add(fieldId, new AppFile.EntryData(fieldId));
 
-            file.Entries[fieldId].content = string.Join('\n', txtLines);
+            var content = string.Join('\n', txtLines);
+            file.Entries[fieldId].content = content;
+            ProjectDebug.LogValueImport(fieldId, content);
         }
     }
 }

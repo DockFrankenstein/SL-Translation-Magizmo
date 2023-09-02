@@ -10,7 +10,7 @@ namespace Project.Translation.UI
     {
         public TMP_InputField contentField;
 
-        private void Awake()
+        private void Start()
         {
             contentField.onValueChanged.AddListener(ContentField_OnValueChanged);
         }
