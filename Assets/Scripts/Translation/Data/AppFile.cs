@@ -41,7 +41,7 @@ namespace Project.Translation.Data
                 var defines = translation.GetDefines();
 
                 foreach (var item in defines)
-                    file.Entries.Add(item, new EntryData(item));
+                    file.Entries.Add(item.id, new EntryData(item));
             }
 
             return file;
@@ -55,10 +55,14 @@ namespace Project.Translation.Data
                 this.entryId = entryId;
             }
 
+            public EntryData(DefineField defineField) : this(defineField.id) { }
+
             public EntryData(string entryId, string content) : this(entryId)
             {
                 this.content = content;
             }
+
+            public EntryData(DefineField defineField, string content) : this(defineField.id, content) { }
 
             public string entryId;
             public string content = string.Empty;

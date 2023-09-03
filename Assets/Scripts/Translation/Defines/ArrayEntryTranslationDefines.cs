@@ -7,16 +7,16 @@ namespace Project.Translation.Defines
     [CreateAssetMenu(fileName = "New Translation Define", menuName = "Scriptable Objects/Translation/Defines/Array Entry")]
     public class ArrayEntryTranslationDefines : DefinesBase
     {
-        public string fieldId;
+        public DefineField defineField;
         [TextArea]
         public string prefix;
 
         public override string Export(AppFile file)
         {
-            if (!file.Entries.ContainsKey(fieldId))
+            if (!file.Entries.ContainsKey(defineField.id))
                 return string.Empty;
 
-            var txt = file.Entries[fieldId].content
+            var txt = file.Entries[defineField.id].content
                 .Replace("\n", "\r\n");
 
             txt = $"{prefix}\n{txt}";
@@ -24,7 +24,7 @@ namespace Project.Translation.Defines
             return txt;
         }
 
-        public override string[] GetDefines() => new string[] { fieldId };
+        public override DefineField[] GetDefines() => new DefineField[] { defineField };
 
         public override void Import(AppFile file, string txt)
         {
@@ -33,12 +33,12 @@ namespace Project.Translation.Defines
                 .Split('\n')
                 .Where(x => !x.TrimStart().StartsWith("#"));
 
-            if (!file.Entries.ContainsKey(fieldId))
-                file.Entries.Add(fieldId, new AppFile.EntryData(fieldId));
+            if (!file.Entries.ContainsKey(defineField.id))
+                file.Entries.Add(defineField.id, new AppFile.EntryData(defineField));
 
             var content = string.Join('\n', txtLines);
-            file.Entries[fieldId].content = content;
-            ProjectDebug.LogValueImport(fieldId, content);
+            file.Entries[defineField.id].content = content;
+            ProjectDebug.LogValueImport(defineField, content);
         }
     }
 }

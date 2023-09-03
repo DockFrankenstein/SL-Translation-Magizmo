@@ -7,7 +7,7 @@ namespace Project.Translation.Defines
     {
         public string fileName;
 
-        public abstract string[] GetDefines();
+        public abstract DefineField[] GetDefines();
 
         public abstract void Import(AppFile file, string txt);
         public abstract string Export(AppFile file);

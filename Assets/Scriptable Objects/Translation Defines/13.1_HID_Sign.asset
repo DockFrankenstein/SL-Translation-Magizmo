@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: 13.1_HID_Sign
   m_EditorClassIdentifier: 
   fileName: HID_Sign.txt
-  fieldId: hid_sign
+  defineField:
+    id: hid_sign
+    autoDisplayName: 1
+    displayName: 
   prefix: "#INFO FOR TRANSLATORS: In this file you can use as many lines as you want,
     all of them will be displayed on the display above the door.\r"

@@ -14,7 +14,7 @@ namespace Project.Translation.UI
                 .Where(x => !x.Hide)
                 .Select(x =>
                 {
-                    var a = x.GetDefines().Select(x => new HierarchyItem(x));
+                    var a = x.GetDefines().Select(x => new HierarchyItem(x.id));
 
                     if (addSeparators)
                         a = a.Append(new HierarchyItem("---"));

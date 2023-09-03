@@ -20,9 +20,10 @@ namespace Project.Translation.Defines
         public bool useSeparationCharacter;
         public char separationCharacter;
 
+        [ReorderableList]
         public List<Define> defines = new List<Define>();
 
-        public override string[] GetDefines() =>
+        public override DefineField[] GetDefines() =>
             defines
             .SelectMany(x => x.fieldIds)
             .ToArray();
@@ -38,9 +39,9 @@ namespace Project.Translation.Defines
             {
                 var define = defines[i];
 
-                foreach (var id in define.fieldIds)
-                    if (!file.Entries.ContainsKey(id))
-                        file.Entries.Add(id, new AppFile.EntryData(id));
+                foreach (var defineField in define.fieldIds)
+                    if (!file.Entries.ContainsKey(defineField.id))
+                        file.Entries.Add(defineField.id, new AppFile.EntryData(defineField));
 
                 string line;
 
@@ -74,12 +75,12 @@ namespace Project.Translation.Defines
 
                         for (int x = 0; x < Mathf.Min(define.fieldIds.Length, splitLine.Length); x++)
                         {
-                            file.Entries[define.fieldIds[x]] = new AppFile.EntryData(define.fieldIds[x], splitLine[x]);
+                            file.Entries[define.fieldIds[x].id] = new AppFile.EntryData(define.fieldIds[x], splitLine[x]);
                             ProjectDebug.LogValueImport(define.fieldIds[x], splitLine[x]);
                         }
                         break;
                     case false:
-                        file.Entries[define.fieldIds[0]] = new AppFile.EntryData(define.fieldIds[0], line);
+                        file.Entries[define.fieldIds[0].id] = new AppFile.EntryData(define.fieldIds[0], line);
                         ProjectDebug.LogValueImport(define.fieldIds[0], line);
                         break;
                 }
@@ -92,7 +93,7 @@ namespace Project.Translation.Defines
             foreach (var define in defines)
             {
                 var values = define.fieldIds
-                    .Select(x => file.Entries.TryGetValue(x, out var y) ?
+                    .Select(x => file.Entries.TryGetValue(x.id, out var y) ?
                         y.content :
                         string.Empty);
 
@@ -119,7 +120,7 @@ namespace Project.Translation.Defines
         public struct Define
         {
             public string lineId;
-            public string[] fieldIds;
+            public DefineField[] fieldIds;
         }
     }
 }

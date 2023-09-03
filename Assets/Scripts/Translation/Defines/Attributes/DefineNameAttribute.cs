@@ -11,5 +11,8 @@ namespace Project.Translation.Defines
         }
 
         public string Name { get; private set; }
+
+        public DefineField GetDefineField() =>
+            new DefineField(Name);
     }
 }

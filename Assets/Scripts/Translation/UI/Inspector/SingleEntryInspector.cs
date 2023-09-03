@@ -26,14 +26,9 @@ namespace Project.Translation.UI
             contentField.SetTextWithoutNotify(string.Empty);
         }
 
-        public override bool ShouldOpen(string id)
-        {
-            var defines = manager.CurrentVersion.defines
-                .Where(x => x is MultiEntryTranslationDefines)
-                .SelectMany(x => x.GetDefines());
-
-            return defines.Contains(id);
-        }
+        public override bool ShouldOpen(string id) =>
+            manager.CurrentVersion.DefinesDictionary.TryGetValue(id, out var item) &&
+            item.definesBase is MultiEntryTranslationDefines;
 
         private void ContentField_OnValueChanged(string text)
         {

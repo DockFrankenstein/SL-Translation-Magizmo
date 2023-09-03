@@ -20,13 +20,6 @@ namespace Project.UI
 
         }
 
-        public virtual bool ShouldOpen(string id)
-        {
-            var defines = manager.CurrentVersion.defines
-                .Where(x => x is ArrayEntryTranslationDefines)
-                .SelectMany(x => x.GetDefines());
-
-            return defines.Contains(id);
-        }
+        public virtual bool ShouldOpen(string id) => false;
     }
 }

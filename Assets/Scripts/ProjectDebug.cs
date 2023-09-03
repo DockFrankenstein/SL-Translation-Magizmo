@@ -1,4 +1,5 @@
-﻿using qASIC;
+﻿using Project.Translation.Defines;
+using qASIC;
 
 namespace Project
 {
@@ -8,5 +9,8 @@ namespace Project
         {
             qDebug.Log($"Imported '{fieldName}' value: {value?.ToString() ?? string.Empty}");
         }
+
+        public static void LogValueImport(DefineField defineField, object value) =>
+            LogValueImport(defineField.id, value);
     }
 }

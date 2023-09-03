@@ -13,14 +13,14 @@ namespace Project.Translation.Defines.Manifest
         public override bool Hide => true;
 
         //Keep this static or else it won't be null
-        private static string[] _definesCache = null;
-        public override string[] GetDefines()
+        private static DefineField[] _definesCache = null;
+        public override DefineField[] GetDefines()
         {
             if (_definesCache == null)
             {
                 _definesCache = typeof(T).GetFields()
                     .SelectMany(x => (DefineNameAttribute[])x.GetCustomAttributes(typeof(DefineNameAttribute), false))
-                    .Select(x => x.Name)
+                    .Select(x => x.GetDefineField())
                     .ToArray();
             }
 

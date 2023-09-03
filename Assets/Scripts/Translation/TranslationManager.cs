@@ -36,6 +36,9 @@ namespace Project.Translation
 
         private void Awake()
         {
+            foreach (var version in versions)
+                version.Initialize();
+
             file = AppFile.Create(CurrentVersion);
         }
 

@@ -19,197 +19,393 @@ MonoBehaviour:
   defines:
   - lineId: 0
     fieldIds:
-    - keycard_janitor
-    - keycard_janitor_description
+    - id: keycard_janitor
+      autoDisplayName: 1
+      displayName: 
+    - id: keycard_janitor_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 1
     fieldIds:
-    - keycard_scientist
-    - keycard_scientist_description
+    - id: keycard_scientist
+      autoDisplayName: 1
+      displayName: 
+    - id: keycard_scientist_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 2
     fieldIds:
-    - keycard_scientist2
-    - keycard_scientist2_description
+    - id: keycard_scientist2
+      autoDisplayName: 1
+      displayName: 
+    - id: keycard_scientist2_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 3
     fieldIds:
-    - keycard_zone_manager
-    - keycard_zone_manager_description
+    - id: keycard_zone_manager
+      autoDisplayName: 1
+      displayName: 
+    - id: keycard_zone_manager_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 4
     fieldIds:
-    - keycard_guard
-    - keycard_guard_description
+    - id: keycard_guard
+      autoDisplayName: 1
+      displayName: 
+    - id: keycard_guard_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 5
     fieldIds:
-    - keycard_mtf_private
-    - keycard_mtf_private_description
+    - id: keycard_mtf_private
+      autoDisplayName: 1
+      displayName: 
+    - id: keycard_mtf_private_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 6
     fieldIds:
-    - keycard_containment_engineer
-    - keycard_containment_engineer_description
+    - id: keycard_containment_engineer
+      autoDisplayName: 1
+      displayName: 
+    - id: keycard_containment_engineer_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 7
     fieldIds:
-    - keycard_mtf_sergeant
-    - keycard_mtf_sergeant_description
+    - id: keycard_mtf_sergeant
+      autoDisplayName: 1
+      displayName: 
+    - id: keycard_mtf_sergeant_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 8
     fieldIds:
-    - keycard_mtf_captain
-    - keycard_mtf_captain_description
+    - id: keycard_mtf_captain
+      autoDisplayName: 1
+      displayName: 
+    - id: keycard_mtf_captain_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 9
     fieldIds:
-    - keycard_facility_manager
-    - keycard_facility_manager_description
+    - id: keycard_facility_manager
+      autoDisplayName: 1
+      displayName: 
+    - id: keycard_facility_manager_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 10
     fieldIds:
-    - keycard_chaos
-    - keycard_chaos_description
+    - id: keycard_chaos
+      autoDisplayName: 1
+      displayName: 
+    - id: keycard_chaos_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 11
     fieldIds:
-    - keycard_o5
-    - keycard_o5_description
+    - id: keycard_o5
+      autoDisplayName: 1
+      displayName: 
+    - id: keycard_o5_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 12
     fieldIds:
-    - inv_radio
-    - inv_radio_description
+    - id: inv_radio
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_radio_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 13
     fieldIds:
-    - inv_com15
-    - inv_com15_description
+    - id: inv_com15
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_com15_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 14
     fieldIds:
-    - inv_medkit
-    - inv_medkit_description
+    - id: inv_medkit
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_medkit_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 15
     fieldIds:
-    - inv_flashlight
-    - inv_flashlight_description
+    - id: inv_flashlight
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_flashlight_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 16
     fieldIds:
-    - inv_microhid
-    - inv_microhid_description
+    - id: inv_microhid
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_microhid_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 17
     fieldIds:
-    - inv_scp500
-    - inv_scp500_description
+    - id: inv_scp500
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_scp500_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 18
     fieldIds:
-    - inv_scp207
-    - inv_scp207_description
+    - id: inv_scp207
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_scp207_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 20
     fieldIds:
-    - inv_e11sr
-    - inv_e11sr_description
+    - id: inv_e11sr
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_e11sr_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 21
     fieldIds:
-    - inv_crossvec
-    - inv_crossvec_description
+    - id: inv_crossvec
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_crossvec_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 23
     fieldIds:
-    - inv_fsp9
-    - inv_fsp9_description
+    - id: inv_fsp9
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_fsp9_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 24
     fieldIds:
-    - inv_logicer
-    - inv_logicer_description
+    - id: inv_logicer
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_logicer_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 25
     fieldIds:
-    - inv_he_grenade
-    - inv_he_grenade_description
+    - id: inv_he_grenade
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_he_grenade_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 26
     fieldIds:
-    - inv_flashbang
-    - inv_flashbang_description
+    - id: inv_flashbang
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_flashbang_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 30
     fieldIds:
-    - inv_com18
-    - inv_com18_description
+    - id: inv_com18
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_com18_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 31
     fieldIds:
-    - inv_scp018
-    - inv_scp018_description
+    - id: inv_scp018
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_scp018_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 32
     fieldIds:
-    - inv_scp268
-    - inv_scp268_description
+    - id: inv_scp268
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_scp268_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 33
     fieldIds:
-    - inv_adrenaline
-    - inv_adrenaline_description
+    - id: inv_adrenaline
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_adrenaline_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 34
     fieldIds:
-    - inv_painkillers
-    - inv_painkillers_description
+    - id: inv_painkillers
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_painkillers_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 35
     fieldIds:
-    - inv_coin
-    - inv_coin_description
+    - id: inv_coin
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_coin_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 36
     fieldIds:
-    - inv_armor_light
-    - inv_armor_light_description
+    - id: inv_armor_light
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_armor_light_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 37
     fieldIds:
-    - inv_armor_combat
-    - inv_armor_combat_description
+    - id: inv_armor_combat
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_armor_combat_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 38
     fieldIds:
-    - inv_armor_heavy
-    - inv_armor_heavy_description
+    - id: inv_armor_heavy
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_armor_heavy_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 39
     fieldIds:
-    - inv_revolver
-    - inv_revolver_description
+    - id: inv_revolver
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_revolver_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 40
     fieldIds:
-    - inv_ak
-    - inv_ak_description
+    - id: inv_ak
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_ak_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 41
     fieldIds:
-    - inv_shotgun
-    - inv_shotgun_description
+    - id: inv_shotgun
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_shotgun_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 42
     fieldIds:
-    - inv_candybag
-    - inv_candybag_description
+    - id: inv_candybag
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_candybag_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 43
     fieldIds:
-    - inv_scp2176
-    - inv_scp2176_description
+    - id: inv_scp2176
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_scp2176_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 44
     fieldIds:
-    - inv_scp244a
-    - inv_scp244a_description
+    - id: inv_scp244a
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_scp244a_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 45
     fieldIds:
-    - inv_scp244b
-    - inv_scp244b_description
+    - id: inv_scp244b
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_scp244b_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 46
     fieldIds:
-    - inv_scp1853
-    - inv_scp1853_description
+    - id: inv_scp1853
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_scp1853_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 47
     fieldIds:
-    - inv_3x_particle_disruptor
-    - inv_3x_particle_disruptor_description
+    - id: inv_3x_particle_disruptor
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_3x_particle_disruptor_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 48
     fieldIds:
-    - inv_com45
-    - inv_com45_description
+    - id: inv_com45
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_com45_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 49
     fieldIds:
-    - inv_scp1576
-    - inv_scp1576_description
+    - id: inv_scp1576
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_scp1576_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 50
     fieldIds:
-    - inv_jailbird
-    - inv_jailbird_description
+    - id: inv_jailbird
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_jailbird_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 51
     fieldIds:
-    - inv_scp207_anti
-    - inv_scp207_anti_description
+    - id: inv_scp207_anti
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_scp207_anti_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 48
     fieldIds:
-    - inv_fr_mg0
-    - inv_fr_mg0_description
+    - id: inv_fr_mg0
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_fr_mg0_description
+      autoDisplayName: 1
+      displayName: 
   - lineId: 48
     fieldIds:
-    - inv_a7
-    - inv_a7_description
+    - id: inv_a7
+      autoDisplayName: 1
+      displayName: 
+    - id: inv_a7_description
+      autoDisplayName: 1
+      displayName: 

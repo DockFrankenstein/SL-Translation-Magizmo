@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Project.UI;
 using System.Linq;
+using Project.Translation.Defines;
 
 namespace Project.Translation.UI
 {
@@ -31,7 +32,11 @@ namespace Project.Translation.UI
 
         public override bool ShouldOpen(string id)
         {
-            return base.ShouldOpen(id);
+            var a = manager.CurrentVersion.DefinesDictionary.TryGetValue(id, out var item) &&
+            item.definesBase is ArrayEntryTranslationDefines;
+
+            Debug.Log($"id:{id}, contains: {manager.CurrentVersion.DefinesDictionary.ContainsKey(id)}, type: {item?.definesBase?.GetType()}");
+            return a;
         }
 
         private void ContentList_OnChange()
