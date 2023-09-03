@@ -10,6 +10,11 @@ namespace Project.UI
 
         [SerializeField] RectTransform target;
 
+        [Label("Auto refresh")]
+        [SerializeField] bool refreshOnAwake;
+        [SerializeField] bool refreshOnStart;
+        [SerializeField] bool refreshOnEnable;
+
         private void Reset()
         {
             target = GetComponent<RectTransform>();
@@ -23,9 +28,34 @@ namespace Project.UI
         private void Awake()
         {
             _OnRefresh += HandleRefresh;
+
+            if (refreshOnAwake)
+                RefreshSingle();
+        }
+
+        private void Start()
+        {
+            if (refreshOnStart)
+                RefreshSingle();
+        }
+
+        private void OnEnable()
+        {
+            if (refreshOnEnable)
+                RefreshSingle();
+        }
+
+        private void OnDisable()
+        {
+            _OnRefresh -= HandleRefresh;
         }
 
         void HandleRefresh()
+        {
+            RefreshSingle();
+        }
+
+        public void RefreshSingle()
         {
             LayoutRebuilder.ForceRebuildLayoutImmediate(target);
         }
