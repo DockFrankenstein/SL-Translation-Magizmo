@@ -5,13 +5,15 @@ using Project.UI;
 using qASIC;
 using System.Linq;
 using System;
-using Project.Translation.Defines;
+using UnityEngine.UI;
+using static UnityEngine.GraphicsBuffer;
 
 namespace Project.Translation.UI
 {
     public class HierarchyDisplay : MonoBehaviour
     {
         [SerializeField] Transform itemParent;
+        [SerializeField] ScrollRect scroll;
 
         [Label("Items")]
         [Prefab] public HierarchyItemDisplay normalPrefab;
@@ -75,24 +77,42 @@ namespace Project.Translation.UI
             }
         }
 
-        public void Select(string id)
+        public void Select(string id, bool autoScroll = false)
         {
             var item = Items
+                .Where(x => x?.Item?.type == HierarchyItem.ItemType.Normal)
                 .Where(x => x.Item.id == id)
                 .FirstOrDefault();
 
             if (item != null)
-                Select(item);
+                Select(item, autoScroll);
         }
 
-        public void Select(HierarchyItemDisplay item)
+        public void Select(HierarchyItemDisplay item, bool autoScroll = false)
         {
             if (SelectedItemDisplay != null)
                 SelectedItemDisplay.ChangeStateSilent(false);
 
             SelectedItemDisplay = item;
             SelectedItemDisplay.ChangeStateSilent(true);
+
+            if (autoScroll)
+                ScrollTo(item);
+
             OnSelect?.Invoke(SelectedId);
+        }
+
+        public void ScrollTo(HierarchyItemDisplay item)
+        {
+            Canvas.ForceUpdateCanvases();
+
+            var itemRect = item.transform as RectTransform;
+
+            var pos = (Vector2)scroll.transform.InverseTransformPoint(scroll.content.position) -
+                (Vector2)scroll.transform.InverseTransformPoint(item.transform.position) -
+                new Vector2(0f, itemRect.sizeDelta.y / 2f);
+
+            scroll.content.anchoredPosition = new Vector2(scroll.content.anchoredPosition.x, pos.y);
         }
     }
 }

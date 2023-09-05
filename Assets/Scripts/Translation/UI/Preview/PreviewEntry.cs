@@ -14,7 +14,7 @@ namespace Project.Translation.UI.Preview
         public void Select()
         {
             if (hierarchy == null) return;
-            hierarchy.Select(entryID);
+            hierarchy.Select(entryID, true);
         }
     }
 }
