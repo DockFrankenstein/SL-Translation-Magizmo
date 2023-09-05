@@ -35,7 +35,6 @@ namespace Project.Translation.UI
             var a = manager.CurrentVersion.DefinesDictionary.TryGetValue(id, out var item) &&
             item.definesBase is ArrayEntryTranslationDefines;
 
-            Debug.Log($"id:{id}, contains: {manager.CurrentVersion.DefinesDictionary.ContainsKey(id)}, type: {item?.definesBase?.GetType()}");
             return a;
         }
 

@@ -35,9 +35,6 @@ namespace Project.Translation.Defines
             {
                 var defines = defineFile.GetDefines();
 
-                if (defineFile is ArrayEntryTranslationDefines)
-                    Debug.Log("A");
-
                 for (int i = 0; i < defines.Length; i++)
                     defines[i].definesBase = defineFile;
             }

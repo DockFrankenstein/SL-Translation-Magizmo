@@ -7,7 +7,7 @@ using UnityEngine;
 using Project.UI;
 using qASIC.Input;
 
-namespace Project.Translation.UI
+namespace Project.Translation.UI.Preview
 {
     public class TranslationPreviewCamera : MonoBehaviour
     {

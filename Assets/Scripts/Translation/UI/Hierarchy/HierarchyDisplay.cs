@@ -58,11 +58,7 @@ namespace Project.Translation.UI
                                 return;
                             }
 
-                            if (SelectedItemDisplay != null)
-                                SelectedItemDisplay.ChangeStateSilent(false);
-
-                            SelectedItemDisplay = scrollItem;
-                            OnSelect?.Invoke(SelectedId);
+                            Select(scrollItem);
                         };
 
                         break;
@@ -77,6 +73,26 @@ namespace Project.Translation.UI
 
                 Items.Add(scrollItem);
             }
+        }
+
+        public void Select(string id)
+        {
+            var item = Items
+                .Where(x => x.Item.id == id)
+                .FirstOrDefault();
+
+            if (item != null)
+                Select(item);
+        }
+
+        public void Select(HierarchyItemDisplay item)
+        {
+            if (SelectedItemDisplay != null)
+                SelectedItemDisplay.ChangeStateSilent(false);
+
+            SelectedItemDisplay = item;
+            SelectedItemDisplay.ChangeStateSilent(true);
+            OnSelect?.Invoke(SelectedId);
         }
     }
 }
