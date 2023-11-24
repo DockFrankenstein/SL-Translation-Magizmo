@@ -42,6 +42,8 @@ namespace Project.Translation.UI
         {
             if (manager.file.Entries.ContainsKey(id))
                 manager.file.Entries[id].content = contentList.Values.ToEntryContent();
+
+            inspector.RepaintPreview();
         }
     }
 }

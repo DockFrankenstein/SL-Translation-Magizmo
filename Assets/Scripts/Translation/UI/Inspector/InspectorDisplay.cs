@@ -2,6 +2,7 @@ using Project.Translation;
 using UnityEngine;
 using qASIC;
 using Project.Translation.UI;
+using Project.Translation.UI.Preview;
 
 namespace Project.UI
 {
@@ -10,6 +11,7 @@ namespace Project.UI
         public TranslationManager manager;
         public HierarchyDisplay hierarchy;
         public InspectorDisplayPanel[] panels;
+        public PreviewSceneManager previewSceneManager;
 
         int _currentPanelIndex = -1;
         string _selectedId = string.Empty;
@@ -26,7 +28,17 @@ namespace Project.UI
             manager?.OnLoad.AddListener(ReloadInspector);
 
             foreach (var item in panels)
+            {
                 item.manager = manager;
+                item.inspector = this;
+            }
+        }
+
+        public void RepaintPreview()
+        {
+            var appFile = manager.file;
+            if (appFile != null)
+                previewSceneManager.ReloadActiveScenes(appFile);
         }
 
         public void ReloadInspector()

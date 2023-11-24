@@ -78,6 +78,8 @@ namespace Project.UI
             {
                 if (inspector.manager.file.Entries.ContainsKey(id))
                     inspector.manager.file.Entries[id].content = text;
+
+                inspector.RepaintPreview();
             }
         }
 
@@ -111,6 +113,8 @@ namespace Project.UI
             {
                 if (inspector.manager.file.Entries.ContainsKey(id))
                     inspector.manager.file.Entries[id].content = list.Values.ToEntryContent();
+
+                inspector.RepaintPreview();
             }
         }
     }

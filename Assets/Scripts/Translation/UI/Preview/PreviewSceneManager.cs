@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Project.Translation.Data;
+using System;
 using UnityEngine;
+using System.Linq;
 
 namespace Project.Translation.UI.Preview
 {
@@ -9,6 +11,15 @@ namespace Project.Translation.UI.Preview
         [SerializeField] HierarchyDisplay hierarchy;
 
         public PreviewScene[] scenes;
+
+        public void ReloadActiveScenes(AppFile appFile)
+        {
+            var targetScenes = scenes
+                .Where(x => x.enabled == true);
+
+            foreach (var scene in targetScenes)
+                scene.ReloadScene(appFile);
+        }
 
         private void Awake()
         {
