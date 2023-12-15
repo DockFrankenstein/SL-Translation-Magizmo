@@ -6,7 +6,10 @@ namespace Project.Translation.Defines
     [Serializable]
     public class DefineField
     {
-        public DefineField() { }
+        public DefineField()
+        {
+            guid = Guid.NewGuid().ToString();
+        }
 
         public DefineField(string id) : this()
         {
@@ -21,6 +24,7 @@ namespace Project.Translation.Defines
         public string id = string.Empty;
         public bool autoDisplayName = true;
         public string displayName;
+        public string guid;
 
         [NonSerialized] public DefinesBase definesBase;
     }

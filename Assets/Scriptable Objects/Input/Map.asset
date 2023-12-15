@@ -17,15 +17,15 @@ MonoBehaviour:
   - itemName: Default
     guid: 66c78ff1-6590-40a3-be34-65f729686bf5
     items:
-    - rid: 138481828260478976
-    - rid: 138481828260478977
-    - rid: 138481828260478978
-    - rid: 138481828260478979
-    - rid: 886010718781440000
+    - rid: 5174576954111426560
+    - rid: 5174576954111426561
+    - rid: 5174576954111426562
+    - rid: 5174576954111426563
+    - rid: 5174576954111426564
   references:
     version: 2
     RefIds:
-    - rid: 138481828260478976
+    - rid: 5174576954111426560
       type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
       data:
         itemName: Save
@@ -33,7 +33,7 @@ MonoBehaviour:
         keys:
         - key_keyboard/LeftControl
         - key_keyboard/S
-    - rid: 138481828260478977
+    - rid: 5174576954111426561
       type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
       data:
         itemName: Load
@@ -41,7 +41,7 @@ MonoBehaviour:
         keys:
         - key_keyboard/LeftControl
         - key_keyboard/O
-    - rid: 138481828260478978
+    - rid: 5174576954111426562
       type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
       data:
         itemName: Import
@@ -49,7 +49,7 @@ MonoBehaviour:
         keys:
         - key_keyboard/LeftControl
         - key_keyboard/I
-    - rid: 138481828260478979
+    - rid: 5174576954111426563
       type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
       data:
         itemName: Export
@@ -57,7 +57,7 @@ MonoBehaviour:
         keys:
         - key_keyboard/LeftControl
         - key_keyboard/E
-    - rid: 886010718781440000
+    - rid: 5174576954111426564
       type: {class: InputBinding, ns: qASIC.Input.Map, asm: qASIC}
       data:
         itemName: Drag Move

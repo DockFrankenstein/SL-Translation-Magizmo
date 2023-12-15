@@ -189,11 +189,11 @@ namespace qASIC.EditorTools
             GUILayout.Box(GUIContent.none, style);
         }
 
-        public static void VerticalLine(Rect rect)
+        public static void VerticalLine(Rect rect, float width = 1f)
         {
             GUIStyle style = new GUIStyle()
             {
-                fixedWidth = 1f,
+                fixedWidth = width,
                 stretchHeight = true,
             };
 
@@ -203,11 +203,11 @@ namespace qASIC.EditorTools
                 style.Draw(rect, GUIContent.none, false, false, false, false);
         }
 
-        public static void HorizontalLine(Rect rect)
+        public static void HorizontalLine(Rect rect, float height = 1f)
         {
             GUIStyle style = new GUIStyle()
             {
-                fixedHeight = 1f,
+                fixedHeight = height,
                 stretchWidth = true,
             };
 

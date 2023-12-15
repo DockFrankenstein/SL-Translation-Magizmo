@@ -1,15 +1,20 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using Project.Translation.Data;
 using qASIC;
 using System.Text;
+using UnityEditor;
+using qASIC.Files;
+using UnityEngine.Serialization;
 
 namespace Project.Translation.Defines
 {
-    [CreateAssetMenu(fileName = "New Translation Define", menuName = "Scriptable Objects/Translation/Defines/Multi Entry")]
+    //[CreateAssetMenu(fileName = "New Translation Define", menuName = "Scriptable Objects/Translation/Defines/Multi Entry")]
     public class MultiEntryTranslationDefines : DefinesBase
     {
+        public const string EXTENSION = "metd";
+
         public enum IdentificationType
         {
             LineId,
@@ -21,12 +26,27 @@ namespace Project.Translation.Defines
         public char separationCharacter;
 
         [ReorderableList]
-        public List<Define> defines = new List<Define>();
+        [EditorButton(nameof(Temp))]
+        [FormerlySerializedAs("defines")]
+        public List<Line> lines = new List<Line>();
 
         public override DefineField[] GetDefines() =>
-            defines
-            .SelectMany(x => x.fieldIds)
+            lines
+            .SelectMany(x => x.defines)
             .ToArray();
+
+        
+        public void Temp()
+        {
+            var text = JsonUtility.ToJson(this);
+
+            var path = Application.dataPath.Substring(0, Application.dataPath.Length - 6) + AssetDatabase.GetAssetPath(this);
+            path = System.IO.Path.ChangeExtension(path, EXTENSION);
+
+            FileManager.SaveFileWriter(path, text.ToString());
+
+            Debug.Log(path);
+        }
 
         public override void Import(AppFile file, string txt)
         {
@@ -35,11 +55,11 @@ namespace Project.Translation.Defines
                     .Split('\n')
                     .ToArray();
 
-            for (int i = 0; i < defines.Count; i++)
+            for (int i = 0; i < lines.Count; i++)
             {
-                var define = defines[i];
+                var define = lines[i];
 
-                foreach (var defineField in define.fieldIds)
+                foreach (var defineField in define.defines)
                     if (!file.Entries.ContainsKey(defineField.id))
                         file.Entries.Add(defineField.id, new AppFile.EntryData(defineField));
 
@@ -73,15 +93,15 @@ namespace Project.Translation.Defines
                     case true:
                         var splitLine = line.Split(separationCharacter);
 
-                        for (int x = 0; x < Mathf.Min(define.fieldIds.Length, splitLine.Length); x++)
+                        for (int x = 0; x < Mathf.Min(define.defines.Count, splitLine.Length); x++)
                         {
-                            file.Entries[define.fieldIds[x].id] = new AppFile.EntryData(define.fieldIds[x], splitLine[x]);
-                            ProjectDebug.LogValueImport(define.fieldIds[x], splitLine[x]);
+                            file.Entries[define.defines[x].id] = new AppFile.EntryData(define.defines[x], splitLine[x]);
+                            ProjectDebug.LogValueImport(define.defines[x], splitLine[x]);
                         }
                         break;
                     case false:
-                        file.Entries[define.fieldIds[0].id] = new AppFile.EntryData(define.fieldIds[0], line);
-                        ProjectDebug.LogValueImport(define.fieldIds[0], line);
+                        file.Entries[define.defines[0].id] = new AppFile.EntryData(define.defines[0], line);
+                        ProjectDebug.LogValueImport(define.defines[0], line);
                         break;
                 }
             }
@@ -90,9 +110,9 @@ namespace Project.Translation.Defines
         public override string Export(AppFile file)
         {
             StringBuilder txt = new StringBuilder();
-            foreach (var define in defines)
+            foreach (var define in lines)
             {
-                var values = define.fieldIds
+                var values = define.defines
                     .Select(x => file.Entries.TryGetValue(x.id, out var y) ?
                         y.content :
                         string.Empty);
@@ -117,10 +137,17 @@ namespace Project.Translation.Defines
         }
 
         [System.Serializable]
-        public struct Define
+        public class Line
         {
+            public Line()
+            {
+                guid = System.Guid.NewGuid().ToString();
+            }
+
             public string lineId;
-            public DefineField[] fieldIds;
+            public string guid;
+            [FormerlySerializedAs("fieldIds")]
+            public List<DefineField> defines = new List<DefineField>();
         }
     }
 }

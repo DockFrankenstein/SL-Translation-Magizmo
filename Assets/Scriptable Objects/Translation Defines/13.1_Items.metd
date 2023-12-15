@@ -1,0 +1,908 @@
+{
+    "fileName": "Items.txt",
+    "identificationType": 1,
+    "useSeparationCharacter": true,
+    "separationCharacter": 126,
+    "lines": [
+        {
+            "lineId": "0",
+            "guid": "bf557323-f3fa-4312-99ea-9f61ac0863ed",
+            "defines": [
+                {
+                    "id": "keycard_janitor",
+                    "autoDisplayName": false,
+                    "displayName": "Janitor Keycard",
+                    "guid": "de572e30-d010-4c27-aae9-0ea66349e857"
+                },
+                {
+                    "id": "keycard_janitor_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "bb4621c3-5edc-4473-8b97-95d4bd09e680"
+                }
+            ]
+        },
+        {
+            "lineId": "1",
+            "guid": "c41b69b6-1a43-4c8f-81fe-68c2e68c2729",
+            "defines": [
+                {
+                    "id": "keycard_scientist",
+                    "autoDisplayName": false,
+                    "displayName": "",
+                    "guid": "d014660f-c378-4326-ac89-c472c0b57ec2"
+                },
+                {
+                    "id": "keycard_scientist_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "ef91395b-1de6-4dd1-ac9d-f55ec167e00a"
+                }
+            ]
+        },
+        {
+            "lineId": "2",
+            "guid": "ed1f8aac-d55b-4ecf-83cf-26b84250902e",
+            "defines": [
+                {
+                    "id": "keycard_scientist2",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "43b8fed0-9d5a-4b9c-9456-c36d89d8e720"
+                },
+                {
+                    "id": "keycard_scientist2_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "7899dccd-d4b6-4cc5-b9a3-71b392be06b9"
+                }
+            ]
+        },
+        {
+            "lineId": "3",
+            "guid": "ae46b42b-a7fe-4f74-b375-a012bb1c23f8",
+            "defines": [
+                {
+                    "id": "keycard_zone_manager",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "a3fdcb16-e53b-494f-9e64-f3e2dc7bb5ee"
+                },
+                {
+                    "id": "keycard_zone_manager_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "2872ce61-b985-4af9-87a5-238ce746953f"
+                }
+            ]
+        },
+        {
+            "lineId": "4",
+            "guid": "a0bbc8ac-29bd-4576-9fad-173df0cf7ec3",
+            "defines": [
+                {
+                    "id": "keycard_guard",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "cd8ba32b-cdbe-4078-b0a0-00e6d07b556d"
+                },
+                {
+                    "id": "keycard_guard_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "a1f57bca-a3b9-4445-adb7-a32b66b362ad"
+                }
+            ]
+        },
+        {
+            "lineId": "5",
+            "guid": "db32a695-4479-496c-b2ca-596b37daa5a3",
+            "defines": [
+                {
+                    "id": "keycard_mtf_private",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "4565d3ca-059d-4e75-9f23-379c1578c52a"
+                },
+                {
+                    "id": "keycard_mtf_private_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "e3436c73-3d96-4fc1-beb4-f1d0a77205b3"
+                }
+            ]
+        },
+        {
+            "lineId": "6",
+            "guid": "11e0bb53-816a-420f-bf63-9abbbe9f62db",
+            "defines": [
+                {
+                    "id": "keycard_containment_engineer",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "ba1f5865-38bb-47cf-adb5-39abea911ca0"
+                },
+                {
+                    "id": "keycard_containment_engineer_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "ee71a5e7-0e10-4ff0-b43b-45337ca48527"
+                }
+            ]
+        },
+        {
+            "lineId": "7",
+            "guid": "77d7fc3b-0cc7-49dc-912f-b4719286b0c9",
+            "defines": [
+                {
+                    "id": "keycard_mtf_sergeant",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "b4856a5d-5da8-4e6f-9fb4-2aa87ef0c37d"
+                },
+                {
+                    "id": "keycard_mtf_sergeant_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "9d4cdc37-e9f6-49c1-997e-ee275adee8ab"
+                }
+            ]
+        },
+        {
+            "lineId": "8",
+            "guid": "a6e63928-5f70-41bb-afc1-0e180032f6e1",
+            "defines": [
+                {
+                    "id": "keycard_mtf_captain",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "de3b15bf-05d1-4842-a9d7-79130908d1ac"
+                },
+                {
+                    "id": "keycard_mtf_captain_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "5987c7cc-fcb4-4f2f-80c5-da499df5754e"
+                }
+            ]
+        },
+        {
+            "lineId": "9",
+            "guid": "2eec2623-f1b7-497f-8cf7-0bad2cc89e32",
+            "defines": [
+                {
+                    "id": "keycard_facility_manager",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "6c3355c0-7795-49f9-9dab-fab3750c4bd9"
+                },
+                {
+                    "id": "keycard_facility_manager_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "ab67fed8-9ad2-474a-b076-0536593cc64a"
+                }
+            ]
+        },
+        {
+            "lineId": "10",
+            "guid": "1f02e6f3-4404-44c3-b891-6473dbd3ffb6",
+            "defines": [
+                {
+                    "id": "keycard_chaos",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "f39d63d1-1456-40ba-b8fe-4d12734db687"
+                },
+                {
+                    "id": "keycard_chaos_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "762c1a32-2177-4e44-8b2b-37dad44210f7"
+                }
+            ]
+        },
+        {
+            "lineId": "11",
+            "guid": "bc24cffa-cbac-4997-b1bf-4cfc0730eb86",
+            "defines": [
+                {
+                    "id": "keycard_o5",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "4e47002a-ac46-44d4-a7fc-2486e8617323"
+                },
+                {
+                    "id": "keycard_o5_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "a21da11a-95ec-456a-ba62-ef5d896720aa"
+                }
+            ]
+        },
+        {
+            "lineId": "12",
+            "guid": "30196365-5a98-4e62-9433-ff8f6180f3cb",
+            "defines": [
+                {
+                    "id": "inv_radio",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "27fa115d-f3bd-4573-b6b0-e6eb48d585fa"
+                },
+                {
+                    "id": "inv_radio_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "fad1c1e6-aa7d-4e0b-b13b-574343ae0f0c"
+                }
+            ]
+        },
+        {
+            "lineId": "13",
+            "guid": "47d79b25-2149-44cf-8517-65eba1a43f0b",
+            "defines": [
+                {
+                    "id": "inv_com15",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "2e5bf9c1-5ccd-48b9-ad88-18290e5c7a3b"
+                },
+                {
+                    "id": "inv_com15_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "c9c1ff61-099b-4223-a7a3-c0f8695ba40c"
+                }
+            ]
+        },
+        {
+            "lineId": "14",
+            "guid": "8e4065e9-f460-4458-a50e-d617f6974280",
+            "defines": [
+                {
+                    "id": "inv_medkit",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "f5eb32ab-a778-400d-bd6c-08a001f4a9b6"
+                },
+                {
+                    "id": "inv_medkit_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "c52e0c46-e260-46f7-943b-4ff6a2db2071"
+                }
+            ]
+        },
+        {
+            "lineId": "15",
+            "guid": "bcc6a59b-6d8e-4015-8263-e1d9783bb4ab",
+            "defines": [
+                {
+                    "id": "inv_flashlight",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "3354d5cc-a6f6-4324-86dc-e093002dcbde"
+                },
+                {
+                    "id": "inv_flashlight_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "44611b54-31a3-4d98-9a9c-197183606e20"
+                }
+            ]
+        },
+        {
+            "lineId": "16",
+            "guid": "3456dba7-b51e-41ef-a551-1dd102831b01",
+            "defines": [
+                {
+                    "id": "inv_microhid",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "734861dc-632b-4f3b-ab1f-8260e0175e88"
+                },
+                {
+                    "id": "inv_microhid_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "f0dd7951-a533-41e8-8191-9bad56dcc626"
+                }
+            ]
+        },
+        {
+            "lineId": "17",
+            "guid": "922bd91f-3621-4276-8254-d603090c47c3",
+            "defines": [
+                {
+                    "id": "inv_scp500",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "42e3f187-b566-49d8-9511-b711fc5b7d70"
+                },
+                {
+                    "id": "inv_scp500_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "ba46ac84-3a62-4d3c-8b7b-94fe1b91b3b3"
+                }
+            ]
+        },
+        {
+            "lineId": "18",
+            "guid": "08f6d8a2-06d7-41a8-b75f-d5236798ff79",
+            "defines": [
+                {
+                    "id": "inv_scp207",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "483050f2-b42a-4a47-b543-c8aa1cebbaca"
+                },
+                {
+                    "id": "inv_scp207_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "6d4878d0-bf89-4196-95d1-5f235a9d0d5d"
+                }
+            ]
+        },
+        {
+            "lineId": "20",
+            "guid": "574b0281-4f99-479e-acc3-e36e7d1a6ea5",
+            "defines": [
+                {
+                    "id": "inv_e11sr",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "92bdfd37-d84b-4df1-82b1-64bce22275f1"
+                },
+                {
+                    "id": "inv_e11sr_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "8da46394-c320-4d77-94af-99a899113dfa"
+                }
+            ]
+        },
+        {
+            "lineId": "21",
+            "guid": "3cc0f09b-9240-4a01-99dc-e13e890f8441",
+            "defines": [
+                {
+                    "id": "inv_crossvec",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "348eb76a-8bdf-4f19-a520-9cc954ffcaca"
+                },
+                {
+                    "id": "inv_crossvec_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "0c778faa-f734-47e2-96fe-6761294e9463"
+                }
+            ]
+        },
+        {
+            "lineId": "23",
+            "guid": "5e3cf436-27a6-42c8-b9e5-18dfa3119150",
+            "defines": [
+                {
+                    "id": "inv_fsp9",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "b183f7c8-af1b-45eb-8b97-b39ad722dd1b"
+                },
+                {
+                    "id": "inv_fsp9_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "b358286b-c685-477f-84fe-63b43c287267"
+                }
+            ]
+        },
+        {
+            "lineId": "24",
+            "guid": "8ef6abe5-6086-4cbd-93d0-639da569a32d",
+            "defines": [
+                {
+                    "id": "inv_logicer",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "9b8c010a-78fd-447a-9ca4-074d1e6657a2"
+                },
+                {
+                    "id": "inv_logicer_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "2dd9c84a-aa05-46b7-9bae-de2925bc8da4"
+                }
+            ]
+        },
+        {
+            "lineId": "25",
+            "guid": "d89865b9-86ae-412c-a72e-e34d900eb273",
+            "defines": [
+                {
+                    "id": "inv_he_grenade",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "50eb7339-9872-4c37-af78-27d68fef3cb7"
+                },
+                {
+                    "id": "inv_he_grenade_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "66a6dcb9-45a0-4b0b-ac61-710d3871694c"
+                }
+            ]
+        },
+        {
+            "lineId": "26",
+            "guid": "270911ee-d6db-4c33-8db3-a4febdf44e35",
+            "defines": [
+                {
+                    "id": "inv_flashbang",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "90493dd3-fe53-481e-b9d0-21027a0a478a"
+                },
+                {
+                    "id": "inv_flashbang_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "833c591f-ce05-4d67-b100-8cc4d4ff2622"
+                }
+            ]
+        },
+        {
+            "lineId": "30",
+            "guid": "511f4904-e949-4dd4-81db-f7d4ad9526b4",
+            "defines": [
+                {
+                    "id": "inv_com18",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "6f5183cc-6445-442f-bf8c-ac38f77731c6"
+                },
+                {
+                    "id": "inv_com18_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "7a3f9985-1a61-4398-87f0-e39b60291343"
+                }
+            ]
+        },
+        {
+            "lineId": "31",
+            "guid": "dcb25a60-e9df-4a05-ab2b-36c5847e997a",
+            "defines": [
+                {
+                    "id": "inv_scp018",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "76534fcf-72e8-422b-886b-f9a1642a370c"
+                },
+                {
+                    "id": "inv_scp018_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "ccbee3be-f8eb-4044-8f6b-adf22541601d"
+                }
+            ]
+        },
+        {
+            "lineId": "32",
+            "guid": "8d165460-c569-449f-82c7-d096d091d078",
+            "defines": [
+                {
+                    "id": "inv_scp268",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "a1aabe88-3b04-4a6a-b3d6-4350f52ce7f0"
+                },
+                {
+                    "id": "inv_scp268_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "1a8917ef-fa9e-4c12-a6d1-710cf2e117aa"
+                }
+            ]
+        },
+        {
+            "lineId": "33",
+            "guid": "45b5c067-7d09-47cd-aaa8-ee17a9d66365",
+            "defines": [
+                {
+                    "id": "inv_adrenaline",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "e5d5aaca-bd44-4510-aef5-6633afdae809"
+                },
+                {
+                    "id": "inv_adrenaline_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "d14bd9d1-cb96-410f-aa0a-f75896b7e4f9"
+                }
+            ]
+        },
+        {
+            "lineId": "34",
+            "guid": "f0565d80-43db-433c-91cd-ed5e9d5c5e44",
+            "defines": [
+                {
+                    "id": "inv_painkillers",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "e8fb3d68-7eaf-4483-8f56-90e9568f84b3"
+                },
+                {
+                    "id": "inv_painkillers_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "489a2c20-97a3-44a1-b057-e9f553c8b2ce"
+                }
+            ]
+        },
+        {
+            "lineId": "35",
+            "guid": "1305031a-d54c-4f16-b37b-acf1a40645de",
+            "defines": [
+                {
+                    "id": "inv_coin",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "ad168bfa-eb42-4ca5-bea2-ebcc617d4054"
+                },
+                {
+                    "id": "inv_coin_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "72da5071-68d3-4a44-830b-2ffac0ba9b53"
+                }
+            ]
+        },
+        {
+            "lineId": "36",
+            "guid": "f8e549f3-7b29-4dab-9bdd-45a1cc3a143a",
+            "defines": [
+                {
+                    "id": "inv_armor_light",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "24aa89a7-e44f-4385-bd21-6fb13206e0ec"
+                },
+                {
+                    "id": "inv_armor_light_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "caf76e32-1b7b-44c0-ae1e-40b83de4a759"
+                }
+            ]
+        },
+        {
+            "lineId": "37",
+            "guid": "73f7df43-c482-40e1-be29-f2dd930d1f32",
+            "defines": [
+                {
+                    "id": "inv_armor_combat",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "ba485a65-39a1-4a53-884c-713a4dd03735"
+                },
+                {
+                    "id": "inv_armor_combat_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "9b9538e3-1a0e-4257-8fb1-d2bf7a9ae725"
+                }
+            ]
+        },
+        {
+            "lineId": "38",
+            "guid": "f9dcf0d8-e48f-4e04-991d-64e093688ac9",
+            "defines": [
+                {
+                    "id": "inv_armor_heavy",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "e1860978-32c2-47eb-bd39-ef3ed364cd8b"
+                },
+                {
+                    "id": "inv_armor_heavy_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "95798a29-82e2-455b-a04b-ab4153401aa1"
+                }
+            ]
+        },
+        {
+            "lineId": "39",
+            "guid": "cadc62cb-3711-4996-bba2-a7fa703abdac",
+            "defines": [
+                {
+                    "id": "inv_revolver",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "bc78baa6-bdad-44bb-a4e1-93d8ab948d65"
+                },
+                {
+                    "id": "inv_revolver_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "58823a69-74e0-4f76-a418-deb043c0356e"
+                }
+            ]
+        },
+        {
+            "lineId": "40",
+            "guid": "12165b51-aa7f-4f91-915d-4c70a7731a2f",
+            "defines": [
+                {
+                    "id": "inv_ak",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "6026e027-19a2-49ab-a85c-d45007e8add1"
+                },
+                {
+                    "id": "inv_ak_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "f2369336-63a8-49ab-9ae6-b71b56c6b208"
+                }
+            ]
+        },
+        {
+            "lineId": "41",
+            "guid": "1fea6513-b599-4968-b8d6-f0879a5b78ac",
+            "defines": [
+                {
+                    "id": "inv_shotgun",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "d8c94171-a688-4230-a1d5-a46292cf65c1"
+                },
+                {
+                    "id": "inv_shotgun_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "0c4f0915-8f0b-4b48-b715-0b85ffbb3030"
+                }
+            ]
+        },
+        {
+            "lineId": "42",
+            "guid": "5aa1e748-44b9-45ac-9f24-32387ff3095a",
+            "defines": [
+                {
+                    "id": "inv_candybag",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "dbf52dfd-20e0-4cbc-a5cf-d1e83ffb0f39"
+                },
+                {
+                    "id": "inv_candybag_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "9d90dbf9-b0a3-4697-acd5-40338eff4c35"
+                }
+            ]
+        },
+        {
+            "lineId": "43",
+            "guid": "711931b0-27f3-431c-82fe-c716e5e5735f",
+            "defines": [
+                {
+                    "id": "inv_scp2176",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "678cf007-d6bc-443f-83ac-80c0483e9235"
+                },
+                {
+                    "id": "inv_scp2176_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "39f54b9f-7b24-4c97-9aad-b74121514201"
+                }
+            ]
+        },
+        {
+            "lineId": "44",
+            "guid": "75d1a33f-7b30-4ab0-827d-f61673fb1b75",
+            "defines": [
+                {
+                    "id": "inv_scp244a",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "20f119d0-8d2c-4b23-8161-84057bc63c0c"
+                },
+                {
+                    "id": "inv_scp244a_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "29b81824-858b-4dcb-8ae2-b479704feddb"
+                }
+            ]
+        },
+        {
+            "lineId": "45",
+            "guid": "e549bd4b-ea86-403a-be22-0d1b43d05413",
+            "defines": [
+                {
+                    "id": "inv_scp244b",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "c3641957-7692-4d75-9c33-cb776ea759ce"
+                },
+                {
+                    "id": "inv_scp244b_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "9dcc1592-558a-4b64-8f4f-ab3aed69c8fa"
+                }
+            ]
+        },
+        {
+            "lineId": "46",
+            "guid": "55a99d06-3aaa-4dc2-9890-c7f6bd8af9fb",
+            "defines": [
+                {
+                    "id": "inv_scp1853",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "2473dcff-5791-424c-907e-ab6918a9a476"
+                },
+                {
+                    "id": "inv_scp1853_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "9c4ff6c8-54b1-4c2e-bb1b-7bfdf698da9b"
+                }
+            ]
+        },
+        {
+            "lineId": "47",
+            "guid": "4b380517-29fe-4884-9abe-15bfe282950a",
+            "defines": [
+                {
+                    "id": "inv_3x_particle_disruptor",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "cef111e9-3b7f-451c-b70c-0912fa919df7"
+                },
+                {
+                    "id": "inv_3x_particle_disruptor_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "d57dfda1-71b3-4d19-be87-95a080459019"
+                }
+            ]
+        },
+        {
+            "lineId": "48",
+            "guid": "bb58f6b9-017a-49c7-a9d0-b0258c574fd0",
+            "defines": [
+                {
+                    "id": "inv_com45",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "3848b948-1f63-404b-bc5e-a727d39d72aa"
+                },
+                {
+                    "id": "inv_com45_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "f51d73ee-3eb0-46f1-a0e3-0a6d4a73d068"
+                }
+            ]
+        },
+        {
+            "lineId": "49",
+            "guid": "58551893-551a-49b1-ac8a-e0fb89d5f0dd",
+            "defines": [
+                {
+                    "id": "inv_scp1576",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "d14e55e5-3037-4553-a4cc-f6b4d21b9ec0"
+                },
+                {
+                    "id": "inv_scp1576_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "13d8b29b-a35a-4575-84b4-d4d38d13884c"
+                }
+            ]
+        },
+        {
+            "lineId": "50",
+            "guid": "4fe801bc-8cf9-4673-8631-b629d83c2673",
+            "defines": [
+                {
+                    "id": "inv_jailbird",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "c78c32ce-4b84-48b9-b531-fda3c0f0f455"
+                },
+                {
+                    "id": "inv_jailbird_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "fc0ac0f6-4c90-4c8e-88c9-86dd4ab6dc9c"
+                }
+            ]
+        },
+        {
+            "lineId": "51",
+            "guid": "cba93f59-ef38-425a-b2fc-fb2efe7ee5f9",
+            "defines": [
+                {
+                    "id": "inv_scp207_anti",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "7b14e2d0-872e-421e-b252-4a3ed380101a"
+                },
+                {
+                    "id": "inv_scp207_anti_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "86a4dba9-e980-4de5-baa4-673f87fcfc10"
+                }
+            ]
+        },
+        {
+            "lineId": "48",
+            "guid": "481c5caa-ad35-486d-84ec-5f2f874acbd2",
+            "defines": [
+                {
+                    "id": "inv_fr_mg0",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "5398ea3f-495e-4af4-a35c-601c316b30dc"
+                },
+                {
+                    "id": "inv_fr_mg0_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "7a2575be-5278-4bec-8932-9d06e6769041"
+                }
+            ]
+        },
+        {
+            "lineId": "48",
+            "guid": "f90c1cbc-5db4-47b8-a93c-59be62cba3e2",
+            "defines": [
+                {
+                    "id": "inv_a7",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "0ad07385-e9f5-437f-b983-ebf0f19018cb"
+                },
+                {
+                    "id": "inv_a7_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "0d270423-43f5-4732-8c22-0106e4ee54fe"
+                }
+            ]
+        },
+        {
+            "lineId": "49",
+            "guid": "2c31b621-e447-49a8-ba44-83a19b92be5c",
+            "defines": [
+                {
+                    "id": "inv_googles",
+                    "autoDisplayName": false,
+                    "displayName": "Googles",
+                    "guid": "04027ea9-bcc4-425e-a2d6-64eeaa910937"
+                },
+                {
+                    "id": "inv_googles_description",
+                    "autoDisplayName": false,
+                    "displayName": "Googles description",
+                    "guid": "b2266f7d-1349-4944-b7a6-5759d55ce522"
+                }
+            ]
+        }
+    ]
+}
