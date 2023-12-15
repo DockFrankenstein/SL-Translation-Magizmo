@@ -16,7 +16,7 @@ namespace Project.Editor.Translation.Defines
         {
             if (GUILayout.Button(qGUIEditorUtility.PlusIcon, EditorStyles.toolbarButton))
             {
-                window.tree.AddLine();
+                window.tree.CreateLine();
             }
         }
 

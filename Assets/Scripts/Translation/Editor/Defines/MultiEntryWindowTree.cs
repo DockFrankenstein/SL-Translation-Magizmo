@@ -149,7 +149,7 @@ namespace Project.Editor.Translation.Defines
 
                     if (GUI.Button(addDefineRect, "Add Define"))
                     {
-                        AddDefine(lineItem);
+                        CreateDefine(lineItem);
                     }
 
                     if (Event.current.type == EventType.Repaint)
@@ -195,7 +195,7 @@ namespace Project.Editor.Translation.Defines
                         .ResizeHeightToCenter(ADD_REMOVE_BUTTON_WIDTH);
 
                     if (GUI.Button(minusRect, new GUIContent(qGUIEditorUtility.MinusIcon), EditorStyles.label))
-                        RemoveLine(item);
+                        DeleteLine(item);
                     break;
             }
         }
@@ -244,35 +244,39 @@ namespace Project.Editor.Translation.Defines
                         .ResizeWidthToCenter(ADD_REMOVE_BUTTON_WIDTH);
 
                     if (GUI.Button(removeRect, new GUIContent(qGUIEditorUtility.MinusIcon), EditorStyles.label))
-                        RemoveDefine(item);
+                        DeleteDefine(item);
                     break;
             }
         }
 
-        public void AddLine()
+        public void CreateLine()
         {
             if (window.asset == null) return;
-            window.asset.lines.Add(new Line());
+            window.asset.lines.Add(new Line()
+            {
+                defines = new List<DefineField>(new DefineField[] { new DefineField() }),
+            });
+
             Reload();
         }
 
-        public void RemoveLine(LineItem line)
+        public void DeleteLine(LineItem line)
         {
             if (window.asset == null) return;
             window.asset.lines.Remove(line.line);
             Reload();
         }
 
-        public void AddDefine(LineItem line) =>
-            AddDefine(line.line);
+        public void CreateDefine(LineItem line) =>
+            DeleteDefine(line.line);
 
-        public void AddDefine(Line line)
+        public void DeleteDefine(Line line)
         {
             line.defines.Add(new DefineField());
             Reload();
         }
 
-        public void RemoveDefine(DefineItem item)
+        public void DeleteDefine(DefineItem item)
         {
             item.line.line.defines.Remove(item.define);
 

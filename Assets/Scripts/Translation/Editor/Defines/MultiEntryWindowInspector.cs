@@ -63,7 +63,7 @@ namespace Project.Editor.Translation.Defines
             EditorGUILayout.Space();
 
             if (GUILayout.Button("Add Define"))
-                window.tree.AddDefine(item);
+                window.tree.DeleteDefine(item);
         }
 
         void DefineGUI(DefineFieldContext item)

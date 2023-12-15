@@ -16,8 +16,9 @@ namespace Project.Editor.Translation.Defines
 
         public override void OnInspectorGUI()
         {
-            using (new EditorGUI.DisabledGroupScope(true))
-                base.OnInspectorGUI();
+            //For debug purposes
+            //using (new EditorGUI.DisabledGroupScope(true))
+            //    base.OnInspectorGUI();
         }
     }
 }

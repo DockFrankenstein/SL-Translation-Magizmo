@@ -1,1 +1,224 @@
-{"fileName":"NewMainMenu.txt","identificationType":0,"useSeparationCharacter":false,"separationCharacter":0,"defines":[{"lineId":"","fieldIds":[{"id":"tab_news","autoDisplayName":true,"displayName":""}]},{"lineId":"","fieldIds":[{"id":"tab_servers","autoDisplayName":true,"displayName":""}]},{"lineId":"","fieldIds":[{"id":"tab_settings","autoDisplayName":true,"displayName":""}]},{"lineId":"","fieldIds":[{"id":"tab_quit","autoDisplayName":true,"displayName":""}]},{"lineId":"","fieldIds":[{"id":"tab_opg","autoDisplayName":false,"displayName":"Tab Operational Guide"}]}]}
+{
+    "fileName": "NewMainMenu.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "7413c5bc-f2ea-405e-9dd2-fba462cbc510",
+            "defines": [
+                {
+                    "id": "menu_news",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "18e090b8-b8cb-4c32-a6a7-bc8bf45013f1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4ff8dc9f-a3c4-4df5-8079-9f16d62d1a1a",
+            "defines": [
+                {
+                    "id": "menu_servers",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "f91d6c33-1373-468e-8fb9-b11244b13390"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "52e3125f-e501-4847-8562-715711aee753",
+            "defines": [
+                {
+                    "id": "menu_quit",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "8e45925e-10ea-43a1-9d4d-c91f3b0eaf18"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5d284cf0-9c2f-44c8-b728-9aa9b5f434b1",
+            "defines": [
+                {
+                    "id": "menu_social",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "c55fa014-0563-4f38-a74e-78f2f70643f6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f235a2fc-1703-4491-9393-e518c60e8966",
+            "defines": [
+                {
+                    "id": "menu_internet",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "f10e618d-36b9-4f66-9df8-6b4c49f71f41"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c6120f57-6bd4-411e-9754-abb9fc509d02",
+            "defines": [
+                {
+                    "id": "menu_favourites",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "ce9aa6cf-e02e-417e-a9aa-359449a4dd27"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ee7c996d-3d1d-4e99-bceb-d5b4d40d7166",
+            "defines": [
+                {
+                    "id": "menu_official",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "9dbbc84e-22f0-47fa-b26d-b9a99eaad092"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5f3f2309-d0dc-4ea3-bcc5-e2b628e8eff6",
+            "defines": [
+                {
+                    "id": "server_history",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "d37dade9-fdc2-4d82-9523-c18d8d425c96"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4e6f94ea-b36a-4124-af44-1a766ef5f45c",
+            "defines": [
+                {
+                    "id": "friend_servers",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "b759a24b-5f33-46b0-9ec4-3008915c2631"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "de6bfecc-871f-44e6-b74c-f588e6523bfe",
+            "defines": [
+                {
+                    "id": "search_servers",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "b4a01a1e-62ab-4058-8029-82c7c904d04b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "90622d49-d3d6-4a17-a471-1edd38328ea3",
+            "defines": [
+                {
+                    "id": "create_server",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "dc4abfed-f583-432a-8be6-c5594b5cdecb"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a9e6e35e-9b64-4501-907d-c62106981c5d",
+            "defines": [
+                {
+                    "id": "server_rejoin",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "553e1f00-aee3-46a8-ab5a-92e1b13f7944"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "1082e82a-0410-43ff-9871-9499dc6577cb",
+            "defines": [
+                {
+                    "id": "direct_connect",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "c4446efc-4d7e-48dd-a3f7-f2386c598b83"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "13745dd5-29f1-472b-aad9-c93ef3db1471",
+            "defines": [
+                {
+                    "id": "refresh_servers",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "a4182f47-856e-4d71-8dec-a0d6d45b36d8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "265b8d0a-b200-4453-b201-512ccc73fa42",
+            "defines": [
+                {
+                    "id": "hide_empty_games",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "cc4e7ab7-9d5d-4aaa-bb81-cc46d40701f5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "07bcbe57-4185-46e1-8247-9e64a7c9ddfb",
+            "defines": [
+                {
+                    "id": "hide_full_games",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "8c9d09f9-02c5-4ec7-a155-9607a6b8c204"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "fe7cf66e-f2b7-4da5-b592-61132dae32b4",
+            "defines": [
+                {
+                    "id": "server_no_whitelist",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "a21e63e2-eb0c-4b6f-8014-28abb3c01ef9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "710bd294-aada-4069-90ee-83c79f675dd1",
+            "defines": [
+                {
+                    "id": "settings_video",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "guid": "68e04c35-66ff-45dd-9f27-e5ba775c0317"
+                }
+            ]
+        }
+    ]
+}

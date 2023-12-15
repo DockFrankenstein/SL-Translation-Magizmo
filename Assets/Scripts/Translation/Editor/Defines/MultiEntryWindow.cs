@@ -8,6 +8,8 @@ using qASIC.EditorTools;
 using qASIC;
 using qASIC.Input.Prompts;
 using UnityEditor.Callbacks;
+using qASIC.Input.Map.Internal;
+using UnityEditor.ShortcutManagement;
 
 namespace Project.Editor.Translation.Defines
 {
@@ -23,6 +25,20 @@ namespace Project.Editor.Translation.Defines
 
         internal MultiEntryWindowToolbar toolbar;
         [SerializeField] internal MultiEntryWindowInspector inspector;
+
+        #region Shortcuts
+        [Shortcut("Multi Entry File Editor/Save", typeof(MultiEntryWindow), KeyCode.S, ShortcutModifiers.Alt)]
+        private static void Sh_Save(ShortcutArguments args)
+        {
+            GetWindow().Save();
+        }
+
+        [Shortcut("Multi Entry File Editor/Create New Line", typeof(MultiEntryWindow), KeyCode.W, ShortcutModifiers.Alt)]
+        private static void Sh_NewLine(ShortcutArguments args)
+        {
+            GetWindow().tree.CreateLine();
+        }
+        #endregion
 
         [OnOpenAsset]
         private static bool OnOpenAsset(int instanceID, int line)
