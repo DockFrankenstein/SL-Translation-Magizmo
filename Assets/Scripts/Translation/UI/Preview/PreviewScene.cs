@@ -9,7 +9,7 @@ namespace Project.Translation.UI.Preview
 #if UNITY_EDITOR
         [EditorButton(nameof(AutoDetectEntries), "Populate")]
 #endif
-        public PreviewEntry[] entries;
+        public PreviewEntry[] entries = new PreviewEntry[0];
 
         /// <summary>Updates entries and other items.</summary>
         public void ReloadScene(AppFile appFile)

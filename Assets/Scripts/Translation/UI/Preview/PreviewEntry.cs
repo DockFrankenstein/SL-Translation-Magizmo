@@ -11,6 +11,11 @@ namespace Project.Translation.UI.Preview
         [HideInInspector] public TranslationManager manager;
         [HideInInspector] public HierarchyDisplay hierarchy;
 
+        private void Reset()
+        {
+            text = GetComponent<TMP_Text>();
+        }
+
         public void Select()
         {
             if (hierarchy == null) return;

@@ -24,7 +24,7 @@ namespace Project.Translation.Defines
         public string id = string.Empty;
         public bool autoDisplayName = true;
         public string displayName;
-        public string guid;
+        [GUID] public string guid;
 
         [NonSerialized] public DefinesBase definesBase;
     }
