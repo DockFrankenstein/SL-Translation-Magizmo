@@ -38,6 +38,7 @@ namespace Project.Translation.Defines
         
         public void Temp()
         {
+#if UNITY_EDITOR
             var text = JsonUtility.ToJson(this);
 
             var path = Application.dataPath.Substring(0, Application.dataPath.Length - 6) + AssetDatabase.GetAssetPath(this);
@@ -46,6 +47,7 @@ namespace Project.Translation.Defines
             FileManager.SaveFileWriter(path, text.ToString());
 
             Debug.Log(path);
+#endif
         }
 
         public override void Import(AppFile file, string txt)

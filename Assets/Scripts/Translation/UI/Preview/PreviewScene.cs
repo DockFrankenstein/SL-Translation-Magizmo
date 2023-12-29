@@ -6,7 +6,9 @@ namespace Project.Translation.UI.Preview
 {
     public class PreviewScene : MonoBehaviour
     {
+#if UNITY_EDITOR
         [EditorButton(nameof(AutoDetectEntries), "Populate")]
+#endif
         public PreviewEntry[] entries;
 
         /// <summary>Updates entries and other items.</summary>
