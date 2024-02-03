@@ -9,8 +9,8 @@ namespace Project.Translation.Defines
 
         public abstract DefineField[] GetDefines();
 
-        public abstract void Import(AppFile file, string txt);
-        public abstract string Export(AppFile file);
+        public abstract void Import(SaveFile file, string txt);
+        public abstract string Export(SaveFile file);
 
         public virtual bool Hide { get; } = false;
     }

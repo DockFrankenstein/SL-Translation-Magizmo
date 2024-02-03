@@ -1,0 +1,20 @@
+{
+    "name": "Project.GUI",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b1181113609d0ad43a27c0338145e93c",
+        "GUID:696a0953692949b40bec8730e64e1fdd",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:7c68e4c59c3b98a4dbc26af98d00f629",
+        "GUID:0a802e47a9c6d1844a6b9634af043510"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

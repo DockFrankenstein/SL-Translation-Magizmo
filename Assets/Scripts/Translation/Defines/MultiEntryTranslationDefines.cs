@@ -50,7 +50,7 @@ namespace Project.Translation.Defines
 #endif
         }
 
-        public override void Import(AppFile file, string txt)
+        public override void Import(SaveFile file, string txt)
         {
             var txtLines = txt
                     .Replace("\r\n", "\n")
@@ -63,7 +63,7 @@ namespace Project.Translation.Defines
 
                 foreach (var defineField in define.defines)
                     if (!file.Entries.ContainsKey(defineField.id))
-                        file.Entries.Add(defineField.id, new AppFile.EntryData(defineField));
+                        file.Entries.Add(defineField.id, new SaveFile.EntryData(defineField));
 
                 string line;
 
@@ -97,19 +97,19 @@ namespace Project.Translation.Defines
 
                         for (int x = 0; x < Mathf.Min(define.defines.Count, splitLine.Length); x++)
                         {
-                            file.Entries[define.defines[x].id] = new AppFile.EntryData(define.defines[x], splitLine[x]);
+                            file.Entries[define.defines[x].id] = new SaveFile.EntryData(define.defines[x], splitLine[x]);
                             ProjectDebug.LogValueImport(define.defines[x], splitLine[x]);
                         }
                         break;
                     case false:
-                        file.Entries[define.defines[0].id] = new AppFile.EntryData(define.defines[0], line);
+                        file.Entries[define.defines[0].id] = new SaveFile.EntryData(define.defines[0], line);
                         ProjectDebug.LogValueImport(define.defines[0], line);
                         break;
                 }
             }
         }
 
-        public override string Export(AppFile file)
+        public override string Export(SaveFile file)
         {
             StringBuilder txt = new StringBuilder();
             foreach (var define in lines)

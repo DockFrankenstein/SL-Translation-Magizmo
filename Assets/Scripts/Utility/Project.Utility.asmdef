@@ -1,0 +1,19 @@
+{
+    "name": "Project.Utility",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b1181113609d0ad43a27c0338145e93c",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:696a0953692949b40bec8730e64e1fdd",
+        "GUID:e11d462bb7899fb42a6a1dd254cf9eaa"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

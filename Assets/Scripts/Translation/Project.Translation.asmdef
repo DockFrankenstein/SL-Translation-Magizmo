@@ -1,0 +1,20 @@
+{
+    "name": "Project.Translation",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b1181113609d0ad43a27c0338145e93c",
+        "GUID:e11d462bb7899fb42a6a1dd254cf9eaa",
+        "GUID:696a0953692949b40bec8730e64e1fdd",
+        "GUID:0a802e47a9c6d1844a6b9634af043510",
+        "GUID:27d787f0f938bdc48b96e1ec6fb80376"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

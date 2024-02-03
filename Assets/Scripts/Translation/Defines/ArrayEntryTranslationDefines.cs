@@ -11,7 +11,7 @@ namespace Project.Translation.Defines
         [TextArea]
         public string prefix;
 
-        public override string Export(AppFile file)
+        public override string Export(SaveFile file)
         {
             if (!file.Entries.ContainsKey(defineField.id))
                 return string.Empty;
@@ -26,7 +26,7 @@ namespace Project.Translation.Defines
 
         public override DefineField[] GetDefines() => new DefineField[] { defineField };
 
-        public override void Import(AppFile file, string txt)
+        public override void Import(SaveFile file, string txt)
         {
             var txtLines = txt
                 .Replace("\r\n", "\n")
@@ -34,7 +34,7 @@ namespace Project.Translation.Defines
                 .Where(x => !x.TrimStart().StartsWith("#"));
 
             if (!file.Entries.ContainsKey(defineField.id))
-                file.Entries.Add(defineField.id, new AppFile.EntryData(defineField));
+                file.Entries.Add(defineField.id, new SaveFile.EntryData(defineField));
 
             var content = string.Join('\n', txtLines);
             file.Entries[defineField.id].content = content;

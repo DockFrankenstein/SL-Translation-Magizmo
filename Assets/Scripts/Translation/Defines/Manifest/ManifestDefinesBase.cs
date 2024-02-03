@@ -27,7 +27,7 @@ namespace Project.Translation.Defines.Manifest
             return _definesCache;
         }
 
-        public override void Import(AppFile file, string txt)
+        public override void Import(SaveFile file, string txt)
         {
             var manifestFile = JsonUtility.FromJson<T>(txt);
             var fields = typeof(T).GetFields();
@@ -41,7 +41,7 @@ namespace Project.Translation.Defines.Manifest
                     continue;
 
                 if (!file.Entries.ContainsKey(attr.Name))
-                    file.Entries.Add(attr.Name, new AppFile.EntryData(attr.Name));
+                    file.Entries.Add(attr.Name, new SaveFile.EntryData(attr.Name));
 
                 object value = field.GetValue(manifestFile);
 
@@ -63,7 +63,7 @@ namespace Project.Translation.Defines.Manifest
             }
         }
 
-        public override string Export(AppFile file)
+        public override string Export(SaveFile file)
         {
             T holder = new T();
             var fields = typeof(T).GetFields();

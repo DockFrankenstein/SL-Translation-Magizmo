@@ -14,7 +14,7 @@ namespace Project.Translation
     {
         public TranslationVersion[] versions;
 
-        public AppFile file = null;
+        public SaveFile file = null;
         public string filePath = null;
 
         [Label("Shortcuts")]
@@ -39,7 +39,7 @@ namespace Project.Translation
             foreach (var version in versions)
                 version.Initialize();
 
-            file = AppFile.Create(CurrentVersion);
+            file = SaveFile.Create(CurrentVersion);
         }
 
         private void Update()
@@ -67,7 +67,7 @@ namespace Project.Translation
 
             if (string.IsNullOrWhiteSpace(filePath))
             {
-                var path = StandaloneFileBrowser.SaveFilePanel("Save As", "", "translation", AppFile.FILE_EXTENSION);
+                var path = StandaloneFileBrowser.SaveFilePanel("Save As", "", "translation", SaveFile.FILE_EXTENSION);
 
                 if (string.IsNullOrWhiteSpace(path))
                     return;
@@ -81,7 +81,7 @@ namespace Project.Translation
 
         public void Load()
         {
-            var paths = StandaloneFileBrowser.OpenFilePanel("Load", "", AppFile.FILE_EXTENSION, false);
+            var paths = StandaloneFileBrowser.OpenFilePanel("Load", "", SaveFile.FILE_EXTENSION, false);
 
             if (paths.Length == 0)
                 return;

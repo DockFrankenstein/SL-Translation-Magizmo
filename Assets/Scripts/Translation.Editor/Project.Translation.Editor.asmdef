@@ -1,0 +1,20 @@
+{
+    "name": "Project.Translation.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:7c68e4c59c3b98a4dbc26af98d00f629",
+        "GUID:b1181113609d0ad43a27c0338145e93c",
+        "GUID:304acd6f22e2f6847bb5b6a0774ee2db"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
