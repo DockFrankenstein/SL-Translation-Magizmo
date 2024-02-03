@@ -1,5 +1,5 @@
 ﻿using Project.Translation.Data;
-using System;
+using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
@@ -13,7 +13,9 @@ namespace Project.Translation.UI.Preview
 #if UNITY_EDITOR
         [EditorButton(nameof(PopulateScenes))]
 #endif
-        public PreviewScene[] scenes = new PreviewScene[0];
+        public List<PreviewScene> scenes = new List<PreviewScene>();
+
+        public PreviewScene CurrentScene { get; private set; }
 
         public void ReloadActiveScenes(AppFile appFile)
         {
@@ -34,7 +36,7 @@ namespace Project.Translation.UI.Preview
 
             scenes = scenes
                 .Concat(detectedEntries)
-                .ToArray();
+                .ToList();
 
             UnityEditor.EditorUtility.SetDirty(this);
         }
@@ -44,12 +46,25 @@ namespace Project.Translation.UI.Preview
         {
             foreach (var scene in scenes)
             {
+                scene.gameObject.SetActive(false);
                 foreach (var entry in scene.entries)
                 {
                     entry.manager = manager;
                     entry.hierarchy = hierarchy;
                 }
             }
+
+            if (scenes.Count > 0)
+                SelectScene(scenes[0]);
+        }
+
+        public void SelectScene(PreviewScene scene)
+        {
+            if (CurrentScene != null)
+                CurrentScene.gameObject.SetActive(false);
+
+            CurrentScene = scene;
+            scene.gameObject.SetActive(true);
         }
     }
 }
