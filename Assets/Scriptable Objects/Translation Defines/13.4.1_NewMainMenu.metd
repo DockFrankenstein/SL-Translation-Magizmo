@@ -10,7 +10,7 @@
             "defines": [
                 {
                     "id": "menu_news",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "18e090b8-b8cb-4c32-a6a7-bc8bf45013f1"
@@ -23,7 +23,7 @@
             "defines": [
                 {
                     "id": "menu_servers",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "f91d6c33-1373-468e-8fb9-b11244b13390"
@@ -36,7 +36,7 @@
             "defines": [
                 {
                     "id": "settings",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "8e45925e-10ea-43a1-9d4d-c91f3b0eaf18"
@@ -49,7 +49,7 @@
             "defines": [
                 {
                     "id": "menu_quit",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "c55fa014-0563-4f38-a74e-78f2f70643f6"
@@ -62,7 +62,7 @@
             "defines": [
                 {
                     "id": "menu_social_media",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "f10e618d-36b9-4f66-9df8-6b4c49f71f41"
@@ -75,7 +75,7 @@
             "defines": [
                 {
                     "id": "menu_server_browser_internet",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "ce9aa6cf-e02e-417e-a9aa-359449a4dd27"
@@ -88,7 +88,7 @@
             "defines": [
                 {
                     "id": "menu_server_browser_favourites",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "9dbbc84e-22f0-47fa-b26d-b9a99eaad092"
@@ -101,7 +101,7 @@
             "defines": [
                 {
                     "id": "menu_server_browser_official",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "d37dade9-fdc2-4d82-9523-c18d8d425c96"
@@ -114,7 +114,7 @@
             "defines": [
                 {
                     "id": "menu_server_browser_history",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "b759a24b-5f33-46b0-9ec4-3008915c2631"
@@ -127,7 +127,7 @@
             "defines": [
                 {
                     "id": "menu_server_browser_friends",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "b4a01a1e-62ab-4058-8029-82c7c904d04b"
@@ -140,7 +140,7 @@
             "defines": [
                 {
                     "id": "menu_server_browser_search",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "dc4abfed-f583-432a-8be6-c5594b5cdecb"
@@ -153,7 +153,7 @@
             "defines": [
                 {
                     "id": "menu_server_create",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "553e1f00-aee3-46a8-ab5a-92e1b13f7944"
@@ -166,7 +166,7 @@
             "defines": [
                 {
                     "id": "menu_server_rejoin",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "c4446efc-4d7e-48dd-a3f7-f2386c598b83"
@@ -179,7 +179,7 @@
             "defines": [
                 {
                     "id": "menu_server_direct_connect",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "a4182f47-856e-4d71-8dec-a0d6d45b36d8"
@@ -192,7 +192,7 @@
             "defines": [
                 {
                     "id": "menu_server_refresh",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "cc4e7ab7-9d5d-4aaa-bb81-cc46d40701f5"
@@ -205,7 +205,7 @@
             "defines": [
                 {
                     "id": "menu_server_hide_empty",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "8c9d09f9-02c5-4ec7-a155-9607a6b8c204"
@@ -218,7 +218,7 @@
             "defines": [
                 {
                     "id": "menu_server_hide_full",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "a21e63e2-eb0c-4b6f-8014-28abb3c01ef9"
@@ -231,7 +231,7 @@
             "defines": [
                 {
                     "id": "menu_server_no_whitelist",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "Menu Server No Whitelist",
                     "addToList": true,
                     "guid": "68e04c35-66ff-45dd-9f27-e5ba775c0317"
@@ -816,7 +816,7 @@
             "defines": [
                 {
                     "id": "menu_quit_confirm",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "da06500b-3a0e-4b6c-a51e-468ecec20965"
@@ -1141,7 +1141,7 @@
             "defines": [
                 {
                     "id": "menu_credits_thanks",
-                    "autoDisplayName": false,
+                    "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "b4efa461-07d7-4295-9419-9d82b71365d7"

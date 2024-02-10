@@ -28,6 +28,8 @@ namespace Project.Translation.Defines
                 if (_definesDictionary == null)
                     _definesDictionary = defines
                         .SelectMany(x => x.GetDefines())
+                        .GroupBy(x => x.id)
+                        .Select(x => x.First())
                         .ToDictionary(x => x.id);
 
                 return _definesDictionary;

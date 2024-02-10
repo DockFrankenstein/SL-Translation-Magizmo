@@ -41,7 +41,8 @@ namespace Project.Translation.Data
                 var defines = translation.GetDefines();
 
                 foreach (var item in defines)
-                    file.Entries.Add(item.id, new EntryData(item));
+                    if (!file.Entries.ContainsKey(item.id))
+                        file.Entries.Add(item.id, new EntryData(item));
             }
 
             return file;
