@@ -48,6 +48,10 @@ namespace Project.Editor.Translation.Defines
             var unmodified = qASIC.Files.FileManager.LoadFileWriter(path);
             var current = JsonUtility.ToJson(assetTarget, true);
 
+            var unmodifiedAsset = CreateInstance<MultiEntryTranslationDefines>();
+            JsonUtility.FromJsonOverwrite(unmodified, unmodifiedAsset);
+            unmodified = JsonUtility.ToJson(unmodifiedAsset, true);
+
             return unmodified != current;
         }
 
