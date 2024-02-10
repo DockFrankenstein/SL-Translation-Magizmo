@@ -1,0 +1,242 @@
+{
+    "fileName": "AttachmentEditors.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "c947a196-ffa2-47b3-8bc8-3fb7f2bffeee",
+            "defines": [
+                {
+                    "id": "workstation_custom",
+                    "autoDisplayName": false,
+                    "displayName": "Custom",
+                    "addToList": true,
+                    "guid": "2e1874d2-c817-418d-8dd1-d9cd0d83f46f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b052a1dc-2c86-486e-ab17-fcd84bd626a3",
+            "defines": [
+                {
+                    "id": "workstation_preset_label",
+                    "autoDisplayName": false,
+                    "displayName": "Preset Label",
+                    "addToList": true,
+                    "guid": "befd7848-e713-4b10-a187-7c39e8e2ff35"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0c3d8f2f-a60b-43f9-b955-04b24ad8811b",
+            "defines": [
+                {
+                    "id": "workstation_save",
+                    "autoDisplayName": false,
+                    "displayName": "Save",
+                    "addToList": true,
+                    "guid": "71ebdc5c-df8d-4f5b-b065-dc5a00ad0857"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "3dda8036-0e0f-47dc-955f-f41b024fe34b",
+            "defines": [
+                {
+                    "id": "workstation_clear_attachments",
+                    "autoDisplayName": false,
+                    "displayName": "Clear Attachments",
+                    "addToList": true,
+                    "guid": "7aadf482-dc6b-472f-aba4-a90c444d6f80"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "85f1b5e2-85ac-4481-a1e2-3c48fec48434",
+            "defines": [
+                {
+                    "id": "workstation_default",
+                    "autoDisplayName": false,
+                    "displayName": "Default",
+                    "addToList": true,
+                    "guid": "932b7819-33ed-4b18-b63c-912bbb67ec92"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "939f021e-79e5-44dd-9e34-f63e3d9ddb8b",
+            "defines": [
+                {
+                    "id": "workstation_presets_header",
+                    "autoDisplayName": false,
+                    "displayName": "Presets Header",
+                    "addToList": true,
+                    "guid": "13856db2-f552-40ee-aee2-68e10919e375"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5b4013b4-9826-4d24-97db-e0307daacfbb",
+            "defines": [
+                {
+                    "id": "workstation_status_offline",
+                    "autoDisplayName": false,
+                    "displayName": "Offline Status",
+                    "addToList": true,
+                    "guid": "2811d813-30cf-4cc6-8ff6-8fd16817bdfb"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5dfa519a-ff3b-4cac-8fed-3542bef6249d",
+            "defines": [
+                {
+                    "id": "workstation_description",
+                    "autoDisplayName": false,
+                    "displayName": "Description",
+                    "addToList": true,
+                    "guid": "dd8c3c4b-fcfd-4697-ae3d-744a091b97cd"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "3ae27ca1-b57e-47c0-95d5-323307c634a5",
+            "defines": [
+                {
+                    "id": "workstation_welcome",
+                    "autoDisplayName": false,
+                    "displayName": "Welcome Message",
+                    "addToList": true,
+                    "guid": "924f0e32-1bc8-4a4e-8dc2-2cdef8616a96"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "47871752-f70a-4229-b9ea-b6427e1d3ace",
+            "defines": [
+                {
+                    "id": "workstation_status_booting",
+                    "autoDisplayName": false,
+                    "displayName": "Booting Status",
+                    "addToList": true,
+                    "guid": "ed806839-4597-47c7-8005-f96686f75947"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "dd883a58-dc17-4bcd-bdbe-ccea0eebba96",
+            "defines": [
+                {
+                    "id": "workstation_status_ready",
+                    "autoDisplayName": false,
+                    "displayName": "Ready Statis",
+                    "addToList": true,
+                    "guid": "9d14d6f8-8037-4564-92c4-95fafcc1f64a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4df87ce3-afa7-48c5-82cf-251b085c33b9",
+            "defines": [
+                {
+                    "id": "workstation_no_weapon_warning",
+                    "autoDisplayName": false,
+                    "displayName": "No Weapon Warning",
+                    "addToList": true,
+                    "guid": "ed19ad7e-4763-497b-be60-426885afea76"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "01c0183f-8122-4142-a5a3-6f96dbaf316a",
+            "defines": [
+                {
+                    "id": "workstation_status_power_down",
+                    "autoDisplayName": false,
+                    "displayName": "Powering Down Status",
+                    "addToList": true,
+                    "guid": "fd234a51-dcfc-4dbc-b366-a5cf251744a6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e148f792-f6d8-42a0-9977-ebb1783b2aab",
+            "defines": [
+                {
+                    "id": "workstation_status_shutting_down",
+                    "autoDisplayName": false,
+                    "displayName": "Shutting Down Status",
+                    "addToList": true,
+                    "guid": "c98be535-49fd-45ab-b722-d6307c89d3c9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4ed3e7e9-ad98-452b-a87b-e030a318e918",
+            "defines": [
+                {
+                    "id": "workstation_summary_show",
+                    "autoDisplayName": false,
+                    "displayName": "Show Summary",
+                    "addToList": true,
+                    "guid": "5dfafedf-211a-4234-921e-3354f8656551"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "75be8fd1-5651-49ea-8129-c478d1446baf",
+            "defines": [
+                {
+                    "id": "workstation_summary_close",
+                    "autoDisplayName": false,
+                    "displayName": "Close Summary",
+                    "addToList": true,
+                    "guid": "198936ad-129a-47dc-bcc2-4465e47d6227"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "278584aa-1681-4ac0-990b-dc846c04f202",
+            "defines": [
+                {
+                    "id": "workstation_attachment_name",
+                    "autoDisplayName": false,
+                    "displayName": "Attachment Name",
+                    "addToList": true,
+                    "guid": "3703239a-6b7d-4291-9c36-3f5b25944db4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d511b0f8-1947-4289-bab4-02b6e8d62911",
+            "defines": [
+                {
+                    "id": "workstation_spectator_prompt",
+                    "autoDisplayName": false,
+                    "displayName": "Attachment Prompt",
+                    "addToList": true,
+                    "guid": "1567c77f-99b1-46f8-abcb-34b22425a3cc"
+                }
+            ]
+        }
+    ]
+}

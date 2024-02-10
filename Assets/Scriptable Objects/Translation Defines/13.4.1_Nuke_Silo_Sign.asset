@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b821d769d786ba4a91dae795c3689f1, type: 3}
-  m_Name: 13.1_Nuke
+  m_Name: 13.4.1_Nuke_Silo_Sign
   m_EditorClassIdentifier: 
-  fileName: Nuke.txt
+  fileName: Nuke_Silo_Sign.txt
   defineField:
     id: nuke_sign
     autoDisplayName: 1
     displayName: 
+    addToList: 1
     guid: 264510fc-8cbb-4805-8011-434f78cf6546
   prefix: "#INFO FOR TRANSLATORS: In this file you can use as many lines as you want,
     all of them will be displayed on the display above the door.\r"

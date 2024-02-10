@@ -1,0 +1,450 @@
+{
+    "fileName": "DeathReasons.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "cc10643b-bcc5-4a7b-9774-761383761280",
+            "defines": [
+                {
+                    "id": "death_body",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "9f34c810-7818-44f9-9593-223fafe5dee7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f5384866-e9e8-4265-87a4-7f1914e442aa",
+            "defines": [
+                {
+                    "id": "death_body_recontained",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "a555c6a4-fb9f-4106-8ba9-9fbfa7c17d6d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "cdbaa67e-522c-4308-8db8-ab1bd534ae9b",
+            "defines": [
+                {
+                    "id": "death_body_warhead",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "cda7ea3a-2811-4074-a6d1-9ed64a074410"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "953a83e6-ef4b-48a3-93bc-db6215972c35",
+            "defines": [
+                {
+                    "id": "death_body_049",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8c24049e-324f-4723-8d1d-e6e4bfba2e31"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9a6abf4a-83ef-4409-8a8d-bfed341769d5",
+            "defines": [
+                {
+                    "id": "death_body_unknown",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "07f8a5dc-123b-4714-9c3d-359507327512"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "212448f3-4a3e-4870-b3ad-5e183387bb16",
+            "defines": [
+                {
+                    "id": "death_body_electricity",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b03539c2-6eb6-4213-b1e0-773f0c1bb3c1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b5a0fff1-e72c-47b0-9ae1-975852c4f7bb",
+            "defines": [
+                {
+                    "id": "death_body_asphyxia",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "708ccefe-c963-47f6-98fe-b64c361dcb52"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9a1b51d2-7382-41b9-b32f-6df5181eecf3",
+            "defines": [
+                {
+                    "id": "death_body_deep_wounds",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b0c556a6-2916-446b-8b41-c3e3b5202f6e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "fb366287-8745-4c02-990e-8311ab26e4a6",
+            "defines": [
+                {
+                    "id": "death_screen_bled_out",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4d488204-3fde-4f9c-952b-6c33f9ea2eca"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ff674a57-87a6-4475-ad3f-e8052106ca9b",
+            "defines": [
+                {
+                    "id": "death_body_fall",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7289103e-1508-4496-93df-482e7a00a1a9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b6e40ef7-9629-460f-bacc-ba868f44cd8c",
+            "defines": [
+                {
+                    "id": "death_screen_fall",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "a49a3ef8-b0f0-4254-995a-52af9de42d1e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "27b9dd23-e7dd-4e95-9b51-e8916ca322d8",
+            "defines": [
+                {
+                    "id": "death_body_106",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "85a18cda-d1de-4021-8b92-f1d4b2302c74"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c9b80333-e5a7-4069-9614-e9dfb484560e",
+            "defines": [
+                {
+                    "id": "death_body_decontamination",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "44a3c6c7-dc2e-4b78-9220-97c141072a42"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "415f080d-9817-4d3a-b8c1-d35951876633",
+            "defines": [
+                {
+                    "id": "death_body_poison",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6a881a21-ffeb-4cbd-90e3-3f7839e610a8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9cddcc64-2b26-49d9-8cc0-967c84ce254c",
+            "defines": [
+                {
+                    "id": "death_screen_207_mix",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f02c4087-7331-4f73-941e-81887abcb4d2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "43301e09-5fb2-4a50-b834-e6ba8a5351de",
+            "defines": [
+                {
+                    "id": "death_body_207",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8e12e0a1-eff1-49d5-ad56-452687bf9581"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a7ef90e3-6796-4ffe-a751-df9969d9561e",
+            "defines": [
+                {
+                    "id": "death_screen_207",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "77280373-7ea6-4566-a032-cfbfca4dad5a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "fa1bea1c-5938-42e6-9a68-655dbcfb262d",
+            "defines": [
+                {
+                    "id": "death_body_330",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "bc2e1ab2-997c-4b71-a821-cbd61986c3d7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d3ddb636-41ef-412c-af64-424573e86695",
+            "defines": [
+                {
+                    "id": "death_body_tesla",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3eb25a6c-3112-4c66-bf89-d5851ca1e4da"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "740c8325-1779-4135-b31f-80020889ca13",
+            "defines": [
+                {
+                    "id": "death_body_explosion",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e7c10f11-2ec0-490a-8635-e8c44e2a7ec6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ab052a2f-a588-4786-9ffb-d6b6d8ec8d63",
+            "defines": [
+                {
+                    "id": "death_screen_explosion",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "9ebf2839-e169-4bda-bd9d-213dbd9e63a4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b287d598-7932-4231-b58b-ccd89f51687c",
+            "defines": [
+                {
+                    "id": "death_body_096",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d6e92005-2080-40b2-8855-8b9bafa372aa"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9647b08c-027c-4694-8130-7ac86dbbb35f",
+            "defines": [
+                {
+                    "id": "death_body_173",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "666056be-f45f-4f3d-bb68-0ab3b2ffc6a0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "126625e9-85ed-4c71-86ae-c240b1992be7",
+            "defines": [
+                {
+                    "id": "death_body_939",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ca64c3d3-1252-4571-aa6c-d793be6d4cf4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b6bdfb9d-5248-455a-b66f-9fb558515864",
+            "defines": [
+                {
+                    "id": "death_body_049_2",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "90469e16-e61c-403d-89c4-de5b4658b61f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4c2b9abf-5041-4373-a8c6-8047f1cbab0a",
+            "defines": [
+                {
+                    "id": "death_body_bullet",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "2fb0f671-4325-4b16-ac73-5953c57c9838"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "871b2321-6e4d-48bc-b256-30087c18b553",
+            "defines": [
+                {
+                    "id": "death_body_018",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f2067d5e-fc53-47b5-88b5-2d31967d817e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5a51e610-071d-4763-96e5-b0fb10b5c976",
+            "defines": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "a48246d6-6f7e-41f6-82c8-339bb8b26fad"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2d025315-b882-459a-bc34-f7655d6ee86a",
+            "defines": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "67de5c91-cb33-4b38-908d-d729afbba40f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d25d96bc-e9da-4438-8a08-bc405281a6b2",
+            "defines": [
+                {
+                    "id": "death_screen_ff",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "58b28d06-13e0-4846-afdd-8bfa55b57730"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "236c4152-c62c-4036-ae89-6aec62b21972",
+            "defines": [
+                {
+                    "id": "death_body_244",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "99b308d7-16bb-4bc7-a783-0de0a5e96332"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "fae214de-e2f7-4810-b502-295c0007372b",
+            "defines": [
+                {
+                    "id": "death_screen_244",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "9199e35e-4807-4861-b39f-e8c6fbd741ea"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ce20b889-eb13-428b-9eb1-f0c0b09bba4f",
+            "defines": [
+                {
+                    "id": "death_body_939",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "a5977536-5ae1-4ef5-9f7f-07a38773c668"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f6db5a13-7eab-4953-8f7d-78b18338b72f",
+            "defines": [
+                {
+                    "id": "death_screen_marshmellow",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7cab67e9-6032-407f-ae20-ec66285f84e4"
+                }
+            ]
+        }
+    ]
+}

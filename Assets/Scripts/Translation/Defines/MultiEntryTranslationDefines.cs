@@ -7,6 +7,7 @@ using System.Text;
 using UnityEditor;
 using qASIC.Files;
 using UnityEngine.Serialization;
+using Codice.Client.Common;
 
 namespace Project.Translation.Defines
 {
@@ -90,7 +91,7 @@ namespace Project.Translation.Defines
                         break;
                 }
 
-                switch (useSeparationCharacter)
+                switch (useSeparationCharacter && define.defines.Count > 1)
                 {
                     case true:
                         var splitLine = line.Split(separationCharacter);
@@ -138,6 +139,39 @@ namespace Project.Translation.Defines
             return txt.ToString();
         }
 
+        public override string ExportDebug()
+        {
+            StringBuilder txt = new StringBuilder();
+
+            for (int i = 0; i < lines.Count; i++)
+            {
+                var entriesInLine = useSeparationCharacter ? lines[i].defines.Count : 1;
+
+                if (identificationType == IdentificationType.FirstItem)
+                {
+                    txt.Append($"{lines[i].lineId}{separationCharacter}");
+                }
+
+                for (int x = 0; x < entriesInLine; x++)
+                {
+                    if (entriesInLine == 1)
+                    {
+                        txt.Append($"{i+1}]{lines[i].defines[x].id}");
+                        continue;
+                    }
+
+                    txt.Append($"{i+1}.{x}]{lines[i].defines[x].id}");
+
+                    if (x < entriesInLine)
+                        txt.Append(separationCharacter);
+                }
+
+                txt.Append("\n");
+            }
+
+            return txt.ToString();
+        }
+
         [System.Serializable]
         public class Line
         {
@@ -150,6 +184,23 @@ namespace Project.Translation.Defines
             public string guid;
             [FormerlySerializedAs("fieldIds")]
             public List<DefineField> defines = new List<DefineField>();
+
+            public Line Duplicate(bool duplicateDefines = true)
+            {
+                var lines = new Line()
+                {
+                    lineId = lineId,
+                    defines = defines
+                        .Select(x => x.Duplicate())
+                        .ToList(),
+                };
+
+                lines.defines = duplicateDefines ? 
+                    defines.Select(x => x.Duplicate()).ToList() : 
+                    new List<DefineField>(defines);
+
+                return lines;
+            }
         }
     }
 }

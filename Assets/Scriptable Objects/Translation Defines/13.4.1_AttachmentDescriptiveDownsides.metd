@@ -1,0 +1,21 @@
+{
+    "fileName": "AttachmentDescriptiveDownsides.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "c471af62-f472-4841-85a0-a7d93b8a72b6",
+            "defines": [
+                {
+                    "id": "gun_perks_laser_visible",
+                    "autoDisplayName": false,
+                    "displayName": "Laser Visible Perk",
+                    "addToList": true,
+                    "guid": "19e856d6-1fed-4049-bc43-c788965df5f5"
+                }
+            ]
+        }
+    ]
+}

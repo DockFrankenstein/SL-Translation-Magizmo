@@ -1,0 +1,372 @@
+{
+    "fileName": "Voicechat.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "d7731ab9-85b4-4a08-bb71-b260cb909418",
+            "defines": [
+                {
+                    "id": "voicechat_indicator_muted_admin",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "544835df-499f-4398-b017-90316ca54605"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f35c6c83-232d-457e-8d2a-6c0c122971fd",
+            "defines": [
+                {
+                    "id": "voicechat_indicator_muted_global",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f4ad7843-f0a8-41d0-8419-6bf0dd2ddc9c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "adfc0aba-3d1f-40f8-a15a-038c6dea8f82",
+            "defines": [
+                {
+                    "id": "voicechat_indicator_muted_unauthenticated",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8c988326-c549-4dfe-ab42-aebb435d1d7f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "960ff7a4-27a2-40e9-a47e-47bf7bc95142",
+            "defines": [
+                {
+                    "id": "voicechat_indicator_muted_privacy",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "11f0010a-8b56-4849-817e-3cab8270d655"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7097e3d9-94e7-43c2-aa54-da13636f32c2",
+            "defines": [
+                {
+                    "id": "voicechat_indicator_muted_privacy_header",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d73f912f-5d8c-4eb3-9d73-e505de687473"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d09a761b-95a5-430e-9c8d-d9d5d0ef3c0a",
+            "defines": [
+                {
+                    "id": "settings_voicechat_privacy",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "cccefcd3-6292-492c-83a2-14669b083fe3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d9c6d6c4-d4b1-4066-a1f2-4b35c602f78c",
+            "defines": [
+                {
+                    "id": "settings_voicechat_privacy_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "eeaa64e2-bc76-4a7a-ba45-0430b527b0ae"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4e5101b8-52b4-498a-abe2-7a9a78747924",
+            "defines": [
+                {
+                    "id": "voicechat_prompt_privacy_reject_all",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e3e5f672-34dc-496a-9f2b-362ada3b783b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "36a06905-6abc-4c9d-b155-28ac9c1290dc",
+            "defines": [
+                {
+                    "id": "voicechat_prompt_privacy_personalize",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5b318a09-95ad-4ad0-9af6-8f0261680085"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7687cab5-2c1f-44f7-90e5-6010cb54ceff",
+            "defines": [
+                {
+                    "id": "voicechat_prompt_privacy_accept_all",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4c2a3331-d6fe-4ae3-92c5-1cb04a96623a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f714bc17-a075-4a14-9fac-90e92263c15f",
+            "defines": [
+                {
+                    "id": "settings_voicechat_privacy_accept",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "9a4e916e-5862-4701-8b63-b36640740b71"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c208ec64-0c9a-4539-b485-7b4ac98b24b9",
+            "defines": [
+                {
+                    "id": "settings_voicechat_privacy_deny",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "71d5e2dd-b49c-4602-9286-58944d913826"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b9a876bb-438a-4ce3-a214-3619edef4f8b",
+            "defines": [
+                {
+                    "id": "settings_voicechat_privacy_capture",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4901ee66-1f34-4191-9f7e-5e950a517051"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "77356f02-15d6-46d6-81cd-816943dfa536",
+            "defines": [
+                {
+                    "id": "settings_voicechat_privacy_capture_info",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "87c7a24c-a769-480e-bbe8-d2795dbf0d50"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c2ab302e-6ab9-4333-ad56-3b4561b7bd96",
+            "defines": [
+                {
+                    "id": "settings_voicechat_privacy_recording",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "9caa813b-d47f-4415-98d6-7652c7066cb0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e7c4620a-ef4b-4f06-8ad6-6cff91c4b50d",
+            "defines": [
+                {
+                    "id": "settings_voicechat_privacy_recording_info",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "83aa2384-3dbd-479a-bf4c-fd59bba2aa53"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "bde02610-b094-4e4b-a9a6-302cb3184c2f",
+            "defines": [
+                {
+                    "id": "settings_voicechat_privacy_apply",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "883f9084-0956-4729-b469-a794f44f49b7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b29220ed-931e-4c37-be7b-60be4637acd8",
+            "defines": [
+                {
+                    "id": "voicechat_prompt_privacy_return",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e9e5eecc-72ae-4837-98be-7f25a272dfa6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "38d7a255-f299-49e1-abc3-043ec760909d",
+            "defines": [
+                {
+                    "id": "voicechat_indicator_muted_privacy_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "164c99f5-6153-452b-bf41-afe34bae78cf"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "703b3ad0-e8d3-4991-8919-f2c473f03432",
+            "defines": [
+                {
+                    "id": "voicechat_mute_alive",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "58d1334b-944e-4de0-b1cb-98ef30746b48"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "47d2d435-3e95-452c-bab7-edf2459006b6",
+            "defines": [
+                {
+                    "id": "voicechat_mute_spectators",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "2cc3c1e4-aa06-4722-a9cc-6c741603b97b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9d09d5e9-e179-474a-841a-b1779f670dde",
+            "defines": [
+                {
+                    "id": "voicechat_mute_pre_game",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f4798c38-3249-47be-984c-81d0fc10898f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "76ed3a81-4d9e-4357-9038-815a7d540c6f",
+            "defines": [
+                {
+                    "id": "settings_voicechat_mute_pre_game",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "9245f62f-a200-4790-9e79-d2e18b4a9c4b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "df32e782-6bed-4b0c-a394-6af309f871a8",
+            "defines": [
+                {
+                    "id": "settings_voicechat_mute_summary",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "73e7e0ac-a764-4a9f-97b7-9f607024f1b0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7541358e-729e-4a76-b038-fa72cb8da18f",
+            "defines": [
+                {
+                    "id": "settings_voicechat_mute_spectator",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b349afe2-8a22-40ae-8f89-a40eb5658d56"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9a24702e-bfb5-4d14-aad1-ce83c06ba22a",
+            "defines": [
+                {
+                    "id": "settings_voicechat_mute_alive_while_spectating",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "82568b5a-a647-44cf-9875-22dd34c5da9e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5b927b7f-66ff-428a-a8a4-744c209ee10e",
+            "defines": [
+                {
+                    "id": "settings_voicechat_mute_muted",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "804f92c6-5c1a-458e-a0c3-4e11b9f74161"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2f13c50a-d022-4892-85ee-73b285d937f5",
+            "defines": [
+                {
+                    "id": "settings_voicechat_mute_unmuted",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ef4f98ce-41d7-47a7-a543-25ec46521d29"
+                }
+            ]
+        }
+    ]
+}

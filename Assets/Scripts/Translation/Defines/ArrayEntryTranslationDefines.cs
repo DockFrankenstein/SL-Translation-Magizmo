@@ -24,6 +24,11 @@ namespace Project.Translation.Defines
             return txt;
         }
 
+        public override string ExportDebug()
+        {
+            return defineField.id;
+        }
+
         public override DefineField[] GetDefines() => new DefineField[] { defineField };
 
         public override void Import(SaveFile file, string txt)

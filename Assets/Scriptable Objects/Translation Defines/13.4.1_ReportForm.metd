@@ -1,0 +1,99 @@
+{
+    "fileName": "ReportForm.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "10761db7-e3ca-401c-aa36-eecdd5c6a400",
+            "defines": [
+                {
+                    "id": "report_header",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ae653ffd-f393-4a91-926b-43f84334dcd8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d5f28015-fbc1-4d85-8387-c25f0990fc7f",
+            "defines": [
+                {
+                    "id": "report_details",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ff18cc5a-22c8-4096-80b2-f4b60de959c4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e5ecfa54-bc80-4d60-b0cd-9b2f0220884c",
+            "defines": [
+                {
+                    "id": "report_cancel",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3bcb19f6-f1c9-45db-ab83-f8c16f342b5a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b7d6e1ec-6d53-4851-adb5-c7591dca051a",
+            "defines": [
+                {
+                    "id": "report_confirm_server",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "efe7e714-6d5d-40dc-99e9-ab058d81468d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "24bc9d64-6b42-4fe4-afcc-6b4e94d31c37",
+            "defines": [
+                {
+                    "id": "report_confirm_cheating",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0851bad1-9f06-46d4-83db-85183b653a83"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ff042589-8ea2-41a1-bab4-dac634571648",
+            "defines": [
+                {
+                    "id": "report_reporting",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "13092f40-fe50-46a6-806d-a50de41b7001"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5c745c8d-4e50-42a3-9519-0eb41b749d6b",
+            "defines": [
+                {
+                    "id": "report_wait",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "483e0d20-76c6-4c4a-9d77-cef271f10d47"
+                }
+            ]
+        }
+    ]
+}

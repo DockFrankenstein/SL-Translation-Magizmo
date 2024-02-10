@@ -1,0 +1,1087 @@
+{
+    "fileName": "Badges.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "d134438a-e84a-424f-9c59-ae5f4ba5a754",
+            "defines": [
+                {
+                    "id": "northwood_chief_executive_officer",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Chief Executive Officer",
+                    "addToList": true,
+                    "guid": "04db15f6-189f-4188-b072-625912c7f39c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f47c8ee2-663c-4d20-bae4-528690b08ba6",
+            "defines": [
+                {
+                    "id": "northwood_chief_information_officer",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Chief Information Officer",
+                    "addToList": true,
+                    "guid": "14c8098b-885d-4ca7-8133-fd5c76932e30"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c44fd927-b1b6-4f6d-b1fe-ed1126a13fa3",
+            "defines": [
+                {
+                    "id": "northwood_chief_operations_officer",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Chief Operations Officer",
+                    "addToList": true,
+                    "guid": "9d9a2d14-1f39-46c5-aacb-46b64cf19ac0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "1a4d4c97-3368-4647-9853-b734784c1e9e",
+            "defines": [
+                {
+                    "id": "northwood_community_director",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Community Director",
+                    "addToList": true,
+                    "guid": "80a46202-fc0e-409b-866a-63079a3bec98"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0df71d5b-ef09-4d39-80da-96d7835eb7e1",
+            "defines": [
+                {
+                    "id": "northwood_discord_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Discord Manager",
+                    "addToList": true,
+                    "guid": "6d1db852-0eec-4e68-827c-415e146b82ed"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "038feef1-6043-469a-9343-236cb9faad28",
+            "defines": [
+                {
+                    "id": "northwood_executive_assistant",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Executive Assistant",
+                    "addToList": true,
+                    "guid": "fa2b2156-c7f5-409f-bdcf-f64cbb67b62a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2beb4784-9bbe-4907-9eb0-afc1df56b2f3",
+            "defines": [
+                {
+                    "id": "northwood_feedback_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Feedback Manager",
+                    "addToList": true,
+                    "guid": "73e24f58-3b70-40be-aae5-a0e9710caec5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "3b90eed4-8ae4-409b-8e66-373463068464",
+            "defines": [
+                {
+                    "id": "northwood_human_resources",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Human Resources",
+                    "addToList": true,
+                    "guid": "e96b005f-f25e-4815-b971-f35bf3becfd1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "85182e44-a941-4a96-b9f8-079d4f2c2389",
+            "defines": [
+                {
+                    "id": "northwood_human_resources_director",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Human Resources Director",
+                    "addToList": true,
+                    "guid": "6ca98e53-980a-4efa-9c54-1e05bdad2ea2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "bde63e4a-757e-45f3-aea0-3216c8309192",
+            "defines": [
+                {
+                    "id": "northwood_marketing_platform_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Marketing Platform Manager",
+                    "addToList": true,
+                    "guid": "f42ba4df-ccd2-4d95-86e1-1630e5166078"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "252fa320-2e26-4559-8db6-39e59fe7ee52",
+            "defines": [
+                {
+                    "id": "northwood_staff",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Staff",
+                    "addToList": true,
+                    "guid": "56b0dbf5-d7b6-4463-928d-69b2f8427b79"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "18304313-9022-445a-8357-44195e023eaf",
+            "defines": [
+                {
+                    "id": "northwood_steam_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Steam Manager",
+                    "addToList": true,
+                    "guid": "12ddf08f-f542-4ec9-8eb0-e1ee8fa0418b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ae47e000-cc2a-471c-99d5-65dd765d0a7e",
+            "defines": [
+                {
+                    "id": "northwood_system_administrator",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood System Administrator",
+                    "addToList": true,
+                    "guid": "da8b543d-1dea-4cca-9837-63275f74f479"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9d310ee9-e96e-427f-8c5a-26a253412bea",
+            "defines": [
+                {
+                    "id": "northwood_wiki_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Wiki Manager",
+                    "addToList": true,
+                    "guid": "6f863f64-891d-4da0-a5f8-51f985aa1141"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "35be69fc-000f-4370-a5c5-78dacf88a072",
+            "defines": [
+                {
+                    "id": "SCP:SL_art_manager",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Art Manager",
+                    "addToList": true,
+                    "guid": "2355d1c3-2a87-478d-b708-fe17ba6252e6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f2e8b018-b434-49c5-a99f-59b130215cf5",
+            "defines": [
+                {
+                    "id": "SCP:SL_art_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Art Supervisor",
+                    "addToList": true,
+                    "guid": "15c3bc46-c2a4-4888-8a44-6267dceacd63"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "60a9f8ec-b45b-470c-b461-268b3b5e53fc",
+            "defines": [
+                {
+                    "id": "SCP:SL_artist",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Artist",
+                    "addToList": true,
+                    "guid": "9df5c81a-360f-4d4d-a9e1-6df4d255346b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d48ab9c9-2a88-4761-9252-e815fdd21898",
+            "defines": [
+                {
+                    "id": "SCP:SL_backend_programmer",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Backend Programmer",
+                    "addToList": true,
+                    "guid": "3f8b83f7-377b-4215-b23f-508279507acf"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "82f1c903-9487-4771-80f8-47390a123c67",
+            "defines": [
+                {
+                    "id": "SCP:SL_backend_programming_manager",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Backend Programming Manager",
+                    "addToList": true,
+                    "guid": "c18658ae-4b03-4b90-b532-d9a8038b01b3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "72b9c16e-267d-401b-add9-6f39c6b256a9",
+            "defines": [
+                {
+                    "id": "SCP:SL_developer",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Developer",
+                    "addToList": true,
+                    "guid": "90722d45-f949-48e2-ae43-024686e2f9e7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5a8fac6a-8f4e-49fc-8f3e-420052732e82",
+            "defines": [
+                {
+                    "id": "SCP:SL_event_winner",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Event Winner",
+                    "addToList": true,
+                    "guid": "11973634-069b-4993-9e23-495912fe7608"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e96e75a0-9bfa-4d77-8b2c-857983845582",
+            "defines": [
+                {
+                    "id": "SCP:SL_fullstack_programmer",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Fullstack Programmer",
+                    "addToList": true,
+                    "guid": "0e6d9da0-4bcb-4d4d-97cb-502873c7e790"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "723f3f43-e708-4535-a14d-4fd77930bd8a",
+            "defines": [
+                {
+                    "id": "SCP:SL_game_designer",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Game Designer",
+                    "addToList": true,
+                    "guid": "7988e376-5618-4d4e-9c82-31c55cf0e0e1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d3633f0c-a1ba-41f1-88b2-bb094a762994",
+            "defines": [
+                {
+                    "id": "SCP:SL_gameplay_programmer",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Gameplay Programmer",
+                    "addToList": true,
+                    "guid": "ab9f48ee-7e44-41ba-89d7-3616d44cf1ac"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a9f0b1ec-b30c-42b9-bbd1-800778067ff6",
+            "defines": [
+                {
+                    "id": "SCP:SL_global_moderation_manager",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Global Moderation Manager",
+                    "addToList": true,
+                    "guid": "4acc65b7-5a60-49db-86f0-576bac661d4b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "56ad0bd7-3b1c-4d49-923b-2ae0113b6497",
+            "defines": [
+                {
+                    "id": "SCP:SL_global_moderator",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Global Moderator",
+                    "addToList": true,
+                    "guid": "658dfdf2-36a9-4400-8a74-e354e29a5dbc"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "57863d28-1f27-4e5c-a2b9-9fd8c96b4463",
+            "defines": [
+                {
+                    "id": "SCP:SL_lead_game_designer",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Lead Game Designer",
+                    "addToList": true,
+                    "guid": "1f33affa-976e-4297-8809-de38c450c150"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "226e3cfb-e53c-43c7-be40-d63a53ba36c6",
+            "defines": [
+                {
+                    "id": "SCP:SL_lead_gameplay_programmer",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Lead Gameplay Programmer",
+                    "addToList": true,
+                    "guid": "3b928e5c-105e-49a0-822c-6f06c630ba48"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e70f6f2a-1061-4c2a-852f-cd714a14cd1a",
+            "defines": [
+                {
+                    "id": "SCP:SL_level_designer",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Level Designer",
+                    "addToList": true,
+                    "guid": "02c8148f-4c2d-4c85-a506-67927c3ddea9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "19f1fcf4-bc41-4472-b7ff-edec15189442",
+            "defines": [
+                {
+                    "id": "SCP:SL_partner",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Partner",
+                    "addToList": true,
+                    "guid": "c65f303f-d84c-4195-a8ca-0c8bb91180db"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9893e2b1-7c27-41fb-9596-5e611876a187",
+            "defines": [
+                {
+                    "id": "SCP:SL_patreon_supporter",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Patreon Supporter",
+                    "addToList": true,
+                    "guid": "2d0d7172-1dd6-42d5-a44f-9cc80410981d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f1576e46-3e38-4a0d-97d0-3320e79f1e76",
+            "defines": [
+                {
+                    "id": "SCP:SL_quality_assurance_manager",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Quality Assurance Manager",
+                    "addToList": true,
+                    "guid": "44d05848-d21a-46f1-90f0-23eabc6f4bbb"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "df5cff6b-e07a-4559-82c3-6165306828a8",
+            "defines": [
+                {
+                    "id": "SCP:SL_sound_designer",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Sound Designer",
+                    "addToList": true,
+                    "guid": "57640caa-518c-4849-a1bf-6ccdc7af42e4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f34288f8-aa62-4e03-8fff-073ff8f6860b",
+            "defines": [
+                {
+                    "id": "SCP:SL_game_director",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Game Director",
+                    "addToList": true,
+                    "guid": "c6d804d0-1563-430b-844e-8a799f167a1c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "30266b31-962e-49fb-b00c-a275e0a15c36",
+            "defines": [
+                {
+                    "id": "SCP:SL_official_server_manager",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Official Server Manager",
+                    "addToList": true,
+                    "guid": "ac854dac-cdc2-467b-8db1-dc86be682bf2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "599296a3-93bd-405d-afa9-7c0dba0793cc",
+            "defines": [
+                {
+                    "id": "northwood_verification_specialist",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Verification Specialist",
+                    "addToList": true,
+                    "guid": "f2209922-0fa0-44aa-8e1e-9b84ea9170d7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d3c54ad8-08d0-4d68-b201-07cf2c0439ac",
+            "defines": [
+                {
+                    "id": "SCP:SL_anti-cheat_developer",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Anti-cheat Developer",
+                    "addToList": true,
+                    "guid": "0936836f-c956-4822-8f74-47d51f850215"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "656a6e3c-4a90-4835-aea1-2e8ed9500d47",
+            "defines": [
+                {
+                    "id": "SCP:SL_quality_assurance_tester",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Quality Assurance Tester",
+                    "addToList": true,
+                    "guid": "99cd78c8-fe3b-47d3-9e13-6ef887dfedb1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d8a7ec87-6847-4ae9-bf0e-401a49ee9285",
+            "defines": [
+                {
+                    "id": "SCP:SL_quality_assurance_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Quality Assurance Supervisor",
+                    "addToList": true,
+                    "guid": "0abd4063-9408-440a-abf9-e2b8522d9c96"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "61243290-654d-4231-b004-a545f9d8a4b8",
+            "defines": [
+                {
+                    "id": "SCP:SL_twitch_subscriber",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Twitch Subscriber",
+                    "addToList": true,
+                    "guid": "276ebf97-f5d8-4899-bfd5-1416319adcf5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "78cc3257-11b7-422f-bd41-50b92d4e5b19",
+            "defines": [
+                {
+                    "id": "SCP:SL_audio_manager",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Audio Manager",
+                    "addToList": true,
+                    "guid": "760434d7-b52a-45de-8456-44171851404e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "34ffa016-9359-438a-a8c8-5977985f6e0d",
+            "defines": [
+                {
+                    "id": "northwood_feedback_coordinator",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Feedback Coordinator",
+                    "addToList": true,
+                    "guid": "97b68920-edb0-4315-a938-5accfb36b93b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "01a3f78a-d1d6-492f-97dd-b8b1ddfdf766",
+            "defines": [
+                {
+                    "id": "northwood_verification_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Verification Supervisor",
+                    "addToList": true,
+                    "guid": "bae25c35-3980-4a1e-8eb2-33ec3f2874f5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "bb517af2-358f-4fcf-b2a6-29fefb4a8577",
+            "defines": [
+                {
+                    "id": "SCP:SL_official_server_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Official Server Supervisor",
+                    "addToList": true,
+                    "guid": "3c6442a7-21c2-483b-b0e7-5867b9dc390d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "34de9a01-008e-4122-bcc9-84a4c0203468",
+            "defines": [
+                {
+                    "id": "northwood_feedback_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Feedback Supervisor",
+                    "addToList": true,
+                    "guid": "8a7de95c-8afb-4f69-9bd0-5e49242eacd5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "37e9a4ba-2133-4117-a101-1a6c4a51d6b8",
+            "defines": [
+                {
+                    "id": "northwood_verification_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Verification Manager",
+                    "addToList": true,
+                    "guid": "c6af3bc0-9057-477b-a562-9e5ee7d94237"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e2cef2d5-4afd-4393-a75a-0b15d7cb37a7",
+            "defines": [
+                {
+                    "id": "northwood_bot_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Bot Manager",
+                    "addToList": true,
+                    "guid": "c2269a64-6019-436f-8e84-7fa321fd54c7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c49d3cfa-c8d6-4930-a806-4af48b6f3f69",
+            "defines": [
+                {
+                    "id": "northwood_tranSCP:SLation_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood TranSCP:SLation Manager",
+                    "addToList": true,
+                    "guid": "945f2525-09da-4702-b684-13ee53472bda"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "cb930108-63ea-4b98-a20a-d0a9cf13d12f",
+            "defines": [
+                {
+                    "id": "SCP:SL_game_design_manager",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Game Design Manager",
+                    "addToList": true,
+                    "guid": "9a6c6d8a-47ce-4e0b-84fe-835035ccd50f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "dfb0eeb9-5ccb-457b-bb77-74f188843c22",
+            "defines": [
+                {
+                    "id": "SCP:SL_animator",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Animator",
+                    "addToList": true,
+                    "guid": "773dfb4f-8063-4b64-bfcb-97dd1c8213dd"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d05564ad-53a9-41a7-86ee-002b2c01536b",
+            "defines": [
+                {
+                    "id": "northwood_public_relations_director",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Public Relations Director",
+                    "addToList": true,
+                    "guid": "fe0862f1-611c-4763-9b27-10d0075597cc"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "381fe2f5-4391-4e09-bc1b-abbfd3ac54ed",
+            "defines": [
+                {
+                    "id": "SCP:SL_community_helper",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Community Helper",
+                    "addToList": true,
+                    "guid": "347e6eea-8e1e-48c1-96e2-46635c5e86d5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "bd63c123-859a-4586-ab32-463e6136986d",
+            "defines": [
+                {
+                    "id": "SCP:SL_voice_actor",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Voice Actor",
+                    "addToList": true,
+                    "guid": "83a0fe1e-b4e5-4e73-a74e-40333aafe5a2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c14ed11b-bc48-4b77-bad4-ef7b63f990b9",
+            "defines": [
+                {
+                    "id": "SCP:SL_foundation_investor",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Foundation Investor",
+                    "addToList": true,
+                    "guid": "55a698a6-2181-4a10-aee4-8ab3ba8e851b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8f973ed3-618c-4d87-b9c6-562ed15069d4",
+            "defines": [
+                {
+                    "id": "northwood_studio_director",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Studio Director",
+                    "addToList": true,
+                    "guid": "a3169438-63bc-40f8-a623-11ad5075ecbd"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "01d4cc86-3d8e-44ac-9178-2bd387d3f8b6",
+            "defines": [
+                {
+                    "id": "SCP:SL_assistant_game_director",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Assistant Game Director",
+                    "addToList": true,
+                    "guid": "95edd9db-7218-45e2-b76a-cda54e069e00"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "87a0b4e0-f7f7-4d53-bced-6744ec05b1e2",
+            "defines": [
+                {
+                    "id": "northwood_tech_support_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Tech Support Supervisor",
+                    "addToList": true,
+                    "guid": "f3161ae5-f831-4642-a386-05e6aea94632"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a4618a7a-82c4-4528-b965-652f2fa73a9c",
+            "defines": [
+                {
+                    "id": "northwood_tech_support_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Tech Support Manager",
+                    "addToList": true,
+                    "guid": "38232640-ef0d-41aa-96e2-68b5fd04b03b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7b5656b2-f53d-4528-bd31-850ff3d48cfd",
+            "defines": [
+                {
+                    "id": "northwood_system_administration_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood System Administration Manager",
+                    "addToList": true,
+                    "guid": "9e7fc693-f8b9-4778-a9b0-c80ada3770f6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "1db41439-daee-4dc2-a588-4d2e1da78fb5",
+            "defines": [
+                {
+                    "id": "SCP:SL_narrative_designer",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Narrative Designer",
+                    "addToList": true,
+                    "guid": "eb35abaf-e1ed-438b-b5f0-ceef97ff1874"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ac27de67-b39a-40ed-95cd-88c2cce3c31c",
+            "defines": [
+                {
+                    "id": "northwood_marketing_platform_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Marketing Platform Supervisor",
+                    "addToList": true,
+                    "guid": "082ea898-2d8d-4068-a758-c7dd501d5c4f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "966bbefb-9d1b-417c-bb1d-1cb4ea8cef36",
+            "defines": [
+                {
+                    "id": "SCP:SL_audio_technical_lead",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Audio Technical Lead",
+                    "addToList": true,
+                    "guid": "6ccd2d09-1778-4121-9c00-4f0b65cb3e7a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "6468922f-5c1d-4803-80b7-8541ef28d22d",
+            "defines": [
+                {
+                    "id": "northwood_tranSCP:SLation_coordinator",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood TranSCP:SLation Coordinator",
+                    "addToList": true,
+                    "guid": "ade5a25f-fe4c-40e2-9d11-72949df7bc12"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "abd06a64-d903-4553-9d84-6945e7655243",
+            "defines": [
+                {
+                    "id": "northwood_security_director",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Security Director",
+                    "addToList": true,
+                    "guid": "fc4bc89c-2157-49a6-a5fa-1ae1657b14e6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ebed8581-1b4e-496c-9f18-46da9a2bff3b",
+            "defines": [
+                {
+                    "id": "northwood_security_advisor",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Security Advisor",
+                    "addToList": true,
+                    "guid": "cd5245a2-bc70-40e7-8858-d904bb3229d4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "965db4f6-35e7-4a7f-9ebc-55f834033e63",
+            "defines": [
+                {
+                    "id": "northwood_assistant_security_director",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Assistant Security Director",
+                    "addToList": true,
+                    "guid": "b1fd2dd3-09f7-450b-b94a-3cdae8a3c6a6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4300921b-7ff9-4f74-9a4b-d47248f50c76",
+            "defines": [
+                {
+                    "id": "assistant_public_relations_director",
+                    "autoDisplayName": false,
+                    "displayName": "Assistant Public Relations Director",
+                    "addToList": true,
+                    "guid": "2e56e14a-0f35-4a9f-af98-336c2824484e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "86e2a696-4f76-4244-a822-e8dddd7315ce",
+            "defines": [
+                {
+                    "id": "assistant_community_management_director",
+                    "autoDisplayName": false,
+                    "displayName": "Assistant Community Management Director",
+                    "addToList": true,
+                    "guid": "690a3835-1d9e-40c0-ad26-0765b42d469c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9dca5369-7796-4ddc-a04c-94ee951ab75f",
+            "defines": [
+                {
+                    "id": "assistant_human_resources_director",
+                    "autoDisplayName": false,
+                    "displayName": "Assistant Human Resources Director",
+                    "addToList": true,
+                    "guid": "e363fde0-813a-44c6-a153-461b551c4a20"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d6e21bfc-9925-4620-941c-e8256e065806",
+            "defines": [
+                {
+                    "id": "SCP:SL_game_design_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Game Design Supervisor",
+                    "addToList": true,
+                    "guid": "2bb8ef21-9161-4af2-8c52-4ee217412ad8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a30e922c-a611-45dd-ae1f-49c59cccc211",
+            "defines": [
+                {
+                    "id": "SCP:SL_level_designer_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Level Designer Supervisor",
+                    "addToList": true,
+                    "guid": "e649950c-f224-4a66-9234-ffbf368d8643"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c8ac9fcc-1969-45b7-b7a9-fec6d0f2a98c",
+            "defines": [
+                {
+                    "id": "SCP:SL_global_moderation_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "SCP:SL Global Moderation Supervisor",
+                    "addToList": true,
+                    "guid": "a5a757c8-0c94-41f7-94a3-3f6a82aa0ed3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ebbd64b1-fe0e-4eba-825d-5c1017b7c2b1",
+            "defines": [
+                {
+                    "id": "northwood_system_administration_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood System Administration Supervisor",
+                    "addToList": true,
+                    "guid": "fc81ef5c-9c58-48de-bff2-1d1354119d3e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8ddfe66d-0645-4c08-b5f0-2327c0add43f",
+            "defines": [
+                {
+                    "id": "northwood_web_development_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Web Development Supervisor",
+                    "addToList": true,
+                    "guid": "3d2a19e7-1aad-48b0-a26d-2f4367e52162"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7302b477-3229-43f3-a2cc-4c2511acb501",
+            "defines": [
+                {
+                    "id": "northwood_web_development_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Web Development Manager",
+                    "addToList": true,
+                    "guid": "2c7fcccc-08f5-4df6-a139-608879cf809c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0f075764-5bda-4bae-bf25-b87d400c8cd2",
+            "defines": [
+                {
+                    "id": "northwood_content_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Content Supervisor",
+                    "addToList": true,
+                    "guid": "eb735db4-1873-442b-abf7-be42bd7ac590"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d60185dd-40c1-4d42-90ae-ec18d968bcb4",
+            "defines": [
+                {
+                    "id": "northwood_content_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Content Manager",
+                    "addToList": true,
+                    "guid": "e3336191-90a6-44d8-9f6c-5c4cbd8006f5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9e193112-94d6-4406-ac60-d1afc032bd27",
+            "defines": [
+                {
+                    "id": "northwood_patreon_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Patreon Supervisor",
+                    "addToList": true,
+                    "guid": "c90ea975-1b8f-41f1-9658-4e456b9ff244"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "196a99e7-62b1-421a-8d7d-a3398db53a05",
+            "defines": [
+                {
+                    "id": "northwood_patreon_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Patreon Manager",
+                    "addToList": true,
+                    "guid": "a48b2125-1ae0-4583-a7c0-57e8752389f3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "df10c400-9b9f-448d-992f-90221cc0d97b",
+            "defines": [
+                {
+                    "id": "northwood_social_media_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Social Media Supervisor",
+                    "addToList": true,
+                    "guid": "34dbdb09-d33d-4584-97d8-73395c3f50c4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "68f635ca-bb90-4bd1-b987-1215a14bc3ef",
+            "defines": [
+                {
+                    "id": "northwood_social_media_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Social Media Manager",
+                    "addToList": true,
+                    "guid": "9d8d5c3c-7635-42f3-a8e6-ecbcafe0bb56"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "51de01e0-b900-4a25-8f18-79482d05a4dc",
+            "defines": [
+                {
+                    "id": "northwood_tranSCP:SLation_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood TranSCP:SLation Supervisor",
+                    "addToList": true,
+                    "guid": "ca0eba83-1230-4f15-80d7-79bd2dfbc0e1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5f9e06c2-6ea0-47d9-bdf2-7d8be7d14a6a",
+            "defines": [
+                {
+                    "id": "northwood_steam_supervisor",
+                    "autoDisplayName": false,
+                    "displayName": "Northwood Steam Supervisor",
+                    "addToList": true,
+                    "guid": "228ae513-bd40-4fb3-b210-f1b588c4aeb2"
+                }
+            ]
+        }
+    ]
+}
