@@ -34,6 +34,7 @@ namespace Project.Translation.Defines
         public override DefineField[] GetDefines() =>
             lines
             .SelectMany(x => x.defines)
+            .Where(x => x.Status == DefineField.SetupStatus.Used)
             .ToArray();
 
         
@@ -98,11 +99,14 @@ namespace Project.Translation.Defines
 
                         for (int x = 0; x < Mathf.Min(define.defines.Count, splitLine.Length); x++)
                         {
+                            if (!define.defines[x].addToList) continue;
                             file.Entries[define.defines[x].id] = new SaveFile.EntryData(define.defines[x], splitLine[x]);
                             ProjectDebug.LogValueImport(define.defines[x], splitLine[x]);
                         }
+
                         break;
                     case false:
+                        if (!define.defines[0].addToList) break;
                         file.Entries[define.defines[0].id] = new SaveFile.EntryData(define.defines[0], line);
                         ProjectDebug.LogValueImport(define.defines[0], line);
                         break;
