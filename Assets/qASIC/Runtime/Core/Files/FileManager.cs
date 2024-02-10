@@ -359,7 +359,7 @@ namespace qASIC.Files
             }
             catch (Exception e)
             {
-                qDebug.LogError($"Couldn't save file. Exception: {e}");
+                qDebug.LogError($"Couldn't load file. Exception: {e}");
             }
             return data;
         }
