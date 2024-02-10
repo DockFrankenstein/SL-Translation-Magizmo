@@ -1,10 +1,8 @@
 using UnityEngine;
 using System.Linq;
 using System.Collections.Generic;
-using Project.Translation.Data;
-using SFB;
-using Unity.Plastic.Newtonsoft.Json;
 using UnityEditor;
+using SFB;
 
 namespace Project.Translation.Defines
 {

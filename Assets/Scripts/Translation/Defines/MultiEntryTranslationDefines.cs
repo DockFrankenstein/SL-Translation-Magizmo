@@ -7,7 +7,6 @@ using System.Text;
 using UnityEditor;
 using qASIC.Files;
 using UnityEngine.Serialization;
-using Codice.Client.Common;
 
 namespace Project.Translation.Defines
 {
