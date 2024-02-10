@@ -49,12 +49,7 @@ namespace Project.GUI.Top
 
         private void Button_clicked()
         {
-            //Fix for dropdown not repsecting padding and margin
-            var rect = new Rect(button.contentRect)
-                .MoveY(8f)
-                .MoveX(-8f);
-
-            dropdown.Open(menu, rect);
+            dropdown.Open(menu, button.worldBound);
         }
     }
 }
