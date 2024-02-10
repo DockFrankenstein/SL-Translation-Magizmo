@@ -1,0 +1,142 @@
+* {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    --unity-cursor-color: rgb(255, 255, 255);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.popup {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    background-color: rgb(33, 33, 33);
+    border-left-color: rgb(13, 13, 13);
+    border-right-color: rgb(13, 13, 13);
+    border-top-color: rgb(13, 13, 13);
+    border-bottom-color: rgb(13, 13, 13);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.unity-label {
+    width: 300px;
+    -unity-text-align: middle-left;
+    color: rgb(255, 255, 255);
+}
+
+.unity-text-field__input {
+    background-color: rgb(33, 33, 33);
+    color: rgb(255, 255, 255);
+    border-left-color: rgb(13, 13, 13);
+    border-right-color: rgb(13, 13, 13);
+    border-top-color: rgb(13, 13, 13);
+    border-bottom-color: rgb(13, 13, 13);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.unity-button {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-left-color: rgb(13, 13, 13);
+    border-right-color: rgb(13, 13, 13);
+    border-top-color: rgb(13, 13, 13);
+    border-bottom-color: rgb(13, 13, 13);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    background-color: rgb(33, 33, 33);
+}
+
+.unity-button:focus {
+    background-color: rgb(46, 46, 46);
+}
+
+.unity-button:active {
+    background-color: rgb(59, 59, 59);
+}
+
+.unity-text-field > .unity-button {
+    border-left-width: 0;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.fade {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.unity-scroll-view__content-container {
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+}
+
+.unity-radio-button__checkmark-background {
+    display: none;
+}
+
+.unity-radio-button {
+    height: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom-color: rgba(13, 13, 13, 255);
+    border-bottom-width: 2px;
+}
+
+.unity-radio-button:checked {
+    background-color: rgba(27, 94, 32, 255);
+}
+
+.header {
+    font-size: 56px;
+    border-bottom-color: rgba(13, 13, 13, 255);
+    border-bottom-width: 2px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+    white-space: nowrap;
+    min-width: 0;
+    justify-content: flex-start;
+    width: 100%;
+}
