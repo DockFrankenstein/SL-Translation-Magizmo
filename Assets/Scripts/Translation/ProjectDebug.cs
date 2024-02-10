@@ -7,7 +7,7 @@ namespace Project
     {
         public static void LogValueImport(string fieldName, object value)
         {
-            qDebug.Log($"Imported '{fieldName}' value: {value?.ToString() ?? string.Empty}");
+            UnityEngine.Debug.Log($"Imported '{fieldName}' value: {value?.ToString() ?? string.Empty}");
         }
 
         public static void LogValueImport(DefineField defineField, object value) =>

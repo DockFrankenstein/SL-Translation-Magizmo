@@ -7,6 +7,8 @@ using SFB;
 using qASIC.Files;
 using UnityEngine.Events;
 using qASIC.Input;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace Project.Translation
 {
@@ -117,10 +119,15 @@ namespace Project.Translation
 
             foreach (var definesFile in CurrentVersion.defines)
             {
-                var txt = FileManager.LoadFileWriter($"{paths[0]}/{definesFile.fileName}");
+                var path = $"{paths[0]}/{definesFile.fileName}";
+                if (!System.IO.File.Exists(path)) continue;
+
+                var txt = System.IO.File.ReadAllText(path);
+                Debug.Log($"Importing file {definesFile.fileName}...");
                 definesFile.Import(file, txt);
             }
 
+            Debug.Log("Import successfull");
             OnImport.Invoke();
         }
     }
