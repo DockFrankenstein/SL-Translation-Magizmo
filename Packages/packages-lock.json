@@ -7,7 +7,14 @@
       "dependencies": {
         "com.unity.editorcoroutines": "1.0.0"
       },
-      "hash": "6f8b60b10671053e0d2002b8e8ac4fa61783953b"
+      "hash": "b7861dadfbc7b73b61a77b51c6ac01c2990d79d0"
+    },
+    "com.fab.uitk-runtime-dropdown": {
+      "version": "https://github.com/fabSchneider/fab.uitk-runtime-dropdown.git#upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "e11f7bac7fd7285c6e82ba3a2c9ab3c3ab30bd50"
     },
     "com.unity.2d.animation": {
       "version": "7.0.10",
