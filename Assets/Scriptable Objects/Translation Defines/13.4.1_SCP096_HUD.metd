@@ -1,0 +1,133 @@
+{
+    "fileName": "SCP096_HUD.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": true,
+    "separationCharacter": 58,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "5a5f393a-533b-4ed2-99c7-de4d4849de8d",
+            "defines": [
+                {
+                    "id": "096_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "403416b7-f1ae-4b63-b980-dd0acb7d16a7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "3f98c555-fbd9-40f3-99ff-7246b27440ff",
+            "defines": [
+                {
+                    "id": "f1_096_ability_try_not_to_cry",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f85dce8a-65ed-4a5c-9c8b-a834dcd68236"
+                },
+                {
+                    "id": "f1_096_ability_try_not_to_cry_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "556d7236-1e6a-47ba-84e9-f539407451a6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0ac23195-fa95-43ec-8bcd-a2a435431977",
+            "defines": [
+                {
+                    "id": "f1_096_ability_melee",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "29cfda11-c9ca-4c04-bf1c-2bd8740b9fb0"
+                },
+                {
+                    "id": "f1_096_ability_melee_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "41286100-b5a3-4668-a3fd-0f4ed553163d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4f1656d9-f086-4764-a0c0-a596784c43d3",
+            "defines": [
+                {
+                    "id": "f1_096_ability_charge",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "363a63cf-ff3a-4703-92f8-a59fcf00cf28"
+                },
+                {
+                    "id": "f1_096_ability_charge_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "fbbc1cf5-4b96-4c1d-a249-fd008adae6ce"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "cd6db0fe-b5f5-40d6-97c6-9d254c15ffa2",
+            "defines": [
+                {
+                    "id": "f1_096_rage_only",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "81e693b0-78ca-459a-a496-9064cd1c802c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8959d341-7c94-4ceb-830a-6075b6e72498",
+            "defines": [
+                {
+                    "id": "f1_096_docile_only",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3f5aaef0-a143-4f74-b866-1ea3f407013c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "253ba07e-4c2e-4ed3-9eb6-73db3fd78f39",
+            "defines": [
+                {
+                    "id": "096_prompt_rage_enter",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "9d2add41-983d-4b0c-a04e-c9db76804b6f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "032ba0c0-21ea-44fc-b55a-23844b7e95c9",
+            "defines": [
+                {
+                    "id": "096_prompt_rage_exit",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "106f9a59-123d-4356-b9e1-3c52d95686d4"
+                }
+            ]
+        }
+    ]
+}

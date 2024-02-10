@@ -15,7 +15,7 @@ namespace Project.GUI.Hierarchy
                 .Where(x => !x.Hide)
                 .Select(x =>
                 {
-                    var a = x.GetDefines().Select(x => new HierarchyItem(x.id, x.autoDisplayName ? x.id : x.displayName));
+                    var a = x.GetDefines().Select(x => new HierarchyItem(x.id, x.autoDisplayName ? PUtility.GenerateDisplayName(x.id) : x.displayName));
 
                     if (addSeparators)
                         a = a.Append(new HierarchyItem("---"));

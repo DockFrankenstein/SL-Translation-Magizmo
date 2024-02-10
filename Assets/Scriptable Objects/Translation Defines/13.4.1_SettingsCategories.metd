@@ -1,0 +1,73 @@
+{
+    "fileName": "SettingsCategories.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "f368a07f-8581-4f25-9dfe-f4d915a3e353",
+            "defines": [
+                {
+                    "id": "settings_category_video",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "07bf6b55-a84b-4225-866d-afa1d06f5c99"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0f216c5b-579e-4e62-9e96-0b43a5445679",
+            "defines": [
+                {
+                    "id": "settings_category_audio",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "33b923dc-d8f4-4f75-b6bf-2fc9135ced9b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "6c847fe1-c5bd-427a-9384-e0d6e039fdae",
+            "defines": [
+                {
+                    "id": "settings_category_controls",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "a1d782c0-1068-4bda-9d90-b7ed5169f2a3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "66aeb108-bf89-4ebc-b6dd-6eee9de4d837",
+            "defines": [
+                {
+                    "id": "settings_category_interface",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3fca7be7-314b-4e70-9a9a-91f9b37805de"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d00871e6-1fa5-4e95-a10a-42d931ada6ea",
+            "defines": [
+                {
+                    "id": "settings_category_other",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4879290e-b5d7-4e4a-b11f-a545c36aa727"
+                }
+            ]
+        }
+    ]
+}

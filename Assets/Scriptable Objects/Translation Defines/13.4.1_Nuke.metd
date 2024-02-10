@@ -1,0 +1,60 @@
+{
+    "fileName": "Nuke.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "738b425b-0e6c-4cb9-9106-cbc0f2318ab2",
+            "defines": [
+                {
+                    "id": "nuke_disabled",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d0631f9c-6df6-4190-b775-2d1d7a9400b2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a6a84ccc-0197-4877-a868-66ee1338bc1a",
+            "defines": [
+                {
+                    "id": "nuke_wait",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3bafdb66-3f17-41fd-995e-2f3b3770abe5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ea01a287-ea72-4f78-8125-79a0c33a7671",
+            "defines": [
+                {
+                    "id": "nuke_ready",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7827fafa-960c-4570-a97c-c7e0affb3fa7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d3481215-b194-42e8-8329-8fbdfa1397bb",
+            "defines": [
+                {
+                    "id": "nuke_inevitable",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4dec4f62-f405-4163-b746-940d11a91a15"
+                }
+            ]
+        }
+    ]
+}

@@ -3,6 +3,9 @@ using Project.Translation.Defines;
 using System;
 using UnityEditor;
 using UnityEngine;
+using System.Linq;
+
+using static Project.Translation.Defines.MultiEntryTranslationDefines;
 
 namespace Project.Editor.Translation.Defines
 {
@@ -41,7 +44,7 @@ namespace Project.Editor.Translation.Defines
 
                     switch (SelectedItem)
                     {
-                        case MultiEntryTranslationDefines.Line lineItem:
+                        case Line lineItem:
                             LineGUI(lineItem);
                             break;
                         case DefineFieldContext defineItem:
@@ -55,7 +58,7 @@ namespace Project.Editor.Translation.Defines
             }
         }
 
-        void LineGUI(MultiEntryTranslationDefines.Line item)
+        void LineGUI(Line item)
         {
             HeaderGUI("Line");
             item.lineId = EditorGUILayout.DelayedTextField("Line ID", item.lineId);
@@ -63,7 +66,7 @@ namespace Project.Editor.Translation.Defines
             EditorGUILayout.Space();
 
             if (GUILayout.Button("Add Define"))
-                window.tree.DeleteDefine(item);
+                window.tree.CreateLine(item);
         }
 
         void DefineGUI(DefineFieldContext item)
@@ -77,6 +80,49 @@ namespace Project.Editor.Translation.Defines
 
             using (new EditorGUI.DisabledScope(item.defineField.autoDisplayName))
                 item.defineField.displayName = EditorGUILayout.DelayedTextField("Display Name", item.defineField.displayName);
+
+            EditorGUILayout.Space();
+
+            item.defineField.addToList = EditorGUILayout.Toggle("Add To List", item.defineField.addToList);
+        }
+
+        internal void ReloadSelection()
+        {
+            switch (SelectedItem)
+            {
+                case Line line:
+                    var newLine = window.asset.lines
+                        .Where(x => x.guid == line.guid)
+                        .FirstOrDefault();
+
+                    if (newLine == null)
+                    {
+                        SelectedItem = null;
+                        break;
+                    }
+
+                    _selectedItem = newLine;
+                    break;
+                case DefineFieldContext define:
+                    var newDefine = window.asset.lines
+                        .SelectMany(x => x.defines)
+                        .Where(x => x.guid == define.defineField.guid)
+                        .FirstOrDefault();
+
+                    if (newDefine == null)
+                    {
+                        SelectedItem = null;
+                        break;
+                    }
+
+                    define.defineField = newDefine;
+                    define.line = window.asset.lines
+                        .Where(x => x.defines.Contains(newDefine))
+                        .First();
+
+                    _selectedItem = define;
+                    break;
+            }
         }
 
         void HeaderGUI(string itemName)
@@ -88,7 +134,7 @@ namespace Project.Editor.Translation.Defines
         public struct DefineFieldContext
         {
             public DefineField defineField;
-            public MultiEntryTranslationDefines.Line line;
+            public Line line;
         }
 
         static class Styles

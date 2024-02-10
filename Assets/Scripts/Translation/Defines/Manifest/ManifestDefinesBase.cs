@@ -93,5 +93,16 @@ namespace Project.Translation.Defines.Manifest
 
             return JsonUtility.ToJson(holder, true);
         }
+
+        public override string ExportDebug()
+        {
+            var defines = GetDefines();
+            var saveFile = new SaveFile()
+            {
+                Entries = defines.ToDictionary(x => x.id, x => new SaveFile.EntryData(x))
+            };
+
+            return Export(saveFile);
+        }
     }
 }

@@ -40,6 +40,25 @@ namespace Project.Editor.Translation.Defines
         }
         #endregion
 
+        #region Prefs
+        bool? prefs_startLineCountFromOne = null;
+        public bool Prefs_StartLineCountFromOne
+        {
+            get
+            {
+                if (prefs_startLineCountFromOne == null)
+                    prefs_startLineCountFromOne = EditorPrefs.GetBool("sltm_mew_linefromone", false);
+
+                return prefs_startLineCountFromOne ?? false;
+            }
+            set
+            {
+                prefs_startLineCountFromOne = value;
+                EditorPrefs.SetBool("sltm_mew_linefromone", value);
+            }
+        }
+        #endregion
+
         [OnOpenAsset]
         private static bool OnOpenAsset(int instanceID, int line)
         {
@@ -83,6 +102,7 @@ namespace Project.Editor.Translation.Defines
             AssetDatabase.ImportAsset(relativePath);
 
             tree.Reload();
+            inspector.ReloadSelection();
         }
 
         protected override void OnGUI()

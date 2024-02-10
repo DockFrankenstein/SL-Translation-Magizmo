@@ -1,0 +1,86 @@
+{
+    "fileName": "GameHints.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "9a822a5c-f20d-4647-ac61-079575665379",
+            "defines": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0e3293d6-9db2-4ef6-ad4d-fb18e055b650"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ee206817-5ca5-4d68-85bf-38314e370dc4",
+            "defines": [
+                {
+                    "id": "inventory_limit_ammo_first",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "23b518aa-7a8f-44d3-a10f-d1e707c7e3de"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4b8e5f03-b837-44a7-9c9a-2596e4e039b7",
+            "defines": [
+                {
+                    "id": "inventory_limit_ammo",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4eb612a9-a1a3-434e-9bc9-6357cafd6acb"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "aca6dfe0-c489-442b-bf29-c5ee5343a504",
+            "defines": [
+                {
+                    "id": "inventory_limit_type_first",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "812567a2-93b4-4d73-80d6-5fdf1994af0f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d1fcaaad-a3ce-413a-a478-ed0af69d1b8a",
+            "defines": [
+                {
+                    "id": "inventory_limit_type",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ed4014aa-8986-49d7-a49f-31f57c91c8f0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "510915d5-b649-4215-9311-0f0d495898e4",
+            "defines": [
+                {
+                    "id": "inventory_limit_item",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "68018510-4095-4a60-a459-eed4bc95cc72"
+                }
+            ]
+        }
+    ]
+}

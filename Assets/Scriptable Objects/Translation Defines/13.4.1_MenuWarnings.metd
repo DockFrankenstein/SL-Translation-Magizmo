@@ -1,0 +1,60 @@
+{
+    "fileName": "MenuWarnings.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "fa6cf31e-3168-49e7-8b1f-b4d3d9c31029",
+            "defines": [
+                {
+                    "id": "menu_warning_header",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ff2bd9ac-5bed-4813-be6b-79e49c3e4eba"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8137bb48-f0f4-4e91-a864-7b4ac46c80ea",
+            "defines": [
+                {
+                    "id": "menu_warning_okay",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "17c7ab44-3c98-40ee-8f86-28c1e0a018a7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "11a2e39a-a3e0-4310-8f29-b125dcfbfabd",
+            "defines": [
+                {
+                    "id": "menu_warning_intel",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1f480be9-1f55-4d72-b38e-9a20a43584c8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "259a7788-58d0-44ea-b8c3-55e68d1d87fa",
+            "defines": [
+                {
+                    "id": "menu_warning_vc_update",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "c68e0f96-6bbd-4f73-a98b-a0dff0e9d158"
+                }
+            ]
+        }
+    ]
+}

@@ -36,10 +36,7 @@ namespace Project.GUI.Hierarchy
 
             this.id = id;
 
-            displayText = string.Join(" ", id
-                .Split('_')
-                .Where(x => x.Length > 0)
-                .Select(x => $"{x[0].ToString().ToUpper()}{x.Substring(1, x.Length - 1)}"));
+            displayText = PUtility.GenerateDisplayName(id);
         }
 
         public ItemType type = ItemType.Normal;

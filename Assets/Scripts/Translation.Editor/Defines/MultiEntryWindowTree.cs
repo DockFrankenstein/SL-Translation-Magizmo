@@ -8,6 +8,8 @@ using qASIC;
 using System.Linq;
 using Project.Translation.Defines;
 using static Project.Translation.Defines.MultiEntryTranslationDefines;
+using JetBrains.Annotations;
+using static Project.Editor.Translation.Defines.MultiEntryWindowTree;
 
 namespace Project.Editor.Translation.Defines
 {
@@ -106,9 +108,18 @@ namespace Project.Editor.Translation.Defines
                 rows.Add(item);
                 root.AddChild(item);
 
+                bool first = true;
                 foreach (var define in line.defines)
                 {
                     var defineItem = new DefineItem(item, define);
+                    item.defineItems.Add(defineItem);
+
+                    if (!window.asset.useSeparationCharacter && first)
+                    {
+                        first = false;
+                        continue;
+                    }
+
                     root.AddChild(defineItem);
                     rows.Add(defineItem);
                 }
@@ -147,21 +158,33 @@ namespace Project.Editor.Translation.Defines
                     var addDefineRect = bottomLineRect
                         .ResizeToRight(80f);
 
-                    if (GUI.Button(addDefineRect, "Add Define"))
+                    if (window.asset.useSeparationCharacter && GUI.Button(addDefineRect, "Add Define"))
                     {
-                        CreateDefine(lineItem);
+                        CreateLine(lineItem);
                     }
 
                     if (Event.current.type == EventType.Repaint)
                     {
                         var colorRect = args.rowRect.ResizeToLeft(8f);
-                        new GUIStyle(EditorStyles.label).WithBackgroundColor(new Color(3f / 255f, 252f / 255f, 161f / 255f)).Draw(colorRect, GUIContent.none, false, false, false, false);
-                        qGUIEditorUtility.VerticalLine(colorRect.ResizeToRight(0f));
+                        switch (window.asset.useSeparationCharacter)
+                        {
+                            case true:
+                                new GUIStyle(EditorStyles.label).WithBackgroundColor(new Color(3f / 255f, 252f / 255f, 161f / 255f)).Draw(colorRect, new GUIContent(string.Empty, ""), false, false, false, false);
+                                qGUIEditorUtility.BorderAround(colorRect);
+                                break;
+                            case false:
+                                if (lineItem.defineItems.Count > 0)
+                                    DrawColorForDefinition(colorRect, lineItem.defineItems[0].define);
+                                break;
+                        }
+                        
                         qGUIEditorUtility.HorizontalLine(args.rowRect.ResizeToTop(0f), 4f);
                         qGUIEditorUtility.HorizontalLine(args.rowRect.ResizeToBottom(0f));
                     }
+
                     break;
                 case DefineItem defineItem:
+
                     using (new EditorChangeChecker.ChangeCheck(window.SetAssetDirty))
                     {
                         for (int i = 0; i < args.GetNumVisibleColumns(); i++)
@@ -170,6 +193,9 @@ namespace Project.Editor.Translation.Defines
 
                     if (Event.current.type == EventType.Repaint)
                     {
+                        var colorRect = args.rowRect.ResizeToLeft(8f);
+                        DrawColorForDefinition(colorRect, defineItem.define);
+
                         qGUIEditorUtility.HorizontalLine(args.rowRect.ResizeToBottom(0f));
                     }
 
@@ -180,14 +206,49 @@ namespace Project.Editor.Translation.Defines
             }
         }
 
+        void DrawColorForDefinition(Rect rect, DefineField define)
+        {
+            var color = define.Status switch
+            {
+                DefineField.SetupStatus.Blank => new Color(3f / 255f, 227f / 255f, 252f / 255f),
+                DefineField.SetupStatus.Ignored => new Color(252f / 255f, 45f / 255f, 73f / 255f),
+                _ => new Color(3f / 255f, 252f / 255f, 161f / 255f),
+            };
+
+            new GUIStyle(EditorStyles.label).WithBackgroundColor(color).Draw(rect, GUIContent.none, false, false, false, false);
+            qGUIEditorUtility.BorderAround(rect);
+        }
+
         void LineCellGUI(Rect cellRect, LineItem item, int columnIndex, ref RowGUIArgs args)
         {
             switch (columnIndex)
             {
                 case 1:
-                    item.line.lineId = EditorGUI.DelayedTextField(cellRect
+                    var lineRect = cellRect
                         .ResizeHeightToCenter(EditorGUIUtility.singleLineHeight)
-                        .Border(EditorGUIUtility.standardVerticalSpacing, 0f), item.line.lineId);
+                        .Border(EditorGUIUtility.standardVerticalSpacing, 0f);
+
+                    if (window.asset.identificationType == IdentificationType.LineId)
+                    {
+                        var lineIndex = window.asset.lines.IndexOf(item.line);
+
+                        if (window.Prefs_StartLineCountFromOne)
+                            lineIndex++;
+
+                        EditorGUI.PrefixLabel(lineRect, new GUIContent(lineIndex.ToString()));
+                        break;
+                    }
+
+                    item.line.lineId = EditorGUI.DelayedTextField(lineRect, item.line.lineId);
+                    break;
+                case 2:
+                case 3:
+                case 4:
+                    if (window.asset.useSeparationCharacter) break;
+
+                    if (item.defineItems.Count > 0)
+                        DefineCellGUI(cellRect, item.defineItems[0], columnIndex, ref args);
+
                     break;
                 case 5:
                     var minusRect = cellRect
@@ -267,10 +328,25 @@ namespace Project.Editor.Translation.Defines
             Reload();
         }
 
-        public void CreateDefine(LineItem line) =>
-            DeleteDefine(line.line);
+        public void CreateLine(LineItem line) =>
+            CreateLine(line.line);
 
-        public void DeleteDefine(Line line)
+        public bool CanDuplicateLine => GetSelectedItem<LineItem>() != null;
+
+        public void DuplicateSelectedLine() =>
+            DuplicateLine(GetSelectedItem<LineItem>());
+
+        public void DuplicateLine(LineItem item)
+        {
+            if (item == null)
+                return;
+
+            var newItem = item.line.Duplicate();
+            window.asset.lines.Insert(window.asset.lines.IndexOf(item.line), newItem);
+            Reload();
+        }
+
+        public void CreateLine(Line line)
         {
             line.defines.Add(new DefineField());
             Reload();
@@ -306,6 +382,22 @@ namespace Project.Editor.Translation.Defines
             base.SelectionChanged(selectedIds);
         }
 
+        T GetItem<T>(int index) where T : TreeViewItem
+        {
+            var item = FindItem(index, rootItem);
+            return item as T;
+        }
+
+        T GetSelectedItem<T>() where T : TreeViewItem
+        {
+            var indexes = GetSelection();
+
+            if (indexes.Count == 0)
+                return null;
+
+            return GetItem<T>(indexes[0]);
+        }
+
         internal class LineItem : TreeViewItem
         {
             public LineItem()
@@ -320,6 +412,7 @@ namespace Project.Editor.Translation.Defines
             }
 
             public Line line;
+            public List<DefineItem> defineItems = new List<DefineItem>();
         }
 
         internal class DefineItem : TreeViewItem

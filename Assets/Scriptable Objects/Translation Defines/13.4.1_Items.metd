@@ -12,12 +12,14 @@
                     "id": "keycard_janitor",
                     "autoDisplayName": false,
                     "displayName": "Janitor Keycard",
+                    "addToList": true,
                     "guid": "de572e30-d010-4c27-aae9-0ea66349e857"
                 },
                 {
                     "id": "keycard_janitor_description",
                     "autoDisplayName": false,
                     "displayName": "Janitor Keycard Description",
+                    "addToList": true,
                     "guid": "bb4621c3-5edc-4473-8b97-95d4bd09e680"
                 }
             ]
@@ -30,12 +32,14 @@
                     "id": "keycard_scientist",
                     "autoDisplayName": false,
                     "displayName": "Scientist Keycard",
+                    "addToList": true,
                     "guid": "d014660f-c378-4326-ac89-c472c0b57ec2"
                 },
                 {
                     "id": "keycard_scientist_description",
                     "autoDisplayName": false,
                     "displayName": "Scientist Keycard Description",
+                    "addToList": true,
                     "guid": "ef91395b-1de6-4dd1-ac9d-f55ec167e00a"
                 }
             ]
@@ -48,12 +52,14 @@
                     "id": "keycard_scientist2",
                     "autoDisplayName": false,
                     "displayName": "Research Scientist Keycard",
+                    "addToList": true,
                     "guid": "43b8fed0-9d5a-4b9c-9456-c36d89d8e720"
                 },
                 {
                     "id": "keycard_scientist2_description",
                     "autoDisplayName": false,
                     "displayName": "Research Scientist Keycard Description",
+                    "addToList": true,
                     "guid": "7899dccd-d4b6-4cc5-b9a3-71b392be06b9"
                 }
             ]
@@ -66,12 +72,14 @@
                     "id": "keycard_zone_manager",
                     "autoDisplayName": false,
                     "displayName": "Zone Manager Keycard",
+                    "addToList": true,
                     "guid": "a3fdcb16-e53b-494f-9e64-f3e2dc7bb5ee"
                 },
                 {
                     "id": "keycard_zone_manager_description",
                     "autoDisplayName": false,
                     "displayName": "Zone Manager Keycard Description",
+                    "addToList": true,
                     "guid": "2872ce61-b985-4af9-87a5-238ce746953f"
                 }
             ]
@@ -84,12 +92,14 @@
                     "id": "keycard_guard",
                     "autoDisplayName": false,
                     "displayName": "Guard Keycard",
+                    "addToList": true,
                     "guid": "cd8ba32b-cdbe-4078-b0a0-00e6d07b556d"
                 },
                 {
                     "id": "keycard_guard_description",
                     "autoDisplayName": false,
                     "displayName": "Guard Keycard Description",
+                    "addToList": true,
                     "guid": "a1f57bca-a3b9-4445-adb7-a32b66b362ad"
                 }
             ]
@@ -102,12 +112,14 @@
                     "id": "keycard_mtf_private",
                     "autoDisplayName": false,
                     "displayName": "MTF Private Keycard",
+                    "addToList": true,
                     "guid": "4565d3ca-059d-4e75-9f23-379c1578c52a"
                 },
                 {
                     "id": "keycard_mtf_private_description",
                     "autoDisplayName": false,
                     "displayName": "MTF Private Keycard Description",
+                    "addToList": true,
                     "guid": "e3436c73-3d96-4fc1-beb4-f1d0a77205b3"
                 }
             ]
@@ -120,12 +132,14 @@
                     "id": "keycard_containment_engineer",
                     "autoDisplayName": false,
                     "displayName": "Containment Engineer Keycard",
+                    "addToList": true,
                     "guid": "ba1f5865-38bb-47cf-adb5-39abea911ca0"
                 },
                 {
                     "id": "keycard_containment_engineer_description",
                     "autoDisplayName": false,
                     "displayName": "Containment Engineer Keycard Description",
+                    "addToList": true,
                     "guid": "ee71a5e7-0e10-4ff0-b43b-45337ca48527"
                 }
             ]
@@ -138,12 +152,14 @@
                     "id": "keycard_mtf_sergeant",
                     "autoDisplayName": false,
                     "displayName": "MTF Operative Keycard",
+                    "addToList": true,
                     "guid": "b4856a5d-5da8-4e6f-9fb4-2aa87ef0c37d"
                 },
                 {
                     "id": "keycard_mtf_sergeant_description",
                     "autoDisplayName": false,
                     "displayName": "MTF Operative Keycard Description",
+                    "addToList": true,
                     "guid": "9d4cdc37-e9f6-49c1-997e-ee275adee8ab"
                 }
             ]
@@ -156,12 +172,14 @@
                     "id": "keycard_mtf_captain",
                     "autoDisplayName": false,
                     "displayName": "MTF Captain Keycard",
+                    "addToList": true,
                     "guid": "de3b15bf-05d1-4842-a9d7-79130908d1ac"
                 },
                 {
                     "id": "keycard_mtf_captain_description",
                     "autoDisplayName": false,
                     "displayName": "MTF Captain Keycard Description",
+                    "addToList": true,
                     "guid": "5987c7cc-fcb4-4f2f-80c5-da499df5754e"
                 }
             ]
@@ -174,12 +192,14 @@
                     "id": "keycard_facility_manager",
                     "autoDisplayName": false,
                     "displayName": "Facility Manager",
+                    "addToList": true,
                     "guid": "6c3355c0-7795-49f9-9dab-fab3750c4bd9"
                 },
                 {
                     "id": "keycard_facility_manager_description",
                     "autoDisplayName": false,
                     "displayName": "Facility Manager Description",
+                    "addToList": true,
                     "guid": "ab67fed8-9ad2-474a-b076-0536593cc64a"
                 }
             ]
@@ -192,12 +212,14 @@
                     "id": "keycard_chaos",
                     "autoDisplayName": false,
                     "displayName": "Chaos Insurgency Keycard",
+                    "addToList": true,
                     "guid": "f39d63d1-1456-40ba-b8fe-4d12734db687"
                 },
                 {
                     "id": "keycard_chaos_description",
                     "autoDisplayName": false,
                     "displayName": "Chaos Insurgency Keycard Description",
+                    "addToList": true,
                     "guid": "762c1a32-2177-4e44-8b2b-37dad44210f7"
                 }
             ]
@@ -210,12 +232,14 @@
                     "id": "keycard_o5",
                     "autoDisplayName": false,
                     "displayName": "O5-level Keycard",
+                    "addToList": true,
                     "guid": "4e47002a-ac46-44d4-a7fc-2486e8617323"
                 },
                 {
                     "id": "keycard_o5_description",
                     "autoDisplayName": false,
                     "displayName": "O5-level Keycard Desciprion",
+                    "addToList": true,
                     "guid": "a21da11a-95ec-456a-ba62-ef5d896720aa"
                 }
             ]
@@ -228,12 +252,14 @@
                     "id": "inv_radio",
                     "autoDisplayName": false,
                     "displayName": "Radio",
+                    "addToList": true,
                     "guid": "27fa115d-f3bd-4573-b6b0-e6eb48d585fa"
                 },
                 {
                     "id": "inv_radio_description",
                     "autoDisplayName": false,
                     "displayName": "Radio Description",
+                    "addToList": true,
                     "guid": "fad1c1e6-aa7d-4e0b-b13b-574343ae0f0c"
                 }
             ]
@@ -246,12 +272,14 @@
                     "id": "inv_com15",
                     "autoDisplayName": false,
                     "displayName": "Com-15",
+                    "addToList": true,
                     "guid": "2e5bf9c1-5ccd-48b9-ad88-18290e5c7a3b"
                 },
                 {
                     "id": "inv_com15_description",
                     "autoDisplayName": false,
                     "displayName": "Com-15 Description",
+                    "addToList": true,
                     "guid": "c9c1ff61-099b-4223-a7a3-c0f8695ba40c"
                 }
             ]
@@ -264,12 +292,14 @@
                     "id": "inv_medkit",
                     "autoDisplayName": false,
                     "displayName": "Medkit",
+                    "addToList": true,
                     "guid": "f5eb32ab-a778-400d-bd6c-08a001f4a9b6"
                 },
                 {
                     "id": "inv_medkit_description",
                     "autoDisplayName": false,
                     "displayName": "Medkit Description",
+                    "addToList": true,
                     "guid": "c52e0c46-e260-46f7-943b-4ff6a2db2071"
                 }
             ]
@@ -282,12 +312,14 @@
                     "id": "inv_flashlight",
                     "autoDisplayName": false,
                     "displayName": "Flashlight",
+                    "addToList": true,
                     "guid": "3354d5cc-a6f6-4324-86dc-e093002dcbde"
                 },
                 {
                     "id": "inv_flashlight_description",
                     "autoDisplayName": false,
                     "displayName": "Flashlight Description",
+                    "addToList": true,
                     "guid": "44611b54-31a3-4d98-9a9c-197183606e20"
                 }
             ]
@@ -300,12 +332,14 @@
                     "id": "inv_microhid",
                     "autoDisplayName": false,
                     "displayName": "MicroHID",
+                    "addToList": true,
                     "guid": "734861dc-632b-4f3b-ab1f-8260e0175e88"
                 },
                 {
                     "id": "inv_microhid_description",
                     "autoDisplayName": false,
                     "displayName": "MicroHID Description",
+                    "addToList": true,
                     "guid": "f0dd7951-a533-41e8-8191-9bad56dcc626"
                 }
             ]
@@ -318,12 +352,14 @@
                     "id": "inv_scp500",
                     "autoDisplayName": false,
                     "displayName": "SCP-500",
+                    "addToList": true,
                     "guid": "42e3f187-b566-49d8-9511-b711fc5b7d70"
                 },
                 {
                     "id": "inv_scp500_description",
                     "autoDisplayName": false,
                     "displayName": "SCP-500 Description",
+                    "addToList": true,
                     "guid": "ba46ac84-3a62-4d3c-8b7b-94fe1b91b3b3"
                 }
             ]
@@ -336,12 +372,14 @@
                     "id": "inv_scp207",
                     "autoDisplayName": false,
                     "displayName": "SCP-207",
+                    "addToList": true,
                     "guid": "483050f2-b42a-4a47-b543-c8aa1cebbaca"
                 },
                 {
                     "id": "inv_scp207_description",
                     "autoDisplayName": false,
                     "displayName": "SCP-207 Description",
+                    "addToList": true,
                     "guid": "6d4878d0-bf89-4196-95d1-5f235a9d0d5d"
                 }
             ]
@@ -354,12 +392,14 @@
                     "id": "inv_e11sr",
                     "autoDisplayName": false,
                     "displayName": "MTF-E11-SR",
+                    "addToList": true,
                     "guid": "92bdfd37-d84b-4df1-82b1-64bce22275f1"
                 },
                 {
                     "id": "inv_e11sr_description",
                     "autoDisplayName": false,
                     "displayName": "MTF-E11-SR Description",
+                    "addToList": true,
                     "guid": "8da46394-c320-4d77-94af-99a899113dfa"
                 }
             ]
@@ -372,12 +412,14 @@
                     "id": "inv_crossvec",
                     "autoDisplayName": false,
                     "displayName": "Crossvec",
+                    "addToList": true,
                     "guid": "348eb76a-8bdf-4f19-a520-9cc954ffcaca"
                 },
                 {
                     "id": "inv_crossvec_description",
                     "autoDisplayName": false,
                     "displayName": "Crossvec Description",
+                    "addToList": true,
                     "guid": "0c778faa-f734-47e2-96fe-6761294e9463"
                 }
             ]
@@ -390,12 +432,14 @@
                     "id": "inv_fsp9",
                     "autoDisplayName": false,
                     "displayName": "FSP-9",
+                    "addToList": true,
                     "guid": "b183f7c8-af1b-45eb-8b97-b39ad722dd1b"
                 },
                 {
                     "id": "inv_fsp9_description",
                     "autoDisplayName": false,
                     "displayName": "FSP-9 Description",
+                    "addToList": true,
                     "guid": "b358286b-c685-477f-84fe-63b43c287267"
                 }
             ]
@@ -408,12 +452,14 @@
                     "id": "inv_logicer",
                     "autoDisplayName": false,
                     "displayName": "Logicer",
+                    "addToList": true,
                     "guid": "9b8c010a-78fd-447a-9ca4-074d1e6657a2"
                 },
                 {
                     "id": "inv_logicer_description",
                     "autoDisplayName": false,
                     "displayName": "Logicer Description",
+                    "addToList": true,
                     "guid": "2dd9c84a-aa05-46b7-9bae-de2925bc8da4"
                 }
             ]
@@ -426,12 +472,14 @@
                     "id": "inv_he_grenade",
                     "autoDisplayName": false,
                     "displayName": "Grenade",
+                    "addToList": true,
                     "guid": "50eb7339-9872-4c37-af78-27d68fef3cb7"
                 },
                 {
                     "id": "inv_he_grenade_description",
                     "autoDisplayName": false,
                     "displayName": "Grenade Description",
+                    "addToList": true,
                     "guid": "66a6dcb9-45a0-4b0b-ac61-710d3871694c"
                 }
             ]
@@ -444,12 +492,14 @@
                     "id": "inv_flashbang",
                     "autoDisplayName": false,
                     "displayName": "Flashbang",
+                    "addToList": true,
                     "guid": "90493dd3-fe53-481e-b9d0-21027a0a478a"
                 },
                 {
                     "id": "inv_flashbang_description",
                     "autoDisplayName": false,
                     "displayName": "Flashbang Description",
+                    "addToList": true,
                     "guid": "833c591f-ce05-4d67-b100-8cc4d4ff2622"
                 }
             ]
@@ -462,12 +512,14 @@
                     "id": "inv_com18",
                     "autoDisplayName": false,
                     "displayName": "COM-18",
+                    "addToList": true,
                     "guid": "6f5183cc-6445-442f-bf8c-ac38f77731c6"
                 },
                 {
                     "id": "inv_com18_description",
                     "autoDisplayName": false,
                     "displayName": "COM-18 Description",
+                    "addToList": true,
                     "guid": "7a3f9985-1a61-4398-87f0-e39b60291343"
                 }
             ]
@@ -480,12 +532,14 @@
                     "id": "inv_scp018",
                     "autoDisplayName": false,
                     "displayName": "SCP-018",
+                    "addToList": true,
                     "guid": "76534fcf-72e8-422b-886b-f9a1642a370c"
                 },
                 {
                     "id": "inv_scp018_description",
                     "autoDisplayName": false,
                     "displayName": "SCP-018 Description",
+                    "addToList": true,
                     "guid": "ccbee3be-f8eb-4044-8f6b-adf22541601d"
                 }
             ]
@@ -498,12 +552,14 @@
                     "id": "inv_scp268",
                     "autoDisplayName": false,
                     "displayName": "SCP-268",
+                    "addToList": true,
                     "guid": "a1aabe88-3b04-4a6a-b3d6-4350f52ce7f0"
                 },
                 {
                     "id": "inv_scp268_description",
                     "autoDisplayName": false,
                     "displayName": "SCP-268 Description",
+                    "addToList": true,
                     "guid": "1a8917ef-fa9e-4c12-a6d1-710cf2e117aa"
                 }
             ]
@@ -516,12 +572,14 @@
                     "id": "inv_adrenaline",
                     "autoDisplayName": false,
                     "displayName": "Adrenaline",
+                    "addToList": true,
                     "guid": "e5d5aaca-bd44-4510-aef5-6633afdae809"
                 },
                 {
                     "id": "inv_adrenaline_description",
                     "autoDisplayName": false,
                     "displayName": "Adrenaline Description",
+                    "addToList": true,
                     "guid": "d14bd9d1-cb96-410f-aa0a-f75896b7e4f9"
                 }
             ]
@@ -534,12 +592,14 @@
                     "id": "inv_painkillers",
                     "autoDisplayName": false,
                     "displayName": "Painkillers",
+                    "addToList": true,
                     "guid": "e8fb3d68-7eaf-4483-8f56-90e9568f84b3"
                 },
                 {
                     "id": "inv_painkillers_description",
                     "autoDisplayName": false,
                     "displayName": "Painkillers Description",
+                    "addToList": true,
                     "guid": "489a2c20-97a3-44a1-b057-e9f553c8b2ce"
                 }
             ]
@@ -552,12 +612,14 @@
                     "id": "inv_coin",
                     "autoDisplayName": false,
                     "displayName": "Coin",
+                    "addToList": true,
                     "guid": "ad168bfa-eb42-4ca5-bea2-ebcc617d4054"
                 },
                 {
                     "id": "inv_coin_description",
                     "autoDisplayName": false,
                     "displayName": "Coin Description",
+                    "addToList": true,
                     "guid": "72da5071-68d3-4a44-830b-2ffac0ba9b53"
                 }
             ]
@@ -570,12 +632,14 @@
                     "id": "inv_armor_light",
                     "autoDisplayName": false,
                     "displayName": "Light Armor",
+                    "addToList": true,
                     "guid": "24aa89a7-e44f-4385-bd21-6fb13206e0ec"
                 },
                 {
                     "id": "inv_armor_light_description",
                     "autoDisplayName": false,
                     "displayName": "Light Armor Description",
+                    "addToList": true,
                     "guid": "caf76e32-1b7b-44c0-ae1e-40b83de4a759"
                 }
             ]
@@ -588,12 +652,14 @@
                     "id": "inv_armor_combat",
                     "autoDisplayName": false,
                     "displayName": "Combat Armor",
+                    "addToList": true,
                     "guid": "ba485a65-39a1-4a53-884c-713a4dd03735"
                 },
                 {
                     "id": "inv_armor_combat_description",
                     "autoDisplayName": false,
                     "displayName": "Combat Armor Description",
+                    "addToList": true,
                     "guid": "9b9538e3-1a0e-4257-8fb1-d2bf7a9ae725"
                 }
             ]
@@ -606,12 +672,14 @@
                     "id": "inv_armor_heavy",
                     "autoDisplayName": false,
                     "displayName": "Heavy Armor",
+                    "addToList": true,
                     "guid": "e1860978-32c2-47eb-bd39-ef3ed364cd8b"
                 },
                 {
                     "id": "inv_armor_heavy_description",
                     "autoDisplayName": false,
                     "displayName": "Heavy Armor Description",
+                    "addToList": true,
                     "guid": "95798a29-82e2-455b-a04b-ab4153401aa1"
                 }
             ]
@@ -624,12 +692,14 @@
                     "id": "inv_revolver",
                     "autoDisplayName": false,
                     "displayName": "Revolver",
+                    "addToList": true,
                     "guid": "bc78baa6-bdad-44bb-a4e1-93d8ab948d65"
                 },
                 {
                     "id": "inv_revolver_description",
                     "autoDisplayName": false,
                     "displayName": "Revolver Description",
+                    "addToList": true,
                     "guid": "58823a69-74e0-4f76-a418-deb043c0356e"
                 }
             ]
@@ -642,12 +712,14 @@
                     "id": "inv_ak",
                     "autoDisplayName": false,
                     "displayName": "AK",
+                    "addToList": true,
                     "guid": "6026e027-19a2-49ab-a85c-d45007e8add1"
                 },
                 {
                     "id": "inv_ak_description",
                     "autoDisplayName": false,
                     "displayName": "AK Description",
+                    "addToList": true,
                     "guid": "f2369336-63a8-49ab-9ae6-b71b56c6b208"
                 }
             ]
@@ -660,12 +732,14 @@
                     "id": "inv_shotgun",
                     "autoDisplayName": false,
                     "displayName": "Shotgun",
+                    "addToList": true,
                     "guid": "d8c94171-a688-4230-a1d5-a46292cf65c1"
                 },
                 {
                     "id": "inv_shotgun_description",
                     "autoDisplayName": false,
                     "displayName": "Shotgun Description",
+                    "addToList": true,
                     "guid": "0c4f0915-8f0b-4b48-b715-0b85ffbb3030"
                 }
             ]
@@ -678,12 +752,14 @@
                     "id": "inv_candybag",
                     "autoDisplayName": false,
                     "displayName": "Candybag",
+                    "addToList": true,
                     "guid": "dbf52dfd-20e0-4cbc-a5cf-d1e83ffb0f39"
                 },
                 {
                     "id": "inv_candybag_description",
                     "autoDisplayName": false,
                     "displayName": "Candybag Description",
+                    "addToList": true,
                     "guid": "9d90dbf9-b0a3-4697-acd5-40338eff4c35"
                 }
             ]
@@ -696,12 +772,14 @@
                     "id": "inv_scp2176",
                     "autoDisplayName": false,
                     "displayName": "SCP-2176",
+                    "addToList": true,
                     "guid": "678cf007-d6bc-443f-83ac-80c0483e9235"
                 },
                 {
                     "id": "inv_scp2176_description",
                     "autoDisplayName": false,
                     "displayName": "SCP-2176 Description",
+                    "addToList": true,
                     "guid": "39f54b9f-7b24-4c97-9aad-b74121514201"
                 }
             ]
@@ -714,12 +792,14 @@
                     "id": "inv_scp244a",
                     "autoDisplayName": false,
                     "displayName": "SCP-244A",
+                    "addToList": true,
                     "guid": "20f119d0-8d2c-4b23-8161-84057bc63c0c"
                 },
                 {
                     "id": "inv_scp244a_description",
                     "autoDisplayName": false,
                     "displayName": "SCP-244A Description",
+                    "addToList": true,
                     "guid": "29b81824-858b-4dcb-8ae2-b479704feddb"
                 }
             ]
@@ -732,12 +812,14 @@
                     "id": "inv_scp244b",
                     "autoDisplayName": false,
                     "displayName": "SCP-244B",
+                    "addToList": true,
                     "guid": "c3641957-7692-4d75-9c33-cb776ea759ce"
                 },
                 {
                     "id": "inv_scp244b_description",
                     "autoDisplayName": false,
                     "displayName": "SCP-244B Description",
+                    "addToList": true,
                     "guid": "9dcc1592-558a-4b64-8f4f-ab3aed69c8fa"
                 }
             ]
@@ -750,12 +832,14 @@
                     "id": "inv_scp1853",
                     "autoDisplayName": false,
                     "displayName": "SCP-1853",
+                    "addToList": true,
                     "guid": "2473dcff-5791-424c-907e-ab6918a9a476"
                 },
                 {
                     "id": "inv_scp1853_description",
                     "autoDisplayName": false,
                     "displayName": "SCP-1853 Description",
+                    "addToList": true,
                     "guid": "9c4ff6c8-54b1-4c2e-bb1b-7bfdf698da9b"
                 }
             ]
@@ -768,12 +852,14 @@
                     "id": "inv_3x_particle_disruptor",
                     "autoDisplayName": false,
                     "displayName": "3-X Particle Disruptor",
+                    "addToList": true,
                     "guid": "cef111e9-3b7f-451c-b70c-0912fa919df7"
                 },
                 {
                     "id": "inv_3x_particle_disruptor_description",
                     "autoDisplayName": false,
                     "displayName": "3-X Particle Disruptor",
+                    "addToList": true,
                     "guid": "d57dfda1-71b3-4d19-be87-95a080459019"
                 }
             ]
@@ -786,12 +872,14 @@
                     "id": "inv_com45",
                     "autoDisplayName": false,
                     "displayName": "COM-45",
+                    "addToList": true,
                     "guid": "3848b948-1f63-404b-bc5e-a727d39d72aa"
                 },
                 {
                     "id": "inv_com45_description",
                     "autoDisplayName": false,
                     "displayName": "COM-45 Description",
+                    "addToList": true,
                     "guid": "f51d73ee-3eb0-46f1-a0e3-0a6d4a73d068"
                 }
             ]
@@ -804,12 +892,14 @@
                     "id": "inv_scp1576",
                     "autoDisplayName": false,
                     "displayName": "SCP-1576",
+                    "addToList": true,
                     "guid": "d14e55e5-3037-4553-a4cc-f6b4d21b9ec0"
                 },
                 {
                     "id": "inv_scp1576_description",
                     "autoDisplayName": false,
                     "displayName": "SCP-1576 Description",
+                    "addToList": true,
                     "guid": "13d8b29b-a35a-4575-84b4-d4d38d13884c"
                 }
             ]
@@ -822,12 +912,14 @@
                     "id": "inv_jailbird",
                     "autoDisplayName": false,
                     "displayName": "Jailbird",
+                    "addToList": true,
                     "guid": "c78c32ce-4b84-48b9-b531-fda3c0f0f455"
                 },
                 {
                     "id": "inv_jailbird_description",
                     "autoDisplayName": false,
                     "displayName": "Jailbird Description",
+                    "addToList": true,
                     "guid": "fc0ac0f6-4c90-4c8e-88c9-86dd4ab6dc9c"
                 }
             ]
@@ -840,12 +932,14 @@
                     "id": "inv_scp207_anti",
                     "autoDisplayName": false,
                     "displayName": "Anti SCP-207",
+                    "addToList": true,
                     "guid": "7b14e2d0-872e-421e-b252-4a3ed380101a"
                 },
                 {
                     "id": "inv_scp207_anti_description",
                     "autoDisplayName": false,
                     "displayName": "Anti SCP-207 Description",
+                    "addToList": true,
                     "guid": "86a4dba9-e980-4de5-baa4-673f87fcfc10"
                 }
             ]
@@ -858,12 +952,14 @@
                     "id": "inv_fr_mg0",
                     "autoDisplayName": false,
                     "displayName": "FR-MG-0",
+                    "addToList": true,
                     "guid": "5398ea3f-495e-4af4-a35c-601c316b30dc"
                 },
                 {
                     "id": "inv_fr_mg0_description",
                     "autoDisplayName": false,
                     "displayName": "FR-MG-0 Description",
+                    "addToList": true,
                     "guid": "7a2575be-5278-4bec-8932-9d06e6769041"
                 }
             ]
@@ -876,12 +972,14 @@
                     "id": "inv_a7",
                     "autoDisplayName": false,
                     "displayName": "A7",
+                    "addToList": true,
                     "guid": "0ad07385-e9f5-437f-b983-ebf0f19018cb"
                 },
                 {
                     "id": "inv_a7_description",
                     "autoDisplayName": false,
                     "displayName": "A7 Description",
+                    "addToList": true,
                     "guid": "0d270423-43f5-4732-8c22-0106e4ee54fe"
                 }
             ]
@@ -894,12 +992,14 @@
                     "id": "inv_lantern",
                     "autoDisplayName": false,
                     "displayName": "Googles",
+                    "addToList": true,
                     "guid": "04027ea9-bcc4-425e-a2d6-64eeaa910937"
                 },
                 {
                     "id": "inv_lantern_description",
                     "autoDisplayName": false,
                     "displayName": "Googles Description",
+                    "addToList": true,
                     "guid": "b2266f7d-1349-4944-b7a6-5759d55ce522"
                 }
             ]
@@ -912,12 +1012,14 @@
                     "id": "inv_snowball",
                     "autoDisplayName": false,
                     "displayName": "Snowball",
+                    "addToList": true,
                     "guid": "ebe18d7c-0e24-4985-b0ae-9d81c07ec9cc"
                 },
                 {
                     "id": "inv_snowball_description",
                     "autoDisplayName": false,
                     "displayName": "Snowball Description",
+                    "addToList": true,
                     "guid": "db5cee55-46b5-4f1b-bc9a-ce135df973ae"
                 }
             ]
@@ -930,12 +1032,14 @@
                     "id": "inv_coal",
                     "autoDisplayName": false,
                     "displayName": "Coal",
+                    "addToList": true,
                     "guid": "f3d2120d-ec92-4c63-ac86-0699181160aa"
                 },
                 {
                     "id": "inv_coal_description",
                     "autoDisplayName": false,
                     "displayName": "Coal Description",
+                    "addToList": true,
                     "guid": "10e90310-9852-4637-b131-9b8e20c673db"
                 }
             ]
@@ -948,12 +1052,14 @@
                     "id": "inv_coal_special",
                     "autoDisplayName": false,
                     "displayName": "Coal?",
+                    "addToList": true,
                     "guid": "ec79c759-75a8-4794-b010-a4f394211696"
                 },
                 {
                     "id": "inv_coal_special_description",
                     "autoDisplayName": false,
                     "displayName": "Coal? Description",
+                    "addToList": true,
                     "guid": "7e90da1c-c3d3-4399-8f09-2a98accf8ee4"
                 }
             ]
@@ -966,12 +1072,14 @@
                     "id": "inv_tape_player",
                     "autoDisplayName": false,
                     "displayName": "Tape Player",
+                    "addToList": true,
                     "guid": "d0aa1ca6-e045-4861-b1b9-0d21bbb2dea7"
                 },
                 {
                     "id": "inv_tape_player_description",
                     "autoDisplayName": false,
                     "displayName": "Tape Player Description",
+                    "addToList": true,
                     "guid": "56a1675a-d2db-435b-b0a0-5024ca651661"
                 }
             ]
