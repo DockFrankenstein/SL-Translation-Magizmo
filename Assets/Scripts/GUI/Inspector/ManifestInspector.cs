@@ -9,7 +9,7 @@ namespace Project.GUI.Inspector
     public sealed class ManifestInspector : InspectorDisplayPanel
     {
         [SerializeField] bool fallbackVersion;
-        [SerializeField] string[] versions;
+        [SerializeField] Version[] versions;
         [SerializeField][Tooltip("Id of the field in hierarchy")] string hierarchyId;
         [SerializeField] Field[] fields;
         [SerializeField] List[] lists;

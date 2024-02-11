@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad5f9fcd0d7862499ea7d9e1304ee04, type: 3}
   m_Name: 13.4.1_!Version
   m_EditorClassIdentifier: 
-  version: 13.4.1
+  version:
+    releases: 0d0000000400000001000000
   containers:
   - {fileID: -944628639613478452, guid: 2ae5c6bc4ebc20f44afc52701530f29e, type: 3}
   - {fileID: -944628639613478452, guid: 58d07b440c8038b4b94ed48a2b2e98b5, type: 3}

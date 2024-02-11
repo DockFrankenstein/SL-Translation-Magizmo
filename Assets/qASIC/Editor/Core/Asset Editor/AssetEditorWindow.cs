@@ -47,7 +47,7 @@ namespace qASIC.EditorTools.AssetEditor
         {
             if (_openedWindows.ContainsKey(asset) && _openedWindows[asset].Count > 0)
             {
-                _openedWindows[asset][1].Show();
+                _openedWindows[asset][0].Show();
                 return;
             }
 

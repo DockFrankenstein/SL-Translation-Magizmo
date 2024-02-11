@@ -56,9 +56,7 @@ namespace Project.Translation.EditorWindows
             GenericMenu menu = new GenericMenu();
 
             menu.AddItem("Copy ID", false, () => GUIUtility.systemCopyBuffer = item.field.id);
-
             menu.AddSeparator("");
-
             menu.AddToggableItem($"File: {item?.field?.mappingContainer?.name ?? "NULL"}", false, () => { }, false);
 
             menu.ShowAsContext();
