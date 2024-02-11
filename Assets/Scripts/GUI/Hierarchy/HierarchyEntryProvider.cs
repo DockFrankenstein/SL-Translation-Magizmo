@@ -11,11 +11,11 @@ namespace Project.GUI.Hierarchy
         [SerializeField] bool addSeparators;
 
         public override HierarchyItem[] GetItems() =>
-            manager.CurrentVersion.defines
+            manager.CurrentVersion.containers
                 .Where(x => !x.Hide)
                 .Select(x =>
                 {
-                    var a = x.GetDefines().Select(x => new HierarchyItem(x.id, x.autoDisplayName ? PUtility.GenerateDisplayName(x.id) : x.displayName));
+                    var a = x.GetMappedFields().Select(x => new HierarchyItem(x.id, x.autoDisplayName ? PUtility.GenerateDisplayName(x.id) : x.displayName));
 
                     if (addSeparators)
                         a = a.Append(new HierarchyItem("---"));

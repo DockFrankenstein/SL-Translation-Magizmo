@@ -1,0 +1,338 @@
+{
+    "fileName": "InterfaceSettings.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "settings_interface_intro_animation",
+            "guid": "3e575107-a184-45de-81bc-e536b5428bc4",
+            "fields": [
+                {
+                    "id": "settings_interface_ip_display",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5f95387a-958b-409e-ab8c-2e80a9b10ec7"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_ip_display",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5f95387a-958b-409e-ab8c-2e80a9b10ec7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0bd3a8f7-fdb0-47c9-b018-ad9d72f40242",
+            "fields": [
+                {
+                    "id": "settings_interface_language_interface",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3f7beb47-833d-4f21-a475-10cfb0164828"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_language_interface",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3f7beb47-833d-4f21-a475-10cfb0164828"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9885ed7a-e885-49f4-8a8d-153f22cc3ffc",
+            "fields": [
+                {
+                    "id": "settings_interface_language_interface_warning",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0d2ab203-11ac-40cf-909e-8ef3b4e80617"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_language_interface_warning",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0d2ab203-11ac-40cf-909e-8ef3b4e80617"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "166e35e5-f16a-460f-98b6-a8ebdbb92856",
+            "fields": [
+                {
+                    "id": "settings_interface_language_interface_loading",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0bfeac65-4e10-490f-838b-20d984cee5a7"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_language_interface_loading",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0bfeac65-4e10-490f-838b-20d984cee5a7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0a2c8fd5-c342-428f-8111-23dad8f954a8",
+            "fields": [
+                {
+                    "id": "settings_interface_subtitles",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5a115e3c-68b4-418d-abee-f13db4fb1090"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_subtitles",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5a115e3c-68b4-418d-abee-f13db4fb1090"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "bb7f3ce5-b357-499a-b049-9e8f6f97fde7",
+            "fields": [
+                {
+                    "id": "settings_interface_healthbar_mode",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "bdfc870a-cd5c-47af-ad5a-667638e0148a"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_healthbar_mode",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "bdfc870a-cd5c-47af-ad5a-667638e0148a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "07a844e5-3fff-46e7-87ed-75dca939bdd9",
+            "fields": [
+                {
+                    "id": "settings_interface_exact",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d5148189-6e2d-42f8-a339-802ee1fbe2b8"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_exact",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d5148189-6e2d-42f8-a339-802ee1fbe2b8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "eeac5fd4-4f88-4ce6-be57-6059ad20958f",
+            "fields": [
+                {
+                    "id": "settings_interface_percentage",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "31a6b961-49be-4c28-af7c-cb0bb5ac6f80"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_percentage",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "31a6b961-49be-4c28-af7c-cb0bb5ac6f80"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "fffb36a9-11a4-44f6-a49d-97a2a6aa8ffd",
+            "fields": [
+                {
+                    "id": "settings_interface_intro_animation",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "74f1803c-b5d2-4afe-9492-edbd4b518db9"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_intro_animation",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "74f1803c-b5d2-4afe-9492-edbd4b518db9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "858f10c1-3737-4eba-88c5-0ba732438b33",
+            "fields": [
+                {
+                    "id": "settings_interface_regular",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "357f5327-2267-42a8-b6df-3388630a3732"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_regular",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "357f5327-2267-42a8-b6df-3388630a3732"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d4f12bb5-44ac-4cc6-94b7-64d11d5f7bb0",
+            "fields": [
+                {
+                    "id": "settings_interface_fast",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3d1b3205-45bd-4d84-9b4f-7b10dccfbd6a"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_fast",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3d1b3205-45bd-4d84-9b4f-7b10dccfbd6a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "38fefbda-4cbd-4f57-b7a1-9b0efb88147a",
+            "fields": [
+                {
+                    "id": "settings_interface_intro_animation_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5db5e9e5-bf49-4b9d-b2c1-41335c278f3b"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_intro_animation_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5db5e9e5-bf49-4b9d-b2c1-41335c278f3b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "757d4e0f-f05c-465b-ba1e-393b21499a3b",
+            "fields": [
+                {
+                    "id": "settings_interface_hidden",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5b403195-068a-486a-99b7-2b60c58d4aa3"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_hidden",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5b403195-068a-486a-99b7-2b60c58d4aa3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "fc570741-a0dd-4c85-ba35-be05472bc33b",
+            "fields": [
+                {
+                    "id": "settings_interface_ip_display_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3409d8ce-ac87-478f-a0d7-b7127ca17ccb"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_ip_display_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3409d8ce-ac87-478f-a0d7-b7127ca17ccb"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "98703e2c-77d6-41cc-87c7-ba9cf29a568e",
+            "fields": [
+                {
+                    "id": "settings_interface_taskbar_spawn",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1b6bf8ad-c163-4890-841c-a7c257fb5849"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_interface_taskbar_spawn",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1b6bf8ad-c163-4890-841c-a7c257fb5849"
+                }
+            ]
+        }
+    ]
+}

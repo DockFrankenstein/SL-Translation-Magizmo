@@ -1,0 +1,1664 @@
+{
+    "fileName": "AttachmentNames.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": true,
+    "separationCharacter": 126,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "557e9969-23bb-40c4-9722-787bcd4d308a",
+            "fields": [
+                {
+                    "id": "attachment_none",
+                    "autoDisplayName": false,
+                    "displayName": "None",
+                    "addToList": true,
+                    "guid": "a599fa03-587c-4f86-bcd7-d98ca66c63cf"
+                },
+                {
+                    "id": "attachment_none_description",
+                    "autoDisplayName": false,
+                    "displayName": "None Description",
+                    "addToList": true,
+                    "guid": "8405a09a-fa78-4741-9b0f-eae2fcd7b1d0"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_none",
+                    "autoDisplayName": false,
+                    "displayName": "None",
+                    "addToList": true,
+                    "guid": "a599fa03-587c-4f86-bcd7-d98ca66c63cf"
+                },
+                {
+                    "id": "attachment_none_description",
+                    "autoDisplayName": false,
+                    "displayName": "None Description",
+                    "addToList": true,
+                    "guid": "8405a09a-fa78-4741-9b0f-eae2fcd7b1d0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5220fccf-79b2-46b4-97ef-d4d898f3b35b",
+            "fields": [
+                {
+                    "id": "attachment_scope_iron",
+                    "autoDisplayName": false,
+                    "displayName": "Iron Sights",
+                    "addToList": true,
+                    "guid": "7d0a3a94-5784-4f9e-93bd-2577258dfe89"
+                },
+                {
+                    "id": "attachment_scope_iron_description",
+                    "autoDisplayName": false,
+                    "displayName": "Iron Sights Description",
+                    "addToList": true,
+                    "guid": "ed14549f-bff5-4537-acae-485883e2af25"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_scope_iron",
+                    "autoDisplayName": false,
+                    "displayName": "Iron Sights",
+                    "addToList": true,
+                    "guid": "7d0a3a94-5784-4f9e-93bd-2577258dfe89"
+                },
+                {
+                    "id": "attachment_scope_iron_description",
+                    "autoDisplayName": false,
+                    "displayName": "Iron Sights Description",
+                    "addToList": true,
+                    "guid": "ed14549f-bff5-4537-acae-485883e2af25"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "58d67f8a-eee8-40be-b215-a126d07106b5",
+            "fields": [
+                {
+                    "id": "attachment_scope_dot",
+                    "autoDisplayName": false,
+                    "displayName": "Dot Sight",
+                    "addToList": true,
+                    "guid": "72dd00d4-6673-441b-8a12-03b542f47af2"
+                },
+                {
+                    "id": "attachment_scope_dot_description",
+                    "autoDisplayName": false,
+                    "displayName": "Dot Sight Description",
+                    "addToList": true,
+                    "guid": "a4525480-eba2-40f9-97b2-2015cf25eb30"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_scope_dot",
+                    "autoDisplayName": false,
+                    "displayName": "Dot Sight",
+                    "addToList": true,
+                    "guid": "72dd00d4-6673-441b-8a12-03b542f47af2"
+                },
+                {
+                    "id": "attachment_scope_dot_description",
+                    "autoDisplayName": false,
+                    "displayName": "Dot Sight Description",
+                    "addToList": true,
+                    "guid": "a4525480-eba2-40f9-97b2-2015cf25eb30"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2f9cc267-9ad7-484b-99dd-c3328daa9dac",
+            "fields": [
+                {
+                    "id": "attachment_scope_holo",
+                    "autoDisplayName": false,
+                    "displayName": "Holo Sight",
+                    "addToList": true,
+                    "guid": "e378defd-92be-4421-9966-053e0ce01b92"
+                },
+                {
+                    "id": "attachment_scope_holo_description",
+                    "autoDisplayName": false,
+                    "displayName": "Holo Sight Description",
+                    "addToList": true,
+                    "guid": "c775b935-88a5-4c64-8e6d-83550f35f108"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_scope_holo",
+                    "autoDisplayName": false,
+                    "displayName": "Holo Sight",
+                    "addToList": true,
+                    "guid": "e378defd-92be-4421-9966-053e0ce01b92"
+                },
+                {
+                    "id": "attachment_scope_holo_description",
+                    "autoDisplayName": false,
+                    "displayName": "Holo Sight Description",
+                    "addToList": true,
+                    "guid": "c775b935-88a5-4c64-8e6d-83550f35f108"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e151b8bc-f395-450a-8e5b-6fb7587c0316",
+            "fields": [
+                {
+                    "id": "attachment_scope_night_vision",
+                    "autoDisplayName": false,
+                    "displayName": "Night Vision Scope",
+                    "addToList": true,
+                    "guid": "f3ccce76-f069-4dd3-9782-99ae012024fc"
+                },
+                {
+                    "id": "attachment_scope_night_vision_description",
+                    "autoDisplayName": false,
+                    "displayName": "Night Vision Scope Description",
+                    "addToList": true,
+                    "guid": "b5e106b4-ff1e-42a3-b8bf-f2884e2fdae2"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_scope_night_vision",
+                    "autoDisplayName": false,
+                    "displayName": "Night Vision Scope",
+                    "addToList": true,
+                    "guid": "f3ccce76-f069-4dd3-9782-99ae012024fc"
+                },
+                {
+                    "id": "attachment_scope_night_vision_description",
+                    "autoDisplayName": false,
+                    "displayName": "Night Vision Scope Description",
+                    "addToList": true,
+                    "guid": "b5e106b4-ff1e-42a3-b8bf-f2884e2fdae2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "6957d640-f659-455a-bc69-71b0dd32ff82",
+            "fields": [
+                {
+                    "id": "attachment_scope_ammo_counter",
+                    "autoDisplayName": false,
+                    "displayName": "Ammo Counter Sight",
+                    "addToList": true,
+                    "guid": "c0770598-9f3b-43d3-809f-0a48534aef2e"
+                },
+                {
+                    "id": "attachment_scope_ammo_counter_description",
+                    "autoDisplayName": false,
+                    "displayName": "Ammo Counter Sight Description",
+                    "addToList": true,
+                    "guid": "a5016a73-3fc3-47b7-bc5c-0b97b49668a1"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_scope_ammo_counter",
+                    "autoDisplayName": false,
+                    "displayName": "Ammo Counter Sight",
+                    "addToList": true,
+                    "guid": "c0770598-9f3b-43d3-809f-0a48534aef2e"
+                },
+                {
+                    "id": "attachment_scope_ammo_counter_description",
+                    "autoDisplayName": false,
+                    "displayName": "Ammo Counter Sight Description",
+                    "addToList": true,
+                    "guid": "a5016a73-3fc3-47b7-bc5c-0b97b49668a1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "cca7f96e-8ff5-437d-b70b-0f7fde8879f9",
+            "fields": [
+                {
+                    "id": "attachment_scope_telescopic",
+                    "autoDisplayName": false,
+                    "displayName": "Telescopic Sight",
+                    "addToList": true,
+                    "guid": "08f90c96-70c9-49d9-b2a5-d63a2989f71d"
+                },
+                {
+                    "id": "attachment_scope_telescopic_description",
+                    "autoDisplayName": false,
+                    "displayName": "Telescopic Sight Description",
+                    "addToList": true,
+                    "guid": "97c29f9e-c1df-4aff-aa49-7a8a53ba8d36"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_scope_telescopic",
+                    "autoDisplayName": false,
+                    "displayName": "Telescopic Sight",
+                    "addToList": true,
+                    "guid": "08f90c96-70c9-49d9-b2a5-d63a2989f71d"
+                },
+                {
+                    "id": "attachment_scope_telescopic_description",
+                    "autoDisplayName": false,
+                    "displayName": "Telescopic Sight Description",
+                    "addToList": true,
+                    "guid": "97c29f9e-c1df-4aff-aa49-7a8a53ba8d36"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e620e5f8-630f-4dad-a1d5-ec538ec0f22d",
+            "fields": [
+                {
+                    "id": "attachment_stock_regular",
+                    "autoDisplayName": false,
+                    "displayName": "Regular Stock",
+                    "addToList": true,
+                    "guid": "b58cffb9-91ad-4847-9922-b767095f567b"
+                },
+                {
+                    "id": "attachment_stock_regular_description",
+                    "autoDisplayName": false,
+                    "displayName": "Regular Stock Description",
+                    "addToList": true,
+                    "guid": "4a7f2b5e-9c48-4b2b-9424-9d2c10f81416"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_stock_regular",
+                    "autoDisplayName": false,
+                    "displayName": "Regular Stock",
+                    "addToList": true,
+                    "guid": "b58cffb9-91ad-4847-9922-b767095f567b"
+                },
+                {
+                    "id": "attachment_stock_regular_description",
+                    "autoDisplayName": false,
+                    "displayName": "Regular Stock Description",
+                    "addToList": true,
+                    "guid": "4a7f2b5e-9c48-4b2b-9424-9d2c10f81416"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "eb87eadb-bb4f-4c7e-a209-eb137807c42f",
+            "fields": [
+                {
+                    "id": "attachment_stock_extended",
+                    "autoDisplayName": false,
+                    "displayName": "Extended Stock",
+                    "addToList": true,
+                    "guid": "cd7eb79d-b8c0-4dbc-b110-7cbf31ec49e9"
+                },
+                {
+                    "id": "attachment_ _description",
+                    "autoDisplayName": false,
+                    "displayName": "Description",
+                    "addToList": true,
+                    "guid": "8f753eb4-7bac-4401-a05d-af8ecb34e4bb"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_stock_extended",
+                    "autoDisplayName": false,
+                    "displayName": "Extended Stock",
+                    "addToList": true,
+                    "guid": "cd7eb79d-b8c0-4dbc-b110-7cbf31ec49e9"
+                },
+                {
+                    "id": "attachment_ _description",
+                    "autoDisplayName": false,
+                    "displayName": "Description",
+                    "addToList": true,
+                    "guid": "8f753eb4-7bac-4401-a05d-af8ecb34e4bb"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0abf529c-f2ce-4914-aac0-77b619fdd0bb",
+            "fields": [
+                {
+                    "id": "attachment_stock_retracted",
+                    "autoDisplayName": false,
+                    "displayName": "Retracted Stock",
+                    "addToList": true,
+                    "guid": "5e8adf5a-ead8-4623-ae9b-84853dea7d1c"
+                },
+                {
+                    "id": "attachment_stock_retracted_description",
+                    "autoDisplayName": false,
+                    "displayName": "Retracted Stock Description",
+                    "addToList": true,
+                    "guid": "7439a70d-1369-49e9-881e-a36fe652cdd3"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_stock_retracted",
+                    "autoDisplayName": false,
+                    "displayName": "Retracted Stock",
+                    "addToList": true,
+                    "guid": "5e8adf5a-ead8-4623-ae9b-84853dea7d1c"
+                },
+                {
+                    "id": "attachment_stock_retracted_description",
+                    "autoDisplayName": false,
+                    "displayName": "Retracted Stock Description",
+                    "addToList": true,
+                    "guid": "7439a70d-1369-49e9-881e-a36fe652cdd3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "3d2734c7-14fd-42c2-8e14-a95d6e50d9fb",
+            "fields": [
+                {
+                    "id": "attachment_stock_lightweight",
+                    "autoDisplayName": false,
+                    "displayName": "Lightweight Stock",
+                    "addToList": true,
+                    "guid": "6d732654-81e2-4021-8523-c8b0a1662f42"
+                },
+                {
+                    "id": "attachment_stock_lightweight_description",
+                    "autoDisplayName": false,
+                    "displayName": "Lightweight Stock Description",
+                    "addToList": true,
+                    "guid": "6c885b2c-df18-4b27-bc0a-80cf96a22c87"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_stock_lightweight",
+                    "autoDisplayName": false,
+                    "displayName": "Lightweight Stock",
+                    "addToList": true,
+                    "guid": "6d732654-81e2-4021-8523-c8b0a1662f42"
+                },
+                {
+                    "id": "attachment_stock_lightweight_description",
+                    "autoDisplayName": false,
+                    "displayName": "Lightweight Stock Description",
+                    "addToList": true,
+                    "guid": "6c885b2c-df18-4b27-bc0a-80cf96a22c87"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "54099fa0-8c1a-46cd-8c8d-326d4ce281dc",
+            "fields": [
+                {
+                    "id": "attachment_stock_heavy",
+                    "autoDisplayName": false,
+                    "displayName": "Heavy Stock",
+                    "addToList": true,
+                    "guid": "e9ec2e99-d3aa-49e4-a2e6-7d51ae3f386c"
+                },
+                {
+                    "id": "attachment_stock_heavy_description",
+                    "autoDisplayName": false,
+                    "displayName": "Heavy Stock Description",
+                    "addToList": true,
+                    "guid": "091bbe84-793e-4375-92ac-be55bb0a8126"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_stock_heavy",
+                    "autoDisplayName": false,
+                    "displayName": "Heavy Stock",
+                    "addToList": true,
+                    "guid": "e9ec2e99-d3aa-49e4-a2e6-7d51ae3f386c"
+                },
+                {
+                    "id": "attachment_stock_heavy_description",
+                    "autoDisplayName": false,
+                    "displayName": "Heavy Stock Description",
+                    "addToList": true,
+                    "guid": "091bbe84-793e-4375-92ac-be55bb0a8126"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "76bea0ae-b242-4a6f-b8af-4f24fc1f927e",
+            "fields": [
+                {
+                    "id": "attachment_stock_recoil",
+                    "autoDisplayName": false,
+                    "displayName": "Recoil-Reducing Stock",
+                    "addToList": true,
+                    "guid": "eaacad68-ba74-4cfe-88de-8ed0555d638d"
+                },
+                {
+                    "id": "attachment_stock_recoil_description",
+                    "autoDisplayName": false,
+                    "displayName": "Recoil-Reducing Stock Description",
+                    "addToList": true,
+                    "guid": "0af686b6-4f71-466e-a366-fab11880cdd1"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_stock_recoil",
+                    "autoDisplayName": false,
+                    "displayName": "Recoil-Reducing Stock",
+                    "addToList": true,
+                    "guid": "eaacad68-ba74-4cfe-88de-8ed0555d638d"
+                },
+                {
+                    "id": "attachment_stock_recoil_description",
+                    "autoDisplayName": false,
+                    "displayName": "Recoil-Reducing Stock Description",
+                    "addToList": true,
+                    "guid": "0af686b6-4f71-466e-a366-fab11880cdd1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "224babb7-6fb9-4422-bc08-3f53359af89b",
+            "fields": [
+                {
+                    "id": "attachment_foregrip",
+                    "autoDisplayName": false,
+                    "displayName": "Foregrip",
+                    "addToList": true,
+                    "guid": "7c2d9804-0dfd-4bc8-ac6b-9e04ac94dca5"
+                },
+                {
+                    "id": "attachment_foregrip_description",
+                    "autoDisplayName": false,
+                    "displayName": "Foregrip Description",
+                    "addToList": true,
+                    "guid": "1b6ff18c-d7d8-416f-a362-bbd62fe28aab"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_foregrip",
+                    "autoDisplayName": false,
+                    "displayName": "Foregrip",
+                    "addToList": true,
+                    "guid": "7c2d9804-0dfd-4bc8-ac6b-9e04ac94dca5"
+                },
+                {
+                    "id": "attachment_foregrip_description",
+                    "autoDisplayName": false,
+                    "displayName": "Foregrip Description",
+                    "addToList": true,
+                    "guid": "1b6ff18c-d7d8-416f-a362-bbd62fe28aab"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c105ef91-bcdb-45cc-acbe-3113c1500774",
+            "fields": [
+                {
+                    "id": "attachment_scope_laser",
+                    "autoDisplayName": false,
+                    "displayName": "Laser Sight",
+                    "addToList": true,
+                    "guid": "e416fa6a-dccc-47fe-889e-055635111821"
+                },
+                {
+                    "id": "attachment_scope_laster_description",
+                    "autoDisplayName": false,
+                    "displayName": "Laser Sight Description",
+                    "addToList": true,
+                    "guid": "663fcba9-4f41-40d9-b785-d0103083a44d"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_scope_laser",
+                    "autoDisplayName": false,
+                    "displayName": "Laser Sight",
+                    "addToList": true,
+                    "guid": "e416fa6a-dccc-47fe-889e-055635111821"
+                },
+                {
+                    "id": "attachment_scope_laster_description",
+                    "autoDisplayName": false,
+                    "displayName": "Laser Sight Description",
+                    "addToList": true,
+                    "guid": "663fcba9-4f41-40d9-b785-d0103083a44d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0d4952f6-2f2c-4c62-91d7-c200206f41da",
+            "fields": [
+                {
+                    "id": "attachment_flashlight",
+                    "autoDisplayName": false,
+                    "displayName": "Flashlight",
+                    "addToList": true,
+                    "guid": "35638c72-3c23-4688-8c46-aad3bee2082f"
+                },
+                {
+                    "id": "attachment_flashlight_description",
+                    "autoDisplayName": false,
+                    "displayName": "Flashlight Description",
+                    "addToList": true,
+                    "guid": "23e4fcb3-4f71-4327-8ece-350fd2c85141"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_flashlight",
+                    "autoDisplayName": false,
+                    "displayName": "Flashlight",
+                    "addToList": true,
+                    "guid": "35638c72-3c23-4688-8c46-aad3bee2082f"
+                },
+                {
+                    "id": "attachment_flashlight_description",
+                    "autoDisplayName": false,
+                    "displayName": "Flashlight Description",
+                    "addToList": true,
+                    "guid": "23e4fcb3-4f71-4327-8ece-350fd2c85141"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a1e3c46e-e2fb-47f3-9a40-74a82ab3bee0",
+            "fields": [
+                {
+                    "id": "attachment_ammo_counter",
+                    "autoDisplayName": false,
+                    "displayName": "Ammo Counter",
+                    "addToList": true,
+                    "guid": "7528bd25-6862-4231-87c3-97df001618e2"
+                },
+                {
+                    "id": "attachment_ammo_counter_description",
+                    "autoDisplayName": false,
+                    "displayName": "Ammo Counter Description",
+                    "addToList": true,
+                    "guid": "e8ff2892-895c-4791-819e-845bbabe3086"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_ammo_counter",
+                    "autoDisplayName": false,
+                    "displayName": "Ammo Counter",
+                    "addToList": true,
+                    "guid": "7528bd25-6862-4231-87c3-97df001618e2"
+                },
+                {
+                    "id": "attachment_ammo_counter_description",
+                    "autoDisplayName": false,
+                    "displayName": "Ammo Counter Description",
+                    "addToList": true,
+                    "guid": "e8ff2892-895c-4791-819e-845bbabe3086"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ccc68758-ed20-4704-a069-f5c678f90ecf",
+            "fields": [
+                {
+                    "id": "attachment_barrel_standard",
+                    "autoDisplayName": false,
+                    "displayName": "Standard Barell",
+                    "addToList": true,
+                    "guid": "7ce63a55-6937-494d-a512-06f2f64c323e"
+                },
+                {
+                    "id": "attachment_barell_standard_description",
+                    "autoDisplayName": false,
+                    "displayName": "Standard Barell Description",
+                    "addToList": true,
+                    "guid": "fba129a0-cb2f-4b35-8f74-70a67893c89a"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_barrel_standard",
+                    "autoDisplayName": false,
+                    "displayName": "Standard Barell",
+                    "addToList": true,
+                    "guid": "7ce63a55-6937-494d-a512-06f2f64c323e"
+                },
+                {
+                    "id": "attachment_barell_standard_description",
+                    "autoDisplayName": false,
+                    "displayName": "Standard Barell Description",
+                    "addToList": true,
+                    "guid": "fba129a0-cb2f-4b35-8f74-70a67893c89a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "064ef493-b295-42cb-93e4-7127f95af69e",
+            "fields": [
+                {
+                    "id": "attachment_barel_extended",
+                    "autoDisplayName": false,
+                    "displayName": "Extended Barell",
+                    "addToList": true,
+                    "guid": "164bfcb0-9230-425c-b64c-2e298a901c90"
+                },
+                {
+                    "id": "attachment_barell_extended_description",
+                    "autoDisplayName": false,
+                    "displayName": "Extended Barell Description",
+                    "addToList": true,
+                    "guid": "8d31ab06-1b06-4a5d-999a-893477d73a33"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_barel_extended",
+                    "autoDisplayName": false,
+                    "displayName": "Extended Barell",
+                    "addToList": true,
+                    "guid": "164bfcb0-9230-425c-b64c-2e298a901c90"
+                },
+                {
+                    "id": "attachment_barell_extended_description",
+                    "autoDisplayName": false,
+                    "displayName": "Extended Barell Description",
+                    "addToList": true,
+                    "guid": "8d31ab06-1b06-4a5d-999a-893477d73a33"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "025bbb16-104e-4d35-b12a-c8ba1a6a2d0e",
+            "fields": [
+                {
+                    "id": "attachment_supressor",
+                    "autoDisplayName": false,
+                    "displayName": "Supressor",
+                    "addToList": true,
+                    "guid": "36bb6afc-0321-47ae-9e82-bca4d6060339"
+                },
+                {
+                    "id": "attachment_supressor_description",
+                    "autoDisplayName": false,
+                    "displayName": "Supressor Description",
+                    "addToList": true,
+                    "guid": "6a7a93f7-2e68-4556-afba-1c73bb922f69"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_supressor",
+                    "autoDisplayName": false,
+                    "displayName": "Supressor",
+                    "addToList": true,
+                    "guid": "36bb6afc-0321-47ae-9e82-bca4d6060339"
+                },
+                {
+                    "id": "attachment_supressor_description",
+                    "autoDisplayName": false,
+                    "displayName": "Supressor Description",
+                    "addToList": true,
+                    "guid": "6a7a93f7-2e68-4556-afba-1c73bb922f69"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d96fee4d-648a-4c3f-b3a5-12b8aea5c0e8",
+            "fields": [
+                {
+                    "id": "attachment_flash_hider",
+                    "autoDisplayName": false,
+                    "displayName": "Flash Hider",
+                    "addToList": true,
+                    "guid": "89962c97-3c64-4b9f-87a7-7334d6424b3e"
+                },
+                {
+                    "id": "attachment_flash_hider_descriptions",
+                    "autoDisplayName": false,
+                    "displayName": "Flash Hider Description",
+                    "addToList": true,
+                    "guid": "6eb6d609-e733-4448-bd23-912198ba1525"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_flash_hider",
+                    "autoDisplayName": false,
+                    "displayName": "Flash Hider",
+                    "addToList": true,
+                    "guid": "89962c97-3c64-4b9f-87a7-7334d6424b3e"
+                },
+                {
+                    "id": "attachment_flash_hider_descriptions",
+                    "autoDisplayName": false,
+                    "displayName": "Flash Hider Description",
+                    "addToList": true,
+                    "guid": "6eb6d609-e733-4448-bd23-912198ba1525"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "63bf10df-6f52-44a0-b008-541f7f00c3ae",
+            "fields": [
+                {
+                    "id": "attachment_muzzle_brake",
+                    "autoDisplayName": false,
+                    "displayName": "Muzzle Brake",
+                    "addToList": true,
+                    "guid": "569e6e5f-a5a8-46fd-b200-f2cc8b4e605d"
+                },
+                {
+                    "id": "attachment_muzzle_brake_description",
+                    "autoDisplayName": false,
+                    "displayName": "Muzzle Brake Description",
+                    "addToList": true,
+                    "guid": "9661c588-0f79-4b05-baa6-162dfe3a5740"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_muzzle_brake",
+                    "autoDisplayName": false,
+                    "displayName": "Muzzle Brake",
+                    "addToList": true,
+                    "guid": "569e6e5f-a5a8-46fd-b200-f2cc8b4e605d"
+                },
+                {
+                    "id": "attachment_muzzle_brake_description",
+                    "autoDisplayName": false,
+                    "displayName": "Muzzle Brake Description",
+                    "addToList": true,
+                    "guid": "9661c588-0f79-4b05-baa6-162dfe3a5740"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2fb62c68-a420-486b-84f4-f3ad2d749399",
+            "fields": [
+                {
+                    "id": "attachment_muzzle_booster",
+                    "autoDisplayName": false,
+                    "displayName": "Muzzle Booster",
+                    "addToList": true,
+                    "guid": "700bc819-692a-45a5-990b-5c4c4b4a2053"
+                },
+                {
+                    "id": "attachment_muzzle_booster_description",
+                    "autoDisplayName": false,
+                    "displayName": "Muzzle Booster Description",
+                    "addToList": true,
+                    "guid": "a7c88b9d-addd-4100-acfa-135447259627"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_muzzle_booster",
+                    "autoDisplayName": false,
+                    "displayName": "Muzzle Booster",
+                    "addToList": true,
+                    "guid": "700bc819-692a-45a5-990b-5c4c4b4a2053"
+                },
+                {
+                    "id": "attachment_muzzle_booster_description",
+                    "autoDisplayName": false,
+                    "displayName": "Muzzle Booster Description",
+                    "addToList": true,
+                    "guid": "a7c88b9d-addd-4100-acfa-135447259627"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "3b71b6ae-d5ca-4507-82af-5602a786d6cf",
+            "fields": [
+                {
+                    "id": "attachment_magazine_fmj",
+                    "autoDisplayName": false,
+                    "displayName": "FMJ Magazine",
+                    "addToList": true,
+                    "guid": "137e321d-1ad9-4cf9-9ccd-9f1eb340bf8a"
+                },
+                {
+                    "id": "attachment_magazine_fmj_description",
+                    "autoDisplayName": false,
+                    "displayName": "FMJ Magazine Description",
+                    "addToList": true,
+                    "guid": "0c91ae49-0738-4979-a2fd-3b1ca1880d66"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_fmj",
+                    "autoDisplayName": false,
+                    "displayName": "FMJ Magazine",
+                    "addToList": true,
+                    "guid": "137e321d-1ad9-4cf9-9ccd-9f1eb340bf8a"
+                },
+                {
+                    "id": "attachment_magazine_fmj_description",
+                    "autoDisplayName": false,
+                    "displayName": "FMJ Magazine Description",
+                    "addToList": true,
+                    "guid": "0c91ae49-0738-4979-a2fd-3b1ca1880d66"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "520b89d7-1756-48e5-8e25-75b7970dfa4d",
+            "fields": [
+                {
+                    "id": "attachment_magazine_ap",
+                    "autoDisplayName": false,
+                    "displayName": "AP Magazine",
+                    "addToList": true,
+                    "guid": "aa38fe1d-0c69-4079-b2b2-7981b711c78b"
+                },
+                {
+                    "id": "attachment_magazine_ap_description",
+                    "autoDisplayName": false,
+                    "displayName": "AP Magazine Description",
+                    "addToList": true,
+                    "guid": "548565f0-209e-4822-993e-9ddd5d49156e"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_ap",
+                    "autoDisplayName": false,
+                    "displayName": "AP Magazine",
+                    "addToList": true,
+                    "guid": "aa38fe1d-0c69-4079-b2b2-7981b711c78b"
+                },
+                {
+                    "id": "attachment_magazine_ap_description",
+                    "autoDisplayName": false,
+                    "displayName": "AP Magazine Description",
+                    "addToList": true,
+                    "guid": "548565f0-209e-4822-993e-9ddd5d49156e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "94230a91-ccd4-4905-abc0-7b386db123b7",
+            "fields": [
+                {
+                    "id": "attachment_magazine_jhp",
+                    "autoDisplayName": false,
+                    "displayName": "JHP Magazine",
+                    "addToList": true,
+                    "guid": "82c340ff-bf5d-41a8-a882-b3d5cd690092"
+                },
+                {
+                    "id": "attachment_magazine_jhp_description",
+                    "autoDisplayName": false,
+                    "displayName": "JHP Magazine Description",
+                    "addToList": true,
+                    "guid": "c6dadf0b-f31e-465b-9a75-8690acb1e4f7"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_jhp",
+                    "autoDisplayName": false,
+                    "displayName": "JHP Magazine",
+                    "addToList": true,
+                    "guid": "82c340ff-bf5d-41a8-a882-b3d5cd690092"
+                },
+                {
+                    "id": "attachment_magazine_jhp_description",
+                    "autoDisplayName": false,
+                    "displayName": "JHP Magazine Description",
+                    "addToList": true,
+                    "guid": "c6dadf0b-f31e-465b-9a75-8690acb1e4f7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e0a40da7-61c1-4bb7-8322-8bd0c4ddb628",
+            "fields": [
+                {
+                    "id": "attachment_magazine_fmj_extended",
+                    "autoDisplayName": false,
+                    "displayName": "Extended FMJ Magazine",
+                    "addToList": true,
+                    "guid": "fd0718dc-1125-4c16-84ed-4979a46a8832"
+                },
+                {
+                    "id": "attachment_magazine_fmj_extended_description",
+                    "autoDisplayName": false,
+                    "displayName": "Extended FMJ Magazine Description",
+                    "addToList": true,
+                    "guid": "912942b7-1975-4479-bcde-604cc7399319"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_fmj_extended",
+                    "autoDisplayName": false,
+                    "displayName": "Extended FMJ Magazine",
+                    "addToList": true,
+                    "guid": "fd0718dc-1125-4c16-84ed-4979a46a8832"
+                },
+                {
+                    "id": "attachment_magazine_fmj_extended_description",
+                    "autoDisplayName": false,
+                    "displayName": "Extended FMJ Magazine Description",
+                    "addToList": true,
+                    "guid": "912942b7-1975-4479-bcde-604cc7399319"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b975c64b-8730-4b99-8189-408ac07305e4",
+            "fields": [
+                {
+                    "id": "attachment_magazine_ap_extended",
+                    "autoDisplayName": false,
+                    "displayName": "Extended AP Magazine",
+                    "addToList": true,
+                    "guid": "46316b02-dc60-4f2f-b6be-58773ed89877"
+                },
+                {
+                    "id": "attachment_magazine_ap_extended_description",
+                    "autoDisplayName": false,
+                    "displayName": "Extended AP Magazine Description",
+                    "addToList": true,
+                    "guid": "984fa791-5ca5-4bde-80a9-b617452ed2b9"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_ap_extended",
+                    "autoDisplayName": false,
+                    "displayName": "Extended AP Magazine",
+                    "addToList": true,
+                    "guid": "46316b02-dc60-4f2f-b6be-58773ed89877"
+                },
+                {
+                    "id": "attachment_magazine_ap_extended_description",
+                    "autoDisplayName": false,
+                    "displayName": "Extended AP Magazine Description",
+                    "addToList": true,
+                    "guid": "984fa791-5ca5-4bde-80a9-b617452ed2b9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "47c4c071-0c70-42a0-9614-6f37c7a4c681",
+            "fields": [
+                {
+                    "id": "attachment_magazine_jhp_extended",
+                    "autoDisplayName": false,
+                    "displayName": "Extended JHP Magazine",
+                    "addToList": true,
+                    "guid": "e6b37b7f-3afe-42a2-b1cf-9409c29cd56b"
+                },
+                {
+                    "id": "attachment_magazine_jhp_extended_description",
+                    "autoDisplayName": false,
+                    "displayName": "Extended JHP Magazine Description",
+                    "addToList": true,
+                    "guid": "11c9c89b-1b3d-4bd9-ace8-ce1d1a1d0563"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_jhp_extended",
+                    "autoDisplayName": false,
+                    "displayName": "Extended JHP Magazine",
+                    "addToList": true,
+                    "guid": "e6b37b7f-3afe-42a2-b1cf-9409c29cd56b"
+                },
+                {
+                    "id": "attachment_magazine_jhp_extended_description",
+                    "autoDisplayName": false,
+                    "displayName": "Extended JHP Magazine Description",
+                    "addToList": true,
+                    "guid": "11c9c89b-1b3d-4bd9-ace8-ce1d1a1d0563"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "de9cd5eb-9943-42cd-acd3-e56ca94e7c33",
+            "fields": [
+                {
+                    "id": "attachment_magazine_fmj_drum",
+                    "autoDisplayName": false,
+                    "displayName": "FMJ Drum",
+                    "addToList": true,
+                    "guid": "5add7644-d01c-4585-9f33-031b98aa08d7"
+                },
+                {
+                    "id": "attachment_magazine_fmj_drum_description",
+                    "autoDisplayName": false,
+                    "displayName": "FMJ Drum Description",
+                    "addToList": true,
+                    "guid": "8ba4d15e-c7d8-466e-b9aa-c6d233b8e5b6"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_fmj_drum",
+                    "autoDisplayName": false,
+                    "displayName": "FMJ Drum",
+                    "addToList": true,
+                    "guid": "5add7644-d01c-4585-9f33-031b98aa08d7"
+                },
+                {
+                    "id": "attachment_magazine_fmj_drum_description",
+                    "autoDisplayName": false,
+                    "displayName": "FMJ Drum Description",
+                    "addToList": true,
+                    "guid": "8ba4d15e-c7d8-466e-b9aa-c6d233b8e5b6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "6966820c-e74e-4682-99f0-990b20465cb1",
+            "fields": [
+                {
+                    "id": "attachment_magazine_ap_drum",
+                    "autoDisplayName": false,
+                    "displayName": "AP Drum",
+                    "addToList": true,
+                    "guid": "0e4272a0-8379-4d99-9423-891f738b5661"
+                },
+                {
+                    "id": "attachment_magazine_ap_drum_description",
+                    "autoDisplayName": false,
+                    "displayName": "AP Drum Description",
+                    "addToList": true,
+                    "guid": "ae04503e-d0a2-41a3-80d6-106c24531d16"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_ap_drum",
+                    "autoDisplayName": false,
+                    "displayName": "AP Drum",
+                    "addToList": true,
+                    "guid": "0e4272a0-8379-4d99-9423-891f738b5661"
+                },
+                {
+                    "id": "attachment_magazine_ap_drum_description",
+                    "autoDisplayName": false,
+                    "displayName": "AP Drum Description",
+                    "addToList": true,
+                    "guid": "ae04503e-d0a2-41a3-80d6-106c24531d16"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "16feb8f9-0627-47ae-a3b0-06835643a3c9",
+            "fields": [
+                {
+                    "id": "attachment_magazine_jhp_drum",
+                    "autoDisplayName": false,
+                    "displayName": "JHP Drum",
+                    "addToList": true,
+                    "guid": "a17f0073-174f-45a7-acef-e606af3fd5f2"
+                },
+                {
+                    "id": "attachment_magazine_jhp_drum_description",
+                    "autoDisplayName": false,
+                    "displayName": "JHP Drum Description",
+                    "addToList": true,
+                    "guid": "52bddaf6-e11b-4058-9ee9-e5ac99d3168e"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_jhp_drum",
+                    "autoDisplayName": false,
+                    "displayName": "JHP Drum",
+                    "addToList": true,
+                    "guid": "a17f0073-174f-45a7-acef-e606af3fd5f2"
+                },
+                {
+                    "id": "attachment_magazine_jhp_drum_description",
+                    "autoDisplayName": false,
+                    "displayName": "JHP Drum Description",
+                    "addToList": true,
+                    "guid": "52bddaf6-e11b-4058-9ee9-e5ac99d3168e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "27dcb346-d994-4484-8001-1003b60d44e6",
+            "fields": [
+                {
+                    "id": "attachment_magazine_fmj_lowcap",
+                    "autoDisplayName": false,
+                    "displayName": "Low-Cap FMJ Magazine",
+                    "addToList": true,
+                    "guid": "f2859a73-06c2-47d4-b219-f440eb10f99c"
+                },
+                {
+                    "id": "attachment_magazine_fmj_lowcap_description",
+                    "autoDisplayName": false,
+                    "displayName": "Low-Cap FMJ Magazine Description",
+                    "addToList": true,
+                    "guid": "d87830cb-ce69-4d15-9b1d-128aa58a0d70"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_fmj_lowcap",
+                    "autoDisplayName": false,
+                    "displayName": "Low-Cap FMJ Magazine",
+                    "addToList": true,
+                    "guid": "f2859a73-06c2-47d4-b219-f440eb10f99c"
+                },
+                {
+                    "id": "attachment_magazine_fmj_lowcap_description",
+                    "autoDisplayName": false,
+                    "displayName": "Low-Cap FMJ Magazine Description",
+                    "addToList": true,
+                    "guid": "d87830cb-ce69-4d15-9b1d-128aa58a0d70"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c8f22bdb-a920-4e34-a2f9-aabffc0427fe",
+            "fields": [
+                {
+                    "id": "attachment_magazine_ap_lowcap",
+                    "autoDisplayName": false,
+                    "displayName": "Low-Cap AP Magazine",
+                    "addToList": true,
+                    "guid": "d5c56320-f2d3-405e-8b6f-51ee7228e14e"
+                },
+                {
+                    "id": "attachment_magazine_ap_lowcap_description",
+                    "autoDisplayName": false,
+                    "displayName": "Low-Cap AP Magazine Description",
+                    "addToList": true,
+                    "guid": "8a9ed3f8-c19c-4660-9249-1338a83d38c2"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_ap_lowcap",
+                    "autoDisplayName": false,
+                    "displayName": "Low-Cap AP Magazine",
+                    "addToList": true,
+                    "guid": "d5c56320-f2d3-405e-8b6f-51ee7228e14e"
+                },
+                {
+                    "id": "attachment_magazine_ap_lowcap_description",
+                    "autoDisplayName": false,
+                    "displayName": "Low-Cap AP Magazine Description",
+                    "addToList": true,
+                    "guid": "8a9ed3f8-c19c-4660-9249-1338a83d38c2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7ba46331-30c5-4a8d-b391-01b45550aaf6",
+            "fields": [
+                {
+                    "id": "attachment_magazine_jhp_lowap",
+                    "autoDisplayName": false,
+                    "displayName": "Low-Cap JHP Magazine",
+                    "addToList": true,
+                    "guid": "d4a13f4f-cf93-43ff-ab23-884681c9339b"
+                },
+                {
+                    "id": "attachment_magazine_jhp_lowcap_description",
+                    "autoDisplayName": false,
+                    "displayName": "Low-Cap JHP Magazine Description",
+                    "addToList": true,
+                    "guid": "b91f7aa5-6479-4a1c-80da-12c9722948a7"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_jhp_lowap",
+                    "autoDisplayName": false,
+                    "displayName": "Low-Cap JHP Magazine",
+                    "addToList": true,
+                    "guid": "d4a13f4f-cf93-43ff-ab23-884681c9339b"
+                },
+                {
+                    "id": "attachment_magazine_jhp_lowcap_description",
+                    "autoDisplayName": false,
+                    "displayName": "Low-Cap JHP Magazine Description",
+                    "addToList": true,
+                    "guid": "b91f7aa5-6479-4a1c-80da-12c9722948a7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2b62466f-1271-4183-9cb6-eaac08f544ea",
+            "fields": [
+                {
+                    "id": "attachment_magazine_cylinder_4shot",
+                    "autoDisplayName": false,
+                    "displayName": "4-Shot Cylinder",
+                    "addToList": true,
+                    "guid": "c25c8ad4-2dac-479a-867c-0cfe19d46d70"
+                },
+                {
+                    "id": "attachment_magazine_cylinder_4shot_description",
+                    "autoDisplayName": false,
+                    "displayName": "4-Shot Cylinder Description",
+                    "addToList": true,
+                    "guid": "9659860f-5883-4b9f-986a-280ebc5f575d"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_cylinder_4shot",
+                    "autoDisplayName": false,
+                    "displayName": "4-Shot Cylinder",
+                    "addToList": true,
+                    "guid": "c25c8ad4-2dac-479a-867c-0cfe19d46d70"
+                },
+                {
+                    "id": "attachment_magazine_cylinder_4shot_description",
+                    "autoDisplayName": false,
+                    "displayName": "4-Shot Cylinder Description",
+                    "addToList": true,
+                    "guid": "9659860f-5883-4b9f-986a-280ebc5f575d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4a453326-1233-4481-a193-310045d4ee84",
+            "fields": [
+                {
+                    "id": "attachment_magazine_cylinder_6shot",
+                    "autoDisplayName": false,
+                    "displayName": "6-Shot Cylinder",
+                    "addToList": true,
+                    "guid": "74cd46cd-f9ae-4bf0-9994-d97c38aa0897"
+                },
+                {
+                    "id": "attachment_magazine_cylinder_6shot_description",
+                    "autoDisplayName": false,
+                    "displayName": "6-Shot Cylinder Description",
+                    "addToList": true,
+                    "guid": "7e72faa5-60f3-4085-9494-ae80a8c37127"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_cylinder_6shot",
+                    "autoDisplayName": false,
+                    "displayName": "6-Shot Cylinder",
+                    "addToList": true,
+                    "guid": "74cd46cd-f9ae-4bf0-9994-d97c38aa0897"
+                },
+                {
+                    "id": "attachment_magazine_cylinder_6shot_description",
+                    "autoDisplayName": false,
+                    "displayName": "6-Shot Cylinder Description",
+                    "addToList": true,
+                    "guid": "7e72faa5-60f3-4085-9494-ae80a8c37127"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c48015cd-2d37-479a-a4b7-42603906c482",
+            "fields": [
+                {
+                    "id": "attachment_magazine_cylinder_8shot",
+                    "autoDisplayName": false,
+                    "displayName": "8-Shot Cylinder",
+                    "addToList": true,
+                    "guid": "e4fe570f-1753-49f0-9666-5ecf124de3b1"
+                },
+                {
+                    "id": "attachment_magazine_cylinder_8shot_description",
+                    "autoDisplayName": false,
+                    "displayName": "8-Shot Cylinder Description",
+                    "addToList": true,
+                    "guid": "1ec65533-9bcd-4e4d-89b8-da745066852b"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_magazine_cylinder_8shot",
+                    "autoDisplayName": false,
+                    "displayName": "8-Shot Cylinder",
+                    "addToList": true,
+                    "guid": "e4fe570f-1753-49f0-9666-5ecf124de3b1"
+                },
+                {
+                    "id": "attachment_magazine_cylinder_8shot_description",
+                    "autoDisplayName": false,
+                    "displayName": "8-Shot Cylinder Description",
+                    "addToList": true,
+                    "guid": "1ec65533-9bcd-4e4d-89b8-da745066852b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e47ba02e-e223-4aee-bd5a-ea2d458035e3",
+            "fields": [
+                {
+                    "id": "attachment_carbine_receiver",
+                    "autoDisplayName": false,
+                    "displayName": "Carbine Receiver",
+                    "addToList": true,
+                    "guid": "33d8accc-3166-4790-81f8-c4e496111f20"
+                },
+                {
+                    "id": "attachment_carbine_receiver_description",
+                    "autoDisplayName": false,
+                    "displayName": "Carbine Receiver Description",
+                    "addToList": true,
+                    "guid": "9b09cad1-eaf7-4ef3-88d3-56cb2ab6a613"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_carbine_receiver",
+                    "autoDisplayName": false,
+                    "displayName": "Carbine Receiver",
+                    "addToList": true,
+                    "guid": "33d8accc-3166-4790-81f8-c4e496111f20"
+                },
+                {
+                    "id": "attachment_carbine_receiver_description",
+                    "autoDisplayName": false,
+                    "displayName": "Carbine Receiver Description",
+                    "addToList": true,
+                    "guid": "9b09cad1-eaf7-4ef3-88d3-56cb2ab6a613"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "136853c3-50be-4397-b8f4-8d359dbe1e22",
+            "fields": [
+                {
+                    "id": "attachment_rifle_receiver",
+                    "autoDisplayName": false,
+                    "displayName": "Rifle Receiver",
+                    "addToList": true,
+                    "guid": "6f55f9d7-b84a-463b-bb5f-12b9b1140336"
+                },
+                {
+                    "id": "attachment_rifle_receiver_description",
+                    "autoDisplayName": false,
+                    "displayName": "Rifle Receiver Description",
+                    "addToList": true,
+                    "guid": "cb546cda-21e5-469c-a4b8-c5e71d651472"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_rifle_receiver",
+                    "autoDisplayName": false,
+                    "displayName": "Rifle Receiver",
+                    "addToList": true,
+                    "guid": "6f55f9d7-b84a-463b-bb5f-12b9b1140336"
+                },
+                {
+                    "id": "attachment_rifle_receiver_description",
+                    "autoDisplayName": false,
+                    "displayName": "Rifle Receiver Description",
+                    "addToList": true,
+                    "guid": "cb546cda-21e5-469c-a4b8-c5e71d651472"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b43e4f13-67e5-4b52-8fca-05444c766d70",
+            "fields": [
+                {
+                    "id": "attachment_barel_short",
+                    "autoDisplayName": false,
+                    "displayName": "Short Barrel",
+                    "addToList": true,
+                    "guid": "b5437bcb-ac29-4db2-932e-0d3a6fd524dd"
+                },
+                {
+                    "id": "attachment_barel_short_description",
+                    "autoDisplayName": false,
+                    "displayName": "Short Barrel Description",
+                    "addToList": true,
+                    "guid": "d442f315-04e8-4dcf-bbcb-2471094d3aab"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_barel_short",
+                    "autoDisplayName": false,
+                    "displayName": "Short Barrel",
+                    "addToList": true,
+                    "guid": "b5437bcb-ac29-4db2-932e-0d3a6fd524dd"
+                },
+                {
+                    "id": "attachment_barel_short_description",
+                    "autoDisplayName": false,
+                    "displayName": "Short Barrel Description",
+                    "addToList": true,
+                    "guid": "d442f315-04e8-4dcf-bbcb-2471094d3aab"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f58e3a01-3db4-4c41-9bae-c8377a25f390",
+            "fields": [
+                {
+                    "id": "attachment_revolver_choke",
+                    "autoDisplayName": false,
+                    "displayName": "Choke",
+                    "addToList": true,
+                    "guid": "6660540a-bf30-4c1e-a6b0-51e216bbf291"
+                },
+                {
+                    "id": "attachment_choke_description",
+                    "autoDisplayName": false,
+                    "displayName": "Choke Description",
+                    "addToList": true,
+                    "guid": "3229a738-a72c-471a-9710-52ecb5be2326"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_revolver_choke",
+                    "autoDisplayName": false,
+                    "displayName": "Choke",
+                    "addToList": true,
+                    "guid": "6660540a-bf30-4c1e-a6b0-51e216bbf291"
+                },
+                {
+                    "id": "attachment_choke_description",
+                    "autoDisplayName": false,
+                    "displayName": "Choke Description",
+                    "addToList": true,
+                    "guid": "3229a738-a72c-471a-9710-52ecb5be2326"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2e7451d9-bf19-4c7d-9a24-95d4bc470cbe",
+            "fields": [
+                {
+                    "id": "attachment_barel_extended_revolver",
+                    "autoDisplayName": false,
+                    "displayName": "Revolver Extended Barel",
+                    "addToList": true,
+                    "guid": "199eacac-ae12-49f6-b1ed-caad68768c8d"
+                },
+                {
+                    "id": "attachment_barel_extended_revolver_description",
+                    "autoDisplayName": false,
+                    "displayName": "Revolver Extended Barel Description",
+                    "addToList": true,
+                    "guid": "c2bb8cfe-4707-4d15-ab0d-a359348ad431"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_barel_extended_revolver",
+                    "autoDisplayName": false,
+                    "displayName": "Revolver Extended Barel",
+                    "addToList": true,
+                    "guid": "199eacac-ae12-49f6-b1ed-caad68768c8d"
+                },
+                {
+                    "id": "attachment_barel_extended_revolver_description",
+                    "autoDisplayName": false,
+                    "displayName": "Revolver Extended Barel Description",
+                    "addToList": true,
+                    "guid": "c2bb8cfe-4707-4d15-ab0d-a359348ad431"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "59f9a0de-3bd3-4d14-8142-b6dfe0133d25",
+            "fields": [
+                {
+                    "id": "attachment_stock_none",
+                    "autoDisplayName": false,
+                    "displayName": "No Stock",
+                    "addToList": true,
+                    "guid": "7c0df606-c30c-4dd7-bf75-4b5f4bcfd6d2"
+                },
+                {
+                    "id": "attachment_stock_none_description",
+                    "autoDisplayName": false,
+                    "displayName": "No Stock Description",
+                    "addToList": true,
+                    "guid": "94f599e0-b4c0-4688-aab4-ac42cec483c9"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_stock_none",
+                    "autoDisplayName": false,
+                    "displayName": "No Stock",
+                    "addToList": true,
+                    "guid": "7c0df606-c30c-4dd7-bf75-4b5f4bcfd6d2"
+                },
+                {
+                    "id": "attachment_stock_none_description",
+                    "autoDisplayName": false,
+                    "displayName": "No Stock Description",
+                    "addToList": true,
+                    "guid": "94f599e0-b4c0-4688-aab4-ac42cec483c9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "60f47e97-e3bb-40ab-ab90-7e7d2713a8ab",
+            "fields": [
+                {
+                    "id": "attachment_shotgun_trigger_single",
+                    "autoDisplayName": false,
+                    "displayName": "Single-Shot Shotgun Trigger",
+                    "addToList": true,
+                    "guid": "4881aac0-1b16-4ec2-b870-0bc8354f4aa0"
+                },
+                {
+                    "id": "attachment_shotgun_trigger_single_description",
+                    "autoDisplayName": false,
+                    "displayName": "Single-Shot Shotgun Trigger Description",
+                    "addToList": true,
+                    "guid": "6fec2f62-ef26-465f-ae56-7bf39f9faa10"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_shotgun_trigger_single",
+                    "autoDisplayName": false,
+                    "displayName": "Single-Shot Shotgun Trigger",
+                    "addToList": true,
+                    "guid": "4881aac0-1b16-4ec2-b870-0bc8354f4aa0"
+                },
+                {
+                    "id": "attachment_shotgun_trigger_single_description",
+                    "autoDisplayName": false,
+                    "displayName": "Single-Shot Shotgun Trigger Description",
+                    "addToList": true,
+                    "guid": "6fec2f62-ef26-465f-ae56-7bf39f9faa10"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4dcd5a49-06a0-4770-8998-7e7f65756fab",
+            "fields": [
+                {
+                    "id": "attachment_shotgun_trigger_double",
+                    "autoDisplayName": false,
+                    "displayName": "Double-Shot Shotgun Trigger",
+                    "addToList": true,
+                    "guid": "a2dddd53-d87d-4c5b-a05f-725c2b0b1d15"
+                },
+                {
+                    "id": "attachment_shotgun_trigger_double_description",
+                    "autoDisplayName": false,
+                    "displayName": "Double-Shot Shotgun Trigger Description",
+                    "addToList": true,
+                    "guid": "9ed31068-f1e7-43c8-93b3-307e31664b19"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "attachment_shotgun_trigger_double",
+                    "autoDisplayName": false,
+                    "displayName": "Double-Shot Shotgun Trigger",
+                    "addToList": true,
+                    "guid": "a2dddd53-d87d-4c5b-a05f-725c2b0b1d15"
+                },
+                {
+                    "id": "attachment_shotgun_trigger_double_description",
+                    "autoDisplayName": false,
+                    "displayName": "Double-Shot Shotgun Trigger Description",
+                    "addToList": true,
+                    "guid": "9ed31068-f1e7-43c8-93b3-307e31664b19"
+                }
+            ]
+        }
+    ]
+}

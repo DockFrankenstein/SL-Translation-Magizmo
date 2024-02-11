@@ -1,0 +1,162 @@
+{
+    "fileName": "DecontaminationDisplays.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "2f35d3b8-2b5a-4e08-b3ba-a3a8346a33d0",
+            "fields": [
+                {
+                    "id": "decon_screen_begins_in",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b6d0cc67-2c69-4c0d-82a3-8415e42b8fc6"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "decon_screen_begins_in",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b6d0cc67-2c69-4c0d-82a3-8415e42b8fc6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "92b4b0c1-9519-4354-b53c-bd8b495a952b",
+            "fields": [
+                {
+                    "id": "decon_screen_please_exit",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d809a783-e487-4102-8ca6-d8ef6250fd25"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "decon_screen_please_exit",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d809a783-e487-4102-8ca6-d8ef6250fd25"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "53ae8d6a-6786-4f14-9c34-1a7e8859cb0d",
+            "fields": [
+                {
+                    "id": "decon_screen_please_evacuate",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "85e8c7d5-2d9b-4e02-9f47-ee7ee608b759"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "decon_screen_please_evacuate",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "85e8c7d5-2d9b-4e02-9f47-ee7ee608b759"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "bd02ecb5-ad63-4b38-a063-6e816df38ead",
+            "fields": [
+                {
+                    "id": "decon_screen_threat_analysis",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "77a948a1-33cf-4be3-a3b4-77ff4f7c291d"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "decon_screen_threat_analysis",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "77a948a1-33cf-4be3-a3b4-77ff4f7c291d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5bb07099-9eb4-41a9-953c-69cdbb8ea6a6",
+            "fields": [
+                {
+                    "id": "decon_screen_preparing_systems",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0b4a6eab-c9b3-4f6e-887f-43b8e61b6ca3"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "decon_screen_preparing_systems",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0b4a6eab-c9b3-4f6e-887f-43b8e61b6ca3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a344f751-1305-40df-9b9d-6d7b41292ef5",
+            "fields": [
+                {
+                    "id": "decon_screen_systems_ready",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "30d6521e-6afe-42d0-9f03-34a2961b1406"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "decon_screen_systems_ready",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "30d6521e-6afe-42d0-9f03-34a2961b1406"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "610e02e7-3184-491d-b64b-ff3753616a6e",
+            "fields": [
+                {
+                    "id": "decon_screen_initializing_procedure",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "da5f034c-3430-4ddd-aa70-8f5243a70bbf"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "decon_screen_initializing_procedure",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "da5f034c-3430-4ddd-aa70-8f5243a70bbf"
+                }
+            ]
+        }
+    ]
+}

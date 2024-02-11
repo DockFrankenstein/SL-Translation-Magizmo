@@ -1,5 +1,5 @@
 using TMPro;
-using Project.Translation.Defines;
+using Project.Translation.Mapping;
 
 namespace Project.GUI.Inspector
 {
@@ -24,8 +24,8 @@ namespace Project.GUI.Inspector
         }
 
         public override bool ShouldOpen(string id) =>
-            manager.CurrentVersion.DefinesDictionary.TryGetValue(id, out var item) &&
-            item.definesBase is MultiEntryTranslationDefines;
+            manager.CurrentVersion.MappedFields.TryGetValue(id, out var item) &&
+            item.mappingContainer is MultiEntryTranslationMapping;
 
         private void ContentField_OnValueChanged(string text)
         {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using Project.Translation.Data;
-using Project.Translation.Defines;
+using Project.Translation.Mapping;
 using System;
 using qASIC;
 using SFB;
@@ -101,7 +101,7 @@ namespace Project.Translation
             if (paths.Length == 0)
                 return;
 
-            foreach (var definesFile in CurrentVersion.defines)
+            foreach (var definesFile in CurrentVersion.containers)
             {
                 var txt = definesFile.Export(file);
                 FileManager.SaveFileWriter($"{paths[0]}/{definesFile.fileName}", txt);
@@ -117,7 +117,7 @@ namespace Project.Translation
             if (paths.Length == 0)
                 return;
 
-            foreach (var definesFile in CurrentVersion.defines)
+            foreach (var definesFile in CurrentVersion.containers)
             {
                 var path = $"{paths[0]}/{definesFile.fileName}";
                 if (!System.IO.File.Exists(path)) continue;

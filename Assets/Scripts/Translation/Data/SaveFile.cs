@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Linq;
-using Project.Translation.Defines;
+using Project.Translation.Mapping;
 
 namespace Project.Translation.Data
 {
@@ -38,7 +38,7 @@ namespace Project.Translation.Data
 
             if (translation != null)
             {
-                var defines = translation.GetDefines();
+                var defines = translation.GetMappedFields();
 
                 foreach (var item in defines)
                     if (!file.Entries.ContainsKey(item.id))
@@ -56,14 +56,14 @@ namespace Project.Translation.Data
                 this.entryId = entryId;
             }
 
-            public EntryData(DefineField defineField) : this(defineField.id) { }
+            public EntryData(MappedField defineField) : this(defineField.id) { }
 
             public EntryData(string entryId, string content) : this(entryId)
             {
                 this.content = content;
             }
 
-            public EntryData(DefineField defineField, string content) : this(defineField.id, content) { }
+            public EntryData(MappedField defineField, string content) : this(defineField.id, content) { }
 
             public string entryId;
             public string content = string.Empty;

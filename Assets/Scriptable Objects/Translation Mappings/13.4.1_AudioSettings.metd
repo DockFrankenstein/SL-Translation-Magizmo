@@ -1,0 +1,316 @@
+{
+    "fileName": "AudioSettings.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "5e148543-475c-4b7f-beba-562e6496f2b0",
+            "fields": [
+                {
+                    "id": "settings_audio_volume",
+                    "autoDisplayName": false,
+                    "displayName": "Volume",
+                    "addToList": true,
+                    "guid": "67d767f9-f3c8-42a3-bdfd-aa3a31270f03"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_volume",
+                    "autoDisplayName": false,
+                    "displayName": "Volume",
+                    "addToList": true,
+                    "guid": "67d767f9-f3c8-42a3-bdfd-aa3a31270f03"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "40b23a8a-47bb-4b9c-8fa9-4354a4881259",
+            "fields": [
+                {
+                    "id": "settings_audio_volume_master",
+                    "autoDisplayName": false,
+                    "displayName": "Master Volume",
+                    "addToList": true,
+                    "guid": "890726b0-3078-42cb-861d-933428d29de5"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_volume_master",
+                    "autoDisplayName": false,
+                    "displayName": "Master Volume",
+                    "addToList": true,
+                    "guid": "890726b0-3078-42cb-861d-933428d29de5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c4ed106b-f6a0-4615-a5f3-75abe563a0ca",
+            "fields": [
+                {
+                    "id": "settings_audio_volume_vc",
+                    "autoDisplayName": false,
+                    "displayName": "Voice Chat Volume",
+                    "addToList": true,
+                    "guid": "a9ee81dd-0fb0-4bfa-8fc7-cdca75fd8493"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_volume_vc",
+                    "autoDisplayName": false,
+                    "displayName": "Voice Chat Volume",
+                    "addToList": true,
+                    "guid": "a9ee81dd-0fb0-4bfa-8fc7-cdca75fd8493"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d0a89aab-ce55-44ce-93c6-1d4c855d7c06",
+            "fields": [
+                {
+                    "id": "settings_audio_volume_sfx",
+                    "autoDisplayName": false,
+                    "displayName": "Sound Effects Volume",
+                    "addToList": true,
+                    "guid": "1210995e-c2e4-42cd-9b9e-07c0c5a983c4"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_volume_sfx",
+                    "autoDisplayName": false,
+                    "displayName": "Sound Effects Volume",
+                    "addToList": true,
+                    "guid": "1210995e-c2e4-42cd-9b9e-07c0c5a983c4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "aba9850b-8d76-45e2-8d72-374a733ce42e",
+            "fields": [
+                {
+                    "id": "settings_audio_microphone_capture",
+                    "autoDisplayName": false,
+                    "displayName": "Microphone Capture",
+                    "addToList": true,
+                    "guid": "6cf47a6f-b0d8-4116-b98d-252081ee85bf"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_microphone_capture",
+                    "autoDisplayName": false,
+                    "displayName": "Microphone Capture",
+                    "addToList": true,
+                    "guid": "6cf47a6f-b0d8-4116-b98d-252081ee85bf"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "dbec6198-68ee-409b-aedc-ef78cc3af434",
+            "fields": [
+                {
+                    "id": "settings_audio_device",
+                    "autoDisplayName": false,
+                    "displayName": "Audio Device",
+                    "addToList": true,
+                    "guid": "d2d9baa0-d8d2-473e-abf8-26f10d8c2f8e"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_device",
+                    "autoDisplayName": false,
+                    "displayName": "Audio Device",
+                    "addToList": true,
+                    "guid": "d2d9baa0-d8d2-473e-abf8-26f10d8c2f8e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ba4d7141-1544-4ecc-b1d1-75fcf6e89b14",
+            "fields": [
+                {
+                    "id": "settings_audio_privacy",
+                    "autoDisplayName": false,
+                    "displayName": "Audio Privacy",
+                    "addToList": true,
+                    "guid": "0f5dcbb0-55ff-475d-90f0-ff27c3005d6a"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_privacy",
+                    "autoDisplayName": false,
+                    "displayName": "Audio Privacy",
+                    "addToList": true,
+                    "guid": "0f5dcbb0-55ff-475d-90f0-ff27c3005d6a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f9544a70-70a3-4eee-a974-1bd964a2de1e",
+            "fields": [
+                {
+                    "id": "settings_audio_privacy_adjust",
+                    "autoDisplayName": false,
+                    "displayName": "Audio Privacy Adjust",
+                    "addToList": true,
+                    "guid": "cc7f3ea5-8aa0-4d94-8b53-dc0ae249ce13"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_privacy_adjust",
+                    "autoDisplayName": false,
+                    "displayName": "Audio Privacy Adjust",
+                    "addToList": true,
+                    "guid": "cc7f3ea5-8aa0-4d94-8b53-dc0ae249ce13"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8e0957f5-31f9-4b3c-9a16-69a7e9173bcb",
+            "fields": [
+                {
+                    "id": "settings_audio_volume_menu",
+                    "autoDisplayName": false,
+                    "displayName": "Main Menu Volume",
+                    "addToList": true,
+                    "guid": "9579807f-1292-444a-8bf8-51c22ab9e22a"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_volume_menu",
+                    "autoDisplayName": false,
+                    "displayName": "Main Menu Volume",
+                    "addToList": true,
+                    "guid": "9579807f-1292-444a-8bf8-51c22ab9e22a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "045bb872-dfca-47c5-933a-19b1e582fbad",
+            "fields": [
+                {
+                    "id": "settings_audio_volume_music",
+                    "autoDisplayName": false,
+                    "displayName": "Music Volume",
+                    "addToList": true,
+                    "guid": "94dd32be-abaa-4071-bdbd-e67da1734d50"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_volume_music",
+                    "autoDisplayName": false,
+                    "displayName": "Music Volume",
+                    "addToList": true,
+                    "guid": "94dd32be-abaa-4071-bdbd-e67da1734d50"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2eb0de37-172d-418b-846b-56c0ad5571c7",
+            "fields": [
+                {
+                    "id": "settings_audio_volume_interface",
+                    "autoDisplayName": false,
+                    "displayName": "Interface Volume",
+                    "addToList": true,
+                    "guid": "0d941b7c-23b9-4635-b0ab-14b11be52d9c"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_volume_interface",
+                    "autoDisplayName": false,
+                    "displayName": "Interface Volume",
+                    "addToList": true,
+                    "guid": "0d941b7c-23b9-4635-b0ab-14b11be52d9c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "97c6c514-7397-443f-92d7-776de3dec3af",
+            "fields": [
+                {
+                    "id": "settings_audio_theme",
+                    "autoDisplayName": false,
+                    "displayName": "Theme",
+                    "addToList": true,
+                    "guid": "b721c58f-ec4b-4585-97e6-46aa34e2ae67"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_theme",
+                    "autoDisplayName": false,
+                    "displayName": "Theme",
+                    "addToList": true,
+                    "guid": "b721c58f-ec4b-4585-97e6-46aa34e2ae67"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d097418a-52a0-4012-9702-75e54db49c67",
+            "fields": [
+                {
+                    "id": "settings_audio_noise_suppression",
+                    "autoDisplayName": false,
+                    "displayName": "Noise Suppression",
+                    "addToList": true,
+                    "guid": "1ae8f47d-285a-40fb-8335-1a56b4cdfc90"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_noise_suppression",
+                    "autoDisplayName": false,
+                    "displayName": "Noise Suppression",
+                    "addToList": true,
+                    "guid": "1ae8f47d-285a-40fb-8335-1a56b4cdfc90"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0629817e-ce81-452c-84e1-d34f8e6932b8",
+            "fields": [
+                {
+                    "id": "settings_audio_noise_suppression_tooltip",
+                    "autoDisplayName": false,
+                    "displayName": "Noise Suppression Tooltip",
+                    "addToList": true,
+                    "guid": "e84e6642-bdbd-4071-bc08-70bd21cb5b08"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_audio_noise_suppression_tooltip",
+                    "autoDisplayName": false,
+                    "displayName": "Noise Suppression Tooltip",
+                    "addToList": true,
+                    "guid": "e84e6642-bdbd-4071-bc08-70bd21cb5b08"
+                }
+            ]
+        }
+    ]
+}

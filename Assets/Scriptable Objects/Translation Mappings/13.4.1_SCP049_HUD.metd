@@ -1,0 +1,598 @@
+{
+    "fileName": "SCP049_HUD.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": true,
+    "separationCharacter": 58,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "305d9610-e7dc-4988-a024-8666a17b4032",
+            "fields": [
+                {
+                    "id": "049_prompt_revive_left",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b3eeefa8-1340-4f47-9a8b-9a94e8b7dd51"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_prompt_revive_left",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b3eeefa8-1340-4f47-9a8b-9a94e8b7dd51"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "3db22544-ff91-4354-af64-433b15e2a15b",
+            "fields": [
+                {
+                    "id": "049_prompt_revive_expired",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8789de96-5132-400a-9139-03f634ae69f9"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_prompt_revive_expired",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8789de96-5132-400a-9139-03f634ae69f9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "fec56b4a-4c03-40c5-a11d-52f5b2007fe7",
+            "fields": [
+                {
+                    "id": "049_prompt_revive_exceeded_amount",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7bdcfd2a-8f64-4c14-a0d0-0aac013ab052"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_prompt_revive_exceeded_amount",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7bdcfd2a-8f64-4c14-a0d0-0aac013ab052"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "1bac5224-78d3-49f5-9a90-ecad3e72b956",
+            "fields": [
+                {
+                    "id": "049_prompt_revive_decline",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b2245f12-4699-4737-ae41-1ae8645f9fda"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_prompt_revive_decline",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b2245f12-4699-4737-ae41-1ae8645f9fda"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e2cd564b-d1bc-4b53-8c70-3321cd953ae7",
+            "fields": [
+                {
+                    "id": "049_prompt_revive_invalid",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8da2125b-9b73-4308-ba9b-db5f45143360"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_prompt_revive_invalid",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8da2125b-9b73-4308-ba9b-db5f45143360"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e7bfabed-9fdf-47fc-9bc5-73e07cba9885",
+            "fields": [
+                {
+                    "id": "049_prompt_consume_already",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "96a70f99-7646-4a20-a5f9-800f6343e3a2"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_prompt_consume_already",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "96a70f99-7646-4a20-a5f9-800f6343e3a2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "1cf09ca2-3fed-465c-b7c2-f6e74d0e1e10",
+            "fields": [
+                {
+                    "id": "049_prompt_consume_not_human",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5f8b32e5-84da-4420-943b-882e8e7c52b8"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_prompt_consume_not_human",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5f8b32e5-84da-4420-943b-882e8e7c52b8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0a1c1c05-262e-4a6f-affc-331befe97de0",
+            "fields": [
+                {
+                    "id": "049_cooldown_message",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7da9d3e9-c781-48a7-8cdf-5a572a0d55c1"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_cooldown_message",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7da9d3e9-c781-48a7-8cdf-5a572a0d55c1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5df4f9d7-8762-4656-98f0-2acb42390345",
+            "fields": [
+                {
+                    "id": "049_prompt_revive_permission_denied",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5660fd67-63c1-42d3-a074-0e1b4399fb6a"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_prompt_revive_permission_denied",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5660fd67-63c1-42d3-a074-0e1b4399fb6a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7b65f7cf-7435-4aca-a248-8ff048e7417c",
+            "fields": [
+                {
+                    "id": "049_prompt_revive_permission",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "089987e7-69cc-4855-a764-8196f4b1691c"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_prompt_revive_permission",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "089987e7-69cc-4855-a764-8196f4b1691c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e76d8cdc-f9b6-4993-846c-0c79d1b57e4b",
+            "fields": [
+                {
+                    "id": "049_no_target",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "57935d38-bc76-4291-bd09-e90b84493bac"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_no_target",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "57935d38-bc76-4291-bd09-e90b84493bac"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "38a27843-eb6f-4a9e-af36-9bc693649738",
+            "fields": [
+                {
+                    "id": "049_prompt_consume_full_health",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b61072c4-e850-44a3-8fbb-94fcfb633765"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_prompt_consume_full_health",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b61072c4-e850-44a3-8fbb-94fcfb633765"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c6868019-c141-4990-a6ea-178a0992a042",
+            "fields": [
+                {
+                    "id": "049_prompt_consume_already_now",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7c8a608c-23b7-4a20-8372-677732d02ae4"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_prompt_consume_already_now",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7c8a608c-23b7-4a20-8372-677732d02ae4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e1f3b4c4-d391-4cc9-a1fe-ce43a11a3750",
+            "fields": [
+                {
+                    "id": "f1_049_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "806ee677-2dd5-48ee-989c-bedc23a6e1e7"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "f1_049_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "806ee677-2dd5-48ee-989c-bedc23a6e1e7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "868327e2-07e9-4e7b-98fd-c2df6a6e63d0",
+            "fields": [
+                {
+                    "id": "f1_049_2_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f8e87ce0-3fcf-42a9-9872-568f5d18caf1"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "f1_049_2_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f8e87ce0-3fcf-42a9-9872-568f5d18caf1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "200c4a08-0038-485c-a6e8-4a311bee01c6",
+            "fields": [
+                {
+                    "id": "f1_ability_cardiac_attack",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "c81271b8-38f8-4fd7-af32-6c173c1b0773"
+                },
+                {
+                    "id": "f1_ability_cardiac_attack_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1df0c559-2e9d-403d-bdc2-4d75740deed2"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "f1_ability_cardiac_attack",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "c81271b8-38f8-4fd7-af32-6c173c1b0773"
+                },
+                {
+                    "id": "f1_ability_cardiac_attack_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1df0c559-2e9d-403d-bdc2-4d75740deed2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d231ad08-0b16-4722-9921-c917160ef5c9",
+            "fields": [
+                {
+                    "id": "f1_ability_good_sense",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b845a460-8800-4148-b2b7-b956e97f4f2c"
+                },
+                {
+                    "id": "f1_ability_good_sense_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "72f1c135-a000-4680-8932-a965368dbf07"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "f1_ability_good_sense",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b845a460-8800-4148-b2b7-b956e97f4f2c"
+                },
+                {
+                    "id": "f1_ability_good_sense_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "72f1c135-a000-4680-8932-a965368dbf07"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d31bf8c1-5381-476c-9b15-b92237f6017f",
+            "fields": [
+                {
+                    "id": "f1_ability_doctors_call",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f7f0ce1d-31a5-4c84-9053-46c95f00dcbc"
+                },
+                {
+                    "id": "f1_ability_doctors_call_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "165d34c6-5e76-41db-8db4-b1609043defe"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "f1_ability_doctors_call",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f7f0ce1d-31a5-4c84-9053-46c95f00dcbc"
+                },
+                {
+                    "id": "f1_ability_doctors_call_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "165d34c6-5e76-41db-8db4-b1609043defe"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8686bffb-03e4-4b48-9585-9707a6c0286e",
+            "fields": [
+                {
+                    "id": "f1_ability_no_waste",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0740a017-0509-40ab-a6d7-cb01358cef5d"
+                },
+                {
+                    "id": "f1_ability_no_waste_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "69686f6e-9fc5-482e-b830-e56d0b68ca02"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "f1_ability_no_waste",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0740a017-0509-40ab-a6d7-cb01358cef5d"
+                },
+                {
+                    "id": "f1_ability_no_waste_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "69686f6e-9fc5-482e-b830-e56d0b68ca02"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a8fdae04-e2dd-4781-bf9a-652461b41d97",
+            "fields": [
+                {
+                    "id": "f1_ability_lobotomized_bloodlust",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0cfa1f1f-f4b7-4909-9775-f1bc93268c2d"
+                },
+                {
+                    "id": "f1_ability_lobotomized_bloodlust_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f50cf9c4-22bd-460c-bef4-569b8c3b8b1f"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "f1_ability_lobotomized_bloodlust",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0cfa1f1f-f4b7-4909-9775-f1bc93268c2d"
+                },
+                {
+                    "id": "f1_ability_lobotomized_bloodlust_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f50cf9c4-22bd-460c-bef4-569b8c3b8b1f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b1194a94-7f6f-4a45-a938-ef86fda8d2e2",
+            "fields": [
+                {
+                    "id": "f1_ability_voracity",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7d40cdb6-91d6-49b4-ad11-3c78a3897121"
+                },
+                {
+                    "id": "f1_ability_voracity_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5269ad14-5681-46c0-8053-bc7d9b0a7a14"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "f1_ability_voracity",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7d40cdb6-91d6-49b4-ad11-3c78a3897121"
+                },
+                {
+                    "id": "f1_ability_voracity_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5269ad14-5681-46c0-8053-bc7d9b0a7a14"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "6ac20c0f-f30c-4cc4-8cc5-d824ab7ab383",
+            "fields": [
+                {
+                    "id": "049_prompt_revive",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4144aee8-7ccd-4133-bcd6-d757849cc149"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_prompt_revive",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4144aee8-7ccd-4133-bcd6-d757849cc149"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "81efa78f-18c0-419a-95f0-a0a0fba58eb7",
+            "fields": [
+                {
+                    "id": "049_prompt_hold_key",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "bb59bf20-8212-4062-a7ea-a6088db95a7e"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_prompt_hold_key",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "bb59bf20-8212-4062-a7ea-a6088db95a7e"
+                }
+            ]
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using UnityEditor.AssetImporters;
-using Project.Translation.Defines;
+using Project.Translation.Mapping;
 using qASIC;
 
 namespace Project.Editor.Translation.Defines
@@ -11,10 +11,10 @@ namespace Project.Editor.Translation.Defines
     {
         public override void OnInspectorGUI()
         {
-            var file = assetTarget as MultiEntryTranslationDefines;
+            var file = assetTarget as MultiEntryTranslationMapping;
 
             file.fileName = EditorGUILayout.TextField("File Name", file.fileName);
-            file.identificationType = (MultiEntryTranslationDefines.IdentificationType)EditorGUILayout.EnumPopup("Identification Type", file.identificationType);
+            file.identificationType = (MultiEntryTranslationMapping.IdentificationType)EditorGUILayout.EnumPopup("Identification Type", file.identificationType);
 
             using (new GUILayout.HorizontalScope(GUILayout.Height(EditorGUIUtility.singleLineHeight)))
                 GUILayout.FlexibleSpace();
@@ -48,7 +48,7 @@ namespace Project.Editor.Translation.Defines
             var unmodified = qASIC.Files.FileManager.LoadFileWriter(path);
             var current = JsonUtility.ToJson(assetTarget, true);
 
-            var unmodifiedAsset = CreateInstance<MultiEntryTranslationDefines>();
+            var unmodifiedAsset = CreateInstance<MultiEntryTranslationMapping>();
             JsonUtility.FromJsonOverwrite(unmodified, unmodifiedAsset);
             unmodified = JsonUtility.ToJson(unmodifiedAsset, true);
 

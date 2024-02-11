@@ -1,0 +1,536 @@
+{
+    "fileName": "RA_RoleManagement.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "fb3089e6-12f0-4b1e-b610-f84120c06487",
+            "fields": [
+                {
+                    "id": "ra_role_none",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f40de56f-673c-4b55-966c-a4a22956f73d"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_none",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f40de56f-673c-4b55-966c-a4a22956f73d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "eb453151-d45b-4168-a812-6699149de480",
+            "fields": [
+                {
+                    "id": "ra_role_173",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "2884717d-68c5-41de-87c5-c46fd9cd0074"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_173",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "2884717d-68c5-41de-87c5-c46fd9cd0074"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e6ea2101-d769-4865-ac5c-97d4282db19e",
+            "fields": [
+                {
+                    "id": "ra_role_classd",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "81790fbf-7961-4399-98bb-ad839e2bcf57"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_classd",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "81790fbf-7961-4399-98bb-ad839e2bcf57"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "47e8fc0a-05db-4d44-b7d4-ebd9a1a0758a",
+            "fields": [
+                {
+                    "id": "ra_role_spectator",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "a1d58111-8d07-48ce-a41f-f74981f794b2"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_spectator",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "a1d58111-8d07-48ce-a41f-f74981f794b2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "039a06ca-295c-485a-ac46-759a1368fa83",
+            "fields": [
+                {
+                    "id": "ra_role_106",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "97148d3c-4b19-4776-a264-477d72f472c4"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_106",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "97148d3c-4b19-4776-a264-477d72f472c4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e3fbfd6b-3708-49e0-81e8-848c4764714e",
+            "fields": [
+                {
+                    "id": "ra_role_mtf_specialist",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ac42563d-e72d-4e5b-817e-406059b1c344"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_mtf_specialist",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ac42563d-e72d-4e5b-817e-406059b1c344"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b92bb2db-f5a6-45ad-b513-d45fe1c76029",
+            "fields": [
+                {
+                    "id": "ra_role_049",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "555fa8d6-9980-4e51-a649-22427697d9d5"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_049",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "555fa8d6-9980-4e51-a649-22427697d9d5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ee6459f4-9c4a-47ea-905a-e2e2edcf620b",
+            "fields": [
+                {
+                    "id": "ra_role_scientist",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0a407aab-8fa6-4f86-9221-c9c539c0d274"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_scientist",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0a407aab-8fa6-4f86-9221-c9c539c0d274"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d7d44100-b8ad-4a78-9d0f-a70aa3de8734",
+            "fields": [
+                {
+                    "id": "ra_role_079",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "a53c4ae0-b30a-41ab-b508-1ba8fddb01e0"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_079",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "a53c4ae0-b30a-41ab-b508-1ba8fddb01e0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a55ed76b-3782-403b-bbee-448a09a968f1",
+            "fields": [
+                {
+                    "id": "ra_role_chaos_conscript",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e5aae76b-96c7-47f3-8143-d442bd55c9c0"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_chaos_conscript",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e5aae76b-96c7-47f3-8143-d442bd55c9c0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "1f578da2-05e3-4f34-b0f3-1bfd169b50a0",
+            "fields": [
+                {
+                    "id": "ra_role_096",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "efd3a4bc-976a-486d-a71b-35bad1165d98"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_096",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "efd3a4bc-976a-486d-a71b-35bad1165d98"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "198517b4-c040-4c27-a63e-ac7d023740bf",
+            "fields": [
+                {
+                    "id": "ra_role_049_2",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "2e9db42f-8b77-49a7-bbdf-0e5941a67388"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_049_2",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "2e9db42f-8b77-49a7-bbdf-0e5941a67388"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "bc49514e-5531-457b-8a6a-76e4ff3e2f55",
+            "fields": [
+                {
+                    "id": "ra_role_mtf_sergeant",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "2624fec5-061f-4abf-b8c8-4db51c288ff8"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_mtf_sergeant",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "2624fec5-061f-4abf-b8c8-4db51c288ff8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "fec62155-6976-48d1-aeed-d3115039e25b",
+            "fields": [
+                {
+                    "id": "ra_role_mtf_captain",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "fce738f9-1597-48bc-afd5-61dd68557bad"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_mtf_captain",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "fce738f9-1597-48bc-afd5-61dd68557bad"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "6dce5c94-a654-4ea3-9aee-76f2d04833f3",
+            "fields": [
+                {
+                    "id": "ra_role_mtf_private",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e95ef937-370d-4c74-89e8-40097a5020a1"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_mtf_private",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e95ef937-370d-4c74-89e8-40097a5020a1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9755f348-a881-4776-adf5-f431cf650d38",
+            "fields": [
+                {
+                    "id": "ra_role_tutorial",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7468b0aa-c94a-4f2e-9be8-7237474127fa"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_tutorial",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7468b0aa-c94a-4f2e-9be8-7237474127fa"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "489c5923-88c9-42ec-8898-ed0f07a3d715",
+            "fields": [
+                {
+                    "id": "ra_role_guard",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "c8b8d962-aa1f-4399-b358-87fe30a69d61"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_guard",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "c8b8d962-aa1f-4399-b358-87fe30a69d61"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4c2e0b42-acbd-4d12-97b7-69d740722f6f",
+            "fields": [
+                {
+                    "id": "ra_role_939",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "c91f7762-5534-4c02-966c-d97cf843cad6"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_939",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "c91f7762-5534-4c02-966c-d97cf843cad6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7af56f6b-a10e-4c7c-a003-3b4370595dd6",
+            "fields": [
+                {
+                    "id": "ra_role_custom",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0c561e3b-8a3f-4f5f-9175-ca3cd5d63f2c"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_custom",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0c561e3b-8a3f-4f5f-9175-ca3cd5d63f2c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "214d0679-e243-40dc-9e85-d07786e319fb",
+            "fields": [
+                {
+                    "id": "ra_role_chaos_rifleman",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1a799051-b4ce-49bd-aa0e-d07fd8783eee"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_chaos_rifleman",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1a799051-b4ce-49bd-aa0e-d07fd8783eee"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b37cbcef-98d8-4146-945a-eef5f90c4f49",
+            "fields": [
+                {
+                    "id": "ra_role_chaos_marauder",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "75acb734-ebaf-4a3a-b7b4-eaa4be1fd1fa"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_chaos_marauder",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "75acb734-ebaf-4a3a-b7b4-eaa4be1fd1fa"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "321551f2-e6bc-476b-8d76-506658c71cf6",
+            "fields": [
+                {
+                    "id": "ra_role_repressor",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5d036d9d-2d92-4b2a-84be-0e594d577feb"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_repressor",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5d036d9d-2d92-4b2a-84be-0e594d577feb"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9385ebda-3625-4f7a-a256-5243aa8020d6",
+            "fields": [
+                {
+                    "id": "ra_role_overwatch",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "09cdd880-10c3-43ce-aed6-e36fad7e0d8c"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_overwatch",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "09cdd880-10c3-43ce-aed6-e36fad7e0d8c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ea7941a6-4013-41d7-b262-4a17bfb186f7",
+            "fields": [
+                {
+                    "id": "ra_role_filmmaker",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e41ff0b6-f1f1-44b6-b238-ec3960f8b9ec"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "ra_role_filmmaker",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e41ff0b6-f1f1-44b6-b238-ec3960f8b9ec"
+                }
+            ]
+        }
+    ]
+}
