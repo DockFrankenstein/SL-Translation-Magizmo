@@ -1,4 +1,4 @@
-using Project.Translation.Defines;
+using Project.Translation.Mapping;
 using qASIC.EditorTools.AssetEditor;
 using UnityEngine;
 using UnityEditor.IMGUI.Controls;
@@ -13,7 +13,7 @@ using UnityEditor.ShortcutManagement;
 
 namespace Project.Editor.Translation.Defines
 {
-    public class MultiEntryWindow : AssetEditorWindow<MultiEntryWindow, MultiEntryTranslationDefines>, IHasCustomMenu
+    public class MultiEntryWindow : AssetEditorWindow<MultiEntryWindow, MultiEntryTranslationMapping>, IHasCustomMenu
     {
         public override string WindowTitle => asset?.name ?? "Multi Entry Asset Editor";
 
@@ -63,7 +63,7 @@ namespace Project.Editor.Translation.Defines
         private static bool OnOpenAsset(int instanceID, int line)
         {
             object obj = EditorUtility.InstanceIDToObject(instanceID);
-            if (!(obj is MultiEntryTranslationDefines asset))
+            if (!(obj is MultiEntryTranslationMapping asset))
                 return false;
 
             OpenAsset(asset);
@@ -131,7 +131,7 @@ namespace Project.Editor.Translation.Defines
                 foreach (var line in asset.lines)
                 {
                     line.guid = System.Guid.NewGuid().ToString();
-                    foreach (var define in line.defines)
+                    foreach (var define in line.fields)
                         define.guid = System.Guid.NewGuid().ToString();
                 }
 

@@ -2,11 +2,11 @@ using UnityEngine;
 using UnityEditor;
 
 using UEditor = UnityEditor.Editor;
-using Project.Translation.Defines;
+using Project.Translation.Mapping;
 
 namespace Project.Editor.Translation.Defines
 {
-    [CustomEditor(typeof(MultiEntryTranslationDefines))]
+    [CustomEditor(typeof(MultiEntryTranslationMapping))]
     internal class MultiEntryTranslationDefinesInspector : UEditor
     {
         protected override void OnHeaderGUI()

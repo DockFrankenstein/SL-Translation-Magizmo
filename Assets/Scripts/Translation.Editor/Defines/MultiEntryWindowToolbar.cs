@@ -1,5 +1,5 @@
 ﻿using qASIC.EditorTools.AssetEditor;
-using Project.Translation.Defines;
+using Project.Translation.Mapping;
 using UnityEngine;
 using UnityEditor;
 using qASIC.EditorTools;
@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace Project.Editor.Translation.Defines
 {
-    public class MultiEntryWindowToolbar : AssetEditorToolbar<MultiEntryWindow, MultiEntryTranslationDefines>
+    public class MultiEntryWindowToolbar : AssetEditorToolbar<MultiEntryWindow, MultiEntryTranslationMapping>
     {
         public MultiEntryWindowToolbar(MultiEntryWindow window) : base(window)
         {
@@ -38,7 +38,7 @@ namespace Project.Editor.Translation.Defines
                 {
                     foreach (var line in window.asset.lines)
                     {
-                        foreach (var define in line.defines)
+                        foreach (var define in line.fields)
                         {
                             if (!string.IsNullOrWhiteSpace(define.displayName)) continue;
                             define.autoDisplayName = false;

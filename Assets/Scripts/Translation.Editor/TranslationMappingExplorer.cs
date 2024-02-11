@@ -1,4 +1,4 @@
-using Project.Translation.Defines;
+using Project.Translation.Mapping;
 using UnityEditor;
 using UnityEngine;
 using System.Collections.Generic;
@@ -21,7 +21,7 @@ namespace Project.Translation.EditorWindows
             return window;
         }
 
-        internal List<DefineField> defines = new List<DefineField>();
+        internal List<MappedField> defines = new List<MappedField>();
 
         TranslationVersion currentVersion;
 
@@ -86,7 +86,7 @@ namespace Project.Translation.EditorWindows
 
         void RefreshMappings()
         {
-            defines = currentVersion.GetDefines().ToList();
+            defines = currentVersion.GetMappedFields().ToList();
             tree.Reload();
         }
 

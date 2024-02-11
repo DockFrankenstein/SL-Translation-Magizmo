@@ -1,0 +1,602 @@
+{
+    "fileName": "Class_Names.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "d3e71e53-7e5b-499d-8192-b7456afc0e7e",
+            "fields": [
+                {
+                    "id": "173_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3b7fa5a7-6e69-4894-873f-a571417213a8"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "173_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3b7fa5a7-6e69-4894-873f-a571417213a8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d6445b6e-f65e-42c0-97a5-bdd9fbab5e6c",
+            "fields": [
+                {
+                    "id": "classd_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "341f7042-471b-4755-b175-43075281d0c5"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "classd_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "341f7042-471b-4755-b175-43075281d0c5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "99a3819b-ec77-45c6-b3fb-77ece966845d",
+            "fields": [
+                {
+                    "id": "spectator_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1a2f7f75-e6f3-4905-bc1e-f23c7fe3c930"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "spectator_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1a2f7f75-e6f3-4905-bc1e-f23c7fe3c930"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "92f70552-17fc-4cc9-a24c-40297b4c0c0a",
+            "fields": [
+                {
+                    "id": "106_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "eebe8e0a-bcb8-41c2-ac26-b61d30d7cd11"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "106_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "eebe8e0a-bcb8-41c2-ac26-b61d30d7cd11"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f673ca61-6195-4739-acb2-faca932eaa8b",
+            "fields": [
+                {
+                    "id": "mtf_specialist_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "54aed764-5f7b-4d6e-b0e5-993173801136"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "mtf_specialist_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "54aed764-5f7b-4d6e-b0e5-993173801136"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "08cb06be-a15e-4594-85f2-419d2bb802a1",
+            "fields": [
+                {
+                    "id": "049_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ce166110-8d0e-4276-aeff-c389c86c52c3"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ce166110-8d0e-4276-aeff-c389c86c52c3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f5d6a916-3517-4cd5-98f0-ddd92f785c4b",
+            "fields": [
+                {
+                    "id": "scientist_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "cefb06bf-24ec-46d4-9861-7d83d4cd25c3"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "scientist_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "cefb06bf-24ec-46d4-9861-7d83d4cd25c3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b83b57e4-4b93-4f5b-99d6-6d2202eb277d",
+            "fields": [
+                {
+                    "id": "079_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6a509eee-aa3e-4673-a4c7-69d3a522d886"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "079_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6a509eee-aa3e-4673-a4c7-69d3a522d886"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e8b449f3-6a4b-4642-8584-1633b0c85469",
+            "fields": [
+                {
+                    "id": "chaos_conscript_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "efdf01b6-c440-4935-9723-3bac74f63278"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "chaos_conscript_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "efdf01b6-c440-4935-9723-3bac74f63278"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a0a1b61d-4881-4d04-815f-b4845ba7e85a",
+            "fields": [
+                {
+                    "id": "096_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0dc4ccf0-6e8c-4bd6-9550-2afa55790727"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "096_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0dc4ccf0-6e8c-4bd6-9550-2afa55790727"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9ad54e78-36f1-4a48-ac3a-59345cad10b8",
+            "fields": [
+                {
+                    "id": "049_2_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "07bafb52-823f-412b-9009-bfa6fb88d68f"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "049_2_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "07bafb52-823f-412b-9009-bfa6fb88d68f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e7649a59-70be-40d0-9214-96a22289153f",
+            "fields": [
+                {
+                    "id": "mtf_sergeant_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "739055b5-9c73-46e3-924c-6cc61a596fe5"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "mtf_sergeant_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "739055b5-9c73-46e3-924c-6cc61a596fe5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "986fc409-6a01-429f-baf7-4a22cdde1f08",
+            "fields": [
+                {
+                    "id": "mtf_captain_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "fbb8115d-6b1d-4684-844c-5cf654581316"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "mtf_captain_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "fbb8115d-6b1d-4684-844c-5cf654581316"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5511033f-17bb-4260-8256-2a70850a5599",
+            "fields": [
+                {
+                    "id": "mtf_private_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6108e400-1c5d-41b9-96b8-4aa163360be9"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "mtf_private_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6108e400-1c5d-41b9-96b8-4aa163360be9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "44d99b75-10cd-4ac1-bc9b-c261fb6f56ee",
+            "fields": [
+                {
+                    "id": "tutorial_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "895f9bbb-5166-4cda-919f-4afa3b4bc6af"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "tutorial_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "895f9bbb-5166-4cda-919f-4afa3b4bc6af"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9c814232-9cff-46c6-8197-9d5fcae311ab",
+            "fields": [
+                {
+                    "id": "guard_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "52655838-29b8-4e9a-9462-a9429199ee0d"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "guard_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "52655838-29b8-4e9a-9462-a9429199ee0d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "3f273887-0470-4e1d-b163-c6eec5da470b",
+            "fields": [
+                {
+                    "id": "939_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "313ba0fa-0deb-4a60-8b6c-e5354e921e37"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "939_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "313ba0fa-0deb-4a60-8b6c-e5354e921e37"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7c881cff-86d7-42cf-a081-b7bfa7e670a6",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "aea29e26-d097-4d13-ac70-72b5b5d7d78c"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "aea29e26-d097-4d13-ac70-72b5b5d7d78c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "bb45be7a-0b87-4162-9845-6dbe3ac02fa5",
+            "fields": [
+                {
+                    "id": "chaos_rifleman_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1eb5cf07-6196-4a12-93e4-3e625ef1af7f"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "chaos_rifleman_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1eb5cf07-6196-4a12-93e4-3e625ef1af7f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "98f88cd2-ae73-4e91-9e8c-219aefab4728",
+            "fields": [
+                {
+                    "id": "chaos_marauder_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4e07eeb0-df22-4f02-a12d-0c54884689f1"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "chaos_marauder_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4e07eeb0-df22-4f02-a12d-0c54884689f1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8c76f9c7-27e2-41a2-b63f-fd51db3ba5f9",
+            "fields": [
+                {
+                    "id": "chaos_repressor_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "557d70e3-b76e-466b-a022-c4cf339929a1"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "chaos_repressor_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "557d70e3-b76e-466b-a022-c4cf339929a1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b13b9ce1-e7ae-4533-87da-436dc3137905",
+            "fields": [
+                {
+                    "id": "overwatch_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0de993bd-d9ae-4834-8e14-d014523b24c7"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "overwatch_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0de993bd-d9ae-4834-8e14-d014523b24c7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8430bd98-ae0c-4a8f-8bf0-56e79a1a818a",
+            "fields": [
+                {
+                    "id": "filmmaker_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "483eacc8-0bc7-4d72-92c2-1901d7cfce7a"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "filmmaker_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "483eacc8-0bc7-4d72-92c2-1901d7cfce7a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "177a1c47-607a-4ffa-a596-db90c81a0dbd",
+            "fields": [
+                {
+                    "id": "3114_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "57ce00fc-6d2b-4cbf-bd05-954e225cd7c2"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "3114_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "57ce00fc-6d2b-4cbf-bd05-954e225cd7c2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "95e53609-8f6d-4d81-bacb-f45fc91b868e",
+            "fields": [
+                {
+                    "id": "1507_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e2e87c5a-1768-4469-8158-548683a872f9"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "1507_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e2e87c5a-1768-4469-8158-548683a872f9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b044e6f3-2e30-424a-bec4-1ab2059f1405",
+            "fields": [
+                {
+                    "id": "1507_alpha_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "85e34f86-fa9e-4d46-a4aa-f39c88dc388b"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "1507_alpha_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "85e34f86-fa9e-4d46-a4aa-f39c88dc388b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "807a1b83-03e9-47b8-9ace-cb0f6a9f7219",
+            "fields": [
+                {
+                    "id": "1507_049_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "daed438f-f21f-42b9-bb8e-617875e0efdf"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "1507_049_name",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "daed438f-f21f-42b9-bb8e-617875e0efdf"
+                }
+            ]
+        }
+    ]
+}

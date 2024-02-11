@@ -1,0 +1,602 @@
+{
+    "fileName": "Class_Descriptions.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "da04af11-7cbc-4941-b809-97af8ec06917",
+            "fields": [
+                {
+                    "id": "class_description_173",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6815149c-d7ab-45d7-87a7-d0b59a3074f5"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_173",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6815149c-d7ab-45d7-87a7-d0b59a3074f5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e200cb69-c68b-49b8-8e8b-d9b498fd40e1",
+            "fields": [
+                {
+                    "id": "class_description_classd",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "40bd1226-c211-4e41-b638-a6f3251b73ec"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_classd",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "40bd1226-c211-4e41-b638-a6f3251b73ec"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a1b32373-0a22-4850-ac5f-7987ed71a891",
+            "fields": [
+                {
+                    "id": "class_description_spectator",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "32d9083e-3cc3-4ba0-bff0-f6512207e082"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_spectator",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "32d9083e-3cc3-4ba0-bff0-f6512207e082"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "1b5d3ec1-efc9-4de7-bfe0-454ed6b079b5",
+            "fields": [
+                {
+                    "id": "class_description_106",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f10eae3d-46b4-4483-a03c-a69b79dceac3"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_106",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f10eae3d-46b4-4483-a03c-a69b79dceac3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "850dda50-4d88-47a3-9245-4c935c2ea3a4",
+            "fields": [
+                {
+                    "id": "class_description_mtf",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4eff08ef-4102-4e35-be06-ca984f3f6cd3"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_mtf",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4eff08ef-4102-4e35-be06-ca984f3f6cd3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "62a3cd07-a034-4399-818f-501f233ccbda",
+            "fields": [
+                {
+                    "id": "class_description_049",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "67db62c3-1592-4ef6-b4a0-29a7ef4a218e"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_049",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "67db62c3-1592-4ef6-b4a0-29a7ef4a218e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "10d057cb-882e-4034-a7e7-26c40b274c26",
+            "fields": [
+                {
+                    "id": "class_description_scientist",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ac150823-7f68-4f88-8664-48deee75d2e3"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_scientist",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ac150823-7f68-4f88-8664-48deee75d2e3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5c77302f-ecb1-4bef-8947-b92dc30bec2d",
+            "fields": [
+                {
+                    "id": "class_description_scp",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b9ec20f6-d518-4347-99fe-b5aa20c626cc"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_scp",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b9ec20f6-d518-4347-99fe-b5aa20c626cc"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c1fa01bf-437b-46fb-ac99-27f8170f8123",
+            "fields": [
+                {
+                    "id": "class_description_chaos",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8c3eca1b-8976-4060-86e8-d4818b63f239"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_chaos",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8c3eca1b-8976-4060-86e8-d4818b63f239"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "cd6c19fc-ecd8-426c-bee1-62114a73ce9f",
+            "fields": [
+                {
+                    "id": "class_description_scp1",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b3516ecc-c627-4ffa-be15-25d43055e4f2"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_scp1",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b3516ecc-c627-4ffa-be15-25d43055e4f2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "647f4c68-6e47-4513-970b-336c6d9123e7",
+            "fields": [
+                {
+                    "id": "class_description_scp2",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6b7e4d95-7831-4e3e-a76e-252d924adf19"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_scp2",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6b7e4d95-7831-4e3e-a76e-252d924adf19"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "00caa2ef-b032-420f-8d0d-03aad752796d",
+            "fields": [
+                {
+                    "id": "class_description_mtf1",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "61c054dd-3d06-4db5-8a95-c2e54ee34a49"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_mtf1",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "61c054dd-3d06-4db5-8a95-c2e54ee34a49"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a895707d-7826-42f8-88d3-8f1ccf673c08",
+            "fields": [
+                {
+                    "id": "class_description_mtf_captain",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ed537725-9ac4-4056-af93-c44f6ae2e698"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_mtf_captain",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ed537725-9ac4-4056-af93-c44f6ae2e698"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ff99393d-081a-45e0-b6c1-82cd96c3e8ee",
+            "fields": [
+                {
+                    "id": "class_description_mtf_private",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "28b3b87e-1426-444f-9b37-204136a375b0"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_mtf_private",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "28b3b87e-1426-444f-9b37-204136a375b0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "256e1af7-0ff3-4c56-9ad5-0d24c3f55142",
+            "fields": [
+                {
+                    "id": "class_description_tutorial",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "664f6890-d975-483c-88da-18a948a14cf8"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_tutorial",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "664f6890-d975-483c-88da-18a948a14cf8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c633179d-ebcb-40f8-b831-2d581ea567de",
+            "fields": [
+                {
+                    "id": "class_description_mtf_guard",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b947606b-75c5-4f7a-8c64-ab9957724d26"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_mtf_guard",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b947606b-75c5-4f7a-8c64-ab9957724d26"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9b4d507c-6931-4e7b-9edf-439df98f46b2",
+            "fields": [
+                {
+                    "id": "class_description_scp3",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1360211c-7097-4f0f-bc7e-044ef7c0e9a1"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_scp3",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1360211c-7097-4f0f-bc7e-044ef7c0e9a1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "6fd66565-6b87-4833-baab-21dddd50138e",
+            "fields": [
+                {
+                    "id": "class_description_scp4",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "619d5b44-9c65-4c30-8b9d-09dd84f48c2d"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_scp4",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "619d5b44-9c65-4c30-8b9d-09dd84f48c2d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a43378ce-2803-4f32-abc5-437cb9ea1e85",
+            "fields": [
+                {
+                    "id": "class_description_chaos1",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "a401f855-7cca-4fa7-9bcb-a291e86b9fc7"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_chaos1",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "a401f855-7cca-4fa7-9bcb-a291e86b9fc7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e1091566-7f72-4da4-b485-ea19755bfb4c",
+            "fields": [
+                {
+                    "id": "class_description_chaos2",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e6f1ebc8-f531-48a0-9893-7450d1293a60"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_chaos2",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e6f1ebc8-f531-48a0-9893-7450d1293a60"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7c6ca685-9959-41fe-86ee-67676ff6287e",
+            "fields": [
+                {
+                    "id": "class_description_chaos3",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6e7b4584-d95b-44d0-838c-c04555538352"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_chaos3",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6e7b4584-d95b-44d0-838c-c04555538352"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7c0129c2-1131-4675-878a-d18e3eeede64",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8d43effe-d7f2-438d-ba3d-68de4eafb4f1"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8d43effe-d7f2-438d-ba3d-68de4eafb4f1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "39d27abd-3fd6-4e0f-87ae-a089e5747d13",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b7999980-bd01-48cc-b132-ce0b973ad1ad"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b7999980-bd01-48cc-b132-ce0b973ad1ad"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "864f696c-47e8-4ba6-bc04-e10d68518e21",
+            "fields": [
+                {
+                    "id": "class_description_scp5",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d8994e10-ed8b-4e01-8beb-669d69d101d1"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_scp5",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d8994e10-ed8b-4e01-8beb-669d69d101d1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f33c4328-525c-456c-a20b-b5af08b0f5f9",
+            "fields": [
+                {
+                    "id": "class_description_flamingo",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "393925c8-6097-45ff-9a3f-77fca100b1cc"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_flamingo",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "393925c8-6097-45ff-9a3f-77fca100b1cc"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "83f0f668-2a68-4233-9ce1-2d47e31a4bc8",
+            "fields": [
+                {
+                    "id": "class_description_flamingo1",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1d5e9038-5da9-494c-8851-18078fcde757"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_flamingo1",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1d5e9038-5da9-494c-8851-18078fcde757"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "84f86c9d-726b-4ae1-9aec-d72ac80701dd",
+            "fields": [
+                {
+                    "id": "class_description_scp6",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0d34d7e4-4c20-450d-b017-6d95ae99aeb1"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "class_description_scp6",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0d34d7e4-4c20-450d-b017-6d95ae99aeb1"
+                }
+            ]
+        }
+    ]
+}

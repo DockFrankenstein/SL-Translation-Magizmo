@@ -1,0 +1,162 @@
+{
+    "fileName": "Teams.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "59e825a8-7978-4d14-9232-5760eec7b4ee",
+            "fields": [
+                {
+                    "id": "team_scp",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8cc085dc-1779-4cd3-b1b6-26ff506232f1"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "team_scp",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8cc085dc-1779-4cd3-b1b6-26ff506232f1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9ee82dd7-2598-4bea-95e7-e3f3cd5742ce",
+            "fields": [
+                {
+                    "id": "team_mtf",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "2580b4e8-7906-4507-9db6-0eff45df535f"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "team_mtf",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "2580b4e8-7906-4507-9db6-0eff45df535f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a0da8700-c404-42ba-af0c-94cd28815ad4",
+            "fields": [
+                {
+                    "id": "team_chaos",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "65a8d79c-4f9e-413a-b7b3-480e74f66b94"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "team_chaos",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "65a8d79c-4f9e-413a-b7b3-480e74f66b94"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "497ad55a-f843-4394-aa54-b538ba7f06f2",
+            "fields": [
+                {
+                    "id": "team_scientist",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "52cc7926-9d7e-4623-ab13-cadb83edb904"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "team_scientist",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "52cc7926-9d7e-4623-ab13-cadb83edb904"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e896dd07-2387-4363-aa2e-63efd6375eb9",
+            "fields": [
+                {
+                    "id": "team_classd",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ef4ed8d7-1250-4a46-abb6-b2d9d2ef7f36"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "team_classd",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ef4ed8d7-1250-4a46-abb6-b2d9d2ef7f36"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ea3bbd3e-f471-4a6d-b523-dc2b76e6c798",
+            "fields": [
+                {
+                    "id": "team_dead",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3033a9b5-50c7-4541-81f9-4d7b106e7371"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "team_dead",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3033a9b5-50c7-4541-81f9-4d7b106e7371"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b31b5bd0-eada-4c6a-a2fc-8ee03ec37e32",
+            "fields": [
+                {
+                    "id": "team_unknown",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "eb41865c-0ef1-4d95-9271-dc7c73fe617f"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "team_unknown",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "eb41865c-0ef1-4d95-9271-dc7c73fe617f"
+                }
+            ]
+        }
+    ]
+}

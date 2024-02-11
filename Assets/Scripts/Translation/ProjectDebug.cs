@@ -1,4 +1,4 @@
-﻿using Project.Translation.Defines;
+﻿using Project.Translation.Mapping;
 using qASIC;
 
 namespace Project
@@ -10,7 +10,7 @@ namespace Project
             UnityEngine.Debug.Log($"Imported '{fieldName}' value: {value?.ToString() ?? string.Empty}");
         }
 
-        public static void LogValueImport(DefineField defineField, object value) =>
+        public static void LogValueImport(MappedField defineField, object value) =>
             LogValueImport(defineField.id, value);
     }
 }

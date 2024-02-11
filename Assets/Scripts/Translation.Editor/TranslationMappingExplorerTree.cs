@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using qASIC.EditorTools;
 using System.Linq;
 using qASIC;
-using Project.Translation.Defines;
+using Project.Translation.Mapping;
 using UnityEditor;
 
 namespace Project.Translation.EditorWindows
@@ -59,14 +59,14 @@ namespace Project.Translation.EditorWindows
 
             menu.AddSeparator("");
 
-            menu.AddToggableItem($"File: {item?.field?.definesBase?.name ?? "NULL"}", false, () => { }, false);
+            menu.AddToggableItem($"File: {item?.field?.mappingContainer?.name ?? "NULL"}", false, () => { }, false);
 
             menu.ShowAsContext();
         }
 
         class Item : TreeViewItem
         {
-            public Item(DefineField field)
+            public Item(MappedField field)
             {
                 this.field = field;
                 depth = 0;
@@ -74,7 +74,7 @@ namespace Project.Translation.EditorWindows
                 id = field.guid.GetHashCode();
             }
 
-            public DefineField field;
+            public MappedField field;
         }
     }
 }

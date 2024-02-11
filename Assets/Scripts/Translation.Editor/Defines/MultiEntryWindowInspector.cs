@@ -1,11 +1,11 @@
 ﻿using qASIC.EditorTools;
-using Project.Translation.Defines;
+using Project.Translation.Mapping;
 using System;
 using UnityEditor;
 using UnityEngine;
 using System.Linq;
 
-using static Project.Translation.Defines.MultiEntryTranslationDefines;
+using static Project.Translation.Mapping.MultiEntryTranslationMapping;
 
 namespace Project.Editor.Translation.Defines
 {
@@ -105,7 +105,7 @@ namespace Project.Editor.Translation.Defines
                     break;
                 case DefineFieldContext define:
                     var newDefine = window.asset.lines
-                        .SelectMany(x => x.defines)
+                        .SelectMany(x => x.fields)
                         .Where(x => x.guid == define.defineField.guid)
                         .FirstOrDefault();
 
@@ -117,7 +117,7 @@ namespace Project.Editor.Translation.Defines
 
                     define.defineField = newDefine;
                     define.line = window.asset.lines
-                        .Where(x => x.defines.Contains(newDefine))
+                        .Where(x => x.fields.Contains(newDefine))
                         .First();
 
                     _selectedItem = define;
@@ -133,7 +133,7 @@ namespace Project.Editor.Translation.Defines
 
         public struct DefineFieldContext
         {
-            public DefineField defineField;
+            public MappedField defineField;
             public Line line;
         }
 

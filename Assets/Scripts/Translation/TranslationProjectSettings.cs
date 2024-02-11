@@ -1,5 +1,5 @@
 using UnityEngine;
-using Project.Translation.Defines;
+using Project.Translation.Mapping;
 using System.Collections.Generic;
 using UnityEngine.Windows;
 

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using Project.Translation.Defines;
+using Project.Translation.Mapping;
 using Project.Utility.UI;
 
 namespace Project.GUI.Inspector
@@ -31,8 +31,8 @@ namespace Project.GUI.Inspector
 
         public override bool ShouldOpen(string id)
         {
-            var a = manager.CurrentVersion.DefinesDictionary.TryGetValue(id, out var item) &&
-            item.definesBase is ArrayEntryTranslationDefines;
+            var a = manager.CurrentVersion.MappedFields.TryGetValue(id, out var item) &&
+            item.mappingContainer is ArrayEntryTranslationMapping;
 
             return a;
         }

@@ -1,0 +1,448 @@
+{
+    "fileName": "OtherSettings.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "78a1697f-9f51-486f-bc0f-0020b581ab9e",
+            "fields": [
+                {
+                    "id": "settings_server_tracking",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "2c478072-1bc3-4a4f-a83f-bcbf8183b0ca"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_server_tracking",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "2c478072-1bc3-4a4f-a83f-bcbf8183b0ca"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ebee4970-d83c-4744-8615-e0512b6a3ecf",
+            "fields": [
+                {
+                    "id": "settings_allow",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d43eae92-f61f-4959-b239-32ac8eac6a7a"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_allow",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d43eae92-f61f-4959-b239-32ac8eac6a7a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "27f0df80-8031-4d9b-8899-f812d0880a55",
+            "fields": [
+                {
+                    "id": "settings_server_tracking_deny",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e480ef3a-8e46-4f2d-853e-bdca3f043269"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_server_tracking_deny",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "e480ef3a-8e46-4f2d-853e-bdca3f043269"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "078d59b5-ff55-4a17-ae77-5dcb6f9b0711",
+            "fields": [
+                {
+                    "id": "settings_server_tracking_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b3809117-d543-4b09-a386-5dde7092839a"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_server_tracking_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b3809117-d543-4b09-a386-5dde7092839a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c6865683-ed56-4930-a278-d67216c184bd",
+            "fields": [
+                {
+                    "id": "settings_rich_presence",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7be965ec-376b-4cb3-914d-a8f6d2e34844"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_rich_presence",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "7be965ec-376b-4cb3-914d-a8f6d2e34844"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "12e7df90-6581-44f9-9a2a-5e4797b8a542",
+            "fields": [
+                {
+                    "id": "settings_rich_presence_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b1335821-1687-4e1d-b231-3ce0d61319e7"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_rich_presence_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b1335821-1687-4e1d-b231-3ce0d61319e7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0369b0b0-87f6-4425-832e-3179315b1a50",
+            "fields": [
+                {
+                    "id": "settings_steam_lobby_visibility",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "542c06d8-9009-4d05-ab5c-48796b7423e5"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_steam_lobby_visibility",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "542c06d8-9009-4d05-ab5c-48796b7423e5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d8e5a8d1-5203-4286-90ff-7bdee2c884f3",
+            "fields": [
+                {
+                    "id": "settings_steam_lobby_visibility_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4371465c-6c67-4a1a-ae4e-3a72d252a752"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_steam_lobby_visibility_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "4371465c-6c67-4a1a-ae4e-3a72d252a752"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2f825771-9d2f-4f74-997e-845e82a6e767",
+            "fields": [
+                {
+                    "id": "settings_voice_chat_privacy",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "52a70950-2f9a-435f-bebf-a639a80962b7"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_voice_chat_privacy",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "52a70950-2f9a-435f-bebf-a639a80962b7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "563c9eaf-0558-4787-a4a7-777a2d246932",
+            "fields": [
+                {
+                    "id": "settings_player_list_profile",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3451120c-026f-4ec4-9525-2b078c1bba99"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_player_list_profile",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3451120c-026f-4ec4-9525-2b078c1bba99"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "03d6314c-dd2d-42b2-aa4f-e0392d5d5ee5",
+            "fields": [
+                {
+                    "id": "settings_player_list_profile_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "594c8b48-c08f-47d4-be8e-a0f4317030ac"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_player_list_profile_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "594c8b48-c08f-47d4-be8e-a0f4317030ac"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f2a6c523-7ead-4727-8f47-f879f5e83891",
+            "fields": [
+                {
+                    "id": "settings_shown",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "c199357e-e25d-46dc-acd9-47aaa7b80f8f"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_shown",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "c199357e-e25d-46dc-acd9-47aaa7b80f8f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "dce5b3c7-d84c-4e35-9bf4-34278efd7a2d",
+            "fields": [
+                {
+                    "id": "settings_hidden",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "9dba2376-de36-4f44-90b6-09f673f4c2e6"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_hidden",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "9dba2376-de36-4f44-90b6-09f673f4c2e6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "62565398-025c-4122-b31a-4312d2328044",
+            "fields": [
+                {
+                    "id": "settings_invite_only",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b596588e-5dc4-44ca-a519-d7a2f7be483e"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_invite_only",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "b596588e-5dc4-44ca-a519-d7a2f7be483e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d91a5c6e-ac1a-4839-ae16-f6596b2dfeb7",
+            "fields": [
+                {
+                    "id": "settings_public",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "61a682a6-94ad-43d8-a1a7-52e4b95287ef"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_public",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "61a682a6-94ad-43d8-a1a7-52e4b95287ef"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5ee17fe3-79b4-46d9-a4fc-0d0c594fc796",
+            "fields": [
+                {
+                    "id": "settings_changes_warning",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f3cf80ff-d183-41f8-b1e3-46b8438c7564"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_changes_warning",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f3cf80ff-d183-41f8-b1e3-46b8438c7564"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d93c5e09-ca30-4f56-ad9d-eee8fdb6f904",
+            "fields": [
+                {
+                    "id": "settings_friends_only",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "576555a3-417d-4ffc-9cd2-4ab53df1efa8"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_friends_only",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "576555a3-417d-4ffc-9cd2-4ab53df1efa8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d2ca2286-a81c-4d78-947b-13354346d5eb",
+            "fields": [
+                {
+                    "id": "settings_privacy",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6f71d684-0dd3-4685-ae66-f624c9fe7501"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_privacy",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6f71d684-0dd3-4685-ae66-f624c9fe7501"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8b0a10f7-23b9-4ad2-b3a8-e31a0f6ccade",
+            "fields": [
+                {
+                    "id": "settings_spawn_preferences",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "838b91bc-934e-4cd1-9ec7-0063bf36449d"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_spawn_preferences",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "838b91bc-934e-4cd1-9ec7-0063bf36449d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "bee7ca64-b401-4674-8f2f-20ddcfe0530a",
+            "fields": [
+                {
+                    "id": "settings_spawn_preferences_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ab5e70f4-2486-43d7-855a-0cf88d5c69ec"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "settings_spawn_preferences_tooltip",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ab5e70f4-2486-43d7-855a-0cf88d5c69ec"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,426 @@
+{
+    "fileName": "Summary.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 0,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "d9bbe70c-80a2-4c64-9e45-18ab930351ce",
+            "fields": [
+                {
+                    "id": "summary_round_finished",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "c8aae805-2785-466e-9452-9765321acd1d"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_round_finished",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "c8aae805-2785-466e-9452-9765321acd1d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "38086698-fb5a-49cc-a2bd-2c60de764c74",
+            "fields": [
+                {
+                    "id": "summary_result_scp",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3b589ba3-bc67-452c-9aba-1839ead99459"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_result_scp",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "3b589ba3-bc67-452c-9aba-1839ead99459"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9bdcbb7b-c3a0-4fcf-b3b8-e4e1bd40b9f7",
+            "fields": [
+                {
+                    "id": "summary_result_mtf",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1ae7e8e8-81e8-47c2-8654-a271170afed4"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_result_mtf",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "1ae7e8e8-81e8-47c2-8654-a271170afed4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "310891cd-4bca-41ab-a19a-d5627262a0db",
+            "fields": [
+                {
+                    "id": "summary_result_chaos",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "9a5a6f95-ae70-4de1-a808-8526ce8b4314"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_result_chaos",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "9a5a6f95-ae70-4de1-a808-8526ce8b4314"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9cbc84c1-9d72-4412-889a-f338a7c0337c",
+            "fields": [
+                {
+                    "id": "summary_result_stalemate",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f1b53ffa-154d-44ab-aa04-0fe81a3ea92d"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_result_stalemate",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "f1b53ffa-154d-44ab-aa04-0fe81a3ea92d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "1c3cc087-85a3-4ea3-b08a-1975a3d57486",
+            "fields": [
+                {
+                    "id": "summary_result_scp_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ff32fd6c-4ffd-4cec-b4b3-4225e87fad16"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_result_scp_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ff32fd6c-4ffd-4cec-b4b3-4225e87fad16"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b081ae2a-a1e7-44c2-ae45-33efe7851514",
+            "fields": [
+                {
+                    "id": "summary_result_mtf_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "cd03b754-b312-40f3-9bef-bf5e70735226"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_result_mtf_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "cd03b754-b312-40f3-9bef-bf5e70735226"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "24645524-b711-4a55-b35d-d1233e4ef673",
+            "fields": [
+                {
+                    "id": "summary_result_chaos_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d66385c3-878c-4744-b16d-4b113ae9a2f8"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_result_chaos_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d66385c3-878c-4744-b16d-4b113ae9a2f8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ef31cf55-6385-44c7-8247-08083e6c40b1",
+            "fields": [
+                {
+                    "id": "summary_result_stalemate_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "71dce28b-5313-4ea3-9b1e-2689cae84649"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_result_stalemate_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "71dce28b-5313-4ea3-9b1e-2689cae84649"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8f37c238-bd58-4a8f-93c5-a1bf94ac5b25",
+            "fields": [
+                {
+                    "id": "summary_escapes_classd",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "054ed64c-0089-464c-bff1-fea3500fa6e3"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_escapes_classd",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "054ed64c-0089-464c-bff1-fea3500fa6e3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4ecfbf5e-898e-4000-8e12-82fa73e98d51",
+            "fields": [
+                {
+                    "id": "summary_escapes_scientist",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6ed683f9-8642-4566-81ed-0dd4b138f315"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_escapes_scientist",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "6ed683f9-8642-4566-81ed-0dd4b138f315"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "81c82b69-c373-491a-85b6-0c9405d2bc6f",
+            "fields": [
+                {
+                    "id": "summary_warhead_kills",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ca030bb3-e65e-41b3-838a-e6e985ae1296"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_warhead_kills",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "ca030bb3-e65e-41b3-838a-e6e985ae1296"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "57491472-81ae-40bb-a2cd-c295774408cb",
+            "fields": [
+                {
+                    "id": "summary_warhead_unused",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0eed7abd-22a0-426d-9cc3-a5bacee90b1f"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_warhead_unused",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "0eed7abd-22a0-426d-9cc3-a5bacee90b1f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "479b6701-f91f-4856-8e82-bfca9e4123aa",
+            "fields": [
+                {
+                    "id": "summary_duration",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8231d86c-6ef8-41f4-a08a-670e98a6ec49"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_duration",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "8231d86c-6ef8-41f4-a08a-670e98a6ec49"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "24cde71c-3c34-4214-8526-bcb910f112b7",
+            "fields": [
+                {
+                    "id": "summary_scp_terminated",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d4e4614b-feb6-4b54-83a7-421eb8ff8374"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_scp_terminated",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "d4e4614b-feb6-4b54-83a7-421eb8ff8374"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "68443ad0-c5b3-4d63-8bce-b4f30160de15",
+            "fields": [
+                {
+                    "id": "summary_next_round_countdown",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "823c0a76-5c33-43a3-8771-f3c2f9fd8404"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_next_round_countdown",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "823c0a76-5c33-43a3-8771-f3c2f9fd8404"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d2e5a462-24e8-46ce-bf36-d983dc56f049",
+            "fields": [
+                {
+                    "id": "summary_scp_kills",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5c9b200e-6ee1-4b6e-8e90-2a529f301729"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_scp_kills",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5c9b200e-6ee1-4b6e-8e90-2a529f301729"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d0598820-bc53-4e10-a75a-b81da17da49b",
+            "fields": [
+                {
+                    "id": "summary_result_flamingos",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5d70ce6a-f003-4bff-bdbb-5224526fa2a5"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_result_flamingos",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "5d70ce6a-f003-4bff-bdbb-5224526fa2a5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "616bd032-b9d2-4196-a066-6a22a4d47131",
+            "fields": [
+                {
+                    "id": "summary_result_flamingos_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "56476547-8b35-48e1-b5ef-89c10e74ea3e"
+                }
+            ],
+            "defines": [
+                {
+                    "id": "summary_result_flamingos_description",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "guid": "56476547-8b35-48e1-b5ef-89c10e74ea3e"
+                }
+            ]
+        }
+    ]
+}

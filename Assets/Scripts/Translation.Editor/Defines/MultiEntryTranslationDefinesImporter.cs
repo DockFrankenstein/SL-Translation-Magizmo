@@ -6,7 +6,7 @@ using UnityEngine;
 
 using UnityEditor.AssetImporters;
 
-using TargetFile = Project.Translation.Defines.MultiEntryTranslationDefines;
+using TargetFile = Project.Translation.Mapping.MultiEntryTranslationMapping;
 
 namespace Project.Editor.Translation.Defines
 {
@@ -49,7 +49,7 @@ namespace Project.Editor.Translation.Defines
             ctx.AddObjectToAsset("<root>", asset);
         }
 
-        [MenuItem("Assets/Create/Scriptable Objects/Translation/Defines/Multi Entry")]
+        [MenuItem("Assets/Create/Scriptable Objects/Translation/Mapping/Multi Entry")]
         public static void CreateInputAsset()
         {
             ProjectWindowUtil.CreateAssetWithContent($"New Multi Entry Translation Defines.{TargetFile.EXTENSION}",

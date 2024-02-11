@@ -6,8 +6,8 @@ using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using qASIC;
 using System.Linq;
-using Project.Translation.Defines;
-using static Project.Translation.Defines.MultiEntryTranslationDefines;
+using Project.Translation.Mapping;
+using static Project.Translation.Mapping.MultiEntryTranslationMapping;
 using JetBrains.Annotations;
 using static Project.Editor.Translation.Defines.MultiEntryWindowTree;
 
@@ -109,7 +109,7 @@ namespace Project.Editor.Translation.Defines
                 root.AddChild(item);
 
                 bool first = true;
-                foreach (var define in line.defines)
+                foreach (var define in line.fields)
                 {
                     var defineItem = new DefineItem(item, define);
                     item.defineItems.Add(defineItem);
@@ -206,12 +206,12 @@ namespace Project.Editor.Translation.Defines
             }
         }
 
-        void DrawColorForDefinition(Rect rect, DefineField define)
+        void DrawColorForDefinition(Rect rect, MappedField define)
         {
             var color = define.Status switch
             {
-                DefineField.SetupStatus.Blank => new Color(3f / 255f, 227f / 255f, 252f / 255f),
-                DefineField.SetupStatus.Ignored => new Color(252f / 255f, 45f / 255f, 73f / 255f),
+                MappedField.SetupStatus.Blank => new Color(3f / 255f, 227f / 255f, 252f / 255f),
+                MappedField.SetupStatus.Ignored => new Color(252f / 255f, 45f / 255f, 73f / 255f),
                 _ => new Color(3f / 255f, 252f / 255f, 161f / 255f),
             };
 
@@ -315,7 +315,7 @@ namespace Project.Editor.Translation.Defines
             if (window.asset == null) return;
             window.asset.lines.Add(new Line()
             {
-                defines = new List<DefineField>(new DefineField[] { new DefineField() }),
+                fields = new List<MappedField>(new MappedField[] { new MappedField() }),
             });
 
             Reload();
@@ -348,13 +348,13 @@ namespace Project.Editor.Translation.Defines
 
         public void CreateLine(Line line)
         {
-            line.defines.Add(new DefineField());
+            line.fields.Add(new MappedField());
             Reload();
         }
 
         public void DeleteDefine(DefineItem item)
         {
-            item.line.line.defines.Remove(item.define);
+            item.line.line.fields.Remove(item.define);
 
             Reload();
         }
@@ -422,7 +422,7 @@ namespace Project.Editor.Translation.Defines
                 depth = 0;
             }
 
-            public DefineItem(LineItem line, DefineField define)
+            public DefineItem(LineItem line, MappedField define)
             {
                 this.line = line;
                 this.define = define;
@@ -430,7 +430,7 @@ namespace Project.Editor.Translation.Defines
             }
 
             public LineItem line;
-            public DefineField define;
+            public MappedField define;
         }
     }
 }
