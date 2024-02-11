@@ -191,9 +191,9 @@
             "guid": "35be69fc-000f-4370-a5c5-78dacf88a072",
             "defines": [
                 {
-                    "id": "SCP:SL_art_manager",
+                    "id": "sl_art_manager",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Art Manager",
+                    "displayName": "sl Art Manager",
                     "addToList": true,
                     "guid": "2355d1c3-2a87-478d-b708-fe17ba6252e6"
                 }
@@ -204,9 +204,9 @@
             "guid": "f2e8b018-b434-49c5-a99f-59b130215cf5",
             "defines": [
                 {
-                    "id": "SCP:SL_art_supervisor",
+                    "id": "sl_art_supervisor",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Art Supervisor",
+                    "displayName": "sl Art Supervisor",
                     "addToList": true,
                     "guid": "15c3bc46-c2a4-4888-8a44-6267dceacd63"
                 }
@@ -217,9 +217,9 @@
             "guid": "60a9f8ec-b45b-470c-b461-268b3b5e53fc",
             "defines": [
                 {
-                    "id": "SCP:SL_artist",
+                    "id": "sl_artist",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Artist",
+                    "displayName": "sl Artist",
                     "addToList": true,
                     "guid": "9df5c81a-360f-4d4d-a9e1-6df4d255346b"
                 }
@@ -230,9 +230,9 @@
             "guid": "d48ab9c9-2a88-4761-9252-e815fdd21898",
             "defines": [
                 {
-                    "id": "SCP:SL_backend_programmer",
+                    "id": "sl_backend_programmer",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Backend Programmer",
+                    "displayName": "sl Backend Programmer",
                     "addToList": true,
                     "guid": "3f8b83f7-377b-4215-b23f-508279507acf"
                 }
@@ -243,9 +243,9 @@
             "guid": "82f1c903-9487-4771-80f8-47390a123c67",
             "defines": [
                 {
-                    "id": "SCP:SL_backend_programming_manager",
+                    "id": "sl_backend_programming_manager",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Backend Programming Manager",
+                    "displayName": "sl Backend Programming Manager",
                     "addToList": true,
                     "guid": "c18658ae-4b03-4b90-b532-d9a8038b01b3"
                 }
@@ -256,9 +256,9 @@
             "guid": "72b9c16e-267d-401b-add9-6f39c6b256a9",
             "defines": [
                 {
-                    "id": "SCP:SL_developer",
+                    "id": "sl_developer",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Developer",
+                    "displayName": "sl Developer",
                     "addToList": true,
                     "guid": "90722d45-f949-48e2-ae43-024686e2f9e7"
                 }
@@ -269,9 +269,9 @@
             "guid": "5a8fac6a-8f4e-49fc-8f3e-420052732e82",
             "defines": [
                 {
-                    "id": "SCP:SL_event_winner",
+                    "id": "sl_event_winner",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Event Winner",
+                    "displayName": "sl Event Winner",
                     "addToList": true,
                     "guid": "11973634-069b-4993-9e23-495912fe7608"
                 }
@@ -282,9 +282,9 @@
             "guid": "e96e75a0-9bfa-4d77-8b2c-857983845582",
             "defines": [
                 {
-                    "id": "SCP:SL_fullstack_programmer",
+                    "id": "sl_fullstack_programmer",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Fullstack Programmer",
+                    "displayName": "sl Fullstack Programmer",
                     "addToList": true,
                     "guid": "0e6d9da0-4bcb-4d4d-97cb-502873c7e790"
                 }
@@ -295,9 +295,9 @@
             "guid": "723f3f43-e708-4535-a14d-4fd77930bd8a",
             "defines": [
                 {
-                    "id": "SCP:SL_game_designer",
+                    "id": "sl_game_designer",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Game Designer",
+                    "displayName": "sl Game Designer",
                     "addToList": true,
                     "guid": "7988e376-5618-4d4e-9c82-31c55cf0e0e1"
                 }
@@ -308,9 +308,9 @@
             "guid": "d3633f0c-a1ba-41f1-88b2-bb094a762994",
             "defines": [
                 {
-                    "id": "SCP:SL_gameplay_programmer",
+                    "id": "sl_gameplay_programmer",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Gameplay Programmer",
+                    "displayName": "sl Gameplay Programmer",
                     "addToList": true,
                     "guid": "ab9f48ee-7e44-41ba-89d7-3616d44cf1ac"
                 }
@@ -321,9 +321,9 @@
             "guid": "a9f0b1ec-b30c-42b9-bbd1-800778067ff6",
             "defines": [
                 {
-                    "id": "SCP:SL_global_moderation_manager",
+                    "id": "sl_global_moderation_manager",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Global Moderation Manager",
+                    "displayName": "sl Global Moderation Manager",
                     "addToList": true,
                     "guid": "4acc65b7-5a60-49db-86f0-576bac661d4b"
                 }
@@ -334,9 +334,9 @@
             "guid": "56ad0bd7-3b1c-4d49-923b-2ae0113b6497",
             "defines": [
                 {
-                    "id": "SCP:SL_global_moderator",
+                    "id": "sl_global_moderator",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Global Moderator",
+                    "displayName": "sl Global Moderator",
                     "addToList": true,
                     "guid": "658dfdf2-36a9-4400-8a74-e354e29a5dbc"
                 }
@@ -347,9 +347,9 @@
             "guid": "57863d28-1f27-4e5c-a2b9-9fd8c96b4463",
             "defines": [
                 {
-                    "id": "SCP:SL_lead_game_designer",
+                    "id": "sl_lead_game_designer",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Lead Game Designer",
+                    "displayName": "sl Lead Game Designer",
                     "addToList": true,
                     "guid": "1f33affa-976e-4297-8809-de38c450c150"
                 }
@@ -360,9 +360,9 @@
             "guid": "226e3cfb-e53c-43c7-be40-d63a53ba36c6",
             "defines": [
                 {
-                    "id": "SCP:SL_lead_gameplay_programmer",
+                    "id": "sl_lead_gameplay_programmer",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Lead Gameplay Programmer",
+                    "displayName": "sl Lead Gameplay Programmer",
                     "addToList": true,
                     "guid": "3b928e5c-105e-49a0-822c-6f06c630ba48"
                 }
@@ -373,9 +373,9 @@
             "guid": "e70f6f2a-1061-4c2a-852f-cd714a14cd1a",
             "defines": [
                 {
-                    "id": "SCP:SL_level_designer",
+                    "id": "sl_level_designer",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Level Designer",
+                    "displayName": "sl Level Designer",
                     "addToList": true,
                     "guid": "02c8148f-4c2d-4c85-a506-67927c3ddea9"
                 }
@@ -386,9 +386,9 @@
             "guid": "19f1fcf4-bc41-4472-b7ff-edec15189442",
             "defines": [
                 {
-                    "id": "SCP:SL_partner",
+                    "id": "sl_partner",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Partner",
+                    "displayName": "sl Partner",
                     "addToList": true,
                     "guid": "c65f303f-d84c-4195-a8ca-0c8bb91180db"
                 }
@@ -399,9 +399,9 @@
             "guid": "9893e2b1-7c27-41fb-9596-5e611876a187",
             "defines": [
                 {
-                    "id": "SCP:SL_patreon_supporter",
+                    "id": "sl_patreon_supporter",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Patreon Supporter",
+                    "displayName": "sl Patreon Supporter",
                     "addToList": true,
                     "guid": "2d0d7172-1dd6-42d5-a44f-9cc80410981d"
                 }
@@ -412,9 +412,9 @@
             "guid": "f1576e46-3e38-4a0d-97d0-3320e79f1e76",
             "defines": [
                 {
-                    "id": "SCP:SL_quality_assurance_manager",
+                    "id": "sl_quality_assurance_manager",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Quality Assurance Manager",
+                    "displayName": "sl Quality Assurance Manager",
                     "addToList": true,
                     "guid": "44d05848-d21a-46f1-90f0-23eabc6f4bbb"
                 }
@@ -425,9 +425,9 @@
             "guid": "df5cff6b-e07a-4559-82c3-6165306828a8",
             "defines": [
                 {
-                    "id": "SCP:SL_sound_designer",
+                    "id": "sl_sound_designer",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Sound Designer",
+                    "displayName": "sl Sound Designer",
                     "addToList": true,
                     "guid": "57640caa-518c-4849-a1bf-6ccdc7af42e4"
                 }
@@ -438,9 +438,9 @@
             "guid": "f34288f8-aa62-4e03-8fff-073ff8f6860b",
             "defines": [
                 {
-                    "id": "SCP:SL_game_director",
+                    "id": "sl_game_director",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Game Director",
+                    "displayName": "sl Game Director",
                     "addToList": true,
                     "guid": "c6d804d0-1563-430b-844e-8a799f167a1c"
                 }
@@ -451,9 +451,9 @@
             "guid": "30266b31-962e-49fb-b00c-a275e0a15c36",
             "defines": [
                 {
-                    "id": "SCP:SL_official_server_manager",
+                    "id": "sl_official_server_manager",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Official Server Manager",
+                    "displayName": "sl Official Server Manager",
                     "addToList": true,
                     "guid": "ac854dac-cdc2-467b-8db1-dc86be682bf2"
                 }
@@ -477,9 +477,9 @@
             "guid": "d3c54ad8-08d0-4d68-b201-07cf2c0439ac",
             "defines": [
                 {
-                    "id": "SCP:SL_anti-cheat_developer",
+                    "id": "sl_anti-cheat_developer",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Anti-cheat Developer",
+                    "displayName": "sl Anti-cheat Developer",
                     "addToList": true,
                     "guid": "0936836f-c956-4822-8f74-47d51f850215"
                 }
@@ -490,9 +490,9 @@
             "guid": "656a6e3c-4a90-4835-aea1-2e8ed9500d47",
             "defines": [
                 {
-                    "id": "SCP:SL_quality_assurance_tester",
+                    "id": "sl_quality_assurance_tester",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Quality Assurance Tester",
+                    "displayName": "sl Quality Assurance Tester",
                     "addToList": true,
                     "guid": "99cd78c8-fe3b-47d3-9e13-6ef887dfedb1"
                 }
@@ -503,9 +503,9 @@
             "guid": "d8a7ec87-6847-4ae9-bf0e-401a49ee9285",
             "defines": [
                 {
-                    "id": "SCP:SL_quality_assurance_supervisor",
+                    "id": "sl_quality_assurance_supervisor",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Quality Assurance Supervisor",
+                    "displayName": "sl Quality Assurance Supervisor",
                     "addToList": true,
                     "guid": "0abd4063-9408-440a-abf9-e2b8522d9c96"
                 }
@@ -516,9 +516,9 @@
             "guid": "61243290-654d-4231-b004-a545f9d8a4b8",
             "defines": [
                 {
-                    "id": "SCP:SL_twitch_subscriber",
+                    "id": "sl_twitch_subscriber",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Twitch Subscriber",
+                    "displayName": "sl Twitch Subscriber",
                     "addToList": true,
                     "guid": "276ebf97-f5d8-4899-bfd5-1416319adcf5"
                 }
@@ -529,9 +529,9 @@
             "guid": "78cc3257-11b7-422f-bd41-50b92d4e5b19",
             "defines": [
                 {
-                    "id": "SCP:SL_audio_manager",
+                    "id": "sl_audio_manager",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Audio Manager",
+                    "displayName": "sl Audio Manager",
                     "addToList": true,
                     "guid": "760434d7-b52a-45de-8456-44171851404e"
                 }
@@ -568,9 +568,9 @@
             "guid": "bb517af2-358f-4fcf-b2a6-29fefb4a8577",
             "defines": [
                 {
-                    "id": "SCP:SL_official_server_supervisor",
+                    "id": "sl_official_server_supervisor",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Official Server Supervisor",
+                    "displayName": "sl Official Server Supervisor",
                     "addToList": true,
                     "guid": "3c6442a7-21c2-483b-b0e7-5867b9dc390d"
                 }
@@ -620,9 +620,9 @@
             "guid": "c49d3cfa-c8d6-4930-a806-4af48b6f3f69",
             "defines": [
                 {
-                    "id": "northwood_tranSCP:SLation_manager",
+                    "id": "northwood_translation_manager",
                     "autoDisplayName": false,
-                    "displayName": "Northwood TranSCP:SLation Manager",
+                    "displayName": "Northwood Translation Manager",
                     "addToList": true,
                     "guid": "945f2525-09da-4702-b684-13ee53472bda"
                 }
@@ -633,9 +633,9 @@
             "guid": "cb930108-63ea-4b98-a20a-d0a9cf13d12f",
             "defines": [
                 {
-                    "id": "SCP:SL_game_design_manager",
+                    "id": "sl_game_design_manager",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Game Design Manager",
+                    "displayName": "sl Game Design Manager",
                     "addToList": true,
                     "guid": "9a6c6d8a-47ce-4e0b-84fe-835035ccd50f"
                 }
@@ -646,9 +646,9 @@
             "guid": "dfb0eeb9-5ccb-457b-bb77-74f188843c22",
             "defines": [
                 {
-                    "id": "SCP:SL_animator",
+                    "id": "sl_animator",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Animator",
+                    "displayName": "sl Animator",
                     "addToList": true,
                     "guid": "773dfb4f-8063-4b64-bfcb-97dd1c8213dd"
                 }
@@ -672,9 +672,9 @@
             "guid": "381fe2f5-4391-4e09-bc1b-abbfd3ac54ed",
             "defines": [
                 {
-                    "id": "SCP:SL_community_helper",
+                    "id": "sl_community_helper",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Community Helper",
+                    "displayName": "sl Community Helper",
                     "addToList": true,
                     "guid": "347e6eea-8e1e-48c1-96e2-46635c5e86d5"
                 }
@@ -685,9 +685,9 @@
             "guid": "bd63c123-859a-4586-ab32-463e6136986d",
             "defines": [
                 {
-                    "id": "SCP:SL_voice_actor",
+                    "id": "sl_voice_actor",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Voice Actor",
+                    "displayName": "sl Voice Actor",
                     "addToList": true,
                     "guid": "83a0fe1e-b4e5-4e73-a74e-40333aafe5a2"
                 }
@@ -698,9 +698,9 @@
             "guid": "c14ed11b-bc48-4b77-bad4-ef7b63f990b9",
             "defines": [
                 {
-                    "id": "SCP:SL_foundation_investor",
+                    "id": "sl_foundation_investor",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Foundation Investor",
+                    "displayName": "sl Foundation Investor",
                     "addToList": true,
                     "guid": "55a698a6-2181-4a10-aee4-8ab3ba8e851b"
                 }
@@ -724,9 +724,9 @@
             "guid": "01d4cc86-3d8e-44ac-9178-2bd387d3f8b6",
             "defines": [
                 {
-                    "id": "SCP:SL_assistant_game_director",
+                    "id": "sl_assistant_game_director",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Assistant Game Director",
+                    "displayName": "sl Assistant Game Director",
                     "addToList": true,
                     "guid": "95edd9db-7218-45e2-b76a-cda54e069e00"
                 }
@@ -776,9 +776,9 @@
             "guid": "1db41439-daee-4dc2-a588-4d2e1da78fb5",
             "defines": [
                 {
-                    "id": "SCP:SL_narrative_designer",
+                    "id": "sl_narrative_designer",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Narrative Designer",
+                    "displayName": "sl Narrative Designer",
                     "addToList": true,
                     "guid": "eb35abaf-e1ed-438b-b5f0-ceef97ff1874"
                 }
@@ -802,9 +802,9 @@
             "guid": "966bbefb-9d1b-417c-bb1d-1cb4ea8cef36",
             "defines": [
                 {
-                    "id": "SCP:SL_audio_technical_lead",
+                    "id": "sl_audio_technical_lead",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Audio Technical Lead",
+                    "displayName": "sl Audio Technical Lead",
                     "addToList": true,
                     "guid": "6ccd2d09-1778-4121-9c00-4f0b65cb3e7a"
                 }
@@ -815,9 +815,9 @@
             "guid": "6468922f-5c1d-4803-80b7-8541ef28d22d",
             "defines": [
                 {
-                    "id": "northwood_tranSCP:SLation_coordinator",
+                    "id": "northwood_translation_coordinator",
                     "autoDisplayName": false,
-                    "displayName": "Northwood TranSCP:SLation Coordinator",
+                    "displayName": "Northwood Translation Coordinator",
                     "addToList": true,
                     "guid": "ade5a25f-fe4c-40e2-9d11-72949df7bc12"
                 }
@@ -906,9 +906,9 @@
             "guid": "d6e21bfc-9925-4620-941c-e8256e065806",
             "defines": [
                 {
-                    "id": "SCP:SL_game_design_supervisor",
+                    "id": "sl_game_design_supervisor",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Game Design Supervisor",
+                    "displayName": "sl Game Design Supervisor",
                     "addToList": true,
                     "guid": "2bb8ef21-9161-4af2-8c52-4ee217412ad8"
                 }
@@ -919,9 +919,9 @@
             "guid": "a30e922c-a611-45dd-ae1f-49c59cccc211",
             "defines": [
                 {
-                    "id": "SCP:SL_level_designer_supervisor",
+                    "id": "sl_level_designer_supervisor",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Level Designer Supervisor",
+                    "displayName": "sl Level Designer Supervisor",
                     "addToList": true,
                     "guid": "e649950c-f224-4a66-9234-ffbf368d8643"
                 }
@@ -932,9 +932,9 @@
             "guid": "c8ac9fcc-1969-45b7-b7a9-fec6d0f2a98c",
             "defines": [
                 {
-                    "id": "SCP:SL_global_moderation_supervisor",
+                    "id": "sl_global_moderation_supervisor",
                     "autoDisplayName": false,
-                    "displayName": "SCP:SL Global Moderation Supervisor",
+                    "displayName": "sl Global Moderation Supervisor",
                     "addToList": true,
                     "guid": "a5a757c8-0c94-41f7-94a3-3f6a82aa0ed3"
                 }
@@ -1062,9 +1062,9 @@
             "guid": "51de01e0-b900-4a25-8f18-79482d05a4dc",
             "defines": [
                 {
-                    "id": "northwood_tranSCP:SLation_supervisor",
+                    "id": "northwood_translation_supervisor",
                     "autoDisplayName": false,
-                    "displayName": "Northwood TranSCP:SLation Supervisor",
+                    "displayName": "Northwood Translation Supervisor",
                     "addToList": true,
                     "guid": "ca0eba83-1230-4f15-80d7-79bd2dfbc0e1"
                 }
