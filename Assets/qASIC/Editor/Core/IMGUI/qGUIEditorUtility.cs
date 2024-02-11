@@ -259,6 +259,7 @@ namespace qASIC.EditorTools
 
             string[] keywords = search
                 .ToLower()
+                .Replace('_', ' ')
                 .Split(' ')
                 .Where(s => s != string.Empty)
                 .ToArray();

@@ -34,6 +34,7 @@ namespace Project.Translation.Defines
             lines
             .SelectMany(x => x.defines)
             .Where(x => x.Status == DefineField.SetupStatus.Used)
+            .Select(x => { x.definesBase = this; return x; })
             .ToArray();
 
         
