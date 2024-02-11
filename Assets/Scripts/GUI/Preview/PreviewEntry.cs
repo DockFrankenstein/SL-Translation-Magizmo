@@ -11,7 +11,7 @@ namespace Project.GUI.Preview
         public string entryID;
 
         [HideInInspector] public TranslationManager manager;
-        [HideInInspector] public HierarchyDisplay hierarchy;
+        [HideInInspector] public HierarchyController hierarchy;
 
         private void Reset()
         {

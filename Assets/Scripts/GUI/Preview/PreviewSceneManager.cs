@@ -10,7 +10,7 @@ namespace Project.GUI.Preview
     public class PreviewSceneManager : MonoBehaviour
     {
         [SerializeField] TranslationManager manager;
-        [SerializeField] HierarchyDisplay hierarchy;
+        [SerializeField] HierarchyController hierarchy;
 
 #if UNITY_EDITOR
         [EditorButton(nameof(PopulateScenes))]

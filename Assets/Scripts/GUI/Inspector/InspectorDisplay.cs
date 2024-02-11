@@ -9,7 +9,7 @@ namespace Project.GUI.Inspector
     public class InspectorDisplay : MonoBehaviour
     {
         public TranslationManager manager;
-        public HierarchyDisplay hierarchy;
+        public HierarchyController hierarchy;
         public InspectorDisplayPanel[] panels;
         public PreviewSceneManager previewSceneManager;
 
@@ -60,9 +60,9 @@ namespace Project.GUI.Inspector
             }
         }
 
-        private void Hierarchy_OnSelect(string id)
+        private void Hierarchy_OnSelect(HierarchyItem item)
         {
-            _selectedId = id;
+            _selectedId = item.id;
             ReloadInspector();
         }
     }
