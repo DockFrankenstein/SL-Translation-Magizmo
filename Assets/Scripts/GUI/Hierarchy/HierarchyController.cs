@@ -81,10 +81,14 @@ namespace Project.GUI.Hierarchy
                     currentContent = new VisualElement();
                     scroll.contentContainer.Add(currentContent);
 
-                    currentHeader?.RegisterValueChangedCallback(args =>
+                    var head = currentHeader;
+                    var content = currentContent;
+
+                    head?.RegisterValueChangedCallback(args =>
                     {
-                        if (args.target == currentHeader)
-                            currentContent.style.display = currentHeader.value ? DisplayStyle.Flex : DisplayStyle.None;
+                        Debug.Log(head.value);
+                        if (args.target == head)
+                            content.style.display = head.value ? DisplayStyle.Flex : DisplayStyle.None;
                     });
                 }
 

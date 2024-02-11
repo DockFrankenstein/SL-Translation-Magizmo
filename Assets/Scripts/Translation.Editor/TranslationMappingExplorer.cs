@@ -58,13 +58,13 @@ namespace Project.Translation.EditorWindows
 
                 GUILayout.FlexibleSpace();
 
-                if (GUILayout.Button(currentVersion?.version ?? "NONE", EditorStyles.toolbarButton))
+                if (GUILayout.Button(currentVersion?.version.ToString() ?? "NONE", EditorStyles.toolbarButton))
                 {
                     GenericMenu menu = new GenericMenu();
 
                     foreach (var item in TranslationProjectSettings.Instance.translationVersions)
                     {
-                        menu.AddItem(item.version, item == currentVersion, () =>
+                        menu.AddItem(item.version.ToString(), item == currentVersion, () =>
                         {
                             currentVersion = item;
                             RefreshMappings();

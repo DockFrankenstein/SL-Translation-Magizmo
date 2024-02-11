@@ -9,7 +9,7 @@ namespace Project.Translation.Mapping
     [CreateAssetMenu(fileName = "New Project Version", menuName = "Scriptable Objects/Translation/Version", order = 20)]
     public class TranslationVersion : ScriptableObject
     {
-        public string version;
+        public Version version;
         [EditorButton(nameof(ExportIdTestTranslation))]
         public MappingBase[] containers = new MappingBase[0];
 

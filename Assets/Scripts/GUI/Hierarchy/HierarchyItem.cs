@@ -39,8 +39,17 @@ namespace Project.GUI.Hierarchy
             displayText = PUtility.GenerateDisplayName(id);
         }
 
+        public HierarchyItem(HierarchyItem item)
+        {
+            type = item.type;
+            id = item.id;
+            displayText = item.displayText;
+        }
+
         public ItemType type = ItemType.Normal;
         public string id = "";
         public string displayText = "";
+
+        [GUID] public string guid = Guid.NewGuid().ToString();
     }
 }
