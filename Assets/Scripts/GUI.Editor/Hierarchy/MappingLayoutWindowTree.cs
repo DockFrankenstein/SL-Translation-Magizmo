@@ -17,7 +17,18 @@ namespace Project.GUI.Editor.Hierarchy
             showAlternatingRowBackgrounds = true;
             rowHeight = EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing * 2f;
 
+            foldoutOverride += (Rect position, bool expandedState, GUIStyle style) =>
+            {
+                var foldoutIcon = EditorGUIUtility.IconContent(expandedState ? "IN_foldout_on@2x" : "IN_foldout@2x");
+                position = position.MoveX(8f).ResizeToLeft(22f);
+                if (UnityEngine.GUI.Button(position, foldoutIcon, EditorStyles.label))
+                    expandedState = !expandedState;
+
+                return expandedState;
+            };
+
             Reload();
+            ExpandAllBetter();
         }
 
         MappingLayoutWindow window;
@@ -27,10 +38,13 @@ namespace Project.GUI.Editor.Hierarchy
 
         bool _isSearching;
 
+        List<Item> _headerItems = new List<Item>();
+
         protected override IList<TreeViewItem> BuildRows(TreeViewItem root)
         {
             var rows = GetRows() ?? new List<TreeViewItem>();
             rows.Clear();
+            _headerItems.Clear();
 
             _isSearching = !string.IsNullOrWhiteSpace(searchString);
 
@@ -94,15 +108,49 @@ namespace Project.GUI.Editor.Hierarchy
                         .ToList();
                 }
 
+                bool hideItems = false;
                 foreach (var item in items)
                 {
                     var treeItem = new Item(item);
-                    rows.Add(treeItem);
-                    rootItem.AddChild(treeItem);
+                    bool isHeader = item.type == HierarchyItem.ItemType.Header;
+
+                    if (item.type == HierarchyItem.ItemType.Header)
+                    {
+                        _headerItems.Add(treeItem);
+                        hideItems = !IsExpanded(treeItem.id);
+                    }
+
+                    if (!hideItems || isHeader)
+                    {
+                        rows.Add(treeItem);
+                        rootItem.AddChild(treeItem);
+                    }
                 }
             }
 
             return rows;
+        }
+
+        protected override void ContextClickedItem(int id)
+        {
+            var menu = new GenericMenu();
+
+            menu.AddItem("Expand All", false, ExpandAllBetter);
+            menu.AddItem("Collapse All", false, CollapseAllBetter);
+
+            menu.ShowAsContext();
+        }
+
+        void ExpandAllBetter()
+        {
+            foreach (var item in _headerItems)
+                SetExpanded(item.id, true);
+        }
+
+        void CollapseAllBetter()
+        {
+            foreach (var item in _headerItems)
+                SetExpanded(item.id, false);
         }
 
         public void CreateNewItem()
@@ -167,6 +215,11 @@ namespace Project.GUI.Editor.Hierarchy
                 BeginRename(item);
         }
 
+        protected override bool CanChangeExpandedState(TreeViewItem item)
+        {
+            return item is Item treeItem && treeItem?.item?.type == HierarchyItem.ItemType.Header;
+        }
+
         protected override void RowGUI(RowGUIArgs args)
         {
             switch (args.item)
@@ -174,7 +227,7 @@ namespace Project.GUI.Editor.Hierarchy
                 case Item item:
                     var baseRect = args.rowRect
                         .ResizeHeightToCenter(EditorGUIUtility.singleLineHeight)
-                        .BorderLeft(EditorGUIUtility.singleLineHeight);
+                        .BorderLeft(30f);
 
                     var typeRect = baseRect
                         .ResizeToLeft(100f);
@@ -225,6 +278,8 @@ namespace Project.GUI.Editor.Hierarchy
                     base.RowGUI(args);
                     break;
             }
+
+            customFoldoutYOffset = (args.rowRect.height - 22f) / 2f;
         }
 
         protected override void KeyEvent()
