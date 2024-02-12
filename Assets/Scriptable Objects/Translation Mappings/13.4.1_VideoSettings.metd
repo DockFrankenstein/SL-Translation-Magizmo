@@ -451,7 +451,7 @@
             "guid": "e55138a9-4b72-4bb1-b5d2-d84237c4bb7b",
             "fields": [
                 {
-                    "id": "settings_aspect_ratio_wrong",
+                    "id": "settings_aspect_ratio_unsupported_monitor",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -568,7 +568,7 @@
             "guid": "2285d2ea-09f3-4acb-92c6-a062edcfa05a",
             "fields": [
                 {
-                    "id": "settings_aspect_radio_warning",
+                    "id": "settings_aspect_ratio_unsupported_game",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
