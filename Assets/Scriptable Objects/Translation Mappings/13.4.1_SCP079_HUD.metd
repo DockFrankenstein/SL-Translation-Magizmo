@@ -233,15 +233,7 @@
         {
             "lineId": "",
             "guid": "3eb5e0db-5b31-4219-bcb1-82d39f2146fe",
-            "fields": [
-                {
-                    "id": "079_door_unlock_all",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "a81f62ee-a07e-42f0-92ed-f2e9db70d6ee"
-                }
-            ]
+            "fields": []
         },
         {
             "lineId": "",

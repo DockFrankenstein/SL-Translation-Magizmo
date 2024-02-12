@@ -35,6 +35,12 @@
         },
         {
             "type": 0,
+            "id": "intro_description_173",
+            "displayText": "Intro Description 173",
+            "guid": "64c03235-3227-4b60-964c-bc95d5de8c0d"
+        },
+        {
+            "type": 0,
             "id": "f1_173_description",
             "displayText": "F1 173 Description",
             "guid": "cbab53e1-0ae0-4b43-91aa-8365b25b1d84"
@@ -104,6 +110,12 @@
             "id": "106_nickname",
             "displayText": "106 Nickname",
             "guid": "448f0f2a-5c15-4380-84ec-9e3a755f72fb"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_106",
+            "displayText": "Intro Description 106",
+            "guid": "edd43ae9-7708-49b8-9f72-0cfe09e5a26c"
         },
         {
             "type": 0,
@@ -194,6 +206,12 @@
             "id": "049_nickname",
             "displayText": "049 Nickname",
             "guid": "3093f4a1-1ef5-4333-9231-1dfecf38227d"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_049",
+            "displayText": "Intro Description 049",
+            "guid": "dace71c4-a2e8-47e6-8151-cf5cf8a3d5fc"
         },
         {
             "type": 0,
@@ -329,6 +347,12 @@
         },
         {
             "type": 0,
+            "id": "intro_description_049_2",
+            "displayText": "Intro Description 049 2",
+            "guid": "72187eb1-98d5-4b0d-81c2-0b12a1ba9b80"
+        },
+        {
+            "type": 0,
             "id": "f1_049_2_description",
             "displayText": "F1 049 2 Description",
             "guid": "97d3261a-48c5-43bf-8564-ad7538c129ec"
@@ -416,6 +440,12 @@
             "id": "079_nickname",
             "displayText": "079 Nickname",
             "guid": "be53bfd6-c57f-4e01-955e-06ffa54c7a06"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_079",
+            "displayText": "Intro Description 079",
+            "guid": "52d2595a-9472-4b24-a50a-7dc70ab2330f"
         },
         {
             "type": 0,
@@ -1055,6 +1085,12 @@
         },
         {
             "type": 0,
+            "id": "intro_description_096",
+            "displayText": "Intro Description 096",
+            "guid": "13888cce-d865-4b8a-9cb0-82bf8dc3ad35"
+        },
+        {
+            "type": 0,
             "id": "096_description",
             "displayText": "096 Description",
             "guid": "a5bb2842-3f45-40bf-ad74-cb5f2941a318"
@@ -1142,6 +1178,12 @@
             "id": "939_nickname",
             "displayText": "939 Nickname",
             "guid": "67ca31e3-f25e-4bdc-bf3e-56afea9225d3"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_939",
+            "displayText": "Intro Description 939",
+            "guid": "c68c1f7e-143a-4ebe-9fb1-7635f7b5e203"
         },
         {
             "type": 0,
@@ -1463,6 +1505,12 @@
         },
         {
             "type": 0,
+            "id": "intro_description_3114",
+            "displayText": "Intro Description 3114",
+            "guid": "64f30c76-680c-41c7-8847-f61d8205213b"
+        },
+        {
+            "type": 0,
             "id": "f1_3114_ability_skeleton_in_closet",
             "displayText": "F1 3114 Ability Skeleton In Closet",
             "guid": "089fbfc6-a5e2-4fc2-a398-be53995e45e4"
@@ -1613,6 +1661,12 @@
         },
         {
             "type": 0,
+            "id": "intro_description_1507",
+            "displayText": "Intro Description 1507",
+            "guid": "dae25736-fc84-4366-9210-805ad021aab8"
+        },
+        {
+            "type": 0,
             "id": "1507_alpha_name",
             "displayText": "1507 Alpha Name",
             "guid": "2e8e32c5-d5b0-4447-a01a-72c648a08023"
@@ -1625,6 +1679,12 @@
         },
         {
             "type": 0,
+            "id": "intro_description_1507_alpha",
+            "displayText": "Intro Description 1507 Alpha",
+            "guid": "a34b46ce-838c-4b58-9642-3d6b757df44d"
+        },
+        {
+            "type": 0,
             "id": "1507_049_name",
             "displayText": "1507 049 Name",
             "guid": "5307d565-58d2-4348-a0b4-df852241f8d2"
@@ -1634,6 +1694,12 @@
             "id": "1507_049_nickname",
             "displayText": "1507 049 Nickname",
             "guid": "cd732b6b-e853-4769-b398-7698963972d0"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_1507_049",
+            "displayText": "Intro Description 1507 049",
+            "guid": "9046d58f-f1f6-4172-af64-e7010e6b0075"
         },
         {
             "type": 0,
@@ -1694,6 +1760,30 @@
             "id": "1507_vocalize",
             "displayText": "1507 Vocalize",
             "guid": "a23b1916-1ca7-46cd-99b4-ddace7174617"
+        },
+        {
+            "type": 2,
+            "id": "",
+            "displayText": "Other Prompts",
+            "guid": "102e637a-e0c8-4989-91f1-dee9138cb60c"
+        },
+        {
+            "type": 0,
+            "id": "throw_cancel_prompt",
+            "displayText": "Throw Cancel Prompt",
+            "guid": "832b3083-107b-4441-a788-509d036feec5"
+        },
+        {
+            "type": 0,
+            "id": "item_cooldown",
+            "displayText": "Item Cooldown",
+            "guid": "31c32fd7-180a-4e73-987b-2352e32fe150"
+        },
+        {
+            "type": 0,
+            "id": "candles_prompt",
+            "displayText": "Candles Prompt",
+            "guid": "c48bfc4d-22a9-4f2f-a5b5-14e35caec778"
         },
         {
             "type": 2,
@@ -3059,9 +3149,15 @@
         },
         {
             "type": 0,
-            "id": "settings_aspect_ratio_wrong",
+            "id": "settings_aspect_ratio_unsupported_monitor",
             "displayText": "Settings Aspect Ratio Wrong",
             "guid": "8e33eeca-062e-4619-bbd7-04d40be326cd"
+        },
+        {
+            "type": 0,
+            "id": "settings_aspect_ratio_unsupported_game",
+            "displayText": "Settings Aspect Radio Warning",
+            "guid": "c423b14c-92f5-4e56-a728-e44873cac3fe"
         },
         {
             "type": 0,
@@ -4490,6 +4586,90 @@
             "id": "intro_escape_time",
             "displayText": "Intro Escape Time",
             "guid": "2cb75f0d-c223-48d3-95d5-162d57f159cb"
+        },
+        {
+            "type": 1,
+            "id": "",
+            "displayText": "Header",
+            "guid": "b87f1307-1cdf-4416-bbcd-6130e324cc85"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_classd",
+            "displayText": "Intro Description Classd",
+            "guid": "781fd119-913a-4a94-a871-57ca4ab9019b"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_scientist",
+            "displayText": "Intro Description Scientist",
+            "guid": "51b7de9b-2b69-4ab1-b2cd-80880496afc6"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_mtf_guard",
+            "displayText": "Intro Description Mtf Guard",
+            "guid": "d87eb7a7-5652-4e1d-8ef9-cd9066c3b6c6"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_mtf_private",
+            "displayText": "Intro Description Mtf Private",
+            "guid": "f37a8d8f-f352-428d-9756-7c6241c4f890"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_mtf_sergeant",
+            "displayText": "Intro Description Mtf Sergeant",
+            "guid": "0bc90b56-24fb-42ec-be53-fa0058e99d02"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_mtf_specialist",
+            "displayText": "Intro Description Mtf Specialist",
+            "guid": "3db92a80-0a37-4b56-893c-76b7cad3d438"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_mtf_captain",
+            "displayText": "Intro Description Mtf Captain",
+            "guid": "271d94d4-9c97-48ce-9010-167d8beaeab2"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_chaos_conscript",
+            "displayText": "Intro Description Chaos Conscript",
+            "guid": "df7880d8-d1a6-4ae5-8bea-e277da2610b5"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_chaos_rifleman",
+            "displayText": "Intro Description Chaos Rifleman",
+            "guid": "bf0dc546-3c0b-4783-af80-198ba7b4d106"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_chaos_marauder",
+            "displayText": "Intro Description Chaos Marauder",
+            "guid": "7252af25-11ff-48a1-9a6f-3e5bb24661fe"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_chaos_repressor",
+            "displayText": "Intro Description Chaos Repressor",
+            "guid": "d0d6a37a-1aaa-4bf8-a583-81f01bae19a9"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_spectator",
+            "displayText": "Intro Description Spectator",
+            "guid": "f0295b54-88dd-4201-b0b8-f7e883f92aca"
+        },
+        {
+            "type": 0,
+            "id": "intro_description_tutorial",
+            "displayText": "Intro Description Tutorial",
+            "guid": "cf61b5a7-14c4-4ee6-8486-8303fe95e1e8"
         },
         {
             "type": 2,
@@ -7616,30 +7796,6 @@
             "id": "voicechat_prompt_privacy_accept_all",
             "displayText": "Voicechat Prompt Privacy Accept All",
             "guid": "8618e184-59f2-4578-b6ef-a45f224c5713"
-        },
-        {
-            "type": 2,
-            "id": "",
-            "displayText": "Other Prompts",
-            "guid": "102e637a-e0c8-4989-91f1-dee9138cb60c"
-        },
-        {
-            "type": 0,
-            "id": "throw_cancel_prompt",
-            "displayText": "Throw Cancel Prompt",
-            "guid": "832b3083-107b-4441-a788-509d036feec5"
-        },
-        {
-            "type": 0,
-            "id": "item_cooldown",
-            "displayText": "Item Cooldown",
-            "guid": "31c32fd7-180a-4e73-987b-2352e32fe150"
-        },
-        {
-            "type": 0,
-            "id": "candles_prompt",
-            "displayText": "Candles Prompt",
-            "guid": "c48bfc4d-22a9-4f2f-a5b5-14e35caec778"
         }
     ]
 }
