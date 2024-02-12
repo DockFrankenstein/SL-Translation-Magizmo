@@ -6,6 +6,9 @@ using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using qASIC;
 using System.Linq;
+using UnityEngine.UIElements;
+using System;
+using Project.Translation.Mapping;
 
 namespace Project.GUI.Editor.Hierarchy
 {
@@ -33,11 +36,11 @@ namespace Project.GUI.Editor.Hierarchy
 
         MappingLayoutWindow window;
 
+        #region Creation
         protected override TreeViewItem BuildRoot() =>
             new TreeViewItem(0, -1);
 
         bool _isSearching;
-
         List<Item> _headerItems = new List<Item>();
 
         protected override IList<TreeViewItem> BuildRows(TreeViewItem root)
@@ -48,8 +51,11 @@ namespace Project.GUI.Editor.Hierarchy
 
             _isSearching = !string.IsNullOrWhiteSpace(searchString);
 
+
             if (window.asset != null)
             {
+                var mappedFields = window.asset.version.GetMappedFields();
+                
                 var items = window.asset.items;
 
                 if (_isSearching)
@@ -111,7 +117,7 @@ namespace Project.GUI.Editor.Hierarchy
                 bool hideItems = false;
                 foreach (var item in items)
                 {
-                    var treeItem = new Item(item);
+                    var treeItem = new Item(item, mappedFields);
                     bool isHeader = item.type == HierarchyItem.ItemType.Header;
 
                     if (item.type == HierarchyItem.ItemType.Header)
@@ -130,96 +136,9 @@ namespace Project.GUI.Editor.Hierarchy
 
             return rows;
         }
-
-        protected override void ContextClickedItem(int id)
-        {
-            var menu = new GenericMenu();
-
-            menu.AddItem("Expand All", false, ExpandAllBetter);
-            menu.AddItem("Collapse All", false, CollapseAllBetter);
-
-            menu.ShowAsContext();
-        }
-
-        void ExpandAllBetter()
-        {
-            foreach (var item in _headerItems)
-                SetExpanded(item.id, true);
-        }
-
-        void CollapseAllBetter()
-        {
-            foreach (var item in _headerItems)
-                SetExpanded(item.id, false);
-        }
-
-        public void CreateNewItem()
-        {
-            CreateNewItem(new HierarchyItem(string.Empty, "Header")
-            {
-                type = HierarchyItem.ItemType.Header,
-            });
-        }
-
-        public void CreateNewItem(HierarchyItem item)
-        {
-            if (window.asset == null) return;
-
-            var index = FindItem(GetSelection().Last(), rootItem) is Item treeItem ?
-                window.asset.items.IndexOf(treeItem.item) + 1 :
-                window.asset.items.Count;
-
-            window.asset.items.Insert(index, item);
-            Reload();
-        }
-
-        protected override bool CanRename(TreeViewItem item)
-        {
-            return item is Item hierarchyItem && hierarchyItem.item.type != HierarchyItem.ItemType.Separator;
-        }
-
-        protected override void RenameEnded(RenameEndedArgs args)
-        {
-            if (!(FindItem(args.itemID, rootItem) is Item item)) return;
-
-            if (args.acceptedRename)
-            {
-                switch (item.item.type)
-                {
-                    case HierarchyItem.ItemType.Normal:
-                        item.item.id = args.newName;
-                        break;
-                    default:
-                        item.item.displayText = args.newName;
-                        break;
-                }
-            }
-
-            window.SetAssetDirty();
-        }
-
-        protected override float GetCustomRowHeight(int row, TreeViewItem item)
-        {
-            if (item is Item treeItem && treeItem.item.type == HierarchyItem.ItemType.Header)
-                return 46f;
-
-            return base.GetCustomRowHeight(row, item);
-        }
-
-        protected override void DoubleClickedItem(int id)
-        {
-            var item = FindItem(id, rootItem);
-            if (item == null) return;
-
-            if (CanRename(item))
-                BeginRename(item);
-        }
-
-        protected override bool CanChangeExpandedState(TreeViewItem item)
-        {
-            return item is Item treeItem && treeItem?.item?.type == HierarchyItem.ItemType.Header;
-        }
-
+        #endregion
+        
+        #region GUI
         protected override void RowGUI(RowGUIArgs args)
         {
             switch (args.item)
@@ -227,13 +146,17 @@ namespace Project.GUI.Editor.Hierarchy
                 case Item item:
                     var baseRect = args.rowRect
                         .ResizeHeightToCenter(EditorGUIUtility.singleLineHeight)
-                        .BorderLeft(30f);
+                        .BorderLeft(30f)
+                        .BorderRight(EditorGUIUtility.standardVerticalSpacing);
 
                     var typeRect = baseRect
                         .ResizeToLeft(100f);
 
                     var nameRect = baseRect
                         .BorderLeft(100f + EditorGUIUtility.standardVerticalSpacing);
+
+                    var statusIconRect = baseRect
+                        .ResizeToRight(baseRect.height);
 
                     using (var changed = new EditorGUI.ChangeCheckScope())
                     {
@@ -252,6 +175,8 @@ namespace Project.GUI.Editor.Hierarchy
                             EditorGUI.LabelField(nameRect, item.item.displayText, EditorStyles.whiteLargeLabel);
                             break;
                     }
+
+                    UnityEngine.GUI.Label(statusIconRect, new GUIContent(item.statusIcon, item.statusIconTooltip));
 
                     if (Event.current.type == EventType.Repaint)
                     {
@@ -282,6 +207,21 @@ namespace Project.GUI.Editor.Hierarchy
             customFoldoutYOffset = (args.rowRect.height - 22f) / 2f;
         }
 
+        protected override float GetCustomRowHeight(int row, TreeViewItem item)
+        {
+            if (item is Item treeItem && treeItem.item.type == HierarchyItem.ItemType.Header)
+                return 46f;
+
+            return base.GetCustomRowHeight(row, item);
+        }
+
+        protected override bool CanChangeExpandedState(TreeViewItem item)
+        {
+            return item is Item treeItem && treeItem?.item?.type == HierarchyItem.ItemType.Header;
+        }
+        #endregion
+
+        #region Input
         protected override void KeyEvent()
         {
             if (Event.current.keyCode == KeyCode.Delete)
@@ -290,24 +230,68 @@ namespace Project.GUI.Editor.Hierarchy
             base.KeyEvent();
         }
 
-        void DeleteSelection()
+        protected override void DoubleClickedItem(int id)
         {
-            if (window.asset == null) return;
+            var item = FindItem(id, rootItem);
+            if (item == null) return;
 
-            var selection = GetSelection()
-                .Select(x => FindItem(x, rootItem))
-                .Where(x => x is Item)
-                .Select(x => x as Item);
+            if (CanRename(item))
+                BeginRename(item);
+        }
+        #endregion
 
-            foreach (var item in selection)
+        #region Context Menu
+        protected override void ContextClickedItem(int id)
+        {
+            var menu = new GenericMenu();
+
+            menu.AddItem("Expand All", false, ExpandAllBetter);
+            menu.AddItem("Collapse All", false, CollapseAllBetter);
+
+            menu.ShowAsContext();
+        }
+
+        void ExpandAllBetter()
+        {
+            foreach (var item in _headerItems)
+                SetExpanded(item.id, true);
+        }
+
+        void CollapseAllBetter()
+        {
+            foreach (var item in _headerItems)
+                SetExpanded(item.id, false);
+        }
+        #endregion
+
+        #region Renaming
+        protected override bool CanRename(TreeViewItem item)
+        {
+            return item is Item hierarchyItem && hierarchyItem.item.type != HierarchyItem.ItemType.Separator;
+        }
+
+        protected override void RenameEnded(RenameEndedArgs args)
+        {
+            if (!(FindItem(args.itemID, rootItem) is Item item)) return;
+
+            if (args.acceptedRename)
             {
-                window.asset.items.Remove(item.item);
+                switch (item.item.type)
+                {
+                    case HierarchyItem.ItemType.Normal:
+                        item.item.id = args.newName;
+                        break;
+                    default:
+                        item.item.displayText = args.newName;
+                        break;
+                }
             }
 
             window.SetAssetDirty();
-            Reload();
         }
+        #endregion
 
+        #region Drag&Drop
         protected override void SetupDragAndDrop(SetupDragAndDropArgs args)
         {
             DragAndDrop.PrepareStartDrag();
@@ -390,7 +374,73 @@ namespace Project.GUI.Editor.Hierarchy
             window.asset.items.Insert(newIndex, item);
             window.asset.items.RemoveAt(newIndex < oldIndex ? oldIndex + 1 : oldIndex);
         }
+        #endregion
 
+        #region Asset item operations
+        public void CreateNewItem()
+        {
+            CreateNewItem(new HierarchyItem(string.Empty, "Header")
+            {
+                type = HierarchyItem.ItemType.Header,
+            });
+        }
+
+        public void CreateNewItem(HierarchyItem item)
+        {
+            if (window.asset == null) return;
+
+            var index = FindItem(GetSelection().Last(), rootItem) is Item treeItem ?
+                window.asset.items.IndexOf(treeItem.item) + 1 :
+                window.asset.items.Count;
+
+            window.asset.items.Insert(index, item);
+            Reload();
+        }
+
+        void DeleteSelection()
+        {
+            if (window.asset == null) return;
+
+            var selection = GetSelection()
+                .Select(x => FindItem(x, rootItem))
+                .Where(x => x is Item)
+                .Select(x => x as Item);
+
+            foreach (var item in selection)
+            {
+                window.asset.items.Remove(item.item);
+            }
+
+            window.SetAssetDirty();
+            Reload();
+        }
+
+        internal void SortSelected<T>(Func<HierarchyItem, T> orderBy)
+        {
+            var selection = GetSelection()
+                .Select(x => FindItem(x, rootItem))
+                .Where(x => x is Item)
+                .Select(x => x as Item)
+                .OrderBy(x => orderBy(x.item))
+                .ToArray();
+
+            var indexes = selection
+                .Select(x => window.asset.items.IndexOf(x.item))
+                .OrderBy(x => x)
+                .ToArray();
+
+            //Ignore if there are items not present in asset
+            if (indexes.Any(x => x == -1)) return;
+
+            for (int i = 0; i < selection.Length; i++)
+                window.asset.items[indexes[i]] = selection[i].item;
+
+            window.SetAssetDirty();
+            Reload();
+        }
+        #endregion
+
+        #region Tree Items
         class Item : TreeViewItem
         {
             public Item(HierarchyItem item)
@@ -406,7 +456,19 @@ namespace Project.GUI.Editor.Hierarchy
                 };
             }
 
+            public Item(HierarchyItem item, MappedField[] mappedFields) : this(item)
+            {
+                if (item.type == HierarchyItem.ItemType.Normal && !mappedFields.Any(x => x.id == item.id))
+                {
+                    statusIcon = qGUIEditorUtility.ErrorIcon;
+                    statusIconTooltip = "A field with this id does not exist in the version file!";
+                }
+            }
+
             public HierarchyItem item;
+            public Texture statusIcon;
+            public string statusIconTooltip;
         }
+        #endregion
     }
 }

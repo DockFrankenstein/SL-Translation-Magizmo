@@ -9,16 +9,7 @@
             "guid": "b5763544-dd43-48ad-9e35-df386aa3225d",
             "fields": [
                 {
-                    "id": "settings_cathegory_gameplay",
-                    "autoDisplayName": false,
-                    "displayName": "Gameplay Cathegory",
-                    "addToList": true,
-                    "guid": "0d4ca1ff-50f0-4cc4-a6d8-4b1769cf7417"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_cathegory_gameplay",
+                    "id": "settings_category_gameplay",
                     "autoDisplayName": false,
                     "displayName": "Gameplay Cathegory",
                     "addToList": true,
@@ -31,16 +22,7 @@
             "guid": "11839630-f4b7-46b8-af2f-5dd48896f129",
             "fields": [
                 {
-                    "id": "settings_cathegory_weapons",
-                    "autoDisplayName": false,
-                    "displayName": "Weapons Cathegory",
-                    "addToList": true,
-                    "guid": "08e0f475-6267-42b2-a629-59829b279bde"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_cathegory_weapons",
+                    "id": "settings_category_weapons",
                     "autoDisplayName": false,
                     "displayName": "Weapons Cathegory",
                     "addToList": true,
@@ -53,16 +35,7 @@
             "guid": "8b6f0634-64b5-4c29-acd9-2228f61617b2",
             "fields": [
                 {
-                    "id": "settings_cathegory_movement",
-                    "autoDisplayName": false,
-                    "displayName": "Movement Cathegory",
-                    "addToList": true,
-                    "guid": "e6cb47ad-3715-48ba-806f-07bc923a98f1"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_cathegory_movement",
+                    "id": "settings_category_movement",
                     "autoDisplayName": false,
                     "displayName": "Movement Cathegory",
                     "addToList": true,
@@ -75,16 +48,7 @@
             "guid": "cadfa761-86db-4a9f-9fe6-661263366436",
             "fields": [
                 {
-                    "id": "settings_cathegory_hotkeys",
-                    "autoDisplayName": false,
-                    "displayName": "Hotkeys Cathegory",
-                    "addToList": true,
-                    "guid": "83cccb93-c2b3-46f2-9147-40b67868635f"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_cathegory_hotkeys",
+                    "id": "settings_category_hotkeys",
                     "autoDisplayName": false,
                     "displayName": "Hotkeys Cathegory",
                     "addToList": true,
@@ -97,16 +61,7 @@
             "guid": "f29e8fe5-f2a0-469a-a9aa-aab0e9b20960",
             "fields": [
                 {
-                    "id": "settings_cathegory_comms",
-                    "autoDisplayName": false,
-                    "displayName": "Communication Cathegory",
-                    "addToList": true,
-                    "guid": "ec749523-f636-4b4b-bcd0-bce75d786021"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_cathegory_comms",
+                    "id": "settings_category_comms",
                     "autoDisplayName": false,
                     "displayName": "Communication Cathegory",
                     "addToList": true,
@@ -119,16 +74,7 @@
             "guid": "5acd1431-6195-4c00-ac0e-3de7ad6621d3",
             "fields": [
                 {
-                    "id": "settings_cathegory_system",
-                    "autoDisplayName": false,
-                    "displayName": "System Cathegory",
-                    "addToList": true,
-                    "guid": "61d6c899-4012-4cee-825c-2edcb69915c5"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_cathegory_system",
+                    "id": "settings_category_system",
                     "autoDisplayName": false,
                     "displayName": "System Cathegory",
                     "addToList": true,
@@ -141,16 +87,7 @@
             "guid": "9d4ace23-4f4b-416b-aec9-5ff9d94e8739",
             "fields": [
                 {
-                    "id": "settings_cathegory_unbindable",
-                    "autoDisplayName": false,
-                    "displayName": "Unbindable Cathegory",
-                    "addToList": true,
-                    "guid": "bd64fef7-0cef-499b-a043-3df8c4c6e585"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_cathegory_unbindable",
+                    "id": "settings_category_unbindable",
                     "autoDisplayName": false,
                     "displayName": "Unbindable Cathegory",
                     "addToList": true,
@@ -163,16 +100,7 @@
             "guid": "96657119-769c-463a-b717-cd0d1c6ce29e",
             "fields": [
                 {
-                    "id": "settings_cathegory_079",
-                    "autoDisplayName": false,
-                    "displayName": "SCP-079 Cathegory",
-                    "addToList": true,
-                    "guid": "fcde3e9b-71b2-4704-a2b1-fd67e718207e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_cathegory_079",
+                    "id": "settings_category_079",
                     "autoDisplayName": false,
                     "displayName": "SCP-079 Cathegory",
                     "addToList": true,
