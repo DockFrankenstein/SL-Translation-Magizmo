@@ -9,23 +9,7 @@
             "guid": "5d038ff0-94f7-4bf8-8674-9fcc583650f8",
             "fields": [
                 {
-                    "id": "f1_ability_sprint_name",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "27e04472-823e-40fb-81c9-054388b6d891"
-                },
-                {
-                    "id": "f1_ability_sprint_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "b4a8d278-be32-4274-8762-479c5b4c6494"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_ability_sprint_name",
+                    "id": "f1_ability_sprint",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -45,23 +29,7 @@
             "guid": "a64acb58-db6e-4949-9ce4-5cdb0cd308fc",
             "fields": [
                 {
-                    "id": "f1_ability_sneak_name",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "bfe75b8e-c87e-45e5-889c-f6af68cdd0ed"
-                },
-                {
-                    "id": "f1_ability_sneak_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "c2082afb-c405-4fbc-b26e-5b54d29f4ee6"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_ability_sneak_name",
+                    "id": "f1_ability_sneak",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -81,23 +49,7 @@
             "guid": "72243951-3e7e-4f28-b050-950e3182c5e1",
             "fields": [
                 {
-                    "id": "f1_ability_inventory_name",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "70c6df89-a0a5-4725-b501-fd8de1d63b93"
-                },
-                {
-                    "id": "f1_ability_inventory_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "299213a4-1e48-4858-8982-84c2c99731f8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_ability_inventory_name",
+                    "id": "f1_ability_inventory",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -117,23 +69,7 @@
             "guid": "86011861-45c0-4495-9b93-7abfd8542407",
             "fields": [
                 {
-                    "id": "f1_ability_unarmed_name",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "5cf9d679-16ec-4146-a0ca-5066c56ff04d"
-                },
-                {
-                    "id": "f1_ability_unarmed_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "8bfd732a-485d-40ca-b0d6-2c7db3e24e89"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_ability_unarmed_name",
+                    "id": "f1_ability_unarmed",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -153,23 +89,7 @@
             "guid": "f253c931-cb3e-42b1-bfa9-f8ef3b124c47",
             "fields": [
                 {
-                    "id": "f1_ability_access_card_name",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "9ee14291-026d-4347-ba96-2abb290e178d"
-                },
-                {
-                    "id": "f1_ability_access_card_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "d5f7e381-c003-4f62-87d6-77cbc679e41a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_ability_access_card_name",
+                    "id": "f1_ability_access_card",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -189,23 +109,7 @@
             "guid": "3102f28e-e4b7-4726-97e2-ff36771de46f",
             "fields": [
                 {
-                    "id": "f1_ability_standard_issue_name",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "ff22c2a9-817d-4aca-aa2d-a958f06ec3d9"
-                },
-                {
-                    "id": "f1_ability_standard_issue_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "ad5a298e-92a5-47f5-99c5-000ea1287309"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_ability_standard_issue_name",
+                    "id": "f1_ability_standard_issue",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -225,23 +129,7 @@
             "guid": "e9cbfe03-c105-4bd7-a615-af9113f8cf1c",
             "fields": [
                 {
-                    "id": "f1_ability_dangerous_name",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "6f4f801a-6216-41bf-84b0-6975364f7891"
-                },
-                {
-                    "id": "f1_ability_dangerous_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "bdc05033-48e5-4d1d-af06-96d2403075b0"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_ability_dangerous_name",
+                    "id": "f1_ability_dangerous",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,

@@ -9,16 +9,7 @@
             "guid": "1cfe1abc-5001-444f-9559-92d4fd3961cc",
             "fields": [
                 {
-                    "id": "settings_input_mouse",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "bd677876-c86e-464e-a0dc-c7d51296f580"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_input_mouse",
+                    "id": "settings_input_category_mouse",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -30,15 +21,6 @@
             "lineId": "",
             "guid": "506f94ba-3154-43b5-889a-fd6d12b3320c",
             "fields": [
-                {
-                    "id": "settings_input_mouse_sensitivity",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "1668f201-23d2-4305-8781-4697631758c4"
-                }
-            ],
-            "defines": [
                 {
                     "id": "settings_input_mouse_sensitivity",
                     "autoDisplayName": true,
@@ -59,15 +41,6 @@
                     "addToList": true,
                     "guid": "21137f1e-7000-480a-aff1-220d57e8f84d"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "settings_input_mouse_ads_sensitivity",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "21137f1e-7000-480a-aff1-220d57e8f84d"
-                }
             ]
         },
         {
@@ -75,17 +48,8 @@
             "guid": "532f0518-fbc8-4d56-887f-52162cc2666c",
             "fields": [
                 {
-                    "id": "settings_input_raw",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "38e951e5-78a9-41b4-9e37-bb554f192efb"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_input_raw",
-                    "autoDisplayName": true,
+                    "id": "",
+                    "autoDisplayName": false,
                     "displayName": "",
                     "addToList": true,
                     "guid": "38e951e5-78a9-41b4-9e37-bb554f192efb"
@@ -96,15 +60,6 @@
             "lineId": "",
             "guid": "2f6fbfb0-100d-4538-868f-a912e3c8cc09",
             "fields": [
-                {
-                    "id": "settings_input_mouse_invert_y",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "a0b1615e-06e4-4c7b-b5d6-f9bcf82b35b1"
-                }
-            ],
-            "defines": [
                 {
                     "id": "settings_input_mouse_invert_y",
                     "autoDisplayName": true,
@@ -125,30 +80,12 @@
                     "addToList": true,
                     "guid": "c6179ad2-a262-437b-97a4-cd64b6c83401"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "settings_input_mouse_ads_sensitivity_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "c6179ad2-a262-437b-97a4-cd64b6c83401"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "a3b7d064-ba51-42bf-af50-892e0513bfa6",
             "fields": [
-                {
-                    "id": "settings_input_hold",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "c0fe4f41-6061-4628-9e7a-df689271ffdd"
-                }
-            ],
-            "defines": [
                 {
                     "id": "settings_input_hold",
                     "autoDisplayName": true,
@@ -169,30 +106,12 @@
                     "addToList": true,
                     "guid": "4b366066-cb84-401a-80bb-fa06b801727c"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "settings_input_toggle",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "4b366066-cb84-401a-80bb-fa06b801727c"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "1c3d1af5-6802-42fe-b5cb-85fe26898edb",
             "fields": [
-                {
-                    "id": "settings_input_ads_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "7c996352-d9ee-4107-bfe3-52488cbc962f"
-                }
-            ],
-            "defines": [
                 {
                     "id": "settings_input_ads_mode",
                     "autoDisplayName": true,
@@ -213,30 +132,12 @@
                     "addToList": true,
                     "guid": "bafefdf2-20ea-437d-a818-611a361b6a76"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "settings_input_sprint_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "bafefdf2-20ea-437d-a818-611a361b6a76"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "cf80c22c-65c9-4f0e-9da5-09d0e93dfe90",
             "fields": [
-                {
-                    "id": "settings_input_pickup_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "e142c82a-35d6-4c95-9069-96ab9aa60e72"
-                }
-            ],
-            "defines": [
                 {
                     "id": "settings_input_pickup_mode",
                     "autoDisplayName": true,
@@ -257,30 +158,12 @@
                     "addToList": true,
                     "guid": "17ed6cbd-f3e0-4362-bce3-697d004cb761"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "settings_input_sneak_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "17ed6cbd-f3e0-4362-bce3-697d004cb761"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "3949eccb-50ba-48fb-812f-a7f6fb07e01d",
             "fields": [
-                {
-                    "id": "settings_input_079_look_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "79009f0e-1cf7-459d-9ad4-1b71b79dc9db"
-                }
-            ],
-            "defines": [
                 {
                     "id": "settings_input_079_look_mode",
                     "autoDisplayName": true,
@@ -301,15 +184,6 @@
                     "addToList": true,
                     "guid": "257a391e-5d52-41b0-b107-deb67630c061"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "settings_input_inventory_rmb_drop",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "257a391e-5d52-41b0-b107-deb67630c061"
-                }
             ]
         },
         {
@@ -323,30 +197,12 @@
                     "addToList": true,
                     "guid": "c6aaa1a6-e42f-4785-9289-ab0226875435"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "settings_input_inventory_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "c6aaa1a6-e42f-4785-9289-ab0226875435"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "7510f832-1d41-4ab5-b890-8159e65e4d1f",
             "fields": [
-                {
-                    "id": "settings_input_079_zone_switch_keybinds",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "499a886a-a81d-4a8a-9f2f-3d334905a3a6"
-                }
-            ],
-            "defines": [
                 {
                     "id": "settings_input_079_zone_switch_keybinds",
                     "autoDisplayName": true,

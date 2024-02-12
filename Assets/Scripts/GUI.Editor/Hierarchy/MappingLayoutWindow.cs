@@ -3,6 +3,7 @@ using qASIC.EditorTools.AssetEditor;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEditor.IMGUI.Controls;
+using UnityEditor.ShortcutManagement;
 using UnityEngine;
 
 namespace Project.GUI.Editor.Hierarchy
@@ -17,6 +18,14 @@ namespace Project.GUI.Editor.Hierarchy
 
         internal MappingLayoutWindowTree tree;
         [SerializeField] TreeViewState treeState;
+
+        #region Shortcuts
+        [Shortcut("Maping Layout Window/Save", typeof(MappingLayoutWindow), KeyCode.S, ShortcutModifiers.Alt)]
+        private static void Sh_Save(ShortcutArguments args)
+        {
+            GetWindow().Save();
+        }
+        #endregion
 
         [OnOpenAsset]
         private static bool OnOpenAsset(int instanceID, int line)

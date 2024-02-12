@@ -15,30 +15,12 @@
                     "addToList": true,
                     "guid": "ff331fb9-ec99-4de2-b5fd-f620f3f97dbd"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "ff331fb9-ec99-4de2-b5fd-f620f3f97dbd"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "32007bfd-6749-4abf-8202-68010b2bd592",
             "fields": [
-                {
-                    "id": "inv_candybag_rainbow",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "54346d6c-46ef-421c-b231-2eb376455053"
-                }
-            ],
-            "defines": [
                 {
                     "id": "inv_candybag_rainbow",
                     "autoDisplayName": true,
@@ -59,30 +41,12 @@
                     "addToList": true,
                     "guid": "0b2a5aa4-e0f5-48d6-bf22-46b27a790c8a"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "inv_candybag_rainbow_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "0b2a5aa4-e0f5-48d6-bf22-46b27a790c8a"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "a70c12dd-908f-407e-a778-18cff6e7b1c7",
             "fields": [
-                {
-                    "id": "inv_candybag_rainbow_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "92217b83-e3d0-4b5d-9b01-4f2382894c36"
-                }
-            ],
-            "defines": [
                 {
                     "id": "inv_candybag_rainbow_effects",
                     "autoDisplayName": true,
@@ -103,30 +67,12 @@
                     "addToList": true,
                     "guid": "d39f5fa3-c376-40c2-a483-d5edd0be83b4"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "inv_candybag_yellow",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "d39f5fa3-c376-40c2-a483-d5edd0be83b4"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "ca0a6e0a-b9e1-4746-a7ea-ebd18a0938cf",
             "fields": [
-                {
-                    "id": "inv_candybag_yellow_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "f0ec588b-cd6b-48ae-81d2-959edba932d0"
-                }
-            ],
-            "defines": [
                 {
                     "id": "inv_candybag_yellow_description",
                     "autoDisplayName": true,
@@ -147,30 +93,12 @@
                     "addToList": true,
                     "guid": "08bbe8ea-617a-43e1-a4f0-387daa59941a"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "inv_candybag_yellow_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "08bbe8ea-617a-43e1-a4f0-387daa59941a"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "1db1c2e4-74d8-4961-a134-b7f184562201",
             "fields": [
-                {
-                    "id": "inv_candybag_purple",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "7e9d13ba-3c6d-4e2f-a2cb-b64efc209d04"
-                }
-            ],
-            "defines": [
                 {
                     "id": "inv_candybag_purple",
                     "autoDisplayName": true,
@@ -191,30 +119,12 @@
                     "addToList": true,
                     "guid": "c33b9290-2d2f-43f4-ba44-5a600eb0dd71"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "inv_candybag_purple_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "c33b9290-2d2f-43f4-ba44-5a600eb0dd71"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "e3bd5dad-a31a-4b97-ac43-4ef56ccaf6d8",
             "fields": [
-                {
-                    "id": "inv_candybag_purple_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "134611a2-833b-41f3-8337-de4dded723ea"
-                }
-            ],
-            "defines": [
                 {
                     "id": "inv_candybag_purple_effects",
                     "autoDisplayName": true,
@@ -235,30 +145,12 @@
                     "addToList": true,
                     "guid": "b026c37e-bfe2-45b7-9249-b0ca2ff3f33c"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "inv_candybag_red",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "b026c37e-bfe2-45b7-9249-b0ca2ff3f33c"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "a8b567ee-b3de-40b1-bf12-bcaef4cd3160",
             "fields": [
-                {
-                    "id": "inv_candybag_red_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "bb9442ce-ffcc-4d2b-aac0-ab99b0f3303f"
-                }
-            ],
-            "defines": [
                 {
                     "id": "inv_candybag_red_description",
                     "autoDisplayName": true,
@@ -279,30 +171,12 @@
                     "addToList": true,
                     "guid": "4a656994-f1fc-44bc-bd6d-1f9a449e2380"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "inv_candybag_red_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "4a656994-f1fc-44bc-bd6d-1f9a449e2380"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "e39ac120-451b-46c4-a989-eb907d84733f",
             "fields": [
-                {
-                    "id": "inv_candybag_green",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "69a0c2e4-29fb-4e32-a3cd-5454fee8046b"
-                }
-            ],
-            "defines": [
                 {
                     "id": "inv_candybag_green",
                     "autoDisplayName": true,
@@ -323,30 +197,12 @@
                     "addToList": true,
                     "guid": "e8c9228a-c033-4c0e-aff9-bdfe9a3b3036"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "inv_candybag_green_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "e8c9228a-c033-4c0e-aff9-bdfe9a3b3036"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "9ff009a7-77d6-41f3-9521-d578cdd45ce6",
             "fields": [
-                {
-                    "id": "inv_candybag_green_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "0c87de64-be35-4237-8007-ca0accd98803"
-                }
-            ],
-            "defines": [
                 {
                     "id": "inv_candybag_green_effects",
                     "autoDisplayName": true,
@@ -367,30 +223,12 @@
                     "addToList": true,
                     "guid": "41dc871b-14a9-422d-a1ea-c372a946e7a6"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "inv_candybag_blue",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "41dc871b-14a9-422d-a1ea-c372a946e7a6"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "fdffce31-3604-49be-9453-e8e26a7a0bca",
             "fields": [
-                {
-                    "id": "inv_candybag_blue_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "15c13168-6b1b-476d-85a7-ab9a34b09df1"
-                }
-            ],
-            "defines": [
                 {
                     "id": "inv_candybag_blue_description",
                     "autoDisplayName": true,
@@ -411,30 +249,12 @@
                     "addToList": true,
                     "guid": "1d79e337-6877-4168-ac98-2dc301c458b5"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "inv_candybag_blue_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "1d79e337-6877-4168-ac98-2dc301c458b5"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "ac81aea5-d938-4478-9a08-5983eb935fbd",
             "fields": [
-                {
-                    "id": "inv_candybag_pink",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "644c4483-8378-4cce-baed-a088a107ac82"
-                }
-            ],
-            "defines": [
                 {
                     "id": "inv_candybag_pink",
                     "autoDisplayName": true,
@@ -449,16 +269,7 @@
             "guid": "dd231c98-a494-4230-b8f9-8363c9ed2cc6",
             "fields": [
                 {
-                    "id": "inv_candybag_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "354ba832-f819-4345-9da5-d660fa808f45"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "inv_candybag_description",
+                    "id": "inv_candybag_pink_description",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -471,16 +282,7 @@
             "guid": "b95d3874-4ed0-4dc8-9c6f-34b07493c748",
             "fields": [
                 {
-                    "id": "inv_candybag_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "bb0bdf79-9782-4e82-8ef2-28499b725655"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "inv_candybag_effects",
+                    "id": "inv_candybag_pink_effects",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,

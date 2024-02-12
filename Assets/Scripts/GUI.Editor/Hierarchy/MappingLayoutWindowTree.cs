@@ -302,7 +302,7 @@ namespace Project.GUI.Editor.Hierarchy
 
         protected override bool CanStartDrag(CanStartDragArgs args)
         {
-            if (!(args.draggedItem is Item item))
+            if (!(args.draggedItem is Item))
                 return false;
 
             return true;
@@ -316,43 +316,66 @@ namespace Project.GUI.Editor.Hierarchy
 
             IList<int> itemID = (IList<int>)DragAndDrop.GetGenericData("itemIDs");
 
-            var items = itemID
+            //Get tree items
+            var treeItems = itemID
                 .Select(x => FindItem(x, rootItem) as Item);
 
-            if (items.Any(x => x == null))
+            if (treeItems.Any(x => x == null))
                 return DragAndDropVisualMode.Rejected;
 
-            items = items
-                .OrderBy(x => window.asset.items.IndexOf(x.item))
+            //If header is being moved while being collapsed, add items hidden by it
+            var hiddenItems = new List<HierarchyItem>();
+            foreach (var item in treeItems)
+            {
+                if (item.item.type != HierarchyItem.ItemType.Header) continue;
+                if (IsExpanded(item.id)) continue;
+
+                var itemIndex = window.asset.items.IndexOf(item.item);
+                if (itemIndex == -1) continue;
+
+                for (int i = itemIndex + 1; i < window.asset.items.Count; i++)
+                {
+                    var newItem = window.asset.items[i];
+                    if (newItem.type == HierarchyItem.ItemType.Header) break;
+                    hiddenItems.Add(newItem);
+                }
+            }
+
+            //Creating the final ordered list of items
+            var items = treeItems
+                .Select(x => x.item)
+                .Concat(hiddenItems)
+                .OrderBy(x => window.asset.items.IndexOf(x))
                 .Reverse();
 
             if (args.performDrop)
             {
                 var targetItem = GetDraggedItemTarget(args);
 
+                //Get target index
+                //If target item is not an "Item", then selection is being
+                //dragged to the end of the tree
                 int targetIndex = targetItem is Item targetHierarchyItem ?
                     window.asset.items.IndexOf(targetHierarchyItem.item) :
                     window.asset.items.Count;
 
-                switch (args.dragAndDropPosition)
-                {
-                    case DragAndDropPosition.UponItem:
-                        targetIndex++;
-                        break;
-                }
+                if (args.dragAndDropPosition == DragAndDropPosition.UponItem)
+                    targetIndex++;
 
+                //Move items
                 foreach (var item in items)
                 {
-                    var itemIndex = window.asset.items.IndexOf(item.item);
+                    var itemIndex = window.asset.items.IndexOf(item);
                     Move(itemIndex, targetIndex);
-                    targetIndex = window.asset.items.IndexOf(item.item);
+                    targetIndex = window.asset.items.IndexOf(item);
                 }
 
+                //Finalize
                 SetSelection(itemID);
                 window.SetAssetDirty();
+                Reload();
             }
 
-            Reload();
             return DragAndDropVisualMode.Move;
         }
 
@@ -395,6 +418,8 @@ namespace Project.GUI.Editor.Hierarchy
 
             window.asset.items.Insert(index, item);
             Reload();
+            SetExpanded(item.guid.GetHashCode(), true);
+            SetSelection(new List<int>() { item.guid.GetHashCode(), });
         }
 
         void DeleteSelection()

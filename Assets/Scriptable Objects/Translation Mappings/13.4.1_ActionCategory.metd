@@ -48,9 +48,9 @@
             "guid": "cadfa761-86db-4a9f-9fe6-661263366436",
             "fields": [
                 {
-                    "id": "settings_category_hotkeys",
-                    "autoDisplayName": false,
-                    "displayName": "Hotkeys Cathegory",
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
                     "addToList": true,
                     "guid": "83cccb93-c2b3-46f2-9147-40b67868635f"
                 }
@@ -87,9 +87,9 @@
             "guid": "9d4ace23-4f4b-416b-aec9-5ff9d94e8739",
             "fields": [
                 {
-                    "id": "settings_category_unbindable",
-                    "autoDisplayName": false,
-                    "displayName": "Unbindable Cathegory",
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
                     "addToList": true,
                     "guid": "bd64fef7-0cef-499b-a043-3df8c4c6e585"
                 }

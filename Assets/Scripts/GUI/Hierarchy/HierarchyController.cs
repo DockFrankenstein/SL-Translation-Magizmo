@@ -86,7 +86,6 @@ namespace Project.GUI.Hierarchy
 
                     head?.RegisterValueChangedCallback(args =>
                     {
-                        Debug.Log(head.value);
                         if (args.target == head)
                             content.style.display = head.value ? DisplayStyle.Flex : DisplayStyle.None;
                     });

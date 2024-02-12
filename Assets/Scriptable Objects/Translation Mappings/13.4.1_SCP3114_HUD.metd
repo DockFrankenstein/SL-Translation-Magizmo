@@ -15,30 +15,12 @@
                     "addToList": true,
                     "guid": "344adcb1-fda4-419c-8fff-47826ec8e929"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "3114_prompt_disguise_new",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "344adcb1-fda4-419c-8fff-47826ec8e929"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "db62ca8c-547f-4fef-b6a6-98db08eeec5c",
             "fields": [
-                {
-                    "id": "3114_prompt_disguise_cannot_attack",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "8f61f96b-0098-4ccb-b1c9-82266dafeeaa"
-                }
-            ],
-            "defines": [
                 {
                     "id": "3114_prompt_disguise_cannot_attack",
                     "autoDisplayName": true,
@@ -59,30 +41,12 @@
                     "addToList": true,
                     "guid": "02e214b3-5471-4ab1-b15b-d8ad4d628b37"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "3114_prompt_disguise_cannot_items",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "02e214b3-5471-4ab1-b15b-d8ad4d628b37"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "4b85e521-5b46-47ab-a999-31fe0f0e821b",
             "fields": [
-                {
-                    "id": "3114_prompt_disguise_speak",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "5b3d68d7-00b4-4341-ae48-ca90ca394dc2"
-                }
-            ],
-            "defines": [
                 {
                     "id": "3114_prompt_disguise_speak",
                     "autoDisplayName": true,
@@ -103,15 +67,6 @@
                     "addToList": true,
                     "guid": "1cb2bd9f-80f3-4f15-bbc1-c65d7343861b"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "3114_prompt_corpse_used",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "1cb2bd9f-80f3-4f15-bbc1-c65d7343861b"
-                }
             ]
         },
         {
@@ -119,16 +74,7 @@
             "guid": "7999e247-748c-4974-b7c0-e3fdf39eb7e9",
             "fields": [
                 {
-                    "id": "3114_prompt_disguise_already_using",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "33ed4515-4471-4152-93aa-c3e6c864ed3d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "3114_prompt_disguise_already_using",
+                    "id": "3114_prompt_corpse_already_using",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -140,15 +86,6 @@
             "lineId": "",
             "guid": "a0938be6-093e-4b23-b714-e4804ae399b3",
             "fields": [
-                {
-                    "id": "3114_prompt_corpse_not_human",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "2a93751f-4407-4669-9b79-c027a28eca70"
-                }
-            ],
-            "defines": [
                 {
                     "id": "3114_prompt_corpse_not_human",
                     "autoDisplayName": true,
@@ -169,30 +106,12 @@
                     "addToList": true,
                     "guid": "ab8a4a93-6362-4fca-96a2-c0f1f667740e"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_3114_disguise",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "ab8a4a93-6362-4fca-96a2-c0f1f667740e"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "05dc7bad-6866-48e9-9649-4dba74cdf5ee",
             "fields": [
-                {
-                    "id": "3114_prompt_corpse_can_be_used",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "8dca0537-81d2-48e4-939c-3375fb0d3a09"
-                }
-            ],
-            "defines": [
                 {
                     "id": "3114_prompt_corpse_can_be_used",
                     "autoDisplayName": true,
@@ -213,15 +132,6 @@
                     "addToList": true,
                     "guid": "a98b655f-b22a-4011-b78b-d4b33abff3f8"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "3114_prompt_disguise",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "a98b655f-b22a-4011-b78b-d4b33abff3f8"
-                }
             ]
         },
         {
@@ -235,37 +145,12 @@
                     "addToList": true,
                     "guid": "08ab4e1d-90ff-4e17-a595-dc17fe7a7921"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "3114_strangulation_cooldown",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "08ab4e1d-90ff-4e17-a595-dc17fe7a7921"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "959f978b-69a6-4435-abf5-bfeeff4454b5",
             "fields": [
-                {
-                    "id": "f1_3114_ability_skeleton_in_closet",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "3926e0c5-b5ed-44c9-ba6e-70074db76a88"
-                },
-                {
-                    "id": "f1_3114_ability_skeleton_in_closet_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "e48c4308-2188-4838-a020-ca35912762d5"
-                }
-            ],
-            "defines": [
                 {
                     "id": "f1_3114_ability_skeleton_in_closet",
                     "autoDisplayName": true,
@@ -300,44 +185,12 @@
                     "addToList": true,
                     "guid": "0aa2c564-0877-48df-8550-b0fe2a191799"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "f1_3114_ability_catch_hands",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "1c7345ec-9add-4b86-824d-48a2449aba02"
-                },
-                {
-                    "id": "f1_3114_ability_catch_hands_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "0aa2c564-0877-48df-8550-b0fe2a191799"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "1a262aad-d8ad-43f3-a3c3-fe27b0dccf58",
             "fields": [
-                {
-                    "id": "f1_3114_ability_strangulation",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "eb7c6fa1-25ed-4667-9c5c-efcd400877fb"
-                },
-                {
-                    "id": "f1_3114_ability_strangulation_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "51c44e96-d6ee-480a-9f61-ce77f9bc606b"
-                }
-            ],
-            "defines": [
                 {
                     "id": "f1_3114_ability_strangulation",
                     "autoDisplayName": true,
@@ -372,37 +225,12 @@
                     "addToList": true,
                     "guid": "546a32d0-852b-4c27-b643-f1ca60799300"
                 }
-            ],
-            "defines": [
-                {
-                    "id": "f1_3114_ability_under_skin",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "43de03eb-2fc0-4365-904b-3aaebe9b739a"
-                },
-                {
-                    "id": "f1_3114_ability_under_skin_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "546a32d0-852b-4c27-b643-f1ca60799300"
-                }
             ]
         },
         {
             "lineId": "",
             "guid": "bb7b10f0-d340-4615-bb15-7f5e296bd749",
             "fields": [
-                {
-                    "id": "3114_prompt_disguise_remove",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "58c4cf23-4132-4912-8d4b-fcd353db8323"
-                }
-            ],
-            "defines": [
                 {
                     "id": "3114_prompt_disguise_remove",
                     "autoDisplayName": true,
