@@ -8,7 +8,6 @@ namespace Project.Utility.Editor
     {
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-            Debug.Log("ASD");
             var releasesProperty = property.FindPropertyRelative("releases");
 
             int[] releases = new int[releasesProperty.arraySize];
