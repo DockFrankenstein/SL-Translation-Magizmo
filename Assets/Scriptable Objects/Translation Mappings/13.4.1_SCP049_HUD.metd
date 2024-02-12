@@ -74,7 +74,7 @@
             "guid": "e7bfabed-9fdf-47fc-9bc5-73e07cba9885",
             "fields": [
                 {
-                    "id": "049_prompt_consume_already",
+                    "id": "049_2_prompt_consume_already",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -87,7 +87,7 @@
             "guid": "1cf09ca2-3fed-465c-b7c2-f6e74d0e1e10",
             "fields": [
                 {
-                    "id": "049_prompt_consume_not_human",
+                    "id": "049_2_prompt_consume_not_human",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -152,7 +152,7 @@
             "guid": "38a27843-eb6f-4a9e-af36-9bc693649738",
             "fields": [
                 {
-                    "id": "049_prompt_consume_full_health",
+                    "id": "049_2_prompt_consume_full_health",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -165,7 +165,7 @@
             "guid": "c6868019-c141-4990-a6ea-178a0992a042",
             "fields": [
                 {
-                    "id": "049_prompt_consume_already_now",
+                    "id": "049_2_prompt_consume_already_now",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -204,14 +204,14 @@
             "guid": "200c4a08-0038-485c-a6e8-4a311bee01c6",
             "fields": [
                 {
-                    "id": "f1_ability_cardiac_attack",
+                    "id": "f1_049_ability_cardiac_attack",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "c81271b8-38f8-4fd7-af32-6c173c1b0773"
                 },
                 {
-                    "id": "f1_ability_cardiac_attack_description",
+                    "id": "f1_049_ability_cardiac_attack_description",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -224,14 +224,14 @@
             "guid": "d231ad08-0b16-4722-9921-c917160ef5c9",
             "fields": [
                 {
-                    "id": "f1_ability_good_sense",
+                    "id": "f1_049_ability_good_sense",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "b845a460-8800-4148-b2b7-b956e97f4f2c"
                 },
                 {
-                    "id": "f1_ability_good_sense_description",
+                    "id": "f1_049_ability_good_sense_description",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -244,14 +244,14 @@
             "guid": "d31bf8c1-5381-476c-9b15-b92237f6017f",
             "fields": [
                 {
-                    "id": "f1_ability_doctors_call",
+                    "id": "f1_049_ability_doctors_call",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "f7f0ce1d-31a5-4c84-9053-46c95f00dcbc"
                 },
                 {
-                    "id": "f1_ability_doctors_call_description",
+                    "id": "f1_049_ability_doctors_call_description",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -264,14 +264,14 @@
             "guid": "8686bffb-03e4-4b48-9585-9707a6c0286e",
             "fields": [
                 {
-                    "id": "f1_ability_no_waste",
+                    "id": "f1_049_ability_no_waste",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "0740a017-0509-40ab-a6d7-cb01358cef5d"
                 },
                 {
-                    "id": "f1_ability_no_waste_description",
+                    "id": "f1_049_ability_no_waste_description",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -284,14 +284,14 @@
             "guid": "a8fdae04-e2dd-4781-bf9a-652461b41d97",
             "fields": [
                 {
-                    "id": "f1_ability_lobotomized_bloodlust",
+                    "id": "f1_049_2_ability_lobotomized_bloodlust",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "0cfa1f1f-f4b7-4909-9775-f1bc93268c2d"
                 },
                 {
-                    "id": "f1_ability_lobotomized_bloodlust_description",
+                    "id": "f1_049_2_ability_lobotomized_bloodlust_description",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
@@ -304,14 +304,14 @@
             "guid": "b1194a94-7f6f-4a45-a938-ef86fda8d2e2",
             "fields": [
                 {
-                    "id": "f1_ability_voracity",
+                    "id": "f1_049_2_ability_voracity",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
                     "guid": "7d40cdb6-91d6-49b4-ad11-3c78a3897121"
                 },
                 {
-                    "id": "f1_ability_voracity_description",
+                    "id": "f1_049_2_ability_voracity_description",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
