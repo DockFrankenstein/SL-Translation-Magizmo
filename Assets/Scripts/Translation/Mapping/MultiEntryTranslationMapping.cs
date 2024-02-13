@@ -7,6 +7,7 @@ using System.Text;
 using UnityEditor;
 using qASIC.Files;
 using UnityEngine.Serialization;
+using System;
 
 namespace Project.Translation.Mapping
 {
@@ -106,7 +107,9 @@ namespace Project.Translation.Mapping
 
                         break;
                     case false:
+                        if (line.fields.Count == 0) break;
                         if (!line.fields[0].addToList) break;
+
                         file.Entries[line.fields[0].id] = new SaveFile.EntryData(line.fields[0], lineTxt);
                         ProjectDebug.LogValueImport(line.fields[0], line);
                         break;
@@ -114,15 +117,15 @@ namespace Project.Translation.Mapping
             }
         }
 
-        public override string Export(SaveFile file)
+        public override string Export(Func<int, MappedField, string> getTextContent)
         {
             StringBuilder txt = new StringBuilder();
-            foreach (var line in lines)
+            for (int i = 0; i < lines.Count; i++)
             {
+                var line = lines[i];
+
                 var values = line.fields
-                    .Select(x => x.Status != MappedField.SetupStatus.Blank && file.Entries.TryGetValue(x.id, out var y) ?
-                        y.content :
-                        string.Empty);
+                    .Select(x => getTextContent(i, x));
 
                 switch (identificationType)
                 {
@@ -143,45 +146,12 @@ namespace Project.Translation.Mapping
             return txt.ToString();
         }
 
-        public override string ExportDebug()
-        {
-            StringBuilder txt = new StringBuilder();
-
-            for (int i = 0; i < lines.Count; i++)
-            {
-                var fieldsCount = useSeparationCharacter ? lines[i].fields.Count : 1;
-
-                if (identificationType == IdentificationType.FirstItem)
-                {
-                    txt.Append($"{lines[i].lineId}{separationCharacter}");
-                }
-
-                for (int x = 0; x < fieldsCount; x++)
-                {
-                    if (fieldsCount == 1)
-                    {
-                        txt.Append($"{i+1}]{lines[i].fields[x].id}");
-                        continue;
-                    }
-
-                    txt.Append($"{i+1}.{x}]{lines[i].fields[x].id}");
-
-                    if (x < fieldsCount)
-                        txt.Append(separationCharacter);
-                }
-
-                txt.Append("\n");
-            }
-
-            return txt.ToString();
-        }
-
-        [System.Serializable]
+        [Serializable]
         public class Line
         {
             public Line()
             {
-                guid = System.Guid.NewGuid().ToString();
+                guid = Guid.NewGuid().ToString();
             }
 
             public string lineId;

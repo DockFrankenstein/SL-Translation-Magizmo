@@ -3,6 +3,8 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEditor;
 using SFB;
+using Project.Translation.Data;
+using qASIC.Files;
 
 namespace Project.Translation.Mapping
 {
@@ -10,8 +12,11 @@ namespace Project.Translation.Mapping
     public class TranslationVersion : ScriptableObject
     {
         public Version version;
-        [EditorButton(nameof(ExportIdTestTranslation))]
         public MappingBase[] containers = new MappingBase[0];
+
+        [Label("Exporting")]
+        [EditorButton(nameof(ExportIdTestTranslation))]
+        public string emptyEntryContent = "-";
 
         public MappedField[] GetMappedFields() =>
             containers
@@ -46,6 +51,33 @@ namespace Project.Translation.Mapping
             _ = MappedFields;
         }
 
+        public void Import(SaveFile file, string path)
+        {
+            foreach (var definesFile in containers)
+            {
+                var filePath = $"{path}/{definesFile.fileName}";
+                if (!System.IO.File.Exists(filePath)) continue;
+
+                var txt = System.IO.File.ReadAllText(filePath);
+                definesFile.Import(file, txt);
+            }
+        }
+
+        public void Export(SaveFile file, string path)
+        {
+            foreach (var definesFile in containers)
+            {
+                var txt = definesFile.Export((i, x) =>
+                {
+                    return file.Entries.TryGetValue(x.id, out var val) ?
+                        val.content :
+                        emptyEntryContent;
+                });
+
+                FileManager.SaveFileWriter($"{path}/{definesFile.fileName}", txt);
+            }
+        }
+
         public void ExportIdTestTranslation()
         {
 #if UNITY_EDITOR
@@ -59,7 +91,11 @@ namespace Project.Translation.Mapping
             {
                 foreach (var container in containers)
                 {
-                    var txt = container.ExportDebug();
+                    var txt = container.Export((i, x) =>
+                    {
+                        return $"{container.fileName}:{i}";
+                    });
+
                     System.IO.File.WriteAllText($"{path.Replace('\\', '/')}/{container.fileName}", txt);
                 }
             }

@@ -1,4 +1,5 @@
 ﻿using Project.Translation.Data;
+using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -14,22 +15,11 @@ namespace Project.Translation.Mapping
         [TextArea]
         public string prefix;
 
-        public override string Export(SaveFile file)
+        public override string Export(Func<int, MappedField, string> getTextContent)
         {
-            var txt = string.Empty;
-            
-            if (file.Entries.ContainsKey(field.id))
-                txt = file.Entries[field.id].content
-                    .Replace("\n", "\r\n");
-
+            var txt = getTextContent(0, field);
             txt = $"{prefix}\n{txt}";
-
             return txt;
-        }
-
-        public override string ExportDebug()
-        {
-            return $"{prefix}\n{field.id}";
         }
 
         public override MappedField[] GetMappedFields() => new MappedField[] { field };

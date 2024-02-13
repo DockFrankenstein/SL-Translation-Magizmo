@@ -63,24 +63,23 @@ namespace Project.Translation.Mapping.Manifest
             }
         }
 
-        public override string Export(SaveFile file)
+        public override string Export(Func<int, MappedField, string> getTextContent)
         {
             T holder = new T();
             var fields = typeof(T).GetFields();
 
-            foreach (var field in fields)
+            for (int i = 0; i < fields.Length; i++)
             {
+                var field = fields[i];
+
                 var attr = ((MappedFieldNameAttribute[])field.GetCustomAttributes(typeof(MappedFieldNameAttribute), false))
                     .FirstOrDefault();
 
                 if (attr == null)
                     continue;
 
-                //Continue if value does not exist
-                if (!file.Entries.ContainsKey(attr.Name))
-                    continue;
-
-                string entry = file.Entries[attr.Name].content;
+                var mappedField = new MappedField(attr.Name, this);
+                string entry = getTextContent(i, mappedField);
                 object value = entry;
 
                 //convert arrays
@@ -92,17 +91,6 @@ namespace Project.Translation.Mapping.Manifest
             }
 
             return JsonUtility.ToJson(holder, true);
-        }
-
-        public override string ExportDebug()
-        {
-            var fields = GetMappedFields();
-            var saveFile = new SaveFile()
-            {
-                Entries = fields.ToDictionary(x => x.id, x => new SaveFile.EntryData(x))
-            };
-
-            return Export(saveFile);
         }
     }
 }

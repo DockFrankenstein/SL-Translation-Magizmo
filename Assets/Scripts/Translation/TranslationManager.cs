@@ -101,12 +101,7 @@ namespace Project.Translation
             if (paths.Length == 0)
                 return;
 
-            foreach (var definesFile in CurrentVersion.containers)
-            {
-                var txt = definesFile.Export(file);
-                FileManager.SaveFileWriter($"{paths[0]}/{definesFile.fileName}", txt);
-            }
-
+            CurrentVersion.Export(file, paths[0]);
             OnExport.Invoke();
         }
 
@@ -117,17 +112,7 @@ namespace Project.Translation
             if (paths.Length == 0)
                 return;
 
-            foreach (var definesFile in CurrentVersion.containers)
-            {
-                var path = $"{paths[0]}/{definesFile.fileName}";
-                if (!System.IO.File.Exists(path)) continue;
-
-                var txt = System.IO.File.ReadAllText(path);
-                Debug.Log($"Importing file {definesFile.fileName}...");
-                definesFile.Import(file, txt);
-            }
-
-            Debug.Log("Import successfull");
+            CurrentVersion.Import(file, paths[0]);
             OnImport.Invoke();
         }
     }
