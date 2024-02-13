@@ -16,11 +16,11 @@ namespace Project.Translation.Mapping
 
         public override string Export(SaveFile file)
         {
-            if (!file.Entries.ContainsKey(field.id))
-                return string.Empty;
-
-            var txt = file.Entries[field.id].content
-                .Replace("\n", "\r\n");
+            var txt = string.Empty;
+            
+            if (file.Entries.ContainsKey(field.id))
+                txt = file.Entries[field.id].content
+                    .Replace("\n", "\r\n");
 
             txt = $"{prefix}\n{txt}";
 
@@ -29,7 +29,7 @@ namespace Project.Translation.Mapping
 
         public override string ExportDebug()
         {
-            return field.id;
+            return $"{prefix}\n{field.id}";
         }
 
         public override MappedField[] GetMappedFields() => new MappedField[] { field };

@@ -117,10 +117,10 @@ namespace Project.Translation.Mapping
         public override string Export(SaveFile file)
         {
             StringBuilder txt = new StringBuilder();
-            foreach (var define in lines)
+            foreach (var line in lines)
             {
-                var values = define.fields
-                    .Select(x => file.Entries.TryGetValue(x.id, out var y) ?
+                var values = line.fields
+                    .Select(x => x.Status != MappedField.SetupStatus.Blank && file.Entries.TryGetValue(x.id, out var y) ?
                         y.content :
                         string.Empty);
 
@@ -135,7 +135,7 @@ namespace Project.Translation.Mapping
                         if (valuesTxt.EndsWith(separationCharacter))
                             valuesTxt = valuesTxt.Substring(0, valuesTxt.Length - 1);
 
-                        txt.Append($"{define.lineId}{separationCharacter}{valuesTxt}\n");
+                        txt.Append($"{line.lineId}{separationCharacter}{valuesTxt}\n");
                         break;
                 }
             }
