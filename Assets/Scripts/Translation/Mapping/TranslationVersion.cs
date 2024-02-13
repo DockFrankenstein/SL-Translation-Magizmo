@@ -69,7 +69,7 @@ namespace Project.Translation.Mapping
             {
                 var txt = definesFile.Export((i, x) =>
                 {
-                    return file.Entries.TryGetValue(x.id, out var val) ?
+                    return file.Entries.TryGetValue(x.id, out var val) && !x.IsBlank ?
                         val.content :
                         emptyEntryContent;
                 });

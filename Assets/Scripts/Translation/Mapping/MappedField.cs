@@ -47,7 +47,7 @@ namespace Project.Translation.Mapping
         {
             get
             {
-                if (string.IsNullOrWhiteSpace(id))
+                if (IsBlank)
                     return SetupStatus.Blank;
 
                 if (!addToList)
@@ -56,6 +56,9 @@ namespace Project.Translation.Mapping
                 return SetupStatus.Used;
             }
         }
+
+        public bool IsBlank =>
+            string.IsNullOrWhiteSpace(id);
 
         public MappedField Duplicate()
         {
