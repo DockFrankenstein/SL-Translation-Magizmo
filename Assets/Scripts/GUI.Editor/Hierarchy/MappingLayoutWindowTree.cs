@@ -6,9 +6,9 @@ using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using qASIC;
 using System.Linq;
-using UnityEngine.UIElements;
 using System;
 using Project.Translation.Mapping;
+using JetBrains.Annotations;
 
 namespace Project.GUI.Editor.Hierarchy
 {
@@ -54,7 +54,7 @@ namespace Project.GUI.Editor.Hierarchy
 
             if (window.asset != null)
             {
-                var mappedFields = window.asset.version.GetMappedFields();
+                var mappedFields = window.asset.version?.GetMappedFields();
                 
                 var items = window.asset.items;
 
@@ -114,30 +114,51 @@ namespace Project.GUI.Editor.Hierarchy
                         .ToList();
                 }
 
-                bool hideItems = false;
+                Item currentParent = null;
+                bool hideChildren = false;
+
                 foreach (var item in items)
                 {
                     var treeItem = new Item(item, mappedFields);
                     bool isHeader = item.type == HierarchyItem.ItemType.Header;
 
-                    if (item.type == HierarchyItem.ItemType.Header)
+                    if (isHeader)
                     {
                         _headerItems.Add(treeItem);
-                        hideItems = !IsExpanded(treeItem.id);
+                        currentParent = treeItem;
+                        hideChildren = false;
                     }
 
-                    if (!hideItems || isHeader)
+                    if (!isHeader && currentParent != null)
                     {
-                        rows.Add(treeItem);
-                        rootItem.AddChild(treeItem);
+                        currentParent.Children.Add(treeItem);
                     }
+
+                    if (isHeader &&
+                        !IsExpanded(treeItem.id) &&
+                        HasChildren(item))
+                    {
+                        hideChildren = true;
+                        treeItem.children = CreateChildListForCollapsedParent();
+                    }
+
+                    if (currentParent == null || isHeader)
+                    {
+                        rootItem.AddChild(treeItem);
+                        rows.Add(treeItem);
+                        continue;
+                    }
+
+                    if (hideChildren) continue;
+                    currentParent.AddChild(treeItem);
+                    rows.Add(treeItem);
                 }
             }
 
             return rows;
         }
         #endregion
-        
+
         #region GUI
         protected override void RowGUI(RowGUIArgs args)
         {
@@ -215,10 +236,8 @@ namespace Project.GUI.Editor.Hierarchy
             return base.GetCustomRowHeight(row, item);
         }
 
-        protected override bool CanChangeExpandedState(TreeViewItem item)
-        {
-            return item is Item treeItem && treeItem?.item?.type == HierarchyItem.ItemType.Header;
-        }
+        protected override bool CanChangeExpandedState(TreeViewItem item) =>
+            HasChildren(item);
         #endregion
 
         #region Input
@@ -308,60 +327,83 @@ namespace Project.GUI.Editor.Hierarchy
             return true;
         }
 
+        IList<int> _prevItemIDs;
         protected override DragAndDropVisualMode HandleDragAndDrop(DragAndDropArgs args)
         {
             if (!(DragAndDrop.GetGenericData("tree") is MappingLayoutWindowTree sourceTree) ||
                 sourceTree != this)
                 return DragAndDropVisualMode.Rejected;
 
-            IList<int> itemID = (IList<int>)DragAndDrop.GetGenericData("itemIDs");
+            IList<int> itemIDs = (IList<int>)DragAndDrop.GetGenericData("itemIDs");
+
+            //Weird fix, because unity clears every item when dragging
+            //onto empty space
+            if (itemIDs.Count == 0)
+                itemIDs = _prevItemIDs;
+
+            _prevItemIDs = new List<int>(itemIDs);
 
             //Get tree items
-            var treeItems = itemID
+            var treeItems = itemIDs
                 .Select(x => FindItem(x, rootItem) as Item);
 
             if (treeItems.Any(x => x == null))
                 return DragAndDropVisualMode.Rejected;
 
-            //If header is being moved while being collapsed, add items hidden by it
-            var hiddenItems = new List<HierarchyItem>();
-            foreach (var item in treeItems)
-            {
-                if (item.item.type != HierarchyItem.ItemType.Header) continue;
-                if (IsExpanded(item.id)) continue;
-
-                var itemIndex = window.asset.items.IndexOf(item.item);
-                if (itemIndex == -1) continue;
-
-                for (int i = itemIndex + 1; i < window.asset.items.Count; i++)
-                {
-                    var newItem = window.asset.items[i];
-                    if (newItem.type == HierarchyItem.ItemType.Header) break;
-                    hiddenItems.Add(newItem);
-                }
-            }
+            if (!treeItems.All(x => x.item.type == HierarchyItem.ItemType.Header) &&
+                !treeItems.All(x => x.item.type != HierarchyItem.ItemType.Header))
+                return DragAndDropVisualMode.Rejected;
 
             //Creating the final ordered list of items
             var items = treeItems
+                .SelectMany(x => x.Children.Append(x))
                 .Select(x => x.item)
-                .Concat(hiddenItems)
-                .OrderBy(x => window.asset.items.IndexOf(x))
-                .Reverse();
+                .OrderByDescending(x => window.asset.items.IndexOf(x));
 
+            //Target
+            var targetItem = GetDraggedItemTarget(args);
+            var targetHierarchyItem = targetItem as Item;
+
+            int targetIndex = window.asset.items.Count;
+            var isAnyItemHeader = treeItems.Any(x => x.item.type == HierarchyItem.ItemType.Header);
+
+            if (targetHierarchyItem != null)
+            {
+                targetIndex = window.asset.items.IndexOf(targetHierarchyItem.item);
+            }
+
+            if (args.dragAndDropPosition == DragAndDropPosition.UponItem)
+            {
+                //If can place inside
+                if (targetHierarchyItem.item.type == HierarchyItem.ItemType.Header &&
+                    !isAnyItemHeader)
+                    targetIndex++;
+            }
+
+            if (isAnyItemHeader && window.asset.items.IndexInRange(targetIndex))
+            {
+                var isTargetHeader = window.asset.items[targetIndex].type == HierarchyItem.ItemType.Header;
+                var isLast = targetIndex >= window.asset.items.Count ||
+                    targetHierarchyItem == null;
+
+                if (!isTargetHeader && !isLast)
+                    return DragAndDropVisualMode.Rejected;
+            }
+
+            if (targetIndex < window.asset.items.Count &&
+                targetIndex > window.asset.items.IndexOf(items.Last()))
+            {
+                targetIndex++;
+                for (; targetIndex < window.asset.items.Count; targetIndex++)
+                {
+                    if (window.asset.items[targetIndex].type == HierarchyItem.ItemType.Header)
+                        break;
+                }
+            }
+
+            //Perform
             if (args.performDrop)
             {
-                var targetItem = GetDraggedItemTarget(args);
-
-                //Get target index
-                //If target item is not an "Item", then selection is being
-                //dragged to the end of the tree
-                int targetIndex = targetItem is Item targetHierarchyItem ?
-                    window.asset.items.IndexOf(targetHierarchyItem.item) :
-                    window.asset.items.Count;
-
-                if (args.dragAndDropPosition == DragAndDropPosition.UponItem)
-                    targetIndex++;
-
                 //Move items
                 foreach (var item in items)
                 {
@@ -371,7 +413,7 @@ namespace Project.GUI.Editor.Hierarchy
                 }
 
                 //Finalize
-                SetSelection(itemID);
+                SetSelection(itemIDs);
                 window.SetAssetDirty();
                 Reload();
             }
@@ -381,8 +423,22 @@ namespace Project.GUI.Editor.Hierarchy
 
         TreeViewItem GetDraggedItemTarget(DragAndDropArgs args)
         {
-            if (!args.parentItem.children.IndexInRange(args.insertAtIndex))
+            if (args.parentItem == null)
+                return null;
+
+            if (args.insertAtIndex < 0)
                 return args.parentItem;
+
+            if (!args.parentItem.children.IndexInRange(args.insertAtIndex))
+            {
+                var parentParent = args.parentItem?.parent;
+                var index = parentParent?.children.IndexOf(args.parentItem);
+
+                if (parentParent == null ||
+                    index + 1 >= parentParent.children.Count) return null;
+
+                return parentParent.children[(index ?? 0) + 1];
+            }
 
             return args.parentItem.children[args.insertAtIndex];
         }
@@ -412,7 +468,9 @@ namespace Project.GUI.Editor.Hierarchy
         {
             if (window.asset == null) return;
 
-            var index = FindItem(GetSelection().Last(), rootItem) is Item treeItem ?
+            var selection = GetSelection();
+
+            var index = selection.Count > 0 && FindItem(selection.Last(), rootItem) is Item treeItem ?
                 window.asset.items.IndexOf(treeItem.item) + 1 :
                 window.asset.items.Count;
 
@@ -465,6 +523,32 @@ namespace Project.GUI.Editor.Hierarchy
         }
         #endregion
 
+        #region Utility
+        bool HasChildren(HierarchyItem item)
+        {
+            for (int i = window.asset.items.IndexOf(item) + 1; i < window.asset.items.Count; i++)
+            {
+                switch (window.asset.items[i].type)
+                {
+                    case HierarchyItem.ItemType.Normal:
+                        return true;
+                    case HierarchyItem.ItemType.Header:
+                        return false;
+                }
+            }
+
+            return false;
+        }
+
+        bool HasChildren(TreeViewItem item)
+        {
+            if (!(item is Item treeItem && treeItem?.item?.type == HierarchyItem.ItemType.Header))
+                return false;
+
+            return HasChildren(treeItem.item);
+        }
+        #endregion
+
         #region Tree Items
         class Item : TreeViewItem
         {
@@ -483,7 +567,9 @@ namespace Project.GUI.Editor.Hierarchy
 
             public Item(HierarchyItem item, MappedField[] mappedFields) : this(item)
             {
-                if (item.type == HierarchyItem.ItemType.Normal && !mappedFields.Any(x => x.id == item.id))
+                if (item.type == HierarchyItem.ItemType.Normal && 
+                    mappedFields != null &&
+                    !mappedFields.Any(x => x.id == item.id))
                 {
                     statusIcon = qGUIEditorUtility.ErrorIcon;
                     statusIconTooltip = "A field with this id does not exist in the version file!";
@@ -493,6 +579,8 @@ namespace Project.GUI.Editor.Hierarchy
             public HierarchyItem item;
             public Texture statusIcon;
             public string statusIconTooltip;
+
+            public List<Item> Children { get; private set; } = new List<Item>();
         }
         #endregion
     }

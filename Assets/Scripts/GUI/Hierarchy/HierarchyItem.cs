@@ -51,5 +51,8 @@ namespace Project.GUI.Hierarchy
         public string displayText = "";
 
         [GUID] public string guid = Guid.NewGuid().ToString();
+
+        public override string ToString() =>
+            $"[{type}] {id}: \"{displayText}\", guid:{guid}";
     }
 }
