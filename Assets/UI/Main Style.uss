@@ -37,6 +37,34 @@
     bottom: 0;
 }
 
+.popup-narrow {
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 45%;
+    height: auto;
+    flex-direction: row;
+    background-color: rgb(33, 33, 33);
+    border-left-color: rgb(13, 13, 13);
+    border-right-color: rgb(13, 13, 13);
+    border-top-color: rgb(13, 13, 13);
+    border-bottom-color: rgb(13, 13, 13);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .unity-label {
     width: 300px;
     -unity-text-align: middle-left;
@@ -80,7 +108,7 @@
     background-color: rgb(33, 33, 33);
 }
 
-.unity-button:focus {
+.unity-button:hover {
     background-color: rgb(46, 46, 46);
 }
 
@@ -98,7 +126,7 @@
 .fade {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.55);
 }
 
 .unity-scroll-view__content-container {
@@ -191,7 +219,7 @@
     align-items: center;
 }
 
-.fab-dropdown__item:focus {
+.fab-dropdown__item:hover {
     background-color: rgb(232, 245, 233);
 }
 
@@ -306,28 +334,28 @@
 }
 
 .separator {
-    background-color: rgba(13, 13, 13, 255);
+    background-color: rgb(13, 13, 13);
     height: 4px;
 }
 
-.tree .unity-button:focus {
-    background-color: rgba(38, 38, 38, 255);
+.tree .unity-button:hover {
+    background-color: rgb(38, 38, 38);
 }
 
 .tree .unity-button:active {
-    background-color: rgba(51, 51, 51, 255);
+    background-color: rgb(51, 51, 51);
 }
 
 .unity-button.hierarchy-selected {
-    background-color: rgba(27, 94, 32, 255);
+    background-color: rgb(27, 94, 32);
 }
 
-.unity-button.hierarchy-selected:focus {
-    background-color: rgba(32, 112, 39, 255);
+.unity-button.hierarchy-selected:hover {
+    background-color: rgb(32, 112, 39);
 }
 
 .unity-button.hierarchy-selected:active {
-    background-color: rgba(32, 112, 39, 255);
+    background-color: rgb(32, 112, 39);
 }
 
 .unity-base-slider--vertical .unity-base-slider__dragger {
@@ -341,11 +369,11 @@
     padding-top: 0;
     padding-bottom: 0;
     left: auto;
-    background-color: rgba(117, 117, 117, 255);
+    background-color: rgb(117, 117, 117);
 }
 
-.unity-base-slider--vertical .unity-base-slider__dragger:focus {
-    background-color: rgba(130, 130, 130, 255);
+.unity-base-slider--vertical .unity-base-slider__dragger:hover {
+    background-color: rgb(130, 130, 130);
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
@@ -354,7 +382,7 @@
 }
 
 .unity-base-slider--vertical .unity-base-slider__dragger:active {
-    background-color: rgba(143, 143, 143, 255);
+    background-color: rgb(143, 143, 143);
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
@@ -374,7 +402,7 @@
 
 .unity-base-slider__tracker {
     background-image: none;
-    background-color: rgba(66, 66, 66, 255);
+    background-color: rgb(66, 66, 66);
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
@@ -384,4 +412,30 @@
 .unity-scroller .unity-repeat-button {
     width: 10px;
     height: 10px;
+}
+
+.bottom-buttons > * {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 1px;
+}
+
+.apply-button {
+    height: 45px;
+}
+
+.colored {
+    background-color: rgb(27, 94, 32);
+    border-left-color: rgb(35, 123, 42);
+    border-right-color: rgb(35, 123, 42);
+    border-top-color: rgb(35, 123, 42);
+    border-bottom-color: rgb(35, 123, 42);
+}
+
+.colored:hover {
+    background-color: rgb(32, 112, 39);
+}
+
+.colored:active {
+    background-color: rgb(35, 123, 42);
 }

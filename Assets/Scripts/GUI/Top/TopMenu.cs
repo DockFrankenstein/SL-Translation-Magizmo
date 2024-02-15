@@ -22,7 +22,7 @@ namespace Project.GUI.Top
 
         protected abstract string ButtonName { get; }
 
-        private void Reset()
+        protected virtual void Reset()
         {
             document = GetComponent<UIDocument>();
 
@@ -33,7 +33,7 @@ namespace Project.GUI.Top
 
         }
 
-        private void Awake()
+        protected virtual void Awake()
         {
             var root = document.rootVisualElement;
 
