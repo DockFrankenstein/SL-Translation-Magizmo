@@ -11,7 +11,9 @@ namespace Project.AppTools
         public TranslationManager translationManager;
 
         [Space]
+#if UNITY_EDITOR
         [EditorButton(nameof(PopulateTools))]
+#endif
         [SerializeField] List<AppToolBase> tools = new List<AppToolBase>();
 
         protected override string ButtonName => "tools";
