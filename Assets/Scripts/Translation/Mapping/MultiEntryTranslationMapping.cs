@@ -27,7 +27,6 @@ namespace Project.Translation.Mapping
         public char separationCharacter;
 
         [ReorderableList]
-        [EditorButton(nameof(Temp))]
         [FormerlySerializedAs("defines")]
         public List<Line> lines = new List<Line>();
 
@@ -37,21 +36,6 @@ namespace Project.Translation.Mapping
             .Where(x => x.Status == MappedField.SetupStatus.Used)
             .Select(x => { x.mappingContainer = this; return x; })
             .ToArray();
-
-        
-        public void Temp()
-        {
-#if UNITY_EDITOR
-            var text = JsonUtility.ToJson(this);
-
-            var path = Application.dataPath.Substring(0, Application.dataPath.Length - 6) + AssetDatabase.GetAssetPath(this);
-            path = System.IO.Path.ChangeExtension(path, EXTENSION);
-
-            FileManager.SaveFileWriter(path, text.ToString());
-
-            Debug.Log(path);
-#endif
-        }
 
         public override void Import(SaveFile file, string txt)
         {

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Linq;
 using Project.Translation.Data;
+using Project.Utility.UI;
 
 namespace Project.GUI.Preview
 {
@@ -14,11 +15,12 @@ namespace Project.GUI.Preview
         public PreviewEntry[] entries = new PreviewEntry[0];
 
         /// <summary>Updates entries and other items.</summary>
-        public void ReloadScene(SaveFile appFile)
+        public void UpdateScene(SaveFile appFile)
         {
             foreach (var entry in entries)
-                if (appFile.Entries.TryGetValue(entry.entryID, out var content))
-                    entry.text.text = content.content;
+                entry.UpdateContent(appFile);
+
+            LayoutGroupController.Refresh();
         }
 
 #if UNITY_EDITOR

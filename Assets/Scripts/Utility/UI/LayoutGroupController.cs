@@ -15,20 +15,14 @@ namespace Project.Utility.UI
         [SerializeField] bool refreshOnStart;
         [SerializeField] bool refreshOnEnable;
 
+        #region Unity
         private void Reset()
         {
             target = GetComponent<RectTransform>();
         }
 
-        public static void Refresh()
-        {
-            _OnRefresh?.Invoke();
-        }
-
         private void Awake()
         {
-            _OnRefresh += HandleRefresh;
-
             if (refreshOnAwake)
                 RefreshSingle();
         }
@@ -41,6 +35,8 @@ namespace Project.Utility.UI
 
         private void OnEnable()
         {
+            _OnRefresh += HandleRefresh;
+
             if (refreshOnEnable)
                 RefreshSingle();
         }
@@ -49,6 +45,7 @@ namespace Project.Utility.UI
         {
             _OnRefresh -= HandleRefresh;
         }
+        #endregion
 
         void HandleRefresh()
         {
@@ -58,6 +55,11 @@ namespace Project.Utility.UI
         public void RefreshSingle()
         {
             LayoutRebuilder.ForceRebuildLayoutImmediate(target);
+        }
+
+        public static void Refresh()
+        {
+            _OnRefresh?.Invoke();
         }
     }
 }

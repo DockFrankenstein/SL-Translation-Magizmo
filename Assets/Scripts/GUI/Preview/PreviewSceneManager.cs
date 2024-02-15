@@ -25,7 +25,7 @@ namespace Project.GUI.Preview
                 .Where(x => x.enabled == true);
 
             foreach (var scene in targetScenes)
-                scene.ReloadScene(appFile);
+                scene.UpdateScene(appFile);
         }
 
 #if UNITY_EDITOR
