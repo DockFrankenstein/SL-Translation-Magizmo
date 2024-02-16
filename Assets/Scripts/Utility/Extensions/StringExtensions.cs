@@ -16,5 +16,9 @@ namespace Project
         public static string ToEntryContent(this IEnumerable<string> array) =>
             string.Join(string.Empty, array
             .Select(x => $"{x}\n"));
+
+        public static IEnumerable<string> SplitWithSplits(this IEnumerable<string> array, string split, StringSplitOptions splitOptions = StringSplitOptions.None) =>
+            array.SelectMany(x => x.Split(split, splitOptions).InsertBetween(split))
+            .Where(x => !string.IsNullOrEmpty(x));
     }
 }
