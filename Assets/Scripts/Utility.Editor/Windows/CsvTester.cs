@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Project.Serialization;
+﻿using Project.Serialization;
 using UnityEditor;
 using UnityEngine;
 using qASIC;
-using Unity.VisualScripting.YamlDotNet.Serialization;
-using static Codice.CM.Common.CmCallContext;
 
 namespace Project.Editor.Windows
 {
