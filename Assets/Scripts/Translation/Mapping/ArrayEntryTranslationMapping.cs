@@ -28,6 +28,7 @@ namespace Project.Translation.Mapping
         {
             var txtLines = txt
                 .Replace("\r\n", "\n")
+                .Replace('\r', '\n')
                 .Split('\n')
                 .Where(x => !x.TrimStart().StartsWith("#"));
 
@@ -36,7 +37,6 @@ namespace Project.Translation.Mapping
 
             var content = string.Join('\n', txtLines);
             file.Entries[field.id].content = content;
-            ProjectDebug.LogValueImport(field, content);
         }
     }
 }

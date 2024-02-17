@@ -11,7 +11,6 @@ using System;
 
 namespace Project.Translation.Mapping
 {
-    //[CreateAssetMenu(fileName = "New Translation Define", menuName = "Scriptable Objects/Translation/Defines/Multi Entry")]
     public class MultiEntryTranslationMapping : MappingBase
     {
         public const string EXTENSION = "metd";
@@ -41,6 +40,7 @@ namespace Project.Translation.Mapping
         {
             var txtLines = txt
                     .Replace("\r\n", "\n")
+                    .Replace('\r', '\n')
                     .Split('\n')
                     .ToArray();
 
@@ -86,7 +86,6 @@ namespace Project.Translation.Mapping
                         {
                             if (!line.fields[x].addToList) continue;
                             file.Entries[line.fields[x].id].content = splitLine[x];
-                            ProjectDebug.LogValueImport(line.fields[x], splitLine[x]);
                         }
 
                         break;
@@ -95,7 +94,6 @@ namespace Project.Translation.Mapping
                         if (!line.fields[0].addToList) break;
 
                         file.Entries[line.fields[0].id].content = lineTxt;
-                        ProjectDebug.LogValueImport(line.fields[0], line);
                         break;
                 }
             }

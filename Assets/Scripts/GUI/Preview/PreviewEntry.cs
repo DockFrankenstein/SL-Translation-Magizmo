@@ -3,7 +3,6 @@ using Project.Translation;
 using Project.Translation.Data;
 using TMPro;
 using UnityEngine;
-using static UnityEngine.EventSystems.EventTrigger;
 
 namespace Project.GUI.Preview
 {
@@ -22,7 +21,7 @@ namespace Project.GUI.Preview
             text = GetComponent<TMP_Text>();
         }
 
-        private void Awake()
+        private void Start()
         {
             _defaultText = text?.text ?? string.Empty;
         }
