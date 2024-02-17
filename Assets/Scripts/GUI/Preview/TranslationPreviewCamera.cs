@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using qASIC.Input;
-using Project.Utility.UI;
+using Project.UI;
 
 namespace Project.GUI.Preview
 {

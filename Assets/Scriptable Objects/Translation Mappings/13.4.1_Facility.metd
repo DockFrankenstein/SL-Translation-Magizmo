@@ -178,7 +178,7 @@
             "guid": "d5317f1e-f929-4763-9c1d-23dcf970ec55",
             "fields": [
                 {
-                    "id": "",
+                    "id": "voicechat_prompt_header",
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,

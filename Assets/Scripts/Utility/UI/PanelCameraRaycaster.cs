@@ -3,19 +3,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-namespace Project.Utility.UI
+namespace Project.UI
 {
     public class PanelCameraRaycaster : GraphicRaycaster
     {
-        public RectTransform targetPanel;
+        public PreviewPanelTarget targetPanel;
 
         public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList)
         {
-            var imageSize = targetPanel.rect.size;
+            var imageSize = targetPanel.Image.rectTransform.rect.size;
 
             var clickPosition = eventData.position;
 
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(targetPanel, clickPosition, null, out var pos);
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(targetPanel.Image.rectTransform, clickPosition, null, out var pos);
             pos += imageSize / 2f;
 
             var oldPos = eventData.position;

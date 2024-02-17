@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Project.Utility.UI
+namespace Project.UI
 {
     public class PanelCamera : MonoBehaviour
     {
-        public RawImage targetImage;
+        public PreviewPanelTarget targetImage;
         [SerializeField] Camera cam;
 
         private void Reset()
@@ -16,7 +14,7 @@ namespace Project.Utility.UI
         }
 
         public Camera Cam => cam;
-        public RawImage TargetImage => targetImage;
+        public RawImage TargetImage => targetImage.Image;
 
         public RenderTexture Texture { get; private set; }
         public bool InFocus { get; private set; }
@@ -24,8 +22,8 @@ namespace Project.Utility.UI
         private void Update()
         {
             if (Texture == null ||
-                Texture.width != targetImage.rectTransform.rect.width ||
-                Texture.height != targetImage.rectTransform.rect.height)
+                Texture.width != TargetImage.rectTransform.rect.width ||
+                Texture.height != TargetImage.rectTransform.rect.height)
                 ResizeRenderTexture();
 
             cam.Render();
@@ -35,15 +33,15 @@ namespace Project.Utility.UI
 
         public void ResizeRenderTexture()
         {
-            var size = targetImage.rectTransform.rect.size;
+            var size = TargetImage.rectTransform.rect.size;
             Texture = new RenderTexture(Mathf.Max(1, (int)size.x), Mathf.Max(1, (int)size.y), 16);
-            targetImage.texture = Texture;
+            TargetImage.texture = Texture;
             cam.targetTexture = Texture;
         }
 
         private void CheckForFocus()
         {
-            var rectTrans = targetImage.rectTransform;
+            var rectTrans = TargetImage.rectTransform;
             Vector2 mousePos = rectTrans.InverseTransformPoint(Input.mousePosition);
             InFocus = rectTrans.rect.Contains(mousePos);
         }
