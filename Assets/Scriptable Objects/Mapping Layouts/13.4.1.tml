@@ -7775,6 +7775,12 @@
         },
         {
             "type": 0,
+            "id": "voicechat_prompt_header",
+            "displayText": "Voicechat Prompt Header",
+            "guid": "d2265508-fc7e-4226-80ec-262b9199a941"
+        },
+        {
+            "type": 0,
             "id": "voicechat_prompt_privacy_personalize",
             "displayText": "Voicechat Prompt Privacy Personalize",
             "guid": "d5371a8a-eb64-4370-8205-c33116c54c5b"

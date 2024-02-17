@@ -1,7 +1,5 @@
-using UnityEngine;
 using System.Linq;
 using System;
-using Project.Utility.UI;
 using Project.GUI.Hierarchy;
 using UnityEngine.UIElements;
 using Project.UI;
@@ -9,11 +7,8 @@ using Project.Translation.Data;
 using Project.Translation.Mapping.Manifest;
 using Project.Translation.Mapping;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 using System.Reflection;
-using TMPro;
 using System.ComponentModel;
-using Codice.CM.SEIDInfo;
 
 namespace Project.GUI.Inspector
 {
@@ -22,12 +17,6 @@ namespace Project.GUI.Inspector
         public override bool ShouldOpen(IApplicationObject obj) =>
             obj is HierarchyItem item &&
             item.id == "manifest";
-
-        TextField _name;
-        AppReorderableList<string> _authors;
-        AppReorderableList<string> _interfaceLocales;
-        AppReorderableList<string> _systemLocales;
-        AppReorderableList<string> _forcedFontOrder;
 
         ManifestMappingBase _manifestMapping;
 
