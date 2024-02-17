@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Project.Translation.Mapping;
+using System;
 using System.Linq;
 
 namespace Project.GUI.Hierarchy
 {
     [Serializable]
-    public class HierarchyItem
+    public class HierarchyItem : IApplicationObject
     {
         public enum ItemType
         {
@@ -51,6 +52,10 @@ namespace Project.GUI.Hierarchy
         public string displayText = "";
 
         [GUID] public string guid = Guid.NewGuid().ToString();
+
+        public object Item { get; set; }
+
+        string IApplicationObject.Name => displayText;
 
         public override string ToString() =>
             $"[{type}] {id}: \"{displayText}\", guid:{guid}";

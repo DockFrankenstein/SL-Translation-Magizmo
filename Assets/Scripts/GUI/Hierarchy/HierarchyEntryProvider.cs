@@ -39,9 +39,13 @@ namespace Project.GUI.Hierarchy
 
                         if (field != null)
                         {
+                            if (!manager.file.Entries.ContainsKey(x.id))
+                                manager.file.Entries.Add(x.id, new Translation.Data.SaveFile.EntryData(field));
+
                             x = new HierarchyItem(x)
                             {
                                 displayText = field.autoDisplayName ? PUtility.GenerateDisplayName(x.id) : x.displayText,
+                                Item = manager.file.Entries[x.id],
                             };
                         }
                     }

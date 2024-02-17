@@ -4,13 +4,15 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using System.Reflection;
 
 namespace Project.Translation.Mapping.Manifest
 {
-    /// <typeparam name="T">Data to serialize</typeparam>
-    public abstract class ManifestMappingBase<T> : MappingBase where T : new()
+    public abstract class ManifestMappingBase : MappingBase
     {
         public override bool Hide => true;
+
+        public virtual Type DataType { get; }
 
         //Keep this static or else it won't be null
         private static MappedField[] _fieldsCache = null;
@@ -18,8 +20,7 @@ namespace Project.Translation.Mapping.Manifest
         {
             if (_fieldsCache == null)
             {
-                _fieldsCache = typeof(T).GetFields()
-                    .SelectMany(x => (MappedFieldNameAttribute[])x.GetCustomAttributes(typeof(MappedFieldNameAttribute), false))
+                _fieldsCache = GetFieldAttributes()
                     .Select(x => x.GetDefineField())
                     .ToArray();
             }
@@ -27,10 +28,14 @@ namespace Project.Translation.Mapping.Manifest
             return _fieldsCache;
         }
 
+        public IEnumerable<MappedFieldNameAttribute> GetFieldAttributes() =>
+            DataType.GetFields()
+                .SelectMany(x => (MappedFieldNameAttribute[])x.GetCustomAttributes(typeof(MappedFieldNameAttribute), false));
+
         public override void Import(SaveFile file, string txt)
         {
-            var manifestFile = JsonUtility.FromJson<T>(txt);
-            var fields = typeof(T).GetFields();
+            var manifestFile = JsonUtility.FromJson(txt, DataType);
+            var fields = DataType.GetFields();
 
             foreach (var field in fields)
             {
@@ -65,8 +70,9 @@ namespace Project.Translation.Mapping.Manifest
 
         public override string Export(Func<int, MappedField, string> getTextContent)
         {
-            T holder = new T();
-            var fields = typeof(T).GetFields();
+            var holder = Activator.CreateInstance(DataType);
+
+            var fields = DataType.GetFields();
 
             for (int i = 0; i < fields.Length; i++)
             {
@@ -92,5 +98,11 @@ namespace Project.Translation.Mapping.Manifest
 
             return JsonUtility.ToJson(holder, true);
         }
+    }
+
+    /// <typeparam name="T">Data to serialize</typeparam>
+    public abstract class ManifestMappingBase<T> : ManifestMappingBase where T : new()
+    {
+        public override Type DataType => typeof(T);
     }
 }

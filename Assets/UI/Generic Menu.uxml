@@ -4,5 +4,6 @@
         <ui:Button text="File" display-tooltip-when-elided="true" enable-rich-text="false" name="file" />
         <ui:Button text="Edit" display-tooltip-when-elided="true" enable-rich-text="false" name="edit" />
         <ui:Button text="Tools" display-tooltip-when-elided="true" enable-rich-text="false" name="tools" />
+        <ui:Button text="Hierarchy" display-tooltip-when-elided="true" enable-rich-text="false" name="hierarchy" />
     </ui:VisualElement>
 </ui:UXML>

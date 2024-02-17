@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
+    <Style src="project://database/Assets/UI/Inspectors/Inspector.uss?fileID=7433441132597879392&amp;guid=de24a727e02077c449f311c0c7e4f258&amp;type=3#Inspector" />
+    <ui:VisualElement class="dock" style="width: 100%; height: 100%;">
+        <ui:ScrollView mode="Vertical" mouse-wheel-scroll-size="1000" style="margin-left: 4px; margin-right: 4px; margin-top: 4px; margin-bottom: 4px;">
+            <ui:VisualElement name="inspector-none">
+                <ui:Label text="Nothing selected" display-tooltip-when-elided="true" style="width: auto; -unity-text-align: middle-center; font-size: 16px; color: rgb(173, 173, 173);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="inspector-selected">
+                <ui:Label text="Label" display-tooltip-when-elided="true" name="inspector-name" style="width: auto;" />
+                <ui:VisualElement name="inspector-content" />
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

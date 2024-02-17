@@ -49,7 +49,7 @@ namespace Project.Translation.Data
         }
 
         [Serializable]
-        public class EntryData
+        public class EntryData : IApplicationObject
         {
             public EntryData(string entryId)
             {
@@ -64,6 +64,8 @@ namespace Project.Translation.Data
             }
 
             public EntryData(MappedField defineField, string content) : this(defineField.id, content) { }
+
+            string IApplicationObject.Name => entryId;
 
             public string entryId;
             public string content = string.Empty;

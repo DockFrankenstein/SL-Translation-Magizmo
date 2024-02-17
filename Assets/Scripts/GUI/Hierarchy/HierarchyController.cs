@@ -25,6 +25,8 @@ namespace Project.GUI.Hierarchy
         Dictionary<string, List<HierarchyItem>> ItemIds { get; set; } = new Dictionary<string, List<HierarchyItem>>();
         Dictionary<HierarchyItem, VisualElement> UiItems { get; set; } = new Dictionary<HierarchyItem, VisualElement>();
 
+        public List<KeyValuePair<Foldout, VisualElement>> Foldouts { get; private set; } = new List<KeyValuePair<Foldout, VisualElement>>();
+
         private void Reset()
         {
             document = GetComponent<UIDocument>();
@@ -84,6 +86,8 @@ namespace Project.GUI.Hierarchy
                     var head = currentHeader;
                     var content = currentContent;
 
+                    Foldouts.Add(new KeyValuePair<Foldout, VisualElement>(head, content));
+
                     head?.RegisterValueChangedCallback(args =>
                     {
                         if (args.target == head)
@@ -125,6 +129,22 @@ namespace Project.GUI.Hierarchy
 
                 currentContent.Add(element);
                 RegisterUiItem(item, element);
+            }
+        }
+
+        public void ExpandAll()
+        {
+            foreach (var item in Foldouts)
+            {
+                item.Key.value = true;
+            }
+        }
+
+        public void CollapseAll()
+        {
+            foreach (var item in Foldouts)
+            {
+                item.Key.value = false;
             }
         }
 

@@ -1,119 +1,212 @@
 using UnityEngine;
 using System.Linq;
 using System;
-using TMPro;
 using Project.Utility.UI;
+using Project.GUI.Hierarchy;
+using UnityEngine.UIElements;
+using Project.UI;
+using Project.Translation.Data;
+using Project.Translation.Mapping.Manifest;
+using Project.Translation.Mapping;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Reflection;
+using TMPro;
+using System.ComponentModel;
+using Codice.CM.SEIDInfo;
 
 namespace Project.GUI.Inspector
 {
     public sealed class ManifestInspector : InspectorDisplayPanel
     {
-        [SerializeField] bool fallbackVersion;
-        [SerializeField] Version[] versions;
-        [SerializeField][Tooltip("Id of the field in hierarchy")] string hierarchyId;
-        [SerializeField] Field[] fields;
-        [SerializeField] List[] lists;
+        public override bool ShouldOpen(IApplicationObject obj) =>
+            obj is HierarchyItem item &&
+            item.id == "manifest";
 
-        private void Awake()
+        TextField _name;
+        AppReorderableList<string> _authors;
+        AppReorderableList<string> _interfaceLocales;
+        AppReorderableList<string> _systemLocales;
+        AppReorderableList<string> _forcedFontOrder;
+
+        ManifestMappingBase _manifestMapping;
+
+        List<TargetField> mappedFields = new List<TargetField>();
+
+        protected override void Awake()
         {
-            foreach (var item in fields)
-                item.Setup(this);
-
-            foreach (var item in lists)
-                item.Setup(this);
-        }
-
-        public override bool ShouldOpen(string id)
-        {
-            return hierarchyId == id && //ID matches
-                (fallbackVersion || versions.Contains(manager.CurrentVersion.version)); //Correct version
+            base.Awake();
         }
 
         public override void Initialize()
         {
-            foreach (var item in fields)
-                item.Initialize(this);
+            base.Initialize();
 
-            foreach (var item in lists)
-                item.Initialize(this);
+            _manifestMapping = manager.CurrentVersion.containers
+                .Where(x => x is ManifestMappingBase)
+                .Select(x => x as ManifestMappingBase)
+                .FirstOrDefault();
+
+            var file = manager.file;
+
+            if (_manifestMapping != null)
+            {
+                var fields = _manifestMapping.DataType.GetFields();
+
+                foreach (var item in fields)
+                {
+                    var attr = ((MappedFieldNameAttribute[])item.GetCustomAttributes(typeof(MappedFieldNameAttribute), false))
+                        .FirstOrDefault();
+
+                    if (attr == null)
+                        continue;
+
+                    TargetField field = null;
+
+                    if (item.FieldType == typeof(string[]))
+                        field = new TargetFieldStringArray();
+
+                    if (item.FieldType == typeof(string))
+                        field = new TargetFieldString();
+
+                    if (field == null) return;
+
+                    field.field = item;
+                    field.attr = attr;
+
+                    var mappedField = attr.GetDefineField();
+
+                    if (!file.Entries.ContainsKey(mappedField.id))
+                        file.Entries.Add(mappedField.id, new SaveFile.EntryData(mappedField));
+
+                    field.entry = file.Entries[mappedField.id];
+                    mappedFields.Add(field);
+                    Container.Add(field.UiItem);
+                    field.LabelText = mappedField.id;
+                    field.LoadValue(field.entry.content);
+
+                    field.OnChanged += () =>
+                    {
+                        MarkAsDirty();
+                    };
+                }
+            }
         }
 
         public override void Uninitialize()
         {
-            foreach (var item in fields)
-                item.Uninitialize(this);
+            base.Uninitialize();
 
-            foreach (var item in lists)
-                item.Uninitialize(this);
+            foreach (var item in mappedFields)
+                Container.Remove(item.UiItem);
+
+            mappedFields.Clear();
         }
 
-        [Serializable]
-        private class Field
+        abstract class TargetField
         {
-            public TMP_InputField field;
-            [Tooltip("Id of the field in file")] public string id;
+            public FieldInfo field;
+            public MappedFieldNameAttribute attr;
+            public SaveFile.EntryData entry;
 
-            public void Setup(ManifestInspector inspector)
+            public Action OnChanged;
+
+            public abstract VisualElement UiItem { get; }
+            public abstract string LabelText { get; set; }
+
+            public abstract void LoadValue(string value);
+        }
+
+        abstract class TargetFieldSingleObject<T> : TargetField
+        {
+            public TargetFieldSingleObject()
             {
-                if (field != null)
+                Field.RegisterValueChangedCallback(args =>
                 {
-                    field.onValueChanged.AddListener((a) => Field_OnValueChanged(inspector, a));
+                    if (args.target == Field)
+                    {
+                        entry.content = Field.value.ToString();
+                        OnChanged?.Invoke();
+                    }
+                });
+            }
+
+            public abstract BaseField<T> Field { get; }
+            public override VisualElement UiItem => Field;
+            public override string LabelText 
+            { 
+                get => Field.label; 
+                set => Field.label = value; 
+            }
+
+            public override void LoadValue(string value)
+            {
+                var converter = TypeDescriptor.GetConverter(typeof(T));
+                if (converter != null && converter.IsValid(value))
+                    Field.value = (T)converter.ConvertFromString(value);
+            }
+        }
+
+        class TargetFieldString : TargetFieldSingleObject<string>
+        {
+            TextField _field = new TextField();
+            public override BaseField<string> Field => _field;
+        }
+
+        abstract class TargetFieldArray<T> : TargetField
+        {
+            public TargetFieldArray()
+            {
+                _list.MakeItem += MakeItem;
+                _list.OnChanged += () =>
+                {
+                    entry.content = _list.Source
+                        .Select(x => x?.ToString())
+                        .ToEntryContent();
+
+                    OnChanged?.Invoke();
+                };
+            }
+
+            AppReorderableList<T> _list = new AppReorderableList<T>(new ListView()
+            {
+                showAddRemoveFooter = true,
+                showFoldoutHeader = true,
+                showBoundCollectionSize = false,
+                fixedItemHeight = 50f,
+                showBorder = true,
+                reorderMode = ListViewReorderMode.Animated,
+                reorderable = true,
+            });
+
+            public override VisualElement UiItem => _list.List;
+            public override string LabelText 
+            { 
+                get => _list.List.headerTitle; 
+                set => _list.List.headerTitle = value;
+            }
+
+            public override void LoadValue(string value)
+            {
+                var converter = TypeDescriptor.GetConverter(typeof(T));
+                if (converter == null) return;
+
+                var valueArray = value.EntryContentToArray();
+
+                foreach (var item in valueArray)
+                {
+                    if (converter.IsValid(item))
+                        _list.Source.Add((T)converter.ConvertFromString(item));
                 }
             }
 
-            public void Initialize(ManifestInspector inspector)
-            {
-                if (inspector.manager.file.Entries.ContainsKey(id))
-                    field.SetTextWithoutNotify(inspector.manager.file.Entries[id].content);
-            }
-
-            public void Uninitialize(ManifestInspector inspector)
-            {
-                field.SetTextWithoutNotify(string.Empty);
-            }
-
-            private void Field_OnValueChanged(ManifestInspector inspector, string text)
-            {
-                if (inspector.manager.file.Entries.ContainsKey(id))
-                    inspector.manager.file.Entries[id].content = text;
-
-                inspector.RepaintPreview();
-            }
+            public abstract BaseField<T> MakeItem();
         }
 
-        [Serializable]
-        private class List
+        class TargetFieldStringArray : TargetFieldArray<string> 
         {
-            public ReorderableListUI list;
-            public string id;
-
-            public void Setup(ManifestInspector inspector)
-            {
-                if (list != null)
-                    list.OnChange.AddListener(() => Field_OnValueChanged(inspector));
-            }
-
-            public void Initialize(ManifestInspector inspector)
-            {
-                if (inspector.manager.file.Entries.ContainsKey(id))
-                {
-                    var entry = inspector.manager.file.Entries[id];
-                    list.ChangeValuesWithoutNotify(entry.content.EntryContentToArray().ToList());
-                }
-            }
-
-            public void Uninitialize(ManifestInspector inspector)
-            {
-
-            }
-
-            private void Field_OnValueChanged(ManifestInspector inspector)
-            {
-                if (inspector.manager.file.Entries.ContainsKey(id))
-                    inspector.manager.file.Entries[id].content = list.Values.ToEntryContent();
-
-                inspector.RepaintPreview();
-            }
+            public override BaseField<string> MakeItem() =>
+                new TextField();
         }
     }
 }

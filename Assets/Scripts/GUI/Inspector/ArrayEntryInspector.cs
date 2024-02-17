@@ -3,46 +3,51 @@ using UnityEngine;
 using System.Linq;
 using Project.Translation.Mapping;
 using Project.Utility.UI;
+using UnityEngine.UIElements;
+using Project.Translation.Data;
+using Project.UI;
 
 namespace Project.GUI.Inspector
 {
     public class ArrayEntryInspector : InspectorDisplayPanel
     {
-        [SerializeField] ReorderableListUI contentList;
+        public override bool ShouldOpen(IApplicationObject obj) =>
+            obj is SaveFile.EntryData data &&
+            manager.CurrentVersion.MappedFields.TryGetValue(data.entryId, out MappedField field) &&
+            field.mappingContainer is ArrayEntryTranslationMapping;
 
-        private void Awake()
+        AppReorderableList<string> _contentList;
+
+        SaveFile.EntryData entry;
+
+        protected override void Awake()
         {
-            contentList.OnChange.AddListener(ContentList_OnChange);
+            base.Awake();
+            _contentList = new AppReorderableList<string>(Container.Q<ListView>("content"));
+            _contentList.MakeItem += () => new TextField();
+
+            _contentList.OnChanged += () =>
+            {
+                if (entry != null)
+                {
+                    entry.content = _contentList.Source.ToEntryContent();
+                    MarkAsDirty();
+                }
+            };
         }
 
         public override void Initialize()
         {
-            if (manager.file.Entries.ContainsKey(id))
-            {
-                var entry = manager.file.Entries[id];
-                contentList.ChangeValuesWithoutNotify(entry.content.EntryContentToArray().ToList());
-            }
+            base.Initialize();
+            entry = inspector.SelectedObject as SaveFile.EntryData;
+            _contentList.Source.AddRange(entry.content.EntryContentToArray());
         }
 
         public override void Uninitialize()
         {
-            contentList.ChangeValuesWithoutNotify(new List<string>());
-        }
-
-        public override bool ShouldOpen(string id)
-        {
-            var a = manager.CurrentVersion.MappedFields.TryGetValue(id, out var item) &&
-            item.mappingContainer is ArrayEntryTranslationMapping;
-
-            return a;
-        }
-
-        private void ContentList_OnChange()
-        {
-            if (manager.file.Entries.ContainsKey(id))
-                manager.file.Entries[id].content = contentList.Values.ToEntryContent();
-
-            inspector.RepaintPreview();
+            base.Uninitialize();
+            entry = null;
+            _contentList.Source.Clear();
         }
     }
 }

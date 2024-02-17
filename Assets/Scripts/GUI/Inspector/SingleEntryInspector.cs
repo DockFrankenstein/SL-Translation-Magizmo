@@ -1,38 +1,50 @@
 using TMPro;
 using Project.Translation.Mapping;
+using Project.GUI.Hierarchy;
+using Project.Translation.Data;
+using UnityEngine.UIElements;
 
 namespace Project.GUI.Inspector
 {
     public class SingleEntryInspector : InspectorDisplayPanel
     {
-        public TMP_InputField contentField;
+        public override bool ShouldOpen(IApplicationObject obj) =>
+            obj is SaveFile.EntryData data &&
+            manager.CurrentVersion.MappedFields.TryGetValue(data.entryId, out MappedField field) &&
+            field.mappingContainer is MultiEntryTranslationMapping;
 
-        private void Start()
+        TextField _contentField;
+
+        SaveFile.EntryData entry;
+
+        protected override void Awake()
         {
-            contentField.onValueChanged.AddListener(ContentField_OnValueChanged);
+            base.Awake();
+
+            _contentField = Container.Q<TextField>("content");
+
+            _contentField.RegisterValueChangedCallback(args =>
+            {
+                if (args.target == _contentField && entry != null)
+                    entry.content = _contentField.value;
+
+                MarkAsDirty();
+            });
         }
 
         public override void Initialize()
         {
-            if (manager.file.Entries.ContainsKey(id))
-                contentField.SetTextWithoutNotify(manager.file.Entries[id].content);
+            base.Initialize();
+
+            entry = inspector.SelectedObject as SaveFile.EntryData;
+            _contentField.SetValueWithoutNotify(entry.content);
         }
 
         public override void Uninitialize()
         {
-            contentField.SetTextWithoutNotify(string.Empty);
-        }
+            base.Uninitialize();
 
-        public override bool ShouldOpen(string id) =>
-            manager.CurrentVersion.MappedFields.TryGetValue(id, out var item) &&
-            item.mappingContainer is MultiEntryTranslationMapping;
-
-        private void ContentField_OnValueChanged(string text)
-        {
-            if (manager.file.Entries.ContainsKey(id))
-                manager.file.Entries[id].content = text;
-
-            RepaintPreview();
+            entry = null;
         }
     }
 }

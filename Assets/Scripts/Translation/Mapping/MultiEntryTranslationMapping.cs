@@ -85,7 +85,7 @@ namespace Project.Translation.Mapping
                         for (int x = 0; x < Mathf.Min(line.fields.Count, splitLine.Length); x++)
                         {
                             if (!line.fields[x].addToList) continue;
-                            file.Entries[line.fields[x].id] = new SaveFile.EntryData(line.fields[x], splitLine[x]);
+                            file.Entries[line.fields[x].id].content = splitLine[x];
                             ProjectDebug.LogValueImport(line.fields[x], splitLine[x]);
                         }
 
@@ -94,7 +94,7 @@ namespace Project.Translation.Mapping
                         if (line.fields.Count == 0) break;
                         if (!line.fields[0].addToList) break;
 
-                        file.Entries[line.fields[0].id] = new SaveFile.EntryData(line.fields[0], lineTxt);
+                        file.Entries[line.fields[0].id].content = lineTxt;
                         ProjectDebug.LogValueImport(line.fields[0], line);
                         break;
                 }
