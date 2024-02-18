@@ -13,6 +13,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ff331fb9-ec99-4de2-b5fd-f620f3f97dbd"
                 }
             ]
@@ -23,9 +24,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_rainbow",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Rainbow",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "54346d6c-46ef-421c-b231-2eb376455053"
                 }
             ]
@@ -36,9 +38,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_rainbow_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Rainbow Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0b2a5aa4-e0f5-48d6-bf22-46b27a790c8a"
                 }
             ]
@@ -49,9 +52,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_rainbow_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Rainbow Effects",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "92217b83-e3d0-4b5d-9b01-4f2382894c36"
                 }
             ]
@@ -62,9 +66,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_yellow",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Yellow",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d39f5fa3-c376-40c2-a483-d5edd0be83b4"
                 }
             ]
@@ -75,9 +80,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_yellow_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Yellow Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f0ec588b-cd6b-48ae-81d2-959edba932d0"
                 }
             ]
@@ -88,9 +94,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_yellow_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Yellow Effects",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "08bbe8ea-617a-43e1-a4f0-387daa59941a"
                 }
             ]
@@ -101,9 +108,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_purple",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Purple",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7e9d13ba-3c6d-4e2f-a2cb-b64efc209d04"
                 }
             ]
@@ -114,9 +122,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_purple_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Purple Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c33b9290-2d2f-43f4-ba44-5a600eb0dd71"
                 }
             ]
@@ -127,9 +136,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_purple_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Purple Effects",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "134611a2-833b-41f3-8337-de4dded723ea"
                 }
             ]
@@ -140,9 +150,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_red",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Red",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b026c37e-bfe2-45b7-9249-b0ca2ff3f33c"
                 }
             ]
@@ -153,9 +164,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_red_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Red Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "bb9442ce-ffcc-4d2b-aac0-ab99b0f3303f"
                 }
             ]
@@ -166,9 +178,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_red_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Red Effects",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4a656994-f1fc-44bc-bd6d-1f9a449e2380"
                 }
             ]
@@ -179,9 +192,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_green",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Green",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "69a0c2e4-29fb-4e32-a3cd-5454fee8046b"
                 }
             ]
@@ -192,9 +206,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_green_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Green Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e8c9228a-c033-4c0e-aff9-bdfe9a3b3036"
                 }
             ]
@@ -205,9 +220,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_green_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Green Effects",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0c87de64-be35-4237-8007-ca0accd98803"
                 }
             ]
@@ -218,9 +234,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_blue",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Blue",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "41dc871b-14a9-422d-a1ea-c372a946e7a6"
                 }
             ]
@@ -231,9 +248,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_blue_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Blue Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "15c13168-6b1b-476d-85a7-ab9a34b09df1"
                 }
             ]
@@ -244,9 +262,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_blue_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Blue Effects",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1d79e337-6877-4168-ac98-2dc301c458b5"
                 }
             ]
@@ -257,9 +276,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_pink",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Pink",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "644c4483-8378-4cce-baed-a088a107ac82"
                 }
             ]
@@ -270,9 +290,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_pink_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Pink Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "354ba832-f819-4345-9da5-d660fa808f45"
                 }
             ]
@@ -283,9 +304,10 @@
             "fields": [
                 {
                     "id": "inv_candybag_pink_effects",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Pink Effects",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "bb0bdf79-9782-4e82-8ef2-28499b725655"
                 }
             ]

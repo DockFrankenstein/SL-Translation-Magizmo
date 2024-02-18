@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "intercom_ready",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ready",
                     "addToList": true,
-                    "guid": "38dce8d3-40c0-4edd-b33b-73a4f5265d55"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "intercom_ready",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "38dce8d3-40c0-4edd-b33b-73a4f5265d55"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "intercom_used_normal",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Used",
                     "addToList": true,
-                    "guid": "5650a294-76c8-4865-a7e7-7fe7c2bb90bd"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "intercom_used_normal",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5650a294-76c8-4865-a7e7-7fe7c2bb90bd"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "intercom_used_bypass",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Used Using Bypass",
                     "addToList": true,
-                    "guid": "205aca84-dff5-4109-b269-62bbf0ba62f5"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "intercom_used_bypass",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "205aca84-dff5-4109-b269-62bbf0ba62f5"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "intercom_restarting",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Restarting",
                     "addToList": true,
-                    "guid": "4fc46531-bb76-4dbe-bcb6-31965e4b963c"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "intercom_restarting",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4fc46531-bb76-4dbe-bcb6-31965e4b963c"
                 }
             ]
@@ -98,18 +66,10 @@
             "fields": [
                 {
                     "id": "intercom_used_admin",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Used By Admin",
                     "addToList": true,
-                    "guid": "4855f964-bbca-4173-ac68-f1423c08636b"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "intercom_used_admin",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4855f964-bbca-4173-ac68-f1423c08636b"
                 }
             ]
@@ -120,18 +80,10 @@
             "fields": [
                 {
                     "id": "intercom_muted",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Muted",
                     "addToList": true,
-                    "guid": "cdeef3fa-e9dd-41b2-82c1-3c4aa4042575"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "intercom_muted",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cdeef3fa-e9dd-41b2-82c1-3c4aa4042575"
                 }
             ]
@@ -142,18 +94,10 @@
             "fields": [
                 {
                     "id": "intercom_unknown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Unknown",
                     "addToList": true,
-                    "guid": "3091773f-f65b-443d-b41e-686de98166c8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "intercom_unknown",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3091773f-f65b-443d-b41e-686de98166c8"
                 }
             ]
@@ -164,18 +108,10 @@
             "fields": [
                 {
                     "id": "intercom_wait",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Wait",
                     "addToList": true,
-                    "guid": "e1b31d6e-3411-409b-b680-8485bac8e3fe"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "intercom_wait",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e1b31d6e-3411-409b-b680-8485bac8e3fe"
                 }
             ]

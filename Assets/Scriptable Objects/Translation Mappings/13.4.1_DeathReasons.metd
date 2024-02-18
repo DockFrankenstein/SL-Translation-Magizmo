@@ -10,18 +10,23 @@
             "fields": [
                 {
                     "id": "death_body",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Body Cause Of Death",
                     "addToList": true,
-                    "guid": "9f34c810-7818-44f9-9593-223fafe5dee7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[user]",
+                            "description": "Name of the player that is associated with the body."
+                        },
+                        {
+                            "tag": "[class]",
+                            "description": "Class that the player was playing as before dying (Class-D, SCP-939, etc.)."
+                        },
+                        {
+                            "tag": "[cause]",
+                            "description": "The cause of death. This will be replaced by different translation entries."
+                        }
+                    ],
                     "guid": "9f34c810-7818-44f9-9593-223fafe5dee7"
                 }
             ]
@@ -32,18 +37,10 @@
             "fields": [
                 {
                     "id": "death_body_recontained",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: Recontained",
                     "addToList": true,
-                    "guid": "a555c6a4-fb9f-4106-8ba9-9fbfa7c17d6d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_recontained",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a555c6a4-fb9f-4106-8ba9-9fbfa7c17d6d"
                 }
             ]
@@ -54,18 +51,10 @@
             "fields": [
                 {
                     "id": "death_body_warhead",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: Warhead",
                     "addToList": true,
-                    "guid": "cda7ea3a-2811-4074-a6d1-9ed64a074410"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_warhead",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cda7ea3a-2811-4074-a6d1-9ed64a074410"
                 }
             ]
@@ -76,18 +65,10 @@
             "fields": [
                 {
                     "id": "death_body_049",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: SCP-049",
                     "addToList": true,
-                    "guid": "8c24049e-324f-4723-8d1d-e6e4bfba2e31"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_049",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8c24049e-324f-4723-8d1d-e6e4bfba2e31"
                 }
             ]
@@ -98,18 +79,10 @@
             "fields": [
                 {
                     "id": "death_body_unknown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: Unknown",
                     "addToList": true,
-                    "guid": "07f8a5dc-123b-4714-9c3d-359507327512"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_unknown",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "07f8a5dc-123b-4714-9c3d-359507327512"
                 }
             ]
@@ -120,18 +93,10 @@
             "fields": [
                 {
                     "id": "death_body_electricity",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: Electricity",
                     "addToList": true,
-                    "guid": "b03539c2-6eb6-4213-b1e0-773f0c1bb3c1"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_electricity",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b03539c2-6eb6-4213-b1e0-773f0c1bb3c1"
                 }
             ]
@@ -142,18 +107,10 @@
             "fields": [
                 {
                     "id": "death_body_asphyxia",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: Asphyxia",
                     "addToList": true,
-                    "guid": "708ccefe-c963-47f6-98fe-b64c361dcb52"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_asphyxia",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "708ccefe-c963-47f6-98fe-b64c361dcb52"
                 }
             ]
@@ -164,18 +121,10 @@
             "fields": [
                 {
                     "id": "death_body_deep_wounds",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: Deep Wounds",
                     "addToList": true,
-                    "guid": "b0c556a6-2916-446b-8b41-c3e3b5202f6e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_deep_wounds",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b0c556a6-2916-446b-8b41-c3e3b5202f6e"
                 }
             ]
@@ -186,18 +135,10 @@
             "fields": [
                 {
                     "id": "death_screen_bled_out",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause Screen: Bled Out",
                     "addToList": true,
-                    "guid": "4d488204-3fde-4f9c-952b-6c33f9ea2eca"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_screen_bled_out",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4d488204-3fde-4f9c-952b-6c33f9ea2eca"
                 }
             ]
@@ -208,18 +149,10 @@
             "fields": [
                 {
                     "id": "death_body_fall",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: Fall",
                     "addToList": true,
-                    "guid": "7289103e-1508-4496-93df-482e7a00a1a9"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_fall",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7289103e-1508-4496-93df-482e7a00a1a9"
                 }
             ]
@@ -230,18 +163,10 @@
             "fields": [
                 {
                     "id": "death_screen_fall",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause Screen: Fall",
                     "addToList": true,
-                    "guid": "a49a3ef8-b0f0-4254-995a-52af9de42d1e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_screen_fall",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a49a3ef8-b0f0-4254-995a-52af9de42d1e"
                 }
             ]
@@ -252,18 +177,10 @@
             "fields": [
                 {
                     "id": "death_body_106",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: SCP-106",
                     "addToList": true,
-                    "guid": "85a18cda-d1de-4021-8b92-f1d4b2302c74"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_106",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "85a18cda-d1de-4021-8b92-f1d4b2302c74"
                 }
             ]
@@ -274,18 +191,10 @@
             "fields": [
                 {
                     "id": "death_body_decontamination",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: Decontamination",
                     "addToList": true,
-                    "guid": "44a3c6c7-dc2e-4b78-9220-97c141072a42"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_decontamination",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "44a3c6c7-dc2e-4b78-9220-97c141072a42"
                 }
             ]
@@ -296,18 +205,10 @@
             "fields": [
                 {
                     "id": "death_body_poison",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: Poison",
                     "addToList": true,
-                    "guid": "6a881a21-ffeb-4cbd-90e3-3f7839e610a8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_poison",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6a881a21-ffeb-4cbd-90e3-3f7839e610a8"
                 }
             ]
@@ -317,19 +218,11 @@
             "guid": "9cddcc64-2b26-49d9-8cc0-967c84ce254c",
             "fields": [
                 {
-                    "id": "death_screen_207_mix",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "death_screen_poison",
+                    "autoDisplayName": false,
+                    "displayName": "Cause Screen: Poison",
                     "addToList": true,
-                    "guid": "f02c4087-7331-4f73-941e-81887abcb4d2"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_screen_207_mix",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f02c4087-7331-4f73-941e-81887abcb4d2"
                 }
             ]
@@ -340,18 +233,10 @@
             "fields": [
                 {
                     "id": "death_body_207",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: SCP-207",
                     "addToList": true,
-                    "guid": "8e12e0a1-eff1-49d5-ad56-452687bf9581"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_207",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8e12e0a1-eff1-49d5-ad56-452687bf9581"
                 }
             ]
@@ -362,18 +247,10 @@
             "fields": [
                 {
                     "id": "death_screen_207",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause Screen: SCP-207",
                     "addToList": true,
-                    "guid": "77280373-7ea6-4566-a032-cfbfca4dad5a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_screen_207",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "77280373-7ea6-4566-a032-cfbfca4dad5a"
                 }
             ]
@@ -384,18 +261,10 @@
             "fields": [
                 {
                     "id": "death_body_330",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: SCP-330",
                     "addToList": true,
-                    "guid": "bc2e1ab2-997c-4b71-a821-cbd61986c3d7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_330",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "bc2e1ab2-997c-4b71-a821-cbd61986c3d7"
                 }
             ]
@@ -406,18 +275,10 @@
             "fields": [
                 {
                     "id": "death_body_tesla",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: Tesla",
                     "addToList": true,
-                    "guid": "3eb25a6c-3112-4c66-bf89-d5851ca1e4da"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_tesla",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3eb25a6c-3112-4c66-bf89-d5851ca1e4da"
                 }
             ]
@@ -428,18 +289,10 @@
             "fields": [
                 {
                     "id": "death_body_explosion",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: Explosion",
                     "addToList": true,
-                    "guid": "e7c10f11-2ec0-490a-8635-e8c44e2a7ec6"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_explosion",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e7c10f11-2ec0-490a-8635-e8c44e2a7ec6"
                 }
             ]
@@ -450,18 +303,10 @@
             "fields": [
                 {
                     "id": "death_screen_explosion",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause Screen: Explosion",
                     "addToList": true,
-                    "guid": "9ebf2839-e169-4bda-bd9d-213dbd9e63a4"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_screen_explosion",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9ebf2839-e169-4bda-bd9d-213dbd9e63a4"
                 }
             ]
@@ -472,18 +317,10 @@
             "fields": [
                 {
                     "id": "death_body_096",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: SCP-096",
                     "addToList": true,
-                    "guid": "d6e92005-2080-40b2-8855-8b9bafa372aa"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_096",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d6e92005-2080-40b2-8855-8b9bafa372aa"
                 }
             ]
@@ -494,18 +331,10 @@
             "fields": [
                 {
                     "id": "death_body_173",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: SCP-173",
                     "addToList": true,
-                    "guid": "666056be-f45f-4f3d-bb68-0ab3b2ffc6a0"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_173",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "666056be-f45f-4f3d-bb68-0ab3b2ffc6a0"
                 }
             ]
@@ -516,18 +345,10 @@
             "fields": [
                 {
                     "id": "death_body_939",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: SCP-939",
                     "addToList": true,
-                    "guid": "ca64c3d3-1252-4571-aa6c-d793be6d4cf4"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_939",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ca64c3d3-1252-4571-aa6c-d793be6d4cf4"
                 }
             ]
@@ -538,18 +359,10 @@
             "fields": [
                 {
                     "id": "death_body_049_2",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: SCP-049-2",
                     "addToList": true,
-                    "guid": "90469e16-e61c-403d-89c4-de5b4658b61f"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_049_2",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "90469e16-e61c-403d-89c4-de5b4658b61f"
                 }
             ]
@@ -560,18 +373,15 @@
             "fields": [
                 {
                     "id": "death_body_bullet",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: Bullet",
                     "addToList": true,
-                    "guid": "2fb0f671-4325-4b16-ac73-5953c57c9838"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_bullet",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[ammotype]",
+                            "description": "Type of the bullet that was used to kill the player."
+                        }
+                    ],
                     "guid": "2fb0f671-4325-4b16-ac73-5953c57c9838"
                 }
             ]
@@ -582,18 +392,10 @@
             "fields": [
                 {
                     "id": "death_body_018",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: SCP-018",
                     "addToList": true,
-                    "guid": "f2067d5e-fc53-47b5-88b5-2d31967d817e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_018",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f2067d5e-fc53-47b5-88b5-2d31967d817e"
                 }
             ]
@@ -607,15 +409,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "a48246d6-6f7e-41f6-82c8-339bb8b26fad"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a48246d6-6f7e-41f6-82c8-339bb8b26fad"
                 }
             ]
@@ -629,15 +423,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "67de5c91-cb33-4b38-908d-d729afbba40f"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "67de5c91-cb33-4b38-908d-d729afbba40f"
                 }
             ]
@@ -648,18 +434,10 @@
             "fields": [
                 {
                     "id": "death_screen_ff",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause Screen: Friendly Fire",
                     "addToList": true,
-                    "guid": "58b28d06-13e0-4846-afdd-8bfa55b57730"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_screen_ff",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "58b28d06-13e0-4846-afdd-8bfa55b57730"
                 }
             ]
@@ -670,18 +448,10 @@
             "fields": [
                 {
                     "id": "death_body_244",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: SCP-244",
                     "addToList": true,
-                    "guid": "99b308d7-16bb-4bc7-a783-0de0a5e96332"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_244",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "99b308d7-16bb-4bc7-a783-0de0a5e96332"
                 }
             ]
@@ -692,18 +462,10 @@
             "fields": [
                 {
                     "id": "death_screen_244",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause Screen: SCP-244",
                     "addToList": true,
-                    "guid": "9199e35e-4807-4861-b39f-e8c6fbd741ea"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_screen_244",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9199e35e-4807-4861-b39f-e8c6fbd741ea"
                 }
             ]
@@ -714,18 +476,10 @@
             "fields": [
                 {
                     "id": "death_body_939",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause: SCP-939",
                     "addToList": true,
-                    "guid": "a5977536-5ae1-4ef5-9f7f-07a38773c668"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_body_939",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a5977536-5ae1-4ef5-9f7f-07a38773c668"
                 }
             ]
@@ -736,18 +490,10 @@
             "fields": [
                 {
                     "id": "death_screen_marshmellow",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cause Screen: Marshmellow Man",
                     "addToList": true,
-                    "guid": "7cab67e9-6032-407f-ae20-ec66285f84e4"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_screen_marshmellow",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7cab67e9-6032-407f-ae20-ec66285f84e4"
                 }
             ]

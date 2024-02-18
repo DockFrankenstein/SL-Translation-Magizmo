@@ -13,6 +13,7 @@
                     "autoDisplayName": false,
                     "displayName": "Custom",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2e1874d2-c817-418d-8dd1-d9cd0d83f46f"
                 }
             ]
@@ -26,6 +27,12 @@
                     "autoDisplayName": false,
                     "displayName": "Preset Label",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[index]",
+                            "description": "Index of the preset."
+                        }
+                    ],
                     "guid": "befd7848-e713-4b10-a187-7c39e8e2ff35"
                 }
             ]
@@ -39,6 +46,7 @@
                     "autoDisplayName": false,
                     "displayName": "Save",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "71ebdc5c-df8d-4f5b-b065-dc5a00ad0857"
                 }
             ]
@@ -52,6 +60,7 @@
                     "autoDisplayName": false,
                     "displayName": "Clear Attachments",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7aadf482-dc6b-472f-aba4-a90c444d6f80"
                 }
             ]
@@ -65,6 +74,7 @@
                     "autoDisplayName": false,
                     "displayName": "Default",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "932b7819-33ed-4b18-b63c-912bbb67ec92"
                 }
             ]
@@ -78,6 +88,7 @@
                     "autoDisplayName": false,
                     "displayName": "Presets Header",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "13856db2-f552-40ee-aee2-68e10919e375"
                 }
             ]
@@ -91,6 +102,7 @@
                     "autoDisplayName": false,
                     "displayName": "Offline Status",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2811d813-30cf-4cc6-8ff6-8fd16817bdfb"
                 }
             ]
@@ -104,6 +116,7 @@
                     "autoDisplayName": false,
                     "displayName": "Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "dd8c3c4b-fcfd-4697-ae3d-744a091b97cd"
                 }
             ]
@@ -117,6 +130,7 @@
                     "autoDisplayName": false,
                     "displayName": "Welcome Message",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "924f0e32-1bc8-4a4e-8dc2-2cdef8616a96"
                 }
             ]
@@ -130,6 +144,7 @@
                     "autoDisplayName": false,
                     "displayName": "Booting Status",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ed806839-4597-47c7-8005-f96686f75947"
                 }
             ]
@@ -143,6 +158,7 @@
                     "autoDisplayName": false,
                     "displayName": "Ready Status",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9d14d6f8-8037-4564-92c4-95fafcc1f64a"
                 }
             ]
@@ -156,6 +172,7 @@
                     "autoDisplayName": false,
                     "displayName": "No Weapon Warning",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ed19ad7e-4763-497b-be60-426885afea76"
                 }
             ]
@@ -169,6 +186,7 @@
                     "autoDisplayName": false,
                     "displayName": "Powering Down Status",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "fd234a51-dcfc-4dbc-b366-a5cf251744a6"
                 }
             ]
@@ -182,6 +200,7 @@
                     "autoDisplayName": false,
                     "displayName": "Shutting Down Status",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c98be535-49fd-45ab-b722-d6307c89d3c9"
                 }
             ]
@@ -195,6 +214,7 @@
                     "autoDisplayName": false,
                     "displayName": "Show Summary",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5dfafedf-211a-4234-921e-3354f8656551"
                 }
             ]
@@ -208,6 +228,7 @@
                     "autoDisplayName": false,
                     "displayName": "Close Summary",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "198936ad-129a-47dc-bcc2-4465e47d6227"
                 }
             ]
@@ -221,6 +242,12 @@
                     "autoDisplayName": false,
                     "displayName": "Attachment Name",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[Attachment]",
+                            "description": "Name of the attachment."
+                        }
+                    ],
                     "guid": "3703239a-6b7d-4291-9c36-3f5b25944db4"
                 }
             ]
@@ -234,6 +261,12 @@
                     "autoDisplayName": false,
                     "displayName": "Attachment Prompt",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[Key]",
+                            "description": "The inventory key used for opening the spectator attachment editor."
+                        }
+                    ],
                     "guid": "1567c77f-99b1-46f8-abcb-34b22425a3cc"
                 }
             ]

@@ -4,8 +4,11 @@ using System;
 using UnityEditor;
 using UnityEngine;
 using System.Linq;
+using UnityEditorInternal;
+using qASIC;
 
 using static Project.Translation.Mapping.MultiEntryTranslationMapping;
+using Project.Editor.Translation.Defines.Tools;
 
 namespace Project.Editor.Translation.Defines
 {
@@ -15,13 +18,14 @@ namespace Project.Editor.Translation.Defines
         public MultiEntryWindowInspector(MultiEntryWindow window)
         {
             this.window = window;
+            window.OnAssetReload += ReloadSelection;
         }
 
         public MultiEntryWindow window;
 
         [SerializeField] Vector2 scrollPosition;
 
-        public object _selectedItem;
+        private object _selectedItem;
         public object SelectedItem
         {
             get => _selectedItem;
@@ -31,8 +35,11 @@ namespace Project.Editor.Translation.Defines
                     return;
 
                 _selectedItem = value;
+                init = true;
             }
         }
+
+        bool init = true;
 
         public void OnGUI()
         {
@@ -48,13 +55,18 @@ namespace Project.Editor.Translation.Defines
                             LineGUI(lineItem);
                             break;
                         case DefineFieldContext defineItem:
-                            DefineGUI(defineItem);
+                            FieldGUI(defineItem);
+                            break;
+                        case MultiEntryWindowTool tool:
+                            ToolGUI(tool);
                             break;
                     }
 
                     EditorGUILayout.Space();
                     GUILayout.FlexibleSpace();
                 }
+
+                init = false;
             }
         }
 
@@ -67,23 +79,83 @@ namespace Project.Editor.Translation.Defines
 
             if (GUILayout.Button("Add Define"))
                 window.tree.CreateLine(item);
+
+            if (window.SingleLineMode && item.fields.Count > 0)
+            {
+                EditorGUILayout.Space();
+                qGUIEditorUtility.HorizontalLineLayout();
+
+                FieldGUI(new DefineFieldContext()
+                {
+                    line = item,
+                    field = item.fields[0],
+                });
+            }   
         }
 
-        void DefineGUI(DefineFieldContext item)
+        GUIContent c_dynamicValues = new GUIContent("Dynamic Values", "List of avaliable tags representing dynamic values (e.g. [name] or {0}).");
+
+        ReorderableList l_dynamicValues;
+
+        void FieldGUI(DefineFieldContext item)
         {
-            HeaderGUI("Define Field");
-            item.defineField.id = EditorGUILayout.DelayedTextField("ID", item.defineField.id);
+            if (init)
+            {
+                l_dynamicValues = new ReorderableList(item.field.dynamicValues, typeof(string), true, true, true, true)
+                {
+                    elementHeight = EditorGUIUtility.singleLineHeight * 4f + 
+                        EditorGUIUtility.standardVerticalSpacing * 4f,
+                };
+                l_dynamicValues.drawElementCallback += (Rect rect, int index, bool isActive, bool isFocused) =>
+                {
+                    rect = rect.BorderBottom(EditorGUIUtility.standardVerticalSpacing);
+
+                    var tagRect = rect.ResizeToTop(EditorGUIUtility.singleLineHeight);
+                    var descriptionLabelRect = tagRect.NextLine();
+                    var descriptionRect = rect.BorderTop(EditorGUIUtility.singleLineHeight * 2f + 
+                        EditorGUIUtility.standardVerticalSpacing * 2f);
+
+                    var val = item.field.dynamicValues[index];
+
+                    val.tag = EditorGUI.DelayedTextField(tagRect, "Tag", val.tag);
+                    EditorGUI.LabelField(descriptionLabelRect, "Description");
+                    val.description = EditorGUI.DelayedTextField(descriptionRect, val.description, EditorStyles.textArea);
+                };
+
+                l_dynamicValues.drawHeaderCallback += (rect) => EditorGUI.LabelField(rect, c_dynamicValues);
+            }
+
+            HeaderGUI("Mapped Field");
+            item.field.id = EditorGUILayout.DelayedTextField("ID", item.field.id);
 
             EditorGUILayout.Space();
             GUILayout.Label("Display Name", EditorStyles.boldLabel);
-            item.defineField.autoDisplayName = EditorGUILayout.Toggle("Auto Display Name", item.defineField.autoDisplayName);
+            item.field.autoDisplayName = EditorGUILayout.Toggle("Auto Display Name", item.field.autoDisplayName);
 
-            using (new EditorGUI.DisabledScope(item.defineField.autoDisplayName))
-                item.defineField.displayName = EditorGUILayout.DelayedTextField("Display Name", item.defineField.displayName);
+            using (new EditorGUI.DisabledScope(item.field.autoDisplayName))
+                item.field.displayName = EditorGUILayout.DelayedTextField("Display Name", item.field.displayName);
 
             EditorGUILayout.Space();
 
-            item.defineField.addToList = EditorGUILayout.Toggle("Add To List", item.defineField.addToList);
+            item.field.addToList = EditorGUILayout.Toggle("Add To List", item.field.addToList);
+
+            l_dynamicValues.DoLayoutList();
+        }
+
+        void ToolGUI(MultiEntryWindowTool tool)
+        {
+            using (new EditorChangeChecker.ChangeCheckPause())
+            {
+                HeaderGUI(tool.Name);
+
+                if (init)
+                {
+                    tool.Window = window;
+                    tool.Initialize();
+                }
+
+                tool.OnGUI();
+            }
         }
 
         internal void ReloadSelection()
@@ -106,7 +178,7 @@ namespace Project.Editor.Translation.Defines
                 case DefineFieldContext define:
                     var newDefine = window.asset.lines
                         .SelectMany(x => x.fields)
-                        .Where(x => x.guid == define.defineField.guid)
+                        .Where(x => x.guid == define.field.guid)
                         .FirstOrDefault();
 
                     if (newDefine == null)
@@ -115,7 +187,7 @@ namespace Project.Editor.Translation.Defines
                         break;
                     }
 
-                    define.defineField = newDefine;
+                    define.field = newDefine;
                     define.line = window.asset.lines
                         .Where(x => x.fields.Contains(newDefine))
                         .First();
@@ -123,6 +195,8 @@ namespace Project.Editor.Translation.Defines
                     _selectedItem = define;
                     break;
             }
+
+            init = true;
         }
 
         void HeaderGUI(string itemName)
@@ -133,7 +207,7 @@ namespace Project.Editor.Translation.Defines
 
         public struct DefineFieldContext
         {
-            public MappedField defineField;
+            public MappedField field;
             public Line line;
         }
 

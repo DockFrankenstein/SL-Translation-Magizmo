@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "door_opened",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Opened",
                     "addToList": true,
-                    "guid": "591795ea-f491-406e-b493-8b205f90d7ee"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "door_opened",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "591795ea-f491-406e-b493-8b205f90d7ee"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "door_closed",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Closed",
                     "addToList": true,
-                    "guid": "10f03655-050e-489f-a3b5-567800bb9c39"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "door_closed",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "10f03655-050e-489f-a3b5-567800bb9c39"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "door_moving",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Moving",
                     "addToList": true,
-                    "guid": "cc6f8b97-81b2-4139-ba50-9b33e84fab91"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "door_moving",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cc6f8b97-81b2-4139-ba50-9b33e84fab91"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "door_lockdown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Lockdown",
                     "addToList": true,
-                    "guid": "2352b24d-0acf-4964-8dc8-f4cb6f36f529"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "door_lockdown",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2352b24d-0acf-4964-8dc8-f4cb6f36f529"
                 }
             ]
@@ -98,18 +66,10 @@
             "fields": [
                 {
                     "id": "door_error",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Error",
                     "addToList": true,
-                    "guid": "45dac2b2-c36e-4a70-907f-d98a1cc2abfa"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "door_error",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "45dac2b2-c36e-4a70-907f-d98a1cc2abfa"
                 }
             ]
@@ -120,18 +80,10 @@
             "fields": [
                 {
                     "id": "door_keycard_denied",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Keycard Access Denied",
                     "addToList": true,
-                    "guid": "1acfeaf8-6dff-4e37-bcd4-c9bdf60a522a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "door_keycard_denied",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1acfeaf8-6dff-4e37-bcd4-c9bdf60a522a"
                 }
             ]
@@ -142,18 +94,10 @@
             "fields": [
                 {
                     "id": "door_keycard_granted",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Keycard Access Granted",
                     "addToList": true,
-                    "guid": "42c986ff-1a69-4f0f-92a5-69122eb7b535"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "door_keycard_granted",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "42c986ff-1a69-4f0f-92a5-69122eb7b535"
                 }
             ]
@@ -164,18 +108,10 @@
             "fields": [
                 {
                     "id": "door_keycard_closed",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Keycard Closed",
                     "addToList": true,
-                    "guid": "55192dff-a75e-47a0-84fd-32af5bed9dfd"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "door_keycard_closed",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "55192dff-a75e-47a0-84fd-32af5bed9dfd"
                 }
             ]
@@ -186,18 +122,10 @@
             "fields": [
                 {
                     "id": "door_keycard_opened",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Keycard Opened",
                     "addToList": true,
-                    "guid": "154ce1a4-b0b4-4db9-8190-fde1c4006f00"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "door_keycard_opened",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "154ce1a4-b0b4-4db9-8190-fde1c4006f00"
                 }
             ]
@@ -208,18 +136,10 @@
             "fields": [
                 {
                     "id": "door_keycard_closing",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Keycard Closing",
                     "addToList": true,
-                    "guid": "30c52eda-156a-43c4-851c-967056384bfb"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "door_keycard_closing",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "30c52eda-156a-43c4-851c-967056384bfb"
                 }
             ]

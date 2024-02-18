@@ -10,6 +10,7 @@ using qASIC.Input.Prompts;
 using UnityEditor.Callbacks;
 using qASIC.Input.Map.Internal;
 using UnityEditor.ShortcutManagement;
+using System;
 
 namespace Project.Editor.Translation.Defines
 {
@@ -40,6 +41,11 @@ namespace Project.Editor.Translation.Defines
         }
         #endregion
 
+        public bool SingleLineMode =>
+            asset != null &&
+            !asset.useSeparationCharacter &&
+            Prefs_UseSingleLine;
+
         #region Prefs
         bool? prefs_startLineCountFromOne = null;
         public bool Prefs_StartLineCountFromOne
@@ -55,6 +61,24 @@ namespace Project.Editor.Translation.Defines
             {
                 prefs_startLineCountFromOne = value;
                 EditorPrefs.SetBool("sltm_mew_linefromone", value);
+            }
+        }
+
+        bool? prefs_useSingleLine = null;
+        public bool Prefs_UseSingleLine
+        {
+            get
+            {
+                if (prefs_useSingleLine == null)
+                    prefs_useSingleLine = EditorPrefs.GetBool("sltm_mew_singleline", true);
+
+                return prefs_useSingleLine ?? true;
+            }
+            set
+            {
+                prefs_useSingleLine = value;
+                EditorPrefs.SetBool("sltm_mew_singleline", value);
+                tree.Reload();
             }
         }
         #endregion
@@ -92,6 +116,8 @@ namespace Project.Editor.Translation.Defines
             inspector = new MultiEntryWindowInspector(this);
         }
 
+        public Action OnAssetReload;
+
         public override void Save()
         {
             base.Save();
@@ -101,8 +127,7 @@ namespace Project.Editor.Translation.Defines
             qASIC.Files.FileManager.SaveFileJSON(path, asset, true);
             AssetDatabase.ImportAsset(relativePath);
 
-            tree.Reload();
-            inspector.ReloadSelection();
+            OnAssetReload?.Invoke();
         }
 
         protected override void OnGUI()

@@ -13,6 +13,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ac8258c6-8128-41d4-a6fc-c98be19ac5ab"
                 }
             ]
@@ -26,6 +27,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e65d0340-7260-43c9-ba92-526e9d43d825"
                 }
             ]
@@ -39,6 +41,7 @@
                     "autoDisplayName": false,
                     "displayName": "Force Start",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f9aaba5d-ced7-4ec9-8933-38814b3fc634"
                 }
             ]
@@ -52,6 +55,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d1661c5d-5530-4e58-b065-c97680c834e1"
                 }
             ]
@@ -65,6 +69,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "88dd4663-5797-4a44-8660-7348d1e2d99b"
                 }
             ]
@@ -78,6 +83,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b34133ce-0b81-49d6-886f-47fb768c62a9"
                 }
             ]
@@ -91,6 +97,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "42f3530c-9728-4d93-baa6-3f5e9e06f398"
                 }
             ]
@@ -104,6 +111,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9d1d5f6e-f33c-466f-9998-1f0fdc57eb45"
                 }
             ]
@@ -117,6 +125,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "de95af15-9e41-413a-aa8f-039a5e7e8226"
                 }
             ]
@@ -130,6 +139,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "88f1b21e-18fc-45b0-8d65-c4b5001ea01c"
                 }
             ]
@@ -143,6 +153,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9fbabca9-6c45-4c61-bb5f-c77f2ae70f22"
                 }
             ]
@@ -156,6 +167,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "63f8f9df-735f-4efd-af6b-b06041e4d9ee"
                 }
             ]
@@ -169,6 +181,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "dfb126a9-d2e3-4bb7-ba92-c7e61f86a79e"
                 }
             ]
@@ -179,9 +192,10 @@
             "fields": [
                 {
                     "id": "voicechat_prompt_header",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Voicechat Prompt Header",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "aa645896-beea-4c6c-ae2d-6eef7e551961"
                 }
             ]
@@ -195,6 +209,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "21a7433a-f800-44e0-84ca-db4158a5964f"
                 }
             ]
@@ -208,6 +223,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ce50e514-9e52-4410-8947-a89115c5ef50"
                 }
             ]
@@ -221,6 +237,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "337a4e70-226c-481a-9eb8-4e84354b9b6b"
                 }
             ]
@@ -234,6 +251,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "780326b6-4f87-4ec5-868b-82418c25720c"
                 }
             ]
@@ -247,6 +265,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d73a321e-3f19-428f-9c8a-050350fe7a4c"
                 }
             ]
@@ -260,6 +279,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e974cd0f-87da-4aa2-9358-6dcc5e8c44ce"
                 }
             ]
@@ -273,6 +293,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3ee5226a-f052-4ff4-b268-36b6d2d33f1f"
                 }
             ]
@@ -286,6 +307,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "31e984c3-a424-47b2-a5b8-4ff75feabfed"
                 }
             ]
@@ -299,6 +321,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "94797026-1038-4296-8536-f4368aba5bbd"
                 }
             ]
@@ -312,6 +335,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1304e5a8-bc0d-4711-99a3-079f4eeff880"
                 }
             ]
@@ -322,9 +346,10 @@
             "fields": [
                 {
                     "id": "start_waiting_for_players",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Waiting For Players",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d708ca80-4b55-49fc-9a88-22f7187221bf"
                 }
             ]
@@ -338,6 +363,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "09739e93-e6da-49d8-a13b-79f5f652d2ea"
                 }
             ]
@@ -351,6 +377,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "98e4b1bf-99c2-4456-9e7d-9a3fc9c59f01"
                 }
             ]
@@ -364,6 +391,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e055ee32-fbaa-4657-acbf-35436b12471e"
                 }
             ]
@@ -374,9 +402,10 @@
             "fields": [
                 {
                     "id": "start_connected_unit",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Connected Unit",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d228cf72-7253-4875-9b3e-e86df6219b41"
                 }
             ]
@@ -387,9 +416,10 @@
             "fields": [
                 {
                     "id": "intro_escape_scientist",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Escaped As Scientist",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b8baac06-f58f-41b5-aace-7fe181f825b5"
                 }
             ]
@@ -400,9 +430,10 @@
             "fields": [
                 {
                     "id": "intro_escape_classd",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Escaped As Class-D",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d38b4a86-e3e8-4828-beaf-2a2f8faf2454"
                 }
             ]
@@ -413,9 +444,10 @@
             "fields": [
                 {
                     "id": "intro_you_are",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "You Are",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ae3b01b5-1308-496a-a806-769803fb4d05"
                 }
             ]
@@ -426,9 +458,19 @@
             "fields": [
                 {
                     "id": "intro_escape_time",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Escape Time",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[escape_minutes]",
+                            "description": "Minutes of the escape time."
+                        },
+                        {
+                            "tag": "[escape_seconds]",
+                            "description": "Seconds of the escape time."
+                        }
+                    ],
                     "guid": "e87be7d1-2ffc-4568-9bcc-4fa68e6d95bd"
                 }
             ]
@@ -439,9 +481,19 @@
             "fields": [
                 {
                     "id": "item_cooldown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Item Cooldown",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[time]",
+                            "description": "Time until the item will become usable again."
+                        },
+                        {
+                            "tag": "[item]",
+                            "description": "The name of the item."
+                        }
+                    ],
                     "guid": "2ac40eb4-4219-4a64-84ce-8b7f058d494a"
                 }
             ]
@@ -452,9 +504,10 @@
             "fields": [
                 {
                     "id": "intro_f1",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Intro F1 Prompt",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f58212b5-1c0e-4989-8ca4-d0cfd7327fdd"
                 }
             ]
@@ -468,6 +521,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "337cea75-8291-42e0-b04c-66e4a63170d6"
                 }
             ]
@@ -478,9 +532,10 @@
             "fields": [
                 {
                     "id": "intro_escape_classd_cuffed",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Escaped As Cuffed Class-D",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "61009c25-f116-4d34-9fbb-1abdcd410b64"
                 }
             ]
@@ -491,9 +546,10 @@
             "fields": [
                 {
                     "id": "intro_escape_scientist_cuffed",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Escaped As Cuffed Scientist",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b7490d6b-bd97-4925-bb34-24636bfb661e"
                 }
             ]
@@ -504,9 +560,15 @@
             "fields": [
                 {
                     "id": "start_starts_in",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Starts In",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "{0}",
+                            "description": "Time in which the round starts in."
+                        }
+                    ],
                     "guid": "244675fc-732b-4df0-8be6-3d1d549d1f8d"
                 }
             ]
@@ -517,9 +579,10 @@
             "fields": [
                 {
                     "id": "start_starts_paused",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Starts In Paused",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "97678ffa-d673-48f1-b630-c37709782e88"
                 }
             ]
@@ -533,6 +596,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8df33947-faa8-44d7-bc6f-00f30f596b42"
                 }
             ]
@@ -543,9 +607,15 @@
             "fields": [
                 {
                     "id": "throw_cancel_prompt",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Throw Cancel Prompt",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "The reload key used for disarming a throwable object."
+                        }
+                    ],
                     "guid": "bffe4b27-9705-4a22-9465-5a2e12040ebe"
                 }
             ]
@@ -559,6 +629,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "20f414be-e762-4b75-9ad6-f96aaf1ce614"
                 }
             ]
@@ -572,6 +643,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cebdef00-82ed-498a-827f-7954c2bad343"
                 }
             ]
@@ -585,6 +657,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4b8c2b51-fee2-4166-a4c9-2c22574823e8"
                 }
             ]
@@ -595,9 +668,10 @@
             "fields": [
                 {
                     "id": "settings_audio_device_auto",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Device: Auto",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6251dc55-855e-41f1-b57e-3bef38af62a7"
                 }
             ]
@@ -607,10 +681,11 @@
             "guid": "6d4aef32-65d1-45e0-9860-4e6db0000a0a",
             "fields": [
                 {
-                    "id": "settings_audio_device_none_dedected",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "settings_audio_device_none_detected",
+                    "autoDisplayName": false,
+                    "displayName": "Device: None Detected",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6ababaf8-e50b-446f-a5f2-b89f7ed87c61"
                 }
             ]
@@ -624,6 +699,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3331f527-9470-426a-8413-242865030efd"
                 }
             ]
@@ -634,9 +710,15 @@
             "fields": [
                 {
                     "id": "candles_prompt",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Candles Prompt",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "The interaction key."
+                        }
+                    ],
                     "guid": "d22fe589-52ce-465d-8c2f-37f787245b0e"
                 }
             ]

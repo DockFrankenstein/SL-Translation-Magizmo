@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "nuke_disabled",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Disabled",
                     "addToList": true,
-                    "guid": "d0631f9c-6df6-4190-b775-2d1d7a9400b2"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "nuke_disabled",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d0631f9c-6df6-4190-b775-2d1d7a9400b2"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "nuke_wait",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Wait",
                     "addToList": true,
-                    "guid": "3bafdb66-3f17-41fd-995e-2f3b3770abe5"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "nuke_wait",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3bafdb66-3f17-41fd-995e-2f3b3770abe5"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "nuke_ready",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ready",
                     "addToList": true,
-                    "guid": "7827fafa-960c-4570-a97c-c7e0affb3fa7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "nuke_ready",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7827fafa-960c-4570-a97c-c7e0affb3fa7"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "nuke_inevitable",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Inevitable",
                     "addToList": true,
-                    "guid": "4dec4f62-f405-4163-b746-940d11a91a15"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "nuke_inevitable",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4dec4f62-f405-4163-b746-940d11a91a15"
                 }
             ]

@@ -10,18 +10,15 @@
             "fields": [
                 {
                     "id": "disarmed_prompt",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Disarmed Prompt",
                     "addToList": true,
-                    "guid": "53e4e9d8-5a31-4bdf-a158-3612f6c2f504"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "disarmed_prompt",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[player]",
+                            "description": "Name of the player that disarmed you."
+                        }
+                    ],
                     "guid": "53e4e9d8-5a31-4bdf-a158-3612f6c2f504"
                 }
             ]
@@ -32,18 +29,10 @@
             "fields": [
                 {
                     "id": "disarmed_admin",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "By Admin",
                     "addToList": true,
-                    "guid": "4021e1f5-ee0f-4f7a-ae4f-3dbfff6d3f86"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "disarmed_admin",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4021e1f5-ee0f-4f7a-ae4f-3dbfff6d3f86"
                 }
             ]
@@ -54,18 +43,10 @@
             "fields": [
                 {
                     "id": "disarmed_follow_orders",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Disarmed Prompt Description",
                     "addToList": true,
-                    "guid": "92ee5baf-9967-441e-91df-fe0cc112a3b3"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "disarmed_follow_orders",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "92ee5baf-9967-441e-91df-fe0cc112a3b3"
                 }
             ]

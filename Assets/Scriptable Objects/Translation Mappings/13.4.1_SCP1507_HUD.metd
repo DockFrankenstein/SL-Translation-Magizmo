@@ -10,32 +10,18 @@
             "fields": [
                 {
                     "id": "f1_1507_ability_universally_hostile",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Universally Hostile Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ea69725b-ed3d-48a0-ab60-27c65e8ada17"
                 },
                 {
                     "id": "f1_1507_ability_universally_hostile_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Universally Hostile Ability Description",
                     "addToList": true,
-                    "guid": "8d21845c-5832-40a2-ac9b-5431e431adf6"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_1507_ability_universally_hostile",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "ea69725b-ed3d-48a0-ab60-27c65e8ada17"
-                },
-                {
-                    "id": "f1_1507_ability_universally_hostile_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8d21845c-5832-40a2-ac9b-5431e431adf6"
                 }
             ]
@@ -46,32 +32,18 @@
             "fields": [
                 {
                     "id": "f1_1507_ability_swarm",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Swarm Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "01fe2ae1-880a-4a1e-9626-8260ea2e9db2"
                 },
                 {
                     "id": "f1_1507_ability_swarm_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Swarm Ability Description",
                     "addToList": true,
-                    "guid": "fac5954e-914a-4ec0-acbf-c89cc6f7bf30"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_1507_ability_swarm",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "01fe2ae1-880a-4a1e-9626-8260ea2e9db2"
-                },
-                {
-                    "id": "f1_1507_ability_swarm_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "fac5954e-914a-4ec0-acbf-c89cc6f7bf30"
                 }
             ]
@@ -82,32 +54,18 @@
             "fields": [
                 {
                     "id": "f1_1507_ability_peck",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Peck Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8b8e0103-abd4-4bd9-8c43-185bf17d0b05"
                 },
                 {
                     "id": "f1_1507_ability_peck_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Peck Ability Description",
                     "addToList": true,
-                    "guid": "7a8731d9-bf80-4fa1-81a7-7f08ed390abf"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_1507_ability_peck",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "8b8e0103-abd4-4bd9-8c43-185bf17d0b05"
-                },
-                {
-                    "id": "f1_1507_ability_peck_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7a8731d9-bf80-4fa1-81a7-7f08ed390abf"
                 }
             ]
@@ -118,32 +76,18 @@
             "fields": [
                 {
                     "id": "f1_1507_ability_vocalize",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Vocalize Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "19a2176e-6a41-4ce1-a08a-248bf02f2aeb"
                 },
                 {
                     "id": "f1_1507_ability_vocalize_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Vocalize Ability Description",
                     "addToList": true,
-                    "guid": "6d7a942f-0883-4751-a249-83dee802cae1"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_1507_ability_vocalize",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "19a2176e-6a41-4ce1-a08a-248bf02f2aeb"
-                },
-                {
-                    "id": "f1_1507_ability_vocalize_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6d7a942f-0883-4751-a249-83dee802cae1"
                 }
             ]
@@ -154,18 +98,10 @@
             "fields": [
                 {
                     "id": "1507_vocalize",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Vocalize",
                     "addToList": true,
-                    "guid": "f188be65-452b-41a0-bc54-e7fa055b5534"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "1507_vocalize",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f188be65-452b-41a0-bc54-e7fa055b5534"
                 }
             ]

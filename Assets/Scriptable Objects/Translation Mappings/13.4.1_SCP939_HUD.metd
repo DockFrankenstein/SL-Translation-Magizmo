@@ -10,18 +10,19 @@
             "fields": [
                 {
                     "id": "939_prompt_lunge",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Lunge Prompt",
                     "addToList": true,
-                    "guid": "df1bd04f-61f3-4b4b-8249-e9d77e42c4ed"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_prompt_lunge",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[key_attack]",
+                            "description": "The attack key."
+                        },
+                        {
+                            "tag": "[key_jump]",
+                            "description": "The jump key."
+                        }
+                    ],
                     "guid": "df1bd04f-61f3-4b4b-8249-e9d77e42c4ed"
                 }
             ]
@@ -32,18 +33,10 @@
             "fields": [
                 {
                     "id": "939_voice_preview",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Preview Voice",
                     "addToList": true,
-                    "guid": "e2249e10-2a5b-469d-9cc3-ab5c5b425cc9"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_voice_preview",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e2249e10-2a5b-469d-9cc3-ab5c5b425cc9"
                 }
             ]
@@ -57,15 +50,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "1676c317-3937-47bc-9e11-d10af8ac7c10"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1676c317-3937-47bc-9e11-d10af8ac7c10"
                 }
             ]
@@ -76,18 +61,10 @@
             "fields": [
                 {
                     "id": "939_voice_remove",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Remove Voice",
                     "addToList": true,
-                    "guid": "102b3bb5-cda5-4b1f-aff5-c0c78908da18"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_voice_remove",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "102b3bb5-cda5-4b1f-aff5-c0c78908da18"
                 }
             ]
@@ -98,18 +75,10 @@
             "fields": [
                 {
                     "id": "939_voice_play",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Play Voice",
                     "addToList": true,
-                    "guid": "992e99cd-4806-433c-8d2f-c1bac8e44085"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_voice_play",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "992e99cd-4806-433c-8d2f-c1bac8e44085"
                 }
             ]
@@ -120,18 +89,10 @@
             "fields": [
                 {
                     "id": "939_prompt_voice_stolen_victim",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Voice Stolen (Victim)",
                     "addToList": true,
-                    "guid": "56961e95-97c8-4c06-b81b-eaedc321d8fe"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_prompt_voice_stolen_victim",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "56961e95-97c8-4c06-b81b-eaedc321d8fe"
                 }
             ]
@@ -142,18 +103,10 @@
             "fields": [
                 {
                     "id": "939_prompt_voice_stolen_victim_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Voice Stolen Description (Victim)",
                     "addToList": true,
-                    "guid": "19c64471-fbb8-4153-ab90-a65fd2cd20e3"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_prompt_voice_stolen_victim_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "19c64471-fbb8-4153-ab90-a65fd2cd20e3"
                 }
             ]
@@ -164,18 +117,10 @@
             "fields": [
                 {
                     "id": "939_remember_choice",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Remember Choice",
                     "addToList": true,
-                    "guid": "3a802ba5-dbeb-4cee-9f07-82d6e5eb7a2d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_remember_choice",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3a802ba5-dbeb-4cee-9f07-82d6e5eb7a2d"
                 }
             ]
@@ -186,18 +131,10 @@
             "fields": [
                 {
                     "id": "939_delete",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Delete",
                     "addToList": true,
-                    "guid": "b480f3f9-0668-4069-8aa6-cfa6ebb815fc"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_delete",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b480f3f9-0668-4069-8aa6-cfa6ebb815fc"
                 }
             ]
@@ -208,18 +145,10 @@
             "fields": [
                 {
                     "id": "939_ok",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ok",
                     "addToList": true,
-                    "guid": "ca754c42-4897-4d2a-853a-3b9d1b707356"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_ok",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ca754c42-4897-4d2a-853a-3b9d1b707356"
                 }
             ]
@@ -230,18 +159,10 @@
             "fields": [
                 {
                     "id": "939_more_information",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "More Information",
                     "addToList": true,
-                    "guid": "d5e24d42-2d3e-498b-a888-7c0f5b38ba7e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_more_information",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d5e24d42-2d3e-498b-a888-7c0f5b38ba7e"
                 }
             ]
@@ -255,15 +176,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "976f75e7-afde-4092-ac69-f7c037740b34"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "976f75e7-afde-4092-ac69-f7c037740b34"
                 }
             ]
@@ -274,18 +187,10 @@
             "fields": [
                 {
                     "id": "939_prompt_cloud_invalid_placement",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Invalid Cloud Placement Prompt",
                     "addToList": true,
-                    "guid": "5dfa6081-5830-4cd9-be83-cc47165041dc"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_prompt_cloud_invalid_placement",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5dfa6081-5830-4cd9-be83-cc47165041dc"
                 }
             ]
@@ -296,18 +201,10 @@
             "fields": [
                 {
                     "id": "939_prompt_cloud_too_small",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cloud Too Small Prompt",
                     "addToList": true,
-                    "guid": "f65b997d-1b55-4814-a844-f7c33e12ff46"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_prompt_cloud_too_small",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f65b997d-1b55-4814-a844-f7c33e12ff46"
                 }
             ]
@@ -318,18 +215,10 @@
             "fields": [
                 {
                     "id": "f1_939_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-939 Description",
                     "addToList": true,
-                    "guid": "4e5931ba-511f-4d92-9b9b-488c5c9dd5d5"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_939_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4e5931ba-511f-4d92-9b9b-488c5c9dd5d5"
                 }
             ]
@@ -340,32 +229,18 @@
             "fields": [
                 {
                     "id": "f1_939_ability_claw",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Claw Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "24d56319-29a2-4c59-81fe-83d9d3bb9e98"
                 },
                 {
                     "id": "f1_939_ability_claw_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Claw Ability Description",
                     "addToList": true,
-                    "guid": "85a6d04b-e37e-4909-9ec3-47594781c37e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_939_ability_claw",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "24d56319-29a2-4c59-81fe-83d9d3bb9e98"
-                },
-                {
-                    "id": "f1_939_ability_claw_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "85a6d04b-e37e-4909-9ec3-47594781c37e"
                 }
             ]
@@ -376,32 +251,18 @@
             "fields": [
                 {
                     "id": "f1_939_ability_focus",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Focus Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "36c750c6-d7be-4025-a78f-81f6f4f3e3e2"
                 },
                 {
                     "id": "f1_939_ability_focus_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Focus Ability Description",
                     "addToList": true,
-                    "guid": "0f522b04-a4f0-4b0f-927b-b7cd77995fdd"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_939_ability_focus",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "36c750c6-d7be-4025-a78f-81f6f4f3e3e2"
-                },
-                {
-                    "id": "f1_939_ability_focus_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0f522b04-a4f0-4b0f-927b-b7cd77995fdd"
                 }
             ]
@@ -412,32 +273,18 @@
             "fields": [
                 {
                     "id": "f1_939_ability_cloud",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cloud Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a1184a5d-6fad-4e4c-abf5-0bd593f11857"
                 },
                 {
                     "id": "f1_939_ability_cloud_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cloud Ability Description",
                     "addToList": true,
-                    "guid": "49fc5d26-7efd-48f1-b183-5d9dfb01c47c"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_939_ability_cloud",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "a1184a5d-6fad-4e4c-abf5-0bd593f11857"
-                },
-                {
-                    "id": "f1_939_ability_cloud_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "49fc5d26-7efd-48f1-b183-5d9dfb01c47c"
                 }
             ]
@@ -448,32 +295,18 @@
             "fields": [
                 {
                     "id": "f1_939_ability_voices",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Voices Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "46d819a8-c58f-421d-a037-31e25f50253e"
                 },
                 {
                     "id": "f1_939_ability_voices_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Voices Ability Description",
                     "addToList": true,
-                    "guid": "1b3c9a80-ac3a-424e-92b8-e7f2f68be1f3"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_939_ability_voices",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "46d819a8-c58f-421d-a037-31e25f50253e"
-                },
-                {
-                    "id": "f1_939_ability_voices_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1b3c9a80-ac3a-424e-92b8-e7f2f68be1f3"
                 }
             ]
@@ -484,32 +317,18 @@
             "fields": [
                 {
                     "id": "f1_939_ability_ultrasensitive",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ultrasensitive Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ff3abe3c-9b78-4306-af2d-128cf2caf7f0"
                 },
                 {
                     "id": "f1_939_ability_ultrasensitive_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ultrasensitive Ability Description",
                     "addToList": true,
-                    "guid": "5ba5539a-24e9-4a01-90c6-9216e70de5f8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_939_ability_ultrasensitive",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "ff3abe3c-9b78-4306-af2d-128cf2caf7f0"
-                },
-                {
-                    "id": "f1_939_ability_ultrasensitive_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5ba5539a-24e9-4a01-90c6-9216e70de5f8"
                 }
             ]
@@ -523,15 +342,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "1b15b752-bb63-44ae-a450-543f7ae50a8d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1b15b752-bb63-44ae-a450-543f7ae50a8d"
                 }
             ]
@@ -542,18 +353,10 @@
             "fields": [
                 {
                     "id": "939_mimic_point_place",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Place Mimic Point",
                     "addToList": true,
-                    "guid": "e51b7021-16df-43dd-b79b-c27587868e49"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_mimic_point_place",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e51b7021-16df-43dd-b79b-c27587868e49"
                 }
             ]
@@ -564,18 +367,10 @@
             "fields": [
                 {
                     "id": "939_mimic_point_place_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Place Mimic Point Tooltip",
                     "addToList": true,
-                    "guid": "39f26e59-af0c-4873-b023-e3c650e034ca"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_mimic_point_place_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "39f26e59-af0c-4873-b023-e3c650e034ca"
                 }
             ]
@@ -586,18 +381,10 @@
             "fields": [
                 {
                     "id": "939_mimic_point_remove",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Remove Mimic Point",
                     "addToList": true,
-                    "guid": "6fd2bbdc-6d73-4bd4-a879-67c26b771be7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_mimic_point_remove",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6fd2bbdc-6d73-4bd4-a879-67c26b771be7"
                 }
             ]
@@ -608,18 +395,10 @@
             "fields": [
                 {
                     "id": "939_mimic_point_remove_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Remove Mimic Point Tooltip",
                     "addToList": true,
-                    "guid": "65978ea4-dd19-45f3-bb6e-758c0b22e4b0"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_mimic_point_remove_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "65978ea4-dd19-45f3-bb6e-758c0b22e4b0"
                 }
             ]
@@ -630,18 +409,10 @@
             "fields": [
                 {
                     "id": "939_mimic_point_place_success",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mimic Point Successfully Placed",
                     "addToList": true,
-                    "guid": "b5ef0da6-7bea-465d-aa3a-a0520e7617f6"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_mimic_point_place_success",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b5ef0da6-7bea-465d-aa3a-a0520e7617f6"
                 }
             ]
@@ -652,18 +423,10 @@
             "fields": [
                 {
                     "id": "939_mimic_point_remove_success",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mimic Point Successfully Removed",
                     "addToList": true,
-                    "guid": "486a416b-9943-476a-97d8-12131ced485a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_mimic_point_remove_success",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "486a416b-9943-476a-97d8-12131ced485a"
                 }
             ]
@@ -674,18 +437,10 @@
             "fields": [
                 {
                     "id": "939_mimic_point_remove_out_of_range",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mimic Point Removed: Out Of Range",
                     "addToList": true,
-                    "guid": "f2edb167-23e5-40a4-8f75-a01188e6e3d5"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_mimic_point_remove_out_of_range",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f2edb167-23e5-40a4-8f75-a01188e6e3d5"
                 }
             ]
@@ -696,18 +451,10 @@
             "fields": [
                 {
                     "id": "939_voice_header",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Voices Header",
                     "addToList": true,
-                    "guid": "372878a4-7895-427b-afd1-90b8f686e80e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_voice_header",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "372878a4-7895-427b-afd1-90b8f686e80e"
                 }
             ]
@@ -721,15 +468,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "2015ad5d-ceea-4337-8afa-2e9eae60c9e8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2015ad5d-ceea-4337-8afa-2e9eae60c9e8"
                 }
             ]
@@ -740,18 +479,10 @@
             "fields": [
                 {
                     "id": "939_enviromental_header",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Enviromental Mimicry Header",
                     "addToList": true,
-                    "guid": "4bd5877e-06f7-40fd-b080-efe7cdef0502"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_enviromental_header",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4bd5877e-06f7-40fd-b080-efe7cdef0502"
                 }
             ]
@@ -765,15 +496,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "cb247b0e-8d00-4c93-aaf4-94f3dba81cd7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cb247b0e-8d00-4c93-aaf4-94f3dba81cd7"
                 }
             ]
@@ -784,18 +507,15 @@
             "fields": [
                 {
                     "id": "939_enviromental_cooldown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Enviromental Mimicry Cooldown",
                     "addToList": true,
-                    "guid": "4c7e3394-341c-4640-a77e-d34dc544534e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_enviromental_cooldown",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[time]",
+                            "description": "Cooldown time in seconds."
+                        }
+                    ],
                     "guid": "4c7e3394-341c-4640-a77e-d34dc544534e"
                 }
             ]
@@ -809,15 +529,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "184a00b4-7896-47fb-8098-120bfac28bb7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "184a00b4-7896-47fb-8098-120bfac28bb7"
                 }
             ]
@@ -828,18 +540,10 @@
             "fields": [
                 {
                     "id": "939_enviromental_category_impersonation",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Impersonation Category",
                     "addToList": true,
-                    "guid": "e3c8cf6e-605b-4f3c-a079-08fc500abb00"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_enviromental_category_impersonation",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e3c8cf6e-605b-4f3c-a079-08fc500abb00"
                 }
             ]
@@ -850,18 +554,10 @@
             "fields": [
                 {
                     "id": "939_enviromental_category_shooting",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Shooting Category",
                     "addToList": true,
-                    "guid": "c37ae4ad-1f6d-4874-9a3e-a48611e65f10"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_enviromental_category_shooting",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c37ae4ad-1f6d-4874-9a3e-a48611e65f10"
                 }
             ]
@@ -872,18 +568,10 @@
             "fields": [
                 {
                     "id": "939_enviromental_category_mics",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Miscellaneous Category",
                     "addToList": true,
-                    "guid": "0c929f81-2188-42e3-b058-f8c9dcf72a8b"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_enviromental_category_mics",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0c929f81-2188-42e3-b058-f8c9dcf72a8b"
                 }
             ]
@@ -897,15 +585,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "129fa132-afbc-4100-b0c5-6d43c243ce64"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "129fa132-afbc-4100-b0c5-6d43c243ce64"
                 }
             ]
@@ -919,15 +599,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "c15fa50f-2863-44c3-bee6-ff447e823dd6"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c15fa50f-2863-44c3-bee6-ff447e823dd6"
                 }
             ]
@@ -941,15 +613,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "7fec700f-e391-47a4-94d5-b0701f173934"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7fec700f-e391-47a4-94d5-b0701f173934"
                 }
             ]
@@ -960,18 +624,15 @@
             "fields": [
                 {
                     "id": "939_voice_hotkey_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Hotkey Tooltip",
                     "addToList": true,
-                    "guid": "6c8ef50b-d0c0-4aa3-ad36-71f11c98dea4"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_voice_hotkey_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "Key used for playing the voice clip."
+                        }
+                    ],
                     "guid": "6c8ef50b-d0c0-4aa3-ad36-71f11c98dea4"
                 }
             ]
@@ -982,18 +643,10 @@
             "fields": [
                 {
                     "id": "939_voice_play_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Play Tooltip",
                     "addToList": true,
-                    "guid": "4f61001e-8ea7-4d3a-97a3-c8170b101281"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_voice_play_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4f61001e-8ea7-4d3a-97a3-c8170b101281"
                 }
             ]
@@ -1004,18 +657,10 @@
             "fields": [
                 {
                     "id": "939_voice_stop_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Stop Tooltip",
                     "addToList": true,
-                    "guid": "e3f3ea98-b5bd-4f8b-b0c7-def3a2bed88e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_voice_stop_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e3f3ea98-b5bd-4f8b-b0c7-def3a2bed88e"
                 }
             ]
@@ -1026,18 +671,10 @@
             "fields": [
                 {
                     "id": "939_voice_trim_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Trim Tooltip",
                     "addToList": true,
-                    "guid": "149251cd-d582-450f-832d-3436db9c689f"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_voice_trim_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "149251cd-d582-450f-832d-3436db9c689f"
                 }
             ]
@@ -1048,18 +685,10 @@
             "fields": [
                 {
                     "id": "939_voice_favourite_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Favourite Tooltip",
                     "addToList": true,
-                    "guid": "7947ece6-0ac9-45dd-b899-48c220206b60"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_voice_favourite_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7947ece6-0ac9-45dd-b899-48c220206b60"
                 }
             ]
@@ -1070,18 +699,10 @@
             "fields": [
                 {
                     "id": "939_voice_reorder_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Reorder Tooltip",
                     "addToList": true,
-                    "guid": "f00556ce-f662-4bca-8473-099e469d565d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_voice_reorder_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f00556ce-f662-4bca-8473-099e469d565d"
                 }
             ]
@@ -1092,18 +713,10 @@
             "fields": [
                 {
                     "id": "939_prompt_voice_stolen_939",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Voice Stolen (SCP-939)",
                     "addToList": true,
-                    "guid": "f4918986-fb55-48ec-be22-e0068103b5b4"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_prompt_voice_stolen_939",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f4918986-fb55-48ec-be22-e0068103b5b4"
                 }
             ]

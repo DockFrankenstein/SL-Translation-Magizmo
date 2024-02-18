@@ -10,9 +10,10 @@
             "fields": [
                 {
                     "id": "settings_input_category_mouse",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Category Mouse",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "bd677876-c86e-464e-a0dc-c7d51296f580"
                 }
             ]
@@ -23,9 +24,10 @@
             "fields": [
                 {
                     "id": "settings_input_mouse_sensitivity",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mouse Sensitivity",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1668f201-23d2-4305-8781-4697631758c4"
                 }
             ]
@@ -36,9 +38,10 @@
             "fields": [
                 {
                     "id": "settings_input_mouse_ads_sensitivity",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mouse Ads Sensitivity",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "21137f1e-7000-480a-aff1-220d57e8f84d"
                 }
             ]
@@ -52,6 +55,7 @@
                     "autoDisplayName": false,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "38e951e5-78a9-41b4-9e37-bb554f192efb"
                 }
             ]
@@ -62,9 +66,10 @@
             "fields": [
                 {
                     "id": "settings_input_mouse_invert_y",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mouse Invert Y",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a0b1615e-06e4-4c7b-b5d6-f9bcf82b35b1"
                 }
             ]
@@ -75,9 +80,10 @@
             "fields": [
                 {
                     "id": "settings_input_mouse_ads_sensitivity_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mouse Ads Sensitivity Tooltip",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c6179ad2-a262-437b-97a4-cd64b6c83401"
                 }
             ]
@@ -88,9 +94,10 @@
             "fields": [
                 {
                     "id": "settings_input_hold",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Hold",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c0fe4f41-6061-4628-9e7a-df689271ffdd"
                 }
             ]
@@ -101,9 +108,10 @@
             "fields": [
                 {
                     "id": "settings_input_toggle",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Toggle",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4b366066-cb84-401a-80bb-fa06b801727c"
                 }
             ]
@@ -114,9 +122,10 @@
             "fields": [
                 {
                     "id": "settings_input_ads_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ads Mode",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7c996352-d9ee-4107-bfe3-52488cbc962f"
                 }
             ]
@@ -127,9 +136,10 @@
             "fields": [
                 {
                     "id": "settings_input_sprint_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Sprint Mode",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "bafefdf2-20ea-437d-a818-611a361b6a76"
                 }
             ]
@@ -140,9 +150,10 @@
             "fields": [
                 {
                     "id": "settings_input_pickup_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Pickup Mode",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e142c82a-35d6-4c95-9069-96ab9aa60e72"
                 }
             ]
@@ -153,9 +164,10 @@
             "fields": [
                 {
                     "id": "settings_input_sneak_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Sneak Mode",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "17ed6cbd-f3e0-4362-bce3-697d004cb761"
                 }
             ]
@@ -166,9 +178,10 @@
             "fields": [
                 {
                     "id": "settings_input_079_look_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "079 Look Mode",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "79009f0e-1cf7-459d-9ad4-1b71b79dc9db"
                 }
             ]
@@ -179,9 +192,10 @@
             "fields": [
                 {
                     "id": "settings_input_inventory_rmb_drop",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Inventory Rmb Drop",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "257a391e-5d52-41b0-b107-deb67630c061"
                 }
             ]
@@ -192,9 +206,10 @@
             "fields": [
                 {
                     "id": "settings_input_inventory_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Inventory Mode",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c6aaa1a6-e42f-4785-9289-ab0226875435"
                 }
             ]
@@ -205,9 +220,10 @@
             "fields": [
                 {
                     "id": "settings_input_079_zone_switch_keybinds",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "079 Zone Switch Keybinds",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "499a886a-a81d-4a8a-9f2f-3d334905a3a6"
                 }
             ]

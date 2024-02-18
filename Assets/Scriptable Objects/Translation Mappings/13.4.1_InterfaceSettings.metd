@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "settings_interface_ip_display",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "IP Display Mode",
                     "addToList": true,
-                    "guid": "5f95387a-958b-409e-ab8c-2e80a9b10ec7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_ip_display",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5f95387a-958b-409e-ab8c-2e80a9b10ec7"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "settings_interface_language_interface",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Interface Language",
                     "addToList": true,
-                    "guid": "3f7beb47-833d-4f21-a475-10cfb0164828"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_language_interface",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3f7beb47-833d-4f21-a475-10cfb0164828"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "settings_interface_language_interface_warning",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Interface Language Warning",
                     "addToList": true,
-                    "guid": "0d2ab203-11ac-40cf-909e-8ef3b4e80617"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_language_interface_warning",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0d2ab203-11ac-40cf-909e-8ef3b4e80617"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "settings_interface_language_interface_loading",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Interface Language Loading",
                     "addToList": true,
-                    "guid": "0bfeac65-4e10-490f-838b-20d984cee5a7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_language_interface_loading",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0bfeac65-4e10-490f-838b-20d984cee5a7"
                 }
             ]
@@ -98,18 +66,10 @@
             "fields": [
                 {
                     "id": "settings_interface_subtitles",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Subtitles",
                     "addToList": true,
-                    "guid": "5a115e3c-68b4-418d-abee-f13db4fb1090"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_subtitles",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5a115e3c-68b4-418d-abee-f13db4fb1090"
                 }
             ]
@@ -120,18 +80,10 @@
             "fields": [
                 {
                     "id": "settings_interface_healthbar_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Healthbar Mode",
                     "addToList": true,
-                    "guid": "bdfc870a-cd5c-47af-ad5a-667638e0148a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_healthbar_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "bdfc870a-cd5c-47af-ad5a-667638e0148a"
                 }
             ]
@@ -142,18 +94,10 @@
             "fields": [
                 {
                     "id": "settings_interface_exact",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Exact",
                     "addToList": true,
-                    "guid": "d5148189-6e2d-42f8-a339-802ee1fbe2b8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_exact",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d5148189-6e2d-42f8-a339-802ee1fbe2b8"
                 }
             ]
@@ -164,18 +108,10 @@
             "fields": [
                 {
                     "id": "settings_interface_percentage",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Percentage",
                     "addToList": true,
-                    "guid": "31a6b961-49be-4c28-af7c-cb0bb5ac6f80"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_percentage",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "31a6b961-49be-4c28-af7c-cb0bb5ac6f80"
                 }
             ]
@@ -186,18 +122,10 @@
             "fields": [
                 {
                     "id": "settings_interface_intro_animation",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Intro Animation",
                     "addToList": true,
-                    "guid": "74f1803c-b5d2-4afe-9492-edbd4b518db9"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_intro_animation",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "74f1803c-b5d2-4afe-9492-edbd4b518db9"
                 }
             ]
@@ -208,18 +136,10 @@
             "fields": [
                 {
                     "id": "settings_interface_regular",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Regular",
                     "addToList": true,
-                    "guid": "357f5327-2267-42a8-b6df-3388630a3732"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_regular",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "357f5327-2267-42a8-b6df-3388630a3732"
                 }
             ]
@@ -230,18 +150,10 @@
             "fields": [
                 {
                     "id": "settings_interface_fast",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Fast",
                     "addToList": true,
-                    "guid": "3d1b3205-45bd-4d84-9b4f-7b10dccfbd6a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_fast",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3d1b3205-45bd-4d84-9b4f-7b10dccfbd6a"
                 }
             ]
@@ -252,18 +164,10 @@
             "fields": [
                 {
                     "id": "settings_interface_intro_animation_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Intro Animation Tooltip",
                     "addToList": true,
-                    "guid": "5db5e9e5-bf49-4b9d-b2c1-41335c278f3b"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_intro_animation_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5db5e9e5-bf49-4b9d-b2c1-41335c278f3b"
                 }
             ]
@@ -274,18 +178,10 @@
             "fields": [
                 {
                     "id": "settings_interface_hidden",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Hidden",
                     "addToList": true,
-                    "guid": "5b403195-068a-486a-99b7-2b60c58d4aa3"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_hidden",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5b403195-068a-486a-99b7-2b60c58d4aa3"
                 }
             ]
@@ -296,18 +192,10 @@
             "fields": [
                 {
                     "id": "settings_interface_ip_display_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "IP Display Mode Tooltip",
                     "addToList": true,
-                    "guid": "3409d8ce-ac87-478f-a0d7-b7127ca17ccb"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_ip_display_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3409d8ce-ac87-478f-a0d7-b7127ca17ccb"
                 }
             ]
@@ -318,18 +206,10 @@
             "fields": [
                 {
                     "id": "settings_interface_taskbar_spawn",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Flash Taskbar On Respawn",
                     "addToList": true,
-                    "guid": "1b6bf8ad-c163-4890-841c-a7c257fb5849"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_interface_taskbar_spawn",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1b6bf8ad-c163-4890-841c-a7c257fb5849"
                 }
             ]

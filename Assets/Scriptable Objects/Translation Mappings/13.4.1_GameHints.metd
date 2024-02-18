@@ -13,15 +13,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "0e3293d6-9db2-4ef6-ad4d-fb18e055b650"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0e3293d6-9db2-4ef6-ad4d-fb18e055b650"
                 }
             ]
@@ -32,18 +24,19 @@
             "fields": [
                 {
                     "id": "inventory_limit_ammo_first",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ammo Limit Reached First Time",
                     "addToList": true,
-                    "guid": "23b518aa-7a8f-44d3-a10f-d1e707c7e3de"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "inventory_limit_ammo_first",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[type]",
+                            "description": "Type of ammo."
+                        },
+                        {
+                            "tag": "[max_type_count]",
+                            "description": "Maximum allowed amount of this type of ammo."
+                        }
+                    ],
                     "guid": "23b518aa-7a8f-44d3-a10f-d1e707c7e3de"
                 }
             ]
@@ -54,18 +47,19 @@
             "fields": [
                 {
                     "id": "inventory_limit_ammo",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ammo Limit Reached",
                     "addToList": true,
-                    "guid": "4eb612a9-a1a3-434e-9bc9-6357cafd6acb"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "inventory_limit_ammo",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[type]",
+                            "description": "Type of ammo."
+                        },
+                        {
+                            "tag": "[max_type_count]",
+                            "description": "Maximum allowed amount of this type of ammo."
+                        }
+                    ],
                     "guid": "4eb612a9-a1a3-434e-9bc9-6357cafd6acb"
                 }
             ]
@@ -76,18 +70,19 @@
             "fields": [
                 {
                     "id": "inventory_limit_type_first",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Item Type Limit Reached First Time",
                     "addToList": true,
-                    "guid": "812567a2-93b4-4d73-80d6-5fdf1994af0f"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "inventory_limit_type_first",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[type]",
+                            "description": "Type of the item."
+                        },
+                        {
+                            "tag": "[max_type_count]",
+                            "description": "Maximum allowed amount of the type of item."
+                        }
+                    ],
                     "guid": "812567a2-93b4-4d73-80d6-5fdf1994af0f"
                 }
             ]
@@ -98,18 +93,19 @@
             "fields": [
                 {
                     "id": "inventory_limit_type",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Item Type Limit Reached",
                     "addToList": true,
-                    "guid": "ed4014aa-8986-49d7-a49f-31f57c91c8f0"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "inventory_limit_type",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[type]",
+                            "description": "Type of the item."
+                        },
+                        {
+                            "tag": "[max_type_count]",
+                            "description": "Maximum allowed amount of the type of item."
+                        }
+                    ],
                     "guid": "ed4014aa-8986-49d7-a49f-31f57c91c8f0"
                 }
             ]
@@ -120,18 +116,15 @@
             "fields": [
                 {
                     "id": "inventory_limit_item",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Item Limit Reached",
                     "addToList": true,
-                    "guid": "68018510-4095-4a60-a459-eed4bc95cc72"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "inventory_limit_item",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[max_item_count]",
+                            "description": "Maximum amount of items that can be carried."
+                        }
+                    ],
                     "guid": "68018510-4095-4a60-a459-eed4bc95cc72"
                 }
             ]

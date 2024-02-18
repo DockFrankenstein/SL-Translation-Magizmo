@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "decon_screen_begins_in",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Begins In",
                     "addToList": true,
-                    "guid": "b6d0cc67-2c69-4c0d-82a3-8415e42b8fc6"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "decon_screen_begins_in",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b6d0cc67-2c69-4c0d-82a3-8415e42b8fc6"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "decon_screen_please_exit",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Please Exit",
                     "addToList": true,
-                    "guid": "d809a783-e487-4102-8ca6-d8ef6250fd25"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "decon_screen_please_exit",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d809a783-e487-4102-8ca6-d8ef6250fd25"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "decon_screen_please_evacuate",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Please Evacuate",
                     "addToList": true,
-                    "guid": "85e8c7d5-2d9b-4e02-9f47-ee7ee608b759"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "decon_screen_please_evacuate",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "85e8c7d5-2d9b-4e02-9f47-ee7ee608b759"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "decon_screen_threat_analysis",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Threat Analysis",
                     "addToList": true,
-                    "guid": "77a948a1-33cf-4be3-a3b4-77ff4f7c291d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "decon_screen_threat_analysis",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "77a948a1-33cf-4be3-a3b4-77ff4f7c291d"
                 }
             ]
@@ -98,18 +66,10 @@
             "fields": [
                 {
                     "id": "decon_screen_preparing_systems",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Preparing Systems",
                     "addToList": true,
-                    "guid": "0b4a6eab-c9b3-4f6e-887f-43b8e61b6ca3"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "decon_screen_preparing_systems",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0b4a6eab-c9b3-4f6e-887f-43b8e61b6ca3"
                 }
             ]
@@ -120,18 +80,10 @@
             "fields": [
                 {
                     "id": "decon_screen_systems_ready",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Systems Ready",
                     "addToList": true,
-                    "guid": "30d6521e-6afe-42d0-9f03-34a2961b1406"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "decon_screen_systems_ready",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "30d6521e-6afe-42d0-9f03-34a2961b1406"
                 }
             ]
@@ -142,18 +94,10 @@
             "fields": [
                 {
                     "id": "decon_screen_initializing_procedure",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Initializing Procedure",
                     "addToList": true,
-                    "guid": "da5f034c-3430-4ddd-aa70-8f5243a70bbf"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "decon_screen_initializing_procedure",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "da5f034c-3430-4ddd-aa70-8f5243a70bbf"
                 }
             ]

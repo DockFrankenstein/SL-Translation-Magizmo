@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "f1_173_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-173 Description",
                     "addToList": true,
-                    "guid": "97dd1003-f88c-45d3-8833-904ddd295ea0"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_173_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "97dd1003-f88c-45d3-8833-904ddd295ea0"
                 }
             ]
@@ -32,32 +24,18 @@
             "fields": [
                 {
                     "id": "f1_173_ability_breakneck_speeds",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Breakneck Speeds Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f002cebf-123a-4176-bbf2-543dedb282e5"
                 },
                 {
                     "id": "f1_173_ability_breakneck_speeds_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Breakneck Speeds Ability Description",
                     "addToList": true,
-                    "guid": "41e280a9-a440-4b44-b2d4-ec91542cd552"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_173_ability_breakneck_speeds",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "f002cebf-123a-4176-bbf2-543dedb282e5"
-                },
-                {
-                    "id": "f1_173_ability_breakneck_speeds_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "41e280a9-a440-4b44-b2d4-ec91542cd552"
                 }
             ]
@@ -68,32 +46,18 @@
             "fields": [
                 {
                     "id": "f1_173_ability_blink",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Blink Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f8c60478-5220-458a-954e-7e33a97ca034"
                 },
                 {
                     "id": "f1_173_ability_blink_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Blink Ability Description",
                     "addToList": true,
-                    "guid": "26dd0f68-29a8-41fa-a34f-3258fb729bcc"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_173_ability_blink",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "f8c60478-5220-458a-954e-7e33a97ca034"
-                },
-                {
-                    "id": "f1_173_ability_blink_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "26dd0f68-29a8-41fa-a34f-3258fb729bcc"
                 }
             ]
@@ -104,32 +68,18 @@
             "fields": [
                 {
                     "id": "f1_173_ability_reinforced_concrete",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Reinforced Concrete Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "20d7f755-9a8e-4194-9b17-06b523ed03f0"
                 },
                 {
                     "id": "f1_173_ability_reinforced_concrete_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Reinforced Concrete Ability Description",
                     "addToList": true,
-                    "guid": "c54162fb-d4fd-4dea-a23b-1caff7e2fede"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_173_ability_reinforced_concrete",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "20d7f755-9a8e-4194-9b17-06b523ed03f0"
-                },
-                {
-                    "id": "f1_173_ability_reinforced_concrete_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c54162fb-d4fd-4dea-a23b-1caff7e2fede"
                 }
             ]
@@ -140,32 +90,18 @@
             "fields": [
                 {
                     "id": "f1_173_ability_tantrum",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Tantrum Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e47e6685-1c95-4e14-a7b1-218193cf9d9b"
                 },
                 {
                     "id": "f1_173_ability_tantrum_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Tantrum Ability Description",
                     "addToList": true,
-                    "guid": "5006ee9a-7285-4295-8c51-db980ce1411c"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_173_ability_tantrum",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "e47e6685-1c95-4e14-a7b1-218193cf9d9b"
-                },
-                {
-                    "id": "f1_173_ability_tantrum_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5006ee9a-7285-4295-8c51-db980ce1411c"
                 }
             ]

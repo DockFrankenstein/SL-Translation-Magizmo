@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: 13.4.1_LoadingHints
   m_EditorClassIdentifier: 
   fileName: LoadingHints.txt
-  defineField:
+  field:
     id: loading_hints
-    autoDisplayName: 1
-    displayName: 
+    autoDisplayName: 0
+    displayName: Loading Hints
     addToList: 1
+    dynamicValues: []
     guid: 6697722d-2ac0-45d4-8bf8-9381f08ab79b
   prefix: 

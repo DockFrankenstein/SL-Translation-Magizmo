@@ -1,6 +1,6 @@
 {
     "version": {
-        "instanceID": 26152
+        "instanceID": 26372
     },
     "items": [
         {
@@ -3449,7 +3449,7 @@
         },
         {
             "type": 0,
-            "id": "settings_audio_device_none_dedected",
+            "id": "settings_audio_device_none_detected",
             "displayText": "Settings Audio Device None Dedected",
             "guid": "e24a65e6-7403-46a4-8126-c3dc6f482100"
         },
@@ -5579,7 +5579,7 @@
         },
         {
             "type": 0,
-            "id": "death_screen_207_mix",
+            "id": "death_screen_poison",
             "displayText": "Death Screen 207 Mix",
             "guid": "2703cac0-2ef5-485c-8cea-93e80292df97"
         },

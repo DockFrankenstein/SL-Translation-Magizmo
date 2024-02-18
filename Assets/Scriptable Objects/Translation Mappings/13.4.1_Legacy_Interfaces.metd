@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "orders_give",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Give Orders",
                     "addToList": true,
-                    "guid": "e05ec93f-fb5f-4794-8c55-626862bdc44d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "orders_give",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e05ec93f-fb5f-4794-8c55-626862bdc44d"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "orders_follow",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Follow Orders",
                     "addToList": true,
-                    "guid": "09824e1f-a459-4075-985b-5901dd5c4e55"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "orders_follow",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "09824e1f-a459-4075-985b-5901dd5c4e55"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "orders_same",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Same Rank",
                     "addToList": true,
-                    "guid": "bb241a34-1f96-4bb2-b1f3-a0c3db02d097"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "orders_same",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "bb241a34-1f96-4bb2-b1f3-a0c3db02d097"
                 }
             ]
@@ -79,15 +55,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "a4139b80-2c5b-43ac-92f2-64697357a0c0"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a4139b80-2c5b-43ac-92f2-64697357a0c0"
                 }
             ]
@@ -101,15 +69,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "128ba917-205a-4e05-963b-9222bcb8b966"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "128ba917-205a-4e05-963b-9222bcb8b966"
                 }
             ]
@@ -123,15 +83,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "117ceadd-c933-4231-aac2-9b2cd688967d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "117ceadd-c933-4231-aac2-9b2cd688967d"
                 }
             ]
@@ -145,15 +97,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "1f25dd8b-8fe1-4809-bbb8-cac21e355878"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1f25dd8b-8fe1-4809-bbb8-cac21e355878"
                 }
             ]
@@ -167,15 +111,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "c6f14386-8e2b-4b03-a9b7-c1869110c2b4"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c6f14386-8e2b-4b03-a9b7-c1869110c2b4"
                 }
             ]
@@ -189,15 +125,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "8d826ab5-de4e-4266-a0a0-1f735a5a2972"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8d826ab5-de4e-4266-a0a0-1f735a5a2972"
                 }
             ]
@@ -211,15 +139,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "7d4ab1f2-5ff3-4d82-945b-1357f42703cf"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7d4ab1f2-5ff3-4d82-945b-1357f42703cf"
                 }
             ]
@@ -233,15 +153,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "e3d2a060-c100-4b5a-b854-aa1c906c187c"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e3d2a060-c100-4b5a-b854-aa1c906c187c"
                 }
             ]
@@ -255,15 +167,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "8e116374-35f1-4053-a9c2-c676e1d8e679"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8e116374-35f1-4053-a9c2-c676e1d8e679"
                 }
             ]
@@ -277,15 +181,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "5def6f76-0680-406b-83f5-c77aec8a7ae4"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5def6f76-0680-406b-83f5-c77aec8a7ae4"
                 }
             ]
@@ -299,15 +195,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "a5214a5b-b8a8-4640-a69b-8ca559cd2ff4"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a5214a5b-b8a8-4640-a69b-8ca559cd2ff4"
                 }
             ]
@@ -318,18 +206,10 @@
             "fields": [
                 {
                     "id": "death_header",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "You Died",
                     "addToList": true,
-                    "guid": "48371a9a-72ad-4f83-b453-3fd3f2cdf3b4"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_header",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "48371a9a-72ad-4f83-b453-3fd3f2cdf3b4"
                 }
             ]
@@ -340,18 +220,10 @@
             "fields": [
                 {
                     "id": "death_cause_start",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Killed by",
                     "addToList": true,
-                    "guid": "5d998bf9-d6c4-47b5-9b80-6c5df39558b8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_cause_start",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5d998bf9-d6c4-47b5-9b80-6c5df39558b8"
                 }
             ]
@@ -362,18 +234,10 @@
             "fields": [
                 {
                     "id": "death_cause_as",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "As",
                     "addToList": true,
-                    "guid": "fd14b153-501d-4818-afb0-6961b58c1d87"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "death_cause_as",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "fd14b153-501d-4818-afb0-6961b58c1d87"
                 }
             ]
@@ -387,15 +251,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "72318fed-8c5c-41f9-9ce0-47703b7013de"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "72318fed-8c5c-41f9-9ce0-47703b7013de"
                 }
             ]
@@ -406,18 +262,10 @@
             "fields": [
                 {
                     "id": "badge_hidden",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Hidden",
                     "addToList": true,
-                    "guid": "477d8369-c9db-4868-9970-9841b04baa2a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "badge_hidden",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "477d8369-c9db-4868-9970-9841b04baa2a"
                 }
             ]

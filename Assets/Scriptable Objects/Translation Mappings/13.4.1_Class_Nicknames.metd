@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "173_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-173 Nickname",
                     "addToList": true,
-                    "guid": "07e69a96-9ad6-440e-8523-194198e8d5df"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "173_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "07e69a96-9ad6-440e-8523-194198e8d5df"
                 }
             ]
@@ -35,15 +27,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "e75044ad-8c9c-4ef1-b1da-cfb58bddb723"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e75044ad-8c9c-4ef1-b1da-cfb58bddb723"
                 }
             ]
@@ -57,15 +41,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "8874feec-b7ca-406b-ad24-7db02143a597"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8874feec-b7ca-406b-ad24-7db02143a597"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "106_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-106 Nickname",
                     "addToList": true,
-                    "guid": "9d8ad37c-b8bd-41dd-b53e-269ca76e6c7a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "106_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9d8ad37c-b8bd-41dd-b53e-269ca76e6c7a"
                 }
             ]
@@ -101,15 +69,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "480f7e0d-aafd-4aed-add4-cd256332812f"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "480f7e0d-aafd-4aed-add4-cd256332812f"
                 }
             ]
@@ -120,18 +80,10 @@
             "fields": [
                 {
                     "id": "049_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-049 Nickname",
                     "addToList": true,
-                    "guid": "698dd540-f92b-4f04-b123-beb8057a5639"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "049_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "698dd540-f92b-4f04-b123-beb8057a5639"
                 }
             ]
@@ -145,15 +97,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "4ccb4092-d4b0-4eec-a623-ad4a87a8bf73"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4ccb4092-d4b0-4eec-a623-ad4a87a8bf73"
                 }
             ]
@@ -164,18 +108,10 @@
             "fields": [
                 {
                     "id": "079_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-079 Nickname",
                     "addToList": true,
-                    "guid": "cc6ac73f-f764-4411-9a7d-dfc66220d56a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "079_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cc6ac73f-f764-4411-9a7d-dfc66220d56a"
                 }
             ]
@@ -189,15 +125,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "7854e136-cf6d-4332-8f3f-e4c8e2da6569"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7854e136-cf6d-4332-8f3f-e4c8e2da6569"
                 }
             ]
@@ -208,18 +136,10 @@
             "fields": [
                 {
                     "id": "096_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-096 Nickname",
                     "addToList": true,
-                    "guid": "fadd9647-96bf-4732-a9f8-36a3bac5fd6c"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "096_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "fadd9647-96bf-4732-a9f8-36a3bac5fd6c"
                 }
             ]
@@ -230,18 +150,10 @@
             "fields": [
                 {
                     "id": "049_2_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-049-2 Nickname",
                     "addToList": true,
-                    "guid": "e96072bd-42b2-49e6-92c2-865044dfa6c8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "049_2_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e96072bd-42b2-49e6-92c2-865044dfa6c8"
                 }
             ]
@@ -255,15 +167,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "a79218a6-baa2-4dc7-9eb6-49d3b594cb1a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a79218a6-baa2-4dc7-9eb6-49d3b594cb1a"
                 }
             ]
@@ -277,15 +181,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "ec33ae83-1744-4bb4-b23a-b686f199d4d6"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ec33ae83-1744-4bb4-b23a-b686f199d4d6"
                 }
             ]
@@ -299,15 +195,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "6f9004c7-52e5-4f2b-be16-0beecdf6c3ba"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6f9004c7-52e5-4f2b-be16-0beecdf6c3ba"
                 }
             ]
@@ -321,15 +209,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "3b5f2ca7-ca5b-4a25-a3db-6bb6e9d0f0a7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3b5f2ca7-ca5b-4a25-a3db-6bb6e9d0f0a7"
                 }
             ]
@@ -343,15 +223,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "484d87ed-260f-4e2e-a865-2c64b41b833a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "484d87ed-260f-4e2e-a865-2c64b41b833a"
                 }
             ]
@@ -362,18 +234,10 @@
             "fields": [
                 {
                     "id": "939_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-939 Nickname",
                     "addToList": true,
-                    "guid": "9ea3acbc-0b0c-4933-a147-6307ce4797a7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9ea3acbc-0b0c-4933-a147-6307ce4797a7"
                 }
             ]
@@ -384,18 +248,10 @@
             "fields": [
                 {
                     "id": "939_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "bd3fde99-8f68-4055-a409-967bd6e95648"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "939_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "autoDisplayName": false,
+                    "displayName": "SCP-939 Nickname",
+                    "addToList": false,
+                    "dynamicValues": [],
                     "guid": "bd3fde99-8f68-4055-a409-967bd6e95648"
                 }
             ]
@@ -409,15 +265,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "90599e53-a86a-40f4-896b-1e464c95ce66"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "90599e53-a86a-40f4-896b-1e464c95ce66"
                 }
             ]
@@ -431,15 +279,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "84a2e42c-95bf-44d7-844e-72f83bc09007"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "84a2e42c-95bf-44d7-844e-72f83bc09007"
                 }
             ]
@@ -453,15 +293,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "eaa452d0-bb74-4b15-a864-17c3909e1c5e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "eaa452d0-bb74-4b15-a864-17c3909e1c5e"
                 }
             ]
@@ -475,15 +307,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "b1161099-bd3a-4b82-bc37-43b8ab25d0b7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b1161099-bd3a-4b82-bc37-43b8ab25d0b7"
                 }
             ]
@@ -497,15 +321,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "13d9cd8f-9ef8-482a-8ad5-d0a88e52e40e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "13d9cd8f-9ef8-482a-8ad5-d0a88e52e40e"
                 }
             ]
@@ -516,18 +332,10 @@
             "fields": [
                 {
                     "id": "3114_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-3114 Nickname",
                     "addToList": true,
-                    "guid": "0cdb7c9f-6100-48cd-856e-08f86182048d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "3114_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0cdb7c9f-6100-48cd-856e-08f86182048d"
                 }
             ]
@@ -538,18 +346,10 @@
             "fields": [
                 {
                     "id": "1507_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-1507 Nickname",
                     "addToList": true,
-                    "guid": "55278faa-f18f-412f-bff1-a13fe61ea153"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "1507_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "55278faa-f18f-412f-bff1-a13fe61ea153"
                 }
             ]
@@ -560,18 +360,10 @@
             "fields": [
                 {
                     "id": "1507_alpha_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-1507-Alpha Nickname",
                     "addToList": true,
-                    "guid": "c66b69e9-002b-4339-924f-8c084ab37d0c"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "1507_alpha_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c66b69e9-002b-4339-924f-8c084ab37d0c"
                 }
             ]
@@ -582,18 +374,10 @@
             "fields": [
                 {
                     "id": "1507_049_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-1507-049 Nickname",
                     "addToList": true,
-                    "guid": "02e1309b-60d4-4659-99e1-e055908d8acb"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "1507_049_nickname",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "02e1309b-60d4-4659-99e1-e055908d8acb"
                 }
             ]

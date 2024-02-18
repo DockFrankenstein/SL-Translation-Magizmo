@@ -21,10 +21,12 @@ namespace Project.Editor.Translation.Defines
 
         public MultiEntryWindowTree(TreeViewState state, MultiColumnHeader multiColumnHeader, MultiEntryWindow window) : base(state, multiColumnHeader)
         {
-            this.window = window;
             rowHeight = 48f;
             showAlternatingRowBackgrounds = true;
             showBorder = true;
+
+            this.window = window;
+            window.OnAssetReload += Reload;
 
             Reload();
         }
@@ -114,7 +116,7 @@ namespace Project.Editor.Translation.Defines
                     var defineItem = new DefineItem(item, define);
                     item.defineItems.Add(defineItem);
 
-                    if (!window.asset.useSeparationCharacter && first)
+                    if (window.SingleLineMode && first)
                     {
                         first = false;
                         continue;
@@ -155,26 +157,18 @@ namespace Project.Editor.Translation.Defines
                         .ResizeToBottom(EditorGUIUtility.singleLineHeight)
                         .MoveY(-EditorGUIUtility.standardVerticalSpacing);
 
-                    var addDefineRect = bottomLineRect
-                        .ResizeToRight(80f);
-
-                    if (window.asset.useSeparationCharacter && GUI.Button(addDefineRect, "Add Define"))
-                    {
-                        CreateLine(lineItem);
-                    }
-
                     if (Event.current.type == EventType.Repaint)
                     {
                         var colorRect = args.rowRect.ResizeToLeft(8f);
-                        switch (window.asset.useSeparationCharacter)
+                        switch (window.SingleLineMode)
                         {
                             case true:
-                                new GUIStyle(EditorStyles.label).WithBackgroundColor(new Color(3f / 255f, 252f / 255f, 161f / 255f)).Draw(colorRect, new GUIContent(string.Empty, ""), false, false, false, false);
-                                qGUIEditorUtility.BorderAround(colorRect);
-                                break;
-                            case false:
                                 if (lineItem.defineItems.Count > 0)
                                     DrawColorForDefinition(colorRect, lineItem.defineItems[0].define);
+                                break;
+                            case false:
+                                new GUIStyle(EditorStyles.label).WithBackgroundColor(new Color(3f / 255f, 252f / 255f, 161f / 255f)).Draw(colorRect, new GUIContent(string.Empty, ""), false, false, false, false);
+                                qGUIEditorUtility.BorderAround(colorRect);
                                 break;
                         }
                         
@@ -244,7 +238,7 @@ namespace Project.Editor.Translation.Defines
                 case 2:
                 case 3:
                 case 4:
-                    if (window.asset.useSeparationCharacter) break;
+                    if (!window.SingleLineMode) break;
 
                     if (item.defineItems.Count > 0)
                         DefineCellGUI(cellRect, item.defineItems[0], columnIndex, ref args);
@@ -257,6 +251,17 @@ namespace Project.Editor.Translation.Defines
 
                     if (GUI.Button(minusRect, new GUIContent(qGUIEditorUtility.MinusIcon), EditorStyles.label))
                         DeleteLine(item);
+
+                    var addDefineRect = cellRect
+                        .ResizeToLeft(110f)
+                        .ResizeToBottom(EditorGUIUtility.singleLineHeight)
+                        .MoveX(-114f)
+                        .MoveY(-2f);
+
+                    if (!window.SingleLineMode && GUI.Button(addDefineRect, "Create New Entry"))
+                    {
+                        CreateLine(item);
+                    }
                     break;
             }
         }
@@ -372,7 +377,7 @@ namespace Project.Editor.Translation.Defines
                     case DefineItem defineItem:
                         window.inspector.SelectedItem = new MultiEntryWindowInspector.DefineFieldContext()
                         {
-                            defineField = defineItem.define,
+                            field = defineItem.define,
                             line = defineItem.line.line,
                         };
                         break;

@@ -13,6 +13,7 @@
                     "autoDisplayName": false,
                     "displayName": "Gameplay Category",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0d4ca1ff-50f0-4cc4-a6d8-4b1769cf7417"
                 }
             ]
@@ -26,6 +27,7 @@
                     "autoDisplayName": false,
                     "displayName": "Weapons Category",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "08e0f475-6267-42b2-a629-59829b279bde"
                 }
             ]
@@ -39,6 +41,7 @@
                     "autoDisplayName": false,
                     "displayName": "Movement Category",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e6cb47ad-3715-48ba-806f-07bc923a98f1"
                 }
             ]
@@ -52,6 +55,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "83cccb93-c2b3-46f2-9147-40b67868635f"
                 }
             ]
@@ -63,8 +67,9 @@
                 {
                     "id": "settings_category_comms",
                     "autoDisplayName": false,
-                    "displayName": "Communication Category",
+                    "displayName": "Comms Category",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ec749523-f636-4b4b-bcd0-bce75d786021"
                 }
             ]
@@ -78,6 +83,7 @@
                     "autoDisplayName": false,
                     "displayName": "System Category",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "61d6c899-4012-4cee-825c-2edcb69915c5"
                 }
             ]
@@ -91,6 +97,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "bd64fef7-0cef-499b-a043-3df8c4c6e585"
                 }
             ]
@@ -102,8 +109,9 @@
                 {
                     "id": "settings_category_079",
                     "autoDisplayName": false,
-                    "displayName": "SCP-079 Category",
+                    "displayName": "079 Category",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "fcde3e9b-71b2-4704-a2b1-fd67e718207e"
                 }
             ]

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Project.Translation.Mapping
@@ -26,9 +27,9 @@ namespace Project.Translation.Mapping
             this.id = id;
         }
 
-        public MappedField(string id, MappingBase definesBase) : this(id)
+        public MappedField(string id, MappingBase mappingContainer) : this(id)
         {
-            this.mappingContainer = definesBase;
+            this.mappingContainer = mappingContainer;
         }
 
         public string id = string.Empty;
@@ -37,6 +38,9 @@ namespace Project.Translation.Mapping
 
         /// <summary>If disabled, application will ignore this definition and will only use it for exporting to SL's format.</summary>
         public bool addToList = true;
+
+        /// <summary>List of avaliable tags for this field representing dynamic values (e.g. [name] or {0})</summary>
+        public List<DynamicValue> dynamicValues = new List<DynamicValue>();
 
         [GUID] public string guid;
 
@@ -69,6 +73,14 @@ namespace Project.Translation.Mapping
                 displayName = displayName,
                 addToList = addToList,
             };
+        }
+
+        /// <summary>Value that can be dynamically changed by the game using a tag (e.g. {0} or [key]).</summary>
+        [Serializable]
+        public class DynamicValue
+        {
+            public string tag;
+            public string description;
         }
     }
 }

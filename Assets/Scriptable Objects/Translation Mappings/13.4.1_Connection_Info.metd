@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "conn_establishing",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Establishing",
                     "addToList": true,
-                    "guid": "f4f501fd-bbd4-4fa2-82db-b20d0ec87dd9"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_establishing",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f4f501fd-bbd4-4fa2-82db-b20d0ec87dd9"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "conn_establishing_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Establishing Description",
                     "addToList": true,
-                    "guid": "5eb2101f-7ca6-421d-ab0b-94e31e0054a1"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_establishing_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5eb2101f-7ca6-421d-ab0b-94e31e0054a1"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "conn_round_restart",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Round Restart",
                     "addToList": true,
-                    "guid": "2523b0ad-ff16-4e5b-a3b1-492179fe1f31"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_round_restart",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2523b0ad-ff16-4e5b-a3b1-492179fe1f31"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "conn_round_restart_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Round Restart Description",
                     "addToList": true,
-                    "guid": "2c9e3de3-2a46-4b14-8e2b-00e023401bb3"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_round_restart_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2c9e3de3-2a46-4b14-8e2b-00e023401bb3"
                 }
             ]
@@ -98,18 +66,10 @@
             "fields": [
                 {
                     "id": "conn_loading",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Loading",
                     "addToList": true,
-                    "guid": "b97b0c97-8143-460a-b1b7-85c62e5dfaed"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_loading",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b97b0c97-8143-460a-b1b7-85c62e5dfaed"
                 }
             ]
@@ -120,18 +80,10 @@
             "fields": [
                 {
                     "id": "conn_loading_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Loading Description",
                     "addToList": true,
-                    "guid": "7b51b639-0852-465c-82fc-fe1de495da67"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_loading_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7b51b639-0852-465c-82fc-fe1de495da67"
                 }
             ]
@@ -142,18 +94,10 @@
             "fields": [
                 {
                     "id": "conn_server_security_verification",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Server Security Verification",
                     "addToList": true,
-                    "guid": "0eebbd90-3710-4ff2-80f6-d750ef3f388b"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_server_security_verification",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0eebbd90-3710-4ff2-80f6-d750ef3f388b"
                 }
             ]
@@ -164,18 +108,10 @@
             "fields": [
                 {
                     "id": "conn_server_security_verification_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Server Security Verification Description",
                     "addToList": true,
-                    "guid": "f08d234e-30ce-4d8e-9538-7dcb911941e1"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_server_security_verification_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f08d234e-30ce-4d8e-9538-7dcb911941e1"
                 }
             ]
@@ -186,18 +122,10 @@
             "fields": [
                 {
                     "id": "conn_unloading",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Unloading",
                     "addToList": true,
-                    "guid": "fdb8894e-b6de-481b-855b-ddbfe4edbe12"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_unloading",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "fdb8894e-b6de-481b-855b-ddbfe4edbe12"
                 }
             ]
@@ -208,18 +136,10 @@
             "fields": [
                 {
                     "id": "conn_unloading_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Unloading Description",
                     "addToList": true,
-                    "guid": "c0790c24-b8f6-4eec-9d2c-48c6d898dce0"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_unloading_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c0790c24-b8f6-4eec-9d2c-48c6d898dce0"
                 }
             ]

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: 13.4.1_Nuke_Silo_Sign
   m_EditorClassIdentifier: 
   fileName: Nuke_Silo_Sign.txt
-  defineField:
+  field:
     id: nuke_sign
-    autoDisplayName: 1
-    displayName: 
+    autoDisplayName: 0
+    displayName: Warhead Sign
     addToList: 1
+    dynamicValues: []
     guid: 264510fc-8cbb-4805-8011-434f78cf6546
   prefix: "#INFO FOR TRANSLATORS: In this file you can use as many lines as you want,
     all of them will be displayed on the display above the door.\r"

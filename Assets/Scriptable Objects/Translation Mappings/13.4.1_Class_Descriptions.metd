@@ -10,9 +10,10 @@
             "fields": [
                 {
                     "id": "intro_description_173",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-173 Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6815149c-d7ab-45d7-87a7-d0b59a3074f5"
                 }
             ]
@@ -23,9 +24,10 @@
             "fields": [
                 {
                     "id": "intro_description_classd",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Classd Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "40bd1226-c211-4e41-b638-a6f3251b73ec"
                 }
             ]
@@ -36,9 +38,10 @@
             "fields": [
                 {
                     "id": "intro_description_spectator",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Spectator Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "32d9083e-3cc3-4ba0-bff0-f6512207e082"
                 }
             ]
@@ -49,9 +52,10 @@
             "fields": [
                 {
                     "id": "intro_description_106",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-106 Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f10eae3d-46b4-4483-a03c-a69b79dceac3"
                 }
             ]
@@ -62,9 +66,10 @@
             "fields": [
                 {
                     "id": "intro_description_mtf_specialist",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mtf Specialist Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4eff08ef-4102-4e35-be06-ca984f3f6cd3"
                 }
             ]
@@ -75,9 +80,10 @@
             "fields": [
                 {
                     "id": "intro_description_049",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-049 Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "67db62c3-1592-4ef6-b4a0-29a7ef4a218e"
                 }
             ]
@@ -88,9 +94,10 @@
             "fields": [
                 {
                     "id": "intro_description_scientist",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Scientist Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ac150823-7f68-4f88-8664-48deee75d2e3"
                 }
             ]
@@ -101,9 +108,10 @@
             "fields": [
                 {
                     "id": "intro_description_079",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-079 Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b9ec20f6-d518-4347-99fe-b5aa20c626cc"
                 }
             ]
@@ -114,9 +122,10 @@
             "fields": [
                 {
                     "id": "intro_description_chaos_conscript",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Chaos Conscript Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8c3eca1b-8976-4060-86e8-d4818b63f239"
                 }
             ]
@@ -127,9 +136,10 @@
             "fields": [
                 {
                     "id": "intro_description_096",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-096 Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b3516ecc-c627-4ffa-be15-25d43055e4f2"
                 }
             ]
@@ -140,9 +150,10 @@
             "fields": [
                 {
                     "id": "intro_description_049_2",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-049-2 Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6b7e4d95-7831-4e3e-a76e-252d924adf19"
                 }
             ]
@@ -153,9 +164,10 @@
             "fields": [
                 {
                     "id": "intro_description_mtf_sergeant",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mtf Sergeant Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "61c054dd-3d06-4db5-8a95-c2e54ee34a49"
                 }
             ]
@@ -166,9 +178,10 @@
             "fields": [
                 {
                     "id": "intro_description_mtf_captain",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mtf Captain Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ed537725-9ac4-4056-af93-c44f6ae2e698"
                 }
             ]
@@ -179,9 +192,10 @@
             "fields": [
                 {
                     "id": "intro_description_mtf_private",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mtf Private Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "28b3b87e-1426-444f-9b37-204136a375b0"
                 }
             ]
@@ -192,9 +206,10 @@
             "fields": [
                 {
                     "id": "intro_description_tutorial",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Tutorial Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "664f6890-d975-483c-88da-18a948a14cf8"
                 }
             ]
@@ -205,9 +220,10 @@
             "fields": [
                 {
                     "id": "intro_description_mtf_guard",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mtf Guard Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b947606b-75c5-4f7a-8c64-ab9957724d26"
                 }
             ]
@@ -218,9 +234,10 @@
             "fields": [
                 {
                     "id": "intro_description_939",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-939 Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1360211c-7097-4f0f-bc7e-044ef7c0e9a1"
                 }
             ]
@@ -232,8 +249,9 @@
                 {
                     "id": "",
                     "autoDisplayName": true,
-                    "displayName": "",
+                    "displayName": " Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "619d5b44-9c65-4c30-8b9d-09dd84f48c2d"
                 }
             ]
@@ -244,9 +262,10 @@
             "fields": [
                 {
                     "id": "intro_description_chaos_rifleman",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Chaos Rifleman Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a401f855-7cca-4fa7-9bcb-a291e86b9fc7"
                 }
             ]
@@ -257,9 +276,10 @@
             "fields": [
                 {
                     "id": "intro_description_chaos_marauder",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Chaos Marauder Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e6f1ebc8-f531-48a0-9893-7450d1293a60"
                 }
             ]
@@ -270,9 +290,10 @@
             "fields": [
                 {
                     "id": "intro_description_chaos_repressor",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Chaos Repressor Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6e7b4584-d95b-44d0-838c-c04555538352"
                 }
             ]
@@ -284,8 +305,9 @@
                 {
                     "id": "",
                     "autoDisplayName": true,
-                    "displayName": "",
+                    "displayName": " Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8d43effe-d7f2-438d-ba3d-68de4eafb4f1"
                 }
             ]
@@ -297,8 +319,9 @@
                 {
                     "id": "",
                     "autoDisplayName": true,
-                    "displayName": "",
+                    "displayName": " Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b7999980-bd01-48cc-b132-ce0b973ad1ad"
                 }
             ]
@@ -309,9 +332,10 @@
             "fields": [
                 {
                     "id": "intro_description_3114",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-3114 Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d8994e10-ed8b-4e01-8beb-669d69d101d1"
                 }
             ]
@@ -322,9 +346,10 @@
             "fields": [
                 {
                     "id": "intro_description_1507",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-1507 Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "393925c8-6097-45ff-9a3f-77fca100b1cc"
                 }
             ]
@@ -335,9 +360,10 @@
             "fields": [
                 {
                     "id": "intro_description_1507_alpha",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-1507-Alpha Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1d5e9038-5da9-494c-8851-18078fcde757"
                 }
             ]
@@ -348,9 +374,10 @@
             "fields": [
                 {
                     "id": "intro_description_1507_049",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-1507-049 Intro Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0d34d7e4-4c20-450d-b017-6d95ae99aeb1"
                 }
             ]

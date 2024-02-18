@@ -10,9 +10,10 @@
             "fields": [
                 {
                     "id": "049_prompt_revive_left",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Soul Left",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b3eeefa8-1340-4f47-9a8b-9a94e8b7dd51"
                 }
             ]
@@ -23,9 +24,10 @@
             "fields": [
                 {
                     "id": "049_prompt_revive_expired",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Expired Corpse",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8789de96-5132-400a-9139-03f634ae69f9"
                 }
             ]
@@ -36,9 +38,10 @@
             "fields": [
                 {
                     "id": "049_prompt_revive_exceeded_amount",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Corpse Revived Too Many Times",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7bdcfd2a-8f64-4c14-a0d0-0aac013ab052"
                 }
             ]
@@ -49,9 +52,10 @@
             "fields": [
                 {
                     "id": "049_prompt_revive_decline",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Soul Declined",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b2245f12-4699-4737-ae41-1ae8645f9fda"
                 }
             ]
@@ -62,9 +66,10 @@
             "fields": [
                 {
                     "id": "049_prompt_revive_invalid",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Invalid Corpse",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8da2125b-9b73-4308-ba9b-db5f45143360"
                 }
             ]
@@ -75,9 +80,10 @@
             "fields": [
                 {
                     "id": "049_2_prompt_consume_already",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Consumed Already",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "96a70f99-7646-4a20-a5f9-800f6343e3a2"
                 }
             ]
@@ -88,9 +94,10 @@
             "fields": [
                 {
                     "id": "049_2_prompt_consume_not_human",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Corpse Is Not Human",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5f8b32e5-84da-4420-943b-882e8e7c52b8"
                 }
             ]
@@ -101,9 +108,10 @@
             "fields": [
                 {
                     "id": "049_cooldown_message",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cooldown Message",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7da9d3e9-c781-48a7-8cdf-5a572a0d55c1"
                 }
             ]
@@ -114,9 +122,10 @@
             "fields": [
                 {
                     "id": "049_2_prompt_revive_permission_denied",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Resurrection Declined",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5660fd67-63c1-42d3-a074-0e1b4399fb6a"
                 }
             ]
@@ -127,9 +136,15 @@
             "fields": [
                 {
                     "id": "049_2_prompt_revive_permission",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Deny Resurrection Prompt",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "Deny key."
+                        }
+                    ],
                     "guid": "089987e7-69cc-4855-a764-8196f4b1691c"
                 }
             ]
@@ -140,9 +155,10 @@
             "fields": [
                 {
                     "id": "049_no_target",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "No Target",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "57935d38-bc76-4291-bd09-e90b84493bac"
                 }
             ]
@@ -153,9 +169,10 @@
             "fields": [
                 {
                     "id": "049_2_prompt_consume_full_health",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Already Full Health",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b61072c4-e850-44a3-8fbb-94fcfb633765"
                 }
             ]
@@ -166,9 +183,10 @@
             "fields": [
                 {
                     "id": "049_2_prompt_consume_already_now",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Corpse Already Being Consumed",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7c8a608c-23b7-4a20-8372-677732d02ae4"
                 }
             ]
@@ -179,9 +197,10 @@
             "fields": [
                 {
                     "id": "f1_049_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-049 Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "806ee677-2dd5-48ee-989c-bedc23a6e1e7"
                 }
             ]
@@ -192,9 +211,10 @@
             "fields": [
                 {
                     "id": "f1_049_2_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-049-2 Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f8e87ce0-3fcf-42a9-9872-568f5d18caf1"
                 }
             ]
@@ -205,16 +225,18 @@
             "fields": [
                 {
                     "id": "f1_049_ability_cardiac_attack",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cardiac Attack Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c81271b8-38f8-4fd7-af32-6c173c1b0773"
                 },
                 {
                     "id": "f1_049_ability_cardiac_attack_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cardiac Attack Ability Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1df0c559-2e9d-403d-bdc2-4d75740deed2"
                 }
             ]
@@ -225,16 +247,18 @@
             "fields": [
                 {
                     "id": "f1_049_ability_good_sense",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Good Sense Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b845a460-8800-4148-b2b7-b956e97f4f2c"
                 },
                 {
                     "id": "f1_049_ability_good_sense_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Good Sense Ability Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "72f1c135-a000-4680-8932-a965368dbf07"
                 }
             ]
@@ -245,16 +269,18 @@
             "fields": [
                 {
                     "id": "f1_049_ability_doctors_call",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Doctors Call Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f7f0ce1d-31a5-4c84-9053-46c95f00dcbc"
                 },
                 {
                     "id": "f1_049_ability_doctors_call_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Doctors Call Ability Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "165d34c6-5e76-41db-8db4-b1609043defe"
                 }
             ]
@@ -265,16 +291,18 @@
             "fields": [
                 {
                     "id": "f1_049_ability_no_waste",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "No Waste Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0740a017-0509-40ab-a6d7-cb01358cef5d"
                 },
                 {
                     "id": "f1_049_ability_no_waste_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "No Waste Ability Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "69686f6e-9fc5-482e-b830-e56d0b68ca02"
                 }
             ]
@@ -285,16 +313,18 @@
             "fields": [
                 {
                     "id": "f1_049_2_ability_lobotomized_bloodlust",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Lobotomized Bloodlust Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0cfa1f1f-f4b7-4909-9775-f1bc93268c2d"
                 },
                 {
                     "id": "f1_049_2_ability_lobotomized_bloodlust_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Lobotomized Bloodlust Ability Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f50cf9c4-22bd-460c-bef4-569b8c3b8b1f"
                 }
             ]
@@ -305,16 +335,18 @@
             "fields": [
                 {
                     "id": "f1_049_2_ability_voracity",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ability Voracity Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7d40cdb6-91d6-49b4-ad11-3c78a3897121"
                 },
                 {
                     "id": "f1_049_2_ability_voracity_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ability Voracity Ability Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5269ad14-5681-46c0-8053-bc7d9b0a7a14"
                 }
             ]
@@ -325,9 +357,10 @@
             "fields": [
                 {
                     "id": "049_prompt_revive",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Revive Prompt",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4144aee8-7ccd-4133-bcd6-d757849cc149"
                 }
             ]
@@ -338,9 +371,15 @@
             "fields": [
                 {
                     "id": "049_prompt_hold_key",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Hold Key Prompt",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "The revive key."
+                        }
+                    ],
                     "guid": "bb59bf20-8212-4062-a7ea-a6088db95a7e"
                 }
             ]

@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "item_category_none",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "None Category",
                     "addToList": true,
-                    "guid": "fcffdb1d-649f-476e-9ff7-cc8820ae3edb"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "item_category_none",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "fcffdb1d-649f-476e-9ff7-cc8820ae3edb"
                 }
             ]
@@ -32,41 +24,25 @@
             "fields": [
                 {
                     "id": "item_category_keycard",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Keycard Category",
                     "addToList": true,
-                    "guid": "a178abba-b135-4e1e-be54-c4fbf50d202e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "item_category_keycard",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a178abba-b135-4e1e-be54-c4fbf50d202e"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "15591d6a-c99e-45f9-81ec-f7a53219c3c4",
+            "guid": "65058496-dd41-4166-be95-9767315f0dc3",
             "fields": [
                 {
                     "id": "item_category_medical",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Medical Category",
                     "addToList": true,
-                    "guid": "b924e06e-829b-4fdc-874e-968c0040baf6"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "item_category_medical",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "b924e06e-829b-4fdc-874e-968c0040baf6"
+                    "dynamicValues": [],
+                    "guid": "a8bff1fb-fde9-4fc1-9bb9-c641712e6720"
                 }
             ]
         },
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "item_category_radio",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Radio Category",
                     "addToList": true,
-                    "guid": "71c663cf-2508-4c1b-8b0a-a677364cca75"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "item_category_radio",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "71c663cf-2508-4c1b-8b0a-a677364cca75"
                 }
             ]
@@ -98,18 +66,10 @@
             "fields": [
                 {
                     "id": "item_category_firearm",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Firearm Category",
                     "addToList": true,
-                    "guid": "d145dba6-caeb-41ca-b237-12ddaac88259"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "item_category_firearm",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d145dba6-caeb-41ca-b237-12ddaac88259"
                 }
             ]
@@ -120,18 +80,10 @@
             "fields": [
                 {
                     "id": "item_category_grenade",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Grenade Category",
                     "addToList": true,
-                    "guid": "0aff5396-eafe-4fb1-af62-729e901248f8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "item_category_grenade",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0aff5396-eafe-4fb1-af62-729e901248f8"
                 }
             ]
@@ -142,18 +94,10 @@
             "fields": [
                 {
                     "id": "item_category_scp_item",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Scp Item Category",
                     "addToList": true,
-                    "guid": "fa950de7-9402-40bb-9ea8-6980c0d843e7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "item_category_scp_item",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "fa950de7-9402-40bb-9ea8-6980c0d843e7"
                 }
             ]
@@ -164,18 +108,10 @@
             "fields": [
                 {
                     "id": "item_category_micro",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Micro Category",
                     "addToList": true,
-                    "guid": "b02fc829-1ada-4dc2-9e95-ff12eb8d9845"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "item_category_micro",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b02fc829-1ada-4dc2-9e95-ff12eb8d9845"
                 }
             ]
@@ -186,18 +122,10 @@
             "fields": [
                 {
                     "id": "item_category_ammo",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ammo Category",
                     "addToList": true,
-                    "guid": "211feee7-ee81-4d4a-a71f-6711539f525d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "item_category_ammo",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "211feee7-ee81-4d4a-a71f-6711539f525d"
                 }
             ]
@@ -208,18 +136,10 @@
             "fields": [
                 {
                     "id": "item_category_armor",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Armor Category",
                     "addToList": true,
-                    "guid": "1e3bd142-2740-4bb2-a655-064586086d54"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "item_category_armor",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1e3bd142-2740-4bb2-a655-064586086d54"
                 }
             ]

@@ -10,9 +10,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_shoot",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Shoot",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ef975c01-0757-4702-a9d5-028db0e746c9"
                 }
             ]
@@ -23,9 +24,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_zoom",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Zoom",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "dcb75165-681c-4600-b93e-aec79f3736b8"
                 }
             ]
@@ -36,9 +38,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_jump",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Jump",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "83214e5a-dcf4-4cc3-b4eb-a9a4b53624d5"
                 }
             ]
@@ -49,9 +52,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_interact",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Interact",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "414c8e02-724a-488b-b9d3-f6201ae21fef"
                 }
             ]
@@ -62,9 +66,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_inventory",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Inventory",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ec91141b-550e-432d-9aec-be623ac0d8f3"
                 }
             ]
@@ -75,9 +80,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_reload",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Reload",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b3b7df73-6647-4200-a5dd-49ead5f5a193"
                 }
             ]
@@ -88,9 +94,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_sprint",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Sprint",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6fe3de8a-f3a4-496f-8a35-5a9f52bb7a3c"
                 }
             ]
@@ -101,9 +108,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_vc",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Voice Chat",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "01a9cd2a-2edb-4dc6-8427-763c5b83cdc9"
                 }
             ]
@@ -114,9 +122,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_sneak",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Sneak",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "48f3322d-c5bb-463a-a018-ed33868711d9"
                 }
             ]
@@ -127,9 +136,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_move_forward",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Move Forward",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "be4863af-2ff9-4bb1-b594-541f3e15027c"
                 }
             ]
@@ -140,9 +150,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_move_backward",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Move Backward",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a777f785-b335-4d79-ba31-039efb651fe4"
                 }
             ]
@@ -153,9 +164,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_move_left",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Move Left",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8134b5cd-e049-4dbb-9330-359646075a17"
                 }
             ]
@@ -166,9 +178,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_move_right",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Move Right",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e7691bcf-e0f5-4715-aa7b-ac7c57ad0c96"
                 }
             ]
@@ -179,9 +192,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_player_list",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Player List",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "68daa81a-1c44-4cad-8ffc-a2e9404e8deb"
                 }
             ]
@@ -192,9 +206,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_f1",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "F1",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7e111e83-1d7b-44a5-bb53-5cb7daff8cd5"
                 }
             ]
@@ -205,9 +220,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_ra",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Remote Admin",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "40b5baef-a5b8-4a95-b72e-9849be9d9061"
                 }
             ]
@@ -218,9 +234,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_flashlight",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Flashlight",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2dfff14d-5682-4d93-9157-2aa9e8e555ab"
                 }
             ]
@@ -231,9 +248,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_vc_alt",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Alt Voice Chat",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "995919ec-a53a-4e19-a827-1ed482ff6776"
                 }
             ]
@@ -244,9 +262,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_noclip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Noclip",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8117f1bc-159e-4d39-9644-2e1f6135b05c"
                 }
             ]
@@ -257,9 +276,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_console",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Console",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1cfbc7c1-8029-4ed9-b6d2-a6078909998c"
                 }
             ]
@@ -273,6 +293,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "57b04a1a-abbe-4e79-9c8e-087df6fbdab6"
                 }
             ]
@@ -283,9 +304,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_inspect",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Inspect",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b2917051-2dbc-4ae1-95d7-0d14a2c48d39"
                 }
             ]
@@ -296,9 +318,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_cock",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Cock",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f9d5b448-612d-40eb-93a4-61a1248cdbf8"
                 }
             ]
@@ -309,9 +332,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_throw",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Throw",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "62b8ff94-8262-4f65-a237-19453c61c99e"
                 }
             ]
@@ -325,6 +349,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "06242d7c-ea7b-4197-93dd-45275b1b4843"
                 }
             ]
@@ -338,6 +363,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cb1f8f67-35aa-4218-9dae-e7097e61e840"
                 }
             ]
@@ -351,6 +377,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "86883029-ee07-4375-8826-f4795bc5a167"
                 }
             ]
@@ -361,9 +388,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_gui_hide",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "GUI Hide",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e88a7ca5-4276-4183-b602-aad7bf6c3734"
                 }
             ]
@@ -374,9 +402,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_noclip_fog",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Toggle Noclip Fog",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f91e762e-c864-4677-a864-a143684a0c90"
                 }
             ]
@@ -390,6 +419,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "bcfd9594-d0d9-4fbb-9133-f939a6f4799c"
                 }
             ]
@@ -403,6 +433,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1bf2a1d0-0320-4bda-8b56-758f4552c527"
                 }
             ]
@@ -416,6 +447,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d17ba521-68d7-475a-981c-0319e39abdd0"
                 }
             ]
@@ -426,9 +458,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_079_free_look",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-SCP-079 Free Look",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "07eee4e6-840e-4f74-ac0d-ac858c25fc4b"
                 }
             ]
@@ -439,9 +472,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_079_door_lock",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-SCP-079 Door Lock",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c9968ec7-bd13-46cd-9c53-ce64ca9b5dc7"
                 }
             ]
@@ -452,9 +486,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_079_unlock_all",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-SCP-079 Unlock All",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "76104f7b-b8ae-4866-9df4-0f96f4b6e809"
                 }
             ]
@@ -465,9 +500,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_079_blackout",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-079 Blackout",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ef08f4a0-956d-4fd5-9e91-1da15699be69"
                 }
             ]
@@ -478,9 +514,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_079_lockdown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-079 Lockdown",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2fa87262-6e96-4359-93f1-26b04fb4e4dd"
                 }
             ]
@@ -491,9 +528,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_079_ping",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-079 Ping",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d6c3026a-7dbe-48fa-9f15-455b4dbbee37"
                 }
             ]
@@ -504,9 +542,10 @@
             "fields": [
                 {
                     "id": "settings_input_key_079_scanner",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-079 Scanner",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6d522322-cc2b-4fc4-be4b-7f565de7c4ba"
                 }
             ]

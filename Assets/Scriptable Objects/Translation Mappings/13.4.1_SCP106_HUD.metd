@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "106_attack_cooldown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Attack Cooldown",
                     "addToList": true,
-                    "guid": "6a7ac5b6-b78d-415c-9636-b4b039000c4d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "106_attack_cooldown",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6a7ac5b6-b78d-415c-9636-b4b039000c4d"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "106_map_unavaliable_surface",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Map Unavaliable On Surface",
                     "addToList": true,
-                    "guid": "73e36e3d-4a21-4d41-8f9a-5211fb71105b"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "106_map_unavaliable_surface",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "73e36e3d-4a21-4d41-8f9a-5211fb71105b"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "106_map_unavaliable_elevator",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Map Unavaliable In Elevator",
                     "addToList": true,
-                    "guid": "c622a598-c5ba-4797-ad45-2b687de58468"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "106_map_unavaliable_elevator",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c622a598-c5ba-4797-ad45-2b687de58468"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "f1_106_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-106 Description",
                     "addToList": true,
-                    "guid": "609001a8-c018-4e9c-a905-0b1b0ea38c42"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_106_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "609001a8-c018-4e9c-a905-0b1b0ea38c42"
                 }
             ]
@@ -98,32 +66,18 @@
             "fields": [
                 {
                     "id": "f1_106_ability_capture",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Capture Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7839f1ff-eef1-4fb6-a54b-63abc2acc10d"
                 },
                 {
                     "id": "f1_106_ability_capture_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Capture Ability Description",
                     "addToList": true,
-                    "guid": "0c0cfe73-14f0-439f-bcb8-fc9c7b113dde"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_106_ability_capture",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "7839f1ff-eef1-4fb6-a54b-63abc2acc10d"
-                },
-                {
-                    "id": "f1_106_ability_capture_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0c0cfe73-14f0-439f-bcb8-fc9c7b113dde"
                 }
             ]
@@ -134,32 +88,18 @@
             "fields": [
                 {
                     "id": "f1_106_ability_stalk",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Stalk Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d12616bc-f536-4a03-a514-b2ed6ea0ab40"
                 },
                 {
                     "id": "f1_106_ability_stalk_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Stalk Ability Description",
                     "addToList": true,
-                    "guid": "a6f60637-90f1-4a6f-acd5-fd4f90762af1"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_106_ability_stalk",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "d12616bc-f536-4a03-a514-b2ed6ea0ab40"
-                },
-                {
-                    "id": "f1_106_ability_stalk_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a6f60637-90f1-4a6f-acd5-fd4f90762af1"
                 }
             ]
@@ -170,32 +110,18 @@
             "fields": [
                 {
                     "id": "f1_106_ability_hunters_atlas",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Hunters Atlas Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "31546e99-98cb-4ed0-a1ba-a463e1af4735"
                 },
                 {
                     "id": "f1_106_ability_hunters_atlas_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Hunters Atlas Ability Description",
                     "addToList": true,
-                    "guid": "bc0f0399-b777-429f-83af-d62bac8d9e84"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_106_ability_hunters_atlas",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "31546e99-98cb-4ed0-a1ba-a463e1af4735"
-                },
-                {
-                    "id": "f1_106_ability_hunters_atlas_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "bc0f0399-b777-429f-83af-d62bac8d9e84"
                 }
             ]
@@ -206,32 +132,18 @@
             "fields": [
                 {
                     "id": "f1_106_ability_blissful_agony",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Blissful Agony Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "67ec064c-7ab2-4ebe-ad85-465f5ea909ea"
                 },
                 {
                     "id": "f1_106_ability_blissful_agony_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Blissful Agony Ability Description",
                     "addToList": true,
-                    "guid": "4d523079-d0b3-4e4b-bb3c-5cde66936a1a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_106_ability_blissful_agony",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "guid": "67ec064c-7ab2-4ebe-ad85-465f5ea909ea"
-                },
-                {
-                    "id": "f1_106_ability_blissful_agony_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4d523079-d0b3-4e4b-bb3c-5cde66936a1a"
                 }
             ]

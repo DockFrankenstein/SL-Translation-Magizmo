@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "menu_warning_header",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Warning Header",
                     "addToList": true,
-                    "guid": "ff2bd9ac-5bed-4813-be6b-79e49c3e4eba"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "menu_warning_header",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ff2bd9ac-5bed-4813-be6b-79e49c3e4eba"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "menu_warning_okay",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Okay",
                     "addToList": true,
-                    "guid": "17c7ab44-3c98-40ee-8f86-28c1e0a018a7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "menu_warning_okay",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "17c7ab44-3c98-40ee-8f86-28c1e0a018a7"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "menu_warning_intel",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Intel Warning",
                     "addToList": true,
-                    "guid": "1f480be9-1f55-4d72-b38e-9a20a43584c8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "menu_warning_intel",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1f480be9-1f55-4d72-b38e-9a20a43584c8"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "menu_warning_vc_update",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Voice Chat Update Warning",
                     "addToList": true,
-                    "guid": "c68e0f96-6bbd-4f73-a98b-a0dff0e9d158"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "menu_warning_vc_update",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c68e0f96-6bbd-4f73-a98b-a0dff0e9d158"
                 }
             ]

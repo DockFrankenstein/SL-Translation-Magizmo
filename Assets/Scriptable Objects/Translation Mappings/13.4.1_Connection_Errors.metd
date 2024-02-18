@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_kicked",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Kicked",
                     "addToList": true,
-                    "guid": "e573ae39-0a1b-4393-a36d-9b525942425d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_kicked",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e573ae39-0a1b-4393-a36d-9b525942425d"
                 }
             ]
@@ -31,19 +23,11 @@
             "guid": "7779e7c5-fc2b-465b-b7c7-23aaa24f78b6",
             "fields": [
                 {
-                    "id": "conn_disconnectedhost_unavaliable",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "conn_disconnected_host_unavaliable",
+                    "autoDisplayName": false,
+                    "displayName": "Host Unavaliable",
                     "addToList": true,
-                    "guid": "de9d0644-7e8e-4a55-8698-f0510ea58a64"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnectedhost_unavaliable",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "de9d0644-7e8e-4a55-8698-f0510ea58a64"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_connection_id_does_not_exist",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Invalid Connection ID",
                     "addToList": true,
-                    "guid": "50e288df-14d0-4295-9c40-8fc59b3b4875"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_connection_id_does_not_exist",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "50e288df-14d0-4295-9c40-8fc59b3b4875"
                 }
             ]
@@ -75,19 +51,11 @@
             "guid": "29baded4-49bf-453f-b4d5-99246153fb3d",
             "fields": [
                 {
-                    "id": "conn_disconnectedchannel_does_not_exist",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "conn_disconnected_channel_does_not_exist",
+                    "autoDisplayName": false,
+                    "displayName": "Invalid Channel",
                     "addToList": true,
-                    "guid": "5be9accc-8ddf-4ea3-985c-a9c1aa3f5991"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnectedchannel_does_not_exist",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5be9accc-8ddf-4ea3-985c-a9c1aa3f5991"
                 }
             ]
@@ -98,18 +66,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_full",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Server Is Full",
                     "addToList": true,
-                    "guid": "7b157d9f-c222-4a72-98ae-fc989eab3053"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_full",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7b157d9f-c222-4a72-98ae-fc989eab3053"
                 }
             ]
@@ -120,18 +80,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_wrong_packet",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Wrong Packet",
                     "addToList": true,
-                    "guid": "2ca6d66f-ff87-48b8-876b-0c9ef9200ec3"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_wrong_packet",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2ca6d66f-ff87-48b8-876b-0c9ef9200ec3"
                 }
             ]
@@ -142,18 +94,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_connection_lost",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Timed Out",
                     "addToList": true,
-                    "guid": "7ee3d807-94ac-4025-be21-c0921953a5f5"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_connection_lost",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7ee3d807-94ac-4025-be21-c0921953a5f5"
                 }
             ]
@@ -164,18 +108,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_connection_lost",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Timed Out",
                     "addToList": true,
-                    "guid": "14868701-cd1a-412e-9ccc-80d2a087b7ac"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_connection_lost",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "14868701-cd1a-412e-9ccc-80d2a087b7ac"
                 }
             ]
@@ -186,18 +122,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_operation_unsupported",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Unsupported Operation",
                     "addToList": true,
-                    "guid": "57b97a86-1468-4be7-9ea8-942af4df59c2"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_operation_unsupported",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "57b97a86-1468-4be7-9ea8-942af4df59c2"
                 }
             ]
@@ -208,18 +136,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_version_difference",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Version Difference Disconnected",
                     "addToList": true,
-                    "guid": "0aaaaa40-8087-44f0-a489-dcb96db20bc4"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_version_difference",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0aaaaa40-8087-44f0-a489-dcb96db20bc4"
                 }
             ]
@@ -229,19 +149,11 @@
             "guid": "99e498ee-afd9-40dc-8d1c-27a835f8d6b4",
             "fields": [
                 {
-                    "id": "conn_disconnectedconfig_invalid",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "conn_disconnected_config_invalid",
+                    "autoDisplayName": false,
+                    "displayName": "Invalid Server Config",
                     "addToList": true,
-                    "guid": "2d067541-c889-43db-919f-e7a6748fead9"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnectedconfig_invalid",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2d067541-c889-43db-919f-e7a6748fead9"
                 }
             ]
@@ -252,18 +164,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_address_invalid",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Invalid Address",
                     "addToList": true,
-                    "guid": "9137e86d-400b-4086-a1e5-f4e84e178340"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_address_invalid",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9137e86d-400b-4086-a1e5-f4e84e178340"
                 }
             ]
@@ -274,18 +178,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_unexpected",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Unexpected Error On Client",
                     "addToList": true,
-                    "guid": "1e02bceb-2864-4e67-aef9-413cb1dc6cac"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_unexpected",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1e02bceb-2864-4e67-aef9-413cb1dc6cac"
                 }
             ]
@@ -299,15 +195,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "e9300bb6-08ac-4cc4-b977-3e6853404bee"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e9300bb6-08ac-4cc4-b977-3e6853404bee"
                 }
             ]
@@ -321,15 +209,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "646fbf42-0f77-467b-bf77-e53cf68f1155"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "646fbf42-0f77-467b-bf77-e53cf68f1155"
                 }
             ]
@@ -343,15 +223,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "87df942c-945a-4d01-bf25-f1480b5ecb03"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "87df942c-945a-4d01-bf25-f1480b5ecb03"
                 }
             ]
@@ -362,18 +234,19 @@
             "fields": [
                 {
                     "id": "conn_version_difference",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Version Difference",
                     "addToList": true,
-                    "guid": "eac9eefb-ae2f-402a-b496-92595a0d643c"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_version_difference",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[your]",
+                            "description": "Your version of the game."
+                        },
+                        {
+                            "tag": "[server]",
+                            "description": "Server's version of the game."
+                        }
+                    ],
                     "guid": "eac9eefb-ae2f-402a-b496-92595a0d643c"
                 }
             ]
@@ -387,15 +260,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "5f7e64ce-a567-4de6-96ef-7d0eb11e42a8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5f7e64ce-a567-4de6-96ef-7d0eb11e42a8"
                 }
             ]
@@ -409,15 +274,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "36d3db32-8cad-4e0e-a17b-e4417527f6b5"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "36d3db32-8cad-4e0e-a17b-e4417527f6b5"
                 }
             ]
@@ -428,18 +285,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_unexpected_server",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Unexpected Error On Server",
                     "addToList": true,
-                    "guid": "f112cca8-25a6-4f90-a5ac-d862dfe9591b"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_unexpected_server",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f112cca8-25a6-4f90-a5ac-d862dfe9591b"
                 }
             ]
@@ -450,18 +299,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_auth_required",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Auth Required",
                     "addToList": true,
-                    "guid": "97e98b9e-a633-45cf-9eda-9d152ad62c75"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_auth_required",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "97e98b9e-a633-45cf-9eda-9d152ad62c75"
                 }
             ]
@@ -472,18 +313,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_whitelist",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Not Whitelisted",
                     "addToList": true,
-                    "guid": "1da0a0c4-6f02-4361-b292-031de8f63c44"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_whitelist",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1da0a0c4-6f02-4361-b292-031de8f63c44"
                 }
             ]
@@ -494,18 +327,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_ban_global",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Banned Globally",
                     "addToList": true,
-                    "guid": "951ee3a2-f94f-4baa-b266-7a992c016910"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_ban_global",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "951ee3a2-f94f-4baa-b266-7a992c016910"
                 }
             ]
@@ -516,18 +341,15 @@
             "fields": [
                 {
                     "id": "conn_disconnected_ban_global_reason",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Banned Globally With Reason",
                     "addToList": true,
-                    "guid": "182a03c4-229e-48d5-99ae-c32e1b7d1434"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_ban_global_reason",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[reason]",
+                            "description": "Reason for getting banned."
+                        }
+                    ],
                     "guid": "182a03c4-229e-48d5-99ae-c32e1b7d1434"
                 }
             ]
@@ -538,18 +360,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_ban_server",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Banned",
                     "addToList": true,
-                    "guid": "c27d9a81-f055-4076-9673-19eaa78bdf0e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_ban_server",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c27d9a81-f055-4076-9673-19eaa78bdf0e"
                 }
             ]
@@ -559,19 +373,20 @@
             "guid": "78ad4341-224f-40bf-bac9-770b84300316",
             "fields": [
                 {
-                    "id": "conn_disconnected_ban_server_reason",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "conn_disconnected_ban_server_expire",
+                    "autoDisplayName": false,
+                    "displayName": "Banned With Expiration",
                     "addToList": true,
-                    "guid": "6bf200bd-21b3-45bd-a163-fc259ee85472"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_ban_server_reason",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[date]",
+                            "description": "Date of when the ban expires."
+                        },
+                        {
+                            "tag": "[time]",
+                            "description": "Time to when the ban expires."
+                        }
+                    ],
                     "guid": "6bf200bd-21b3-45bd-a163-fc259ee85472"
                 }
             ]
@@ -582,18 +397,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_auth_expired",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Auth Expired",
                     "addToList": true,
-                    "guid": "2325f947-c27c-4c15-b3f2-b4e833012457"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_auth_expired",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2325f947-c27c-4c15-b3f2-b4e833012457"
                 }
             ]
@@ -604,18 +411,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_rate_limit",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Rate Limited",
                     "addToList": true,
-                    "guid": "3b9db61b-b4ab-4490-82ae-3821194fbc5e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_rate_limit",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3b9db61b-b4ab-4490-82ae-3821194fbc5e"
                 }
             ]
@@ -626,18 +425,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_geoban",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Geobanned",
                     "addToList": true,
-                    "guid": "1a7625fd-893c-4697-8248-af4bff14ca22"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_geoban",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1a7625fd-893c-4697-8248-af4bff14ca22"
                 }
             ]
@@ -648,18 +439,15 @@
             "fields": [
                 {
                     "id": "conn_disconnected_kick_mod",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Kicked By Mod",
                     "addToList": true,
-                    "guid": "0cd7df75-94a8-4b26-8aa7-be921d9cc24a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_kick_mod",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[reason]",
+                            "description": "Reason for getting kicked."
+                        }
+                    ],
                     "guid": "0cd7df75-94a8-4b26-8aa7-be921d9cc24a"
                 }
             ]
@@ -670,18 +458,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_token_rejected",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Token Rejected",
                     "addToList": true,
-                    "guid": "72c6f28e-a4d7-4b52-8f33-ae2995389dbd"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_token_rejected",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "72c6f28e-a4d7-4b52-8f33-ae2995389dbd"
                 }
             ]
@@ -691,19 +471,16 @@
             "guid": "c83079f2-7932-4995-908b-c46c0ee915f7",
             "fields": [
                 {
-                    "id": "conn_disconnected_ban_server2",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "conn_disconnected_ban_server_reason",
+                    "autoDisplayName": false,
+                    "displayName": "Banned With Reason",
                     "addToList": true,
-                    "guid": "c68c7103-5553-49bc-9c94-6ed9d7e1ebe6"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_ban_server2",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[reason]",
+                            "description": "Reason for getting banned."
+                        }
+                    ],
                     "guid": "c68c7103-5553-49bc-9c94-6ed9d7e1ebe6"
                 }
             ]
@@ -713,19 +490,24 @@
             "guid": "aacab787-e472-407a-ba39-6fb305afcecf",
             "fields": [
                 {
-                    "id": "conn_disconnected_ban_server2_reason",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "conn_disconnected_ban_server_reason_expire",
+                    "autoDisplayName": false,
+                    "displayName": "Banned With Expiration And Reason",
                     "addToList": true,
-                    "guid": "35f7c4c0-76cc-4134-a6cd-10951095beef"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_ban_server2_reason",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[reason]",
+                            "description": "Reason for getting banned."
+                        },
+                        {
+                            "tag": "[date]",
+                            "description": "Date of when the ban expires."
+                        },
+                        {
+                            "tag": "[time]",
+                            "description": "Time to when the ban expires."
+                        }
+                    ],
                     "guid": "35f7c4c0-76cc-4134-a6cd-10951095beef"
                 }
             ]
@@ -739,15 +521,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "820e866e-0c11-499c-bfbf-1b65454caac2"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "820e866e-0c11-499c-bfbf-1b65454caac2"
                 }
             ]
@@ -758,18 +532,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_server_security_verification_fail",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Security Verification Fail",
                     "addToList": true,
-                    "guid": "e222398a-da08-487f-b50f-0cdff31091d9"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_server_security_verification_fail",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e222398a-da08-487f-b50f-0cdff31091d9"
                 }
             ]
@@ -780,18 +546,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_server_security_verification_slow",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Security Verification Too Slow",
                     "addToList": true,
-                    "guid": "ba64aa6b-ff7c-4954-be60-7959d30add90"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_server_security_verification_slow",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ba64aa6b-ff7c-4954-be60-7959d30add90"
                 }
             ]
@@ -802,18 +560,15 @@
             "fields": [
                 {
                     "id": "conn_auth_error",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Authentication Error",
                     "addToList": true,
-                    "guid": "9700d874-c832-4d22-b67b-f0aebb51724d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_auth_error",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[message]",
+                            "description": "Message from the central servers."
+                        }
+                    ],
                     "guid": "9700d874-c832-4d22-b67b-f0aebb51724d"
                 }
             ]
@@ -824,18 +579,10 @@
             "fields": [
                 {
                     "id": "conn_disconnected_server_shutdown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Server Shutdown",
                     "addToList": true,
-                    "guid": "a305c99c-867d-461f-acf4-b079e0863b47"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "conn_disconnected_server_shutdown",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a305c99c-867d-461f-acf4-b079e0863b47"
                 }
             ]

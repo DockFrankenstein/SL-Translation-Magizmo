@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "f1_classd_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Class-D Description",
                     "addToList": true,
-                    "guid": "51b7fa2f-035f-43d9-8a6d-df3e81eae07b"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_classd_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "51b7fa2f-035f-43d9-8a6d-df3e81eae07b"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "f1_spectator_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Spectator Description",
                     "addToList": true,
-                    "guid": "04eb80e2-8654-4807-b3fe-c82fc88af38a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_spectator_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "04eb80e2-8654-4807-b3fe-c82fc88af38a"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "f1_scientist_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Scientist Description",
                     "addToList": true,
-                    "guid": "e1eddfeb-0732-4be6-9519-c690e1347c76"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_scientist_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e1eddfeb-0732-4be6-9519-c690e1347c76"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "f1_chaos_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Chaos Insurgency Description",
                     "addToList": true,
-                    "guid": "88a40eb7-4f7c-4bb7-a54c-c6981c7e2d64"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_chaos_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "88a40eb7-4f7c-4bb7-a54c-c6981c7e2d64"
                 }
             ]
@@ -98,18 +66,10 @@
             "fields": [
                 {
                     "id": "f1_mtf_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "MTF Description",
                     "addToList": true,
-                    "guid": "1813987b-c7b1-4339-bea7-075d4b5c0fd5"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_mtf_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1813987b-c7b1-4339-bea7-075d4b5c0fd5"
                 }
             ]
@@ -120,18 +80,10 @@
             "fields": [
                 {
                     "id": "f1_guard_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Guard Description",
                     "addToList": true,
-                    "guid": "62d5f386-7e6c-4f84-888c-e06216b1d79e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "f1_guard_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "62d5f386-7e6c-4f84-888c-e06216b1d79e"
                 }
             ]

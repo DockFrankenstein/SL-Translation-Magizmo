@@ -10,9 +10,15 @@
             "fields": [
                 {
                     "id": "079_zoom",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Zoom",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[amount]",
+                            "description": "Zoom scale."
+                        }
+                    ],
                     "guid": "57a310cd-47f9-487a-acf6-7f835974b3a8"
                 }
             ]
@@ -23,9 +29,15 @@
             "fields": [
                 {
                     "id": "079_access_tier",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Access Tier",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[tier]",
+                            "description": "Current access tier."
+                        }
+                    ],
                     "guid": "23eab02b-ad38-4580-a1ee-3e403b43b7d5"
                 }
             ]
@@ -36,9 +48,19 @@
             "fields": [
                 {
                     "id": "079_exp",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Exp",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[current]",
+                            "description": "Current experience."
+                        },
+                        {
+                            "tag": "[next]",
+                            "description": "Experience required for next tier."
+                        }
+                    ],
                     "guid": "75af4a10-e283-4c8e-ac3f-5c953f542162"
                 }
             ]
@@ -49,9 +71,10 @@
             "fields": [
                 {
                     "id": "079_access_tier_max",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Max Access Tier",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d2b59fea-0a98-4085-ac47-484872b32cb6"
                 }
             ]
@@ -62,9 +85,10 @@
             "fields": [
                 {
                     "id": "079_no_cam",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "No Cam",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e4aa19f0-091d-4bd3-bd2a-e09b9fa0f107"
                 }
             ]
@@ -75,9 +99,19 @@
             "fields": [
                 {
                     "id": "079_nav_goto",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Go To",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[camera]",
+                            "description": "Name of the camera."
+                        },
+                        {
+                            "tag": "[cost]",
+                            "description": "Power cost of moving to the camera."
+                        }
+                    ],
                     "guid": "c951b840-1486-453d-8497-5eca96be9cdf"
                 }
             ]
@@ -88,9 +122,10 @@
             "fields": [
                 {
                     "id": "079_power_not_enough",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Not Enough Power",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "97534a31-a736-4e36-af18-932520ac846f"
                 }
             ]
@@ -101,9 +136,15 @@
             "fields": [
                 {
                     "id": "079_eta",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "ETA",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[time]",
+                            "description": "Time in seconds."
+                        }
+                    ],
                     "guid": "5e318658-9629-4435-ab35-162f04779a48"
                 }
             ]
@@ -114,9 +155,10 @@
             "fields": [
                 {
                     "id": "079_access_tier_not_enough",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Higher Tier Required",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "55d01335-e752-4336-a7b9-649342511913"
                 }
             ]
@@ -127,9 +169,10 @@
             "fields": [
                 {
                     "id": "079_invalid_camera",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Invalid Camera",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "83a255c2-ff72-4063-9009-21d573283c4a"
                 }
             ]
@@ -140,9 +183,10 @@
             "fields": [
                 {
                     "id": "079_door_no_access",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Access Denied",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "51f399d8-3c99-4e66-b406-849f119885fa"
                 }
             ]
@@ -153,9 +197,15 @@
             "fields": [
                 {
                     "id": "079_nav_door_open",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Open Door",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[cost]",
+                            "description": "Cost of opening the door."
+                        }
+                    ],
                     "guid": "8ccf7eb4-8d29-4cc6-9878-84917d1f1c94"
                 }
             ]
@@ -166,9 +216,15 @@
             "fields": [
                 {
                     "id": "079_nav_door_close",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Close Door",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[cost]",
+                            "description": "Cost of closing the door."
+                        }
+                    ],
                     "guid": "9c2bd57d-656c-4362-989e-ba3010ea328a"
                 }
             ]
@@ -179,9 +235,15 @@
             "fields": [
                 {
                     "id": "079_nav_door_lock",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Lock Door",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[cost]",
+                            "description": "Cost of locking the door."
+                        }
+                    ],
                     "guid": "e71a841e-50a7-49b4-836d-be369342b82e"
                 }
             ]
@@ -189,7 +251,16 @@
         {
             "lineId": "",
             "guid": "ba1768c9-9585-4c47-ab3a-a3d02a28e839",
-            "fields": []
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "f67efb89-4e8a-4fd2-a71d-06643eed74c4"
+                }
+            ]
         },
         {
             "lineId": "",
@@ -197,9 +268,10 @@
             "fields": [
                 {
                     "id": "079_door_lock_cooldown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Lock Cooldown",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "68329f58-cc76-451a-8b00-5aeb79ac4354"
                 }
             ]
@@ -210,9 +282,10 @@
             "fields": [
                 {
                     "id": "079_aux",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Aux Power",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "450cdf40-3b8d-4f0d-8fd0-9f2ab2903ec4"
                 }
             ]
@@ -223,9 +296,10 @@
             "fields": [
                 {
                     "id": "079_prompt_attacked",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Attacked Prompt",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a2f364a5-b94a-410d-971d-4d43db5c0c93"
                 }
             ]
@@ -233,7 +307,16 @@
         {
             "lineId": "",
             "guid": "3eb5e0db-5b31-4219-bcb1-82d39f2146fe",
-            "fields": []
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "5ea95d97-f46a-4d96-86f2-065203887518"
+                }
+            ]
         },
         {
             "lineId": "",
@@ -241,9 +324,10 @@
             "fields": [
                 {
                     "id": "079_map_open",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Open Map",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "947737ad-4c25-45a3-997f-3eb84cc024ea"
                 }
             ]
@@ -254,9 +338,10 @@
             "fields": [
                 {
                     "id": "079_close",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Close",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "51e87d22-4572-431e-b5f0-b556d3323d3a"
                 }
             ]
@@ -267,9 +352,10 @@
             "fields": [
                 {
                     "id": "079_zone_light",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Light Containment Zone",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "627c6a5d-f555-4a1c-8b1b-350ea959c76c"
                 }
             ]
@@ -280,9 +366,10 @@
             "fields": [
                 {
                     "id": "079_zone_heavy",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Heavy Containment Zone",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5fb55700-f9b6-44a5-bfdf-d7db7ee7a3e5"
                 }
             ]
@@ -293,9 +380,10 @@
             "fields": [
                 {
                     "id": "079_zone_entrance",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Entrance Zone",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c96348bd-3f67-4c86-aba0-c74d41498845"
                 }
             ]
@@ -306,9 +394,10 @@
             "fields": [
                 {
                     "id": "079_zone_surface",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Surface Zone",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6452ac16-c39a-495b-93ca-e5d036055622"
                 }
             ]
@@ -319,9 +408,15 @@
             "fields": [
                 {
                     "id": "079_nav_blackout",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Blackout",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[cost]",
+                            "description": "Cost of blacking out a room."
+                        }
+                    ],
                     "guid": "feec71b8-d40b-4edc-afe6-41366f3eaa45"
                 }
             ]
@@ -332,9 +427,10 @@
             "fields": [
                 {
                     "id": "079_blackout_unavaliable",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Blackout Unavaliable",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "82c515be-df12-41b8-87eb-adaab3792bbd"
                 }
             ]
@@ -345,9 +441,10 @@
             "fields": [
                 {
                     "id": "079_blackout_limit_reached",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Blackout Limit Reached",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a6503a45-e7e1-4290-9453-d81353f7c15a"
                 }
             ]
@@ -358,9 +455,10 @@
             "fields": [
                 {
                     "id": "079_blackout_cooldown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Blackout Cooldown",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "10b01ac8-f098-43c5-bba8-f7ca8e4becff"
                 }
             ]
@@ -371,9 +469,15 @@
             "fields": [
                 {
                     "id": "079_nav_elevator",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Send Elevator",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[cost]",
+                            "description": "Cost of sending the elevator."
+                        }
+                    ],
                     "guid": "bf2937da-956b-470e-ba36-0cece4d44f80"
                 }
             ]
@@ -384,9 +488,15 @@
             "fields": [
                 {
                     "id": "079_nav_lockdown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Lockdown",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[cost]",
+                            "description": "Cost of performing a lockdown."
+                        }
+                    ],
                     "guid": "07198f83-08e1-4466-9e0f-affae05357ac"
                 }
             ]
@@ -397,9 +507,10 @@
             "fields": [
                 {
                     "id": "079_lockdown_cooldown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Lockdown Cooldown",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f4e396d4-43af-4d89-a7a7-036bf763ef90"
                 }
             ]
@@ -410,9 +521,10 @@
             "fields": [
                 {
                     "id": "079_lockdown_no_doors",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "No Doors For Lockdown",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "65b950e8-ffb1-453b-9b20-5c6b6b50c4c1"
                 }
             ]
@@ -423,9 +535,15 @@
             "fields": [
                 {
                     "id": "079_nav_ping",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ping",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[cost]",
+                            "description": "Cost of pinging."
+                        }
+                    ],
                     "guid": "e281b07f-705b-4ba2-b898-4ba635cc4459"
                 }
             ]
@@ -436,9 +554,10 @@
             "fields": [
                 {
                     "id": "079_ping_limit_reached",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ping Limit Reached",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "51942de8-fb65-4e99-a62f-e1b0a6bc04b3"
                 }
             ]
@@ -449,9 +568,10 @@
             "fields": [
                 {
                     "id": "079_camera_switch_failed",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Camera Switch Failed",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "96e312d9-3774-4e01-b06b-8da062422af0"
                 }
             ]
@@ -462,9 +582,10 @@
             "fields": [
                 {
                     "id": "079_signal_lost",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Signal Lost",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b75f0c8a-4708-439d-b6c1-331f9d5a9296"
                 }
             ]
@@ -475,9 +596,15 @@
             "fields": [
                 {
                     "id": "079_signal_lost_reconnecting",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Reconnecting",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[time]",
+                            "description": "Time to reconnect in seconds."
+                        }
+                    ],
                     "guid": "9c9062c0-5662-44ea-838d-43e28e8a3279"
                 }
             ]
@@ -488,9 +615,15 @@
             "fields": [
                 {
                     "id": "079_nav_tesla",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Tesla",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[cost]",
+                            "description": "Cost of using the tesla gate."
+                        }
+                    ],
                     "guid": "a365bab2-eee1-499d-a5bb-239575798ef0"
                 }
             ]
@@ -501,9 +634,10 @@
             "fields": [
                 {
                     "id": "079_tesla_cooldown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Tesla Cooldown",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "74ad85d7-abf1-4126-9f3d-c344b087ef9d"
                 }
             ]
@@ -514,9 +648,15 @@
             "fields": [
                 {
                     "id": "079_notif_tier_new",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "New Tier",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[tier]",
+                            "description": "The new tier."
+                        }
+                    ],
                     "guid": "d09a0622-87c1-44f0-bdd2-06b500e855c1"
                 }
             ]
@@ -527,9 +667,15 @@
             "fields": [
                 {
                     "id": "079_notif_aux_new_limit",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Next Aux Limit",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[limit]",
+                            "description": "The new limit."
+                        }
+                    ],
                     "guid": "1986009b-cbb1-4aae-ac68-95741d6ad273"
                 }
             ]
@@ -540,9 +686,15 @@
             "fields": [
                 {
                     "id": "079_notif_blackout_unlock",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Blackout Unlocked",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "Key used for using blackout."
+                        }
+                    ],
                     "guid": "1e07c11c-2f48-4320-9995-2461c42fcb88"
                 }
             ]
@@ -553,9 +705,15 @@
             "fields": [
                 {
                     "id": "079_notif_blackout_new_limit",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "New Blackout Limit",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[number]",
+                            "description": "New unlocked capacity of simultaneously blacked out rooms."
+                        }
+                    ],
                     "guid": "731bdd51-3657-4c7b-970c-0fd2a66accba"
                 }
             ]
@@ -566,9 +724,15 @@
             "fields": [
                 {
                     "id": "079_notif_lockdown_unlock",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Lockdown Unlocked",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "Key used for activating lockdown."
+                        }
+                    ],
                     "guid": "b031e546-8e3a-44d4-b8fc-e4d8f1e16ffd"
                 }
             ]
@@ -579,9 +743,15 @@
             "fields": [
                 {
                     "id": "079_notif_exp_admin",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Admin",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[amount]",
+                            "description": "Amount of experience received."
+                        }
+                    ],
                     "guid": "1e7fa7fa-3a6f-49c6-9c70-c592a1204db3"
                 }
             ]
@@ -592,9 +762,19 @@
             "fields": [
                 {
                     "id": "079_notif_exp_termination_assist",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Termination Assist Experience",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[amount]",
+                            "description": "Amount of experience received."
+                        },
+                        {
+                            "tag": "[role]",
+                            "description": "Role of the terminated player."
+                        }
+                    ],
                     "guid": "c014e87c-293e-43f6-b017-f98511c394a5"
                 }
             ]
@@ -605,9 +785,19 @@
             "fields": [
                 {
                     "id": "079_notif_exp_termination",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Termination Experience",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[amount]",
+                            "description": "Amount of experience received."
+                        },
+                        {
+                            "tag": "[role]",
+                            "description": "Role of the terminated player."
+                        }
+                    ],
                     "guid": "e3306255-2b00-4dc1-bd3f-0e2550ee81d5"
                 }
             ]
@@ -618,9 +808,15 @@
             "fields": [
                 {
                     "id": "079_notif_exp_termination_witnessed",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Termination Witnessed Experience",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[amount]",
+                            "description": "Amount of experience received."
+                        }
+                    ],
                     "guid": "d60410c8-49c7-4c28-8a71-38035138eef7"
                 }
             ]
@@ -631,9 +827,15 @@
             "fields": [
                 {
                     "id": "079_notif_exp_pursuit_assist",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Pursuit Assist Experience",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[amount]",
+                            "description": "Amount of experience received."
+                        }
+                    ],
                     "guid": "160c37f5-3f81-4dd8-8690-2cbdc404b538"
                 }
             ]
@@ -644,9 +846,15 @@
             "fields": [
                 {
                     "id": "079_notif_exp_teammate_protection",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Teammate Protection Experience",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[amount]",
+                            "description": "Amount of experience received."
+                        }
+                    ],
                     "guid": "a6dbd145-6623-4cf4-aa05-c5ce3af1759a"
                 }
             ]
@@ -657,9 +865,15 @@
             "fields": [
                 {
                     "id": "079_notif_exp_hid_prevention",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Micro-HID Prevention Experience",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[amount]",
+                            "description": "Amount of experience received."
+                        }
+                    ],
                     "guid": "434aec8a-04a8-4a8b-8d24-888eb39ce4e0"
                 }
             ]
@@ -670,9 +884,10 @@
             "fields": [
                 {
                     "id": "079_door_lock_already_active",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Lock Already Active",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "68f0260f-fd14-4f32-9820-ba84c4177ac6"
                 }
             ]
@@ -683,9 +898,15 @@
             "fields": [
                 {
                     "id": "079_nav_blackout_zone",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Zone Blackout",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[cost]",
+                            "description": "The cost of performing a zone-wide blackout."
+                        }
+                    ],
                     "guid": "d53b8cc2-49c2-4814-beb0-a7535e37cc39"
                 }
             ]
@@ -696,9 +917,10 @@
             "fields": [
                 {
                     "id": "079_notif_blackout_zone_unlock",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Zone Blackout Unlocked",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9280d6e6-764c-43a9-a3e3-08a1ae2cd7c2"
                 }
             ]
@@ -709,9 +931,10 @@
             "fields": [
                 {
                     "id": "079_blackout_zone_cooldown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Zone Blackout Cooldown",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ab024ffd-e647-4f8c-a97a-ee7c84455375"
                 }
             ]
@@ -722,9 +945,10 @@
             "fields": [
                 {
                     "id": "079_blackout_zone_already_active",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Zone Blackout Already Active",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1747fb04-129d-409c-a2a9-3869d43d22b3"
                 }
             ]
@@ -735,9 +959,10 @@
             "fields": [
                 {
                     "id": "079_blackout_zone_unavaliable",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Zone Blackout Unavaliable",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "abdc9c66-ba4c-4d31-a3c6-b8f6c8deea17"
                 }
             ]
@@ -748,9 +973,10 @@
             "fields": [
                 {
                     "id": "079_players_total",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Total Players Count",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f74527a1-0a00-40e7-883c-07bb1c23dfcd"
                 }
             ]
@@ -761,9 +987,10 @@
             "fields": [
                 {
                     "id": "079_players_targets",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Targets Count",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9c7a331a-7288-436e-aef8-9a1c2854c886"
                 }
             ]
@@ -774,9 +1001,10 @@
             "fields": [
                 {
                     "id": "079_players_scp",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP Count",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "bf3ca145-13f9-4eaf-86c1-f80cb3638827"
                 }
             ]
@@ -787,9 +1015,10 @@
             "fields": [
                 {
                     "id": "079_players_civilian",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Civilian Count",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "294f72d5-ce67-424c-a39c-d33bab012551"
                 }
             ]
@@ -800,9 +1029,10 @@
             "fields": [
                 {
                     "id": "079_players_military",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Military Count",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5b392ddb-db39-4b9f-8ef1-77de0e00921c"
                 }
             ]
@@ -813,9 +1043,10 @@
             "fields": [
                 {
                     "id": "079_speaker_use",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Use Speaker",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4f002fd9-f910-467c-a1cd-02606f59ea50"
                 }
             ]
@@ -826,9 +1057,10 @@
             "fields": [
                 {
                     "id": "079_elevator_no_access",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Elevator Access Denied",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "56f5a3ae-915d-471d-80d1-62112d3f759c"
                 }
             ]
@@ -839,9 +1071,10 @@
             "fields": [
                 {
                     "id": "f1_079_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-079 Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "25ac91c5-7d12-4582-999e-b9f9172e7f3a"
                 }
             ]
@@ -852,16 +1085,18 @@
             "fields": [
                 {
                     "id": "f1_079_ability_virtually_indestructible",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Virtually Indestructible Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8414b779-779f-415b-bfd3-f99f4a37b098"
                 },
                 {
                     "id": "f1_079_ability_virtually_indestructible_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Virtually Indestructible Ability Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4244f9bc-cc77-4ef4-a3f9-19ee3da7af23"
                 }
             ]
@@ -872,16 +1107,18 @@
             "fields": [
                 {
                     "id": "f1_079_ability_unlimited_access",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Unlimited Access Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "50a23f99-85ea-43a4-8996-0e197371819e"
                 },
                 {
                     "id": "f1_079_ability_unlimited_access_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Unlimited Access Ability Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0bc8795d-5390-4bf1-9960-1e16546d86c4"
                 }
             ]
@@ -892,16 +1129,18 @@
             "fields": [
                 {
                     "id": "f1_079_ability_deep_learning",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Deep Learning Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "19e6fc9c-64b9-4471-bbca-d3c7096f092c"
                 },
                 {
                     "id": "f1_079_ability_deep_learning_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Deep Learning Ability Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "785669cc-b895-43e1-b2ea-01b6c377d41b"
                 }
             ]
@@ -912,16 +1151,18 @@
             "fields": [
                 {
                     "id": "f1_079_ability_overwatch",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Overwatch Ability",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "aca7789d-3f3a-426f-8393-cd1b71331139"
                 },
                 {
                     "id": "f1_079_ability_overwatch_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Overwatch Ability Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0553693a-d459-46af-be97-ce492b0dffef"
                 }
             ]
@@ -932,9 +1173,10 @@
             "fields": [
                 {
                     "id": "079_notif_scanner_unlock",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Scanner Unlocked",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9d43c40c-b3e6-4478-902f-37daa381e2ca"
                 }
             ]
@@ -945,9 +1187,10 @@
             "fields": [
                 {
                     "id": "079_aux_regen_suspended",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Aux Regeneration Suspended",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6542b5f0-558e-4ce9-984a-de2379d38302"
                 }
             ]
@@ -958,9 +1201,15 @@
             "fields": [
                 {
                     "id": "079_aux_regen_reduced",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Aux Regeneration Reduced",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[percentage]",
+                            "description": "The percentage by which the regeneration is reduced."
+                        }
+                    ],
                     "guid": "5b6027b5-8bb0-4bf8-8c3e-6285df859d30"
                 }
             ]
@@ -971,9 +1220,10 @@
             "fields": [
                 {
                     "id": "079_door_lock_active",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Door Lock Active",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1f8f5738-49ac-4ffa-a20c-b727d100f27a"
                 }
             ]
@@ -984,9 +1234,10 @@
             "fields": [
                 {
                     "id": "079_speaker_in_use",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Speaker In Use",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "28196e6a-fbea-4213-94c0-a6f4bfa76a78"
                 }
             ]
@@ -997,9 +1248,10 @@
             "fields": [
                 {
                     "id": "079_lockdown_active",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Lockdown Active",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "564327b7-ae6f-484a-bc92-a058c27d11f2"
                 }
             ]
@@ -1010,9 +1262,10 @@
             "fields": [
                 {
                     "id": "079_scanner",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Scanner",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "54d1a810-2422-4420-9f57-91810dccd5eb"
                 }
             ]
@@ -1023,9 +1276,10 @@
             "fields": [
                 {
                     "id": "079_map_return",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Return To Map",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "42c9efc3-de47-4819-b7dd-7b6ebc9d51d8"
                 }
             ]
@@ -1036,9 +1290,15 @@
             "fields": [
                 {
                     "id": "079_scanner_warning_zone_count",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Scanner Active Notification",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[cnt]",
+                            "description": "Selected zones count."
+                        }
+                    ],
                     "guid": "57afd0fd-2fac-4c1d-b736-373009d3aff4"
                 }
             ]
@@ -1049,9 +1309,15 @@
             "fields": [
                 {
                     "id": "079_scanner_zones_count",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Selected Zones",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[cnt]",
+                            "description": "Selected zones count."
+                        }
+                    ],
                     "guid": "82b63a62-d358-4fe3-b13e-2239bb2f934e"
                 }
             ]
@@ -1062,9 +1328,10 @@
             "fields": [
                 {
                     "id": "079_scanner_select_zones",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Select Zones",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "76912b9c-34b2-472e-945c-ac801c81d764"
                 }
             ]
@@ -1075,9 +1342,10 @@
             "fields": [
                 {
                     "id": "079_notif_scanner_result_none",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "No Targets Detected Notification",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "db489b0e-633c-4672-95e1-e25ed08df6e7"
                 }
             ]
@@ -1088,9 +1356,15 @@
             "fields": [
                 {
                     "id": "079_notif_scanner_retry",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Retrying Scanner Notification",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[time]",
+                            "description": "Time in seconds."
+                        }
+                    ],
                     "guid": "9d8288d5-8a96-43c7-9c4b-bda3985cf600"
                 }
             ]
@@ -1101,9 +1375,23 @@
             "fields": [
                 {
                     "id": "079_notif_scanner_result",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Role Detected Notification",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[role]",
+                            "description": "The detected role."
+                        },
+                        {
+                            "tag": "[camera_name]",
+                            "description": "Name of the camera at which the role was detected."
+                        },
+                        {
+                            "tag": "[zone]",
+                            "description": "Zone at which the role was detected."
+                        }
+                    ],
                     "guid": "837cb3dd-d54f-4b1b-b7b3-5df221db9be2"
                 }
             ]
@@ -1114,9 +1402,15 @@
             "fields": [
                 {
                     "id": "079_scanner_retry",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Next Scan Countdown",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[time]",
+                            "description": "Time to the next scan in seconds."
+                        }
+                    ],
                     "guid": "f10bcfc5-adc9-453c-9a02-e1a521e8bdf8"
                 }
             ]
@@ -1127,9 +1421,10 @@
             "fields": [
                 {
                     "id": "079_scanner_scanning",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Scanning",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7ace2ae8-709b-4e68-b880-42717c10f6df"
                 }
             ]
@@ -1140,9 +1435,10 @@
             "fields": [
                 {
                     "id": "079_scanner_suspend",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Scan Suspended",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d6c86d08-0a69-45c1-a65d-fb80fa45d0a1"
                 }
             ]
@@ -1153,9 +1449,10 @@
             "fields": [
                 {
                     "id": "079_scanner_teams_header",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Select Teams",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f5a6f363-442e-40c8-ae1c-861003c27fe7"
                 }
             ]
@@ -1166,9 +1463,10 @@
             "fields": [
                 {
                     "id": "079_scanner_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Scanner Description",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b199fe5e-e63b-4a3a-b9b8-6281de016bf1"
                 }
             ]
@@ -1179,9 +1477,10 @@
             "fields": [
                 {
                     "id": "079_scanner_teams_warning",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Select Any Filter Warning",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ce6c3244-d0ae-4799-a2ed-04fb9abd2451"
                 }
             ]
