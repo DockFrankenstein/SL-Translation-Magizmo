@@ -4,7 +4,6 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using System;
-using System.Reflection;
 
 namespace Project.Translation.Mapping.Manifest
 {
@@ -14,8 +13,7 @@ namespace Project.Translation.Mapping.Manifest
 
         public virtual Type DataType { get; }
 
-        //Keep this static or else it won't be null
-        private static MappedField[] _fieldsCache = null;
+        [NonSerialized] private MappedField[] _fieldsCache = null;
         public override MappedField[] GetMappedFields()
         {
             if (_fieldsCache == null)

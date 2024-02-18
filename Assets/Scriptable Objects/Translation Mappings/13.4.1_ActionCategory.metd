@@ -11,7 +11,7 @@
                 {
                     "id": "settings_category_gameplay",
                     "autoDisplayName": false,
-                    "displayName": "Gameplay Cathegory",
+                    "displayName": "Gameplay Category",
                     "addToList": true,
                     "guid": "0d4ca1ff-50f0-4cc4-a6d8-4b1769cf7417"
                 }
@@ -24,7 +24,7 @@
                 {
                     "id": "settings_category_weapons",
                     "autoDisplayName": false,
-                    "displayName": "Weapons Cathegory",
+                    "displayName": "Weapons Category",
                     "addToList": true,
                     "guid": "08e0f475-6267-42b2-a629-59829b279bde"
                 }
@@ -37,7 +37,7 @@
                 {
                     "id": "settings_category_movement",
                     "autoDisplayName": false,
-                    "displayName": "Movement Cathegory",
+                    "displayName": "Movement Category",
                     "addToList": true,
                     "guid": "e6cb47ad-3715-48ba-806f-07bc923a98f1"
                 }
@@ -63,7 +63,7 @@
                 {
                     "id": "settings_category_comms",
                     "autoDisplayName": false,
-                    "displayName": "Communication Cathegory",
+                    "displayName": "Communication Category",
                     "addToList": true,
                     "guid": "ec749523-f636-4b4b-bcd0-bce75d786021"
                 }
@@ -76,7 +76,7 @@
                 {
                     "id": "settings_category_system",
                     "autoDisplayName": false,
-                    "displayName": "System Cathegory",
+                    "displayName": "System Category",
                     "addToList": true,
                     "guid": "61d6c899-4012-4cee-825c-2edcb69915c5"
                 }
@@ -102,7 +102,7 @@
                 {
                     "id": "settings_category_079",
                     "autoDisplayName": false,
-                    "displayName": "SCP-079 Cathegory",
+                    "displayName": "SCP-079 Category",
                     "addToList": true,
                     "guid": "fcde3e9b-71b2-4704-a2b1-fd67e718207e"
                 }
