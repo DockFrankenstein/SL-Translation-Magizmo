@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "voicechat_indicator_muted_admin",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Muted By Admin Indicator",
                     "addToList": true,
-                    "guid": "544835df-499f-4398-b017-90316ca54605"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "voicechat_indicator_muted_admin",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "544835df-499f-4398-b017-90316ca54605"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "voicechat_indicator_muted_global",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Globally Muted Indicator",
                     "addToList": true,
-                    "guid": "f4ad7843-f0a8-41d0-8419-6bf0dd2ddc9c"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "voicechat_indicator_muted_global",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f4ad7843-f0a8-41d0-8419-6bf0dd2ddc9c"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "voicechat_indicator_muted_unauthenticated",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Unauthenticated Indicator",
                     "addToList": true,
-                    "guid": "8c988326-c549-4dfe-ab42-aebb435d1d7f"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "voicechat_indicator_muted_unauthenticated",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8c988326-c549-4dfe-ab42-aebb435d1d7f"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "voicechat_indicator_muted_privacy",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Disabled In Privacy Indicator",
                     "addToList": true,
-                    "guid": "11f0010a-8b56-4849-817e-3cab8270d655"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "voicechat_indicator_muted_privacy",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "11f0010a-8b56-4849-817e-3cab8270d655"
                 }
             ]
@@ -98,18 +66,10 @@
             "fields": [
                 {
                     "id": "voicechat_indicator_muted_privacy_header",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Disabled In Privacy Indicator Description",
                     "addToList": true,
-                    "guid": "d73f912f-5d8c-4eb3-9d73-e505de687473"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "voicechat_indicator_muted_privacy_header",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d73f912f-5d8c-4eb3-9d73-e505de687473"
                 }
             ]
@@ -120,18 +80,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_privacy",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Privacy Settings Header",
                     "addToList": true,
-                    "guid": "cccefcd3-6292-492c-83a2-14669b083fe3"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_privacy",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cccefcd3-6292-492c-83a2-14669b083fe3"
                 }
             ]
@@ -142,18 +94,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_privacy_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Privacy Settings Description",
                     "addToList": true,
-                    "guid": "eeaa64e2-bc76-4a7a-ba45-0430b527b0ae"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_privacy_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "eeaa64e2-bc76-4a7a-ba45-0430b527b0ae"
                 }
             ]
@@ -164,18 +108,10 @@
             "fields": [
                 {
                     "id": "voicechat_prompt_privacy_reject_all",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Reject All",
                     "addToList": true,
-                    "guid": "e3e5f672-34dc-496a-9f2b-362ada3b783b"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "voicechat_prompt_privacy_reject_all",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e3e5f672-34dc-496a-9f2b-362ada3b783b"
                 }
             ]
@@ -186,18 +122,10 @@
             "fields": [
                 {
                     "id": "voicechat_prompt_privacy_personalize",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Personalize",
                     "addToList": true,
-                    "guid": "5b318a09-95ad-4ad0-9af6-8f0261680085"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "voicechat_prompt_privacy_personalize",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5b318a09-95ad-4ad0-9af6-8f0261680085"
                 }
             ]
@@ -208,18 +136,10 @@
             "fields": [
                 {
                     "id": "voicechat_prompt_privacy_accept_all",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Accept All",
                     "addToList": true,
-                    "guid": "4c2a3331-d6fe-4ae3-92c5-1cb04a96623a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "voicechat_prompt_privacy_accept_all",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4c2a3331-d6fe-4ae3-92c5-1cb04a96623a"
                 }
             ]
@@ -230,18 +150,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_privacy_accept",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Accept",
                     "addToList": true,
-                    "guid": "9a4e916e-5862-4701-8b63-b36640740b71"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_privacy_accept",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9a4e916e-5862-4701-8b63-b36640740b71"
                 }
             ]
@@ -252,18 +164,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_privacy_deny",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Deny",
                     "addToList": true,
-                    "guid": "71d5e2dd-b49c-4602-9286-58944d913826"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_privacy_deny",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "71d5e2dd-b49c-4602-9286-58944d913826"
                 }
             ]
@@ -274,18 +178,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_privacy_capture",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Capture",
                     "addToList": true,
-                    "guid": "4901ee66-1f34-4191-9f7e-5e950a517051"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_privacy_capture",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4901ee66-1f34-4191-9f7e-5e950a517051"
                 }
             ]
@@ -296,18 +192,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_privacy_capture_info",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Capture Description",
                     "addToList": true,
-                    "guid": "87c7a24c-a769-480e-bbe8-d2795dbf0d50"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_privacy_capture_info",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "87c7a24c-a769-480e-bbe8-d2795dbf0d50"
                 }
             ]
@@ -318,18 +206,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_privacy_recording",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Recording",
                     "addToList": true,
-                    "guid": "9caa813b-d47f-4415-98d6-7652c7066cb0"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_privacy_recording",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9caa813b-d47f-4415-98d6-7652c7066cb0"
                 }
             ]
@@ -340,18 +220,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_privacy_recording_info",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Recording Description",
                     "addToList": true,
-                    "guid": "83aa2384-3dbd-479a-bf4c-fd59bba2aa53"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_privacy_recording_info",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "83aa2384-3dbd-479a-bf4c-fd59bba2aa53"
                 }
             ]
@@ -362,18 +234,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_privacy_apply",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Apply",
                     "addToList": true,
-                    "guid": "883f9084-0956-4729-b469-a794f44f49b7"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_privacy_apply",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "883f9084-0956-4729-b469-a794f44f49b7"
                 }
             ]
@@ -384,18 +248,10 @@
             "fields": [
                 {
                     "id": "voicechat_prompt_privacy_return",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Return",
                     "addToList": true,
-                    "guid": "e9e5eecc-72ae-4837-98be-7f25a272dfa6"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "voicechat_prompt_privacy_return",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e9e5eecc-72ae-4837-98be-7f25a272dfa6"
                 }
             ]
@@ -406,18 +262,15 @@
             "fields": [
                 {
                     "id": "voicechat_indicator_muted_privacy_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Disabled In Privacy Indicator Description",
                     "addToList": true,
-                    "guid": "164c99f5-6153-452b-bf41-afe34bae78cf"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "voicechat_indicator_muted_privacy_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "Pause menu key."
+                        }
+                    ],
                     "guid": "164c99f5-6153-452b-bf41-afe34bae78cf"
                 }
             ]
@@ -428,18 +281,10 @@
             "fields": [
                 {
                     "id": "voicechat_mute_alive",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mute Alive",
                     "addToList": true,
-                    "guid": "58d1334b-944e-4de0-b1cb-98ef30746b48"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "voicechat_mute_alive",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "58d1334b-944e-4de0-b1cb-98ef30746b48"
                 }
             ]
@@ -450,18 +295,10 @@
             "fields": [
                 {
                     "id": "voicechat_mute_spectators",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mute Spectators",
                     "addToList": true,
-                    "guid": "2cc3c1e4-aa06-4722-a9cc-6c741603b97b"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "voicechat_mute_spectators",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2cc3c1e4-aa06-4722-a9cc-6c741603b97b"
                 }
             ]
@@ -472,18 +309,10 @@
             "fields": [
                 {
                     "id": "voicechat_mute_pre_game",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Mute Pre-Game",
                     "addToList": true,
-                    "guid": "f4798c38-3249-47be-984c-81d0fc10898f"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "voicechat_mute_pre_game",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f4798c38-3249-47be-984c-81d0fc10898f"
                 }
             ]
@@ -494,18 +323,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_mute_pre_game",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Pre-Game Chat",
                     "addToList": true,
-                    "guid": "9245f62f-a200-4790-9e79-d2e18b4a9c4b"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_mute_pre_game",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9245f62f-a200-4790-9e79-d2e18b4a9c4b"
                 }
             ]
@@ -516,18 +337,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_mute_summary",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Round Summary Chat",
                     "addToList": true,
-                    "guid": "73e7e0ac-a764-4a9f-97b7-9f607024f1b0"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_mute_summary",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "73e7e0ac-a764-4a9f-97b7-9f607024f1b0"
                 }
             ]
@@ -538,18 +351,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_mute_spectator",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Spectator Chat",
                     "addToList": true,
-                    "guid": "b349afe2-8a22-40ae-8f89-a40eb5658d56"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_mute_spectator",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b349afe2-8a22-40ae-8f89-a40eb5658d56"
                 }
             ]
@@ -560,18 +365,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_mute_alive_while_spectating",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Alive Chat In Spectator",
                     "addToList": true,
-                    "guid": "82568b5a-a647-44cf-9875-22dd34c5da9e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_mute_alive_while_spectating",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "82568b5a-a647-44cf-9875-22dd34c5da9e"
                 }
             ]
@@ -582,18 +379,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_mute_muted",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Muted",
                     "addToList": true,
-                    "guid": "804f92c6-5c1a-458e-a0c3-4e11b9f74161"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_mute_muted",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "804f92c6-5c1a-458e-a0c3-4e11b9f74161"
                 }
             ]
@@ -604,18 +393,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_mute_unmuted",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Unmuted",
                     "addToList": true,
-                    "guid": "ef4f98ce-41d7-47a7-a543-25ec46521d29"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_voicechat_mute_unmuted",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ef4f98ce-41d7-47a7-a543-25ec46521d29"
                 }
             ]

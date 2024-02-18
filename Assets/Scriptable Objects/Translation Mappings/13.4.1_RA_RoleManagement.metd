@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "ra_role_none",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "None",
                     "addToList": true,
-                    "guid": "f40de56f-673c-4b55-966c-a4a22956f73d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_none",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f40de56f-673c-4b55-966c-a4a22956f73d"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "ra_role_173",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-173",
                     "addToList": true,
-                    "guid": "2884717d-68c5-41de-87c5-c46fd9cd0074"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_173",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2884717d-68c5-41de-87c5-c46fd9cd0074"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "ra_role_classd",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Class-D",
                     "addToList": true,
-                    "guid": "81790fbf-7961-4399-98bb-ad839e2bcf57"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_classd",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "81790fbf-7961-4399-98bb-ad839e2bcf57"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "ra_role_spectator",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Spectator",
                     "addToList": true,
-                    "guid": "a1d58111-8d07-48ce-a41f-f74981f794b2"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_spectator",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a1d58111-8d07-48ce-a41f-f74981f794b2"
                 }
             ]
@@ -98,18 +66,10 @@
             "fields": [
                 {
                     "id": "ra_role_106",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-106",
                     "addToList": true,
-                    "guid": "97148d3c-4b19-4776-a264-477d72f472c4"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_106",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "97148d3c-4b19-4776-a264-477d72f472c4"
                 }
             ]
@@ -120,18 +80,10 @@
             "fields": [
                 {
                     "id": "ra_role_mtf_specialist",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "MTF Specialist",
                     "addToList": true,
-                    "guid": "ac42563d-e72d-4e5b-817e-406059b1c344"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_mtf_specialist",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ac42563d-e72d-4e5b-817e-406059b1c344"
                 }
             ]
@@ -142,18 +94,10 @@
             "fields": [
                 {
                     "id": "ra_role_049",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-049",
                     "addToList": true,
-                    "guid": "555fa8d6-9980-4e51-a649-22427697d9d5"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_049",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "555fa8d6-9980-4e51-a649-22427697d9d5"
                 }
             ]
@@ -164,18 +108,10 @@
             "fields": [
                 {
                     "id": "ra_role_scientist",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Scientist",
                     "addToList": true,
-                    "guid": "0a407aab-8fa6-4f86-9221-c9c539c0d274"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_scientist",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0a407aab-8fa6-4f86-9221-c9c539c0d274"
                 }
             ]
@@ -186,18 +122,10 @@
             "fields": [
                 {
                     "id": "ra_role_079",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-079",
                     "addToList": true,
-                    "guid": "a53c4ae0-b30a-41ab-b508-1ba8fddb01e0"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_079",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a53c4ae0-b30a-41ab-b508-1ba8fddb01e0"
                 }
             ]
@@ -208,18 +136,10 @@
             "fields": [
                 {
                     "id": "ra_role_chaos_conscript",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Chaos Conscript",
                     "addToList": true,
-                    "guid": "e5aae76b-96c7-47f3-8143-d442bd55c9c0"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_chaos_conscript",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e5aae76b-96c7-47f3-8143-d442bd55c9c0"
                 }
             ]
@@ -230,18 +150,10 @@
             "fields": [
                 {
                     "id": "ra_role_096",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-096",
                     "addToList": true,
-                    "guid": "efd3a4bc-976a-486d-a71b-35bad1165d98"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_096",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "efd3a4bc-976a-486d-a71b-35bad1165d98"
                 }
             ]
@@ -252,18 +164,10 @@
             "fields": [
                 {
                     "id": "ra_role_049_2",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-049-2",
                     "addToList": true,
-                    "guid": "2e9db42f-8b77-49a7-bbdf-0e5941a67388"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_049_2",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2e9db42f-8b77-49a7-bbdf-0e5941a67388"
                 }
             ]
@@ -274,18 +178,10 @@
             "fields": [
                 {
                     "id": "ra_role_mtf_sergeant",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "MTF Sergeant",
                     "addToList": true,
-                    "guid": "2624fec5-061f-4abf-b8c8-4db51c288ff8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_mtf_sergeant",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2624fec5-061f-4abf-b8c8-4db51c288ff8"
                 }
             ]
@@ -296,18 +192,10 @@
             "fields": [
                 {
                     "id": "ra_role_mtf_captain",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "MTF Captain",
                     "addToList": true,
-                    "guid": "fce738f9-1597-48bc-afd5-61dd68557bad"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_mtf_captain",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "fce738f9-1597-48bc-afd5-61dd68557bad"
                 }
             ]
@@ -318,18 +206,10 @@
             "fields": [
                 {
                     "id": "ra_role_mtf_private",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "MTF Private",
                     "addToList": true,
-                    "guid": "e95ef937-370d-4c74-89e8-40097a5020a1"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_mtf_private",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e95ef937-370d-4c74-89e8-40097a5020a1"
                 }
             ]
@@ -340,18 +220,10 @@
             "fields": [
                 {
                     "id": "ra_role_tutorial",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Tutorial",
                     "addToList": true,
-                    "guid": "7468b0aa-c94a-4f2e-9be8-7237474127fa"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_tutorial",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7468b0aa-c94a-4f2e-9be8-7237474127fa"
                 }
             ]
@@ -362,18 +234,10 @@
             "fields": [
                 {
                     "id": "ra_role_guard",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Guard",
                     "addToList": true,
-                    "guid": "c8b8d962-aa1f-4399-b358-87fe30a69d61"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_guard",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c8b8d962-aa1f-4399-b358-87fe30a69d61"
                 }
             ]
@@ -384,18 +248,10 @@
             "fields": [
                 {
                     "id": "ra_role_939",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-939",
                     "addToList": true,
-                    "guid": "c91f7762-5534-4c02-966c-d97cf843cad6"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_939",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c91f7762-5534-4c02-966c-d97cf843cad6"
                 }
             ]
@@ -406,18 +262,10 @@
             "fields": [
                 {
                     "id": "ra_role_custom",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Custom",
                     "addToList": true,
-                    "guid": "0c561e3b-8a3f-4f5f-9175-ca3cd5d63f2c"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_custom",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0c561e3b-8a3f-4f5f-9175-ca3cd5d63f2c"
                 }
             ]
@@ -428,18 +276,10 @@
             "fields": [
                 {
                     "id": "ra_role_chaos_rifleman",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Chaos Rifleman",
                     "addToList": true,
-                    "guid": "1a799051-b4ce-49bd-aa0e-d07fd8783eee"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_chaos_rifleman",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1a799051-b4ce-49bd-aa0e-d07fd8783eee"
                 }
             ]
@@ -450,18 +290,10 @@
             "fields": [
                 {
                     "id": "ra_role_chaos_marauder",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Chaos Marauder",
                     "addToList": true,
-                    "guid": "75acb734-ebaf-4a3a-b7b4-eaa4be1fd1fa"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_chaos_marauder",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "75acb734-ebaf-4a3a-b7b4-eaa4be1fd1fa"
                 }
             ]
@@ -471,19 +303,11 @@
             "guid": "321551f2-e6bc-476b-8d76-506658c71cf6",
             "fields": [
                 {
-                    "id": "ra_role_repressor",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "ra_role_chaos_repressor",
+                    "autoDisplayName": false,
+                    "displayName": "Chaos Repressor",
                     "addToList": true,
-                    "guid": "5d036d9d-2d92-4b2a-84be-0e594d577feb"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_repressor",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5d036d9d-2d92-4b2a-84be-0e594d577feb"
                 }
             ]
@@ -494,18 +318,10 @@
             "fields": [
                 {
                     "id": "ra_role_overwatch",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Overwatch",
                     "addToList": true,
-                    "guid": "09cdd880-10c3-43ce-aed6-e36fad7e0d8c"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_overwatch",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "09cdd880-10c3-43ce-aed6-e36fad7e0d8c"
                 }
             ]
@@ -516,18 +332,10 @@
             "fields": [
                 {
                     "id": "ra_role_filmmaker",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Filmmaker",
                     "addToList": true,
-                    "guid": "e41ff0b6-f1f1-44b6-b238-ec3960f8b9ec"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "ra_role_filmmaker",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e41ff0b6-f1f1-44b6-b238-ec3960f8b9ec"
                 }
             ]

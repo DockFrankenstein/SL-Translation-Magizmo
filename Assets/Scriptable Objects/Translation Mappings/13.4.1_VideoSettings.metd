@@ -10,9 +10,10 @@
             "fields": [
                 {
                     "id": "settings_very_low",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Very Low",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "65d6b967-7fc2-4550-b453-5c7813558d42"
                 }
             ]
@@ -23,9 +24,10 @@
             "fields": [
                 {
                     "id": "settings_low",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Low",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a6f2cc4c-51fd-46c1-8ed5-bc434e05f333"
                 }
             ]
@@ -36,9 +38,10 @@
             "fields": [
                 {
                     "id": "settings_medium",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Medium",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7a44f18d-49e2-4f91-9083-01de4458e3bc"
                 }
             ]
@@ -49,9 +52,10 @@
             "fields": [
                 {
                     "id": "settings_high",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "High",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0084b18d-9060-4dac-8a99-c4735f2622aa"
                 }
             ]
@@ -62,9 +66,10 @@
             "fields": [
                 {
                     "id": "settings_very_high",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Very High",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b9a024e3-d048-463b-a571-96ab2b938f5e"
                 }
             ]
@@ -75,9 +80,10 @@
             "fields": [
                 {
                     "id": "settings_ultra",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ultra",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a3777b05-d68d-4e75-b601-cfd387828f02"
                 }
             ]
@@ -88,9 +94,10 @@
             "fields": [
                 {
                     "id": "settings_enabled",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Enabled",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c2d710a9-c0e6-4e68-873f-6f2b15585c61"
                 }
             ]
@@ -101,9 +108,10 @@
             "fields": [
                 {
                     "id": "settings_disabled",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Disabled",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "13a55771-98e8-4328-9b32-0405f552e9f2"
                 }
             ]
@@ -114,9 +122,10 @@
             "fields": [
                 {
                     "id": "settings_shadow",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Shadows",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a3bfae94-9ab0-4469-9f95-3f1045ccfa5b"
                 }
             ]
@@ -127,9 +136,10 @@
             "fields": [
                 {
                     "id": "settings_shadow_resolution",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Shadows Resolution",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c1370367-8b20-40e6-9824-84152df93941"
                 }
             ]
@@ -140,9 +150,10 @@
             "fields": [
                 {
                     "id": "settings_lights_facility",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Facility Lights",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2cce2f14-3582-40bf-bd26-349307bf1a99"
                 }
             ]
@@ -153,9 +164,10 @@
             "fields": [
                 {
                     "id": "settings_resolution",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Resolution",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f8a2366b-ff04-46c7-b35f-527e3d461f10"
                 }
             ]
@@ -166,9 +178,10 @@
             "fields": [
                 {
                     "id": "settings_aspect_ratio",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Aspect Ratio",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5ee67d92-f255-45df-8959-1bf0a65de7a9"
                 }
             ]
@@ -179,9 +192,10 @@
             "fields": [
                 {
                     "id": "settings_display_mode",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Display Mode",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "14a06335-61ee-40e1-8c24-3f563f1cc87b"
                 }
             ]
@@ -192,9 +206,10 @@
             "fields": [
                 {
                     "id": "settings_framelimit_toggle",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Max Frame Rate",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a6e573db-9c26-4239-b8b8-46ea46f8c04d"
                 }
             ]
@@ -205,9 +220,10 @@
             "fields": [
                 {
                     "id": "settings_anti_aliasing",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Anti-Aliasing",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cecfd058-1eec-4101-8883-5fc3d813c1ca"
                 }
             ]
@@ -218,9 +234,10 @@
             "fields": [
                 {
                     "id": "settings_vsync",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "V-Sync",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ae94f4c7-9af1-4aac-9178-7ebefa0541f6"
                 }
             ]
@@ -234,6 +251,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8e45bf87-d504-4b49-9ae1-9b396626b0ed"
                 }
             ]
@@ -244,9 +262,10 @@
             "fields": [
                 {
                     "id": "settings_texture_quality",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Texture Quality",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "447620f4-b9b7-43a7-b32c-937208449298"
                 }
             ]
@@ -257,9 +276,10 @@
             "fields": [
                 {
                     "id": "settings_brightness",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Brightness",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "51499dc6-987d-4077-89c6-102e6af74891"
                 }
             ]
@@ -270,9 +290,10 @@
             "fields": [
                 {
                     "id": "settings_category_screen",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Screen Category",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f0289168-93fe-40e5-a9f5-ccd4f3b7713d"
                 }
             ]
@@ -283,9 +304,10 @@
             "fields": [
                 {
                     "id": "settings_category_quality",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Quality Category",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "962b7932-884b-4c6b-8bfe-8ce54d5c9ff2"
                 }
             ]
@@ -296,9 +318,10 @@
             "fields": [
                 {
                     "id": "settings_ragdol_freeze",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ragdoll Freezing",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "926e47eb-5f73-40bb-b66a-6392b2774b22"
                 }
             ]
@@ -309,9 +332,10 @@
             "fields": [
                 {
                     "id": "settings_ragdol_freeze_time",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ragdoll Freeze Time",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3ece6650-4e21-4076-91d7-758eff404f06"
                 }
             ]
@@ -322,9 +346,10 @@
             "fields": [
                 {
                     "id": "settings_framelimit_value",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "FPS Limiter",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "bc7f453f-02f5-44a2-9f81-ea745a7a7051"
                 }
             ]
@@ -335,9 +360,10 @@
             "fields": [
                 {
                     "id": "settings_category_vfx",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Visual Effects Category",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6354a2c8-6189-40b8-bd1a-76c8a76e95e5"
                 }
             ]
@@ -348,9 +374,10 @@
             "fields": [
                 {
                     "id": "settings_head_bobbing",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Head Bobbing",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "68a33e57-feb1-45aa-8b29-a909824a4493"
                 }
             ]
@@ -361,9 +388,10 @@
             "fields": [
                 {
                     "id": "settings_explosion_shake",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Explosion Screen Shake",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "13f0f53b-437f-4818-9331-891e8380ecce"
                 }
             ]
@@ -374,9 +402,10 @@
             "fields": [
                 {
                     "id": "settings_flashbang_dark",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Flashbang Dark Mode",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "99a59c43-55e0-473d-9d1c-10888117fb50"
                 }
             ]
@@ -387,9 +416,10 @@
             "fields": [
                 {
                     "id": "settings_all",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "All",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "db0348b0-c6d1-40f0-8fdf-e23c70d51f21"
                 }
             ]
@@ -399,10 +429,11 @@
             "guid": "1a345cf9-e3f6-4efe-9c36-cc502d1916d0",
             "fields": [
                 {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "settings_other",
+                    "autoDisplayName": false,
+                    "displayName": "Other",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2b99cda1-83f3-4db7-a62e-4e441f6a5f2f"
                 }
             ]
@@ -413,9 +444,10 @@
             "fields": [
                 {
                     "id": "settings_vsync_half",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "1/2 Refresh Rate",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b325a7f2-bb30-4667-9705-24dad0230c0a"
                 }
             ]
@@ -426,9 +458,10 @@
             "fields": [
                 {
                     "id": "settings_vsync_third",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "1/3 Refresh Rate",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "02e28cd8-c4f6-4cb9-9500-d74c2822ae81"
                 }
             ]
@@ -439,9 +472,10 @@
             "fields": [
                 {
                     "id": "settings_vsync_quarter",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "1/4 Refresh Rate",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "adcd15dc-3e7f-464c-bd2f-3bc7ecdf6aed"
                 }
             ]
@@ -452,9 +486,10 @@
             "fields": [
                 {
                     "id": "settings_aspect_ratio_unsupported_monitor",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Aspect Ratio Unsupported By Monitor",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "63056175-3c32-478c-a1f9-66b4403d0459"
                 }
             ]
@@ -465,9 +500,10 @@
             "fields": [
                 {
                     "id": "settings_display_mode_exclusive",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Exclusive",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "42886ed1-a970-404b-aeab-b5efa9603eae"
                 }
             ]
@@ -478,9 +514,10 @@
             "fields": [
                 {
                     "id": "settings_display_mode_borderless_visible",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Borderless Visible",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1ef95109-3dd3-4333-a342-544df39a0649"
                 }
             ]
@@ -491,9 +528,10 @@
             "fields": [
                 {
                     "id": "settings_display_mode_borderless_hide",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Borderless Hide",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c41272d3-f084-4c53-a1d5-2e0dea8404b2"
                 }
             ]
@@ -504,9 +542,10 @@
             "fields": [
                 {
                     "id": "settings_display_mode_windowed",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Windowed",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a6915797-21e7-48dd-92f3-3060624cd442"
                 }
             ]
@@ -517,9 +556,10 @@
             "fields": [
                 {
                     "id": "settings_smaa_preset",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SMAA Preset",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4475d47e-ec0c-4aac-9b44-e5e471c8fd98"
                 }
             ]
@@ -530,9 +570,10 @@
             "fields": [
                 {
                     "id": "settings_ambient_occlusion",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ambient Occlusion",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b94a0cb6-0458-45e1-a1af-c6eefa691e92"
                 }
             ]
@@ -543,9 +584,10 @@
             "fields": [
                 {
                     "id": "settings_bloom_quality",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Bloom Quality",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1272abc2-5139-46f3-a319-5e52b43c5337"
                 }
             ]
@@ -556,9 +598,10 @@
             "fields": [
                 {
                     "id": "settings_ragdol_freeze_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Ragdol Freezing Tooltip",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cdc0551a-0a4a-4a2f-b19e-da04ac3a567e"
                 }
             ]
@@ -569,9 +612,10 @@
             "fields": [
                 {
                     "id": "settings_aspect_ratio_unsupported_game",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Aspect Ratio Unsupported By Game",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9a66ac83-e6f4-4b1c-9952-b98e1ae03ea9"
                 }
             ]
@@ -582,9 +626,10 @@
             "fields": [
                 {
                     "id": "settings_decals_bullet_holes",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Bullet Holes",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "474a887f-9987-4407-87c7-2579ef1603e4"
                 }
             ]
@@ -595,9 +640,10 @@
             "fields": [
                 {
                     "id": "settings_decals_blood",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Blood Decals",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0e8c4d52-def0-4fb6-a9c4-e5358940f8d7"
                 }
             ]
@@ -608,9 +654,10 @@
             "fields": [
                 {
                     "id": "settings_target_display",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Target Display",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7110cc94-aa74-461e-90e3-5527ea9b5df4"
                 }
             ]
@@ -621,9 +668,10 @@
             "fields": [
                 {
                     "id": "settings_display_mode_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Display Mode Tooltip",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3544b069-91de-424f-92a0-d90d0272c104"
                 }
             ]
@@ -634,9 +682,10 @@
             "fields": [
                 {
                     "id": "settings_graphics_api",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Graphics API",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5e07a382-7562-4ac7-b082-fefac938ea87"
                 }
             ]
@@ -647,9 +696,10 @@
             "fields": [
                 {
                     "id": "settings_graphics_api_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Graphics API Tooltip",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "173cab1c-34d7-4101-95d6-b9211b7d55f0"
                 }
             ]
@@ -660,9 +710,10 @@
             "fields": [
                 {
                     "id": "settings_restart_required",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Restart Required",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7ce0f924-7fcd-4e6d-89fe-e44fc9a7f342"
                 }
             ]
@@ -673,9 +724,10 @@
             "fields": [
                 {
                     "id": "settings_graphics_api_unavaliable",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Graphics API Unavaliable",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1962738d-2f0f-4757-9d18-e0baef3f56cc"
                 }
             ]

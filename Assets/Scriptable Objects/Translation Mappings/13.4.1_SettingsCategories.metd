@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "settings_category_video",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Video Category",
                     "addToList": true,
-                    "guid": "07bf6b55-a84b-4225-866d-afa1d06f5c99"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_category_video",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "07bf6b55-a84b-4225-866d-afa1d06f5c99"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "settings_category_audio",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Audio Category",
                     "addToList": true,
-                    "guid": "33b923dc-d8f4-4f75-b6bf-2fc9135ced9b"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_category_audio",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "33b923dc-d8f4-4f75-b6bf-2fc9135ced9b"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "settings_category_controls",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Controls Category",
                     "addToList": true,
-                    "guid": "a1d782c0-1068-4bda-9d90-b7ed5169f2a3"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_category_controls",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a1d782c0-1068-4bda-9d90-b7ed5169f2a3"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "settings_category_interface",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Interface Category",
                     "addToList": true,
-                    "guid": "3fca7be7-314b-4e70-9a9a-91f9b37805de"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_category_interface",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3fca7be7-314b-4e70-9a9a-91f9b37805de"
                 }
             ]
@@ -98,18 +66,10 @@
             "fields": [
                 {
                     "id": "settings_category_other",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Other Category",
                     "addToList": true,
-                    "guid": "4879290e-b5d7-4e4a-b11f-a545c36aa727"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "settings_category_other",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4879290e-b5d7-4e4a-b11f-a545c36aa727"
                 }
             ]

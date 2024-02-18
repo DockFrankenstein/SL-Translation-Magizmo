@@ -308,7 +308,7 @@
 }
 
 .tree .unity-button {
-    height: 60px;
+    height: auto;
     -unity-text-align: middle-left;
     border-bottom-color: rgb(13, 13, 13);
     border-bottom-width: 2px;
@@ -320,6 +320,10 @@
     border-left-width: 0;
     padding-left: 16px;
     background-color: rgb(33, 33, 33);
+    min-height: 50px;
+    white-space: normal;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .tree .unity-scroll-view__content-container {
@@ -454,15 +458,15 @@
     min-width: auto;
     max-width: none;
     max-height: none;
-    background-color: rgba(46, 46, 46, 255);
+    background-color: rgb(46, 46, 46);
     border-left-width: 2px;
     border-right-width: 2px;
     border-top-width: 2px;
     border-bottom-width: 2px;
-    border-left-color: rgba(13, 13, 13, 255);
-    border-right-color: rgba(13, 13, 13, 255);
-    border-top-color: rgba(13, 13, 13, 255);
-    border-bottom-color: rgba(13, 13, 13, 255);
+    border-left-color: rgb(13, 13, 13);
+    border-right-color: rgb(13, 13, 13);
+    border-top-color: rgb(13, 13, 13);
+    border-bottom-color: rgb(13, 13, 13);
 }
 
 .unity-list-view__footer {
@@ -552,9 +556,9 @@
     border-right-color: rgb(51, 51, 51);
     border-top-color: rgb(51, 51, 51);
     border-bottom-color: rgb(51, 51, 51);
-    background-color: rgba(51, 51, 51, 255);
+    background-color: rgb(51, 51, 51);
 }
 
 .unity-list-view__reorderable-item:checked {
-    background-color: rgba(76, 76, 76, 255);
+    background-color: rgb(76, 76, 76);
 }

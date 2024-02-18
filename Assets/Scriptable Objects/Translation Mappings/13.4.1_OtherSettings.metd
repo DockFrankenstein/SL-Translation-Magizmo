@@ -10,9 +10,10 @@
             "fields": [
                 {
                     "id": "settings_server_tracking",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Server Tracking",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2c478072-1bc3-4a4f-a83f-bcbf8183b0ca"
                 }
             ]
@@ -23,9 +24,10 @@
             "fields": [
                 {
                     "id": "settings_allow",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Allow",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d43eae92-f61f-4959-b239-32ac8eac6a7a"
                 }
             ]
@@ -36,9 +38,10 @@
             "fields": [
                 {
                     "id": "settings_server_tracking_deny",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Deny (DNT)",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e480ef3a-8e46-4f2d-853e-bdca3f043269"
                 }
             ]
@@ -49,9 +52,10 @@
             "fields": [
                 {
                     "id": "settings_server_tracking_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Server Tracking Tooltip",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b3809117-d543-4b09-a386-5dde7092839a"
                 }
             ]
@@ -62,9 +66,10 @@
             "fields": [
                 {
                     "id": "settings_rich_presence",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Rich Presence",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7be965ec-376b-4cb3-914d-a8f6d2e34844"
                 }
             ]
@@ -75,9 +80,10 @@
             "fields": [
                 {
                     "id": "settings_rich_presence_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Rich Presence Tooltip",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b1335821-1687-4e1d-b231-3ce0d61319e7"
                 }
             ]
@@ -88,9 +94,10 @@
             "fields": [
                 {
                     "id": "settings_steam_lobby_visibility",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Steam Lobby Visibility",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "542c06d8-9009-4d05-ab5c-48796b7423e5"
                 }
             ]
@@ -101,9 +108,10 @@
             "fields": [
                 {
                     "id": "settings_steam_lobby_visibility_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Steam Lobby Visibility Tooltip",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4371465c-6c67-4a1a-ae4e-3a72d252a752"
                 }
             ]
@@ -114,9 +122,10 @@
             "fields": [
                 {
                     "id": "settings_voicechat_privacy",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Voicechat Privacy",
                     "addToList": false,
+                    "dynamicValues": [],
                     "guid": "52a70950-2f9a-435f-bebf-a639a80962b7"
                 }
             ]
@@ -127,9 +136,10 @@
             "fields": [
                 {
                     "id": "settings_player_list_profile",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Profile On Player List",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3451120c-026f-4ec4-9525-2b078c1bba99"
                 }
             ]
@@ -140,9 +150,10 @@
             "fields": [
                 {
                     "id": "settings_player_list_profile_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Profile On Player List Tooltip",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "594c8b48-c08f-47d4-be8e-a0f4317030ac"
                 }
             ]
@@ -153,9 +164,10 @@
             "fields": [
                 {
                     "id": "settings_shown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Shown",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c199357e-e25d-46dc-acd9-47aaa7b80f8f"
                 }
             ]
@@ -166,9 +178,10 @@
             "fields": [
                 {
                     "id": "settings_hidden",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Hidden",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9dba2376-de36-4f44-90b6-09f673f4c2e6"
                 }
             ]
@@ -179,9 +192,10 @@
             "fields": [
                 {
                     "id": "settings_invite_only",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Invite-Only",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b596588e-5dc4-44ca-a519-d7a2f7be483e"
                 }
             ]
@@ -192,9 +206,10 @@
             "fields": [
                 {
                     "id": "settings_public",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Public",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "61a682a6-94ad-43d8-a1a7-52e4b95287ef"
                 }
             ]
@@ -205,9 +220,10 @@
             "fields": [
                 {
                     "id": "settings_changes_warning",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Changes Warning",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f3cf80ff-d183-41f8-b1e3-46b8438c7564"
                 }
             ]
@@ -218,9 +234,10 @@
             "fields": [
                 {
                     "id": "settings_friends_only",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Friends-Only",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "576555a3-417d-4ffc-9cd2-4ab53df1efa8"
                 }
             ]
@@ -231,9 +248,10 @@
             "fields": [
                 {
                     "id": "settings_category_privacy",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Privacy Category",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6f71d684-0dd3-4685-ae66-f624c9fe7501"
                 }
             ]
@@ -244,9 +262,10 @@
             "fields": [
                 {
                     "id": "settings_spawn_preferences",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP Spawn Preferences",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "838b91bc-934e-4cd1-9ec7-0063bf36449d"
                 }
             ]
@@ -257,9 +276,10 @@
             "fields": [
                 {
                     "id": "settings_spawn_preferences_tooltip",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP Spawn Preferences Tooltip",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ab5e70f4-2486-43d7-855a-0cf88d5c69ec"
                 }
             ]

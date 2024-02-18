@@ -190,7 +190,7 @@ namespace Project.GUI.Editor.Hierarchy
                     switch (item.item.type)
                     {
                         case HierarchyItem.ItemType.Normal:
-                            EditorGUI.LabelField(nameRect, item.item.id);
+                            EditorGUI.LabelField(nameRect, item.field == null ? item.item.id : $"{item.field.displayName} ({item.field.id})");
                             break;
                         case HierarchyItem.ItemType.Header:
                             EditorGUI.LabelField(nameRect, item.item.displayText, EditorStyles.whiteLargeLabel);
@@ -239,7 +239,7 @@ namespace Project.GUI.Editor.Hierarchy
         protected override bool CanChangeExpandedState(TreeViewItem item) =>
             HasChildren(item);
         #endregion
-
+  
         #region Input
         protected override void KeyEvent()
         {
@@ -567,15 +567,30 @@ namespace Project.GUI.Editor.Hierarchy
 
             public Item(HierarchyItem item, MappedField[] mappedFields) : this(item)
             {
+                if (mappedFields == null) return;
+
+                switch (item.type)
+                {
+                    case HierarchyItem.ItemType.Normal:
+                        if (!mappedFields.Any(x => x.id == item.id))
+                        {
+                            statusIcon = qGUIEditorUtility.ErrorIcon;
+                            statusIconTooltip = "A field with this id does not exist in the version file!";
+                            break;
+                        }
+
+                        field = mappedFields.Where(x => x.id == item.id).First();
+                        break;
+                }
+
                 if (item.type == HierarchyItem.ItemType.Normal && 
                     mappedFields != null &&
                     !mappedFields.Any(x => x.id == item.id))
                 {
-                    statusIcon = qGUIEditorUtility.ErrorIcon;
-                    statusIconTooltip = "A field with this id does not exist in the version file!";
                 }
             }
 
+            public MappedField field;
             public HierarchyItem item;
             public Texture statusIcon;
             public string statusIconTooltip;

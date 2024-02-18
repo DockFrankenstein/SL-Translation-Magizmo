@@ -10,18 +10,10 @@
             "fields": [
                 {
                     "id": "team_scp",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP Team",
                     "addToList": true,
-                    "guid": "8cc085dc-1779-4cd3-b1b6-26ff506232f1"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "team_scp",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8cc085dc-1779-4cd3-b1b6-26ff506232f1"
                 }
             ]
@@ -32,18 +24,10 @@
             "fields": [
                 {
                     "id": "team_mtf",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "MTF Team",
                     "addToList": true,
-                    "guid": "2580b4e8-7906-4507-9db6-0eff45df535f"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "team_mtf",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "2580b4e8-7906-4507-9db6-0eff45df535f"
                 }
             ]
@@ -54,18 +38,10 @@
             "fields": [
                 {
                     "id": "team_chaos",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Chaos Team",
                     "addToList": true,
-                    "guid": "65a8d79c-4f9e-413a-b7b3-480e74f66b94"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "team_chaos",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "65a8d79c-4f9e-413a-b7b3-480e74f66b94"
                 }
             ]
@@ -76,18 +52,10 @@
             "fields": [
                 {
                     "id": "team_scientist",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Scientist Team",
                     "addToList": true,
-                    "guid": "52cc7926-9d7e-4623-ab13-cadb83edb904"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "team_scientist",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "52cc7926-9d7e-4623-ab13-cadb83edb904"
                 }
             ]
@@ -98,18 +66,10 @@
             "fields": [
                 {
                     "id": "team_classd",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Classd Team",
                     "addToList": true,
-                    "guid": "ef4ed8d7-1250-4a46-abb6-b2d9d2ef7f36"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "team_classd",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ef4ed8d7-1250-4a46-abb6-b2d9d2ef7f36"
                 }
             ]
@@ -120,18 +80,10 @@
             "fields": [
                 {
                     "id": "team_dead",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Dead Team",
                     "addToList": true,
-                    "guid": "3033a9b5-50c7-4541-81f9-4d7b106e7371"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "team_dead",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3033a9b5-50c7-4541-81f9-4d7b106e7371"
                 }
             ]
@@ -142,18 +94,10 @@
             "fields": [
                 {
                     "id": "team_unknown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Unknown Team",
                     "addToList": true,
-                    "guid": "eb41865c-0ef1-4d95-9271-dc7c73fe617f"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "team_unknown",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "eb41865c-0ef1-4d95-9271-dc7c73fe617f"
                 }
             ]

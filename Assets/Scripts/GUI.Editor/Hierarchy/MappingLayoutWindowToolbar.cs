@@ -28,6 +28,7 @@ namespace Project.GUI.Editor.Hierarchy
                 var newItems = new List<HierarchyItem>();
                 foreach (var item in window.asset.version.GetMappedFields())
                 {
+                    if (item.mappingContainer.Hide) continue;
                     if (window.asset.items.Any(x => x.id == item.id)) continue;
                     var hierarchyItem = new HierarchyItem(item.id);
                     newItems.Add(hierarchyItem);

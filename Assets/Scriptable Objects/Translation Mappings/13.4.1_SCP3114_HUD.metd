@@ -11,9 +11,14 @@
                 {
                     "id": "3114_prompt_disguise_new",
                     "autoDisplayName": false,
-                    "displayName": "3114 Prompt Disguise New",
+                    "displayName": "Disguised As Prompt",
                     "addToList": true,
-                    "dynamicValues": [],
+                    "dynamicValues": [
+                        {
+                            "tag": "[role_name]",
+                            "description": "Name of the role used for disguise."
+                        }
+                    ],
                     "guid": "344adcb1-fda4-419c-8fff-47826ec8e929"
                 }
             ]
@@ -25,9 +30,14 @@
                 {
                     "id": "3114_prompt_disguise_cannot_attack",
                     "autoDisplayName": false,
-                    "displayName": "3114 Prompt Disguise Cannot Attack",
+                    "displayName": "Unable To Attack Prompt",
                     "addToList": true,
-                    "dynamicValues": [],
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "Key for removing disguise."
+                        }
+                    ],
                     "guid": "8f61f96b-0098-4ccb-b1c9-82266dafeeaa"
                 }
             ]
@@ -39,7 +49,7 @@
                 {
                     "id": "3114_prompt_disguise_cannot_items",
                     "autoDisplayName": false,
-                    "displayName": "3114 Prompt Disguise Cannot Items",
+                    "displayName": "Unable to Use Items Prompt",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "02e214b3-5471-4ab1-b15b-d8ad4d628b37"
@@ -53,9 +63,14 @@
                 {
                     "id": "3114_prompt_disguise_speak",
                     "autoDisplayName": false,
-                    "displayName": "3114 Prompt Disguise Speak",
+                    "displayName": "Can Speak Tip",
                     "addToList": true,
-                    "dynamicValues": [],
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "Key for removing disguise."
+                        }
+                    ],
                     "guid": "5b3d68d7-00b4-4341-ae48-ca90ca394dc2"
                 }
             ]
@@ -67,7 +82,7 @@
                 {
                     "id": "3114_prompt_corpse_used",
                     "autoDisplayName": false,
-                    "displayName": "3114 Prompt Corpse Used",
+                    "displayName": "Corpse Already Used",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "1cb2bd9f-80f3-4f15-bbc1-c65d7343861b"
@@ -81,9 +96,14 @@
                 {
                     "id": "3114_prompt_corpse_already_using",
                     "autoDisplayName": false,
-                    "displayName": "3114 Prompt Corpse Already Using",
+                    "displayName": "Already Disguised",
                     "addToList": true,
-                    "dynamicValues": [],
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "Key for removing disguise."
+                        }
+                    ],
                     "guid": "33ed4515-4471-4152-93aa-c3e6c864ed3d"
                 }
             ]
@@ -95,7 +115,7 @@
                 {
                     "id": "3114_prompt_corpse_not_human",
                     "autoDisplayName": false,
-                    "displayName": "3114 Prompt Corpse Not Human",
+                    "displayName": "Corpse Not Human",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "2a93751f-4407-4669-9b79-c027a28eca70"
@@ -109,9 +129,14 @@
                 {
                     "id": "death_body_3114_disguise",
                     "autoDisplayName": false,
-                    "displayName": "Death Body 3114 Disguise",
+                    "displayName": "Bones Cause Of Death",
                     "addToList": true,
-                    "dynamicValues": [],
+                    "dynamicValues": [
+                        {
+                            "tag": "[player_name]",
+                            "description": "Name of the player that is associated with the pile of bones."
+                        }
+                    ],
                     "guid": "ab8a4a93-6362-4fca-96a2-c0f1f667740e"
                 }
             ]
@@ -123,9 +148,14 @@
                 {
                     "id": "3114_prompt_corpse_can_be_used",
                     "autoDisplayName": false,
-                    "displayName": "3114 Prompt Corpse Can Be Used",
+                    "displayName": "Corpse Usable Prompt",
                     "addToList": true,
-                    "dynamicValues": [],
+                    "dynamicValues": [
+                        {
+                            "tag": "[role]",
+                            "description": "Role of the corpse."
+                        }
+                    ],
                     "guid": "8dca0537-81d2-48e4-939c-3375fb0d3a09"
                 }
             ]
@@ -137,7 +167,7 @@
                 {
                     "id": "3114_prompt_disguise",
                     "autoDisplayName": false,
-                    "displayName": "3114 Prompt Disguise",
+                    "displayName": "Disguise Mark",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "a98b655f-b22a-4011-b78b-d4b33abff3f8"
@@ -151,7 +181,7 @@
                 {
                     "id": "3114_strangulation_cooldown",
                     "autoDisplayName": false,
-                    "displayName": "3114 Strangulation Cooldown",
+                    "displayName": "Strangulation Cooldown",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "08ab4e1d-90ff-4e17-a595-dc17fe7a7921"
@@ -165,7 +195,7 @@
                 {
                     "id": "f1_3114_ability_skeleton_in_closet",
                     "autoDisplayName": false,
-                    "displayName": "F1 3114 Ability Skeleton In Closet",
+                    "displayName": "Skeleton In Closet Ability",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "3926e0c5-b5ed-44c9-ba6e-70074db76a88"
@@ -173,7 +203,7 @@
                 {
                     "id": "f1_3114_ability_skeleton_in_closet_description",
                     "autoDisplayName": false,
-                    "displayName": "F1 3114 Ability Skeleton In Closet Description",
+                    "displayName": "Skeleton In Closet Ability Description",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "e48c4308-2188-4838-a020-ca35912762d5"
@@ -187,7 +217,7 @@
                 {
                     "id": "f1_3114_ability_catch_hands",
                     "autoDisplayName": false,
-                    "displayName": "F1 3114 Ability Catch Hands",
+                    "displayName": "Catch Hands Ability",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "1c7345ec-9add-4b86-824d-48a2449aba02"
@@ -195,7 +225,7 @@
                 {
                     "id": "f1_3114_ability_catch_hands_description",
                     "autoDisplayName": false,
-                    "displayName": "F1 3114 Ability Catch Hands Description",
+                    "displayName": "Catch Hands Ability Description",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "0aa2c564-0877-48df-8550-b0fe2a191799"
@@ -209,7 +239,7 @@
                 {
                     "id": "f1_3114_ability_strangulation",
                     "autoDisplayName": false,
-                    "displayName": "F1 3114 Ability Strangulation",
+                    "displayName": "Strangulation Ability",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "eb7c6fa1-25ed-4667-9c5c-efcd400877fb"
@@ -217,7 +247,7 @@
                 {
                     "id": "f1_3114_ability_strangulation_description",
                     "autoDisplayName": false,
-                    "displayName": "F1 3114 Ability Strangulation Description",
+                    "displayName": "Strangulation Ability Description",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "51c44e96-d6ee-480a-9f61-ce77f9bc606b"
@@ -231,7 +261,7 @@
                 {
                     "id": "f1_3114_ability_under_skin",
                     "autoDisplayName": false,
-                    "displayName": "F1 3114 Ability Under Skin",
+                    "displayName": "Under Skin Ability",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "43de03eb-2fc0-4365-904b-3aaebe9b739a"
@@ -239,7 +269,7 @@
                 {
                     "id": "f1_3114_ability_under_skin_description",
                     "autoDisplayName": false,
-                    "displayName": "F1 3114 Ability Under Skin Description",
+                    "displayName": "Under Skin Ability Description",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "546a32d0-852b-4c27-b643-f1ca60799300"
@@ -253,9 +283,14 @@
                 {
                     "id": "3114_prompt_disguise_remove",
                     "autoDisplayName": false,
-                    "displayName": "3114 Prompt Disguise Remove",
+                    "displayName": "Remove Disguise Tip",
                     "addToList": true,
-                    "dynamicValues": [],
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "Key for removing disguise."
+                        }
+                    ],
                     "guid": "58c4cf23-4132-4912-8d4b-fcd353db8323"
                 }
             ]

@@ -44,8 +44,8 @@ namespace Project.GUI.Hierarchy
 
                             x = new HierarchyItem(x)
                             {
-                                displayText = field.autoDisplayName ? PUtility.GenerateDisplayName(x.id) : x.displayText,
-                                Item = manager.file.Entries[x.id],
+                                displayText = field.autoDisplayName ? PUtility.GenerateDisplayName(field.id) : field.displayName,
+                                Item = manager.file.Entries[field.id],
                             };
                         }
                     }

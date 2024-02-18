@@ -13,15 +13,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "c8aae805-2785-466e-9452-9765321acd1d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_round_finished",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c8aae805-2785-466e-9452-9765321acd1d"
                 }
             ]
@@ -35,15 +27,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "3b589ba3-bc67-452c-9aba-1839ead99459"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_result_scp",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3b589ba3-bc67-452c-9aba-1839ead99459"
                 }
             ]
@@ -57,15 +41,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "1ae7e8e8-81e8-47c2-8654-a271170afed4"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_result_mtf",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1ae7e8e8-81e8-47c2-8654-a271170afed4"
                 }
             ]
@@ -79,15 +55,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "9a5a6f95-ae70-4de1-a808-8526ce8b4314"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_result_chaos",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9a5a6f95-ae70-4de1-a808-8526ce8b4314"
                 }
             ]
@@ -101,15 +69,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "f1b53ffa-154d-44ab-aa04-0fe81a3ea92d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_result_stalemate",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f1b53ffa-154d-44ab-aa04-0fe81a3ea92d"
                 }
             ]
@@ -123,15 +83,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "ff32fd6c-4ffd-4cec-b4b3-4225e87fad16"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_result_scp_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ff32fd6c-4ffd-4cec-b4b3-4225e87fad16"
                 }
             ]
@@ -145,15 +97,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "cd03b754-b312-40f3-9bef-bf5e70735226"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_result_mtf_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cd03b754-b312-40f3-9bef-bf5e70735226"
                 }
             ]
@@ -167,15 +111,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "d66385c3-878c-4744-b16d-4b113ae9a2f8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_result_chaos_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d66385c3-878c-4744-b16d-4b113ae9a2f8"
                 }
             ]
@@ -189,15 +125,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "71dce28b-5313-4ea3-9b1e-2689cae84649"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_result_stalemate_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "71dce28b-5313-4ea3-9b1e-2689cae84649"
                 }
             ]
@@ -211,15 +139,12 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "054ed64c-0089-464c-bff1-fea3500fa6e3"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_escapes_classd",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[summary_d_escaped]",
+                            "description": "Amount of escaped class-d."
+                        }
+                    ],
                     "guid": "054ed64c-0089-464c-bff1-fea3500fa6e3"
                 }
             ]
@@ -233,15 +158,12 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "6ed683f9-8642-4566-81ed-0dd4b138f315"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_escapes_scientist",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[summary_s_escaped]",
+                            "description": "Amount of escaped scientists."
+                        }
+                    ],
                     "guid": "6ed683f9-8642-4566-81ed-0dd4b138f315"
                 }
             ]
@@ -255,15 +177,12 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "ca030bb3-e65e-41b3-838a-e6e985ae1296"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_warhead_kills",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[summary_warhead_kills]",
+                            "description": "Amount of people killed by the Alpha Warhead."
+                        }
+                    ],
                     "guid": "ca030bb3-e65e-41b3-838a-e6e985ae1296"
                 }
             ]
@@ -277,15 +196,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "0eed7abd-22a0-426d-9cc3-a5bacee90b1f"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_warhead_unused",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0eed7abd-22a0-426d-9cc3-a5bacee90b1f"
                 }
             ]
@@ -299,15 +210,16 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "8231d86c-6ef8-41f4-a08a-670e98a6ec49"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_duration",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[summary_round_minutes]",
+                            "description": "Minutes of rounds duration."
+                        },
+                        {
+                            "tag": "[summary_round_seconds]",
+                            "description": "Seconds of rounds duration."
+                        }
+                    ],
                     "guid": "8231d86c-6ef8-41f4-a08a-670e98a6ec49"
                 }
             ]
@@ -321,15 +233,12 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "d4e4614b-feb6-4b54-83a7-421eb8ff8374"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_scp_terminated",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[summary_scp_terminated]",
+                            "description": ""
+                        }
+                    ],
                     "guid": "d4e4614b-feb6-4b54-83a7-421eb8ff8374"
                 }
             ]
@@ -343,15 +252,12 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "823c0a76-5c33-43a3-8771-f3c2f9fd8404"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_next_round_countdown",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[summary_next_round_countdown]",
+                            "description": "Time until round restart in seconds."
+                        }
+                    ],
                     "guid": "823c0a76-5c33-43a3-8771-f3c2f9fd8404"
                 }
             ]
@@ -365,15 +271,12 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "5c9b200e-6ee1-4b6e-8e90-2a529f301729"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_scp_kills",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[summary_scpfrags]",
+                            "description": "Number of humans killed by SCPs."
+                        }
+                    ],
                     "guid": "5c9b200e-6ee1-4b6e-8e90-2a529f301729"
                 }
             ]
@@ -387,15 +290,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "5d70ce6a-f003-4bff-bdbb-5224526fa2a5"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_result_flamingos",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5d70ce6a-f003-4bff-bdbb-5224526fa2a5"
                 }
             ]
@@ -409,15 +304,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "56476547-8b35-48e1-b5ef-89c10e74ea3e"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "summary_result_flamingos_description",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "56476547-8b35-48e1-b5ef-89c10e74ea3e"
                 }
             ]

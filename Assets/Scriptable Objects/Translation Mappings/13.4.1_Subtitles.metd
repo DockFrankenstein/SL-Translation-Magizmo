@@ -10,9 +10,15 @@
             "fields": [
                 {
                     "id": "subtitle_mtf_entered",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "MTF Entered",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[designation]",
+                            "description": "Designation of the MTF Unit."
+                        }
+                    ],
                     "guid": "cd088e3a-670a-45d0-9d08-a9507293bb96"
                 }
             ]
@@ -23,9 +29,15 @@
             "fields": [
                 {
                     "id": "subtitle_awaiting_recontainment_multiple",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Awaiting Recontainment Of Multiple",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[count]",
+                            "description": "Amount of alive SCP subjects."
+                        }
+                    ],
                     "guid": "ab4e54f1-0f78-4df4-9d81-f2e33e1dab7d"
                 }
             ]
@@ -36,9 +48,10 @@
             "fields": [
                 {
                     "id": "subtitle_awaiting_recontainment_single",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Awaiting Recontainment Of Single",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4db24e10-c831-4934-928e-465e11a37ea7"
                 }
             ]
@@ -49,9 +62,10 @@
             "fields": [
                 {
                     "id": "subtitle_threat_to_safety_remaining",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Threat To Safety Remaining",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e1b83903-7b22-4f39-84b8-a92b265ab679"
                 }
             ]
@@ -62,9 +76,10 @@
             "fields": [
                 {
                     "id": "subtitle_termination_unspecified",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Terminated By Unspecified",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1f41a616-5b23-4c60-98ee-7cca1e1b36d5"
                 }
             ]
@@ -75,9 +90,15 @@
             "fields": [
                 {
                     "id": "subtitle_termination_scp",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Terminated By SCP",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[scp]",
+                            "description": "SCP id number (e.g. 939, 096, 173)."
+                        }
+                    ],
                     "guid": "4a889ec5-e276-44a6-ab16-7570208813c7"
                 }
             ]
@@ -88,9 +109,10 @@
             "fields": [
                 {
                     "id": "subtitle_termination_automatic_security_system",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Terminated By Automatic Security System",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "92bce5a4-a799-4c4f-88c1-581eb5e1fa10"
                 }
             ]
@@ -101,9 +123,10 @@
             "fields": [
                 {
                     "id": "subtitle_termination_warhead",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Terminated By Warhead",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "de24d36a-2a66-4448-b3c1-55a0ab43f9af"
                 }
             ]
@@ -114,9 +137,10 @@
             "fields": [
                 {
                     "id": "subtitle_termination_scientist",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Terminated By Scientist",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f33bd1c6-05ce-4a74-b57d-0b8b7caf4c4f"
                 }
             ]
@@ -127,9 +151,10 @@
             "fields": [
                 {
                     "id": "subtitle_termination_classd",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Terminated By Class-D",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d4c6df7e-1c09-420d-a4e4-bfc787765744"
                 }
             ]
@@ -140,9 +165,10 @@
             "fields": [
                 {
                     "id": "subtitle_termination_chaos",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Terminated By Chaos",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "7ee93a30-2670-4154-bb6d-71256fe5efa2"
                 }
             ]
@@ -153,9 +179,15 @@
             "fields": [
                 {
                     "id": "subtitle_scp",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "SCP",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[scp]",
+                            "description": "SCP id number (e.g. 939, 096, 173)."
+                        }
+                    ],
                     "guid": "01309dac-682c-4633-84a3-240b8a44a291"
                 }
             ]
@@ -166,9 +198,10 @@
             "fields": [
                 {
                     "id": "subtitle_terminated_unit_unknown",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Terminated By Unknown Unit",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "18cd6364-59bf-47df-a045-9e0f622845c1"
                 }
             ]
@@ -179,9 +212,15 @@
             "fields": [
                 {
                     "id": "subtitle_terminated_unit",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Terminated By Unit",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[designation]",
+                            "description": "Designation of the MTF Unit."
+                        }
+                    ],
                     "guid": "0d2665c4-b37e-46a9-b85a-e7c66ae0ab92"
                 }
             ]
@@ -192,9 +231,10 @@
             "fields": [
                 {
                     "id": "subtitle_terminated_decontamination",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Terminated By Decontamination In",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e068fe07-d3b8-4914-a7d0-ec490971094a"
                 }
             ]
@@ -205,9 +245,19 @@
             "fields": [
                 {
                     "id": "subtitle_generator_activated",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Generator Activated",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[current]",
+                            "description": "Current amount of activated generators."
+                        },
+                        {
+                            "tag": "[max]",
+                            "description": "Total amount of generators."
+                        }
+                    ],
                     "guid": "902d0c9a-0fe0-4fed-bac7-9e93b0ce9138"
                 }
             ]
@@ -218,9 +268,10 @@
             "fields": [
                 {
                     "id": "subtitle_generator_activated_all",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "All Generators Activated",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4a4694a1-13a8-4504-965d-b425715bc3d6"
                 }
             ]
@@ -231,9 +282,10 @@
             "fields": [
                 {
                     "id": "subtitle_generator_overcharge",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Generator Overcharge",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4a8ae00f-d5cf-4822-80c1-f5ef75fb8167"
                 }
             ]
@@ -244,9 +296,10 @@
             "fields": [
                 {
                     "id": "subtitle_facility_operational",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Facility Operational",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d87f9643-38b8-4e62-a7f8-9b898564d2d5"
                 }
             ]
@@ -257,9 +310,10 @@
             "fields": [
                 {
                     "id": "subtitle_lcz_decontamination_15min",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Decontamination In 15min",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "bf6597d8-aa19-4379-adb3-4b78c92f69d0"
                 }
             ]
@@ -270,9 +324,15 @@
             "fields": [
                 {
                     "id": "subtitle_lcz_decontamination",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Decontamination In Custom Time",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[time]",
+                            "description": "Time until decontamination in minutes."
+                        }
+                    ],
                     "guid": "f2091fa9-1acc-4d8d-b635-9c5bf7b16d14"
                 }
             ]
@@ -283,9 +343,10 @@
             "fields": [
                 {
                     "id": "subtitle_lcz_decontamination_1min",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Decontamination In 1min",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "5db76a07-d4c0-4783-8f5e-810548106083"
                 }
             ]
@@ -296,9 +357,10 @@
             "fields": [
                 {
                     "id": "subtitle_lcz_decontamination_30s",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Decontamination In 30s",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8571341f-65d6-45a9-8920-0a6792af0325"
                 }
             ]
@@ -309,9 +371,10 @@
             "fields": [
                 {
                     "id": "subtitle_lcz_decontamination_start",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Decontamination Start",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0f8813f6-acc2-4ef6-9612-b1f49d1fac2d"
                 }
             ]
@@ -322,9 +385,15 @@
             "fields": [
                 {
                     "id": "subtitle_warhead_start",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Warhead Start",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[time]",
+                            "description": "Time until detonation in seconds."
+                        }
+                    ],
                     "guid": "4f1d6e00-0ecf-4303-abe4-1d07fb5a6196"
                 }
             ]
@@ -335,9 +404,10 @@
             "fields": [
                 {
                     "id": "subtitle_warhead_cancelled",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Warhead Cancelled",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "136a8948-3ca6-45ab-bd74-75dd958befc4"
                 }
             ]
@@ -348,9 +418,15 @@
             "fields": [
                 {
                     "id": "subtitle_warhead_resumed",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Warhead Resumed",
                     "addToList": true,
+                    "dynamicValues": [
+                        {
+                            "tag": "[time]",
+                            "description": "Time until detonation in seconds."
+                        }
+                    ],
                     "guid": "03b1b174-477e-4b6f-957f-515fde71faf5"
                 }
             ]
@@ -361,9 +437,10 @@
             "fields": [
                 {
                     "id": "subtitle_terminated_marshmallow",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "autoDisplayName": false,
+                    "displayName": "Terminated By Marshmallow",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b028c49e-6156-4063-9b4f-394481a95eff"
                 }
             ]

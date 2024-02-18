@@ -5,6 +5,7 @@ using UnityEditor;
 using SFB;
 using Project.Translation.Data;
 using qASIC.Files;
+using qASIC;
 
 namespace Project.Translation.Mapping
 {
@@ -20,7 +21,7 @@ namespace Project.Translation.Mapping
 
         public MappedField[] GetMappedFields() =>
             containers
-            .SelectMany(x => x.GetMappedFields())
+            .SelectMany(x => x.GetMappedFields().ForEach(y => y.mappingContainer = x))
             .GroupBy(x => x.id)
             .Select(x => x.First())
             .ToArray();

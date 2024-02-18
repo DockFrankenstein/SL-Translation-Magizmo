@@ -103,6 +103,7 @@ namespace Project.GUI.Hierarchy
                         var button = new Button()
                         {
                             text = item.displayText,
+                            tooltip = item.displayText,
                         };
 
                         button.clicked += () =>
