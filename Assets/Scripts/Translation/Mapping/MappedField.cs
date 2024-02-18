@@ -64,6 +64,11 @@ namespace Project.Translation.Mapping
         public bool IsBlank =>
             string.IsNullOrWhiteSpace(id);
 
+        public string GetFinalName() =>
+            autoDisplayName ?
+            PUtility.GenerateDisplayName(id) :
+            displayName;
+
         public MappedField Duplicate()
         {
             return new MappedField()

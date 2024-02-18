@@ -4,13 +4,15 @@ using UnityEngine.UIElements;
 using System.Collections.Generic;
 using Fab.UITKDropdown;
 using System;
+using UnityEngine.Serialization;
 
 namespace Project.GUI.Hierarchy
 {
     public class HierarchyController : MonoBehaviour
     {
         public UIDocument document;
-        public HierarchyItemProvider[] providers;
+        [FormerlySerializedAs("providers")] 
+        public HierarchyItemProvider[] itemProviders;
 
         ScrollView scroll;
 
@@ -55,7 +57,7 @@ namespace Project.GUI.Hierarchy
         {
             scroll.contentContainer.Clear();
 
-            Items = providers
+            Items = itemProviders
                 .SelectMany(x => x.GetItems())
                 .ToList();
 

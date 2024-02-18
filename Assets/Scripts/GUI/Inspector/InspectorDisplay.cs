@@ -15,9 +15,22 @@ namespace Project.GUI.Inspector
         public TranslationManager manager;
         public HierarchyController hierarchy;
         public InspectorDisplayPanel[] inspectors;
+        public InspectorNameProvider[] nameProviders;
         public PreviewSceneManager previewSceneManager;
 
-        public IApplicationObject SelectedObject { get; private set; }
+        IApplicationObject _selectedObject;
+        public IApplicationObject SelectedObject 
+        {
+            get => _selectedObject;
+            set
+            {
+                _selectedObject = value;
+                SelectedObjectName = GetNameForObject(_selectedObject);
+                ReloadInspector();
+            }
+        }
+
+        public string SelectedObjectName { get; private set; }
         public InspectorDisplayPanel CurrentPanel { get; private set; }
 
         VisualElement _nothingSelectedPanel;
@@ -59,7 +72,7 @@ namespace Project.GUI.Inspector
             var nothingSelected = SelectedObject == null;
 
             if (!nothingSelected)
-                _itemName.text = SelectedObject.Name;
+                _itemName.text = SelectedObjectName;
 
             _selectedPanel.style.display = nothingSelected ?
                 DisplayStyle.None :
@@ -88,7 +101,20 @@ namespace Project.GUI.Inspector
         private void Hierarchy_OnSelect(HierarchyItem item)
         {
             SelectedObject = item.Item as IApplicationObject ?? item;
-            ReloadInspector();
+        }
+
+        string GetNameForObject(IApplicationObject obj)
+        {
+            string text = obj.Name;
+
+            foreach (var provider in nameProviders)
+            {
+                if (!provider.TryGetName(obj, out string newName)) continue;
+                text = newName;
+                break;
+            }
+
+            return text;
         }
     }
 }
