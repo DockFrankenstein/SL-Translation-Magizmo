@@ -64,7 +64,7 @@ namespace Project.Translation.Mapping
             }
         }
 
-        public void Export(SaveFile file, string path)
+        public void Export(SaveFile file, string path, string emptyEntryContent = "-")
         {
             foreach (var definesFile in containers)
             {

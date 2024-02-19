@@ -62,12 +62,6 @@ namespace Project.Translation
 
             if (i_load.GetInputDown())
                 Load();
-
-            if (i_importing.GetInputDown())
-                Import();
-
-            if (i_exporting.GetInputDown())
-                Export();
         }
 
         public void Save()
@@ -168,26 +162,26 @@ namespace Project.Translation
             OnLoad.Invoke();
         }
 
-        public void Export()
-        {
-            var paths = StandaloneFileBrowser.OpenFolderPanel("", Settings.GeneralSettings.TranslationPath, false);
+        //public void Export()
+        //{
+        //    var paths = StandaloneFileBrowser.OpenFolderPanel("", Settings.GeneralSettings.TranslationPath, false);
 
-            if (paths.Length == 0)
-                return;
+        //    if (paths.Length == 0)
+        //        return;
 
-            CurrentVersion.Export(File, paths[0]);
-            OnExport.Invoke();
-        }
+        //    CurrentVersion.Export(File, paths[0]);
+        //    OnExport.Invoke();
+        //}
 
-        public void Import()
-        {
-            var paths = StandaloneFileBrowser.OpenFolderPanel("", Settings.GeneralSettings.TranslationPath, false);
+        //public void Import()
+        //{
+        //    var paths = StandaloneFileBrowser.OpenFolderPanel("", Settings.GeneralSettings.TranslationPath, false);
 
-            if (paths.Length == 0)
-                return;
+        //    if (paths.Length == 0)
+        //        return;
 
-            CurrentVersion.Import(File, paths[0]);
-            OnImport.Invoke();
-        }
+        //    CurrentVersion.Import(File, paths[0]);
+        //    OnImport.Invoke();
+        //}
     }
 }

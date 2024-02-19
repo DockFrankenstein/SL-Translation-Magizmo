@@ -4,11 +4,14 @@
     <ui:VisualElement name="window" class="popup-narrow">
         <ui:Label text="Export To SCPSL" display-tooltip-when-elided="true" class="header" />
         <ui:ScrollView style="flex-grow: 1;">
-            <ui:TextField picking-mode="Ignore" label="Path">
-                <ui:Button text="F" display-tooltip-when-elided="true" />
+            <ui:TextField picking-mode="Ignore" label="Path" name="path">
+                <ui:Button display-tooltip-when-elided="true" name="path-open" class="file-path-open">
+                    <ui:VisualElement />
+                </ui:Button>
             </ui:TextField>
-            <ui:TextField picking-mode="Ignore" label="Blank Entry" value="-" text="-" />
+            <ui:TextField picking-mode="Ignore" label="Blank Entry" value="-" text="-" name="blank-entry" />
         </ui:ScrollView>
-        <ui:Button text="Export" display-tooltip-when-elided="true" class="big colored" />
+        <ui:Button text="Cancel" display-tooltip-when-elided="true" name="close" />
+        <ui:Button text="Export" display-tooltip-when-elided="true" name="export-button" class="big colored" />
     </ui:VisualElement>
 </ui:UXML>

@@ -14,13 +14,13 @@ namespace qASIC
             FindAllTypes<T>()
                 .ToList();
 
-        public static IEnumerable<Type> FindAllTypes<T>()
-        {
-            var type = typeof(T);
-            return AppDomain.CurrentDomain.GetAssemblies()
+        public static IEnumerable<Type> FindAllTypes<T>() =>
+            FindAllTypes(typeof(T));
+
+        public static IEnumerable<Type> FindAllTypes(Type type) =>
+            AppDomain.CurrentDomain.GetAssemblies()
                 .SelectMany(x => x.GetTypes())
                 .Where(t => t != type && type.IsAssignableFrom(t));
-        }
 
         public static IEnumerable<MethodInfo> FindAllAttributes<T>(BindingFlags bindingFlags = defaultFlags)
             where T : Attribute =>
