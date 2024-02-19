@@ -62,7 +62,7 @@ namespace Project.GUI.Inspector
 
         public void RepaintPreview()
         {
-            var appFile = manager.file;
+            var appFile = manager.File;
             if (appFile != null)
                 previewSceneManager.ReloadActiveScenes(appFile);
         }

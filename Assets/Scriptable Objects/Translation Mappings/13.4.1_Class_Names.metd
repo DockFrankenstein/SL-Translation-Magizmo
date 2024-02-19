@@ -67,7 +67,7 @@
                 {
                     "id": "mtf_specialist_name",
                     "autoDisplayName": false,
-                    "displayName": "Mtf Specialist Name",
+                    "displayName": "MTF Specialist Name",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "54aed764-5f7b-4d6e-b0e5-993173801136"
@@ -165,7 +165,7 @@
                 {
                     "id": "mtf_sergeant_name",
                     "autoDisplayName": false,
-                    "displayName": "Mtf Sergeant Name",
+                    "displayName": "MTF Sergeant Name",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "739055b5-9c73-46e3-924c-6cc61a596fe5"
@@ -179,7 +179,7 @@
                 {
                     "id": "mtf_captain_name",
                     "autoDisplayName": false,
-                    "displayName": "Mtf Captain Name",
+                    "displayName": "MTF Captain Name",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "fbb8115d-6b1d-4684-844c-5cf654581316"
@@ -193,7 +193,7 @@
                 {
                     "id": "mtf_private_name",
                     "autoDisplayName": false,
-                    "displayName": "Mtf Private Name",
+                    "displayName": "MTF Private Name",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "6108e400-1c5d-41b9-96b8-4aa163360be9"

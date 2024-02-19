@@ -7,6 +7,7 @@ namespace Project.GUI.Top
         protected override void CreateMenu()
         {
             menu.AppendAction("Save", _ => manager.Save());
+            menu.AppendAction("Save As", _ => manager.SaveAs());
             menu.AppendAction("Load", _ => manager.Load());
             menu.AppendSeparator();
             menu.AppendAction("Import", _ => manager.Import());

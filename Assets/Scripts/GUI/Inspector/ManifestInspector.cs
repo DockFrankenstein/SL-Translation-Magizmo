@@ -36,7 +36,7 @@ namespace Project.GUI.Inspector
                 .Select(x => x as ManifestMappingBase)
                 .FirstOrDefault();
 
-            var file = manager.file;
+            var file = manager.File;
 
             if (_manifestMapping != null)
             {

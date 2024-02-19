@@ -36,7 +36,7 @@ namespace Project.AppTools.Tools
             var fields = TranslationManager.CurrentVersion.GetMappedFields()
                 .Where(x => !entriesIdBlacklist.Contains(x.id));
 
-            var file = TranslationManager.file;
+            var file = TranslationManager.File;
             var content = _contentField.value;
 
             foreach (var item in fields)

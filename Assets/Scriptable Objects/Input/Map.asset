@@ -18,6 +18,7 @@ MonoBehaviour:
     guid: 66c78ff1-6590-40a3-be34-65f729686bf5
     items:
     - rid: 5174576954111426560
+    - rid: 6987339661311737856
     - rid: 5174576954111426561
     - rid: 5174576954111426562
     - rid: 5174576954111426563
@@ -65,3 +66,12 @@ MonoBehaviour:
         keys:
         - key_keyboard/Mouse1
         - key_keyboard/Mouse2
+    - rid: 6987339661311737856
+      type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
+      data:
+        itemName: Save As
+        guid: 292c2074-6ebb-49d9-9b6f-5294028cd309
+        keys:
+        - key_keyboard/LeftControl
+        - key_keyboard/LeftShift
+        - key_keyboard/S
