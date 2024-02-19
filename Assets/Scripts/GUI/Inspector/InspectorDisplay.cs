@@ -48,7 +48,6 @@ namespace Project.GUI.Inspector
             ContentContainer = root.Q("inspector-content");
 
             hierarchy.OnSelect += Hierarchy_OnSelect;
-            manager?.OnImport.AddListener(ReloadInspector);
             manager?.OnLoad.AddListener(ReloadInspector);
 
             foreach (var item in inspectors)

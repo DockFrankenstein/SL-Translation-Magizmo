@@ -10,16 +10,23 @@ namespace Project.GUI.Hierarchy
         [SerializeField] TranslationManager manager;
         [SerializeField] MappingLayout[] mappingLayouts;
 
-        public override HierarchyItem[] GetItems()
+        public MappingLayout GetCurrentLayout()
         {
             MappingLayout layout = mappingLayouts.FirstOrDefault();
             foreach (var item in mappingLayouts)
             {
-                if (item.version.version > layout.version.version) 
+                if (item.version.version > layout.version.version)
                     break;
 
                 layout = item;
             }
+
+            return layout;
+        }
+
+        public override HierarchyItem[] GetItems()
+        {
+            MappingLayout layout = GetCurrentLayout();
 
             if (layout == null)
                 return new HierarchyItem[0];

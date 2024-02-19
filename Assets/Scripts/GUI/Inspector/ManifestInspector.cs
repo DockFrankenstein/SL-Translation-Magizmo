@@ -14,6 +14,8 @@ namespace Project.GUI.Inspector
 {
     public sealed class ManifestInspector : InspectorDisplayPanel
     {
+        public const string MANIFEST_ITEM_ID = "manifest";
+
         public override bool ShouldOpen(IApplicationObject obj) =>
             obj is HierarchyItem item &&
             item.id == "manifest";

@@ -74,7 +74,7 @@ namespace Project
             if (!cells[yPosition].ContainsKey(xPosition))
                 cells[yPosition].Add(xPosition, string.Empty);
 
-            cells[yPosition][xPosition] = cellContent;
+            cells[yPosition][xPosition] = cellContent ?? string.Empty;
 
             if (xPosition >= ColumnsCount)
                 ColumnsCount = xPosition + 1;

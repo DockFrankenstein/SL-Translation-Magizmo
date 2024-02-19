@@ -30,12 +30,8 @@ namespace Project.Translation
         [SerializeField] InputMapItemReference i_save;
         [SerializeField] InputMapItemReference i_saveAs;
         [SerializeField] InputMapItemReference i_load;
-        [SerializeField] InputMapItemReference i_importing;
-        [SerializeField] InputMapItemReference i_exporting;
 
         [Label("Events")]
-        public UnityEvent OnImport;
-        public UnityEvent OnExport;
         public UnityEvent OnSave;
         public UnityEvent OnLoad;
 

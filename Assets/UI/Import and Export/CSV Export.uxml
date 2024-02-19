@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
+    <ui:VisualElement class="fade" />
+    <ui:VisualElement class="popup-narrow">
+        <ui:Label text="Export To CSV" display-tooltip-when-elided="true" class="header" />
+        <ui:ScrollView style="flex-grow: 1;">
+            <ui:TextField picking-mode="Ignore" label="Path" name="path">
+                <ui:Button display-tooltip-when-elided="true" name="path-open" class="file-path-open">
+                    <ui:VisualElement />
+                </ui:Button>
+            </ui:TextField>
+            <ui:Toggle label="Create Categories" value="true" name="create-categories" />
+            <ui:ListView focusable="true" name="columns-order" header-title="Columns Order" reorderable="true" show-foldout-header="true" show-bound-collection-size="false" reorder-mode="Animated" fixed-item-height="50" />
+        </ui:ScrollView>
+        <ui:Button text="Close" display-tooltip-when-elided="true" name="close" />
+        <ui:Button text="Export" display-tooltip-when-elided="true" name="export-button" class="colored big" />
+    </ui:VisualElement>
+</ui:UXML>
