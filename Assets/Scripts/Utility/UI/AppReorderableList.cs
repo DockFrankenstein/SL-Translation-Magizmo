@@ -25,6 +25,11 @@ namespace Project.UI
             {
                 var item = MakeItem();
 
+                item.style.marginBottom = 0f;
+                item.style.marginLeft = 0f;
+                item.style.marginRight = 0f;
+                item.style.marginTop = 0f;
+
                 var btn = new Button();
 
                 btn.AddToClassList("minus-button");

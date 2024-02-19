@@ -3,14 +3,22 @@
     font-size: 24px;
     --unity-cursor-color: rgb(255, 255, 255);
     --unity-metrics-single_line-height: 500px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
+    white-space: normal;
+}
+
+:root {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .popup {
@@ -44,7 +52,7 @@
     margin-bottom: 100px;
     width: 45%;
     height: auto;
-    flex-direction: row;
+    flex-direction: column;
     background-color: rgb(33, 33, 33);
     border-left-color: rgb(13, 13, 13);
     border-right-color: rgb(13, 13, 13);
@@ -86,6 +94,10 @@
     padding-right: 4px;
     padding-top: 4px;
     padding-bottom: 4px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .unity-button {
@@ -127,13 +139,17 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.55);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .unity-scroll-view__content-container {
-    padding-right: 8px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 8px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .unity-radio-button__checkmark-background {
@@ -164,16 +180,23 @@
     border-bottom-width: 2px;
     margin-bottom: 16px;
     align-items: flex-start;
-    white-space: nowrap;
     min-width: 0;
     justify-content: flex-start;
     width: 100%;
+}
+
+#dropdown-blocking-layer {
+    margin: 0;
 }
 
 .fab-dropdown {
     align-items: flex-start;
     justify-content: flex-start;
     position: absolute;
+}
+
+.fab-dropdown * {
+    margin: 0;
 }
 
 .fab-dropdown__outer-container {
@@ -187,6 +210,10 @@
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.fab-dropdown__outer-container * {
+    margin: 0;
 }
 
 .fab-dropdown__menu-container {
@@ -288,6 +315,10 @@
 
 .dock {
     background-color: rgb(33, 33, 33);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .unity-toggle__checkmark {
@@ -340,6 +371,20 @@
 .separator {
     background-color: rgb(13, 13, 13);
     height: 4px;
+}
+
+.tree {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tree * {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .tree .unity-button:hover {
@@ -469,6 +514,15 @@
     border-bottom-color: rgb(13, 13, 13);
 }
 
+.unity-list-view__empty-label {
+    height: 24px;
+    -unity-text-align: upper-center;
+    color: rgb(152, 152, 152);
+    flex-grow: 1;
+    width: 100%;
+    font-size: 18px;
+}
+
 .unity-list-view__footer {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
@@ -561,4 +615,43 @@
 
 .unity-list-view__reorderable-item:checked {
     background-color: rgb(76, 76, 76);
+}
+
+.unity-button.big {
+    height: 55px;
+}
+
+RadioButtonGroup > * {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ScrollView > #unity-content-and-vertical-scroll-container {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ScrollView > #unity-content-and-vertical-scroll-container > #unity-content-viewport {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ScrollView > #unity-content-and-vertical-scroll-container > #unity-content-viewport > #unity-content-container {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ListView * {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
