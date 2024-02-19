@@ -1206,7 +1206,7 @@
                     "addToList": true,
                     "dynamicValues": [
                         {
-                            "tag": "[percentage]",
+                            "tag": "[precentage]",
                             "description": "The percentage by which the regeneration is reduced."
                         }
                     ],

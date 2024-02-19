@@ -669,7 +669,7 @@
                 {
                     "id": "northwood_translation_manager",
                     "autoDisplayName": false,
-                    "displayName": "Northwood TranSCP:SLation Manager",
+                    "displayName": "Northwood Translation Manager",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "945f2525-09da-4702-b684-13ee53472bda"
@@ -879,7 +879,7 @@
                 {
                     "id": "northwood_translation_coordinator",
                     "autoDisplayName": false,
-                    "displayName": "Northwood TranSCP:SLation Coordinator",
+                    "displayName": "Northwood Translation Coordinator",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "ade5a25f-fe4c-40e2-9d11-72949df7bc12"
@@ -1145,7 +1145,7 @@
                 {
                     "id": "northwood_translation_supervisor",
                     "autoDisplayName": false,
-                    "displayName": "Northwood TranSCP:SLation Supervisor",
+                    "displayName": "Northwood Translation Supervisor",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "ca0eba83-1230-4f15-80d7-79bd2dfbc0e1"
