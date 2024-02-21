@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace Project
 {
@@ -57,10 +58,34 @@ namespace Project
         /// <param name="xPosition">X position of the cell.</param>
         /// <param name="yPosition">Y position of the cell.</param>
         /// <returns>Returns the contents of the cell.</returns>
+        public string GetCell(int xPosition, int yPosition)
+        {
+            if (xPosition < 0 || yPosition < 0)
+                throw new ArgumentOutOfRangeException("Grid position cannot be negative!");
+
+            return GetCell((uint)xPosition, (uint)yPosition);
+        }
+
+        /// <summary>Gets the content of a cell from the table.</summary>
+        /// <param name="xPosition">X position of the cell.</param>
+        /// <param name="yPosition">Y position of the cell.</param>
+        /// <returns>Returns the contents of the cell.</returns>
         public string GetCell(uint xPosition, uint yPosition) =>
             cells.ContainsKey(yPosition) && cells[yPosition].ContainsKey(xPosition) ?
             cells[yPosition][xPosition] :
             string.Empty;
+
+        /// <summary>Sets the content of a cell in the table.</summary>
+        /// <param name="xPosition">X position of the cell.</param>
+        /// <param name="yPosition">Y position of the cell.</param>
+        /// <param name="cellContent">The contents of the cell.</param>
+        public void SetCell(int xPosition, int yPosition, string cellContent)
+        {
+            if (xPosition < 0 || yPosition < 0)
+                throw new ArgumentOutOfRangeException("Grid position cannot be negative!");
+
+            SetCell((uint)xPosition, (uint)yPosition, cellContent);
+        }
 
         /// <summary>Sets the content of a cell in the table.</summary>
         /// <param name="xPosition">X position of the cell.</param>

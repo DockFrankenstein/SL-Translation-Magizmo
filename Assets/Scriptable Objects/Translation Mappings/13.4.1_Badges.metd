@@ -9,7 +9,7 @@
             "guid": "d134438a-e84a-424f-9c59-ae5f4ba5a754",
             "fields": [
                 {
-                    "id": "northwood_chief_executive_officer",
+                    "id": "badge_northwood_chief_executive_officer",
                     "autoDisplayName": false,
                     "displayName": "Northwood Chief Executive Officer",
                     "addToList": true,
@@ -23,7 +23,7 @@
             "guid": "f47c8ee2-663c-4d20-bae4-528690b08ba6",
             "fields": [
                 {
-                    "id": "northwood_chief_information_officer",
+                    "id": "badge_northwood_chief_information_officer",
                     "autoDisplayName": false,
                     "displayName": "Northwood Chief Information Officer",
                     "addToList": true,
@@ -37,7 +37,7 @@
             "guid": "c44fd927-b1b6-4f6d-b1fe-ed1126a13fa3",
             "fields": [
                 {
-                    "id": "northwood_chief_operations_officer",
+                    "id": "badge_northwood_chief_operations_officer",
                     "autoDisplayName": false,
                     "displayName": "Northwood Chief Operations Officer",
                     "addToList": true,
@@ -51,7 +51,7 @@
             "guid": "1a4d4c97-3368-4647-9853-b734784c1e9e",
             "fields": [
                 {
-                    "id": "northwood_community_director",
+                    "id": "badge_northwood_community_director",
                     "autoDisplayName": false,
                     "displayName": "Northwood Community Director",
                     "addToList": true,
@@ -65,7 +65,7 @@
             "guid": "0df71d5b-ef09-4d39-80da-96d7835eb7e1",
             "fields": [
                 {
-                    "id": "northwood_discord_manager",
+                    "id": "badge_northwood_discord_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood Discord Manager",
                     "addToList": true,
@@ -79,7 +79,7 @@
             "guid": "038feef1-6043-469a-9343-236cb9faad28",
             "fields": [
                 {
-                    "id": "northwood_executive_assistant",
+                    "id": "badge_northwood_executive_assistant",
                     "autoDisplayName": false,
                     "displayName": "Northwood Executive Assistant",
                     "addToList": true,
@@ -93,7 +93,7 @@
             "guid": "2beb4784-9bbe-4907-9eb0-afc1df56b2f3",
             "fields": [
                 {
-                    "id": "northwood_feedback_manager",
+                    "id": "badge_northwood_feedback_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood Feedback Manager",
                     "addToList": true,
@@ -107,7 +107,7 @@
             "guid": "3b90eed4-8ae4-409b-8e66-373463068464",
             "fields": [
                 {
-                    "id": "northwood_human_resources",
+                    "id": "badge_northwood_human_resources",
                     "autoDisplayName": false,
                     "displayName": "Northwood Human Resources",
                     "addToList": true,
@@ -121,7 +121,7 @@
             "guid": "85182e44-a941-4a96-b9f8-079d4f2c2389",
             "fields": [
                 {
-                    "id": "northwood_human_resources_director",
+                    "id": "badge_northwood_human_resources_director",
                     "autoDisplayName": false,
                     "displayName": "Northwood Human Resources Director",
                     "addToList": true,
@@ -135,7 +135,7 @@
             "guid": "bde63e4a-757e-45f3-aea0-3216c8309192",
             "fields": [
                 {
-                    "id": "northwood_marketing_platform_manager",
+                    "id": "badge_northwood_marketing_platform_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood Marketing Platform Manager",
                     "addToList": true,
@@ -149,7 +149,7 @@
             "guid": "252fa320-2e26-4559-8db6-39e59fe7ee52",
             "fields": [
                 {
-                    "id": "northwood_staff",
+                    "id": "badge_northwood_staff",
                     "autoDisplayName": false,
                     "displayName": "Northwood Staff",
                     "addToList": true,
@@ -163,7 +163,7 @@
             "guid": "18304313-9022-445a-8357-44195e023eaf",
             "fields": [
                 {
-                    "id": "northwood_steam_manager",
+                    "id": "badge_northwood_steam_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood Steam Manager",
                     "addToList": true,
@@ -177,7 +177,7 @@
             "guid": "ae47e000-cc2a-471c-99d5-65dd765d0a7e",
             "fields": [
                 {
-                    "id": "northwood_system_administrator",
+                    "id": "badge_northwood_system_administrator",
                     "autoDisplayName": false,
                     "displayName": "Northwood System Administrator",
                     "addToList": true,
@@ -191,7 +191,7 @@
             "guid": "9d310ee9-e96e-427f-8c5a-26a253412bea",
             "fields": [
                 {
-                    "id": "northwood_wiki_manager",
+                    "id": "badge_northwood_wiki_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood Wiki Manager",
                     "addToList": true,
@@ -205,7 +205,7 @@
             "guid": "35be69fc-000f-4370-a5c5-78dacf88a072",
             "fields": [
                 {
-                    "id": "sl_art_manager",
+                    "id": "badge_sl_art_manager",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Art Manager",
                     "addToList": true,
@@ -219,7 +219,7 @@
             "guid": "f2e8b018-b434-49c5-a99f-59b130215cf5",
             "fields": [
                 {
-                    "id": "sl_art_supervisor",
+                    "id": "badge_sl_art_supervisor",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Art Supervisor",
                     "addToList": true,
@@ -233,7 +233,7 @@
             "guid": "60a9f8ec-b45b-470c-b461-268b3b5e53fc",
             "fields": [
                 {
-                    "id": "sl_artist",
+                    "id": "badge_sl_artist",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Artist",
                     "addToList": true,
@@ -247,7 +247,7 @@
             "guid": "d48ab9c9-2a88-4761-9252-e815fdd21898",
             "fields": [
                 {
-                    "id": "sl_backend_programmer",
+                    "id": "badge_sl_backend_programmer",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Backend Programmer",
                     "addToList": true,
@@ -261,7 +261,7 @@
             "guid": "82f1c903-9487-4771-80f8-47390a123c67",
             "fields": [
                 {
-                    "id": "sl_backend_programming_manager",
+                    "id": "badge_sl_backend_programming_manager",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Backend Programming Manager",
                     "addToList": true,
@@ -275,7 +275,7 @@
             "guid": "72b9c16e-267d-401b-add9-6f39c6b256a9",
             "fields": [
                 {
-                    "id": "sl_developer",
+                    "id": "badge_sl_developer",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Developer",
                     "addToList": true,
@@ -289,7 +289,7 @@
             "guid": "5a8fac6a-8f4e-49fc-8f3e-420052732e82",
             "fields": [
                 {
-                    "id": "sl_event_winner",
+                    "id": "badge_sl_event_winner",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Event Winner",
                     "addToList": true,
@@ -303,7 +303,7 @@
             "guid": "e96e75a0-9bfa-4d77-8b2c-857983845582",
             "fields": [
                 {
-                    "id": "sl_fullstack_programmer",
+                    "id": "badge_sl_fullstack_programmer",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Fullstack Programmer",
                     "addToList": true,
@@ -317,7 +317,7 @@
             "guid": "723f3f43-e708-4535-a14d-4fd77930bd8a",
             "fields": [
                 {
-                    "id": "sl_game_designer",
+                    "id": "badge_sl_game_designer",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Game Designer",
                     "addToList": true,
@@ -331,7 +331,7 @@
             "guid": "d3633f0c-a1ba-41f1-88b2-bb094a762994",
             "fields": [
                 {
-                    "id": "sl_gameplay_programmer",
+                    "id": "badge_sl_gameplay_programmer",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Gameplay Programmer",
                     "addToList": true,
@@ -345,7 +345,7 @@
             "guid": "a9f0b1ec-b30c-42b9-bbd1-800778067ff6",
             "fields": [
                 {
-                    "id": "sl_global_moderation_manager",
+                    "id": "badge_sl_global_moderation_manager",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Global Moderation Manager",
                     "addToList": true,
@@ -359,7 +359,7 @@
             "guid": "56ad0bd7-3b1c-4d49-923b-2ae0113b6497",
             "fields": [
                 {
-                    "id": "sl_global_moderator",
+                    "id": "badge_sl_global_moderator",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Global Moderator",
                     "addToList": true,
@@ -373,7 +373,7 @@
             "guid": "57863d28-1f27-4e5c-a2b9-9fd8c96b4463",
             "fields": [
                 {
-                    "id": "sl_lead_game_designer",
+                    "id": "badge_sl_lead_game_designer",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Lead Game Designer",
                     "addToList": true,
@@ -387,7 +387,7 @@
             "guid": "226e3cfb-e53c-43c7-be40-d63a53ba36c6",
             "fields": [
                 {
-                    "id": "sl_lead_gameplay_programmer",
+                    "id": "badge_sl_lead_gameplay_programmer",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Lead Gameplay Programmer",
                     "addToList": true,
@@ -401,7 +401,7 @@
             "guid": "e70f6f2a-1061-4c2a-852f-cd714a14cd1a",
             "fields": [
                 {
-                    "id": "sl_level_designer",
+                    "id": "badge_sl_level_designer",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Level Designer",
                     "addToList": true,
@@ -415,7 +415,7 @@
             "guid": "19f1fcf4-bc41-4472-b7ff-edec15189442",
             "fields": [
                 {
-                    "id": "sl_partner",
+                    "id": "badge_sl_partner",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Partner",
                     "addToList": true,
@@ -429,7 +429,7 @@
             "guid": "9893e2b1-7c27-41fb-9596-5e611876a187",
             "fields": [
                 {
-                    "id": "sl_patreon_supporter",
+                    "id": "badge_sl_patreon_supporter",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Patreon Supporter",
                     "addToList": true,
@@ -443,7 +443,7 @@
             "guid": "f1576e46-3e38-4a0d-97d0-3320e79f1e76",
             "fields": [
                 {
-                    "id": "sl_quality_assurance_manager",
+                    "id": "badge_sl_quality_assurance_manager",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Quality Assurance Manager",
                     "addToList": true,
@@ -457,7 +457,7 @@
             "guid": "df5cff6b-e07a-4559-82c3-6165306828a8",
             "fields": [
                 {
-                    "id": "sl_sound_designer",
+                    "id": "badge_sl_sound_designer",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Sound Designer",
                     "addToList": true,
@@ -471,7 +471,7 @@
             "guid": "f34288f8-aa62-4e03-8fff-073ff8f6860b",
             "fields": [
                 {
-                    "id": "sl_game_director",
+                    "id": "badge_sl_game_director",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Game Director",
                     "addToList": true,
@@ -485,7 +485,7 @@
             "guid": "30266b31-962e-49fb-b00c-a275e0a15c36",
             "fields": [
                 {
-                    "id": "sl_official_server_manager",
+                    "id": "badge_sl_official_server_manager",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Official Server Manager",
                     "addToList": true,
@@ -499,7 +499,7 @@
             "guid": "599296a3-93bd-405d-afa9-7c0dba0793cc",
             "fields": [
                 {
-                    "id": "northwood_verification_specialist",
+                    "id": "badge_northwood_verification_specialist",
                     "autoDisplayName": false,
                     "displayName": "Northwood Verification Specialist",
                     "addToList": true,
@@ -513,7 +513,7 @@
             "guid": "d3c54ad8-08d0-4d68-b201-07cf2c0439ac",
             "fields": [
                 {
-                    "id": "sl_anti-cheat_developer",
+                    "id": "badge_sl_anti-cheat_developer",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Anti-cheat Developer",
                     "addToList": true,
@@ -527,7 +527,7 @@
             "guid": "656a6e3c-4a90-4835-aea1-2e8ed9500d47",
             "fields": [
                 {
-                    "id": "sl_quality_assurance_tester",
+                    "id": "badge_sl_quality_assurance_tester",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Quality Assurance Tester",
                     "addToList": true,
@@ -541,7 +541,7 @@
             "guid": "d8a7ec87-6847-4ae9-bf0e-401a49ee9285",
             "fields": [
                 {
-                    "id": "sl_quality_assurance_supervisor",
+                    "id": "badge_sl_quality_assurance_supervisor",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Quality Assurance Supervisor",
                     "addToList": true,
@@ -555,7 +555,7 @@
             "guid": "61243290-654d-4231-b004-a545f9d8a4b8",
             "fields": [
                 {
-                    "id": "sl_twitch_subscriber",
+                    "id": "badge_sl_twitch_subscriber",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Twitch Subscriber",
                     "addToList": true,
@@ -569,7 +569,7 @@
             "guid": "78cc3257-11b7-422f-bd41-50b92d4e5b19",
             "fields": [
                 {
-                    "id": "sl_audio_manager",
+                    "id": "badge_sl_audio_manager",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Audio Manager",
                     "addToList": true,
@@ -583,7 +583,7 @@
             "guid": "34ffa016-9359-438a-a8c8-5977985f6e0d",
             "fields": [
                 {
-                    "id": "northwood_feedback_coordinator",
+                    "id": "badge_northwood_feedback_coordinator",
                     "autoDisplayName": false,
                     "displayName": "Northwood Feedback Coordinator",
                     "addToList": true,
@@ -597,7 +597,7 @@
             "guid": "01a3f78a-d1d6-492f-97dd-b8b1ddfdf766",
             "fields": [
                 {
-                    "id": "northwood_verification_supervisor",
+                    "id": "badge_northwood_verification_supervisor",
                     "autoDisplayName": false,
                     "displayName": "Northwood Verification Supervisor",
                     "addToList": true,
@@ -611,7 +611,7 @@
             "guid": "bb517af2-358f-4fcf-b2a6-29fefb4a8577",
             "fields": [
                 {
-                    "id": "sl_official_server_supervisor",
+                    "id": "badge_sl_official_server_supervisor",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Official Server Supervisor",
                     "addToList": true,
@@ -625,7 +625,7 @@
             "guid": "34de9a01-008e-4122-bcc9-84a4c0203468",
             "fields": [
                 {
-                    "id": "northwood_feedback_supervisor",
+                    "id": "badge_northwood_feedback_supervisor",
                     "autoDisplayName": false,
                     "displayName": "Northwood Feedback Supervisor",
                     "addToList": true,
@@ -639,7 +639,7 @@
             "guid": "37e9a4ba-2133-4117-a101-1a6c4a51d6b8",
             "fields": [
                 {
-                    "id": "northwood_verification_manager",
+                    "id": "badge_northwood_verification_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood Verification Manager",
                     "addToList": true,
@@ -653,7 +653,7 @@
             "guid": "e2cef2d5-4afd-4393-a75a-0b15d7cb37a7",
             "fields": [
                 {
-                    "id": "northwood_bot_manager",
+                    "id": "badge_northwood_bot_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood Bot Manager",
                     "addToList": true,
@@ -667,7 +667,7 @@
             "guid": "c49d3cfa-c8d6-4930-a806-4af48b6f3f69",
             "fields": [
                 {
-                    "id": "northwood_translation_manager",
+                    "id": "badge_northwood_translation_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood Translation Manager",
                     "addToList": true,
@@ -681,7 +681,7 @@
             "guid": "cb930108-63ea-4b98-a20a-d0a9cf13d12f",
             "fields": [
                 {
-                    "id": "sl_game_design_manager",
+                    "id": "badge_sl_game_design_manager",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Game Design Manager",
                     "addToList": true,
@@ -695,7 +695,7 @@
             "guid": "dfb0eeb9-5ccb-457b-bb77-74f188843c22",
             "fields": [
                 {
-                    "id": "sl_animator",
+                    "id": "badge_sl_animator",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Animator",
                     "addToList": true,
@@ -709,7 +709,7 @@
             "guid": "d05564ad-53a9-41a7-86ee-002b2c01536b",
             "fields": [
                 {
-                    "id": "northwood_public_relations_director",
+                    "id": "badge_northwood_public_relations_director",
                     "autoDisplayName": false,
                     "displayName": "Northwood Public Relations Director",
                     "addToList": true,
@@ -723,7 +723,7 @@
             "guid": "381fe2f5-4391-4e09-bc1b-abbfd3ac54ed",
             "fields": [
                 {
-                    "id": "sl_community_helper",
+                    "id": "badge_sl_community_helper",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Community Helper",
                     "addToList": true,
@@ -737,7 +737,7 @@
             "guid": "bd63c123-859a-4586-ab32-463e6136986d",
             "fields": [
                 {
-                    "id": "sl_voice_actor",
+                    "id": "badge_sl_voice_actor",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Voice Actor",
                     "addToList": true,
@@ -751,7 +751,7 @@
             "guid": "c14ed11b-bc48-4b77-bad4-ef7b63f990b9",
             "fields": [
                 {
-                    "id": "sl_foundation_investor",
+                    "id": "badge_sl_foundation_investor",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Foundation Investor",
                     "addToList": true,
@@ -765,7 +765,7 @@
             "guid": "8f973ed3-618c-4d87-b9c6-562ed15069d4",
             "fields": [
                 {
-                    "id": "northwood_studio_director",
+                    "id": "badge_northwood_studio_director",
                     "autoDisplayName": false,
                     "displayName": "Northwood Studio Director",
                     "addToList": true,
@@ -779,7 +779,7 @@
             "guid": "01d4cc86-3d8e-44ac-9178-2bd387d3f8b6",
             "fields": [
                 {
-                    "id": "sl_assistant_game_director",
+                    "id": "badge_sl_assistant_game_director",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Assistant Game Director",
                     "addToList": true,
@@ -793,7 +793,7 @@
             "guid": "87a0b4e0-f7f7-4d53-bced-6744ec05b1e2",
             "fields": [
                 {
-                    "id": "northwood_tech_support_supervisor",
+                    "id": "badge_northwood_tech_support_supervisor",
                     "autoDisplayName": false,
                     "displayName": "Northwood Tech Support Supervisor",
                     "addToList": true,
@@ -807,7 +807,7 @@
             "guid": "a4618a7a-82c4-4528-b965-652f2fa73a9c",
             "fields": [
                 {
-                    "id": "northwood_tech_support_manager",
+                    "id": "badge_northwood_tech_support_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood Tech Support Manager",
                     "addToList": true,
@@ -821,7 +821,7 @@
             "guid": "7b5656b2-f53d-4528-bd31-850ff3d48cfd",
             "fields": [
                 {
-                    "id": "northwood_system_administration_manager",
+                    "id": "badge_northwood_system_administration_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood System Administration Manager",
                     "addToList": true,
@@ -835,7 +835,7 @@
             "guid": "1db41439-daee-4dc2-a588-4d2e1da78fb5",
             "fields": [
                 {
-                    "id": "sl_narrative_designer",
+                    "id": "badge_sl_narrative_designer",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Narrative Designer",
                     "addToList": true,
@@ -849,7 +849,7 @@
             "guid": "ac27de67-b39a-40ed-95cd-88c2cce3c31c",
             "fields": [
                 {
-                    "id": "northwood_marketing_platform_supervisor",
+                    "id": "badge_northwood_marketing_platform_supervisor",
                     "autoDisplayName": false,
                     "displayName": "Northwood Marketing Platform Supervisor",
                     "addToList": true,
@@ -863,7 +863,7 @@
             "guid": "966bbefb-9d1b-417c-bb1d-1cb4ea8cef36",
             "fields": [
                 {
-                    "id": "sl_audio_technical_lead",
+                    "id": "badge_sl_audio_technical_lead",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Audio Technical Lead",
                     "addToList": true,
@@ -877,7 +877,7 @@
             "guid": "6468922f-5c1d-4803-80b7-8541ef28d22d",
             "fields": [
                 {
-                    "id": "northwood_translation_coordinator",
+                    "id": "badge_northwood_translation_coordinator",
                     "autoDisplayName": false,
                     "displayName": "Northwood Translation Coordinator",
                     "addToList": true,
@@ -891,7 +891,7 @@
             "guid": "abd06a64-d903-4553-9d84-6945e7655243",
             "fields": [
                 {
-                    "id": "northwood_security_director",
+                    "id": "badge_northwood_security_director",
                     "autoDisplayName": false,
                     "displayName": "Northwood Security Director",
                     "addToList": true,
@@ -905,7 +905,7 @@
             "guid": "ebed8581-1b4e-496c-9f18-46da9a2bff3b",
             "fields": [
                 {
-                    "id": "northwood_security_advisor",
+                    "id": "badge_northwood_security_advisor",
                     "autoDisplayName": false,
                     "displayName": "Northwood Security Advisor",
                     "addToList": true,
@@ -919,7 +919,7 @@
             "guid": "965db4f6-35e7-4a7f-9ebc-55f834033e63",
             "fields": [
                 {
-                    "id": "northwood_assistant_security_director",
+                    "id": "badge_northwood_assistant_security_director",
                     "autoDisplayName": false,
                     "displayName": "Northwood Assistant Security Director",
                     "addToList": true,
@@ -933,7 +933,7 @@
             "guid": "4300921b-7ff9-4f74-9a4b-d47248f50c76",
             "fields": [
                 {
-                    "id": "assistant_public_relations_director",
+                    "id": "badge_assistant_public_relations_director",
                     "autoDisplayName": false,
                     "displayName": "Assistant Public Relations Director",
                     "addToList": true,
@@ -947,7 +947,7 @@
             "guid": "86e2a696-4f76-4244-a822-e8dddd7315ce",
             "fields": [
                 {
-                    "id": "assistant_community_management_director",
+                    "id": "badge_assistant_community_management_director",
                     "autoDisplayName": false,
                     "displayName": "Assistant Community Management Director",
                     "addToList": true,
@@ -961,7 +961,7 @@
             "guid": "9dca5369-7796-4ddc-a04c-94ee951ab75f",
             "fields": [
                 {
-                    "id": "assistant_human_resources_director",
+                    "id": "badge_assistant_human_resources_director",
                     "autoDisplayName": false,
                     "displayName": "Assistant Human Resources Director",
                     "addToList": true,
@@ -975,7 +975,7 @@
             "guid": "d6e21bfc-9925-4620-941c-e8256e065806",
             "fields": [
                 {
-                    "id": "sl_game_design_supervisor",
+                    "id": "badge_sl_game_design_supervisor",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Game Design Supervisor",
                     "addToList": true,
@@ -989,7 +989,7 @@
             "guid": "a30e922c-a611-45dd-ae1f-49c59cccc211",
             "fields": [
                 {
-                    "id": "sl_level_designer_supervisor",
+                    "id": "badge_sl_level_designer_supervisor",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Level Designer Supervisor",
                     "addToList": true,
@@ -1003,7 +1003,7 @@
             "guid": "c8ac9fcc-1969-45b7-b7a9-fec6d0f2a98c",
             "fields": [
                 {
-                    "id": "sl_global_moderation_supervisor",
+                    "id": "badge_sl_global_moderation_supervisor",
                     "autoDisplayName": false,
                     "displayName": "SCP:SL Global Moderation Supervisor",
                     "addToList": true,
@@ -1017,7 +1017,7 @@
             "guid": "ebbd64b1-fe0e-4eba-825d-5c1017b7c2b1",
             "fields": [
                 {
-                    "id": "northwood_system_administration_supervisor",
+                    "id": "badge_northwood_system_administration_supervisor",
                     "autoDisplayName": false,
                     "displayName": "Northwood System Administration Supervisor",
                     "addToList": true,
@@ -1031,7 +1031,7 @@
             "guid": "8ddfe66d-0645-4c08-b5f0-2327c0add43f",
             "fields": [
                 {
-                    "id": "northwood_web_development_supervisor",
+                    "id": "badge_northwood_web_development_supervisor",
                     "autoDisplayName": false,
                     "displayName": "Northwood Web Development Supervisor",
                     "addToList": true,
@@ -1045,7 +1045,7 @@
             "guid": "7302b477-3229-43f3-a2cc-4c2511acb501",
             "fields": [
                 {
-                    "id": "northwood_web_development_manager",
+                    "id": "badge_northwood_web_development_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood Web Development Manager",
                     "addToList": true,
@@ -1059,7 +1059,7 @@
             "guid": "0f075764-5bda-4bae-bf25-b87d400c8cd2",
             "fields": [
                 {
-                    "id": "northwood_content_supervisor",
+                    "id": "badge_northwood_content_supervisor",
                     "autoDisplayName": false,
                     "displayName": "Northwood Content Supervisor",
                     "addToList": true,
@@ -1073,7 +1073,7 @@
             "guid": "d60185dd-40c1-4d42-90ae-ec18d968bcb4",
             "fields": [
                 {
-                    "id": "northwood_content_manager",
+                    "id": "badge_northwood_content_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood Content Manager",
                     "addToList": true,
@@ -1087,7 +1087,7 @@
             "guid": "9e193112-94d6-4406-ac60-d1afc032bd27",
             "fields": [
                 {
-                    "id": "northwood_patreon_supervisor",
+                    "id": "badge_northwood_patreon_supervisor",
                     "autoDisplayName": false,
                     "displayName": "Northwood Patreon Supervisor",
                     "addToList": true,
@@ -1101,7 +1101,7 @@
             "guid": "196a99e7-62b1-421a-8d7d-a3398db53a05",
             "fields": [
                 {
-                    "id": "northwood_patreon_manager",
+                    "id": "badge_northwood_patreon_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood Patreon Manager",
                     "addToList": true,
@@ -1115,7 +1115,7 @@
             "guid": "df10c400-9b9f-448d-992f-90221cc0d97b",
             "fields": [
                 {
-                    "id": "northwood_social_media_supervisor",
+                    "id": "badge_northwood_social_media_supervisor",
                     "autoDisplayName": false,
                     "displayName": "Northwood Social Media Supervisor",
                     "addToList": true,
@@ -1129,7 +1129,7 @@
             "guid": "68f635ca-bb90-4bd1-b987-1215a14bc3ef",
             "fields": [
                 {
-                    "id": "northwood_social_media_manager",
+                    "id": "badge_northwood_social_media_manager",
                     "autoDisplayName": false,
                     "displayName": "Northwood Social Media Manager",
                     "addToList": true,
@@ -1143,7 +1143,7 @@
             "guid": "51de01e0-b900-4a25-8f18-79482d05a4dc",
             "fields": [
                 {
-                    "id": "northwood_translation_supervisor",
+                    "id": "badge_northwood_translation_supervisor",
                     "autoDisplayName": false,
                     "displayName": "Northwood Translation Supervisor",
                     "addToList": true,
@@ -1157,7 +1157,7 @@
             "guid": "5f9e06c2-6ea0-47d9-bdf2-7d8be7d14a6a",
             "fields": [
                 {
-                    "id": "northwood_steam_supervisor",
+                    "id": "badge_northwood_steam_supervisor",
                     "autoDisplayName": false,
                     "displayName": "Northwood Steam Supervisor",
                     "addToList": true,

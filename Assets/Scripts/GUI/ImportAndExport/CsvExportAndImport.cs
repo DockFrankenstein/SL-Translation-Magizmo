@@ -9,10 +9,8 @@ using System.Linq;
 using Project.Serialization;
 using Project.GUI.Hierarchy;
 using Project.GUI.Inspector;
-using JetBrains.Annotations;
-using Unity.VisualScripting.YamlDotNet.Core.Tokens;
-using PlasticPipe.PlasticProtocol.Messages;
 using Project.Translation.Mapping.Manifest;
+using Fab.UITKDropdown;
 
 namespace Project.Translation.ImportAndExport
 {
@@ -20,11 +18,11 @@ namespace Project.Translation.ImportAndExport
     {
         public enum ColumnOrder
         {
-            Id = 0,
-            DisplayName = 1,
-            OriginalTranslation = 2,
-            Value = 3,
-            DynamicValues = 4,
+            Id = 1,
+            DisplayName = 2,
+            OriginalTranslation = 3,
+            Value = 4,
+            DynamicValues = 5,
         }
 
         [SerializeField] TranslationManager manager;
@@ -33,6 +31,9 @@ namespace Project.Translation.ImportAndExport
 
         [Label("Exporting")]
         [SerializeField] UIDocument exportDocument;
+
+        [Label("Importing")]
+        [SerializeField] UIDocument importDocument;
 
         public Action OnExport;
 
@@ -44,6 +45,17 @@ namespace Project.Translation.ImportAndExport
         Button _exportPathOpen;
         Toggle _exportCreateCategories;
         AppReorderableList<ColumnOrder> _exportColumnsOrder;
+
+        Button _importButton;
+        Button _importCloseButton;
+        TextField _importPath;
+        Button _importPathOpen;
+        TextField _importIdColumn;
+        TextField _importValueColumn;
+        ScrollView _importPreview;
+
+        string _importFileTxt;
+        Table2D _currentImportTable;
 
         List<ColumnOrder> columnsOrder = new List<ColumnOrder>()
         {
@@ -58,15 +70,15 @@ namespace Project.Translation.ImportAndExport
 
         private void Awake()
         {
-            var root = exportDocument.rootVisualElement;
-            root.ChangeDispaly(false);
+            var exportRoot = exportDocument.rootVisualElement;
+            exportRoot.ChangeDispaly(false);
 
-            _exportButton = root.Q<Button>("export-button");
-            _exportCloseButton = root.Q<Button>("close");
-            _exportPath = root.Q<TextField>("path");
-            _exportPathOpen = root.Q<Button>("path-open");
-            _exportCreateCategories = root.Q<Toggle>("create-categories");
-            _exportColumnsOrder = new AppReorderableList<ColumnOrder>(root.Q<ListView>("columns-order"), columnsOrder)
+            _exportButton = exportRoot.Q<Button>("export-button");
+            _exportCloseButton = exportRoot.Q<Button>("close");
+            _exportPath = exportRoot.Q<TextField>("path");
+            _exportPathOpen = exportRoot.Q<Button>("path-open");
+            _exportCreateCategories = exportRoot.Q<Toggle>("create-categories");
+            _exportColumnsOrder = new AppReorderableList<ColumnOrder>(exportRoot.Q<ListView>("columns-order"), columnsOrder)
             {
                 RemoveButtonPosition = Position.Absolute,
             };
@@ -134,13 +146,13 @@ namespace Project.Translation.ImportAndExport
                     return;
                 }
 
-                root.ChangeDispaly(false);
+                exportRoot.ChangeDispaly(false);
                 OnExport?.Invoke();
             };
 
             _exportCloseButton.clicked += () =>
             {
-                root.ChangeDispaly(false);
+                exportRoot.ChangeDispaly(false);
             };
 
             _exportPathOpen.clicked += () =>
@@ -163,6 +175,95 @@ namespace Project.Translation.ImportAndExport
                 ColumnOrder.DynamicValues => "Dynamic Values",
                 _ => "NONE",
             };
+
+            //Importing
+            var importRoot = importDocument.rootVisualElement;
+            importRoot.ChangeDispaly(false);
+
+            _importButton = importRoot.Q<Button>("import-button");
+            _importCloseButton = importRoot.Q<Button>("close");
+            _importPath = importRoot.Q<TextField>("path");
+            _importPathOpen = importRoot.Q<Button>("path-open");
+            _importIdColumn = importRoot.Q<TextField>("id-column");
+            _importValueColumn = importRoot.Q<TextField>("value-column");
+            _importPreview = importRoot.Q<ScrollView>("preview");
+
+            _importCloseButton.clicked += () =>
+            {
+                importRoot.ChangeDispaly(false);
+            };
+
+            _importPath.RegisterValueChangedCallback(args =>
+            {
+                if (args.target != _importPath) return;
+
+                //Ignore if it's the same path
+                if (args.previousValue == args.newValue)
+                    return;
+
+                var path = args.newValue;
+
+                if (!File.Exists(path))
+                {
+                    ClearImportPreview();
+                    return;
+                }
+
+                try
+                {
+                    var txt = File.ReadAllText(path);
+
+                    if (_importFileTxt == txt) return;
+
+                    _importFileTxt = txt;
+                    _currentImportTable = _parser.Deserialize(txt);
+                    UpdatePreview();
+                }
+                catch { }
+            });
+
+            _importPathOpen.clicked += () =>
+            {
+                var paths = StandaloneFileBrowser.OpenFilePanel("", _exportPath.value, "csv", false);
+
+                if (paths.Length == 0)
+                    return;
+
+                _importPath.value = paths[0];
+            };
+        }
+
+        void ClearImportPreview()
+        {
+            _currentImportTable = null;
+            _importPreview.Clear();
+        }
+
+        void UpdatePreview()
+        {
+            _importPreview.Clear();
+
+            if (_currentImportTable == null)
+                return;
+
+            for (int row = 0; row < _currentImportTable.RowsCount; row++)
+            {
+                var rowElement = new VisualElement()
+                    .WithClass("grid-row");
+
+                for (int column = 0; column < _currentImportTable.ColumnsCount; column++)
+                {
+                    var label = new Label(_currentImportTable.GetCell(column, row))
+                    {
+                        enableRichText = false,
+                    };
+
+                    label.AddToClassList("grid-cell");
+                    rowElement.Add(label);
+                }
+
+                _importPreview.Add(rowElement);
+            }
         }
 
         List<Section> ProvideItems()
@@ -272,7 +373,7 @@ namespace Project.Translation.ImportAndExport
 
         public void BeginImport()
         {
-            
+            importDocument.rootVisualElement.ChangeDispaly(true);
         }
 
         public class Section
