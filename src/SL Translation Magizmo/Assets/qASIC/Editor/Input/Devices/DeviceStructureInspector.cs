@@ -30,11 +30,11 @@ namespace qASIC.Input.Devices.Internal
                 Rect rect = CreateFoldout(ref foldout);
                 Rect labelRect = new Rect(rect).BorderRight(36f);
                 Rect menuRect = new Rect(rect).ResizeToRight(16f);
-                Rect platformRect = new Rect(menuRect).MoveX(-18f);
+                //Rect platformRect = new Rect(menuRect).MoveX(-18f);
                 GUI.Label(labelRect, item.FindPropertyRelative("name").stringValue);
 
-                if (GUI.Button(platformRect, EditorGUIUtility.IconContent("d_BuildSettings.Standalone"), EditorStyles.label))
-                    OpenPlatformMenu(i);
+                //if (GUI.Button(platformRect, EditorGUIUtility.IconContent("d_BuildSettings.Standalone"), EditorStyles.label))
+                //    OpenPlatformMenu(i);
 
                 if (GUI.Button(menuRect, GUIContent.none, EditorStyles.foldoutHeaderIcon))
                     OpenProviderMenu(i);
@@ -114,59 +114,59 @@ namespace qASIC.Input.Devices.Internal
             menu.ShowAsContext();
         }
 
-        void OpenPlatformMenu(int index)
-        {
-            var provider = _structure.Providers[index];
+        //void OpenPlatformMenu(int index)
+        //{
+        //    var provider = _structure.Providers[index];
 
-            var allFlagValues = (RuntimePlatformFlags[])Enum.GetValues(typeof(RuntimePlatformFlags));
+        //    var allFlagValues = (RuntimePlatformFlags[])Enum.GetValues(typeof(RuntimePlatformFlags));
 
-            var supportedPlatforms = allFlagValues
-                .Where(x => provider.SupportedPlatforms.HasFlag(x))
-                .ToList();
+        //    var supportedPlatforms = allFlagValues
+        //        .Where(x => provider.SupportedPlatforms.HasFlag(x))
+        //        .ToList();
 
-            var everythingPlatform = (RuntimePlatformFlags)supportedPlatforms
-                .Cast<int>()
-                .Sum();
+        //    var everythingPlatform = (RuntimePlatformFlags)supportedPlatforms
+        //        .Cast<ulong>()
+        //        .Sum(x => (decimal)x);
 
-            GenericMenu menu = new GenericMenu();
+        //    GenericMenu menu = new GenericMenu();
 
-            menu.AddItem("None", provider.platforms == RuntimePlatformFlags.None, () =>
-            {
-                provider.platforms = RuntimePlatformFlags.None;
-                SaveAssetDatabase();
-            });
+        //    menu.AddItem("None", provider.platforms == RuntimePlatformFlags.None, () =>
+        //    {
+        //        provider.platforms = RuntimePlatformFlags.None;
+        //        SaveAssetDatabase();
+        //    });
 
-            menu.AddItem("Everything", provider.platforms.HasFlag(everythingPlatform), () =>
-            {
-                provider.platforms = everythingPlatform;
-                SaveAssetDatabase();
-            });
+        //    menu.AddItem("Everything", provider.platforms.HasFlag(everythingPlatform), () =>
+        //    {
+        //        provider.platforms = everythingPlatform;
+        //        SaveAssetDatabase();
+        //    });
 
-            foreach (var item in supportedPlatforms)
-            {
-                if (item == RuntimePlatformFlags.None || item == RuntimePlatformFlags.Everything)
-                    continue;
+        //    foreach (var item in supportedPlatforms)
+        //    {
+        //        if (item == RuntimePlatformFlags.None || item == RuntimePlatformFlags.Everything)
+        //            continue;
 
-                bool hasFlag = provider.platforms.HasFlag(item);
+        //        bool hasFlag = provider.platforms.HasFlag(item);
 
-                menu.AddItem(item.ToString(), hasFlag, () =>
-                {
-                    switch (hasFlag)
-                    {
-                        case true:
-                            provider.platforms &= ~item;
-                            break;
-                        case false:
-                            provider.platforms |= item;
-                            break;
-                    }
+        //        menu.AddItem(item.ToString(), hasFlag, () =>
+        //        {
+        //            switch (hasFlag)
+        //            {
+        //                case true:
+        //                    provider.platforms &= ~item;
+        //                    break;
+        //                case false:
+        //                    provider.platforms |= item;
+        //                    break;
+        //            }
 
-                    SaveAssetDatabase();
-                });
-            }
+        //            SaveAssetDatabase();
+        //        });
+        //    }
 
-            menu.ShowAsContext();
-        }
+        //    menu.ShowAsContext();
+        //}
 
         void SaveAssetDatabase(bool applySerializableObject = true, bool reloadDeviceManager = true)
         {

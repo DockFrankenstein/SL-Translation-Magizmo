@@ -21,4 +21,3 @@ MonoBehaviour:
       type: {class: UIMKeyboardProvider, ns: qASIC.Input.Devices, asm: qASIC}
       data:
         name: UIM Keyboard Provider
-        platforms: 4194303

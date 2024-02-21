@@ -16,7 +16,7 @@ MonoBehaviour:
   deviceStructure: {fileID: 11400000, guid: d8606e841e763a34197926b441aea4a8, type: 2}
   serializer:
     provider:
-      rid: 138481797545066506
+      rid: 6987339705898500097
     filepath:
       buildPath:
         genericFolder: 62
@@ -30,7 +30,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 138481797545066506
+    - rid: 6987339705898500097
       type: {class: JSONSerializationProvider, ns: qASIC.Files.Serialization, asm: qASIC}
       data:
         prettyPrint: 1

@@ -70,7 +70,7 @@ namespace Project.Editor.Translation.Defines
             AssetDatabase.ImportAsset(relativePath);
         }
 
-        protected override void ResetValues()
+        public override void DiscardChanges()
         {
             var relativePath = AssetDatabase.GetAssetPath(assetTarget);
             AssetDatabase.ImportAsset(relativePath);

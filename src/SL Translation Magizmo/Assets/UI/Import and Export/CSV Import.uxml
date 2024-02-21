@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
-    <ui:VisualElement class="fade" />
-    <ui:VisualElement class="popup">
+    <ui:VisualElement focusable="true" class="fade" />
+    <ui:VisualElement focusable="true" class="popup">
         <ui:VisualElement style="height: 100%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-basis: 700px; min-width: auto; min-height: auto;">
             <ui:Label text="Import To CSV" display-tooltip-when-elided="true" class="header" />
             <ui:ScrollView mouse-wheel-scroll-size="1000" style="flex-grow: 1;">

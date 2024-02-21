@@ -21,6 +21,7 @@ namespace Project.GUI.Preview
 
         void ReadInput()
         {
+            _scroll = 0f;
             if (cam.InFocus)
             {
                 if (i_drag.GetInputDown())

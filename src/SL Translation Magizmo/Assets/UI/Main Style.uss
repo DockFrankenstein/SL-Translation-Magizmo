@@ -267,7 +267,7 @@
 }
 
 .fab-dropdown__item--checked > .fab-dropdown__item__icon {
-    background-image: url('project://database/Packages/com.fab.uitk-runtime-dropdown/UI/Icons/checkmark.png?fileID=2800000&guid=3818e0ffae40e8247801818bb2cc23a1&type=3#checkmark');
+    background-image: url("project://database/Packages/com.fab.uitk-runtime-dropdown/UI/Icons/checkmark.png?fileID=2800000&guid=3818e0ffae40e8247801818bb2cc23a1&type=3#checkmark");
     -unity-background-image-tint-color: rgb(111, 111, 111);
 }
 
@@ -305,7 +305,7 @@
 }
 
 .fab-dropdown__sub-item > .fab-dropdown__item__arrow {
-    background-image: url('project://database/Packages/com.fab.uitk-runtime-dropdown/UI/Icons/arrow-right.png?fileID=2800000&guid=875c7e133f8aebf41898f307c1fbdabd&type=3#arrow-right');
+    background-image: url("project://database/Packages/com.fab.uitk-runtime-dropdown/UI/Icons/arrow-right.png?fileID=2800000&guid=875c7e133f8aebf41898f307c1fbdabd&type=3#arrow-right");
 }
 
 .fab-dropdown__seperator {
@@ -340,7 +340,7 @@
     height: 40px;
     -unity-text-align: middle-left;
     background-color: rgb(51, 51, 51);
-    -unity-font: url('project://database/Assets/Font/Preview/Roboto-Bold.ttf?fileID=12800000&guid=8f6f1219b60cb584ead94e8e0d0c0dd6&type=3#Roboto-Bold');
+    -unity-font: url("project://database/Assets/Font/Preview/Roboto-Bold.ttf?fileID=12800000&guid=8f6f1219b60cb584ead94e8e0d0c0dd6&type=3#Roboto-Bold");
     justify-content: center;
 }
 
@@ -363,7 +363,7 @@
     padding-bottom: 8px;
 }
 
-.tree .unity-scroll-view__content-container {
+.unity-scroll-view__content-container {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
@@ -551,7 +551,7 @@
 }
 
 .unity-list-view__footer > #unity-list-view__add-button {
-    background-image: url('project://database/Assets/Sprites/UI/sltm%20plus.png?fileID=2800000&guid=9d4ab8d7c5a55f5458bb0b87b3af318a&type=3#sltm plus');
+    background-image: url("project://database/Assets/Sprites/UI/sltm%20plus.png?fileID=2800000&guid=9d4ab8d7c5a55f5458bb0b87b3af318a&type=3#sltm plus");
     background-color: rgba(255, 255, 255, 0);
     -unity-background-image-tint-color: rgb(152, 152, 152);
     border-left-width: 0;
@@ -568,7 +568,7 @@
 }
 
 .unity-list-view__footer > #unity-list-view__remove-button {
-    background-image: url('project://database/Assets/Sprites/UI/sltm%20minus.png?fileID=2800000&guid=c56e2618ef5cb0348a2aee32bda0a456&type=3#sltm minus');
+    background-image: url("project://database/Assets/Sprites/UI/sltm%20minus.png?fileID=2800000&guid=c56e2618ef5cb0348a2aee32bda0a456&type=3#sltm minus");
     background-color: rgba(255, 255, 255, 0);
     -unity-background-image-tint-color: rgb(152, 152, 152);
     border-left-width: 0;
@@ -596,7 +596,7 @@
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
-    background-image: url('project://database/Assets/Sprites/UI/sltm%20minus.png?fileID=2800000&guid=c56e2618ef5cb0348a2aee32bda0a456&type=3#sltm minus');
+    background-image: url("project://database/Assets/Sprites/UI/sltm%20minus.png?fileID=2800000&guid=c56e2618ef5cb0348a2aee32bda0a456&type=3#sltm minus");
     border-bottom-width: 0;
     -unity-background-image-tint-color: rgb(152, 152, 152);
 }
@@ -673,7 +673,7 @@ ListView * {
 }
 
 .file-path-open > * {
-    background-image: url('project://database/Assets/Sprites/UI/sltm%20file.png?fileID=2800000&guid=1c94f29c8f20e4e4f91a27a9557a6caa&type=3#sltm file');
+    background-image: url("project://database/Assets/Sprites/UI/sltm%20file.png?fileID=2800000&guid=1c94f29c8f20e4e4f91a27a9557a6caa&type=3#sltm file");
     width: 20px;
     height: 20px;
     margin-left: 0;
@@ -711,7 +711,7 @@ ListView * {
 }
 
 Toggle:checked .unity-toggle__checkmark {
-    background-image: url('project://database/Assets/Sprites/UI/sltm%20check.png?fileID=2800000&guid=ee338fb03e3e73c4ca9c354dd0e852d6&type=3#sltm check');
+    background-image: url("project://database/Assets/Sprites/UI/sltm%20check.png?fileID=2800000&guid=ee338fb03e3e73c4ca9c354dd0e852d6&type=3#sltm check");
     -unity-slice-left: 6;
     -unity-slice-top: 6;
     -unity-slice-right: 6;
@@ -728,7 +728,7 @@ Foldout .unity-toggle__checkmark {
 }
 
 Foldout Toggle .unity-toggle__checkmark {
-    background-image: url('project://database/Assets/Sprites/UI/sltm%20arrow.png?fileID=2800000&guid=dbe03015a912f3741a56734140e149e2&type=3#sltm arrow');
+    background-image: url("project://database/Assets/Sprites/UI/sltm%20arrow.png?fileID=2800000&guid=dbe03015a912f3741a56734140e149e2&type=3#sltm arrow");
     -unity-slice-left: 10;
     -unity-slice-top: 10;
     -unity-slice-right: 10;
@@ -737,7 +737,7 @@ Foldout Toggle .unity-toggle__checkmark {
 }
 
 Foldout Toggle:checked .unity-toggle__checkmark {
-    background-image: url('project://database/Assets/Sprites/UI/sltm%20arrow.png?fileID=2800000&guid=dbe03015a912f3741a56734140e149e2&type=3#sltm arrow');
+    background-image: url("project://database/Assets/Sprites/UI/sltm%20arrow.png?fileID=2800000&guid=dbe03015a912f3741a56734140e149e2&type=3#sltm arrow");
     -unity-slice-left: 10;
     -unity-slice-top: 10;
     -unity-slice-right: 10;
@@ -746,11 +746,11 @@ Foldout Toggle:checked .unity-toggle__checkmark {
 }
 
 .grid {
-    background-color: rgba(255, 255, 255, 255);
-    border-left-color: rgba(0, 0, 0, 255);
-    border-right-color: rgba(0, 0, 0, 255);
-    border-top-color: rgba(0, 0, 0, 255);
-    border-bottom-color: rgba(0, 0, 0, 255);
+    background-color: rgb(255, 255, 255);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
     border-left-width: 2px;
     border-right-width: 2px;
     border-top-width: 2px;
@@ -774,7 +774,7 @@ Foldout Toggle:checked .unity-toggle__checkmark {
     margin-bottom: 0;
     white-space: nowrap;
     width: 300px;
-    background-color: rgba(255, 255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .grid-row {
@@ -786,4 +786,18 @@ Foldout Toggle:checked .unity-toggle__checkmark {
     width: auto;
     min-width: auto;
     max-width: none;
+}
+
+Scroller * {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+Scroller {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
