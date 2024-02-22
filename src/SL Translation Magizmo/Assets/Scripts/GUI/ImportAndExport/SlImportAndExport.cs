@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 namespace Project.Translation.ImportAndExport
 {
-    public class SlExportAndImport : ImportAndExportBase, IImporter, IExporter
+    public class SlImportAndExport : ImportAndExportBase, IImporter, IExporter
     {
         [SerializeField] TranslationManager manager;
         [SerializeField] ErrorWindow error;

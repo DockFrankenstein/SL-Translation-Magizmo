@@ -108,6 +108,30 @@ namespace Project
                 RowsCount = yPosition + 1;
         }
 
+        public static string GetColumnName(int columnIndex)
+        {
+            if (columnIndex < 0)
+                throw new ArgumentOutOfRangeException("Column index cannot be negative!");
+
+            return GetColumnName((uint)columnIndex);
+        }
+
+        public static string GetColumnName(uint columnIndex)
+        {
+            const string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+            var result = string.Empty;
+
+            while (columnIndex + 1 > 0)
+            {
+                var charIndex = columnIndex % (uint)alphabet.Length;
+                result = alphabet[(int)charIndex] + result;
+                columnIndex = (columnIndex + 1 - charIndex) / (uint)alphabet.Length - 1;
+            }
+
+            return result;
+        }
+
         public struct Cell
         {
             internal Cell(uint xPosition, uint yPosition, string content)

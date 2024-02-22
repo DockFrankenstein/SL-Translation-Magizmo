@@ -11,10 +11,12 @@ using Project.GUI.Hierarchy;
 using Project.GUI.Inspector;
 using Project.Translation.Mapping.Manifest;
 using Fab.UITKDropdown;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Project.Translation.ImportAndExport
 {
-    public class CsvExportAndImport : ImportAndExportBase, IImporter, IExporter
+    public class CsvImportAndExport : ImportAndExportBase, IImporter, IExporter
     {
         public enum ColumnOrder
         {
@@ -50,12 +52,13 @@ namespace Project.Translation.ImportAndExport
         Button _importCloseButton;
         TextField _importPath;
         Button _importPathOpen;
-        TextField _importIdColumn;
-        TextField _importValueColumn;
+        DropdownField _importIdColumn;
+        DropdownField _importValueColumn;
         ScrollView _importPreview;
 
         string _importFileTxt;
         Table2D _currentImportTable;
+        ErrorWindow.Prompt _importError;
 
         List<ColumnOrder> columnsOrder = new List<ColumnOrder>()
         {
@@ -184,9 +187,54 @@ namespace Project.Translation.ImportAndExport
             _importCloseButton = importRoot.Q<Button>("close");
             _importPath = importRoot.Q<TextField>("path");
             _importPathOpen = importRoot.Q<Button>("path-open");
-            _importIdColumn = importRoot.Q<TextField>("id-column");
-            _importValueColumn = importRoot.Q<TextField>("value-column");
+            _importIdColumn = importRoot.Q<DropdownField>("id-column");
+            _importValueColumn = importRoot.Q<DropdownField>("value-column");
             _importPreview = importRoot.Q<ScrollView>("preview");
+
+            _importButton.clicked += () =>
+            {
+                if (_currentImportTable == null)
+                {
+                    Import();
+
+                    if (_importError != null)
+                    {
+                        error.CreatePrompt(_importError);
+                        return;
+                    }
+                }
+
+                if (_importIdColumn.index < 0 ||
+                    _importIdColumn.index >= _currentImportTable.RowsCount)
+                {
+                    error.CreatePrompt("Import Error", "Please set a valid id column.");
+                    return;
+                }
+
+                if (_importValueColumn.index < 0 ||
+                    _importValueColumn.index >= _currentImportTable.RowsCount)
+                {
+                    error.CreatePrompt("Import Error", "Please set a valid value column.");
+                    return;
+                }
+
+                for (int i = 0; i < _currentImportTable.RowsCount; i++)
+                {
+                    var id = _currentImportTable.GetCell(_importIdColumn.index, i);
+                    var value = _currentImportTable.GetCell(_importValueColumn.index, i);
+
+                    //Ignore if id is not valid
+                    if (!manager.CurrentVersion.MappedFields.ContainsKey(id))
+                        continue;
+
+                    if (!manager.File.Entries.ContainsKey(id))
+                        manager.File.Entries.Add(id, new Data.SaveFile.EntryData(id));
+
+                    manager.File.Entries[id].content = value;
+                }
+
+                importRoot.ChangeDispaly(false);
+            };
 
             _importCloseButton.clicked += () =>
             {
@@ -209,17 +257,8 @@ namespace Project.Translation.ImportAndExport
                     return;
                 }
 
-                try
-                {
-                    var txt = File.ReadAllText(path);
-
-                    if (_importFileTxt == txt) return;
-
-                    _importFileTxt = txt;
-                    _currentImportTable = _parser.Deserialize(txt);
-                    UpdatePreview();
-                }
-                catch { }
+                Import();
+                UpdatePreview();
             });
 
             _importPathOpen.clicked += () =>
@@ -235,34 +274,79 @@ namespace Project.Translation.ImportAndExport
 
         void ClearImportPreview()
         {
+            _importFileTxt = string.Empty;
             _currentImportTable = null;
-            _importPreview.Clear();
+            UpdatePreview();
         }
 
         void UpdatePreview()
         {
             _importPreview.Clear();
+            _importIdColumn.choices.Clear();
+            _importValueColumn.choices.Clear();
 
             if (_currentImportTable == null)
                 return;
+
+            var namesRow = new VisualElement()
+                .WithClass("grid-row");
+            _importPreview.Add(namesRow);
+
+            namesRow.Add(CreateCell(string.Empty, "grid-row-name"));
+
+            for (int i = 0; i < _currentImportTable.ColumnsCount; i++)
+                namesRow.Add(CreateCell(Table2D.GetColumnName(i), "grid-column-name"));
 
             for (int row = 0; row < _currentImportTable.RowsCount; row++)
             {
                 var rowElement = new VisualElement()
                     .WithClass("grid-row");
+                _importPreview.Add(rowElement);
+
+                rowElement.Add(CreateCell((row + 1).ToString(), "grid-row-name"));
 
                 for (int column = 0; column < _currentImportTable.ColumnsCount; column++)
+                    rowElement.Add(CreateCell(_currentImportTable.GetCell(column, row)));
+            }
+
+            for (int i = 0; i < _currentImportTable.ColumnsCount; i++)
+            {
+                var columnName = Table2D.GetColumnName(i);
+                _importIdColumn.choices.Add(columnName);
+                _importValueColumn.choices.Add(columnName);
+            }
+
+
+            VisualElement CreateCell(string content, string style = "grid-cell")
+            {
+                var label = new Label(content)
                 {
-                    var label = new Label(_currentImportTable.GetCell(column, row))
-                    {
-                        enableRichText = false,
-                    };
+                    enableRichText = false,
+                };
 
-                    label.AddToClassList("grid-cell");
-                    rowElement.Add(label);
-                }
+                label.AddToClassList(style);
+                return label;
+            }
+        }
 
-                _importPreview.Add(rowElement);
+        void Import()
+        {
+            _importError = null;
+
+            try
+            {
+                var path = _importPath.value;
+
+                var txt = File.ReadAllText(path);
+
+                if (_importFileTxt == txt) return;
+
+                _importFileTxt = txt;
+                _currentImportTable = _parser.Deserialize(txt);
+            }
+            catch (Exception e)
+            {
+                _importError = new ErrorWindow.Prompt("Import Error", $"There was an error while loading the file:\n{e}");
             }
         }
 

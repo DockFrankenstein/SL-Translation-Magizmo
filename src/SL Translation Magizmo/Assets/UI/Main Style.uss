@@ -413,7 +413,7 @@
     background-color: rgb(32, 112, 39);
 }
 
-.unity-base-slider--vertical .unity-base-slider__dragger {
+.unity-base-slider .unity-base-slider__dragger {
     width: 10px;
     margin-left: 0;
     margin-right: 0;
@@ -427,7 +427,22 @@
     background-color: rgb(117, 117, 117);
 }
 
-.unity-base-slider--vertical .unity-base-slider__dragger:hover {
+.unity-base-slider--horizontal .unity-base-slider__dragger {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgb(117, 117, 117);
+    height: 10px;
+    top: auto;
+}
+
+.unity-base-slider .unity-base-slider__dragger:hover {
     background-color: rgb(130, 130, 130);
     border-left-width: 0;
     border-right-width: 0;
@@ -436,7 +451,7 @@
     background-image: none;
 }
 
-.unity-base-slider--vertical .unity-base-slider__dragger:active {
+.unity-base-slider .unity-base-slider__dragger:active {
     background-color: rgb(143, 143, 143);
     border-left-width: 0;
     border-right-width: 0;
@@ -450,9 +465,19 @@
     min-width: 10px;
 }
 
+.unity-scroll-view__horizontal-scroller {
+    height: 10px;
+    min-height: 10px;
+}
+
 .unity-base-slider--vertical {
     width: 10px;
     min-width: 10px;
+}
+
+.unity-base-slider--horizontal {
+    height: 10px;
+    min-height: 10px;
 }
 
 .unity-base-slider__tracker {
@@ -788,6 +813,46 @@ Foldout Toggle:checked .unity-toggle__checkmark {
     max-width: none;
 }
 
+.grid-column-name {
+    color: rgb(152, 152, 152);
+    border-left-width: 0;
+    border-right-width: 2px;
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+    width: 300px;
+    background-color: rgb(33, 33, 33);
+    -unity-text-align: middle-center;
+}
+
+.grid-row-name {
+    color: rgb(152, 152, 152);
+    border-left-width: 0;
+    border-right-width: 2px;
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+    width: 80px;
+    background-color: rgb(33, 33, 33);
+    -unity-text-align: middle-center;
+}
+
 Scroller * {
     margin-top: 0;
     margin-right: 0;
@@ -800,4 +865,49 @@ Scroller {
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
+}
+
+.unity-popup-field__input {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    background-color: rgb(33, 33, 33);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-left-color: rgb(13, 13, 13);
+    border-right-color: rgb(13, 13, 13);
+    border-top-color: rgb(13, 13, 13);
+    border-bottom-color: rgb(13, 13, 13);
+}
+
+.unity-base-popup-field__text {
+}
+
+.unity-base-popup-field__arrow {
+    position: absolute;
+    right: 4px;
+    background-image: url("project://database/Assets/Sprites/UI/sltm%20arrow.png?fileID=2800000&guid=dbe03015a912f3741a56734140e149e2&type=3#sltm arrow");
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    align-self: center;
+    width: 20px;
+    height: 20px;
+}
+
+.unity-base-dropdown * {
+    border-top-width: 0;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-left-color: rgb(13, 13, 13);
+    border-right-color: rgb(13, 13, 13);
+    border-top-color: rgb(13, 13, 13);
+    border-bottom-color: rgb(13, 13, 13);
+    background-color: rgb(33, 33, 33);
 }

@@ -17,6 +17,8 @@ namespace Project.Editor.Windows
         [SerializeField] CsvParser parser = new CsvParser();
         [SerializeField] string txt;
 
+        [SerializeField] int columnIndex;
+
         private void OnGUI()
         {
             parser.CellSeparator = EditorGUILayout.TextField("Cell Separator", parser.CellSeparator);
@@ -32,6 +34,10 @@ namespace Project.Editor.Windows
             GUI.Label(txtRect.SetHeight(EditorGUIUtility.singleLineHeight), "Content");
 
             txt = EditorGUI.TextArea(txtRect.BorderTop(EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing), txt);
+
+            EditorGUILayout.Space();
+
+            columnIndex = Mathf.Max(0, EditorGUILayout.IntField($"{Table2D.GetColumnName((uint)columnIndex)}", columnIndex));
 
             GUILayout.FlexibleSpace();
 
