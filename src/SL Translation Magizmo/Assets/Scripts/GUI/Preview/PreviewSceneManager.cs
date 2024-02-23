@@ -57,7 +57,14 @@ namespace Project.GUI.Preview
                     entry.manager = manager;
                     entry.hierarchy = hierarchy;
                 }
+
+                scene.Initialize();
             }
+
+            ScenesForIds = scenes
+                .SelectMany(x => x.EntriesForIds.Select(y => new KeyValuePair<string, PreviewScene>(y.Key, x)))
+                .GroupBy(x => x.Key)
+                .ToDictionary(x => x.Key, x => x.First().Value);
 
             if (scenes.Count > 0)
                 SelectScene(scenes[0]);
@@ -73,6 +80,12 @@ namespace Project.GUI.Preview
             {
                 previewEntry.ChangeTarget(entry.entryId);
                 return;
+            }
+
+            if (ScenesForIds.TryGetValue(entry.entryId, out var newScene))
+            {
+                SelectScene(newScene);
+                newScene.EntriesForIds[entry.entryId].ChangeTarget(entry.entryId);
             }
         }
 

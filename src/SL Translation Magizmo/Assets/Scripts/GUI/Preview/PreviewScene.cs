@@ -18,7 +18,7 @@ namespace Project.GUI.Preview
 
         public Dictionary<string, PreviewEntry> EntriesForIds { get; private set; } = new Dictionary<string, PreviewEntry>();
 
-        private void Awake()
+        public void Initialize()
         {
             EntriesForIds = entries
                 .SelectMany(x => x.GetListOfTargets().Select(y => new KeyValuePair<string, PreviewEntry>(y.entryId, x)))
@@ -33,6 +33,11 @@ namespace Project.GUI.Preview
                 entry.UpdateContent();
 
             LayoutGroupController.Refresh();
+        }
+
+        private void OnEnable()
+        {
+            UpdateScene();
         }
 
 #if UNITY_EDITOR
