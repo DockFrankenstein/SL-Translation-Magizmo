@@ -1,6 +1,6 @@
 {
     "version": {
-        "instanceID": 42220
+        "instanceID": 21866
     },
     "items": [
         {
@@ -3809,7 +3809,7 @@
         },
         {
             "type": 0,
-            "id": "voicechat_prompt_header",
+            "id": "voicechat_tip_header",
             "displayText": "Voicechat Prompt Header",
             "guid": "d2265508-fc7e-4226-80ec-262b9199a941"
         },
@@ -7289,499 +7289,499 @@
         },
         {
             "type": 0,
-            "id": "assistant_community_management_director",
+            "id": "badge_assistant_community_management_director",
             "displayText": "Assistant Community Management Director",
             "guid": "da542a5f-a412-4677-8c7c-a70cb1667776"
         },
         {
             "type": 0,
-            "id": "assistant_human_resources_director",
+            "id": "badge_assistant_human_resources_director",
             "displayText": "Assistant Human Resources Director",
             "guid": "d42f68e1-7b39-4328-9cc9-ddfd33ef29a7"
         },
         {
             "type": 0,
-            "id": "assistant_public_relations_director",
+            "id": "badge_assistant_public_relations_director",
             "displayText": "Assistant Public Relations Director",
             "guid": "a02b8ad8-99b2-4118-b6ea-a72bb2054173"
         },
         {
             "type": 0,
-            "id": "northwood_assistant_security_director",
+            "id": "badge_northwood_assistant_security_director",
             "displayText": "Northwood Assistant Security Director",
             "guid": "2898ab8b-a93c-444f-89ec-4f19cafac1d0"
         },
         {
             "type": 0,
-            "id": "northwood_bot_manager",
+            "id": "badge_northwood_bot_manager",
             "displayText": "Northwood Bot Manager",
             "guid": "5956151a-14ae-4fd6-8d85-2b930d543cd4"
         },
         {
             "type": 0,
-            "id": "northwood_chief_executive_officer",
+            "id": "badge_northwood_chief_executive_officer",
             "displayText": "Northwood Chief Executive Officer",
             "guid": "f5ac2ebc-f96c-4684-a0de-b3f68ecdfd1a"
         },
         {
             "type": 0,
-            "id": "northwood_chief_information_officer",
+            "id": "badge_northwood_chief_information_officer",
             "displayText": "Northwood Chief Information Officer",
             "guid": "1d44b7b9-600f-4943-b9c7-c098a16ae8a4"
         },
         {
             "type": 0,
-            "id": "northwood_chief_operations_officer",
+            "id": "badge_northwood_chief_operations_officer",
             "displayText": "Northwood Chief Operations Officer",
             "guid": "acbd3e46-0352-4f77-adea-7322c9d567ba"
         },
         {
             "type": 0,
-            "id": "northwood_community_director",
+            "id": "badge_northwood_community_director",
             "displayText": "Northwood Community Director",
             "guid": "92105e4c-3d6c-4efa-8fb0-ace52c14c3db"
         },
         {
             "type": 0,
-            "id": "northwood_content_manager",
+            "id": "badge_northwood_content_manager",
             "displayText": "Northwood Content Manager",
             "guid": "3b71b15d-780f-4c64-acb5-daf0339ea2bd"
         },
         {
             "type": 0,
-            "id": "northwood_content_supervisor",
+            "id": "badge_northwood_content_supervisor",
             "displayText": "Northwood Content Supervisor",
             "guid": "7f9bc556-b3ff-4193-af8b-d8b927c75b82"
         },
         {
             "type": 0,
-            "id": "northwood_discord_manager",
+            "id": "badge_northwood_discord_manager",
             "displayText": "Northwood Discord Manager",
             "guid": "dbd8663b-20ec-4e27-96c6-298cb37dac27"
         },
         {
             "type": 0,
-            "id": "northwood_executive_assistant",
+            "id": "badge_northwood_executive_assistant",
             "displayText": "Northwood Executive Assistant",
             "guid": "313ad44b-e8bd-4915-b508-6dad1cdcd3f1"
         },
         {
             "type": 0,
-            "id": "northwood_feedback_coordinator",
+            "id": "badge_northwood_feedback_coordinator",
             "displayText": "Northwood Feedback Coordinator",
             "guid": "9ee2b875-f2c4-4dd9-9b36-7807ac0b6b24"
         },
         {
             "type": 0,
-            "id": "northwood_feedback_manager",
+            "id": "badge_northwood_feedback_manager",
             "displayText": "Northwood Feedback Manager",
             "guid": "de99c140-6d53-4d02-863e-14c32a5be127"
         },
         {
             "type": 0,
-            "id": "northwood_feedback_supervisor",
+            "id": "badge_northwood_feedback_supervisor",
             "displayText": "Northwood Feedback Supervisor",
             "guid": "6ac2825c-2f50-4885-86b2-f41aa0fd3468"
         },
         {
             "type": 0,
-            "id": "northwood_human_resources",
+            "id": "badge_northwood_human_resources",
             "displayText": "Northwood Human Resources",
             "guid": "219d7acd-e88c-4849-9e1d-786416e5f90e"
         },
         {
             "type": 0,
-            "id": "northwood_human_resources_director",
+            "id": "badge_northwood_human_resources_director",
             "displayText": "Northwood Human Resources Director",
             "guid": "af477e15-e78f-4d77-9128-b13a58842786"
         },
         {
             "type": 0,
-            "id": "northwood_marketing_platform_manager",
+            "id": "badge_northwood_marketing_platform_manager",
             "displayText": "Northwood Marketing Platform Manager",
             "guid": "e0b37e58-1838-40e7-a416-88fc2d5429f0"
         },
         {
             "type": 0,
-            "id": "northwood_marketing_platform_supervisor",
+            "id": "badge_northwood_marketing_platform_supervisor",
             "displayText": "Northwood Marketing Platform Supervisor",
             "guid": "d8381898-0db7-47b8-a2a2-16876cae25c1"
         },
         {
             "type": 0,
-            "id": "northwood_patreon_manager",
+            "id": "badge_northwood_patreon_manager",
             "displayText": "Northwood Patreon Manager",
             "guid": "566723b7-2ef8-4ad3-a7ff-015a222f5fbf"
         },
         {
             "type": 0,
-            "id": "northwood_patreon_supervisor",
+            "id": "badge_northwood_patreon_supervisor",
             "displayText": "Northwood Patreon Supervisor",
             "guid": "bdbbca04-709a-4971-816e-1c15bd6ecda0"
         },
         {
             "type": 0,
-            "id": "northwood_public_relations_director",
+            "id": "badge_northwood_public_relations_director",
             "displayText": "Northwood Public Relations Director",
             "guid": "b10f57ae-cc6e-4e6c-a2ef-bb0d0e2133f4"
         },
         {
             "type": 0,
-            "id": "northwood_security_advisor",
+            "id": "badge_northwood_security_advisor",
             "displayText": "Northwood Security Advisor",
             "guid": "8efb46d3-fcb7-48e7-84b6-1d67baef1c1b"
         },
         {
             "type": 0,
-            "id": "northwood_security_director",
+            "id": "badge_northwood_security_director",
             "displayText": "Northwood Security Director",
             "guid": "f0f85d31-a52c-4be4-99de-8c14dfe50795"
         },
         {
             "type": 0,
-            "id": "northwood_social_media_manager",
+            "id": "badge_northwood_social_media_manager",
             "displayText": "Northwood Social Media Manager",
             "guid": "609401af-4691-4a43-8da2-1e5ae200352c"
         },
         {
             "type": 0,
-            "id": "northwood_social_media_supervisor",
+            "id": "badge_northwood_social_media_supervisor",
             "displayText": "Northwood Social Media Supervisor",
             "guid": "2b0952eb-0b0e-4057-aae6-504ffdca451d"
         },
         {
             "type": 0,
-            "id": "northwood_staff",
+            "id": "badge_northwood_staff",
             "displayText": "Northwood Staff",
             "guid": "dfd88cce-bc5c-4b15-abdd-d7703a7236e7"
         },
         {
             "type": 0,
-            "id": "northwood_steam_manager",
+            "id": "badge_northwood_steam_manager",
             "displayText": "Northwood Steam Manager",
             "guid": "e7d9a9fa-3bb1-49f9-91b9-decb74c7776a"
         },
         {
             "type": 0,
-            "id": "northwood_steam_supervisor",
+            "id": "badge_northwood_steam_supervisor",
             "displayText": "Northwood Steam Supervisor",
             "guid": "e63e3a23-abda-42b1-85d4-51a5d41d0256"
         },
         {
             "type": 0,
-            "id": "northwood_studio_director",
+            "id": "badge_northwood_studio_director",
             "displayText": "Northwood Studio Director",
             "guid": "b79528b3-7747-4adc-9161-69ed40354539"
         },
         {
             "type": 0,
-            "id": "northwood_system_administration_manager",
+            "id": "badge_northwood_system_administration_manager",
             "displayText": "Northwood System Administration Manager",
             "guid": "42a916b4-1f62-4e10-b691-89ad4b6a14dc"
         },
         {
             "type": 0,
-            "id": "northwood_system_administration_supervisor",
+            "id": "badge_northwood_system_administration_supervisor",
             "displayText": "Northwood System Administration Supervisor",
             "guid": "7eb08d0a-5f05-4835-9771-47dda1c435f0"
         },
         {
             "type": 0,
-            "id": "northwood_system_administrator",
+            "id": "badge_northwood_system_administrator",
             "displayText": "Northwood System Administrator",
             "guid": "103ec7d5-56f3-46dc-af1c-938ff39e1aa5"
         },
         {
             "type": 0,
-            "id": "northwood_tech_support_manager",
+            "id": "badge_northwood_tech_support_manager",
             "displayText": "Northwood Tech Support Manager",
             "guid": "4c17bf81-55ce-4511-9eae-5070e762b6e5"
         },
         {
             "type": 0,
-            "id": "northwood_tech_support_supervisor",
+            "id": "badge_northwood_tech_support_supervisor",
             "displayText": "Northwood Tech Support Supervisor",
             "guid": "0e6d04f8-ff4b-4d41-b007-7c95f600d1a3"
         },
         {
             "type": 0,
-            "id": "northwood_translation_coordinator",
+            "id": "badge_northwood_translation_coordinator",
             "displayText": "Northwood Translation Coordinator",
             "guid": "bf434e9f-fbc0-4c03-be92-7f0f44813e63"
         },
         {
             "type": 0,
-            "id": "northwood_translation_manager",
+            "id": "badge_northwood_translation_manager",
             "displayText": "Northwood Translation Manager",
             "guid": "c684dfaf-12e3-4ab4-83ea-2f8311bb4088"
         },
         {
             "type": 0,
-            "id": "northwood_translation_supervisor",
+            "id": "badge_northwood_translation_supervisor",
             "displayText": "Northwood Translation Supervisor",
             "guid": "a73d4e25-f1c8-4724-999a-ea321db09730"
         },
         {
             "type": 0,
-            "id": "northwood_verification_manager",
+            "id": "badge_northwood_verification_manager",
             "displayText": "Northwood Verification Manager",
             "guid": "e1bb91ba-ffa8-45ea-8337-03b8ca6dbb2f"
         },
         {
             "type": 0,
-            "id": "northwood_verification_specialist",
+            "id": "badge_northwood_verification_specialist",
             "displayText": "Northwood Verification Specialist",
             "guid": "0e3ced97-762e-45d6-a43f-34e7c1982368"
         },
         {
             "type": 0,
-            "id": "northwood_verification_supervisor",
+            "id": "badge_northwood_verification_supervisor",
             "displayText": "Northwood Verification Supervisor",
             "guid": "8eaab4c4-ae13-4e37-a855-800aa7e64b57"
         },
         {
             "type": 0,
-            "id": "northwood_web_development_manager",
+            "id": "badge_northwood_web_development_manager",
             "displayText": "Northwood Web Development Manager",
             "guid": "5cd7fcbc-8fba-4336-af49-5745ea87755b"
         },
         {
             "type": 0,
-            "id": "northwood_web_development_supervisor",
+            "id": "badge_northwood_web_development_supervisor",
             "displayText": "Northwood Web Development Supervisor",
             "guid": "e03bd587-a238-4d2b-a692-cd8d47af5aa4"
         },
         {
             "type": 0,
-            "id": "northwood_wiki_manager",
+            "id": "badge_northwood_wiki_manager",
             "displayText": "Northwood Wiki Manager",
             "guid": "39269e59-604a-40e2-8872-12671725eb71"
         },
         {
             "type": 0,
-            "id": "sl_animator",
+            "id": "badge_sl_animator",
             "displayText": "Sl Animator",
             "guid": "31ece3eb-82c8-4bdf-a82f-009e97595f74"
         },
         {
             "type": 0,
-            "id": "sl_anti-cheat_developer",
+            "id": "badge_sl_anti-cheat_developer",
             "displayText": "Sl Anti-cheat Developer",
             "guid": "b4cfb8ef-bad3-4284-8d9b-844a1193506d"
         },
         {
             "type": 0,
-            "id": "sl_art_manager",
+            "id": "badge_sl_art_manager",
             "displayText": "Sl Art Manager",
             "guid": "53622a96-b772-4e04-90e6-337d9699a275"
         },
         {
             "type": 0,
-            "id": "sl_art_supervisor",
+            "id": "badge_sl_art_supervisor",
             "displayText": "Sl Art Supervisor",
             "guid": "981afdd3-f398-4f54-aa02-8c82d3bbe75d"
         },
         {
             "type": 0,
-            "id": "sl_artist",
+            "id": "badge_sl_artist",
             "displayText": "Sl Artist",
             "guid": "a768ae9e-92ea-495e-8468-749cbe75fccd"
         },
         {
             "type": 0,
-            "id": "sl_assistant_game_director",
+            "id": "badge_sl_assistant_game_director",
             "displayText": "Sl Assistant Game Director",
             "guid": "d7b2b0d6-7bfa-4a29-b467-984faaa3e636"
         },
         {
             "type": 0,
-            "id": "sl_audio_manager",
+            "id": "badge_sl_audio_manager",
             "displayText": "Sl Audio Manager",
             "guid": "8f91405e-9caf-4c31-8a85-e9a71a82e28f"
         },
         {
             "type": 0,
-            "id": "sl_audio_technical_lead",
+            "id": "badge_sl_audio_technical_lead",
             "displayText": "Sl Audio Technical Lead",
             "guid": "a3035981-f2a8-4d6f-a645-678ed18aa04a"
         },
         {
             "type": 0,
-            "id": "sl_backend_programmer",
+            "id": "badge_sl_backend_programmer",
             "displayText": "Sl Backend Programmer",
             "guid": "39db001e-6f4d-4b71-83f6-658c498a6b08"
         },
         {
             "type": 0,
-            "id": "sl_backend_programming_manager",
+            "id": "badge_sl_backend_programming_manager",
             "displayText": "Sl Backend Programming Manager",
             "guid": "f27306cc-1ed7-463b-a901-de50b1882f23"
         },
         {
             "type": 0,
-            "id": "sl_community_helper",
+            "id": "badge_sl_community_helper",
             "displayText": "Sl Community Helper",
             "guid": "34426e66-0560-4892-a848-d32ff7791050"
         },
         {
             "type": 0,
-            "id": "sl_developer",
+            "id": "badge_sl_developer",
             "displayText": "Sl Developer",
             "guid": "10fafb89-64c3-47dc-a688-a61c4c04d3f5"
         },
         {
             "type": 0,
-            "id": "sl_event_winner",
+            "id": "badge_sl_event_winner",
             "displayText": "Sl Event Winner",
             "guid": "44f989ee-762a-4ecf-97ee-a59db8679632"
         },
         {
             "type": 0,
-            "id": "sl_foundation_investor",
+            "id": "badge_sl_foundation_investor",
             "displayText": "Sl Foundation Investor",
             "guid": "8326d0d3-ae40-4992-806b-8f89488d6fa0"
         },
         {
             "type": 0,
-            "id": "sl_fullstack_programmer",
+            "id": "badge_sl_fullstack_programmer",
             "displayText": "Sl Fullstack Programmer",
             "guid": "6a76af7a-9425-4ff4-9003-fbbe5fdc1783"
         },
         {
             "type": 0,
-            "id": "sl_game_design_manager",
+            "id": "badge_sl_game_design_manager",
             "displayText": "Sl Game Design Manager",
             "guid": "bfc79528-be28-42a5-ad47-cebcf62dc767"
         },
         {
             "type": 0,
-            "id": "sl_game_design_supervisor",
+            "id": "badge_sl_game_design_supervisor",
             "displayText": "Sl Game Design Supervisor",
             "guid": "01d3b6bb-b33b-438f-915f-d6440654de22"
         },
         {
             "type": 0,
-            "id": "sl_game_designer",
+            "id": "badge_sl_game_designer",
             "displayText": "Sl Game Designer",
             "guid": "7e29d091-c525-457c-948c-ce8a9656378c"
         },
         {
             "type": 0,
-            "id": "sl_game_director",
+            "id": "badge_sl_game_director",
             "displayText": "Sl Game Director",
             "guid": "3853d16a-d34c-4922-a34a-c82c028dacfd"
         },
         {
             "type": 0,
-            "id": "sl_gameplay_programmer",
+            "id": "badge_sl_gameplay_programmer",
             "displayText": "Sl Gameplay Programmer",
             "guid": "e26269a5-8384-4e26-a4dd-a1f0b378180f"
         },
         {
             "type": 0,
-            "id": "sl_global_moderation_manager",
+            "id": "badge_sl_global_moderation_manager",
             "displayText": "Sl Global Moderation Manager",
             "guid": "9edb8d48-5147-485e-a4c7-726dc5eb6f59"
         },
         {
             "type": 0,
-            "id": "sl_global_moderation_supervisor",
+            "id": "badge_sl_global_moderation_supervisor",
             "displayText": "Sl Global Moderation Supervisor",
             "guid": "bbd366c4-60c9-4add-98c6-addaf75ed79f"
         },
         {
             "type": 0,
-            "id": "sl_global_moderator",
+            "id": "badge_sl_global_moderator",
             "displayText": "Sl Global Moderator",
             "guid": "1c99daee-58db-4ed3-b4e9-098bc666e123"
         },
         {
             "type": 0,
-            "id": "sl_lead_game_designer",
+            "id": "badge_sl_lead_game_designer",
             "displayText": "Sl Lead Game Designer",
             "guid": "ba3b0f7c-a1a1-46a8-af73-51c40ebab92f"
         },
         {
             "type": 0,
-            "id": "sl_lead_gameplay_programmer",
+            "id": "badge_sl_lead_gameplay_programmer",
             "displayText": "Sl Lead Gameplay Programmer",
             "guid": "772c1683-645c-4eb2-8b35-e93dd37f2705"
         },
         {
             "type": 0,
-            "id": "sl_level_designer",
+            "id": "badge_sl_level_designer",
             "displayText": "Sl Level Designer",
             "guid": "643bf795-c509-487f-9d44-8ed0013248ab"
         },
         {
             "type": 0,
-            "id": "sl_level_designer_supervisor",
+            "id": "badge_sl_level_designer_supervisor",
             "displayText": "Sl Level Designer Supervisor",
             "guid": "3e4bed6f-5d28-470a-8bb8-0654e6b3956c"
         },
         {
             "type": 0,
-            "id": "sl_narrative_designer",
+            "id": "badge_sl_narrative_designer",
             "displayText": "Sl Narrative Designer",
             "guid": "4ef1bd77-8ba9-4175-8b97-c79cccc8db8e"
         },
         {
             "type": 0,
-            "id": "sl_official_server_manager",
+            "id": "badge_sl_official_server_manager",
             "displayText": "Sl Official Server Manager",
             "guid": "1ed0280c-c6df-4180-bfb3-182c87a82a8c"
         },
         {
             "type": 0,
-            "id": "sl_official_server_supervisor",
+            "id": "badge_sl_official_server_supervisor",
             "displayText": "Sl Official Server Supervisor",
             "guid": "af085535-194c-471a-a41e-2961ea389174"
         },
         {
             "type": 0,
-            "id": "sl_partner",
+            "id": "badge_sl_partner",
             "displayText": "Sl Partner",
             "guid": "00acd5f1-2d53-47b9-87ac-ed8e4671013e"
         },
         {
             "type": 0,
-            "id": "sl_patreon_supporter",
+            "id": "badge_sl_patreon_supporter",
             "displayText": "Sl Patreon Supporter",
             "guid": "6273c398-699e-48aa-91ad-4d60c93672c1"
         },
         {
             "type": 0,
-            "id": "sl_quality_assurance_manager",
+            "id": "badge_sl_quality_assurance_manager",
             "displayText": "Sl Quality Assurance Manager",
             "guid": "ecc76d4d-88c5-4739-93f2-e52e1147791b"
         },
         {
             "type": 0,
-            "id": "sl_quality_assurance_supervisor",
+            "id": "badge_sl_quality_assurance_supervisor",
             "displayText": "Sl Quality Assurance Supervisor",
             "guid": "449fd97c-ce8b-407e-ac71-f6f3bd767564"
         },
         {
             "type": 0,
-            "id": "sl_quality_assurance_tester",
+            "id": "badge_sl_quality_assurance_tester",
             "displayText": "Sl Quality Assurance Tester",
             "guid": "9a922df9-17d3-448e-8ce5-5a51894f24dc"
         },
         {
             "type": 0,
-            "id": "sl_sound_designer",
+            "id": "badge_sl_sound_designer",
             "displayText": "Sl Sound Designer",
             "guid": "0d76fca4-8ed6-4e22-b675-081d69a2c64c"
         },
         {
             "type": 0,
-            "id": "sl_twitch_subscriber",
+            "id": "badge_sl_twitch_subscriber",
             "displayText": "Sl Twitch Subscriber",
             "guid": "54add978-369f-4f40-ab26-ce84b4e1a128"
         },
         {
             "type": 0,
-            "id": "sl_voice_actor",
+            "id": "badge_sl_voice_actor",
             "displayText": "Sl Voice Actor",
             "guid": "5fcb520e-0f20-43e3-813c-1964c4ad4695"
         },

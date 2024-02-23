@@ -191,9 +191,9 @@
             "guid": "d5317f1e-f929-4763-9c1d-23dcf970ec55",
             "fields": [
                 {
-                    "id": "voicechat_prompt_header",
+                    "id": "voicechat_tip_header",
                     "autoDisplayName": false,
-                    "displayName": "Voicechat Prompt Header",
+                    "displayName": "Voicechat Tip Header",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "aa645896-beea-4c6c-ae2d-6eef7e551961"
