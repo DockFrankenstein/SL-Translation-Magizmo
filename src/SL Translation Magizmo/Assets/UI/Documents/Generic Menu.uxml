@@ -1,10 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
-    <Style src="project://database/Assets/UI/Generic%20Menu%20Style.uss?fileID=7433441132597879392&amp;guid=827d3d1649d56524880e512a8e7f5e8f&amp;type=3#Generic Menu Style" />
+    <Style src="project://database/Assets/UI/Styles/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
+    <Style src="project://database/Assets/UI/Styles/Generic%20Menu%20Style.uss?fileID=7433441132597879392&amp;guid=827d3d1649d56524880e512a8e7f5e8f&amp;type=3#Generic Menu Style" />
     <ui:VisualElement style="height: 35px; align-items: flex-start; flex-direction: row; background-color: rgb(255, 255, 255); width: 100%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;">
         <ui:Button text="File" display-tooltip-when-elided="true" enable-rich-text="false" name="file" />
         <ui:Button text="Edit" display-tooltip-when-elided="true" enable-rich-text="false" name="edit" />
+        <ui:Button text="View" display-tooltip-when-elided="true" enable-rich-text="false" name="view" />
         <ui:Button text="Tools" display-tooltip-when-elided="true" enable-rich-text="false" name="tools" />
-        <ui:Button text="Hierarchy" display-tooltip-when-elided="true" enable-rich-text="false" name="hierarchy" />
+        <ui:Button text="About" display-tooltip-when-elided="true" enable-rich-text="false" name="about" />
     </ui:VisualElement>
 </ui:UXML>

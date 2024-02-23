@@ -342,6 +342,8 @@
     background-color: rgb(51, 51, 51);
     -unity-font: url("project://database/Assets/Font/Preview/Roboto-Bold.ttf?fileID=12800000&guid=8f6f1219b60cb584ead94e8e0d0c0dd6&type=3#Roboto-Bold");
     justify-content: center;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(13, 13, 13, 255);
 }
 
 .tree .unity-button {
