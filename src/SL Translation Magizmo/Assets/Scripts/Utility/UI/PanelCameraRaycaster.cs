@@ -9,6 +9,8 @@ namespace Project.UI
     {
         public PreviewPanelTarget targetPanel;
 
+        public override int sortOrderPriority => targetPanel.IsFocused ? 1 : -1;
+
         public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList)
         {
             var imageSize = targetPanel.Image.rectTransform.rect.size;

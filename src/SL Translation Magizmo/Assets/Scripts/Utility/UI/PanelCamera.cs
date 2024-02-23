@@ -1,5 +1,9 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 namespace Project.UI
 {
@@ -43,7 +47,15 @@ namespace Project.UI
         {
             var rectTrans = TargetImage.rectTransform;
             Vector2 mousePos = rectTrans.InverseTransformPoint(Input.mousePosition);
-            InFocus = rectTrans.rect.Contains(mousePos);
+
+            var list = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(new PointerEventData(EventSystem.current)
+            {
+                position = Input.mousePosition,
+            }, list);
+
+            InFocus = targetImage.IsFocused =
+                list.Where(x => !(x.module is PanelCameraRaycaster)).FirstOrDefault().gameObject == TargetImage.gameObject;
         }
     }
 }

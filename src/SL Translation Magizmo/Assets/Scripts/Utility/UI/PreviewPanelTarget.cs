@@ -7,5 +7,6 @@ namespace Project.UI
     public class PreviewPanelTarget : ScriptableObject
     {
         public RawImage Image { get; set; }
+        public bool IsFocused { get; set; }
     }
 }
