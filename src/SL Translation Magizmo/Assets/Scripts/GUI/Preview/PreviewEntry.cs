@@ -57,7 +57,7 @@ namespace Project.GUI.Preview
             var txt = currTarget.defaultValue;
 
             if (manager.File.Entries.TryGetValue(currTarget.entryId, out var content))
-                if (!string.IsNullOrEmpty(content.content))
+                if (!string.IsNullOrWhiteSpace(content.content))
                     txt = content.content;
 
             text.text = txt;
