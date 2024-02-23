@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -10,12 +9,22 @@ namespace Project.Translation.Data
     [Serializable]
     public class SaveFile : ISerializationCallbackReceiver  
     {
+        public SaveFile()
+        {
+
+        }
+
+        public SaveFile(TranslationVersion version)
+        {
+            CleanupToVersion(version);
+        }
+
         public const string FILE_EXTENSION = "sltmf";
 
+        #region Serialization
+        [SerializeField] bool useNewestSlVersion = true;
+        [SerializeField] string slVersion;
         [SerializeField] List<EntryData> _entries = new List<EntryData>();
-        [SerializeField] object manifest;
-
-        public Dictionary<string, EntryData> Entries = new Dictionary<string, EntryData>();
 
         public void OnBeforeSerialize()
         {
@@ -26,26 +35,54 @@ namespace Project.Translation.Data
 
         public void OnAfterDeserialize()
         {
-            //TODO: make sure there aren't any duplicates
-
             Entries = _entries
-                .ToDictionary(x => x.entryId);
+                .GroupBy(x => x.entryId)
+                .ToDictionary(x => x.Key, x => x.First());
+        }
+        #endregion
+
+        #region Controls
+        public Dictionary<string, EntryData> Entries = new Dictionary<string, EntryData>();
+
+        public bool UseNewestSlVersion
+        {
+            get => useNewestSlVersion;
+            set => useNewestSlVersion = value;
         }
 
-        public static SaveFile Create(TranslationVersion translation)
+        public Version SlVersion
         {
-            var file = new SaveFile();
+            get => Version.TryParse(slVersion, out var ver) ? 
+                ver : 
+                new Version();
+            set => slVersion = value.ToString();
+        }
+        #endregion
 
-            if (translation != null)
-            {
-                var defines = translation.GetMappedFields();
+        /// <summary>Removes unused empty entries that aren't included in the version and adds missing ones.</summary>
+        public void CleanupToVersion(TranslationVersion version)
+        {
+            var entries = Entries
+                .Select(x => x.Value)
+                .Where(x => !string.IsNullOrEmpty(x.content));
 
-                foreach (var item in defines)
-                    if (!file.Entries.ContainsKey(item.id))
-                        file.Entries.Add(item.id, new EntryData(item));
-            }
+            var ids = entries.Select(x => x.entryId);
 
-            return file;
+            IEnumerable<EntryData> verEntries = new List<EntryData>();
+
+            if (version != null)
+                verEntries = version.MappedFields
+                    .Select(x => x.Key)
+                    .Except(ids)
+                    .Select(x => new EntryData(x));
+
+            var prevCount = Entries.Count;
+
+            Entries = entries
+                .Concat(verEntries)
+                .ToDictionary(x => x.entryId);
+
+            Debug.Log($"Cleanup completed, removed {prevCount - entries.Count()}, added {verEntries.Count()}");
         }
 
         [Serializable]
@@ -56,14 +93,14 @@ namespace Project.Translation.Data
                 this.entryId = entryId;
             }
 
-            public EntryData(MappedField defineField) : this(defineField.id) { }
+            public EntryData(MappedField field) : this(field.id) { }
 
             public EntryData(string entryId, string content) : this(entryId)
             {
                 this.content = content;
             }
 
-            public EntryData(MappedField defineField, string content) : this(defineField.id, content) { }
+            public EntryData(MappedField field, string content) : this(field.id, content) { }
 
             string IApplicationObject.Name => entryId;
 

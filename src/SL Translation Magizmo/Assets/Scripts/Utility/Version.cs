@@ -1,5 +1,7 @@
-﻿using System;
+﻿using qASIC;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Project
@@ -16,26 +18,32 @@ namespace Project
 
         public static bool operator >(Version a, Version b)
         {
-            var minLength = Mathf.Min(a.releases.Length, b.releases.Length);
+            var minLength = Mathf.Max(a.releases.Length, b.releases.Length);
             for (int i = 0; i < minLength; i++)
             {
-                if (a.releases[i] > b.releases[i]) return true;
-                if (a.releases[i] < b.releases[i]) return false;
+                var aVal = i < a.releases.Length ? a.releases[i] : 0;
+                var bVal = i < b.releases.Length ? b.releases[i] : 0;
+
+                if (aVal > bVal) return true;
+                if (aVal < bVal) return false;
             }
 
-            return a.releases.Length > b.releases.Length;
+            return false;
         }
 
         public static bool operator <(Version a, Version b)
         {
-            var minLength = Mathf.Min(a.releases.Length, b.releases.Length);
+            var minLength = Mathf.Max(a.releases.Length, b.releases.Length);
             for (int i = 0; i < minLength; i++)
             {
-                if (a.releases[i] < b.releases[i]) return true;
-                if (a.releases[i] > b.releases[i]) return false;
+                var aVal = i < a.releases.Length ? a.releases[i] : 0;
+                var bVal = i < b.releases.Length ? b.releases[i] : 0;
+
+                if (aVal < bVal) return true;
+                if (aVal > bVal) return false;
             }
 
-            return a.releases.Length < b.releases.Length;
+            return false;
         }
 
         public static bool operator >=(Version a, Version b) =>
@@ -45,10 +53,11 @@ namespace Project
             a < b || a == b;
 
         public static bool operator ==(Version a, Version b) =>
-            a.releases == b.releases;
+            a.Equals(null) == b.Equals(null) ||
+                Enumerable.SequenceEqual(a.releases, b.releases);
 
         public static bool operator !=(Version a, Version b) =>
-            a.releases != b.releases;
+            !(a == b);
 
         public override bool Equals(object obj)
         {

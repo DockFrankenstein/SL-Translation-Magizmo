@@ -3,7 +3,6 @@ using Project.Translation.Data;
 using Project.Translation.Mapping;
 using qASIC;
 using SFB;
-using qASIC.Files;
 using UnityEngine.Events;
 using qASIC.Input;
 using System.Linq;
@@ -35,17 +34,34 @@ namespace Project.Translation
         public UnityEvent OnSave;
         public UnityEvent OnLoad;
 
-        public TranslationVersion CurrentVersion =>
-            versions.Length == 0 ?
-            null :
-            versions[versions.Length - 1];
+        public event Action OnFileChanged;
+
+        public TranslationVersion CurrentVersion { get; private set; }
+
+        public TranslationVersion GetVersion(Version version) =>
+            versions
+            .Where(x => x.version == version)
+            .FirstOrDefault();
+
+        public TranslationVersion GetVersion(SaveFile file) =>
+            file.UseNewestSlVersion ?
+            GetNewestVersion() :
+            GetVersion(file.SlVersion);
+
+        public TranslationVersion GetNewestVersion() =>
+            versions.LastOrDefault();
+
+        public void LoadCurrentVersionFromFile() =>
+            CurrentVersion = GetVersion(File);
 
         private void Awake()
         {
             foreach (var version in versions)
                 version.Initialize();
 
-            File = SaveFile.Create(CurrentVersion);
+            CurrentVersion = GetNewestVersion();
+
+            File = new SaveFile(CurrentVersion);
         }
 
         private void Update()
@@ -57,7 +73,7 @@ namespace Project.Translation
                 SaveAs();
 
             if (i_load.GetInputDown())
-                Load();
+                Open();
         }
 
         public void Save()
@@ -111,7 +127,7 @@ namespace Project.Translation
             return true;
         }
 
-        public void Load()
+        public void Open()
         {
             var paths = StandaloneFileBrowser.OpenFilePanel("Load", "", SaveFile.FILE_EXTENSION, false);
 
@@ -125,29 +141,40 @@ namespace Project.Translation
                 var txt = System.IO.File.ReadAllText(FilePath);
 
                 var lines = txt.SplitByLines();
-                var versionString = lines.First();
-                var version = CURRENT_FILE_VERSION;
+                var fileVersionString = lines.First();
+                var fileVersion = CURRENT_FILE_VERSION;
 
-                if (int.TryParse(versionString, out int newVersion))
+                if (int.TryParse(fileVersionString, out int newFileVersion))
                 {
-                    if (newVersion < LOWEST_SUPPORTED_FILE_VERSION)
+                    if (newFileVersion < LOWEST_SUPPORTED_FILE_VERSION)
                     {
-                        errorWindow.CreatePrompt("Load Error", $"This file has been saved in an older version ({newVersion}) that is no longer supported (lowest supported version: {LOWEST_SUPPORTED_FILE_VERSION}).");
+                        errorWindow.CreatePrompt("Load Error", $"This file has been saved in an older version ({newFileVersion}) that is no longer supported (lowest supported version: {LOWEST_SUPPORTED_FILE_VERSION}).");
                         return;
                     }
 
-                    if (newVersion > version)
+                    if (newFileVersion > fileVersion)
                     {
-                        errorWindow.CreatePrompt("Load Error", $"This file has been saved in a newer version ({newVersion}, current version: {CURRENT_FILE_VERSION}). You have to update the application in order to load it.");
+                        errorWindow.CreatePrompt("Load Error", $"This file has been saved in a newer version ({newFileVersion}, current version: {CURRENT_FILE_VERSION}). You have to update the application in order to load it.");
                         return;
                     }
 
-                    version = newVersion;
+                    fileVersion = newFileVersion;
                     txt = string.Join("\n", lines.Skip(1));
                 }
 
-                File = JsonUtility.FromJson<SaveFile>(txt);
-                FileVersion = version;
+                var file = JsonUtility.FromJson<SaveFile>(txt);
+                var ver = GetVersion(file);
+
+                if (ver == null)
+                {
+                    ver = GetNewestVersion();
+                    errorWindow.CreatePrompt("Unsupported SL Version", $"This file is targetting an unsupported version of SCP: Secret Laboratory ({file.SlVersion}). Changed version to {ver.version}");
+                }
+
+                CurrentVersion = ver;
+
+                File = file;
+                FileVersion = fileVersion;
             }
             catch (Exception e)
             {
@@ -156,28 +183,12 @@ namespace Project.Translation
             }
 
             OnLoad.Invoke();
+            MarkFileDirty();
         }
 
-        //public void Export()
-        //{
-        //    var paths = StandaloneFileBrowser.OpenFolderPanel("", Settings.GeneralSettings.TranslationPath, false);
-
-        //    if (paths.Length == 0)
-        //        return;
-
-        //    CurrentVersion.Export(File, paths[0]);
-        //    OnExport.Invoke();
-        //}
-
-        //public void Import()
-        //{
-        //    var paths = StandaloneFileBrowser.OpenFolderPanel("", Settings.GeneralSettings.TranslationPath, false);
-
-        //    if (paths.Length == 0)
-        //        return;
-
-        //    CurrentVersion.Import(File, paths[0]);
-        //    OnImport.Invoke();
-        //}
+        public void MarkFileDirty()
+        {
+            OnFileChanged?.Invoke();
+        }
     }
 }
