@@ -2,6 +2,8 @@
 using System.Linq;
 using Project.Translation.Data;
 using Project.Utility.UI;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace Project.GUI.Preview
 {
@@ -14,11 +16,21 @@ namespace Project.GUI.Preview
 #endif
         public PreviewEntry[] entries = new PreviewEntry[0];
 
+        public Dictionary<string, PreviewEntry> EntriesForIds { get; private set; } = new Dictionary<string, PreviewEntry>();
+
+        private void Awake()
+        {
+            EntriesForIds = entries
+                .SelectMany(x => x.GetListOfTargets().Select(y => new KeyValuePair<string, PreviewEntry>(y.entryId, x)))
+                .GroupBy(x => x.Key)
+                .ToDictionary(x => x.Key, x => x.First().Value);
+        }
+
         /// <summary>Updates entries and other items.</summary>
-        public void UpdateScene(SaveFile appFile)
+        public void UpdateScene()
         {
             foreach (var entry in entries)
-                entry.UpdateContent(appFile);
+                entry.UpdateContent();
 
             LayoutGroupController.Refresh();
         }

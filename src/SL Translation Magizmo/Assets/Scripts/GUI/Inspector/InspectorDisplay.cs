@@ -48,7 +48,7 @@ namespace Project.GUI.Inspector
             ContentContainer = root.Q("inspector-content");
 
             hierarchy.OnSelect += Hierarchy_OnSelect;
-            manager?.OnLoad.AddListener(ReloadInspector);
+            manager.OnFileChanged += ReloadInspector;
 
             foreach (var item in inspectors)
             {
@@ -63,7 +63,7 @@ namespace Project.GUI.Inspector
         {
             var appFile = manager.File;
             if (appFile != null)
-                previewSceneManager.ReloadActiveScenes(appFile);
+                previewSceneManager.ReloadActiveScenes();
         }
 
         public void ReloadInspector()

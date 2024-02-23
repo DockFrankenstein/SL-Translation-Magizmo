@@ -31,7 +31,7 @@ namespace Project.GUI.Inspector
                 if (entry != null)
                 {
                     entry.content = _contentList.Source.ToEntryContent();
-                    MarkAsDirty();
+                    MarkFileDirty();
                 }
             };
         }

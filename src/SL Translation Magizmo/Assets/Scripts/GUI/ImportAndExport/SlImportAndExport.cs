@@ -8,7 +8,6 @@ namespace Project.Translation.ImportAndExport
 {
     public class SlImportAndExport : ImportAndExportBase, IImporter, IExporter
     {
-        [SerializeField] TranslationManager manager;
         [SerializeField] ErrorWindow error;
 
         [Label("Exporting")]
@@ -94,6 +93,7 @@ namespace Project.Translation.ImportAndExport
                 return;
 
             manager.CurrentVersion.Import(manager.File, paths[0]);
+            FinalizeImport();
             OnImport?.Invoke();
         }
     }

@@ -30,7 +30,9 @@ namespace Project.GUI.Inspector
 
         public virtual bool ShouldOpen(IApplicationObject obj) => false;
 
-        public void MarkAsDirty() =>
-            inspector.RepaintPreview();
+        public void MarkFileDirty()
+        {
+            manager.MarkFileDirty();
+        }
     }
 }

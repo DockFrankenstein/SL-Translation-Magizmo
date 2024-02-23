@@ -78,7 +78,7 @@ namespace Project.GUI.Inspector
 
                     field.OnChanged += () =>
                     {
-                        MarkAsDirty();
+                        MarkFileDirty();
                     };
                 }
             }

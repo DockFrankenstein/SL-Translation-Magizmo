@@ -1,264 +1,782 @@
 {
-    "fileName": "NewMainMenu.txt",
+    "fileName": "MainMenu.txt",
     "identificationType": 0,
     "useSeparationCharacter": false,
     "separationCharacter": 0,
     "lines": [
         {
             "lineId": "",
-            "guid": "7413c5bc-f2ea-405e-9dd2-fba462cbc510",
+            "guid": "71446482-428c-4c65-b082-e11947ccd148",
             "fields": [
                 {
-                    "id": "menu_news",
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "e7c617b3-a2d9-4928-909f-cd1195370c20"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9707600e-a5d1-4147-a755-82207a9418fb",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "86de41ce-6d73-44fb-bd19-55ecdbaefa6a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a4e0c951-0e9c-4662-ad57-784070de8d24",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "6965d452-7068-4abc-b65b-3f61971c7bed"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c4611d96-bf61-479d-87f7-fc75688090d6",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "1a0987c1-2d82-4937-91a0-635cc01ffb42"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "aac47982-65e9-4e20-a0b7-2d25f75f0154",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "a602c57a-a229-460d-a63d-69d9f7509e79"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e79f3b40-6ba6-42ff-86aa-402a3668bfd0",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "bab7a689-6a72-4009-ab66-84fbd4eb719b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "adccf12b-addb-4a1b-9399-40fd6628ab7e",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "7f8893ce-de53-4092-bb4d-c5ea16c1b2c0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5eca40e6-f154-43ca-a42c-1c9a3e8cf7dd",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "321d7eee-3146-464b-86c2-699c5eb9de24"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b37cd016-1e9d-4a44-92f7-a443426ad060",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "44f54f67-a664-4487-801d-8bde9d9988e1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7caded5b-d730-4fdf-a1a4-1d9ad5dc40b0",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "3659f03c-7bfa-47f5-8721-c23d5fe5ba84"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "505c773b-ccf9-429b-ba25-50ff97998ade",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "bca16960-4ca6-4acc-ad49-04a14fd58fa0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "40f6c92c-36bf-482a-835f-0aa5ead41f4f",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "f47f5b96-add5-43b3-9b52-ac101e21af9f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "fcf85dbe-c745-4056-af3f-1c2c58139b89",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "07f4a927-b518-42d1-a3f9-c34cb8867e9c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2286b5fe-391f-4488-a797-8b24ecbcc8fa",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "c34202cf-abf0-4089-a2a5-604efd730a14"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8ddcfdfa-aa5e-4bc6-8f88-21ac487defcc",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "f69f42ee-ab47-4207-b9ec-027b2ddccbe5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a231e521-a5b3-4144-a285-639ca2a79c21",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "5ff829e8-aeba-4148-a4c9-a4b006f66055"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0e508044-f350-4cd4-93d8-685f691330e5",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "323d285e-1be1-4add-8bc1-e1590bbed79b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "21339601-1438-47b0-914a-c0f66c1840e1",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "de91b120-ae6c-4d1e-b225-30205f83093b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "bc70cd16-b4b9-4681-b3b5-36e6c9c43e39",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "8dd2d5c5-97df-43ca-95fc-49fc7323ca30"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "88ad056a-4e26-4b82-a474-270d77e6e402",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "4fc27f2e-cd8e-433e-ba8f-fbed620add76"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ba9c60a4-182b-418a-aabe-c083f5ba0180",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "3f3ea5a8-6036-4d30-8dca-8c0a3975d4a7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "324b5146-5582-496e-890c-c6e5234f5532",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "272223d8-1c83-4c10-afe8-6d7a1b237705"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b3f9d89f-5081-4e33-af1b-34985a803a75",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "60907f79-a6c5-4705-9881-3419f79f76cd"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "23ebbda7-4628-4600-b976-243422c9be4c",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "3af979ae-47e1-4608-b9fc-57a5088b2640"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a5a296f9-d294-41c5-ac5d-b459fb6f04c3",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "eda5adad-29cf-4a25-bf73-56f59ea8fea0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5d2f5293-46b9-4856-8954-c426782a4a01",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "b3deee3f-9064-4470-8602-bde9feb3dcf2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "3c51066f-987d-4134-a93b-d05df533b522",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "f6f9e04a-60da-4fcf-88c5-251a7ece3c96"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "937ca6e9-ec62-46d4-93d1-fe5eea5b1c81",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "a1b324f8-1b32-4075-8dce-9914645e52a6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e82af395-0fa9-4cc7-8181-ff4c11c67741",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "68996ad4-46f4-4724-a5d2-ef53a3827f35"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8a97e7e6-453d-4350-907a-09bd61824fe0",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "5103a403-1e49-4678-9deb-adbf4d3db3ca"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d310090e-4239-418f-8947-3d79d208056b",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "4c0183b2-caa0-44be-80b4-ce39c31cab9f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8562ac71-8bb5-4b20-b5a8-d9508b892064",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "f72efbd4-e67a-478c-b20c-1d4be233d5e3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9173d159-34f6-445e-b632-728573d451f6",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "c5471fea-44a3-41b0-a0fd-7c7dbcfdf3ce"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "83049c34-e6fb-461e-817d-c1db30de9bc3",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "3ba2ff7c-eae3-4196-8544-43e475d47a49"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "13da5de8-5e3f-4072-9348-43da350676d0",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "758dab6d-940b-49ad-9558-d987acb0161f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "6d59ba04-37dc-45a1-904f-66bccb5d692c",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "0868dc59-4e1e-47c5-ae71-c887d2bbd8a8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "3cd231ff-401f-4321-b503-cc3cf417db86",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "3628a2fd-0956-49eb-b24a-55145f663e8f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0671ed2d-5bd2-403d-abc6-c343af2788f2",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "c1e0c180-7462-4555-a4dc-2bcb323c1ccb"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "398f5d7b-38ee-4e1e-8cfe-f0d8c9d6a159",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "2bc0a258-84c3-474d-962b-f9ef90de8052"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0d31cc4e-05d9-491e-9cb5-ec7ec5cbc65f",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "3e981710-64d5-4b92-8fd0-24fed835e774"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "75e07dc5-f41e-4a32-8369-5dc8f9cf8601",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "e820a769-75ba-4cdb-8e73-8185cb8751c5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "751bd809-ebc2-4534-a4c1-713006bb0b6e",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "0b27a415-2980-4e92-9e48-0765bfc099a9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "6bae07d8-2915-408c-8bca-b413080e7820",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "a80935c0-6ef2-44a6-9dd8-3ea109de6e10"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "1f523f57-de07-4290-9f6c-e1fe58b3db7b",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "0b89d066-4547-46ae-a735-df0a84d18e83"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "dd6fcc26-64c0-4268-b103-9f68120ef53b",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "2bb79dba-2dea-4013-bbbd-b43169a9047b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ca22db72-621a-4894-9ef8-aaac3ec5095b",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "a5c7dd60-9a8c-45f9-9dd1-64d73d645049"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b7eddda8-2be3-44de-951c-ddec59cdd829",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "bf5f19c3-85cf-4b88-999a-c316bc78ffb9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b108d044-6759-4b1c-bf99-06836a367465",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "06bd0896-94cf-4513-99ff-2228f9bbdf5a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e4301e2c-066e-4cd9-943f-605ca8efa387",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "2be5d3cc-9133-4f04-ad90-ed3b90e17690"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "3b45f847-3447-496a-b866-e578c78f1c21",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "90c10e72-45c3-4d1c-930d-43ddf0f9f55d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8508ee3b-9b1f-4773-9a6e-8d6645dcdb6c",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "73105729-9275-42b5-8186-c9e69d9b20c8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e2bec7dc-dc72-4203-a7bf-0911a95ab3ca",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "f6849a4d-e6c7-48ce-b641-3ac0da74cbe6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "60937cd1-c801-4a77-a4b8-b0006659b861",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "07228cf4-8f3b-4ffa-b6a7-7ca872c88618"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "03267caa-5664-459f-a6fb-10182f0c35ad",
+            "fields": [
+                {
+                    "id": "menu_server_browser_status_downloading",
                     "autoDisplayName": false,
-                    "displayName": "News",
+                    "displayName": "Downloading Data",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "18e090b8-b8cb-4c32-a6a7-bc8bf45013f1"
+                    "guid": "05d71b6d-f312-4062-b26a-757f080408f9"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "4ff8dc9f-a3c4-4df5-8079-9f16d62d1a1a",
+            "guid": "4bb8e5e3-e528-4717-9408-42e907b8ca37",
             "fields": [
                 {
-                    "id": "menu_servers",
+                    "id": "menu_server_browser_status_no_servers",
                     "autoDisplayName": false,
-                    "displayName": "Servers",
+                    "displayName": "No Servers",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "f91d6c33-1373-468e-8fb9-b11244b13390"
+                    "guid": "7323f1d3-efc7-4015-afc1-babef487f617"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "52e3125f-e501-4847-8562-715711aee753",
-            "fields": [
-                {
-                    "id": "settings",
-                    "autoDisplayName": false,
-                    "displayName": "Settings",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "8e45925e-10ea-43a1-9d4d-c91f3b0eaf18"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "5d284cf0-9c2f-44c8-b728-9aa9b5f434b1",
-            "fields": [
-                {
-                    "id": "menu_quit",
-                    "autoDisplayName": false,
-                    "displayName": "Quit",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "c55fa014-0563-4f38-a74e-78f2f70643f6"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "f235a2fc-1703-4491-9393-e518c60e8966",
-            "fields": [
-                {
-                    "id": "menu_social_media",
-                    "autoDisplayName": false,
-                    "displayName": "Social Media",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "f10e618d-36b9-4f66-9df8-6b4c49f71f41"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "c6120f57-6bd4-411e-9754-abb9fc509d02",
-            "fields": [
-                {
-                    "id": "menu_server_browser_internet",
-                    "autoDisplayName": false,
-                    "displayName": "Internet",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "ce9aa6cf-e02e-417e-a9aa-359449a4dd27"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "ee7c996d-3d1d-4e99-bceb-d5b4d40d7166",
-            "fields": [
-                {
-                    "id": "menu_server_browser_favourites",
-                    "autoDisplayName": false,
-                    "displayName": "Favourites",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "9dbbc84e-22f0-47fa-b26d-b9a99eaad092"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "5f3f2309-d0dc-4ea3-bcc5-e2b628e8eff6",
-            "fields": [
-                {
-                    "id": "menu_server_browser_official",
-                    "autoDisplayName": false,
-                    "displayName": "Official",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "d37dade9-fdc2-4d82-9523-c18d8d425c96"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "4e6f94ea-b36a-4124-af44-1a766ef5f45c",
-            "fields": [
-                {
-                    "id": "menu_server_browser_history",
-                    "autoDisplayName": false,
-                    "displayName": "History",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "b759a24b-5f33-46b0-9ec4-3008915c2631"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "de6bfecc-871f-44e6-b74c-f588e6523bfe",
-            "fields": [
-                {
-                    "id": "menu_server_browser_friends",
-                    "autoDisplayName": false,
-                    "displayName": "Friends",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "b4a01a1e-62ab-4058-8029-82c7c904d04b"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "90622d49-d3d6-4a17-a471-1edd38328ea3",
-            "fields": [
-                {
-                    "id": "menu_server_browser_search",
-                    "autoDisplayName": false,
-                    "displayName": "Search",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "dc4abfed-f583-432a-8be6-c5594b5cdecb"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "a9e6e35e-9b64-4501-907d-c62106981c5d",
-            "fields": [
-                {
-                    "id": "menu_server_create",
-                    "autoDisplayName": false,
-                    "displayName": "Create",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "553e1f00-aee3-46a8-ab5a-92e1b13f7944"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "1082e82a-0410-43ff-9871-9499dc6577cb",
-            "fields": [
-                {
-                    "id": "menu_server_rejoin",
-                    "autoDisplayName": false,
-                    "displayName": "Rejoin",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "c4446efc-4d7e-48dd-a3f7-f2386c598b83"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "13745dd5-29f1-472b-aad9-c93ef3db1471",
-            "fields": [
-                {
-                    "id": "menu_server_direct_connect",
-                    "autoDisplayName": false,
-                    "displayName": "Direct Connect",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "a4182f47-856e-4d71-8dec-a0d6d45b36d8"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "265b8d0a-b200-4453-b201-512ccc73fa42",
-            "fields": [
-                {
-                    "id": "menu_server_refresh",
-                    "autoDisplayName": false,
-                    "displayName": "Refresh",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "cc4e7ab7-9d5d-4aaa-bb81-cc46d40701f5"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "07bcbe57-4185-46e1-8247-9e64a7c9ddfb",
-            "fields": [
-                {
-                    "id": "menu_server_hide_empty",
-                    "autoDisplayName": false,
-                    "displayName": "Hide Empty",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "8c9d09f9-02c5-4ec7-a155-9607a6b8c204"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "fe7cf66e-f2b7-4da5-b592-61132dae32b4",
-            "fields": [
-                {
-                    "id": "menu_server_hide_full",
-                    "autoDisplayName": false,
-                    "displayName": "Hide Full",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "a21e63e2-eb0c-4b6f-8014-28abb3c01ef9"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "710bd294-aada-4069-90ee-83c79f675dd1",
-            "fields": [
-                {
-                    "id": "menu_server_no_whitelist",
-                    "autoDisplayName": false,
-                    "displayName": "No Whitelist",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "68e04c35-66ff-45dd-9f27-e5ba775c0317"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "2a695f8b-b84d-42c7-b41e-3a6f2c47f55d",
+            "guid": "ef6efbe7-c69f-4c53-9074-dabd59bc2a56",
             "fields": [
                 {
                     "id": "",
@@ -266,13 +784,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "fbafdcf0-0d04-4551-9682-0412f215b19a"
+                    "guid": "2f18b0ec-8316-45d6-b070-9c5811bd00fa"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "671f346c-e180-4328-93c5-54fdae423210",
+            "guid": "6f25f8db-653a-4722-940e-6438d74349be",
             "fields": [
                 {
                     "id": "",
@@ -280,13 +798,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "861caab2-8290-49fb-a3b4-0be5b8eb62a9"
+                    "guid": "880090c4-06a3-4a3c-aa25-2684859eed6f"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "d0c9859e-b61a-4f7a-b90f-18a1b2a8c53d",
+            "guid": "e253516e-ec9a-4c3f-8ae0-9b1335d01586",
             "fields": [
                 {
                     "id": "",
@@ -294,13 +812,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "3d8d3f23-499e-4b8a-8a93-1df5b6a9baf9"
+                    "guid": "cd06d726-6bc3-4944-a5c6-ec150a7b44e0"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "90d8bcf2-8270-46e5-9e6c-e6477f80cfdd",
+            "guid": "9949a2ca-28ad-44c0-bff4-c39e29b14462",
             "fields": [
                 {
                     "id": "",
@@ -308,13 +826,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "1e0965b7-2f22-47d7-a261-5acd38098a7f"
+                    "guid": "c75476a8-2750-456c-bdb1-7eee79c8ac62"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "f8d70eb2-0fe6-4d79-93cc-1ff1ffe3735c",
+            "guid": "d930ecc5-4049-4669-850d-c4359131c23e",
             "fields": [
                 {
                     "id": "",
@@ -322,13 +840,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "09c9e83c-94d9-4991-88e3-a9f34e4e61ac"
+                    "guid": "c6b5214d-607c-45e9-9b45-a7738ed75ef3"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "05c48ad4-c4e0-49d8-ae3e-6848c1b25bb9",
+            "guid": "8bd2ec06-d13d-4a04-9bf6-89391300da8b",
             "fields": [
                 {
                     "id": "",
@@ -336,13 +854,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "72db5bcc-f39e-4a3b-84f9-4715215aadbc"
+                    "guid": "f6f8111d-83ea-4292-8969-930f5e08dc0f"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "672043cf-499a-46f8-b0e8-8b527f76d510",
+            "guid": "bdacbe6e-ed06-4f7a-8fdc-7eb6d30481a5",
             "fields": [
                 {
                     "id": "",
@@ -350,13 +868,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "4fb2164c-48b9-4f7a-b458-054cb3acef88"
+                    "guid": "43772737-d14e-4f16-a397-ab9b94b95ff6"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "ee8417ff-10b9-416f-97a1-82bd6e838f46",
+            "guid": "121529c6-c079-4bea-b534-7788fa7e4237",
             "fields": [
                 {
                     "id": "",
@@ -364,13 +882,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "2f03a4ad-7edf-4d92-bd0f-9401facca7e8"
+                    "guid": "3f7d86f0-c74b-4568-a64a-441541293076"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "d42f9164-4d0c-4192-8806-7dcfd4b06f93",
+            "guid": "f6f9739e-79eb-49e6-abce-d5ac7b259ff0",
             "fields": [
                 {
                     "id": "",
@@ -378,13 +896,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "b26d9db0-b0c0-4489-9486-d49c6c0eda61"
+                    "guid": "c0be581d-1c5e-4905-92c9-b9399893800e"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "07cdfcc0-01b4-48d3-af8b-0edf0462dbed",
+            "guid": "29a23ff0-987a-4840-97db-d0d241feeb77",
             "fields": [
                 {
                     "id": "",
@@ -392,13 +910,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "2588a986-afc7-4ee1-8953-d4a62aea6b60"
+                    "guid": "5933d35b-820a-4c13-bf88-3bc8805b5809"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "83419e96-bb62-491d-912a-22e1ece3e51b",
+            "guid": "abcaaf57-ca9a-4b1e-9a37-db6d7d72247e",
             "fields": [
                 {
                     "id": "",
@@ -406,13 +924,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "8eb2a787-dace-4dcd-acbf-042eab8c5548"
+                    "guid": "0fc693d2-7f42-4847-99bb-b40729477388"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "cc887c01-4bef-46be-b3ac-5db76508265e",
+            "guid": "68c28c5b-10f5-480d-bf32-86e07d161118",
             "fields": [
                 {
                     "id": "",
@@ -420,13 +938,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "dbe8c0fe-f945-4bc1-be88-a22e7d3e8f74"
+                    "guid": "3df13263-ee54-40cd-8ad6-3c6eebea1f8c"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "02826bb7-6189-49da-a691-4aab577d140f",
+            "guid": "ae0178b8-db6f-46d6-a6be-036957e0ad34",
             "fields": [
                 {
                     "id": "",
@@ -434,13 +952,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "48ac1565-ed59-4b41-bf07-50f85df57425"
+                    "guid": "bb581ce6-05d1-40bb-b514-5886f9869349"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "98e0af44-8647-4ed3-bb21-a06821d0711b",
+            "guid": "48c148b6-4191-4bc3-98d9-11dec0b5e184",
             "fields": [
                 {
                     "id": "",
@@ -448,13 +966,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "5a5a83d0-3c9f-47b5-bfac-4a82bd1eabc4"
+                    "guid": "79a7d2da-49c5-4e99-9d3e-c3fb8d921ec3"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "f7b824ab-1c72-4e60-b6fd-cac328fb2d3c",
+            "guid": "6fcdbb5a-2fe6-42d5-9ada-bea07d651760",
             "fields": [
                 {
                     "id": "",
@@ -462,13 +980,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "9d1b856e-2b45-4908-bfc9-deed5ab9757e"
+                    "guid": "1fede925-8fc4-4fa4-ba7b-4440392c0e5e"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "d0e30cfc-ad07-4234-8c0b-fe206b780fb7",
+            "guid": "7133bbdb-9912-4386-b981-006e4c1dacec",
             "fields": [
                 {
                     "id": "",
@@ -476,13 +994,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "373f2c80-289d-4c67-9022-5a391c1b966e"
+                    "guid": "eb561b9f-f29d-48f8-835c-23c2eb75b5ef"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "5f1385a1-4f8d-455d-88df-e8629c600904",
+            "guid": "74da5640-1bd8-4705-91f5-2c706a04b733",
             "fields": [
                 {
                     "id": "",
@@ -490,13 +1008,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "9b7a9598-68a9-4c41-a085-4889fcc42df8"
+                    "guid": "94c0a1df-2148-4f42-9c2c-085444d08514"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "2a429715-0f36-4e7e-90f1-e9d27cab016d",
+            "guid": "9617c97c-04bc-40e4-860d-c79eb1a1b685",
             "fields": [
                 {
                     "id": "",
@@ -504,13 +1022,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "ac6f2095-528b-468c-a571-02230d0a9a2a"
+                    "guid": "3e9f7db2-d765-4adb-9f69-5d390920de43"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "81fe2600-318d-4210-97a1-c9c528bfda4d",
+            "guid": "81e07cff-cab8-4371-b990-22515e6014e6",
             "fields": [
                 {
                     "id": "",
@@ -518,13 +1036,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "d33e3ac9-9f60-494e-912c-9b6bf44c2366"
+                    "guid": "e0881b94-15dd-4ea7-b30a-d86948f79251"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "23bef246-f251-437a-8147-3082de469e78",
+            "guid": "7df71c34-b282-4636-9df2-107fb399fac7",
             "fields": [
                 {
                     "id": "",
@@ -532,13 +1050,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "0b701ddb-e703-404a-8e38-842348125dba"
+                    "guid": "7913efb8-68a9-4275-8300-85330cdbf1d3"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "341178e8-03f6-4073-9e3c-816d6c63e111",
+            "guid": "3de421a2-8059-440f-a576-cf5a876c565c",
             "fields": [
                 {
                     "id": "",
@@ -546,13 +1064,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "5021344d-a56b-4786-984e-f68258bea4da"
+                    "guid": "dc383c6f-e29f-4979-84b8-073a3c04a336"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "09b59a51-1277-49c6-b297-ac0d65fc0a3f",
+            "guid": "4fcfe7a5-bf29-452e-a075-c52381f13fe0",
             "fields": [
                 {
                     "id": "",
@@ -560,13 +1078,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "b4f3bb07-a0f7-4f93-8079-8ec4fd327927"
+                    "guid": "63e8a3d1-0f57-4a50-9bad-e5bcdcf2b53b"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "4e2d76c2-d46e-462b-8928-27514fc49466",
+            "guid": "71612867-fb2b-4538-829b-cb239288532e",
             "fields": [
                 {
                     "id": "",
@@ -574,13 +1092,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "fe8435ef-40f4-4e6c-a12b-ac1f05e08662"
+                    "guid": "290f1ed5-a722-4d15-bd2d-13e295955a9b"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "5edb6fe1-8a10-4b92-901c-91a56b54bb58",
+            "guid": "8d4615c2-5289-4b10-a439-a44887790aa3",
             "fields": [
                 {
                     "id": "",
@@ -588,13 +1106,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "bbe91566-4bd8-4a54-9962-2ce9338399cb"
+                    "guid": "18913319-3b1f-4b42-8a82-51a04c03fc4f"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "3fddae96-3cc0-46b0-a970-d57b9cb7d530",
+            "guid": "380d2a71-f4b9-425b-91c6-9141cbbd4e95",
             "fields": [
                 {
                     "id": "",
@@ -602,13 +1120,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "5bc6e918-efa4-41dc-885e-009084efa39c"
+                    "guid": "c8453de6-e6d2-4394-a262-8c98e86ffd9e"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "a3cb37e8-5f78-4848-9e86-b9437922c74f",
+            "guid": "3f0f71b5-dc5b-41b4-83f8-dc9f488b4f52",
             "fields": [
                 {
                     "id": "",
@@ -616,13 +1134,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "b0dfad7e-94bb-4685-9659-f65ed7b5edfc"
+                    "guid": "9a1310f8-d26f-4464-8d9a-eb2947e4daf3"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "f80b845e-a94d-4a61-b18f-7e3b35b805ff",
+            "guid": "3e5a0201-c884-461c-ab57-897ec3ae6c50",
             "fields": [
                 {
                     "id": "",
@@ -630,13 +1148,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "38221795-db1e-4520-8cbf-36a85c3c418d"
+                    "guid": "316a0e29-f0e1-4b3b-abb7-86d1945432d0"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "18fdc110-1f72-4303-8d67-55573993ddfb",
+            "guid": "1829869c-4900-4c1b-b685-f0a3d933adf1",
             "fields": [
                 {
                     "id": "",
@@ -644,13 +1162,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "dd40f63a-3579-4c5d-9f9a-8d431ce53636"
+                    "guid": "7257a48f-5efa-4e85-b633-4a2ccee854e0"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "29f9eff8-10cb-4179-829d-09afd8078c0b",
+            "guid": "8e184545-f08a-4a8c-aae8-2ed7b08ab9bc",
             "fields": [
                 {
                     "id": "",
@@ -658,13 +1176,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "6d4ef7dd-229b-48db-a243-79c0b7a1947c"
+                    "guid": "b7f5c872-3682-4211-a9fc-82889e91450a"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "c6abf736-65c2-4762-92dc-04d11483815f",
+            "guid": "8e397895-2841-40f1-a06a-59b417d436c6",
             "fields": [
                 {
                     "id": "",
@@ -672,13 +1190,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "aac82763-3844-4e9d-8be7-da79e751b084"
+                    "guid": "aa6a052c-7493-4c2a-ba71-451dece14c9e"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "b4daf9d4-f716-4227-bb50-c947a762f554",
+            "guid": "ccb8ce4a-1a84-4aae-aff3-d1ef78492dfc",
             "fields": [
                 {
                     "id": "",
@@ -686,13 +1204,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "d3ddde82-b8b4-439e-8226-a15a249ed489"
+                    "guid": "ae08a1d4-984b-4a9f-a478-0c3a559ee3a2"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "ce524d52-95e8-40d9-8248-35c3acb328bd",
+            "guid": "d833d0b7-f907-41e1-8cdf-7604ee139a3d",
             "fields": [
                 {
                     "id": "",
@@ -700,13 +1218,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "8331efc3-3d1d-4af2-b1fe-8e577c3bd138"
+                    "guid": "d20e26a6-b08e-4648-8d01-81bef424b3a3"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "5975e7ac-5ecc-464d-a8ef-7356e288f68a",
+            "guid": "8a815211-b488-4fc7-9261-aa3da69f4db2",
             "fields": [
                 {
                     "id": "",
@@ -714,13 +1232,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "6da5d319-f875-420b-b9e5-ac83f72e2066"
+                    "guid": "4a73c5f4-df26-4db4-8c09-87cae6594111"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "0ca41d9d-1da1-48df-ba2c-6357a76e2aea",
+            "guid": "cc6f7ea2-d5be-4d48-b82d-2a9d5de1b558",
             "fields": [
                 {
                     "id": "",
@@ -728,13 +1246,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "d3aaeceb-50fb-4776-a9f8-d0e58eba9e82"
+                    "guid": "0f21583a-27d5-493c-b90f-99a3e4d1a9dd"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "9bbf9c56-7b08-4456-a7f4-e1abaee33e0b",
+            "guid": "9544e635-96ce-4fdc-a8dc-2616d9b8e922",
             "fields": [
                 {
                     "id": "",
@@ -742,13 +1260,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "48dc664f-1746-4169-9951-d85b5d178bfa"
+                    "guid": "88bdeae4-a754-43e1-89f6-191507b2e3dc"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "8a8757e4-9b50-4ead-8f1b-680b4fbc3667",
+            "guid": "d1e06836-6173-4f7b-9260-6f11acc273b5",
             "fields": [
                 {
                     "id": "",
@@ -756,13 +1274,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "5dd71fc4-4aea-4b9a-b286-358f093dcea7"
+                    "guid": "2412d9ba-4f1e-4c66-a007-f19d43fe6a79"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "286aec75-24c1-4f5a-b235-ead884efc5c9",
+            "guid": "ad680ff7-b2dd-4350-aab6-0a295d806c82",
             "fields": [
                 {
                     "id": "",
@@ -770,13 +1288,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "c5febab1-194e-42f4-97bc-878c51a82501"
+                    "guid": "02d2796e-f227-4961-9e23-5650c7064f25"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "c0031102-e8a9-491c-8be5-e4803703d8ca",
+            "guid": "06146cbd-6e52-480f-8a44-4086a235cbe7",
             "fields": [
                 {
                     "id": "",
@@ -784,13 +1302,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "f2c456bb-8f86-4307-804a-9f9578875d55"
+                    "guid": "0094789b-c898-4900-bb57-5e5434adf61f"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "75dd301c-3668-4ca1-958c-5118df18b8ca",
+            "guid": "5dace6a0-6c66-40db-9e6f-ba54c0657168",
             "fields": [
                 {
                     "id": "",
@@ -798,41 +1316,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "b31c860b-8c0a-4775-a044-6e05afc4c44f"
+                    "guid": "6f9d29da-08f0-4f78-98a4-d5c8b097fd16"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "85412dfc-48b7-47a3-8d28-404bf6f61533",
-            "fields": [
-                {
-                    "id": "menu_server_connect",
-                    "autoDisplayName": false,
-                    "displayName": "Connect",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "30e3683d-44b7-4e20-8dab-19890a87e536"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "f4349b24-0291-4a41-86da-42f8797df158",
-            "fields": [
-                {
-                    "id": "menu_back",
-                    "autoDisplayName": false,
-                    "displayName": "Back",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "6041eb4a-7c0a-407d-953f-d8f5b59e3f40"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "0f66a6ea-a807-4a76-9267-1b5f926ae231",
+            "guid": "77915c59-ff4e-44f9-a099-89ce24945e5c",
             "fields": [
                 {
                     "id": "",
@@ -840,13 +1330,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "e2573357-80f5-44dd-a843-c5061a79f663"
+                    "guid": "7b76b4d6-c69b-47f9-9d2d-ffb3810388aa"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "ced7c1ab-801b-4e79-8210-01a96f699a1b",
+            "guid": "6083afa7-bf42-496d-8c60-aa53ed5e515a",
             "fields": [
                 {
                     "id": "",
@@ -854,13 +1344,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "d1905902-f914-4b18-aaa8-46e2b122bc99"
+                    "guid": "50c7c2fa-ae27-4993-aae2-70dfa338d0bd"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "62a3a99c-9428-4736-8cd9-bc369161a0d3",
+            "guid": "0e29a905-3395-40a8-90b6-2734b7134e11",
             "fields": [
                 {
                     "id": "",
@@ -868,27 +1358,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "13c4e307-09db-463a-8b38-252d177c2078"
+                    "guid": "4478739e-a8eb-435e-9d7e-92d98e023edc"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "3cb1d744-c22f-4551-b592-1136b124983e",
-            "fields": [
-                {
-                    "id": "menu_quit_confirm",
-                    "autoDisplayName": false,
-                    "displayName": "Confirm Quit",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "da06500b-3a0e-4b6c-a51e-468ecec20965"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "c5562ff9-c27b-49ef-a2b4-2688b5095de9",
+            "guid": "dec60c3c-33b1-4c41-aad0-8efae97168df",
             "fields": [
                 {
                     "id": "",
@@ -896,13 +1372,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "40a737e3-da98-4541-9dd8-025c288acec6"
+                    "guid": "de87091e-6561-4432-8d9d-5bf74ff3903e"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "0abd6991-a948-4f3f-938d-fa57b7c51e98",
+            "guid": "c486baae-9d84-4d52-8a90-505c751f5935",
             "fields": [
                 {
                     "id": "",
@@ -910,125 +1386,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "77d77425-10b0-411b-aabb-baac8ac8c9bf"
+                    "guid": "d549b964-e8fc-42ef-bfd2-cc8fcda0d63d"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "08691625-519c-4e84-806a-66c732500b76",
-            "fields": [
-                {
-                    "id": "menu_status_welcome",
-                    "autoDisplayName": false,
-                    "displayName": "Welcome",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "6b33a9df-c5f6-4175-b395-e2109bee46c5"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "62d49102-de56-4f1f-b58f-fc4303380b55",
-            "fields": [
-                {
-                    "id": "menu_credits",
-                    "autoDisplayName": false,
-                    "displayName": "Credits",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "780fa93b-b24b-42ab-95f0-87d6be7cec4c"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "f7228d72-accf-4ec7-8c0e-0bb70e700e6a",
-            "fields": [
-                {
-                    "id": "menu_server_browser_status_authenticating",
-                    "autoDisplayName": false,
-                    "displayName": "Authenticating",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "87b13f74-a4b8-460e-a592-3a4989611c93"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "fdfd74b3-59a2-4460-b88a-c7bc32af1b01",
-            "fields": [
-                {
-                    "id": "menu_status_connecting_centrals",
-                    "autoDisplayName": false,
-                    "displayName": "Connecting To Centrals",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "8846349b-743c-4c3a-828a-46c4db02ace4"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "cec3490e-9d80-41f6-912e-a0917aa30009",
-            "fields": [
-                {
-                    "id": "menu_status_connection_established",
-                    "autoDisplayName": false,
-                    "displayName": "Connection Established",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "ac1c5842-2e09-404e-b646-49a1c59d4a8f"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "0005afb9-75b0-4518-963a-c1ea85d9ef2d",
-            "fields": [
-                {
-                    "id": "menu_status_connection_failure",
-                    "autoDisplayName": false,
-                    "displayName": "Connection Failure",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "ccd09a7e-36ea-4d8a-bca8-bfd6caf3a075"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "443fe3a5-4c7a-4fe8-8239-e09c42ff9499",
-            "fields": [
-                {
-                    "id": "menu_status_steam_auth_failure",
-                    "autoDisplayName": false,
-                    "displayName": "Steam Auth Failure",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "0a2e694c-c1ba-4142-8d76-d5294637fd1b"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "77f86803-c738-4778-977e-65f88f5347ce",
-            "fields": [
-                {
-                    "id": "menu_status_discord_auth_failure",
-                    "autoDisplayName": false,
-                    "displayName": "Discord Auth Failure",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "c56755e1-86ee-4201-a60b-7286f8ae68e7"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "b1b59e36-0252-4a05-87df-24b38eb34a57",
+            "guid": "bb26ed9f-10d5-4bed-bfe3-29b5eca1f04f",
             "fields": [
                 {
                     "id": "",
@@ -1036,13 +1400,13 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "3ccf8c40-e66c-412e-92ef-f8c6c5bb5338"
+                    "guid": "8cc68a40-28ef-43a4-8ac7-17f131aba3ad"
                 }
             ]
         },
         {
             "lineId": "",
-            "guid": "274dda2d-77a0-4c4a-9a7b-40a53cf885da",
+            "guid": "a57cfd57-3c3e-41e6-b10a-be7ee23788c2",
             "fields": [
                 {
                     "id": "",
@@ -1050,273 +1414,7 @@
                     "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "39faafbc-17e0-484f-8ab4-ba606d9aeff9"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "d409bc28-b3e3-427e-84f4-5554c788b821",
-            "fields": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "f62564f9-e18a-4bf8-b9c4-19f49b0af7a0"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "d111da99-6292-4cf5-b66e-2f0f61bc99f9",
-            "fields": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "0d6b7b54-790b-4a18-9aee-4f4ccb26e01c"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "75c559b9-39d6-4be0-b05b-aa3e405388a0",
-            "fields": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "888f371b-38cb-4dfc-856f-1a959685b5bd"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "e19be7d2-431d-4a93-80e7-d732738de686",
-            "fields": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "c8cc0e92-4963-4f7d-8ef5-660c4132a4c1"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "55cbd686-1afc-4075-abc9-c43a06229b43",
-            "fields": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "8319d100-da93-43a9-9d04-fa722603cca0"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "361bdfaa-16a1-49db-9977-c905aa2a9be5",
-            "fields": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "8d728369-6702-43d8-bb0e-80a35f4fbbad"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "d4f306a0-b32e-49a9-b06b-d9e4e0325889",
-            "fields": [
-                {
-                    "id": "menu_server_create_prompt_content",
-                    "autoDisplayName": false,
-                    "displayName": "Content",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "34d4b3fe-e235-46a5-9e3e-e48ab46b5aff"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "73e4c479-c323-4b3a-bf34-24d9884e8db5",
-            "fields": [
-                {
-                    "id": "menu_server_create_prompt_create_anyway",
-                    "autoDisplayName": false,
-                    "displayName": "Create Anyway",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "f460853e-1cfa-4860-8863-045d1c13c038"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "7ca7bb6b-1a01-405a-9c59-1fe28726d3e9",
-            "fields": [
-                {
-                    "id": "menu_server_create_prompt_read_more",
-                    "autoDisplayName": false,
-                    "displayName": "Read More",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "5b72c6ea-0888-4e54-ba93-520c80a51ce9"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "09eeaddb-a57b-4634-af82-9f2dac2f07d9",
-            "fields": [
-                {
-                    "id": "menu_server_create_prompt_rent_server",
-                    "autoDisplayName": false,
-                    "displayName": "Rent Server",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "9c17592f-9554-43e9-83aa-aa49f82c315b"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "6287b353-b01e-452a-9833-34846851c76f",
-            "fields": [
-                {
-                    "id": "menu_server_create_prompt_cancel",
-                    "autoDisplayName": false,
-                    "displayName": "Cancel",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "4da3728b-a4e1-40b6-a0e9-55345ac27f05"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "cd2898ee-bfc8-4d16-959b-ee516d226719",
-            "fields": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "5ba77ebb-42c0-49ed-95dc-d39b62edee87"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "6be33d70-651a-4a78-a505-fa0c13acc952",
-            "fields": [
-                {
-                    "id": "menu_credits_thanks",
-                    "autoDisplayName": false,
-                    "displayName": "Credits Thanks",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "b4efa461-07d7-4295-9419-9d82b71365d7"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "f649ab50-3862-43d9-b766-c43debd0ffff",
-            "fields": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "5bbc8cf4-1baa-4bfb-a065-84f5896ced6d"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "b5d655f6-0a2c-481e-af17-9e3508765c39",
-            "fields": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "0c3c1b8a-9686-48bc-901d-073a5e0f9e7a"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "fa9fa9ea-e2aa-4979-b2d9-70b62ce72933",
-            "fields": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "125c8f67-8f83-4b22-840d-f18080c6f361"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "c556641c-fe8a-40a8-ad33-193dc9f17aa0",
-            "fields": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "57376d70-00b6-4700-a420-c8dc860c6c2c"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "c4964feb-591b-45f1-b189-b8ad6edd4f41",
-            "fields": [
-                {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "7969b4d5-2145-442f-9d94-a8289fbffb6c"
-                }
-            ]
-        },
-        {
-            "lineId": "",
-            "guid": "01d7f1d7-a3fb-48ae-8a68-70e927f40c1a",
-            "fields": [
-                {
-                    "id": "menu_opg",
-                    "autoDisplayName": false,
-                    "displayName": "Operational Guide",
-                    "addToList": true,
-                    "dynamicValues": [],
-                    "guid": "f5e2d034-af88-4cee-84f9-3c371a5e5b6a"
+                    "guid": "5f5112ca-3cb9-4077-8bc2-ceb11fc2f8c2"
                 }
             ]
         }

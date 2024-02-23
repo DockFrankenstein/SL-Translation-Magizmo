@@ -649,7 +649,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1707074403067596920}
-  entryID: nuke_sign
+  idNameText: {fileID: 0}
+  multiEntryPanel: {fileID: 0}
+  mainId:
+    entryId: nuke_sign
+    isMain: 1
+    defaultValue: 'ALPHA
+
+      WARHEAD
+
+      SILO'
+  otherIds: []
   manager: {fileID: 0}
   hierarchy: {fileID: 0}
 --- !u!1 &9148287691814881053

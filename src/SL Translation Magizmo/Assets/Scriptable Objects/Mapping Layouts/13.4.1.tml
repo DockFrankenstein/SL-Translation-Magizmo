@@ -1,6 +1,6 @@
 {
     "version": {
-        "instanceID": 21866
+        "instanceID": 23600
     },
     "items": [
         {
@@ -1577,12 +1577,6 @@
         },
         {
             "type": 0,
-            "id": "menu_status_authenticating",
-            "displayText": "Menu Status Authenticating",
-            "guid": "a6cb270f-bf25-41b6-b9d5-5910ac614aed"
-        },
-        {
-            "type": 0,
             "id": "menu_status_connecting_centrals",
             "displayText": "Menu Status Connecting Centrals",
             "guid": "b9687487-e8bd-40f4-8aa3-9974dfaf6472"
@@ -1718,6 +1712,30 @@
             "id": "menu_server_no_whitelist",
             "displayText": "Menu Server No Whitelist",
             "guid": "5b89fd05-a070-4b31-a4dc-3951f144976c"
+        },
+        {
+            "type": 1,
+            "id": "",
+            "displayText": "Header",
+            "guid": "d10e2eec-964d-4d14-aaf1-36d74a13af2b"
+        },
+        {
+            "type": 0,
+            "id": "menu_server_browser_status_authenticating",
+            "displayText": "Menu Server Browser Status Authenticating",
+            "guid": "4b7564de-e6f2-4be9-b657-84cd6b423968"
+        },
+        {
+            "type": 0,
+            "id": "menu_server_browser_status_downloading",
+            "displayText": "Menu Server Browser Status Downloading",
+            "guid": "e6c06a7e-36e5-4ca4-94df-db57697b52a1"
+        },
+        {
+            "type": 0,
+            "id": "menu_server_browser_status_no_servers",
+            "displayText": "Menu Server Browser Status No Servers",
+            "guid": "a9b262e9-bddb-4c66-bacf-a74cd33f7c36"
         },
         {
             "type": 1,

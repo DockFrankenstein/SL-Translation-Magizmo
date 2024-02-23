@@ -1,6 +1,4 @@
-using TMPro;
 using Project.Translation.Mapping;
-using Project.GUI.Hierarchy;
 using Project.Translation.Data;
 using UnityEngine.UIElements;
 
@@ -28,7 +26,7 @@ namespace Project.GUI.Inspector
                 if (args.target == _contentField && entry != null)
                     entry.content = _contentField.value;
 
-                MarkAsDirty();
+                MarkFileDirty();
             });
         }
 

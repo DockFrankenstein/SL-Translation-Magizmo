@@ -27,7 +27,6 @@ namespace Project.Translation.ImportAndExport
             DynamicValues = 5,
         }
 
-        [SerializeField] TranslationManager manager;
         [SerializeField] HierarchyEntryProvider entryProvider;
         [SerializeField] ErrorWindow error;
 
@@ -233,6 +232,7 @@ namespace Project.Translation.ImportAndExport
                     manager.File.Entries[id].content = value;
                 }
 
+                FinalizeImport();
                 importRoot.ChangeDispaly(false);
             };
 
@@ -270,6 +270,9 @@ namespace Project.Translation.ImportAndExport
 
                 _importPath.value = paths[0];
             };
+
+            _importIdColumn.choices = new List<string>();
+            _importValueColumn.choices = new List<string>();
         }
 
         void ClearImportPreview()
