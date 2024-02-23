@@ -98,6 +98,9 @@ namespace Project.GUI.Preview
             foldout.SetActive(show);
         }
 
+        public void ToggleFoldout() =>
+            ToggleFoldout(!foldout.activeSelf);
+
         SceneDropdownItem GetItem()
         {
             if (_itemPool.Count == 0)
