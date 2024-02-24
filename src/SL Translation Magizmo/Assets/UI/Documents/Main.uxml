@@ -1,9 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:Template name="Generic Menu" src="project://database/Assets/UI/Generic%20Menu.uxml?fileID=9197481963319205126&amp;guid=7140533fef71a7d44acae07c31bac918&amp;type=3#Generic Menu" />
-    <ui:Template name="Inspector" src="project://database/Assets/UI/Inspectors/Inspector.uxml?fileID=9197481963319205126&amp;guid=35ef06e84ee9de446a45f3c9f5298633&amp;type=3#Inspector" />
-    <ui:Template name="Hierarchy" src="project://database/Assets/UI/Hierarchy.uxml?fileID=9197481963319205126&amp;guid=22c0ace5e9f4a5449b0f9b13187a9326&amp;type=3#Hierarchy" />
-    <Style src="project://database/Assets/UI/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
+    <ui:Template name="Generic Menu" src="project://database/Assets/UI/Documents/Generic%20Menu.uxml?fileID=9197481963319205126&amp;guid=7140533fef71a7d44acae07c31bac918&amp;type=3#Generic Menu" />
+    <ui:Template name="Inspector" src="project://database/Assets/UI/Documents/Inspectors/Inspector.uxml?fileID=9197481963319205126&amp;guid=35ef06e84ee9de446a45f3c9f5298633&amp;type=3#Inspector" />
+    <ui:Template name="Hierarchy" src="project://database/Assets/UI/Documents/Hierarchy.uxml?fileID=9197481963319205126&amp;guid=22c0ace5e9f4a5449b0f9b13187a9326&amp;type=3#Hierarchy" />
+    <ui:Template name="Preview" src="project://database/Assets/UI/Documents/Preview.uxml?fileID=9197481963319205126&amp;guid=eba6b7d510c7927409ab4153e4e7677b&amp;type=3#Preview" />
+    <Style src="project://database/Assets/UI/Styles/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
     <ui:Instance template="Generic Menu" name="Generic Menu" style="flex-basis: 35px; margin-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0;" />
     <ui:Instance template="Inspector" name="Inspector" style="width: 500px; flex-basis: 500px; right: 0; position: absolute; bottom: 0; top: 35px;" />
     <ui:Instance template="Hierarchy" name="Hierarchy" style="width: 400px; flex-basis: 400px; position: absolute; top: 35px; left: 0; bottom: 0;" />
+    <ui:Instance template="Preview" name="Preview" style="position: absolute; left: 400px; top: 35px; right: 500px; bottom: auto; height: 50px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
 </ui:UXML>
