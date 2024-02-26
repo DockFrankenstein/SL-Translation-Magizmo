@@ -6,6 +6,7 @@ using SFB;
 using Project.Translation.Data;
 using qASIC.Files;
 using qASIC;
+using System;
 
 namespace Project.Translation.Mapping
 {
@@ -13,11 +14,8 @@ namespace Project.Translation.Mapping
     public class TranslationVersion : ScriptableObject
     {
         public Version version;
-        public MappingBase[] containers = new MappingBase[0];
-
-        [Label("Exporting")]
         [EditorButton(nameof(ExportIdTestTranslation))]
-        public string emptyEntryContent = "-";
+        public MappingBase[] containers = new MappingBase[0];
 
         public MappedField[] GetMappedFields() =>
             containers
@@ -64,6 +62,21 @@ namespace Project.Translation.Mapping
             }
         }
 
+        public void Export(SaveFile file, string path, Func<PrepareExportDataArgs, string> prepareData)
+        {
+            foreach (var container in containers)
+            {
+                var txt = container.Export((i, x) => prepareData(new PrepareExportDataArgs()
+                {
+                    container = container,
+                    index = i,
+                    field = x,
+                }));
+
+                FileManager.SaveFileWriter($"{path}/{container.fileName}", txt);
+            }
+        }
+
         public void Export(SaveFile file, string path, string emptyEntryContent = "-")
         {
             foreach (var definesFile in containers)
@@ -100,6 +113,13 @@ namespace Project.Translation.Mapping
                     System.IO.File.WriteAllText($"{path.Replace('\\', '/')}/{container.fileName}", txt);
                 }
             }
+        }
+
+        public class PrepareExportDataArgs
+        {
+            public int index;
+            public MappedField field;
+            public MappingBase container;
         }
     }
 }

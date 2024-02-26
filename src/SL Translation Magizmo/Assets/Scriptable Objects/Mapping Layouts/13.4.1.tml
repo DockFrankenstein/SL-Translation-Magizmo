@@ -1,6 +1,6 @@
 {
     "version": {
-        "instanceID": 23600
+        "instanceID": 21886
     },
     "items": [
         {
@@ -1562,6 +1562,12 @@
             "id": "menu_social_media",
             "displayText": "Menu Social Media",
             "guid": "14486afe-f4c8-473a-8726-08e11c8f0245"
+        },
+        {
+            "type": 0,
+            "id": "menu_based_on_cb",
+            "displayText": "Menu Based On Cb",
+            "guid": "73419c4b-0f40-4bfa-86e1-55bb3d615a64"
         },
         {
             "type": 1,

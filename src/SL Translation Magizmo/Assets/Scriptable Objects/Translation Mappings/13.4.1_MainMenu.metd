@@ -62,15 +62,15 @@
         },
         {
             "lineId": "",
-            "guid": "aac47982-65e9-4e20-a0b7-2d25f75f0154",
+            "guid": "44fd951e-f69c-4eba-b24c-daf69f163187",
             "fields": [
                 {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "menu_based_on_cb",
+                    "autoDisplayName": false,
+                    "displayName": "Based On Containment Breach",
                     "addToList": true,
                     "dynamicValues": [],
-                    "guid": "a602c57a-a229-460d-a63d-69d9f7509e79"
+                    "guid": "f19b8152-42d4-42c3-8656-55cb14aac2cc"
                 }
             ]
         },
