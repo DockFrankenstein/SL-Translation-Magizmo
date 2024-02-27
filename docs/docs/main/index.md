@@ -12,7 +12,7 @@ Documentation is not yet finished.
 
 ## Documentation version
 
-This documentation is up to date with version **1.0.0b0** of SLTM.
+This documentation is up to date with version **1.0.0b** of SLTM.
 
 ## [Manual](/manual)
 
