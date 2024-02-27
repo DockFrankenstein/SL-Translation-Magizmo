@@ -185,10 +185,10 @@ namespace Project.GUI.Inspector
                 var valueArray = value.EntryContentToArray();
 
                 foreach (var item in valueArray)
-                {
                     if (converter.IsValid(item))
                         _list.Source.Add((T)converter.ConvertFromString(item));
-                }
+
+                _list.List.RefreshItems();
             }
 
             public abstract BaseField<T> MakeItem();
