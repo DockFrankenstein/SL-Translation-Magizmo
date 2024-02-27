@@ -34,7 +34,7 @@ namespace Project.Translation
         public UnityEvent OnSave;
         public UnityEvent OnLoad;
 
-        public event Action OnFileChanged;
+        public event Action<object> OnFileChanged;
 
         public TranslationVersion CurrentVersion { get; private set; }
 
@@ -183,12 +183,12 @@ namespace Project.Translation
             }
 
             OnLoad.Invoke();
-            MarkFileDirty();
+            MarkFileDirty(this);
         }
 
-        public void MarkFileDirty()
+        public void MarkFileDirty(object fromContext)
         {
-            OnFileChanged?.Invoke();
+            OnFileChanged?.Invoke(fromContext);
         }
     }
 }

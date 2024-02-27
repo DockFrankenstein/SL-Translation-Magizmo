@@ -89,8 +89,9 @@ namespace Project.GUI.Preview
             }
         }
 
-        private void Manager_OnFileChanged()
+        private void Manager_OnFileChanged(object context)
         {
+            if (context as Object == this) return;
             ReloadActiveScenes();
         }
 

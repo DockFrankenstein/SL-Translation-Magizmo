@@ -106,6 +106,9 @@ namespace Project.Translation.Data
 
             public string entryId;
             public string content = string.Empty;
+
+            public override string ToString() =>
+                $"{entryId} data: {content}";
         }
     }
 }
