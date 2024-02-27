@@ -48,5 +48,11 @@ namespace Project.AppTools
         {
             document.rootVisualElement.style.display = DisplayStyle.None;
         }
+
+        public virtual void RunTool()
+        {
+            TranslationManager.MarkFileDirty(this);
+            CloseTool();
+        }
     }
 }

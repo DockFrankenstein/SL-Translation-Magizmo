@@ -496,12 +496,6 @@
     height: 10px;
 }
 
-.bottom-buttons > * {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-right: 1px;
-}
-
 .apply-button {
     height: 45px;
 }
@@ -922,7 +916,7 @@ Scroller {
 }
 
 .toolbar > * {
-    border-right-color: rgba(13, 13, 13, 255);
+    border-right-color: rgb(13, 13, 13);
     border-right-width: 2px;
     margin-bottom: 0;
     margin-top: 0;
@@ -932,7 +926,7 @@ Scroller {
 
 .toolbar {
     justify-content: flex-start;
-    border-bottom-color: rgba(13, 13, 13, 255);
+    border-bottom-color: rgb(13, 13, 13);
     border-bottom-width: 2px;
     white-space: nowrap;
     flex-direction: row;
@@ -1001,10 +995,10 @@ PopupButton #popup-button-arrow {
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
-    border-left-color: rgba(13, 13, 13, 255);
-    border-right-color: rgba(13, 13, 13, 255);
-    border-top-color: rgba(13, 13, 13, 255);
-    border-bottom-color: rgba(13, 13, 13, 255);
+    border-left-color: rgb(13, 13, 13);
+    border-right-color: rgb(13, 13, 13);
+    border-top-color: rgb(13, 13, 13);
+    border-bottom-color: rgb(13, 13, 13);
     border-top-width: 0;
     border-right-width: 0;
     border-bottom-width: 1px;

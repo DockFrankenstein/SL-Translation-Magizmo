@@ -22,16 +22,11 @@ namespace Project.AppTools.Tools
             _applyButton = root.Q<Button>("apply");
             _cancelButton = root.Q<Button>("cancel");
 
-            _applyButton.clicked += _applyButton_clicked;
-            _cancelButton.clicked += _cancelButton_clicked;
+            _applyButton.clicked += RunTool;
+            _cancelButton.clicked += CloseTool;
         }
 
-        private void _cancelButton_clicked()
-        {
-            CloseTool();
-        }
-
-        private void _applyButton_clicked()
+        public override void RunTool()
         {
             var fields = TranslationManager.CurrentVersion.GetMappedFields()
                 .Where(x => !entriesIdBlacklist.Contains(x.id));
@@ -47,7 +42,7 @@ namespace Project.AppTools.Tools
                 file.Entries[item.id].content = content;
             }
 
-            CloseTool();
+            base.RunTool();
         }
     }
 }
