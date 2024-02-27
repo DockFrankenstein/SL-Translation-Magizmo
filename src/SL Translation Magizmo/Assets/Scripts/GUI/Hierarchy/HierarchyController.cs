@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Fab.UITKDropdown;
 using System;
 using UnityEngine.Serialization;
+using qASIC.SettingsSystem;
 
 namespace Project.GUI.Hierarchy
 {
@@ -34,12 +35,22 @@ namespace Project.GUI.Hierarchy
             document = GetComponent<UIDocument>();
         }
 
+        [OptionsSetting("hierarchy_collapsed_default", false)]
+        private static void SettM_CollapsedByDefault(bool value)
+        {
+            Sett_CollapsedByDefault = value;
+        }
+
+        private static bool Sett_CollapsedByDefault { get; set; }
+
         private void Awake()
         {
             var root = document.rootVisualElement;
             scroll = root.Q<ScrollView>("hierarchy-list");
-
             Refresh();
+
+            if (Sett_CollapsedByDefault)
+                CollapseAll();
         }
 
         void RegisterUiItem(HierarchyItem item, VisualElement element)

@@ -1,10 +1,10 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
+    <Style src="project://database/Assets/UI/Styles/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
     <ui:VisualElement class="fade" />
     <ui:VisualElement class="popup">
         <ui:VisualElement style="border-right-width: 2px; border-right-color: rgb(13, 13, 13); flex-basis: 350px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;">
             <ui:Button text="Back" display-tooltip-when-elided="true" name="back-button" style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 4px; height: 60px; font-size: 36px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
-            <ui:RadioButtonGroup value="0" choices="Path,Other" name="menu-selection" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+            <ui:RadioButtonGroup value="0" choices="Hierarchy,Path,Other" name="menu-selection" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
         </ui:VisualElement>
         <ui:ScrollView name="content-scroll" style="flex-basis: 100%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;">
             <ui:VisualElement name="panel-path">
@@ -17,6 +17,10 @@
             </ui:VisualElement>
             <ui:VisualElement name="panel-other">
                 <ui:Label text="Other Settings" display-tooltip-when-elided="true" class="header" />
+            </ui:VisualElement>
+            <ui:VisualElement name="panel-hierarchy">
+                <ui:Label text="Hierarchy" display-tooltip-when-elided="true" class="header" />
+                <ui:Toggle label="Collapse By Default" name="hierarchy-collapse-by-default" />
             </ui:VisualElement>
         </ui:ScrollView>
     </ui:VisualElement>

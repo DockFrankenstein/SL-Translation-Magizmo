@@ -11,12 +11,12 @@ namespace Project.GUI.Top
 
         protected override void CreateMenu()
         {
-            menu.AppendAction("Expand All In Hierarchy", (args) =>
+            menu.AppendAction("Expand All", (args) =>
             {
                 hierarchy.ExpandAll();
             });
 
-            menu.AppendAction("Collapse All In Hierarchy", (args) =>
+            menu.AppendAction("Collapse All", (args) =>
             {
                 hierarchy.CollapseAll();
             });
