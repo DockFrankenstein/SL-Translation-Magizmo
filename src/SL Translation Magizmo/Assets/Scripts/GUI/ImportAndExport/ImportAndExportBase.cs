@@ -8,7 +8,7 @@ namespace Project.Translation.ImportAndExport
 
         public void FinalizeImport()
         {
-            manager.MarkFileDirty();
+            manager.MarkFileDirty(this);
         }
     }
 }

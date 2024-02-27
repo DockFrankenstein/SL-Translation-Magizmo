@@ -48,7 +48,11 @@ namespace Project.GUI.Inspector
             ContentContainer = root.Q("inspector-content");
 
             hierarchy.OnSelect += Hierarchy_OnSelect;
-            manager.OnFileChanged += ReloadInspector;
+            manager.OnFileChanged += context =>
+            {
+                if (context as Object == this) return;
+                ReloadInspector();
+            };
 
             foreach (var item in inspectors)
             {

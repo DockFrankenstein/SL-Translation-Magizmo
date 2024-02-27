@@ -41,6 +41,7 @@ namespace Project.GUI.Inspector
             base.Initialize();
             entry = inspector.SelectedObject as SaveFile.EntryData;
             _contentList.Source.AddRange(entry.content.EntryContentToArray());
+            _contentList.List.RefreshItems();
         }
 
         public override void Uninitialize()

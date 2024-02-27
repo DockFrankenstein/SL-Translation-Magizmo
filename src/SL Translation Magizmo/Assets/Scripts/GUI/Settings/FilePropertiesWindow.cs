@@ -46,7 +46,7 @@ namespace Project.GUI.Settings
                     manager.File.UseNewestSlVersion = true;
                     manager.LoadCurrentVersionFromFile();
                     manager.File.CleanupToVersion(manager.CurrentVersion);
-                    manager.MarkFileDirty();
+                    manager.MarkFileDirty(this);
                     return;
                 }
 
@@ -56,14 +56,17 @@ namespace Project.GUI.Settings
                 manager.File.SlVersion = ver.version;
                 manager.LoadCurrentVersionFromFile();
                 manager.File.CleanupToVersion(ver);
-                manager.MarkFileDirty();
+                manager.MarkFileDirty(this);
             });
 
             manager.OnFileChanged += OnFileChanged;
         }
 
-        void OnFileChanged()
+        void OnFileChanged(object fromContext)
         {
+            if (fromContext as UnityEngine.Object == this)
+                return;
+
             _slVersion.index = manager.File.UseNewestSlVersion ?
                 0 :
                 Array.IndexOf(manager.versions, manager.CurrentVersion) + 1;
@@ -72,7 +75,7 @@ namespace Project.GUI.Settings
         public void Open()
         {
             document.rootVisualElement.ChangeDispaly(true);
-            OnFileChanged();
+            OnFileChanged(this);
         }
     }
 }

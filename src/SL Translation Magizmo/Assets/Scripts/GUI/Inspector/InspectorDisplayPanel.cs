@@ -32,7 +32,7 @@ namespace Project.GUI.Inspector
 
         public void MarkFileDirty()
         {
-            manager.MarkFileDirty();
+            manager.MarkFileDirty(this);
         }
     }
 }

@@ -60,7 +60,7 @@ namespace Project.GUI.Inspector
                     if (item.FieldType == typeof(string))
                         field = new TargetFieldString();
 
-                    if (field == null) return;
+                    if (field == null) continue;
 
                     field.field = item;
                     field.attr = attr;
@@ -134,7 +134,7 @@ namespace Project.GUI.Inspector
             {
                 var converter = TypeDescriptor.GetConverter(typeof(T));
                 if (converter != null && converter.IsValid(value))
-                    Field.value = (T)converter.ConvertFromString(value);
+                    Field.SetValueWithoutNotify((T)converter.ConvertFromString(value));
             }
         }
 
