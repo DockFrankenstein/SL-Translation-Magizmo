@@ -6,7 +6,7 @@ sidebar_position: 0
 
 The Editor consists of multiple panels:
 
-IMAGE HERE
+![Image of the editor](/img/docs-editor-layout.png)
 
 A. Hierarchy - contains a list of every entry in your file. You can select items by clicking on them.
 

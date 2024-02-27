@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Getting Started
 
-SLTM uses a map of SL's files to create a list of it's entries and for exporting to it's format. Every [Translation Version](/contributing/lingo#translation-version) contains it's own list of [Mapping Containers](/contributing/mapping/mapping-containers) that each define their own [Mapped Fields](/contributing/lingo#mapped-field).
+SLTM uses a map of SL's files to create a list of it's entries and for exporting to it's format. Every [Translation Version](/contributing/lingo#translation-version) contains it's own list of Mapping Containers that each define their own [Mapped Fields](/contributing/basics/terminology#mapped-field).
 
 ## Types of containers
 
