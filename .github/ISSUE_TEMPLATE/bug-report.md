@@ -7,10 +7,10 @@ assignees: DockFrankenstein
 
 ---
 
-# Version: 1.0.0b0
+**Version:** 1.0.0b1
 
-# Describe the Bug
+**Describe the Bug**
 Write a short description about the bug. Screenshots are welcome
 
-# Steps to reproduce
+**Steps to reproduce**
 Please write a step by step guide on how to reproduce the bug. If you're unable to reproduce it, write "Unable to reproduce".
