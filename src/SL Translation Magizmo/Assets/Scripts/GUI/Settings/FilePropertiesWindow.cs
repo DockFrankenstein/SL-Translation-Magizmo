@@ -67,6 +67,11 @@ namespace Project.GUI.Settings
             if (fromContext as UnityEngine.Object == this)
                 return;
 
+            Load();
+        }
+
+        void Load()
+        {
             _slVersion.index = manager.File.UseNewestSlVersion ?
                 0 :
                 Array.IndexOf(manager.versions, manager.CurrentVersion) + 1;
@@ -75,7 +80,7 @@ namespace Project.GUI.Settings
         public void Open()
         {
             document.rootVisualElement.ChangeDispaly(true);
-            OnFileChanged(this);
+            Load();
         }
     }
 }
