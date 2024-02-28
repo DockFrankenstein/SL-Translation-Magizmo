@@ -89,7 +89,7 @@ namespace qASIC
                 set { _dictionary[index] = value; }
             }
 
-            public bool Contains(T key)
+            public bool ContainsKey(T key)
             {
                 return _dictionary.ContainsKey(key);
             }

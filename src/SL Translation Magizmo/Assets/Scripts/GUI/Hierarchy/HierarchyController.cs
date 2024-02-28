@@ -6,11 +6,13 @@ using Fab.UITKDropdown;
 using System;
 using UnityEngine.Serialization;
 using qASIC.SettingsSystem;
+using qASIC;
 
 namespace Project.GUI.Hierarchy
 {
     public class HierarchyController : MonoBehaviour
     {
+        [EditorButton(nameof(Refresh), activityType: ButtonActivityType.OnPlayMode)]
         public UIDocument document;
         [FormerlySerializedAs("providers")] 
         public HierarchyItemProvider[] itemProviders;
@@ -26,7 +28,7 @@ namespace Project.GUI.Hierarchy
         Button _selectedButton;
 
         Dictionary<string, List<HierarchyItem>> ItemIds { get; set; } = new Dictionary<string, List<HierarchyItem>>();
-        Dictionary<HierarchyItem, VisualElement> UiItems { get; set; } = new Dictionary<HierarchyItem, VisualElement>();
+        Map<HierarchyItem, VisualElement> UiItems { get; set; } = new Map<HierarchyItem, VisualElement>();
 
         public List<KeyValuePair<Foldout, VisualElement>> Foldouts { get; private set; } = new List<KeyValuePair<Foldout, VisualElement>>();
 
@@ -59,7 +61,7 @@ namespace Project.GUI.Hierarchy
 
         void RegisterUiItem(HierarchyItem item, VisualElement element)
         {
-            if (!UiItems.ContainsKey(item))
+            if (!UiItems.Forward.ContainsKey(item))
                 UiItems.Add(item, element);
 
             if (!ItemIds.ContainsKey(item.id))
@@ -72,13 +74,13 @@ namespace Project.GUI.Hierarchy
         {
             scroll.contentContainer.Clear();
 
-            UiItems.Clear();
-            ItemIds.Clear();
-            Select(null as HierarchyItem, false);
-
             Items = itemProviders
                 .SelectMany(x => x.GetItems())
                 .ToList();
+
+            UiItems.Clear();
+            ItemIds.Clear();
+            Select(null as HierarchyItem, false);
 
             Foldout currentHeader = null;
             VisualElement currentContent = null;
@@ -90,7 +92,14 @@ namespace Project.GUI.Hierarchy
                     var header = new Foldout()
                     {
                         text = item.displayText,
+                        value = item.IsExpanded,
                     };
+
+                    header.RegisterValueChangedCallback(args =>
+                    {
+                        if (args.target == header)
+                            item.IsExpanded = header.value;
+                    });
 
                     currentHeader = header;
                     RegisterUiItem(item, currentHeader);
@@ -112,8 +121,10 @@ namespace Project.GUI.Hierarchy
                     head?.RegisterValueChangedCallback(args =>
                     {
                         if (args.target == head)
-                            content.style.display = head.value ? DisplayStyle.Flex : DisplayStyle.None;
+                            content.ChangeDispaly(head.value);
                     });
+
+                    content.ChangeDispaly(head.value);
                 }
 
                 VisualElement element;

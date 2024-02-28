@@ -48,6 +48,8 @@ namespace Project.GUI.Hierarchy
             var items = layout.items
                 .Select(x =>
                 {
+                    x = new HierarchyItem(x);
+
                     if (x.type == HierarchyItem.ItemType.Normal)
                     {
                         var field = fields.Where(y => y.id == x.id).FirstOrDefault();
@@ -57,11 +59,8 @@ namespace Project.GUI.Hierarchy
                             if (!manager.File.Entries.ContainsKey(x.id))
                                 manager.File.Entries.Add(x.id, new Translation.Data.SaveFile.EntryData(field));
 
-                            x = new HierarchyItem(x)
-                            {
-                                displayText = field.autoDisplayName ? PUtility.GenerateDisplayName(field.id) : field.displayName,
-                                Item = manager.File.Entries[field.id],
-                            };
+                            x.displayText = field.autoDisplayName ? PUtility.GenerateDisplayName(field.id) : field.displayName;
+                            x.Item = manager.File.Entries[field.id];
                         }
                     }
 

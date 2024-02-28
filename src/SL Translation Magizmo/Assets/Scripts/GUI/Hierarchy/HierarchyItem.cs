@@ -1,6 +1,4 @@
-﻿using Project.Translation.Mapping;
-using System;
-using System.Linq;
+﻿using System;
 
 namespace Project.GUI.Hierarchy
 {
@@ -45,6 +43,8 @@ namespace Project.GUI.Hierarchy
             type = item.type;
             id = item.id;
             displayText = item.displayText;
+            Item = item.Item;
+            IsExpanded = item.IsExpanded;
         }
 
         public ItemType type = ItemType.Normal;
@@ -54,6 +54,7 @@ namespace Project.GUI.Hierarchy
         [GUID] public string guid = Guid.NewGuid().ToString();
 
         public object Item { get; set; }
+        public bool IsExpanded { get; set; } = true;
 
         string IApplicationObject.Name => displayText;
 
