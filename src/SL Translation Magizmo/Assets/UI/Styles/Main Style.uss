@@ -288,10 +288,11 @@
     padding-top: 0;
     padding-bottom: 0;
     -unity-text-align: middle-left;
-    min-width: 48px;
+    min-width: 300px;
     flex-grow: 1;
     font-size: 24px;
     color: rgb(0, 0, 0);
+    width: auto;
 }
 
 .fab-dropdown__item__arrow {

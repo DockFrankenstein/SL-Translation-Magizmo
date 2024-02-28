@@ -7,6 +7,9 @@ using UnityEngine.Events;
 using qASIC.Input;
 using System.Linq;
 using System;
+using qASIC.Files;
+using System.Collections.Generic;
+using System.IO;
 
 namespace Project.Translation
 {
@@ -17,6 +20,9 @@ namespace Project.Translation
 
         [Label("Mapping")]
         public TranslationVersion[] versions;
+
+        [Label("Saving")]
+        [SerializeField] GenericFilePath recentFilesCachePath;
 
         [Label("Application")]
         [SerializeField] ErrorWindow errorWindow;
@@ -35,6 +41,9 @@ namespace Project.Translation
         public UnityEvent OnLoad;
 
         public event Action<object> OnFileChanged;
+
+        public List<string> RecentPaths { get; private set; }
+        public event Action<string> OnRecentPathAdded;
 
         public TranslationVersion CurrentVersion { get; private set; }
 
@@ -60,8 +69,9 @@ namespace Project.Translation
                 version.Initialize();
 
             CurrentVersion = GetNewestVersion();
-
             File = new SaveFile(CurrentVersion);
+
+            LoadRecentsCache();
         }
 
         private void Update()
@@ -74,6 +84,54 @@ namespace Project.Translation
 
             if (i_load.GetInputDown())
                 Open();
+        }
+
+        public void LoadRecentsCache()
+        {
+            var cachePath = recentFilesCachePath.GetFullPath();
+
+            if (!System.IO.File.Exists(cachePath))
+                return;
+
+            using (var stream = new StreamReader(cachePath))
+            {
+                var txt = stream.ReadToEnd();
+                RecentPaths = txt
+                    .SplitByLines()
+                    .Where(x => !string.IsNullOrWhiteSpace(x))
+                    .ToList();
+            }
+        }
+
+        public void SaveRecentsCache()
+        {
+            var cachePath = recentFilesCachePath.GetFullPath();
+
+            using (var stream = new StreamWriter(cachePath))
+            {
+                var txt = string.Join("\n", RecentPaths);
+                stream.Write(txt);
+            }
+        }
+
+        public void AddPathToRecents(string path)
+        {
+            if (RecentPaths == null)
+            {
+                RecentPaths = new List<string>(new string[] { path });
+                SaveRecentsCache();
+                return;
+            }
+
+            if (RecentPaths.FirstOrDefault() == path)
+                return;
+
+            if (RecentPaths.Contains(path))
+                RecentPaths.Remove(path);
+
+            RecentPaths.Insert(0, path);
+            OnRecentPathAdded?.Invoke(path);
+            SaveRecentsCache();
         }
 
         public void Save()
@@ -98,6 +156,7 @@ namespace Project.Translation
                 return;
             }
 
+            AddPathToRecents(FilePath);
             Debug.Log("Saved file");
             OnSave.Invoke();
         }
@@ -134,7 +193,12 @@ namespace Project.Translation
             if (paths.Length == 0)
                 return;
 
-            FilePath = paths[0];
+            Open(paths[0]);
+        }
+
+        public void Open(string path)
+        {
+            FilePath = path;
 
             try
             {
@@ -186,6 +250,7 @@ namespace Project.Translation
 
             OnLoad.Invoke();
             MarkFileDirty(this);
+            AddPathToRecents(FilePath);
         }
 
         void MakeSureFileIsUpToDate(SaveFile file, int fileVersion)

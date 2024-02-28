@@ -16,11 +16,27 @@ namespace Project.GUI.Top
 
         protected override string ButtonName => "file";
 
+        protected override void Awake()
+        {
+            base.Awake();
+
+            manager.OnRecentPathAdded += _ =>
+            {
+                menu.ClearItems();
+                CreateMenu();
+            };
+        }
+
         protected override void CreateMenu()
         {
             menu.AppendAction("Save", _ => manager.Save());
             menu.AppendAction("Save As", _ => manager.SaveAs());
             menu.AppendAction("Open", _ => manager.Open());
+
+            if (manager.RecentPaths != null)
+                foreach (var item in manager.RecentPaths)
+                    menu.AppendAction($"Open Recent/{item.Replace("/", "\\").Replace("\\", "\\\\")}", _ => manager.Open(item));
+
             menu.AppendSeparator();
 
             foreach (var item in importers)
