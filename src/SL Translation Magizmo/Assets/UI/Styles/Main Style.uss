@@ -1018,3 +1018,12 @@ PopupButton #popup-button-arrow {
     -unity-background-image-tint-color: rgb(77, 77, 77);
     rotate: -90deg;
 }
+
+.unity-list-view__reorderable-handle {
+    justify-content: center;
+}
+
+.unity-list-view__reorderable-handle-bar {
+    height: 2px;
+    margin: 2px;
+}
