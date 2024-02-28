@@ -12,7 +12,7 @@ namespace Project.Translation
 {
     public class TranslationManager : MonoBehaviour
     {
-        public const int CURRENT_FILE_VERSION = 0;
+        public const int CURRENT_FILE_VERSION = 1;
         public const int LOWEST_SUPPORTED_FILE_VERSION = 0;
 
         [Label("Mapping")]
@@ -43,7 +43,7 @@ namespace Project.Translation
             .Where(x => x.version == version)
             .FirstOrDefault();
 
-        public TranslationVersion GetVersion(SaveFile file) =>
+        public TranslationVersion GetSlVersion(SaveFile file) =>
             file.UseNewestSlVersion ?
             GetNewestVersion() :
             GetVersion(file.SlVersion);
@@ -52,7 +52,7 @@ namespace Project.Translation
             versions.LastOrDefault();
 
         public void LoadCurrentVersionFromFile() =>
-            CurrentVersion = GetVersion(File);
+            CurrentVersion = GetSlVersion(File);
 
         private void Awake()
         {
@@ -163,15 +163,17 @@ namespace Project.Translation
                 }
 
                 var file = JsonUtility.FromJson<SaveFile>(txt);
-                var ver = GetVersion(file);
+                MakeSureFileIsUpToDate(file, fileVersion);
 
-                if (ver == null)
+                var slVer = GetSlVersion(file);
+
+                if (slVer == null)
                 {
-                    ver = GetNewestVersion();
-                    errorWindow.CreatePrompt("Unsupported SL Version", $"This file is targetting an unsupported version of SCP: Secret Laboratory ({file.SlVersion}). Changed version to {ver.version}");
+                    slVer = GetNewestVersion();
+                    errorWindow.CreatePrompt("Unsupported SL Version", $"This file is targetting an unsupported version of SCP: Secret Laboratory ({file.SlVersion}). Changed version to {slVer.version}");
                 }
 
-                CurrentVersion = ver;
+                CurrentVersion = slVer;
 
                 File = file;
                 FileVersion = fileVersion;
@@ -184,6 +186,19 @@ namespace Project.Translation
 
             OnLoad.Invoke();
             MarkFileDirty(this);
+        }
+
+        void MakeSureFileIsUpToDate(SaveFile file, int fileVersion)
+        {
+            while (fileVersion < CURRENT_FILE_VERSION)
+            {
+                foreach (var versionAsset in versions)
+                    foreach (var container  in versionAsset.containers)
+                        container.UpdateFileToNextVersion(file, fileVersion);
+
+                Debug.Log($"Updated file to v{fileVersion + 1}");
+                fileVersion++;
+            }
         }
 
         public void MarkFileDirty(object fromContext)

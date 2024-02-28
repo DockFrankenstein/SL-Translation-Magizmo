@@ -65,7 +65,7 @@ namespace Project.GUI.Inspector
                     field.field = item;
                     field.attr = attr;
 
-                    var mappedField = attr.GetDefineField();
+                    var mappedField = attr.GetMappedField();
 
                     if (!file.Entries.ContainsKey(mappedField.id))
                         file.Entries.Add(mappedField.id, new SaveFile.EntryData(mappedField));

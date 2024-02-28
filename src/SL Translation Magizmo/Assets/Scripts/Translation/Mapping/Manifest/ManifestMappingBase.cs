@@ -4,6 +4,7 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using System.Reflection;
 
 namespace Project.Translation.Mapping.Manifest
 {
@@ -19,7 +20,7 @@ namespace Project.Translation.Mapping.Manifest
             if (_fieldsCache == null)
             {
                 _fieldsCache = GetFieldAttributes()
-                    .Select(x => x.GetDefineField())
+                    .Select(x => x.GetMappedField())
                     .ToArray();
             }
 
@@ -37,14 +38,11 @@ namespace Project.Translation.Mapping.Manifest
 
             foreach (var field in fields)
             {
-                var attr = ((MappedFieldNameAttribute[])field.GetCustomAttributes(typeof(MappedFieldNameAttribute), false))
-                    .FirstOrDefault();
-
-                if (attr == null)
+                if (!GetAttribute(field, out var attr))
                     continue;
 
-                if (!file.Entries.ContainsKey(attr.Name))
-                    file.Entries.Add(attr.Name, new SaveFile.EntryData(attr.Name));
+                if (!file.Entries.ContainsKey(attr.Id))
+                    file.Entries.Add(attr.Id, new SaveFile.EntryData(attr.Id));
 
                 object value = field.GetValue(manifestFile);
 
@@ -61,8 +59,8 @@ namespace Project.Translation.Mapping.Manifest
                 }
 
                 value = value?.ToString() ?? string.Empty;
-                file.Entries[attr.Name].content = value.ToString();
-                ProjectDebug.LogValueImport(attr.Name, value);
+                file.Entries[attr.Id].content = value.ToString();
+                ProjectDebug.LogValueImport(attr.Id, value);
             }
         }
 
@@ -76,13 +74,10 @@ namespace Project.Translation.Mapping.Manifest
             {
                 var field = fields[i];
 
-                var attr = ((MappedFieldNameAttribute[])field.GetCustomAttributes(typeof(MappedFieldNameAttribute), false))
-                    .FirstOrDefault();
-
-                if (attr == null)
+                if (!GetAttribute(field, out var attr))
                     continue;
 
-                var mappedField = new MappedField(attr.Name, this);
+                var mappedField = new MappedField(attr.Id, this);
                 string entry = getTextContent(i, mappedField);
                 object value = entry;
 
@@ -95,6 +90,31 @@ namespace Project.Translation.Mapping.Manifest
             }
 
             return JsonUtility.ToJson(holder, true);
+        }
+
+        bool GetAttribute(FieldInfo field, out MappedFieldNameAttribute attr)
+        {
+            attr = ((MappedFieldNameAttribute[])field.GetCustomAttributes(typeof(MappedFieldNameAttribute), false))
+                .FirstOrDefault();
+
+            return attr != null;
+        }
+
+        public override void UpdateFileToNextVersion(SaveFile file, int fileVersion)
+        {
+            switch (fileVersion)
+            {
+                case 0:
+                    foreach (var field in DataType.GetFields())
+                    {
+                        if (!GetAttribute(field, out var attr)) continue;
+                        if (!field.FieldType.IsArray) continue;
+                        if (!file.Entries.ContainsKey(attr.Id)) continue;
+                        file.Entries[attr.Id].content += "\n";
+                    }
+
+                    break;
+            }
         }
     }
 

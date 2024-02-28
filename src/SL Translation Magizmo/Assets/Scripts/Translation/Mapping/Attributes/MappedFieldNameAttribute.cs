@@ -7,12 +7,12 @@ namespace Project.Translation.Mapping
     {
         public MappedFieldNameAttribute(string name)
         {
-            Name = name;
+            Id = name;
         }
 
-        public string Name { get; private set; }
+        public string Id { get; private set; }
 
-        public MappedField GetDefineField() =>
-            new MappedField(Name);
+        public MappedField GetMappedField() =>
+            new MappedField(Id);
     }
 }
