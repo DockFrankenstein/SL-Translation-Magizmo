@@ -103,12 +103,12 @@ namespace Project.GUI.Inspector
 
         private void Hierarchy_OnSelect(HierarchyItem item)
         {
-            SelectedObject = item.Item as IApplicationObject ?? item;
+            SelectedObject = item?.Item as IApplicationObject ?? item;
         }
 
         string GetNameForObject(IApplicationObject obj)
         {
-            string text = obj.Name;
+            string text = obj?.Name;
 
             foreach (var provider in nameProviders)
             {

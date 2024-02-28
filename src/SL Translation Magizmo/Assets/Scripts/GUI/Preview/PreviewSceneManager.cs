@@ -75,7 +75,7 @@ namespace Project.GUI.Preview
 
         private void Hierarchy_OnSelect(HierarchyItem obj)
         {
-            if (!(obj.Item is SaveFile.EntryData entry)) return;
+            if (!(obj?.Item is SaveFile.EntryData entry)) return;
             if (CurrentScene.EntriesForIds.TryGetValue(entry.entryId, out var previewEntry))
             {
                 previewEntry.ChangeTarget(entry.entryId);

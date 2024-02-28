@@ -10,6 +10,14 @@ namespace Project.GUI.Hierarchy
         [SerializeField] TranslationManager manager;
         [SerializeField] MappingLayout[] mappingLayouts;
 
+        private void Awake()
+        {
+            manager.OnLoad.AddListener(() =>
+            {
+                Hierarchy.Refresh();
+            });
+        }
+
         public MappingLayout GetCurrentLayout()
         {
             MappingLayout layout = mappingLayouts.FirstOrDefault();

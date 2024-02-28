@@ -47,6 +47,10 @@ namespace Project.GUI.Hierarchy
         {
             var root = document.rootVisualElement;
             scroll = root.Q<ScrollView>("hierarchy-list");
+
+            foreach (var provider in itemProviders)
+                provider.Hierarchy = this;
+
             Refresh();
 
             if (Sett_CollapsedByDefault)
@@ -67,6 +71,10 @@ namespace Project.GUI.Hierarchy
         public void Refresh()
         {
             scroll.contentContainer.Clear();
+
+            UiItems.Clear();
+            ItemIds.Clear();
+            Select(null as HierarchyItem, false);
 
             Items = itemProviders
                 .SelectMany(x => x.GetItems())
