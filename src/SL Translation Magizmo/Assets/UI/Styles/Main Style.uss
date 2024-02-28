@@ -293,6 +293,11 @@
     font-size: 24px;
     color: rgb(0, 0, 0);
     width: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 800px;
+    overflow: hidden;
+    -unity-text-overflow-position: middle;
 }
 
 .fab-dropdown__item__arrow {
