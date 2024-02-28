@@ -18,7 +18,7 @@ namespace Project.Translation.Mapping
         public override string Export(Func<int, MappedField, string> getTextContent)
         {
             var txt = getTextContent(0, field);
-            txt = $"{prefix}{txt}";
+            txt = $"{prefix}{txt.TrimEnd('\n')}";
             return txt;
         }
 

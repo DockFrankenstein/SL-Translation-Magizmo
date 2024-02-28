@@ -8,12 +8,21 @@ namespace Project
     {
         public static string[] EntryContentToArray(this string entry)
         {
-            var items = entry.Split('\n');
-            return items;
+            var items = entry.Split('\n')
+                .SkipLast(1);
+            return items.ToArray();
         }
 
-        public static string ToEntryContent(this IEnumerable<string> array) =>
-            string.Join("\n", array);
+        public static string ToEntryContent(this IEnumerable<string> array)
+        {
+            var last = array.LastOrDefault();
+
+            if (last != null)
+                array = array.SkipLast(1)
+                    .Append($"{last}\n");
+
+            return string.Join("\n", array);
+        }
 
         public static IEnumerable<string> SplitWithSplits(this IEnumerable<string> array, string split, StringSplitOptions splitOptions = StringSplitOptions.None) =>
             array.SelectMany(x => x.Split(split, splitOptions).InsertBetween(split))
