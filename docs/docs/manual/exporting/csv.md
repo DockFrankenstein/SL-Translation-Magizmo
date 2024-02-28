@@ -7,7 +7,7 @@ sidebar_position: 1
 The "Comma Separated Values" format allows for editing inside spreadsheet applications such as [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel) or [LibreOffice Calc](https://www.libreoffice.org/discover/calc/). This workflow is very popular for translating games.
 
 ## Exporting
-By going to `File/Export/CSV` you can open the "Export to CSV" prompt, where you have a couple of things to setup, after which you can press the "Export" button at the bottom.
+By going to `File/Export/CSV` you can open the "Export to CSV" prompt.
 
 ### Path
 Path of where you want to save your csv file.
@@ -15,7 +15,7 @@ Path of where you want to save your csv file.
 ### Create Categories
 `default: true`
 
-When enabled, the output `.csv` file will separate entries into labeled categories. It's recommended to keep this option enabled for easy readability.
+When enabled, the output `.csv` file will separate entries into labeled categories. It's recommended to keep this option enabled for easier readability.
 
 ### Columns Order
 `default: id, display name, original translation, value, dynamic values`
@@ -34,7 +34,7 @@ Here's a detailed explanation of each column:
 | :-- | :-- |
 | Id | The id used by sltm to recognize which row corresponds to which entry. |
 | Display Name | Name of the entry that's typically displayed in the app. |
-| Original Translation | Original value of the entry from the translation you're basing your version from (doesn't work yet, so it's empty). |
+| Original Translation | Original value of the entry from the translation on which you're basing your own (doesn't work yet, so it's empty). |
 | Value | Value of the entry. |
 | Dynamic Values | List of dynamic values available for the entry. These tags will be replaced by SCPSL with a different value. |
 
@@ -58,4 +58,4 @@ Column that contains entry ids. Please make sure to select the right column for 
 
 ### Value column
 
-Column that contains entry values. Please make sure to select the right column to import the correct content.
+Column that contains entry values. Please make sure to select the right column for the import to work.

@@ -4,11 +4,11 @@ sidebar_position: 0
 
 # SCPSL
 
-SCPSL refers to the format used by the game for loading translations. 
+SCPSL refers to the format used by the game for it's translations. 
 
 ## Exporting
 
-By going to `File/Export/SCPSL` you can open the "Export to SCPSL" prompt, where you have a couple of things to setup, after which you can press the "Export" button at the bottom.
+By going to `File/Export/SCPSL` you can open the "Export to SCPSL" prompt.
 
 ### Path
 
@@ -23,7 +23,7 @@ Path of the folder to which the translation will be exported. Most of the time y
 ### Blank Entry
 `default: -`
 
-Text that will be used for unused entries. Not everything in the SCPSL's files is used by the game and SLTM removes the unnecessary entries. Most of the time there is no reason to change this field.
+Text that will be used for unused entries. Not everything in SCPSL's files is loaded by the game and SLTM removes the unnecessary entries. Most of the time there is no reason to change this field.
 
 ## Importing
 

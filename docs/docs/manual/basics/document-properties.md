@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Document Properties
+# File Properties
 
 You can edit the properties of your `.sltmf` file by going to `File/Properties`.
 
