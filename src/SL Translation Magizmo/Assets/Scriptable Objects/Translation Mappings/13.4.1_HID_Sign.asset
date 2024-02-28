@@ -20,5 +20,7 @@ MonoBehaviour:
     addToList: 1
     dynamicValues: []
     guid: 0fff3a39-19dc-4f04-acf4-e79b64a126b4
-  prefix: "#INFO FOR TRANSLATORS: In this file you can use as many lines as you want,
-    all of them will be displayed on the display above the door.\r"
+  prefix: '#INFO FOR TRANSLATORS: In this file you can use as many lines as you want,
+    all of them will be displayed on the display above the door.
+
+'

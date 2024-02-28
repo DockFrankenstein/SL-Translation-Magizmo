@@ -18,7 +18,7 @@ namespace Project.Translation.Mapping
         public override string Export(Func<int, MappedField, string> getTextContent)
         {
             var txt = getTextContent(0, field);
-            txt = $"{prefix}\n{txt}";
+            txt = $"{prefix}{txt}";
             return txt;
         }
 
@@ -35,7 +35,7 @@ namespace Project.Translation.Mapping
             if (!file.Entries.ContainsKey(field.id))
                 file.Entries.Add(field.id, new SaveFile.EntryData(field));
 
-            var content = string.Join('\n', txtLines);
+            var content = txtLines.ToEntryContent();
             file.Entries[field.id].content = content;
         }
     }
