@@ -16,9 +16,7 @@ namespace Project.GUI.Top
                 aboutWindow.Open();
             });
 
-            menu.AppendSeparator("");
-
-            menu.AppendAction("SCPSL on steam", _ =>
+            menu.AppendAction("About SCPSL", _ =>
             {
                 Application.OpenURL("https://store.steampowered.com/app/700330/SCP_Secret_Laboratory/");
             });
