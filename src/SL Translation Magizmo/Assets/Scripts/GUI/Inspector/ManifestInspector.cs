@@ -73,7 +73,7 @@ namespace Project.GUI.Inspector
                     field.entry = file.Entries[mappedField.id];
                     mappedFields.Add(field);
                     Container.Add(field.UiItem);
-                    field.LabelText = mappedField.id;
+                    field.LabelText = mappedField.GetFinalName();
                     field.LoadValue(field.entry.content);
 
                     field.OnChanged += () =>
