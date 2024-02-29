@@ -8,8 +8,16 @@ namespace Project
     {
         public static string[] EntryContentToArray(this string entry)
         {
-            var items = entry.Split('\n')
-                .SkipLast(1);
+            var items = entry
+                .Split('\n')
+                .AsEnumerable();
+
+            var last = items.Last();
+
+            if (string.IsNullOrEmpty(last))
+                items = items
+                    .SkipLast(1);
+
             return items.ToArray();
         }
 
