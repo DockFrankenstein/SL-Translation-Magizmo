@@ -99,23 +99,6 @@ namespace Project.Translation.Mapping.Manifest
 
             return attr != null;
         }
-
-        public override void UpdateFileToNextVersion(SaveFile file, int fileVersion)
-        {
-            switch (fileVersion)
-            {
-                case 0:
-                    foreach (var field in DataType.GetFields())
-                    {
-                        if (!GetAttribute(field, out var attr)) continue;
-                        if (!field.FieldType.IsArray) continue;
-                        if (!file.Entries.ContainsKey(attr.Id)) continue;
-                        file.Entries[attr.Id].content += "\n";
-                    }
-
-                    break;
-            }
-        }
     }
 
     /// <typeparam name="T">Data to serialize</typeparam>

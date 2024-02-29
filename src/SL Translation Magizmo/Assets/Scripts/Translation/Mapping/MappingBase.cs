@@ -15,10 +15,5 @@ namespace Project.Translation.Mapping
         public abstract string Export(Func<int, MappedField, string> getTextContent);
 
         public virtual bool Hide { get; } = false;
-
-        public virtual void UpdateFileToNextVersion(SaveFile file, int fileVersion)
-        {
-
-        }
     }
 }

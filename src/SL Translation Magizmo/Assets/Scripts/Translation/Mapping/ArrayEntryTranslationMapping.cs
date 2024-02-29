@@ -38,16 +38,5 @@ namespace Project.Translation.Mapping
             var content = txtLines.ToEntryContent();
             file.Entries[field.id].content = content;
         }
-
-        public override void UpdateFileToNextVersion(SaveFile file, int fileVersion)
-        {
-            switch (fileVersion)
-            {
-                case 0:
-                    if (file.Entries.ContainsKey(field.id))
-                        file.Entries[field.id].content += "\n";                 
-                    break;
-            }
-        }
     }
 }

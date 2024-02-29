@@ -1,6 +1,6 @@
 {
     "version": {
-        "instanceID": 21890
+        "instanceID": 21884
     },
     "items": [
         {
@@ -5039,15 +5039,15 @@
         },
         {
             "type": 0,
-            "id": "death_screen_poison",
-            "displayText": "Death Screen 207 Mix",
-            "guid": "2703cac0-2ef5-485c-8cea-93e80292df97"
-        },
-        {
-            "type": 0,
             "id": "death_screen_244",
             "displayText": "Death Screen 244",
             "guid": "fb7d89c5-f93f-4fd2-8326-e5eac406b228"
+        },
+        {
+            "type": 0,
+            "id": "death_screen_330",
+            "displayText": "Death Body 330",
+            "guid": "3c32a6a6-f38d-4c65-931b-c71e05299bb2"
         },
         {
             "type": 0,
@@ -5057,21 +5057,27 @@
         },
         {
             "type": 0,
-            "id": "death_screen_explosion",
-            "displayText": "Death Screen Explosion",
-            "guid": "1437834e-5b20-48ca-acae-7fed77bf5ee3"
-        },
-        {
-            "type": 0,
             "id": "death_screen_fall",
             "displayText": "Death Screen Fall",
             "guid": "efc8a4d6-7d27-41b6-a003-ad63ec281264"
         },
         {
             "type": 0,
-            "id": "death_screen_ff",
-            "displayText": "Death Screen Ff",
-            "guid": "a82844d8-c279-4c90-8c60-0d21b5e79101"
+            "id": "death_screen_explosion",
+            "displayText": "Death Screen Explosion",
+            "guid": "1437834e-5b20-48ca-acae-7fed77bf5ee3"
+        },
+        {
+            "type": 0,
+            "id": "death_screen_tesla",
+            "displayText": "Death Body Tesla",
+            "guid": "e8b501a1-b409-43f1-840e-42a9fc142f45"
+        },
+        {
+            "type": 0,
+            "id": "death_screen_poison",
+            "displayText": "Death Screen 207 Mix",
+            "guid": "2703cac0-2ef5-485c-8cea-93e80292df97"
         },
         {
             "type": 0,
@@ -5093,9 +5099,9 @@
         },
         {
             "type": 0,
-            "id": "death_body_018",
-            "displayText": "Death Body 018",
-            "guid": "41026389-a409-4be9-beab-3f99111037c0"
+            "id": "death_body_3114_disguise",
+            "displayText": "Death Body 3114 Disguise",
+            "guid": "b22e84fb-1b91-4f64-816a-d1024ac4e9f4"
         },
         {
             "type": 0,
@@ -5141,39 +5147,15 @@
         },
         {
             "type": 0,
-            "id": "death_body_3114_disguise",
-            "displayText": "Death Body 3114 Disguise",
-            "guid": "b22e84fb-1b91-4f64-816a-d1024ac4e9f4"
-        },
-        {
-            "type": 0,
-            "id": "death_body_330",
-            "displayText": "Death Body 330",
-            "guid": "3c32a6a6-f38d-4c65-931b-c71e05299bb2"
-        },
-        {
-            "type": 0,
             "id": "death_body_939",
             "displayText": "Death Body 939",
             "guid": "c3d874d7-0631-4610-b19a-97083dbc92e3"
         },
         {
             "type": 0,
-            "id": "death_body_asphyxia",
-            "displayText": "Death Body Asphyxia",
-            "guid": "2b395950-d8b3-40e5-8900-d5e1dfb31fb7"
-        },
-        {
-            "type": 0,
-            "id": "death_body_bullet",
-            "displayText": "Death Body Bullet",
-            "guid": "fb59ff5c-1654-4929-9263-c8ca09fc1648"
-        },
-        {
-            "type": 0,
-            "id": "death_body_decontamination",
-            "displayText": "Death Body Decontamination",
-            "guid": "2a6e4036-3e70-49a5-8435-c2fab740a04f"
+            "id": "death_body_unknown",
+            "displayText": "Death Body Unknown",
+            "guid": "c5763508-1d05-4742-a127-f4811bef5ac9"
         },
         {
             "type": 0,
@@ -5183,15 +5165,33 @@
         },
         {
             "type": 0,
-            "id": "death_body_electricity",
-            "displayText": "Death Body Electricity",
-            "guid": "8b0db076-2603-45b0-9d67-a4d44803c3cb"
+            "id": "death_body_asphyxia",
+            "displayText": "Death Body Asphyxia",
+            "guid": "2b395950-d8b3-40e5-8900-d5e1dfb31fb7"
+        },
+        {
+            "type": 0,
+            "id": "death_body_blunt_trauma",
+            "displayText": "Death Body 018",
+            "guid": "41026389-a409-4be9-beab-3f99111037c0"
+        },
+        {
+            "type": 0,
+            "id": "death_body_bullet",
+            "displayText": "Death Body Bullet",
+            "guid": "fb59ff5c-1654-4929-9263-c8ca09fc1648"
         },
         {
             "type": 0,
             "id": "death_body_explosion",
             "displayText": "Death Body Explosion",
             "guid": "b88484d6-33e6-46a6-b013-44e0c256b672"
+        },
+        {
+            "type": 0,
+            "id": "death_body_electricity",
+            "displayText": "Death Body Electricity",
+            "guid": "8b0db076-2603-45b0-9d67-a4d44803c3cb"
         },
         {
             "type": 0,
@@ -5207,21 +5207,21 @@
         },
         {
             "type": 0,
+            "id": "death_body_decontamination",
+            "displayText": "Death Body Decontamination",
+            "guid": "2a6e4036-3e70-49a5-8435-c2fab740a04f"
+        },
+        {
+            "type": 0,
             "id": "death_body_recontained",
             "displayText": "Death Body Recontained",
             "guid": "0bc1d3ae-7613-44ff-b32a-23a8343889d5"
         },
         {
             "type": 0,
-            "id": "death_body_tesla",
-            "displayText": "Death Body Tesla",
-            "guid": "e8b501a1-b409-43f1-840e-42a9fc142f45"
-        },
-        {
-            "type": 0,
-            "id": "death_body_unknown",
-            "displayText": "Death Body Unknown",
-            "guid": "c5763508-1d05-4742-a127-f4811bef5ac9"
+            "id": "death_body_ff",
+            "displayText": "Death Screen Ff",
+            "guid": "a82844d8-c279-4c90-8c60-0d21b5e79101"
         },
         {
             "type": 0,

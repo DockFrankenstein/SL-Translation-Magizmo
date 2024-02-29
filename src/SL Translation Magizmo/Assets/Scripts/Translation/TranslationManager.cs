@@ -15,9 +15,6 @@ namespace Project.Translation
 {
     public class TranslationManager : MonoBehaviour
     {
-        public const int CURRENT_FILE_VERSION = 1;
-        public const int LOWEST_SUPPORTED_FILE_VERSION = 0;
-
         [Label("Mapping")]
         public TranslationVersion[] versions;
 
@@ -30,6 +27,7 @@ namespace Project.Translation
         public SaveFile File { get; private set; } = null;
         public int FileVersion { get; private set; }
         public string FilePath { get; private set; } = null;
+        TranslationFileUpdater _fileUpdater;
 
         [Label("Shortcuts")]
         [SerializeField] InputMapItemReference i_save;
@@ -68,6 +66,7 @@ namespace Project.Translation
             foreach (var version in versions)
                 version.Initialize();
 
+            _fileUpdater = new TranslationFileUpdater(this);
             CurrentVersion = GetNewestVersion();
             File = new SaveFile(CurrentVersion);
 
@@ -147,7 +146,7 @@ namespace Project.Translation
             try
             {
                 var json = JsonUtility.ToJson(File, true);
-                var txt = $"{CURRENT_FILE_VERSION}\n{json}";
+                var txt = $"{TranslationFileUpdater.CURRENT_FILE_VERSION}\n{json}";
                 System.IO.File.WriteAllText(FilePath, txt);
             }
             catch (Exception e)
@@ -206,19 +205,19 @@ namespace Project.Translation
 
                 var lines = txt.SplitByLines();
                 var fileVersionString = lines.First();
-                var fileVersion = CURRENT_FILE_VERSION;
+                var fileVersion = TranslationFileUpdater.CURRENT_FILE_VERSION;
 
                 if (int.TryParse(fileVersionString, out int newFileVersion))
                 {
-                    if (newFileVersion < LOWEST_SUPPORTED_FILE_VERSION)
+                    if (newFileVersion < TranslationFileUpdater.LOWEST_SUPPORTED_FILE_VERSION)
                     {
-                        errorWindow.CreatePrompt("Load Error", $"This file has been saved in an older version ({newFileVersion}) that is no longer supported (lowest supported version: {LOWEST_SUPPORTED_FILE_VERSION}).");
+                        errorWindow.CreatePrompt("Load Error", $"This file has been saved in an older version ({newFileVersion}) that is no longer supported (lowest supported version: {TranslationFileUpdater.LOWEST_SUPPORTED_FILE_VERSION}).");
                         return;
                     }
 
                     if (newFileVersion > fileVersion)
                     {
-                        errorWindow.CreatePrompt("Load Error", $"This file has been saved in a newer version ({newFileVersion}, current version: {CURRENT_FILE_VERSION}). You have to update the application in order to load it.");
+                        errorWindow.CreatePrompt("Load Error", $"This file has been saved in a newer version ({newFileVersion}, current version: {TranslationFileUpdater.CURRENT_FILE_VERSION}). You have to update the application in order to load it.");
                         return;
                     }
 
@@ -227,7 +226,7 @@ namespace Project.Translation
                 }
 
                 var file = JsonUtility.FromJson<SaveFile>(txt);
-                MakeSureFileIsUpToDate(file, fileVersion);
+                _fileUpdater.EnsureFileIsUpToDate(file, fileVersion);
 
                 var slVer = GetSlVersion(file);
 
@@ -251,19 +250,6 @@ namespace Project.Translation
             OnLoad.Invoke();
             MarkFileDirty(this);
             AddPathToRecents(FilePath);
-        }
-
-        void MakeSureFileIsUpToDate(SaveFile file, int fileVersion)
-        {
-            while (fileVersion < CURRENT_FILE_VERSION)
-            {
-                foreach (var versionAsset in versions)
-                    foreach (var container  in versionAsset.containers)
-                        container.UpdateFileToNextVersion(file, fileVersion);
-
-                Debug.Log($"Updated file to v{fileVersion + 1}");
-                fileVersion++;
-            }
         }
 
         public void MarkFileDirty(object fromContext)

@@ -260,9 +260,9 @@
             "guid": "fa1bea1c-5938-42e6-9a68-655dbcfb262d",
             "fields": [
                 {
-                    "id": "death_body_330",
+                    "id": "death_screen_330",
                     "autoDisplayName": false,
-                    "displayName": "Cause: SCP-330",
+                    "displayName": "Cause Screen: SCP-330",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "bc2e1ab2-997c-4b71-a821-cbd61986c3d7"
@@ -274,9 +274,9 @@
             "guid": "d3ddb636-41ef-412c-af64-424573e86695",
             "fields": [
                 {
-                    "id": "death_body_tesla",
+                    "id": "death_screen_tesla",
                     "autoDisplayName": false,
-                    "displayName": "Cause: Tesla",
+                    "displayName": "Cause Screen: Tesla",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "3eb25a6c-3112-4c66-bf89-d5851ca1e4da"
@@ -391,9 +391,9 @@
             "guid": "871b2321-6e4d-48bc-b256-30087c18b553",
             "fields": [
                 {
-                    "id": "death_body_018",
+                    "id": "death_body_blunt_trauma",
                     "autoDisplayName": false,
-                    "displayName": "Cause: SCP-018",
+                    "displayName": "Cause: Blunt Trauma",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "f2067d5e-fc53-47b5-88b5-2d31967d817e"
@@ -433,9 +433,9 @@
             "guid": "d25d96bc-e9da-4438-8a08-bc405281a6b2",
             "fields": [
                 {
-                    "id": "death_screen_ff",
+                    "id": "death_body_ff",
                     "autoDisplayName": false,
-                    "displayName": "Cause Screen: Friendly Fire",
+                    "displayName": "Cause: Friendly Fire",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "58b28d06-13e0-4846-afdd-8bfa55b57730"
