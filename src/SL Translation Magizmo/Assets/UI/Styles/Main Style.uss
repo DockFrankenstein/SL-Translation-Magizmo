@@ -529,6 +529,7 @@
 .text-area .unity-text-field__input {
     height: 200px;
     -unity-text-align: upper-left;
+    white-space: normal;
 }
 
 .unity-list-view {
