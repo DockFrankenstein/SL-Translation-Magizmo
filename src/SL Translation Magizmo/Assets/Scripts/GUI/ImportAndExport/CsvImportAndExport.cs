@@ -18,6 +18,8 @@ namespace Project.Translation.ImportAndExport
 {
     public class CsvImportAndExport : ImportAndExportBase, IImporter, IExporter
     {
+        const string IGNORE_NEXT_CONTENT = "###";
+
         public enum ColumnOrder
         {
             Id = 1,
@@ -120,9 +122,20 @@ namespace Project.Translation.ImportAndExport
                         if (_exportCreateCategories.value)
                         {
                             if (row != 0) row++;
+
+
                             if (!string.IsNullOrEmpty(section.sectionName))
                             {
+                                for (uint i = 0; i < 5; i++)
+                                    table.SetCell(i, row, IGNORE_NEXT_CONTENT);
+
+                                row++;
+
+                                table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.Id), row, "Id");
                                 table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.DisplayName), row, section.sectionName);
+                                table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.OriginalTranslation), row, "Original");
+                                table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.Value), row, "Translation");
+                                table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.DynamicValues), row, "Dynamic Values");
                                 row++;
                             }
                         }
@@ -217,10 +230,24 @@ namespace Project.Translation.ImportAndExport
                     return;
                 }
 
+                bool _ignoreNext = false;
                 for (int i = 0; i < _currentImportTable.RowsCount; i++)
                 {
                     var id = _currentImportTable.GetCell(_importIdColumn.index, i);
                     var value = _currentImportTable.GetCell(_importValueColumn.index, i);
+
+                    if (id == IGNORE_NEXT_CONTENT)
+                    {
+                        _ignoreNext = true;
+                        i++;
+                        continue;
+                    }
+
+                    if (_ignoreNext)
+                    {
+                        _ignoreNext = false;
+                        continue;
+                    }
 
                     //Ignore if id is not valid
                     if (!manager.CurrentVersion.MappedFields.ContainsKey(id))
@@ -258,6 +285,9 @@ namespace Project.Translation.ImportAndExport
                 }
 
                 Import();
+
+
+
                 UpdatePreview();
             });
 
@@ -340,12 +370,14 @@ namespace Project.Translation.ImportAndExport
             {
                 var path = _importPath.value;
 
-                var txt = File.ReadAllText(path);
+                using (var stream = new StreamReader(path))
+                {
+                    var txt = stream.ReadToEnd();
+                    if (_importFileTxt == txt) return;
 
-                if (_importFileTxt == txt) return;
-
-                _importFileTxt = txt;
-                _currentImportTable = _parser.Deserialize(txt);
+                    _importFileTxt = txt;
+                    _currentImportTable = _parser.Deserialize(txt);
+                }
             }
             catch (Exception e)
             {
@@ -366,7 +398,8 @@ namespace Project.Translation.ImportAndExport
                 {
                     items = new List<Item>()
                     {
-                        new Item("sl_version", manager.CurrentVersion.version.ToString()),
+                        new Item("id", "value"),
+                        new Item(),
                     },
                 }
             };
