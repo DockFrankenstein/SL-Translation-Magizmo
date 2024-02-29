@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEditor;
-using SFB;
 using Project.Translation.Data;
 using qASIC.Files;
 using qASIC;
@@ -14,7 +13,6 @@ namespace Project.Translation.Mapping
     public class TranslationVersion : ScriptableObject
     {
         public Version version;
-        [EditorButton(nameof(ExportIdTestTranslation))]
         public MappingBase[] containers = new MappingBase[0];
 
         public MappedField[] GetMappedFields() =>
@@ -89,29 +87,6 @@ namespace Project.Translation.Mapping
                 });
 
                 FileManager.SaveFileWriter($"{path}/{definesFile.fileName}", txt);
-            }
-        }
-
-        public void ExportIdTestTranslation()
-        {
-#if UNITY_EDITOR
-            var path = EditorUtility.OpenFolderPanel("Export Translation", string.Empty, string.Empty);
-#else
-            var paths = StandaloneFileBrowser.OpenFolderPanel("Export Translation", string.Empty, false);
-            var path = paths.Length == 1 ? paths[0] : string.Empty;
-#endif
-
-            if (!string.IsNullOrWhiteSpace(path))
-            {
-                foreach (var container in containers)
-                {
-                    var txt = container.Export((i, x) =>
-                    {
-                        return $"{container.fileName}:{i}";
-                    });
-
-                    System.IO.File.WriteAllText($"{path.Replace('\\', '/')}/{container.fileName}", txt);
-                }
             }
         }
 

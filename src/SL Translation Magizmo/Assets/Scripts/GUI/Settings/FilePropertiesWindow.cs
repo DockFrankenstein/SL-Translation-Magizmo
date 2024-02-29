@@ -39,6 +39,8 @@ namespace Project.GUI.Settings
 
             _slVersion.RegisterValueChangedCallback(args =>
             {
+                if (root.style.display == DisplayStyle.None) return;
+
                 if (args.target != _slVersion) return;
 
                 if (_slVersion.index == 0)
