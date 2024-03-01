@@ -466,7 +466,9 @@ namespace Project.Translation.ImportAndExport
                 var item = new Item()
                 {
                     id = hierarchyItem.id,
-                    originalTranslation = string.Empty, //TODO: implement this when we start supporting previewing
+                    originalTranslation = manager.ComparisonManager.TryGetEntryData(hierarchyItem.id, out string content) ?
+                        content :
+                        string.Empty,
                 };
 
                 if (manager.File.Entries.TryGetValue(hierarchyItem.id, out var val))
