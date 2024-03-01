@@ -262,7 +262,7 @@ namespace qASIC.SettingsSystem
                     if (!UserPreferences.ContainsKey(optionName))
                         UserPreferences.Add(optionName, string.Empty);
 
-                    UserPreferences[optionName] = saveSetting;
+                    UserPreferences[optionName] = val;
                 }
                 catch { }
             }
