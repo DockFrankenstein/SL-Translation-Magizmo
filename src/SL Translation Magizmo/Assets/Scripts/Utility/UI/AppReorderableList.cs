@@ -41,7 +41,10 @@ namespace Project.UI
                 fields[e] = -1;
             };
 
-            List.itemsAdded += _ => OnChanged?.Invoke();
+            List.itemsAdded += _ =>
+            {
+                OnChanged?.Invoke();
+            };
             List.itemsRemoved += _ => OnChanged?.Invoke();
             List.itemIndexChanged += (_, _) => OnChanged?.Invoke();
         }

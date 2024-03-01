@@ -23,13 +23,15 @@ namespace Project
 
         public static string ToEntryContent(this IEnumerable<string> array)
         {
-            var last = array.LastOrDefault();
+            if (array.Count() == 0)
+                return string.Empty;
 
-            if (last != null)
-                array = array.SkipLast(1)
-                    .Append($"{last}\n");
+            var content = string.Join("\n", array);
 
-            return string.Join("\n", array);
+            if (string.IsNullOrEmpty(array.Last()))
+                content = $"{content}\n";
+
+            return content;
         }
 
         public static IEnumerable<string> SplitWithSplits(this IEnumerable<string> array, string split, StringSplitOptions splitOptions = StringSplitOptions.None) =>
