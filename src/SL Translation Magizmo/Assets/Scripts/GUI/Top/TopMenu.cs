@@ -41,14 +41,14 @@ namespace Project.GUI.Top
             button.clicked += Button_clicked;
             menu = new DropdownMenu();
             dropdown = new Dropdown(root);
-
-            CreateMenu();
         }
 
         protected abstract void CreateMenu();
 
         private void Button_clicked()
         {
+            menu.ClearItems();
+            CreateMenu();
             dropdown.Open(menu, button.worldBound);
         }
     }

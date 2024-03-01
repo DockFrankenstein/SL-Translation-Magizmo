@@ -1,5 +1,6 @@
 @import url("unity-theme://default");
 
-@import url("/Assets/UI/Global Style.uss");
+@import url("Styles/Global Style.uss");
+
 
 

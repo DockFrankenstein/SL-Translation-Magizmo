@@ -16,17 +16,6 @@ namespace Project.GUI.Top
 
         protected override string ButtonName => "file";
 
-        protected override void Awake()
-        {
-            base.Awake();
-
-            manager.OnRecentPathAdded += _ =>
-            {
-                menu.ClearItems();
-                CreateMenu();
-            };
-        }
-
         protected override void CreateMenu()
         {
             menu.AppendAction("Save", _ => manager.Save());

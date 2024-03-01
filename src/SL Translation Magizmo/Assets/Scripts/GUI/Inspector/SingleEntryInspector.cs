@@ -12,6 +12,7 @@ namespace Project.GUI.Inspector
             field.mappingContainer is MultiEntryTranslationMapping;
 
         TextField _contentField;
+        TextField _contentComparisonField;
 
         SaveFile.EntryData entry;
 
@@ -20,6 +21,7 @@ namespace Project.GUI.Inspector
             base.Awake();
 
             _contentField = Container.Q<TextField>("content");
+            _contentComparisonField = Container.Q<TextField>("content-comparison");
 
             _contentField.RegisterValueChangedCallback(args =>
             {
@@ -36,6 +38,20 @@ namespace Project.GUI.Inspector
 
             entry = inspector.SelectedObject as SaveFile.EntryData;
             _contentField.SetValueWithoutNotify(entry.content);
+
+            UpdateContentComparison();
+
+            manager.ComparisonManager.OnChangeCurrent += _ => UpdateContentComparison();
+        }
+
+        void UpdateContentComparison()
+        {
+            if (entry == null) return;
+
+            bool exists = manager.ComparisonManager.TryGetEntryData(entry.entryId, out string content);
+            _contentComparisonField.SetValueWithoutNotify(content);
+            _contentComparisonField.label = manager.ComparisonManager.CurrentTranslation?.displayName ?? string.Empty;
+            _contentComparisonField.ChangeDispaly(exists);
         }
 
         public override void Uninitialize()
@@ -43,6 +59,7 @@ namespace Project.GUI.Inspector
             base.Uninitialize();
 
             entry = null;
+            manager.ComparisonManager.OnChangeCurrent -= _ => UpdateContentComparison();
         }
     }
 }

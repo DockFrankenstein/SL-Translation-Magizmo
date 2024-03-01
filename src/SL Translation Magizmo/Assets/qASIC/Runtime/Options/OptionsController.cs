@@ -116,7 +116,7 @@ namespace qASIC.SettingsSystem
 
                     if (!string.IsNullOrWhiteSpace(attr.defaultValueMethodName) &&
                         TryGetValueOfMethodFromName(setting, attr.enableMethodName, out bool isEnabled) &&
-                        !isEnabled) return;
+                        !isEnabled) continue;
 
                     object defaultValue = attr.DefaultValue != null ? attr.DefaultValue.ToString() : null;
                     if (!string.IsNullOrWhiteSpace(attr.defaultValueMethodName) &&
@@ -303,7 +303,7 @@ namespace qASIC.SettingsSystem
 
             try
             {
-                MethodInfo defaultValueMethod = info.DeclaringType.GetMethod(methodName);
+                MethodInfo defaultValueMethod = info.DeclaringType.GetMethod(methodName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static);
                 obj = defaultValueMethod.Invoke(null, new object[0]);
             }
             catch

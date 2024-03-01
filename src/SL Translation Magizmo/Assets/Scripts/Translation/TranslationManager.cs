@@ -10,6 +10,7 @@ using System;
 using qASIC.Files;
 using System.Collections.Generic;
 using System.IO;
+using Project.Translation.Comparison;
 
 namespace Project.Translation
 {
@@ -25,9 +26,7 @@ namespace Project.Translation
         [SerializeField] ErrorWindow errorWindow;
 
         public SaveFile File { get; private set; } = null;
-        public int FileVersion { get; private set; }
         public string FilePath { get; private set; } = null;
-        TranslationFileUpdater _fileUpdater;
 
         [Label("Shortcuts")]
         [SerializeField] InputMapItemReference i_save;
@@ -42,6 +41,9 @@ namespace Project.Translation
 
         public List<string> RecentPaths { get; private set; }
         public event Action<string> OnRecentPathAdded;
+
+        public SaveFileSerializer Serializer { get; private set; }
+        public ComparisonTranslationManager ComparisonManager { get; private set; }
 
         public TranslationVersion CurrentVersion { get; private set; }
 
@@ -66,9 +68,11 @@ namespace Project.Translation
             foreach (var version in versions)
                 version.Initialize();
 
-            _fileUpdater = new TranslationFileUpdater(this);
+            Serializer = new SaveFileSerializer(this);
             CurrentVersion = GetNewestVersion();
             File = new SaveFile(CurrentVersion);
+
+            ComparisonManager = new ComparisonTranslationManager(this);
 
             LoadRecentsCache();
         }
@@ -145,9 +149,7 @@ namespace Project.Translation
 
             try
             {
-                var json = JsonUtility.ToJson(File, true);
-                var txt = $"{TranslationFileUpdater.CURRENT_FILE_VERSION}\n{json}";
-                System.IO.File.WriteAllText(FilePath, txt);
+                Serializer.Save(FilePath, File);
             }
             catch (Exception e)
             {
@@ -201,45 +203,55 @@ namespace Project.Translation
 
             try
             {
-                var txt = System.IO.File.ReadAllText(FilePath);
 
-                var lines = txt.SplitByLines();
-                var fileVersionString = lines.First();
-                var fileVersion = TranslationFileUpdater.CURRENT_FILE_VERSION;
 
-                if (int.TryParse(fileVersionString, out int newFileVersion))
-                {
-                    if (newFileVersion < TranslationFileUpdater.LOWEST_SUPPORTED_FILE_VERSION)
-                    {
-                        errorWindow.CreatePrompt("Load Error", $"This file has been saved in an older version ({newFileVersion}) that is no longer supported (lowest supported version: {TranslationFileUpdater.LOWEST_SUPPORTED_FILE_VERSION}).");
-                        return;
-                    }
+                //var txt = System.IO.File.ReadAllText(FilePath);
 
-                    if (newFileVersion > fileVersion)
-                    {
-                        errorWindow.CreatePrompt("Load Error", $"This file has been saved in a newer version ({newFileVersion}, current version: {TranslationFileUpdater.CURRENT_FILE_VERSION}). You have to update the application in order to load it.");
-                        return;
-                    }
+                //var lines = txt.SplitByLines();
+                //var fileVersionString = lines.First();
+                //var fileVersion = TranslationFileUpdater.CURRENT_FILE_VERSION;
 
-                    fileVersion = newFileVersion;
-                    txt = string.Join("\n", lines.Skip(1));
-                }
+                //if (int.TryParse(fileVersionString, out int newFileVersion))
+                //{
+                //    if (newFileVersion < TranslationFileUpdater.LOWEST_SUPPORTED_FILE_VERSION)
+                //    {
+                //        errorWindow.CreatePrompt("Load Error", $"This file has been saved in an older version ({newFileVersion}) that is no longer supported (lowest supported version: {TranslationFileUpdater.LOWEST_SUPPORTED_FILE_VERSION}).");
+                //        return;
+                //    }
 
-                var file = JsonUtility.FromJson<SaveFile>(txt);
-                _fileUpdater.EnsureFileIsUpToDate(file, fileVersion);
+                //    if (newFileVersion > fileVersion)
+                //    {
+                //        errorWindow.CreatePrompt("Load Error", $"This file has been saved in a newer version ({newFileVersion}, current version: {TranslationFileUpdater.CURRENT_FILE_VERSION}). You have to update the application in order to load it.");
+                //        return;
+                //    }
 
-                var slVer = GetSlVersion(file);
+                //    fileVersion = newFileVersion;
+                //    txt = string.Join("\n", lines.Skip(1));
+                //}
 
-                if (slVer == null)
-                {
-                    slVer = GetNewestVersion();
-                    errorWindow.CreatePrompt("Unsupported SL Version", $"This file is targetting an unsupported version of SCP: Secret Laboratory ({file.SlVersion}). Changed version to {slVer.version}");
-                }
+                //var file = JsonUtility.FromJson<SaveFile>(txt);
+                //_fileUpdater.EnsureFileIsUpToDate(file, fileVersion);
 
-                CurrentVersion = slVer;
+                //var slVer = GetSlVersion(file);
 
+                //if (slVer == null)
+                //{
+                //    slVer = GetNewestVersion();
+                //    errorWindow.CreatePrompt("Unsupported SL Version", $"This file is targetting an unsupported version of SCP: Secret Laboratory ({file.SlVersion}). Changed version to {slVer.version}");
+                //}
+
+                //CurrentVersion = slVer;
+
+                //File = file;
+                //FileVersion = fileVersion;
+
+                var file = Serializer.Load(path);
                 File = file;
-                FileVersion = fileVersion;
+            }
+            catch (SaveFileSerializer.SerializerException e)
+            {
+                errorWindow.CreatePrompt("Load Error", e.Message);
+                return;
             }
             catch (Exception e)
             {

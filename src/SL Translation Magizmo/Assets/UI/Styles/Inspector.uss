@@ -2,10 +2,51 @@
     border-bottom-color: rgb(35, 123, 42);
     border-bottom-width: 2px;
     margin-bottom: 4px;
-    -unity-font: url('project://database/Assets/Font/Roboto-Bold.ttf?fileID=12800000&guid=10540d6dda3fe684bafe7be21efa4ff7&type=3#Roboto-Bold');
+    -unity-font: url("project://database/Assets/Font/Roboto-Bold.ttf?fileID=12800000&guid=10540d6dda3fe684bafe7be21efa4ff7&type=3#Roboto-Bold");
     -unity-font-definition: initial;
     padding-left: 4px;
     padding-right: 4px;
     padding-top: 5px;
     padding-bottom: 4px;
+}
+
+.content-compare-content {
+    flex-direction: column;
+}
+
+.content-compare-content #unity-text-input {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 0;
+}
+
+.content-compare-content #unity-text-input > * {
+    font-size: 20px;
+    color: rgb(157, 157, 157);
+    white-space: normal;
+    max-width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.content-compare-content #unity-text-input > * * {
+    font-size: 20px;
+    color: rgb(157, 157, 157);
+    white-space: normal;
+    overflow: hidden;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.content-compare-content > Label {
+    color: rgb(157, 157, 157);
+    font-size: 20px;
+    margin-bottom: 0;
 }

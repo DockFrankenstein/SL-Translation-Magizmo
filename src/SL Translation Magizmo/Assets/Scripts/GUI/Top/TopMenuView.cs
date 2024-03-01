@@ -1,5 +1,7 @@
 ﻿using Project.GUI.Hierarchy;
+using Project.Translation.Data;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Project.GUI.Top
 {
@@ -20,6 +22,19 @@ namespace Project.GUI.Top
             {
                 hierarchy.CollapseAll();
             });
+
+            menu.AppendSeparator();
+
+            foreach (var item in manager.ComparisonManager.translations)
+            {
+                var status = manager.ComparisonManager.CurrentTranslation == item.Value ?
+                    DropdownMenuAction.Status.Checked :
+                    DropdownMenuAction.Status.Normal;
+
+                menu.AppendAction($"Translation Comparison/{item.Value.displayName}", 
+                    _ => manager.ComparisonManager.ChangeCurrent(item.Key),
+                    status);
+            }
         }
     }
 }
