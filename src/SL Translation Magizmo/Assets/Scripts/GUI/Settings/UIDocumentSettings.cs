@@ -4,6 +4,8 @@ using qASIC.SettingsSystem;
 using System.Collections.Generic;
 using System;
 using SFB;
+using System.Linq;
+using qASIC;
 
 namespace Project.GUI.Settings
 {
@@ -44,8 +46,12 @@ namespace Project.GUI.Settings
         public class Target<T> : Target
         {
             protected BaseField<T> element;
-
             public override Type ValueType => typeof(T);
+
+            [Header("Apply On")]
+            [InspectorLabel("Changed")] public bool applyOnChanged = true;
+            [InspectorLabel("Mouse Up")] public bool applyOnMouseUp;
+            [InspectorLabel("Focus Out")] public bool applyOnFocusOut;
 
             internal override void Initialize(VisualElement root)
             {
@@ -55,8 +61,26 @@ namespace Project.GUI.Settings
 
                 element.RegisterValueChangedCallback(args =>
                 {
-                    OptionsController.ChangeOption(targetOption, element.value);
+                    if (applyOnChanged)
+                        Apply();
                 });
+
+                element.RegisterCallback<MouseCaptureOutEvent>(args =>
+                {
+                    if (applyOnMouseUp)
+                        Apply();
+                });
+
+                element.RegisterCallback<FocusOutEvent>(args =>
+                {
+                    if (applyOnFocusOut)
+                        Apply();
+                });
+            }
+
+            protected void Apply()
+            {
+                OptionsController.ChangeOption(targetOption, element.value);
             }
         }
 
@@ -67,6 +91,7 @@ namespace Project.GUI.Settings
         [Serializable]
         public class PathTarget : Target<string>
         {
+            [Header("Path")]
             public string openButtonName;
 
             Button _openButton;

@@ -78,7 +78,7 @@
     color: rgb(255, 255, 255);
 }
 
-.unity-text-field__input {
+.unity-base-field > #unity-text-input {
     background-color: rgb(33, 33, 33);
     color: rgb(255, 255, 255);
     border-left-color: rgb(13, 13, 13);
@@ -803,6 +803,7 @@ Foldout Toggle:checked .unity-toggle__checkmark {
     white-space: nowrap;
     width: 300px;
     background-color: rgb(255, 255, 255);
+    min-height: 35px;
 }
 
 .grid-row {
@@ -814,6 +815,8 @@ Foldout Toggle:checked .unity-toggle__checkmark {
     width: auto;
     min-width: auto;
     max-width: none;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 .grid-column-name {
@@ -1033,4 +1036,45 @@ PopupButton #popup-button-arrow {
 .unity-list-view__reorderable-handle-bar {
     height: 2px;
     margin: 2px;
+}
+
+Slider {
+    height: 35px;
+    min-height: auto;
+}
+
+Slider #unity-drag-container {
+    min-height: auto;
+    align-self: auto;
+    justify-content: center;
+}
+
+Slider #unity-tracker {
+    min-height: auto;
+    align-self: auto;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: auto;
+    left: 0;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    height: 10px;
+    bottom: auto;
+}
+
+Slider #unity-dragger {
+    min-width: 30px;
+}
+
+Slider > .unity-base-field__input {
+    align-self: center;
+}
+
+Slider > .unity-base-field__input > #unity-text-field {
+    align-self: center;
+    height: 40px;
+    width: 80px;
 }

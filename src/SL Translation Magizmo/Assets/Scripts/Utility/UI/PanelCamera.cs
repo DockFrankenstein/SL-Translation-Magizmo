@@ -18,16 +18,16 @@ namespace Project.UI
         }
 
         public Camera Cam => cam;
-        public RawImage TargetImage => targetImage.Image;
+        public RawImage TargetRawImage => targetImage.Image;
 
         public RenderTexture Texture { get; private set; }
         public bool InFocus { get; private set; }
 
-        private void Update()
+        Vector2 prevSize;
+
+        private void LateUpdate()
         {
-            if (Texture == null ||
-                Texture.width != TargetImage.rectTransform.rect.width ||
-                Texture.height != TargetImage.rectTransform.rect.height)
+            if (prevSize != targetImage.Size)
                 ResizeRenderTexture();
 
             cam.Render();
@@ -37,15 +37,15 @@ namespace Project.UI
 
         public void ResizeRenderTexture()
         {
-            var size = TargetImage.rectTransform.rect.size;
-            Texture = new RenderTexture(Mathf.Max(1, (int)size.x), Mathf.Max(1, (int)size.y), 16);
-            TargetImage.texture = Texture;
+            prevSize = targetImage.Size;
+            Texture = new RenderTexture(Mathf.Max(1, (int)targetImage.Size.x), Mathf.Max(1, (int)targetImage.Size.y), 16);
+            TargetRawImage.texture = Texture;
             cam.targetTexture = Texture;
         }
 
         private void CheckForFocus()
         {
-            var rectTrans = TargetImage.rectTransform;
+            var rectTrans = TargetRawImage.rectTransform;
             Vector2 mousePos = rectTrans.InverseTransformPoint(Input.mousePosition);
 
             var list = new List<RaycastResult>();
@@ -55,7 +55,7 @@ namespace Project.UI
             }, list);
 
             InFocus = targetImage.IsFocused =
-                list.Where(x => !(x.module is PanelCameraRaycaster)).FirstOrDefault().gameObject == TargetImage.gameObject;
+                list.Where(x => !(x.module is PanelCameraRaycaster)).FirstOrDefault().gameObject == TargetRawImage.gameObject;
         }
     }
 }

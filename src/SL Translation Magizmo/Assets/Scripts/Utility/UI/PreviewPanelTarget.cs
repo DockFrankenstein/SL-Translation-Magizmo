@@ -8,5 +8,6 @@ namespace Project.UI
     {
         public RawImage Image { get; set; }
         public bool IsFocused { get; set; }
+        public Vector2 Size { get; set; }
     }
 }

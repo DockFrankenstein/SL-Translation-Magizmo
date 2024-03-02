@@ -7,10 +7,15 @@
                 <ui:VisualElement style="position: absolute; width: 35px; height: 35px; background-image: url(&quot;project://database/Assets/Sprites/UI/sltm%20arrow.png?fileID=2800000&amp;guid=dbe03015a912f3741a56734140e149e2&amp;type=3#sltm arrow&quot;); rotate: 90deg; left: 4px; translate: 0 -2px; -unity-background-image-tint-color: rgb(51, 51, 51);" />
                 <ui:VisualElement style="position: absolute; width: 35px; height: 35px; background-image: url(&quot;project://database/Assets/Sprites/UI/sltm%20arrow.png?fileID=2800000&amp;guid=dbe03015a912f3741a56734140e149e2&amp;type=3#sltm arrow&quot;); rotate: 90deg; right: 4px; translate: 0 -2px; -unity-background-image-tint-color: rgb(51, 51, 51);" />
             </ui:Button>
-            <ui:RadioButtonGroup value="0" choices="Hierarchy,Translation Comparison,Other" name="menu-selection" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+            <ui:RadioButtonGroup value="0" choices="Apperance,Translation Comparison" name="menu-selection" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
         </ui:VisualElement>
         <ui:ScrollView name="content-scroll" style="flex-basis: 100%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;">
-            <ui:VisualElement name="panel-path">
+            <ui:VisualElement name="panel-apperance">
+                <ui:Label text="Apperance" display-tooltip-when-elided="true" class="header" />
+                <ui:Slider label="UI Scale Factor" high-value="3" low-value="0.2" show-input-field="true" name="ui-scale-factor" style="min-height: auto; height: 35px;" />
+                <ui:Toggle label="Collapse By Default" name="hierarchy-collapse-by-default" />
+            </ui:VisualElement>
+            <ui:VisualElement name="panel-comparison">
                 <ui:Label text="Translation Comparison" display-tooltip-when-elided="true" class="header" />
                 <ui:TextField picking-mode="Ignore" label="SL Translations Path" name="translation-path">
                     <ui:Button display-tooltip-when-elided="true" name="translation-path-open" class="file-path-open">
@@ -23,13 +28,6 @@
                         <ui:VisualElement />
                     </ui:Button>
                 </ui:TextField>
-            </ui:VisualElement>
-            <ui:VisualElement name="panel-other">
-                <ui:Label text="Other Settings" display-tooltip-when-elided="true" class="header" />
-            </ui:VisualElement>
-            <ui:VisualElement name="panel-hierarchy">
-                <ui:Label text="Hierarchy" display-tooltip-when-elided="true" class="header" />
-                <ui:Toggle label="Collapse By Default" name="hierarchy-collapse-by-default" />
             </ui:VisualElement>
         </ui:ScrollView>
     </ui:VisualElement>
