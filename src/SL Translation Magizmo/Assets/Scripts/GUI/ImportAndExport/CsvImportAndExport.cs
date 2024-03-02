@@ -19,6 +19,8 @@ namespace Project.Translation.ImportAndExport
     public class CsvImportAndExport : ImportAndExportBase, IImporter, IExporter
     {
         const string IGNORE_NEXT_CONTENT = "###";
+        const string ID_COLUMN_ID = "id";
+        const string VALUE_COLUMN_ID = "value";
 
         public enum ColumnOrder
         {
@@ -58,6 +60,7 @@ namespace Project.Translation.ImportAndExport
         ScrollView _importPreview;
 
         string _importFileTxt;
+        bool _ignoreFirstTableRow;
         Table2D _currentImportTable;
         ErrorWindow.Prompt _importError;
 
@@ -231,7 +234,7 @@ namespace Project.Translation.ImportAndExport
                 }
 
                 bool _ignoreNext = false;
-                for (int i = 0; i < _currentImportTable.RowsCount; i++)
+                for (int i = _ignoreFirstTableRow ? 1 : 0; i < _currentImportTable.RowsCount; i++)
                 {
                     var id = _currentImportTable.GetCell(_importIdColumn.index, i);
                     var value = _currentImportTable.GetCell(_importValueColumn.index, i);
@@ -286,9 +289,22 @@ namespace Project.Translation.ImportAndExport
 
                 Import();
 
-
-
                 UpdatePreview();
+
+                for (int i = 0; i < _currentImportTable.ColumnsCount; i++)
+                {
+                    var content = _currentImportTable.GetCell(i, 0);
+
+                    switch (content)
+                    {
+                        case ID_COLUMN_ID:
+                            _importIdColumn.index = i;
+                            break;
+                        case VALUE_COLUMN_ID:
+                            _importValueColumn.index = i;
+                            break;
+                    }
+                }
             });
 
             _importPathOpen.clicked += () =>
@@ -398,7 +414,7 @@ namespace Project.Translation.ImportAndExport
                 {
                     items = new List<Item>()
                     {
-                        new Item("id", "value"),
+                        new Item(ID_COLUMN_ID, VALUE_COLUMN_ID),
                         new Item(),
                     },
                 }
