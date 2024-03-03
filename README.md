@@ -1,4 +1,6 @@
-![Discord](https://img.shields.io/badge/Join-Discord?style=flat-square&logo=discord&label=Discord&labelColor=gray&color=purple&link=https%3A%2F%2Fdiscord.gg%2Ffs3SBprvbA)
+![Full logo](/docs/static/logos/full-background.svg)
+
+[![Discord](https://img.shields.io/badge/Join-Discord?style=flat-square&logo=discord&label=Discord&labelColor=gray&color=purple&link=https%3A%2F%2Fdiscord.gg%2Ffs3SBprvbA)](https://discord.gg/fs3SBprvbA)
 
 Tool for creating translations for [SCP: Secret Laboratory](https://store.steampowered.com/app/700330/SCP_Secret_Laboratory/).
 
