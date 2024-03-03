@@ -30,7 +30,7 @@ namespace Project.GUI.Preview
         public void UpdateScene()
         {
             foreach (var entry in entries)
-                entry.UpdateContent();
+                entry.Reload();
 
             LayoutGroupController.Refresh();
         }

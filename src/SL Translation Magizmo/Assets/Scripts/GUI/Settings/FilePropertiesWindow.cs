@@ -34,6 +34,7 @@ namespace Project.GUI.Settings
 
             _slVersion.choices = manager.versions
                 .Select(x => x.version.ToString())
+                .Reverse()
                 .Prepend("Newest")
                 .ToList();
 
@@ -52,7 +53,7 @@ namespace Project.GUI.Settings
                     return;
                 }
 
-                var ver = manager.versions[_slVersion.index - 1];
+                var ver = manager.versions[manager.versions.Length - _slVersion.index];
 
                 manager.File.UseNewestSlVersion = false;
                 manager.File.SlVersion = ver.version;

@@ -1,6 +1,6 @@
 {
     "version": {
-        "instanceID": 21892
+        "instanceID": 22166
     },
     "items": [
         {
@@ -1775,7 +1775,7 @@
         },
         {
             "type": 0,
-            "id": "menu_server_create",
+            "id": "menu_server_rent",
             "displayText": "Menu Server Create",
             "guid": "80ef2246-be65-4256-b855-2d7db1ec255f"
         },

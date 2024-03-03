@@ -15,7 +15,7 @@ namespace Project.GUI.Inspector
             {
                 name = manager.CurrentVersion.MappedFields.TryGetValue(entry.entryId, out MappedField field) ?
                     field.GetFinalName() :
-                    field.id;
+                    entry.entryId;
 
                 return true;
             }

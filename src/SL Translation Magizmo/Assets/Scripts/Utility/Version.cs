@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Project
 {
     [Serializable]
-    public struct Version
+    public struct Version : IComparable<Version>
     {
         public Version(params uint[] releases)
         {
@@ -53,7 +53,7 @@ namespace Project
             a < b || a == b;
 
         public static bool operator ==(Version a, Version b) =>
-            a.Equals(null) == b.Equals(null) ||
+            (a.Equals(null) && b.Equals(null)) ||
                 Enumerable.SequenceEqual(a.releases, b.releases);
 
         public static bool operator !=(Version a, Version b) =>
@@ -89,6 +89,17 @@ namespace Project
 
             version = new Version(releases);
             return true;
+        }
+
+        public int CompareTo(Version other)
+        {
+            if (this < other)
+                return -1;
+
+            if (this > other)
+                return 1;
+
+            return 0;
         }
     }
 }

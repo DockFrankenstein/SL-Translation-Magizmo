@@ -46,10 +46,10 @@ namespace Project.GUI.Preview
             if (multiEntryPanel != null)
                 multiEntryPanel.SetActive(otherIds.Length > 0);
 
-            UpdateContent();
+            Reload();
         }
 
-        public void UpdateContent()
+        public void Reload()
         {
             if (text == null || manager == null) return;
 
@@ -79,7 +79,7 @@ namespace Project.GUI.Preview
                 .FirstOrDefault();
 
             selectedIndex = Array.IndexOf(otherIds, target) + 1;
-            UpdateContent();
+            Reload();
         }
 
         public void ChangeTargetBy(int moveAmount = 1)
@@ -92,7 +92,7 @@ namespace Project.GUI.Preview
             while (selectedIndex >= otherIds.Length + 1)
                 selectedIndex -= otherIds.Length + 1;
 
-            UpdateContent();
+            Reload();
         }
     }
 }

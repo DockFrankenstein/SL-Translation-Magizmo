@@ -16,6 +16,12 @@ namespace Project.GUI.Hierarchy
             {
                 Hierarchy.Refresh();
             });
+
+            manager.OnCurrentVersionChanged += _ =>
+            {
+                if (!manager.IsLoading)
+                    Hierarchy.Refresh();
+            };
         }
 
         public MappingLayout GetCurrentLayout()
@@ -23,12 +29,13 @@ namespace Project.GUI.Hierarchy
             MappingLayout layout = mappingLayouts.FirstOrDefault();
             foreach (var item in mappingLayouts)
             {
-                if (item.version.version > layout.version.version)
+                if (item.version.version > manager.CurrentVersion.version)
                     break;
 
                 layout = item;
             }
 
+            Debug.Log($"Selected hierarchy layout for {layout.version.version}");
             return layout;
         }
 

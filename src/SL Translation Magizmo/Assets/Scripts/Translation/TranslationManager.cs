@@ -45,7 +45,21 @@ namespace Project.Translation
         public SaveFileSerializer Serializer { get; private set; }
         public ComparisonTranslationManager ComparisonManager { get; private set; }
 
-        public TranslationVersion CurrentVersion { get; private set; }
+        TranslationVersion _currentVersion;
+        public TranslationVersion CurrentVersion 
+        {
+            get => _currentVersion;
+            private set
+            {
+                if (_currentVersion == value) return;
+
+                _currentVersion = value;
+                OnCurrentVersionChanged?.Invoke(value);
+            }
+        }
+        public event Action<TranslationVersion> OnCurrentVersionChanged;
+
+        public bool IsLoading { get; private set; }
 
         public TranslationVersion GetVersion(Version version) =>
             versions
@@ -199,54 +213,15 @@ namespace Project.Translation
 
         public void Open(string path)
         {
+            IsLoading = true;
             FilePath = path;
 
             try
             {
-
-
-                //var txt = System.IO.File.ReadAllText(FilePath);
-
-                //var lines = txt.SplitByLines();
-                //var fileVersionString = lines.First();
-                //var fileVersion = TranslationFileUpdater.CURRENT_FILE_VERSION;
-
-                //if (int.TryParse(fileVersionString, out int newFileVersion))
-                //{
-                //    if (newFileVersion < TranslationFileUpdater.LOWEST_SUPPORTED_FILE_VERSION)
-                //    {
-                //        errorWindow.CreatePrompt("Load Error", $"This file has been saved in an older version ({newFileVersion}) that is no longer supported (lowest supported version: {TranslationFileUpdater.LOWEST_SUPPORTED_FILE_VERSION}).");
-                //        return;
-                //    }
-
-                //    if (newFileVersion > fileVersion)
-                //    {
-                //        errorWindow.CreatePrompt("Load Error", $"This file has been saved in a newer version ({newFileVersion}, current version: {TranslationFileUpdater.CURRENT_FILE_VERSION}). You have to update the application in order to load it.");
-                //        return;
-                //    }
-
-                //    fileVersion = newFileVersion;
-                //    txt = string.Join("\n", lines.Skip(1));
-                //}
-
-                //var file = JsonUtility.FromJson<SaveFile>(txt);
-                //_fileUpdater.EnsureFileIsUpToDate(file, fileVersion);
-
-                //var slVer = GetSlVersion(file);
-
-                //if (slVer == null)
-                //{
-                //    slVer = GetNewestVersion();
-                //    errorWindow.CreatePrompt("Unsupported SL Version", $"This file is targetting an unsupported version of SCP: Secret Laboratory ({file.SlVersion}). Changed version to {slVer.version}");
-                //}
-
-                //CurrentVersion = slVer;
-
-                //File = file;
-                //FileVersion = fileVersion;
-
                 var file = Serializer.Load(path);
+
                 File = file;
+                LoadCurrentVersionFromFile();
             }
             catch (SaveFileSerializer.SerializerException e)
             {
@@ -259,6 +234,7 @@ namespace Project.Translation
                 return;
             }
 
+            IsLoading = false;
             OnLoad.Invoke();
             MarkFileDirty(this);
             AddPathToRecents(FilePath);

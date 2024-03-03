@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 namespace Project.GUI.Preview
@@ -15,7 +16,8 @@ namespace Project.GUI.Preview
     public class SceneDropdownToolkit : MonoBehaviour
     {
         [SerializeField] UIDocument document;
-        [SerializeField] PreviewSceneManager sceneManager;
+        [FormerlySerializedAs("sceneManager")]
+        [SerializeField] PreviewManager preview;
 
         PopupButton _popupButton;
         Button _backButton;
@@ -57,14 +59,14 @@ namespace Project.GUI.Preview
 
         void Reload()
         {
-            _popupButton.text = PUtility.GenerateDisplayName(sceneManager.CurrentScene.path.Split('/').Last());
+            _popupButton.text = PUtility.GenerateDisplayName(preview.CurrentVersion.CurrentScene.path.Split('/').Last());
 
             while (_items.Count > 0)
                 RemoveItem(_items[0]);
 
             _backButton.visible = !string.IsNullOrEmpty(Path);
 
-            var directories = sceneManager.scenes
+            var directories = preview.CurrentVersion.scenes
                 .Select(x => x.path)
                 .Where(x => x.StartsWith(Path))
                 .Select(x => x.Substring(Path.Length, x.Length - Path.Length))
@@ -91,7 +93,7 @@ namespace Project.GUI.Preview
 
         void ChangePath(string newPath)
         {
-            var scenes = sceneManager.scenes
+            var scenes = preview.CurrentVersion.scenes
                 .Where(x => x.path.StartsWith(newPath));
 
             var isDirection = true;
@@ -112,7 +114,7 @@ namespace Project.GUI.Preview
             }
 
             var scene = scenes.First();
-            sceneManager.SelectScene(scene);
+            preview.CurrentVersion.SelectScene(scene);
             _popupButton.ChangeOpenedState(false);
         }
 

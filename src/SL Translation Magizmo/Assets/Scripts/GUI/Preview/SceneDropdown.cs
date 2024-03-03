@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.Serialization;
 
 namespace Project.GUI.Preview
 {
     public class SceneDropdown : MonoBehaviour
     {
-        [SerializeField] PreviewSceneManager sceneManager;
+        [FormerlySerializedAs("sceneManager")]
+        [SerializeField] PreviewManager preview;
         [SerializeField] SceneDropdownItem backButton;
         [SerializeField] Transform itemParent;
         [SerializeField] SceneDropdownItem template;
@@ -44,7 +46,7 @@ namespace Project.GUI.Preview
 
             backButton.gameObject.SetActive(!string.IsNullOrEmpty(currentPath));
 
-            var directories = sceneManager.scenes
+            var directories = preview.CurrentVersion.scenes
                 .Select(x => x.path)
                 .Where(x => x.StartsWith(currentPath))
                 .Select(x => x.Substring(currentPath.Length, x.Length - currentPath.Length))
@@ -67,7 +69,7 @@ namespace Project.GUI.Preview
                 item.path :
                 $"{currentPath}/{item.path}";
 
-            var scenes = sceneManager.scenes
+            var scenes = preview.CurrentVersion.scenes
                 .Where(x => x.path.StartsWith(newPath));
 
             var isDirection = true;
@@ -89,7 +91,7 @@ namespace Project.GUI.Preview
 
             //Button leads to the scene
             var scene = scenes.First();
-            sceneManager.SelectScene(scene);
+            preview.CurrentVersion.SelectScene(scene);
             ToggleFoldout(false);
         }
 

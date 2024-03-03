@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   translationVersions:
   - {fileID: 11400000, guid: b1c1112d38a6768459dc9917e0d022c9, type: 2}
+  - {fileID: 11400000, guid: 81f2a7716ca4794458f1f0d7d4bc88d3, type: 2}

@@ -1,9 +1,9 @@
 using Project.Translation;
 using UnityEngine;
-using qASIC;
 using Project.GUI.Preview;
 using Project.GUI.Hierarchy;
 using UnityEngine.UIElements;
+using UnityEngine.Serialization;
 
 namespace Project.GUI.Inspector
 {
@@ -16,7 +16,8 @@ namespace Project.GUI.Inspector
         public HierarchyController hierarchy;
         public InspectorDisplayPanel[] inspectors;
         public InspectorNameProvider[] nameProviders;
-        public PreviewSceneManager previewSceneManager;
+        [FormerlySerializedAs("previewSceneManager")]
+        public PreviewManager preview;
 
         IApplicationObject _selectedObject;
         public IApplicationObject SelectedObject 
@@ -67,7 +68,7 @@ namespace Project.GUI.Inspector
         {
             var appFile = manager.File;
             if (appFile != null)
-                previewSceneManager.ReloadActiveScenes();
+                preview.CurrentVersion?.Reload();
         }
 
         public void ReloadInspector()
