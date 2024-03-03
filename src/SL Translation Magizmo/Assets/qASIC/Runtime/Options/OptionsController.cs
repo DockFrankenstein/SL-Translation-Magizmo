@@ -270,10 +270,10 @@ namespace qASIC.SettingsSystem
             DisposeTemp();
 
             if (log)
-                LogChangeOption(optionName, value.ToString(), targetsCount);
+                LogChangeOption(optionName, value?.ToString() ?? "NULL", targetsCount);
 
             if (save)
-                SaveSetting(optionName, value.ToString());
+                SaveSetting(optionName, value?.ToString() ?? "NULL");
 
             return targetsCount;
         }

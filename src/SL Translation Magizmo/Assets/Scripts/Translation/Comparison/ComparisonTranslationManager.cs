@@ -43,7 +43,7 @@ namespace Project.Translation.Comparison
         #region Settings
         static Action OnSettingsChanged;
 
-        static bool Sett_UseCache { get; set; }
+        static bool Sett_UseCache { get; set; } = true;
 
         [OptionsSetting("comparison_use_cache", true)]
         static void SettM_UseCache(bool val)
@@ -52,7 +52,7 @@ namespace Project.Translation.Comparison
             OnSettingsChanged?.Invoke();
         }
 
-        static string Sett_CurrentName { get; set; }
+        static string Sett_CurrentName { get; set; } = string.Empty;
 
         [OptionsSetting("comparison_name", true)]
         static void SettM_CurrentName(string val)

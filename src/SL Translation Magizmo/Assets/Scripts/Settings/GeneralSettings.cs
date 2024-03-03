@@ -7,7 +7,7 @@ namespace Project.Settings
     {
         public const string DEFAULT_TRANSLATION_PATH = @"C:\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory\Translations";
 
-        public static string TranslationPath { get; set; }
+        public static string TranslationPath { get; set; } = GetDefaultTranslationPath();
 
         [OptionsSetting("translation_path", defaultValueMethodName = nameof(GetDefaultTranslationPath))]
         static void HandleTranslationPath(string newValue)
