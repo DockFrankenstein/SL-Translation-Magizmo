@@ -27,7 +27,7 @@ namespace Project.GUI.Preview
         }
 
         /// <summary>Updates entries and other items.</summary>
-        public void UpdateScene()
+        public void Reload()
         {
             foreach (var entry in entries)
                 entry.Reload();
@@ -37,7 +37,7 @@ namespace Project.GUI.Preview
 
         private void OnEnable()
         {
-            UpdateScene();
+            Reload();
         }
 
 #if UNITY_EDITOR

@@ -53,9 +53,7 @@ namespace Project.GUI.Preview
         public void Reload()
         {
             if (CurrentScene == null) return;
-
-            foreach (var item in CurrentScene.entries)
-                item.Reload();
+            CurrentScene.Reload();
         }
 
         public void SelectScene(string path)
