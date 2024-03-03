@@ -77,7 +77,7 @@ namespace Project.GUI.Settings
         {
             _slVersion.index = manager.File.UseNewestSlVersion ?
                 0 :
-                Array.IndexOf(manager.versions, manager.CurrentVersion) + 1;
+                manager.versions.Length - Array.IndexOf(manager.versions, manager.CurrentVersion);
         }
 
         public void Open()
