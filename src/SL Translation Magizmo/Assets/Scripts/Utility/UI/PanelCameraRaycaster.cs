@@ -13,11 +13,12 @@ namespace Project.UI
 
         public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList)
         {
-            var imageSize = targetPanel.Image.rectTransform.rect.size;
+            var imageSize = targetPanel.Size;
 
             var clickPosition = eventData.position;
 
             RectTransformUtility.ScreenPointToLocalPointInRectangle(targetPanel.Image.rectTransform, clickPosition, null, out var pos);
+            pos *= targetPanel.ScaleFactor;
             pos += imageSize / 2f;
 
             var oldPos = eventData.position;

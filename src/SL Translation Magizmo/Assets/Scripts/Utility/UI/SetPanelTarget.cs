@@ -16,7 +16,8 @@ namespace Project.UI
 
         private void Update()
         {
-            target.Size = panel.rectTransform.rect.size * (scaler?.scaleFactor ?? 1f);
+            target.ScaleFactor = scaler?.scaleFactor ?? 1f;
+            target.Size = panel.rectTransform.rect.size * target.ScaleFactor;
         }
     }
 }
