@@ -2,7 +2,7 @@
     "fileName": "Intercom.txt",
     "identificationType": 0,
     "useSeparationCharacter": false,
-    "separationCharacter": 0,
+    "separationCharacter": 126,
     "lines": [
         {
             "lineId": "",

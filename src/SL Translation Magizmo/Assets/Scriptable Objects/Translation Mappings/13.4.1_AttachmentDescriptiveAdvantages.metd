@@ -2,7 +2,7 @@
     "fileName": "AttachmentDescriptiveAdvantages.txt",
     "identificationType": 0,
     "useSeparationCharacter": false,
-    "separationCharacter": 0,
+    "separationCharacter": 126,
     "lines": [
         {
             "lineId": "",
@@ -13,6 +13,7 @@
                     "autoDisplayName": false,
                     "displayName": "Light Source Perk",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "19e856d6-1fed-4049-bc43-c788965df5f5"
                 }
             ]
@@ -26,6 +27,7 @@
                     "autoDisplayName": false,
                     "displayName": "Ammo Counter Perk",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "83a53f07-d115-4578-8e3a-10bf27fc5f5e"
                 }
             ]
@@ -39,6 +41,7 @@
                     "autoDisplayName": false,
                     "displayName": "Flash Supression Perk",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "c9780df8-0154-4620-8165-45bbe2b3f398"
                 }
             ]
@@ -52,6 +55,7 @@
                     "autoDisplayName": false,
                     "displayName": "Night Vision Perk",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9fe0a902-ad95-45f5-8cbb-8c43781e9ce7"
                 }
             ]

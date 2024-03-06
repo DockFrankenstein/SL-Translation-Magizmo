@@ -2,7 +2,7 @@
     "fileName": "AttachmentParameters.txt",
     "identificationType": 0,
     "useSeparationCharacter": false,
-    "separationCharacter": 0,
+    "separationCharacter": 126,
     "lines": [
         {
             "lineId": "",
@@ -13,6 +13,7 @@
                     "autoDisplayName": false,
                     "displayName": "ADS",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "38b22b72-bef1-4ecf-b6f0-7573f633aba0"
                 }
             ]
@@ -26,6 +27,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f6d0c1df-d4d3-4a8b-90a6-fcabfb7e5e17"
                 }
             ]
@@ -39,6 +41,7 @@
                     "autoDisplayName": false,
                     "displayName": "Damage",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d1766874-f456-43f1-95b6-cda1068f2c70"
                 }
             ]
@@ -52,6 +55,7 @@
                     "autoDisplayName": false,
                     "displayName": "Penetration",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ab589677-150e-41d3-b8e4-14eeb2f6259f"
                 }
             ]
@@ -65,6 +69,7 @@
                     "autoDisplayName": false,
                     "displayName": "Fire Rate",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0c4b6559-18f5-464f-83d7-fe6bce02f1e8"
                 }
             ]
@@ -78,6 +83,7 @@
                     "autoDisplayName": false,
                     "displayName": "Recoil",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "8d990f61-d20a-4795-8dd9-886112abd8e9"
                 }
             ]
@@ -91,6 +97,7 @@
                     "autoDisplayName": false,
                     "displayName": "Recoilt Ads",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "588f6b67-ab2f-4934-baf5-a291c594f54c"
                 }
             ]
@@ -104,6 +111,7 @@
                     "autoDisplayName": false,
                     "displayName": "Accuracy",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f4dee2e2-8db1-4414-8a0f-635c7c15cf0e"
                 }
             ]
@@ -117,6 +125,7 @@
                     "autoDisplayName": false,
                     "displayName": "Accuracy Hip Fire",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b583bb50-39ea-4adf-9f83-eb33407c7450"
                 }
             ]
@@ -130,6 +139,7 @@
                     "autoDisplayName": false,
                     "displayName": "Accuracy Ads",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "aae52d6a-ae0a-4bd9-97b2-2eace50f40b2"
                 }
             ]
@@ -143,6 +153,7 @@
                     "autoDisplayName": false,
                     "displayName": "Equip Time",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "4d8d4b48-4a2a-4c6f-b6cd-aeee9a78b6c2"
                 }
             ]
@@ -156,6 +167,7 @@
                     "autoDisplayName": false,
                     "displayName": "Gunshot Loudness",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "661c6f36-4a50-4044-8b83-31207302b0b4"
                 }
             ]
@@ -169,6 +181,7 @@
                     "autoDisplayName": false,
                     "displayName": "Magazine Capacity",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e99bcd26-be01-430a-ade2-2e973302d905"
                 }
             ]
@@ -182,6 +195,7 @@
                     "autoDisplayName": false,
                     "displayName": "Equip Time",
                     "addToList": false,
+                    "dynamicValues": [],
                     "guid": "65ce1e29-6462-4883-8e14-a3ab532c9401"
                 }
             ]
@@ -195,6 +209,7 @@
                     "autoDisplayName": false,
                     "displayName": "Reload Time",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "28f0a31e-efe8-4431-8f08-0c1ef1657368"
                 }
             ]
@@ -208,6 +223,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "f6bf5965-de6b-45a0-92dc-b56489dc8de6"
                 }
             ]
@@ -221,6 +237,7 @@
                     "autoDisplayName": false,
                     "displayName": "Ads Speed",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cbff1e73-9a39-4e21-97bd-990dd2a7a37e"
                 }
             ]
@@ -234,6 +251,7 @@
                     "autoDisplayName": false,
                     "displayName": "Pellet Spread",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "da6c877e-fe1b-4043-a24a-bb084c9916c6"
                 }
             ]
@@ -247,6 +265,7 @@
                     "autoDisplayName": false,
                     "displayName": "Pattern Consistency",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e8fc4504-11ba-4c06-8c03-b225a9e15f08"
                 }
             ]
@@ -260,6 +279,7 @@
                     "autoDisplayName": false,
                     "displayName": "Projectiles Count",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cb4a60ac-8cfd-4ebe-ba43-1dc8ce547140"
                 }
             ]
@@ -273,6 +293,7 @@
                     "autoDisplayName": false,
                     "displayName": "Reload Speed",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "dbf2b9d7-c5c9-4470-a0e6-9feaa8360589"
                 }
             ]
@@ -286,6 +307,7 @@
                     "autoDisplayName": false,
                     "displayName": "Running Accuracy",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6be0a51e-e3e4-4051-856d-cd95ce2c9334"
                 }
             ]

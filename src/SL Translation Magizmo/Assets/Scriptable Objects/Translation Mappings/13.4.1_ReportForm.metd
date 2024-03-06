@@ -2,7 +2,7 @@
     "fileName": "ReportForm.txt",
     "identificationType": 0,
     "useSeparationCharacter": false,
-    "separationCharacter": 0,
+    "separationCharacter": 126,
     "lines": [
         {
             "lineId": "",
@@ -13,15 +13,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "ae653ffd-f393-4a91-926b-43f84334dcd8"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "report_header",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ae653ffd-f393-4a91-926b-43f84334dcd8"
                 }
             ]
@@ -35,15 +27,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "ff18cc5a-22c8-4096-80b2-f4b60de959c4"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "report_details",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "ff18cc5a-22c8-4096-80b2-f4b60de959c4"
                 }
             ]
@@ -57,15 +41,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "3bcb19f6-f1c9-45db-ab83-f8c16f342b5a"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "report_cancel",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "3bcb19f6-f1c9-45db-ab83-f8c16f342b5a"
                 }
             ]
@@ -79,15 +55,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "efe7e714-6d5d-40dc-99e9-ab058d81468d"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "report_confirm_server",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "efe7e714-6d5d-40dc-99e9-ab058d81468d"
                 }
             ]
@@ -101,15 +69,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "0851bad1-9f06-46d4-83db-85183b653a83"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "report_confirm_cheating",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0851bad1-9f06-46d4-83db-85183b653a83"
                 }
             ]
@@ -123,15 +83,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "13092f40-fe50-46a6-806d-a50de41b7001"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "report_reporting",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "13092f40-fe50-46a6-806d-a50de41b7001"
                 }
             ]
@@ -145,15 +97,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
-                    "guid": "483e0d20-76c6-4c4a-9d77-cef271f10d47"
-                }
-            ],
-            "defines": [
-                {
-                    "id": "report_wait",
-                    "autoDisplayName": true,
-                    "displayName": "",
-                    "addToList": true,
+                    "dynamicValues": [],
                     "guid": "483e0d20-76c6-4c4a-9d77-cef271f10d47"
                 }
             ]

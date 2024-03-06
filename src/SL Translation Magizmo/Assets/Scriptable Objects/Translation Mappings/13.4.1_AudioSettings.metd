@@ -2,7 +2,7 @@
     "fileName": "AudioSettings.txt",
     "identificationType": 0,
     "useSeparationCharacter": false,
-    "separationCharacter": 0,
+    "separationCharacter": 126,
     "lines": [
         {
             "lineId": "",
@@ -13,6 +13,7 @@
                     "autoDisplayName": false,
                     "displayName": "Volume",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "67d767f9-f3c8-42a3-bdfd-aa3a31270f03"
                 }
             ]
@@ -26,6 +27,7 @@
                     "autoDisplayName": false,
                     "displayName": "Master Volume",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "890726b0-3078-42cb-861d-933428d29de5"
                 }
             ]
@@ -39,6 +41,7 @@
                     "autoDisplayName": false,
                     "displayName": "Voice Chat Volume",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "a9ee81dd-0fb0-4bfa-8fc7-cdca75fd8493"
                 }
             ]
@@ -52,6 +55,7 @@
                     "autoDisplayName": false,
                     "displayName": "Sound Effects Volume",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1210995e-c2e4-42cd-9b9e-07c0c5a983c4"
                 }
             ]
@@ -65,6 +69,7 @@
                     "autoDisplayName": true,
                     "displayName": "",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "6cf47a6f-b0d8-4116-b98d-252081ee85bf"
                 }
             ]
@@ -78,6 +83,7 @@
                     "autoDisplayName": false,
                     "displayName": "Audio Device",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "d2d9baa0-d8d2-473e-abf8-26f10d8c2f8e"
                 }
             ]
@@ -91,6 +97,7 @@
                     "autoDisplayName": false,
                     "displayName": "Audio Privacy",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0f5dcbb0-55ff-475d-90f0-ff27c3005d6a"
                 }
             ]
@@ -104,6 +111,7 @@
                     "autoDisplayName": false,
                     "displayName": "Audio Privacy Adjust",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "cc7f3ea5-8aa0-4d94-8b53-dc0ae249ce13"
                 }
             ]
@@ -117,6 +125,7 @@
                     "autoDisplayName": false,
                     "displayName": "Main Menu Volume",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "9579807f-1292-444a-8bf8-51c22ab9e22a"
                 }
             ]
@@ -130,6 +139,7 @@
                     "autoDisplayName": false,
                     "displayName": "Music Volume",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "94dd32be-abaa-4071-bdbd-e67da1734d50"
                 }
             ]
@@ -143,6 +153,7 @@
                     "autoDisplayName": false,
                     "displayName": "Interface Volume",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "0d941b7c-23b9-4635-b0ab-14b11be52d9c"
                 }
             ]
@@ -156,6 +167,7 @@
                     "autoDisplayName": false,
                     "displayName": "Theme",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "b721c58f-ec4b-4585-97e6-46aa34e2ae67"
                 }
             ]
@@ -169,6 +181,7 @@
                     "autoDisplayName": false,
                     "displayName": "Noise Suppression",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "1ae8f47d-285a-40fb-8335-1a56b4cdfc90"
                 }
             ]
@@ -182,6 +195,7 @@
                     "autoDisplayName": false,
                     "displayName": "Noise Suppression Tooltip",
                     "addToList": true,
+                    "dynamicValues": [],
                     "guid": "e84e6642-bdbd-4071-bc08-70bd21cb5b08"
                 }
             ]

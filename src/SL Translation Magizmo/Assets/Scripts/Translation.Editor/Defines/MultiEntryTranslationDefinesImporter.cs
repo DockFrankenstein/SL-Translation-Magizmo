@@ -48,7 +48,7 @@ namespace Project.Editor.Translation.Defines
             asset.name = Path.GetFileNameWithoutExtension(assetPath);
             ctx.AddObjectToAsset("<root>", asset);
         }
-
+         
         [MenuItem("Assets/Create/Scriptable Objects/Translation/Mapping/Multi Entry")]
         public static void CreateInputAsset()
         {

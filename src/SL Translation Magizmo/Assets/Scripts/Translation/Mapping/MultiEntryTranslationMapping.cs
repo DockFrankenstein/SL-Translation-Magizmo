@@ -22,7 +22,7 @@ namespace Project.Translation.Mapping
 
         public IdentificationType identificationType;
         public bool useSeparationCharacter;
-        public char separationCharacter;
+        public char separationCharacter = '~';
 
         [ReorderableList]
         [FormerlySerializedAs("defines")]

@@ -43,6 +43,8 @@ namespace Project.Editor.Translation.Defines
 
         public override bool HasModified()
         {
+            if (assetTarget == null) return false;
+
             var relativePath = AssetDatabase.GetAssetPath(assetTarget);
             var path = $"{Application.dataPath}/{relativePath.Remove(0, 7)}";
             var unmodified = qASIC.Files.FileManager.LoadFileWriter(path);
