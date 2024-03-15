@@ -1,6 +1,6 @@
 {
     "version": {
-        "instanceID": 21892
+        "instanceID": 21898
     },
     "items": [
         {
@@ -1781,9 +1781,9 @@
         },
         {
             "type": 0,
-            "id": "menu_server_create_prompt_cancel",
-            "displayText": "Menu Server Create Prompt Cancel",
-            "guid": "3dcada73-45f8-472a-b670-1f94f96bec70"
+            "id": "menu_server_create_prompt_header",
+            "displayText": "Header",
+            "guid": "16599708-b8e4-4e21-bf5c-eb9b7278e756"
         },
         {
             "type": 0,
@@ -1808,6 +1808,12 @@
             "id": "menu_server_create_prompt_rent_server",
             "displayText": "Menu Server Create Prompt Rent Server",
             "guid": "8a9fe48b-241e-4594-8b7d-c102dc5b7ce6"
+        },
+        {
+            "type": 0,
+            "id": "menu_server_create_prompt_cancel",
+            "displayText": "Menu Server Create Prompt Cancel",
+            "guid": "3dcada73-45f8-472a-b670-1f94f96bec70"
         },
         {
             "type": 1,

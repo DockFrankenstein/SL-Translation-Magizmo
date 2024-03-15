@@ -7,16 +7,21 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Project.GUI.Preview
 {
     public class PreviewEntry : MonoBehaviour
     {
+        [Label("Assign")]
         public TMP_Text text;
         public TMP_Text idNameText;
         public GameObject multiEntryPanel;
+        public GameObject outlineGroup;
+        public Button button;
 
-        [Label("Targets")]
+        [Label("Settings")]
+        [SerializeField] bool interactable = true;
         public MappedIdTarget mainId = new MappedIdTarget(string.Empty, true);
         public MappedIdTarget[] otherIds;
 
@@ -41,10 +46,31 @@ namespace Project.GUI.Preview
             text = GetComponent<TMP_Text>();
         }
 
+        private void OnValidate()
+        {
+            if (Application.isPlaying) return;
+            text.text = mainId.defaultValue;
+
+            if (outlineGroup != null)
+                outlineGroup.SetActive(interactable);
+
+            if (button != null)
+                button.enabled = interactable;
+
+            if (multiEntryPanel != null)
+                multiEntryPanel.SetActive(interactable && otherIds.Length > 0);
+        }
+
         private void Awake()
         {
+            if (outlineGroup != null)
+                outlineGroup.SetActive(interactable);
+
+            if (button != null)
+                button.enabled = interactable;
+
             if (multiEntryPanel != null)
-                multiEntryPanel.SetActive(otherIds.Length > 0);
+                multiEntryPanel.SetActive(interactable && otherIds.Length > 0);
 
             Reload();
         }
@@ -56,9 +82,18 @@ namespace Project.GUI.Preview
             var currTarget = GetCurrentTarget();
             var txt = currTarget.defaultValue;
 
-            if (manager.File.Entries.TryGetValue(currTarget.entryId, out var content))
-                if (!string.IsNullOrWhiteSpace(content.content))
-                    txt = content.content;
+            switch (currTarget.content)
+            {
+                case null:
+                    if (manager.File.Entries.TryGetValue(currTarget.entryId, out var content))
+                        if (!string.IsNullOrWhiteSpace(content.content))
+                            txt = content.content;
+
+                    break;
+                default:
+                    txt = currTarget.content.GetContent(manager, currTarget.entryId);
+                    break;
+            }
 
             text.text = txt;
 

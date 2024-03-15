@@ -23,6 +23,7 @@ namespace Project.GUI.Preview
                 scene.gameObject.SetActive(false);
                 foreach (var entry in scene.entries)
                 {
+                    if (entry == null) continue;
                     entry.manager = PreviewManager.TranslationManager;
                     entry.hierarchy = PreviewManager.Hierarchy;
                 }

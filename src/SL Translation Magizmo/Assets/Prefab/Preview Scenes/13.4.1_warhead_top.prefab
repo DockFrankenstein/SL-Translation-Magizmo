@@ -498,7 +498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9a50ea23bcd4249aa37087017b42fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: gameplay/heavy containment zone/warhead/top
+  path: Gameplay/Heavy Containment Zone/Warhead/Top
   entries:
   - {fileID: 7595680580807307977}
 --- !u!1 &7265901972845382235
@@ -567,7 +567,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SILO
+  m_text: 'ALPHA
+
+    WARHEAD
+
+    SILO'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 47d3ce3acc259ce4783cb0805b79db61, type: 2}
   m_sharedMaterial: {fileID: 1183175574258034998, guid: 47d3ce3acc259ce4783cb0805b79db61, type: 2}
@@ -651,6 +655,9 @@ MonoBehaviour:
   text: {fileID: 1707074403067596920}
   idNameText: {fileID: 0}
   multiEntryPanel: {fileID: 0}
+  outlineGroup: {fileID: 0}
+  button: {fileID: 0}
+  interactable: 1
   mainId:
     entryId: nuke_sign
     isMain: 1
@@ -659,6 +666,7 @@ MonoBehaviour:
       WARHEAD
 
       SILO'
+    content: {fileID: 0}
   otherIds: []
   manager: {fileID: 0}
   hierarchy: {fileID: 0}

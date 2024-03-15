@@ -317,9 +317,9 @@
             "guid": "b3f9d89f-5081-4e33-af1b-34985a803a75",
             "fields": [
                 {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "menu_server_create_prompt_header",
+                    "autoDisplayName": false,
+                    "displayName": "Header",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "60907f79-a6c5-4705-9881-3419f79f76cd"

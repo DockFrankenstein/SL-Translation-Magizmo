@@ -21,6 +21,7 @@ namespace Project.GUI.Preview
         public void Initialize()
         {
             EntriesForIds = entries
+                .Where(x => x != null)
                 .SelectMany(x => x.GetListOfTargets().Select(y => new KeyValuePair<string, PreviewEntry>(y.entryId, x)))
                 .GroupBy(x => x.Key)
                 .ToDictionary(x => x.Key, x => x.First().Value);
@@ -30,7 +31,7 @@ namespace Project.GUI.Preview
         public void Reload()
         {
             foreach (var entry in entries)
-                entry.Reload();
+                entry?.Reload();
 
             LayoutGroupController.Refresh();
         }

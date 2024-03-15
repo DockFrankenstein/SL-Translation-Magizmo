@@ -19,6 +19,8 @@ namespace Project.GUI.Preview
         [FormerlySerializedAs("isDefault")] public bool isMain;
         [TextArea] public string defaultValue;
 
+        public MappedIdContent content;
+
         public static implicit operator string(MappedIdTarget target) =>
             target.entryId;
     }

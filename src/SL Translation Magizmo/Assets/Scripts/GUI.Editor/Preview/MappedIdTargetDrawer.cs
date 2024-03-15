@@ -10,7 +10,7 @@ namespace Project.GUI.Editor.Preview
     public class MappedIdTargetDrawer : PropertyDrawer
     {
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label) =>
-            (EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing) * 6f;
+            EditorGUIUtility.singleLineHeight * 8f + EditorGUIUtility.standardVerticalSpacing * 8f - 2f;
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
@@ -24,7 +24,11 @@ namespace Project.GUI.Editor.Preview
 
             var idRect = labelRect.NextLine();
             var isMainRect = idRect.NextLine();
-            var defaultValueRect = isMainRect.NextLine().SetHeight(singleLine * 3 + separator * 2);
+            var contentLabelRect = isMainRect.NextLine();
+            var contentRect = contentLabelRect.NextLine().MoveY(-2f);
+            var defaultValueRect = contentRect.NextLine().SetHeight(singleLine * 3 + separator * 2);
+
+            var lineRect = contentLabelRect.ResizeToTop(0f).Border(-2f, 0f);
 
             if (Event.current.type == EventType.Repaint)
             {
@@ -36,6 +40,9 @@ namespace Project.GUI.Editor.Preview
             EditorGUI.LabelField(labelRect, label);
             EditorGUI.PropertyField(idRect, property.FindPropertyRelative("entryId"));
             EditorGUI.PropertyField(isMainRect, property.FindPropertyRelative("isMain"));
+            qGUIEditorUtility.HorizontalLine(lineRect);
+            EditorGUI.LabelField(contentLabelRect, "Content", EditorStyles.boldLabel);
+            EditorGUI.PropertyField(contentRect, property.FindPropertyRelative("content"));
             EditorGUI.PropertyField(defaultValueRect, property.FindPropertyRelative("defaultValue"));
         }
     }

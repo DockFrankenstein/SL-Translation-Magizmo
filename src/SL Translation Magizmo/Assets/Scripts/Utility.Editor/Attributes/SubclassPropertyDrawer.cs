@@ -59,11 +59,23 @@ public class SubclassPropertyDrawer : PropertyDrawer
             }
             else
             {
+                position.y += lineSize;
+
+                EditorGUI.PropertyField(position, property, label);
+
+                bool indented = false;
+
+                if (EditorGUI.indentLevel <= 0)
+                {
+                    EditorGUI.indentLevel++;
+                    indented = true;
+                }
+
                 position.y += lineSize + fieldSpacing;
 
                 SerializedProperty lastProp = property.GetEndProperty();
 
-                if (property.hasVisibleChildren)
+                if (property.hasVisibleChildren && property.isExpanded)
                 {
                     SerializedProperty curProp = property;
 
@@ -71,12 +83,18 @@ public class SubclassPropertyDrawer : PropertyDrawer
                     {
                         while (!SerializedProperty.EqualContents(curProp, lastProp))
                         {
+                            bool expanded = curProp.hasChildren && !curProp.isArray && curProp.isExpanded;
+
                             position.height = EditorGUI.GetPropertyHeight(curProp);
+
+                            if (expanded)
+                                position.height = lineSize;
+
                             EditorGUI.PropertyField(position, curProp);
 
                             position.y += fieldSpacing;
 
-                            if (curProp.hasChildren && !curProp.isArray && curProp.isExpanded)
+                            if (expanded)
                             {
                                 position.y += lineSize;
                             }
@@ -91,6 +109,9 @@ public class SubclassPropertyDrawer : PropertyDrawer
                         }
                     }
                 }
+
+                if (indented)
+                    EditorGUI.indentLevel--;
             }
         }
         EditorGUI.EndProperty();
@@ -105,7 +126,7 @@ public class SubclassPropertyDrawer : PropertyDrawer
 
         SerializedProperty lastProp = property.GetEndProperty();
 
-        if (property.hasVisibleChildren)
+        if (property.hasVisibleChildren && property.isExpanded)
         {
             SerializedProperty curProp = property;
             
@@ -131,6 +152,6 @@ public class SubclassPropertyDrawer : PropertyDrawer
             }
         }
 
-        return base.GetPropertyHeight(property, label) + totalHeight - lineSize - fieldSpacing;
+        return base.GetPropertyHeight(property, label) + totalHeight;
     }
 }
