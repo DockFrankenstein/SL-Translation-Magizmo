@@ -1283,6 +1283,18 @@
         },
         {
             "type": 0,
+            "id": "inventory_ammo_drop",
+            "displayText": "Header",
+            "guid": "b9af79e1-b01e-4da0-a6a9-d1f14e2b58a3"
+        },
+        {
+            "type": 1,
+            "id": "",
+            "displayText": "Header",
+            "guid": "d58accdf-e963-4c6c-b972-56bd2c1a0f52"
+        },
+        {
+            "type": 0,
             "id": "inventory_armor_helmet_efficacy",
             "displayText": "Inventory Armor Helmet Efficacy",
             "guid": "b4e28ede-757e-482c-8611-f03d5a0c3138"

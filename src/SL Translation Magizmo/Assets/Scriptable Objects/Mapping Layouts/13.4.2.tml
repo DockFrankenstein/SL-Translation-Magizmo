@@ -1279,6 +1279,18 @@
             "type": 1,
             "id": "",
             "displayText": "Header",
+            "guid": "3d77c2d2-b227-4eee-a73f-4ab76d5489bd"
+        },
+        {
+            "type": 0,
+            "id": "inventory_ammo_drop",
+            "displayText": "Header",
+            "guid": "a426b648-0082-429c-84aa-df1c2839220c"
+        },
+        {
+            "type": 1,
+            "id": "",
+            "displayText": "Header",
             "guid": "9aeb31d0-0367-45fd-ad95-1acba43413c0"
         },
         {

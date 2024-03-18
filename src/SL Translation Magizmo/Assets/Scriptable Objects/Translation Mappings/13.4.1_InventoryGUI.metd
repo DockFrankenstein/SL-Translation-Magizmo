@@ -120,9 +120,9 @@
             "guid": "13c74dc2-0765-4742-9ace-75c4cc60ce18",
             "fields": [
                 {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "inventory_ammo_drop",
+                    "autoDisplayName": false,
+                    "displayName": "Drop",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "b8a9f7e9-6ca2-4a47-a444-d37f23c195fd"
