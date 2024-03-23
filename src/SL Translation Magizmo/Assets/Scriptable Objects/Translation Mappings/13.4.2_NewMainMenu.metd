@@ -163,9 +163,9 @@
             "guid": "a9e6e35e-9b64-4501-907d-c62106981c5d",
             "fields": [
                 {
-                    "id": "",
+                    "id": "menu_server_create",
                     "autoDisplayName": false,
-                    "displayName": "",
+                    "displayName": "Create",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "553e1f00-aee3-46a8-ab5a-92e1b13f7944"

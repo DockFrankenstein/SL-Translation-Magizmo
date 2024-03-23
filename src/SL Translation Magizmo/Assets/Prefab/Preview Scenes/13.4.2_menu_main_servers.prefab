@@ -224,6 +224,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2951613088079100935, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3289462189841042611, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
       propertyPath: m_text
       value: Rent Server
@@ -443,6 +447,22 @@ PrefabInstance:
     - target: {fileID: 7387698665518067798, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
       propertyPath: mainId.defaultValue
       value: Rent Server
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387698665518067798, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
+      propertyPath: otherIds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387698665518067798, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
+      propertyPath: otherIds.Array.data[0].isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387698665518067798, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
+      propertyPath: otherIds.Array.data[0].entryId
+      value: menu_server_create
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387698665518067798, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
+      propertyPath: otherIds.Array.data[0].defaultValue
+      value: Create Server
       objectReference: {fileID: 0}
     - target: {fileID: 7736839897178058497, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
       propertyPath: m_Name
