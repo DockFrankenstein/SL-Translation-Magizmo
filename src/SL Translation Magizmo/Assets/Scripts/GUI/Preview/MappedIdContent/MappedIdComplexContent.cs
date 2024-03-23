@@ -4,15 +4,15 @@ using Project.Translation;
 using System;
 using System.Collections.Generic;
 
-namespace Assets.Scripts.GUI.Preview
+namespace Project.GUI.Preview
 {
     public class MappedIdComplexContent : MappedIdContent
     {
         public Element element;
 
-        public override string GetContent(TranslationManager manager, string id)
+        public override string[] GetContent(TranslationManager manager, string id)
         {
-            return GetContent(manager, element);
+            return new string[] { GetContent(manager, element) };
         }
 
         string GetContent(TranslationManager manager, Element element)

@@ -824,7 +824,7 @@ PrefabInstance:
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.content
       value: 
-      objectReference: {fileID: 8315348951900667263}
+      objectReference: {fileID: 1326240913012677502}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.entryId
       value: hotkey_weapon_secondary
@@ -954,7 +954,7 @@ PrefabInstance:
       addedObject: {fileID: 6823182573801959965}
     - targetCorrespondingSourceObject: {fileID: 1696823685068085111, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8315348951900667263}
+      addedObject: {fileID: 1326240913012677502}
   m_SourcePrefab: {fileID: 100100000, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
 --- !u!1 &1250720761108015317 stripped
 GameObject:
@@ -975,7 +975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
---- !u!114 &8315348951900667263
+--- !u!114 &1326240913012677502
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -984,19 +984,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1250720761108015317}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b02333cebdcc749a498a95ad6731cd, type: 3}
+  m_Script: {fileID: 11500000, guid: a6a6bd15d2d142247bda2d6454ed7d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   element:
     id: hotkey_name_display
     defaultContent: 'Edit: [hotkey]'
     dynamicValues:
-    - rid: 3439097836543410183
+    - rid: 3439098085917327363
   references:
     version: 2
     RefIds:
-    - rid: 3439097836543410183
-      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Assets.Scripts.GUI.Preview, asm: Project.GUI}
+    - rid: 3439098085917327363
+      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Project.GUI.Preview, asm: Project.GUI}
       data:
         tag: '[hotkey]'
         entryContent:
@@ -1651,18 +1651,18 @@ PrefabInstance:
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.content
       value: 
-      objectReference: {fileID: 6944516588179293679}
+      objectReference: {fileID: 60355701947810318}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.entryId
       value: hotkey_default
       objectReference: {fileID: 0}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.defaultValue
-      value: 'Edit: Hotkeys'
+      value: 'Edit: New Unnamed Hotkey'
       objectReference: {fileID: 0}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_text
-      value: 'Edit: Hotkeys'
+      value: 'Edit: New Unnamed Hotkey'
       objectReference: {fileID: 0}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_fontSize
@@ -1781,7 +1781,7 @@ PrefabInstance:
       addedObject: {fileID: 6898246777331669788}
     - targetCorrespondingSourceObject: {fileID: 1696823685068085111, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6944516588179293679}
+      addedObject: {fileID: 60355701947810318}
   m_SourcePrefab: {fileID: 100100000, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
 --- !u!114 &3714673356060284797 stripped
 MonoBehaviour:
@@ -1813,7 +1813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
---- !u!114 &6944516588179293679
+--- !u!114 &60355701947810318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1822,19 +1822,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 4491651861679310890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b02333cebdcc749a498a95ad6731cd, type: 3}
+  m_Script: {fileID: 11500000, guid: a6a6bd15d2d142247bda2d6454ed7d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   element:
     id: hotkey_name_display
     defaultContent: 'Edit: [hotkey]'
     dynamicValues:
-    - rid: 3439097836543410183
+    - rid: 3439098085917327363
   references:
     version: 2
     RefIds:
-    - rid: 3439097836543410183
-      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Assets.Scripts.GUI.Preview, asm: Project.GUI}
+    - rid: 3439098085917327363
+      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Project.GUI.Preview, asm: Project.GUI}
       data:
         tag: '[hotkey]'
         entryContent:
@@ -3004,6 +3004,26 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4993024475758832011, guid: c19da35627616c445b77a7e8f2b61c0c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993024475758832011, guid: c19da35627616c445b77a7e8f2b61c0c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993024475758832011, guid: c19da35627616c445b77a7e8f2b61c0c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993024475758832011, guid: c19da35627616c445b77a7e8f2b61c0c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993024475758832011, guid: c19da35627616c445b77a7e8f2b61c0c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5051633305099636153, guid: c19da35627616c445b77a7e8f2b61c0c, type: 3}
       propertyPath: mainId.isMain
       value: 0
@@ -3643,7 +3663,7 @@ PrefabInstance:
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.content
       value: 
-      objectReference: {fileID: 8394094425586901121}
+      objectReference: {fileID: 2409704815282752005}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.entryId
       value: hotkey_keycard
@@ -3773,7 +3793,7 @@ PrefabInstance:
       addedObject: {fileID: 1535880242722617068}
     - targetCorrespondingSourceObject: {fileID: 1696823685068085111, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8394094425586901121}
+      addedObject: {fileID: 2409704815282752005}
   m_SourcePrefab: {fileID: 100100000, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
 --- !u!224 &3751120202481144052 stripped
 RectTransform:
@@ -3810,7 +3830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
---- !u!114 &8394094425586901121
+--- !u!114 &2409704815282752005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3819,19 +3839,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 5332788746761806926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b02333cebdcc749a498a95ad6731cd, type: 3}
+  m_Script: {fileID: 11500000, guid: a6a6bd15d2d142247bda2d6454ed7d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   element:
     id: hotkey_name_display
     defaultContent: 'Edit: [hotkey]'
     dynamicValues:
-    - rid: 3439097836543410183
+    - rid: 3439098085917327363
   references:
     version: 2
     RefIds:
-    - rid: 3439097836543410183
-      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Assets.Scripts.GUI.Preview, asm: Project.GUI}
+    - rid: 3439098085917327363
+      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Project.GUI.Preview, asm: Project.GUI}
       data:
         tag: '[hotkey]'
         entryContent:
@@ -4428,7 +4448,7 @@ PrefabInstance:
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.content
       value: 
-      objectReference: {fileID: 7907894322553027249}
+      objectReference: {fileID: 4019668732247784632}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.entryId
       value: hotkey_weapon_primary
@@ -4558,7 +4578,7 @@ PrefabInstance:
       addedObject: {fileID: 8581360849996890910}
     - targetCorrespondingSourceObject: {fileID: 1696823685068085111, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7907894322553027249}
+      addedObject: {fileID: 4019668732247784632}
   m_SourcePrefab: {fileID: 100100000, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
 --- !u!224 &318363703573011111 stripped
 RectTransform:
@@ -4595,7 +4615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
---- !u!114 &7907894322553027249
+--- !u!114 &4019668732247784632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4604,19 +4624,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 8819304766254804509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b02333cebdcc749a498a95ad6731cd, type: 3}
+  m_Script: {fileID: 11500000, guid: a6a6bd15d2d142247bda2d6454ed7d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   element:
     id: hotkey_name_display
     defaultContent: 'Edit: [hotkey]'
     dynamicValues:
-    - rid: 3439097836543410183
+    - rid: 3439098085917327363
   references:
     version: 2
     RefIds:
-    - rid: 3439097836543410183
-      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Assets.Scripts.GUI.Preview, asm: Project.GUI}
+    - rid: 3439098085917327363
+      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Project.GUI.Preview, asm: Project.GUI}
       data:
         tag: '[hotkey]'
         entryContent:
@@ -4658,7 +4678,7 @@ PrefabInstance:
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.content
       value: 
-      objectReference: {fileID: 939664106904118291}
+      objectReference: {fileID: 9035618605484391878}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.entryId
       value: hotkey_grenade
@@ -4788,7 +4808,7 @@ PrefabInstance:
       addedObject: {fileID: 1342957745926593469}
     - targetCorrespondingSourceObject: {fileID: 1696823685068085111, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 939664106904118291}
+      addedObject: {fileID: 9035618605484391878}
   m_SourcePrefab: {fileID: 100100000, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
 --- !u!224 &2215865033785801123 stripped
 RectTransform:
@@ -4814,7 +4834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
---- !u!114 &939664106904118291
+--- !u!114 &9035618605484391878
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4823,24 +4843,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 6975844295527681305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b02333cebdcc749a498a95ad6731cd, type: 3}
+  m_Script: {fileID: 11500000, guid: a6a6bd15d2d142247bda2d6454ed7d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   element:
     id: hotkey_name_display
     defaultContent: 'Edit: [hotkey]'
     dynamicValues:
-    - rid: 3439097836543410183
+    - rid: 3439098085917327363
   references:
     version: 2
     RefIds:
-    - rid: 3439097836543410183
-      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Assets.Scripts.GUI.Preview, asm: Project.GUI}
+    - rid: 3439098085917327363
+      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Project.GUI.Preview, asm: Project.GUI}
       data:
         tag: '[hotkey]'
         entryContent:
-          id: hotkey_grenade
-          defaultContent: Grenade
+          id: hotkey_medical
+          defaultContent: Medical
           dynamicValues: []
 --- !u!114 &7860904795179455054 stripped
 MonoBehaviour:
@@ -4888,7 +4908,7 @@ PrefabInstance:
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.content
       value: 
-      objectReference: {fileID: 1513061352588489197}
+      objectReference: {fileID: 1789106258874723191}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.entryId
       value: hotkey_medical
@@ -5018,7 +5038,7 @@ PrefabInstance:
       addedObject: {fileID: 8475628640945891043}
     - targetCorrespondingSourceObject: {fileID: 1696823685068085111, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1513061352588489197}
+      addedObject: {fileID: 1789106258874723191}
   m_SourcePrefab: {fileID: 100100000, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
 --- !u!224 &1424201333849212266 stripped
 RectTransform:
@@ -5055,7 +5075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
---- !u!114 &1513061352588489197
+--- !u!114 &1789106258874723191
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5064,19 +5084,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 7911909193452777936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b02333cebdcc749a498a95ad6731cd, type: 3}
+  m_Script: {fileID: 11500000, guid: a6a6bd15d2d142247bda2d6454ed7d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   element:
     id: hotkey_name_display
     defaultContent: 'Edit: [hotkey]'
     dynamicValues:
-    - rid: 3439097836543410183
+    - rid: 3439098085917327363
   references:
     version: 2
     RefIds:
-    - rid: 3439097836543410183
-      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Assets.Scripts.GUI.Preview, asm: Project.GUI}
+    - rid: 3439098085917327363
+      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Project.GUI.Preview, asm: Project.GUI}
       data:
         tag: '[hotkey]'
         entryContent:

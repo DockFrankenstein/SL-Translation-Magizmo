@@ -34,6 +34,18 @@ namespace Project
             return content;
         }
 
+        public static string GetBaseId(this string id) =>
+            id.Split(':').Last();
+
+        public static int GetIdIndex(this string id)
+        {
+            var split = id.Split(':');
+            if (split.Length > 1 && int.TryParse(split.Last(), out int index))
+                return index;
+
+            return 0;
+        }
+
         public static IEnumerable<string> SplitWithSplits(this IEnumerable<string> array, string split, StringSplitOptions splitOptions = StringSplitOptions.None) =>
             array.SelectMany(x => x.Split(split, splitOptions).InsertBetween(split))
             .Where(x => !string.IsNullOrEmpty(x));

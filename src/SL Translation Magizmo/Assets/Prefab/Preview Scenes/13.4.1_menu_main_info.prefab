@@ -561,7 +561,7 @@ PrefabInstance:
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.content
       value: 
-      objectReference: {fileID: 2756503719509801439}
+      objectReference: {fileID: 7854745587900303445}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.entryId
       value: menu_status_welcome
@@ -692,7 +692,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1696823685068085111, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2756503719509801439}
+      addedObject: {fileID: 7854745587900303445}
   m_SourcePrefab: {fileID: 100100000, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
 --- !u!114 &2386684744515265126 stripped
 MonoBehaviour:
@@ -710,7 +710,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1696823685068085111, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
   m_PrefabInstance: {fileID: 4272727654489401926}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2756503719509801439
+--- !u!114 &7854745587900303445
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -719,22 +719,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3226709351492746545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b02333cebdcc749a498a95ad6731cd, type: 3}
+  m_Script: {fileID: 11500000, guid: a6a6bd15d2d142247bda2d6454ed7d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   element:
-    id: menu_status_welcome
-    defaultContent: Welcome back, {username}!
+    id: hotkey_name_display
+    defaultContent: 'Edit: [hotkey]'
     dynamicValues:
-    - rid: 3439097974766960640
+    - rid: 3439098085917327368
   references:
     version: 2
     RefIds:
-    - rid: 3439097974766960640
-      type: {class: MappedIdComplexContent/Element/StaticValue, ns: Assets.Scripts.GUI.Preview, asm: Project.GUI}
+    - rid: 3439098085917327368
+      type: {class: MappedIdComplexContent/Element/StaticValue, ns: Project.GUI.Preview, asm: Project.GUI}
       data:
         tag: '{username}'
-        staticContent: Joe
+        staticContent: John
 --- !u!224 &5965277055829002635 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7602969840024675277, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}

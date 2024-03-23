@@ -388,7 +388,7 @@ PrefabInstance:
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.content
       value: 
-      objectReference: {fileID: 461313970176198134}
+      objectReference: {fileID: 0}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.entryId
       value: menu_based_on_cb
@@ -519,7 +519,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1696823685068085111, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 461313970176198134}
+      addedObject: {fileID: 7564926031819667179}
   m_SourcePrefab: {fileID: 100100000, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
 --- !u!224 &1919443716028073602 stripped
 RectTransform:
@@ -531,7 +531,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1696823685068085111, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
   m_PrefabInstance: {fileID: 8295655984191792463}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &461313970176198134
+--- !u!114 &7564926031819667179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -540,25 +540,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 7254246821129335352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b02333cebdcc749a498a95ad6731cd, type: 3}
+  m_Script: {fileID: 11500000, guid: a6a6bd15d2d142247bda2d6454ed7d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   element:
     id: menu_based_on_cb
     defaultContent: 'BASED ON <i>SCP: CONTAINMENT BREACH</i>'
     dynamicValues:
-    - rid: 3439098085917327360
-    - rid: 3439098085917327361
+    - rid: 3439098085917327364
+    - rid: 3439098085917327365
+    - rid: 3439098085917327366
+    - rid: 3439098085917327367
   references:
     version: 2
     RefIds:
-    - rid: 3439098085917327360
-      type: {class: MappedIdComplexContent/Element/StaticValue, ns: Assets.Scripts.GUI.Preview, asm: Project.GUI}
+    - rid: 3439098085917327364
+      type: {class: MappedIdComplexContent/Element/StaticValue, ns: Project.GUI.Preview, asm: Project.GUI}
       data:
         tag: <i>
         staticContent: <i><b>
-    - rid: 3439098085917327361
-      type: {class: MappedIdComplexContent/Element/StaticValue, ns: Assets.Scripts.GUI.Preview, asm: Project.GUI}
+    - rid: 3439098085917327365
+      type: {class: MappedIdComplexContent/Element/StaticValue, ns: Project.GUI.Preview, asm: Project.GUI}
       data:
         tag: </i>
         staticContent: </b></i>
+    - rid: 3439098085917327366
+      type: {class: MappedIdComplexContent/Element/StaticValue, ns: Project.GUI.Preview, asm: Project.GUI}
+      data:
+        tag: <I>
+        staticContent: <I><B>
+    - rid: 3439098085917327367
+      type: {class: MappedIdComplexContent/Element/StaticValue, ns: Project.GUI.Preview, asm: Project.GUI}
+      data:
+        tag: </I>
+        staticContent: </B></I>

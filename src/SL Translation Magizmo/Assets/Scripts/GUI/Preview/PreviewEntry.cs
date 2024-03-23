@@ -5,6 +5,7 @@ using qASIC;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Schema;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,11 +29,14 @@ namespace Project.GUI.Preview
         [HideInInspector] public TranslationManager manager;
         [HideInInspector] public HierarchyController hierarchy;
 
-        int selectedIndex;
+        int targetIndex;
+        int targetValueIndex;
+
+        string[] currentValues = new string[0];
 
         MappedIdTarget GetCurrentTarget()
         {
-            var i = selectedIndex % (otherIds.Length + 1);
+            var i = targetIndex % (otherIds.Length + 1);
             return i == 0 ?
                 mainId :
                 otherIds[i - 1];
@@ -63,15 +67,6 @@ namespace Project.GUI.Preview
 
         private void Awake()
         {
-            if (outlineGroup != null)
-                outlineGroup.SetActive(interactable);
-
-            if (button != null)
-                button.enabled = interactable;
-
-            if (multiEntryPanel != null)
-                multiEntryPanel.SetActive(interactable && otherIds.Length > 0);
-
             Reload();
         }
 
@@ -80,25 +75,54 @@ namespace Project.GUI.Preview
             if (text == null || manager == null) return;
 
             var currTarget = GetCurrentTarget();
+
+            LoadTargetValues();
+
             var txt = currTarget.defaultValue;
-
-            switch (currTarget.content)
+            if (currentValues.Length > 0)
             {
-                case null:
-                    if (manager.File.Entries.TryGetValue(currTarget.entryId, out var content))
-                        if (!string.IsNullOrWhiteSpace(content.content))
-                            txt = content.content;
+                if (!currentValues.IndexInRange(targetValueIndex))
+                    targetValueIndex = currentValues.Length - 1;
 
-                    break;
-                default:
-                    txt = currTarget.content.GetContent(manager, currTarget.entryId);
-                    break;
+                if (!string.IsNullOrWhiteSpace(currentValues[targetValueIndex])) 
+                    txt = currentValues[targetValueIndex];
             }
 
             text.text = txt;
 
             if (idNameText != null)
-                idNameText.text = currTarget.entryId;
+            {
+                idNameText.text = currentValues.Length > 1 ?
+                    $"{currTarget.entryId}:{targetValueIndex}" :
+                    currTarget.entryId;
+            }
+
+            if (outlineGroup != null)
+                outlineGroup.SetActive(interactable);
+
+            if (button != null)
+                button.enabled = interactable;
+
+            if (multiEntryPanel != null)
+                multiEntryPanel.SetActive(interactable && (otherIds.Length > 0 || currentValues.Length > 1));
+        }
+
+        void LoadTargetValues()
+        {
+            currentValues = new string[0];
+            var currTarget = GetCurrentTarget();
+
+            switch (currTarget.content)
+            {
+                case null:
+                    if (manager.File.Entries.TryGetValue(currTarget.entryId, out var content))
+                            currentValues = new string[] { content.content };
+
+                    break;
+                default:
+                    currentValues = currTarget.content.GetContent(manager, currTarget.entryId);
+                    break;
+            }
         }
 
         public void Select()
@@ -109,23 +133,60 @@ namespace Project.GUI.Preview
 
         public void ChangeTarget(string id)
         {
+            targetValueIndex = id.GetIdIndex();
+            id = id.GetBaseId();
+
             var target = otherIds
                 .Where(x => x.entryId == id)
                 .FirstOrDefault();
 
-            selectedIndex = Array.IndexOf(otherIds, target) + 1;
+            targetIndex = Array.IndexOf(otherIds, target) + 1;
+
+            LoadTargetValues();
+
+            if (targetValueIndex < 0)
+                targetValueIndex = 0;
+
+            if (targetValueIndex >= currentValues.Length)
+                targetValueIndex = currentValues.Length - 1;
+
             Reload();
         }
 
         public void ChangeTargetBy(int moveAmount = 1)
         {
-            selectedIndex += moveAmount;
+            bool isNegative = moveAmount < 0;
+            int moveAmountAbs = isNegative ? -moveAmount : moveAmount;
 
-            while (selectedIndex < 0)
-                selectedIndex += otherIds.Length + 1;
+            while (moveAmountAbs > 0)
+            {
+                moveAmountAbs--;
 
-            while (selectedIndex >= otherIds.Length + 1)
-                selectedIndex -= otherIds.Length + 1;
+                targetValueIndex += isNegative ? -1 : 1;
+
+                if (targetValueIndex >= currentValues.Length)
+                {
+                    targetValueIndex = 0;
+                    targetIndex++;
+
+                    if (targetIndex >= otherIds.Length + 1)
+                        targetIndex = 0;
+
+                    LoadTargetValues();
+                    continue;
+                }
+
+                if (targetValueIndex < 0)
+                {
+                    targetIndex--;
+
+                    if (targetIndex < 0)
+                        targetIndex = otherIds.Length;
+
+                    LoadTargetValues();
+                    targetValueIndex = currentValues.Length - 1;
+                }
+            }
 
             Reload();
         }
