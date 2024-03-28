@@ -253,9 +253,9 @@
             "guid": "ba1768c9-9585-4c47-ab3a-a3d02a28e839",
             "fields": [
                 {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "079_nav_door_ulock",
+                    "autoDisplayName": false,
+                    "displayName": "Unlock Door",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "f67efb89-4e8a-4fd2-a71d-06643eed74c4"
@@ -309,9 +309,9 @@
             "guid": "3eb5e0db-5b31-4219-bcb1-82d39f2146fe",
             "fields": [
                 {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "079_nav_door_unlock_all",
+                    "autoDisplayName": false,
+                    "displayName": "Unlock All Doors",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "5ea95d97-f46a-4d96-86f2-065203887518"
