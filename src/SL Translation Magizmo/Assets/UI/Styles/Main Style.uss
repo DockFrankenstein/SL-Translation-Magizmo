@@ -72,6 +72,38 @@
     padding-bottom: 10px;
 }
 
+.popup-prompt {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    background-color: rgb(33, 33, 33);
+    border-left-color: rgb(13, 13, 13);
+    border-right-color: rgb(13, 13, 13);
+    border-top-color: rgb(13, 13, 13);
+    border-bottom-color: rgb(13, 13, 13);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    min-width: auto;
+    min-height: auto;
+    max-width: 60%;
+    align-items: center;
+}
+
 .unity-label {
     width: 300px;
     -unity-text-align: middle-left;
@@ -1077,4 +1109,53 @@ Slider > .unity-base-field__input > #unity-text-field {
     align-self: center;
     height: 40px;
     width: 80px;
+}
+
+.prompt-header {
+    font-size: 48px;
+    -unity-text-align: middle-center;
+    width: auto;
+    -unity-font-definition: initial;
+    -unity-font: url("project://database/Assets/Font/Preview/Roboto-Bold.ttf?fileID=12800000&guid=8f6f1219b60cb584ead94e8e0d0c0dd6&type=3#Roboto-Bold");
+}
+
+ProgressBar > #unity-progress-bar {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    height: 100%;
+    max-height: none;
+    min-height: auto;
+}
+
+ProgressBar .unity-progress-bar__background {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-left-color: rgba(13, 13, 13, 255);
+    border-right-color: rgba(13, 13, 13, 255);
+    border-top-color: rgba(13, 13, 13, 255);
+    border-bottom-color: rgba(13, 13, 13, 255);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    background-color: rgb(33, 33, 33);
+    max-height: none;
+    min-height: auto;
+}
+
+ProgressBar .unity-progress-bar__progress {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    background-color: rgb(32, 112, 39);
+}
+
+ProgressBar {
+    width: 100%;
+    flex-grow: 1;
 }

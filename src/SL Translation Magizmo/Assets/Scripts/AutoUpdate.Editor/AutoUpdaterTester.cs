@@ -45,11 +45,11 @@ namespace Project.AutoUpdate.Editor.Windows
             EditorGUILayout.Space();
 
             if (GUILayout.Button("Reset download"))
-                updater.IsDownloading = false;
+                updater.UpdaterStatus = AutoUpdater.Status.NotPrepared;
 
             GUILayout.FlexibleSpace();
 
-            using (new EditorGUI.DisabledGroupScope(updater.IsDownloading))
+            using (new EditorGUI.DisabledGroupScope(updater.UpdaterStatus == AutoUpdater.Status.DownloadingUpdate))
             {
                 if (GUILayout.Button("Download"))
                     this.StartCoroutine(updater.DownloadUpdate());

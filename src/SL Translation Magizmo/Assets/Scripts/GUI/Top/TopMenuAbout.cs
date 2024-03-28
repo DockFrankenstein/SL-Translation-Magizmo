@@ -6,6 +6,7 @@ namespace Project.GUI.Top
     public class TopMenuAbout : TopMenu
     {
         [SerializeField] AboutWindow aboutWindow;
+        [SerializeField] AutoUpdateWindow update;
 
         protected override string ButtonName => "about";
 
@@ -32,6 +33,10 @@ namespace Project.GUI.Top
             {
                 Application.OpenURL("https://github.com/DockFrankenstein/SL-Translation-Magizmo");
             });
+
+            menu.AppendSeparator("");
+
+            menu.AppendAction("Check For Updates", _ => update.Open());
         }
     }
 }

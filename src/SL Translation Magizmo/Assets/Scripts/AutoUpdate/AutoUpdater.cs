@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections.Generic;
+using System.Data;
+using UnityEditor.PackageManager;
 
 namespace Project.AutoUpdate
 {
@@ -14,6 +16,18 @@ namespace Project.AutoUpdate
     {
         const string DOWNLOAD_URL = "https://github.com/DockFrankenstein/SL-Translation-Magizmo/releases/download/{0}/{1}";
         const string RELEASES_URL = "https://api.github.com/repos/DockFrankenstein/SL-Translation-Magizmo/releases";
+
+        public enum Status
+        {
+            NotPrepared,
+            CheckingForUpdates,
+            CheckingForUpdatesError,
+            UpdateAvaliable,
+            DownloadingUpdate,
+            DownloadingUpdateError,
+            ReadyToFinalizeUpdate,
+            UpToDate,
+        }
 
         [field: SerializeField] public string CurrentVersion { get; set; }
         [field: SerializeField] public string NewVersion { get; set; } = null;
@@ -29,26 +43,45 @@ namespace Project.AutoUpdate
                 yield return request.SendWebRequest();
 
                 if (request.result != UnityWebRequest.Result.Success)
+                {
+                    error = $"Couldn't get web request from {RELEASES_URL}.";
+                    UpdaterStatus = Status.CheckingForUpdatesError;
                     yield break;
+                }
 
                 var txt = $"{{\"items\":{request.downloadHandler.text}}}";
                 var json = JsonUtility.FromJson<Response>(txt);
 
-                if (json.items.Length == 0) yield break;
+                if (json.items.Length == 0)
+                {
+                    error = "Web request contained no items.";
+                    UpdaterStatus = Status.CheckingForUpdatesError;
+                    yield break;
+                }
 
                 NewVersion = json.items.First().tag_name;
             }
         }
 
-        public void CheckForUpdates()
+        public IEnumerator CheckForUpdates()
         {
+            UpdaterStatus = Status.CheckingForUpdates;
+            yield return GetVersion();
+
+            if (UpdaterStatus == Status.CheckingForUpdatesError)
+                yield break;
+
+            UpdaterStatus = NewVersion == CurrentVersion ?
+                Status.UpToDate :
+                Status.UpdateAvaliable;
         }
 
-        public bool IsDownloading { get; set; }
+        public Status UpdaterStatus { get; set; } = Status.NotPrepared;
+        public string error;
 
         public IEnumerator DownloadUpdate()
         {
-            if (IsDownloading)
+            if (UpdaterStatus == Status.DownloadingUpdate)
                 yield break;
 
             if (NewVersion == null)
@@ -56,14 +89,15 @@ namespace Project.AutoUpdate
 
             var url = string.Format(DOWNLOAD_URL, NewVersion, TargetFileName);
 
-            IsDownloading = true;
+            UpdaterStatus = Status.DownloadingUpdate;
 
             using (var request = UnityWebRequest.Get(url))
             {
                 yield return request.SendWebRequest();
                 if (request.result != UnityWebRequest.Result.Success)
                 {
-                    IsDownloading = false;
+                    error = $"Couldn't get web request from {url}.";
+                    UpdaterStatus = Status.DownloadingUpdateError;
                     yield break;
                 }
 
@@ -73,30 +107,24 @@ namespace Project.AutoUpdate
                 }
                 catch (Exception e)
                 {
-                    Debug.LogError($"Error while saving new update to disk, {e}");
-                }
-            }
-
-            IsDownloading = false;
-        }
-
-        private IEnumerator DownloadUpdateCoroutine(string url, string filePath)
-        {
-            IsDownloading = true;
-
-            using (var request = UnityWebRequest.Get(url))
-            {
-                yield return request.SendWebRequest();
-                if (request.result != UnityWebRequest.Result.Success)
-                {
-                    IsDownloading = false;
+                    error = $"Error while saving new update to disk, {e}";
+                    UpdaterStatus = Status.DownloadingUpdateError;
                     yield break;
                 }
-
-                System.IO.File.WriteAllBytes(filePath, request.downloadHandler.data);
             }
 
-            IsDownloading = false;
+            UpdaterStatus = Status.ReadyToFinalizeUpdate;
+        }
+
+        public void ClearError()
+        {
+            error = string.Empty;
+            UpdaterStatus = UpdaterStatus switch
+            {
+                Status.CheckingForUpdatesError => Status.NotPrepared,
+                Status.DownloadingUpdateError => Status.UpdateAvaliable,
+                _ => UpdaterStatus
+            };
         }
 
         [Serializable]

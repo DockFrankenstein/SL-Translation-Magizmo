@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
+    <ui:VisualElement name="fade" class="fade" style="flex-grow: 1; justify-content: center;">
+        <ui:VisualElement class="popup-prompt" style="flex-grow: 1; flex-shrink: 1; align-self: center; left: auto; top: auto; right: auto; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; justify-content: flex-start;">
+            <ui:Label tabindex="-1" text="New Update Avaliable" parse-escape-sequences="true" display-tooltip-when-elided="true" name="header" class="prompt-header" />
+            <ui:Label tabindex="-1" text="A new version of SL Translation Magizmo is avaliable.\nYou can download the update later by going to `Help/Check For Updates`." parse-escape-sequences="true" display-tooltip-when-elided="true" name="description" style="flex-grow: 1; flex-shrink: 1; width: auto; align-self: center; flex-wrap: wrap; -unity-text-align: middle-center;" />
+            <ui:ProgressBar value="21.7" name="progress" low-value="0" style="height: 34px;" />
+            <ui:VisualElement name="buttons" style="flex-grow: 1; flex-direction: row; width: auto; justify-content: space-around; align-self: center; align-items: stretch; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-shrink: 1; max-width: 100%;">
+                <ui:Button text="Cancel" parse-escape-sequences="true" display-tooltip-when-elided="true" name="cancel" style="flex-grow: 1; flex-basis: 1px; flex-shrink: 1;" />
+                <ui:Button text="Don&apos;t show again" parse-escape-sequences="true" display-tooltip-when-elided="true" name="dont-show" style="flex-grow: 1; flex-basis: 1px; margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; flex-shrink: 1;" />
+                <ui:Button text="Update" parse-escape-sequences="true" display-tooltip-when-elided="true" name="update" class="colored" style="flex-grow: 1; flex-basis: 1px; margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; flex-shrink: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
