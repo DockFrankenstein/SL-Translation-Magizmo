@@ -19,7 +19,7 @@ namespace SLTM.Installer.ViewModels
 
         InstallerApp installer;
 
-        public event Action<Exception> OnDownloadError;
+        public event Action OnBegin;
         public event Action OnFinish;
 
         private float _progress;
@@ -36,33 +36,13 @@ namespace SLTM.Installer.ViewModels
 
         async Task DownloadUpdate()
         {
+            OnBegin?.Invoke();
+
             installer.Updater.Progress.ProgressChanged += (_, x) => Progress = x;
-
-            try
-            {
-                await installer.Updater.DownloadUpdate();
-                OnFinish?.Invoke();
-
-                var exePath = $"{installer.Updater.OutputPath}/SL Translation Magizmo/SL Translation Magizmo.exe"
-                    .Replace('\\', '/');
-
-                if (installer.CreateDesktopShortcut)
-                {
-                    var shortcutPath = $"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/SL Translation Magizmo.lnk";
-
-                    var shell = new WshShell();
-                    var shortcut = (IWshShortcut)shell.CreateShortcut(shortcutPath);
-
-                    shortcut.TargetPath = exePath;
-                    shortcut.Save();
-                }
-            }
-            catch (Exception e)
-            {
-                OnDownloadError?.Invoke(e);
-            }
-
+            await installer.Install();
             installer.Updater.Progress.ProgressChanged -= (_, x) => Progress = x;
+
+            OnFinish?.Invoke();
         }
     }
 }

@@ -8,6 +8,8 @@
 	<PublishSingleFile>true</PublishSingleFile>
 
 	<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+
+	<ApplicationIcon>Assets\sltm logo.ico</ApplicationIcon>
   </PropertyGroup>
 
   
@@ -34,6 +36,11 @@
       <Isolated>false</Isolated>
       <EmbedInteropTypes>true</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <Content Include="Assets\sltm logo.ico" />
   </ItemGroup>
 
   <ItemGroup>

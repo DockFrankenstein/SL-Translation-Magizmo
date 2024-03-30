@@ -18,7 +18,13 @@ namespace SLTM.Installer.ViewModels
                 this.content = content;
             }
 
+            public ButtonData(string content, bool? overriteEnable) : this(content)
+            {
+                this.overriteEnable = overriteEnable;
+            }
+
             public bool? overriteEnable = null;
+            public bool useNavigation = true;
             public string content = null;
 
             public Action OnClick;

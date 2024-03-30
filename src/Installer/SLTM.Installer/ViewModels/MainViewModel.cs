@@ -2,6 +2,7 @@
 using MsBox.Avalonia;
 using ReactiveUI;
 using SLTM.Installer.Services;
+using SLTM.Installer.Views;
 using System;
 using System.Windows.Input;
 
@@ -13,9 +14,7 @@ public class MainViewModel : ViewModelBase
     {
         Installer = installer;
 
-        ProgressPage = new ProgressViewModel(installer);
-
-        ProgressPage.OnDownloadError += e =>
+        installer.OnException += e =>
         {
             var box = MessageBoxManager
                 .GetMessageBoxStandard(new MsBox.Avalonia.Dto.MessageBoxStandardParams()
@@ -29,51 +28,82 @@ public class MainViewModel : ViewModelBase
                 });
 
             box.ShowAsync();
-
-            Pages =
-            [
-                new FinishPageViewModel()
-                {
-                    Header = "Installation Unsuccessfull",
-                    Text = "There was an error :(\nPlease restart the wizzard and try again or report the issue.",
-                },
-            ];
-
-            UpdateNavigation();
         };
 
-        ProgressPage.OnFinish += () =>
+        ProgressPage = new ProgressViewModel(installer);
+
+        ProgressPage.OnBegin += () =>
         {
-            Pages =
-            [
-                new FinishPageViewModel()
-                {
-                    Header = "Installation Finished",
-                    Text = "SL: Translation Magizmo was successfully installed :)",
-                },
-            ];
-
-            UpdateNavigation();
+            switch (installer.AppMode)
+            {
+                default:
+                    installer.OnException += _ => OnInstallFail();
+                    break;
+            };
         };
 
-        Pages =
-        [
-            new WelcomePageViewModel(),
-            new PickLocationPageViewModel(installer),
-            new OptionsSelectViewModel(installer),
-            ProgressPage,
-        ];
+        switch (installer.AppMode)
+        {
+            default:
+                ProgressPage.OnFinish += OnInstallFinish;
+                break;
+        }
+
+        switch (installer.AppMode)
+        {
+            case InstallerApp.Mode.Uninstall:
+                UninstallWelcome = new UninstallConfirmViewModel(installer);
+                UninstallWelcome.OnStartUninstall += () =>
+                {
+                    installer.OnException += _ => OnUninstallFail();
+                };
+
+                UninstallWelcome.OnFinishUninstall += OnUninstallFinish;
+
+                Pages =
+                [
+                    UninstallWelcome,
+                    new FinishPageViewModel()
+                    {
+                        Header = "Uninstall Successfull",
+                        Text = "Successfully uninstalled SL: Translation Magizmo. Please close this application to finalize.",
+                    },
+                ];
+                break;
+            case InstallerApp.Mode.Update:
+                Pages =
+                [
+                    new FinishPageViewModel()
+                    {
+                        Header = "Update",
+                        Text = "Updating doesn't work yet :/",
+                    },
+                ];
+                break;
+            default:
+                Pages =
+                [
+                    new WelcomePageViewModel(),
+                    new PickLocationPageViewModel(installer),
+                    new OptionsSelectViewModel(installer),
+                    ProgressPage,
+                ];
+                break;
+        }
+
 
         NextCommand = ReactiveCommand.Create(() =>
         {
             if (CurrentPage?.NextButton?.OnClick != null)
             {
                 CurrentPage.NextButton.OnClick();
-                return;
             }
 
-            _page++;
-            UpdateNavigation();
+            if (CurrentPage?.NextButton?.useNavigation != false)
+            {
+                _page++;
+                UpdateNavigation();
+            }
         });
 
         BackCommand = ReactiveCommand.Create(() =>
@@ -81,11 +111,13 @@ public class MainViewModel : ViewModelBase
             if (CurrentPage?.BackButton?.OnClick != null)
             {
                 CurrentPage.BackButton.OnClick();
-                return;
             }
 
-            _page--;
-            UpdateNavigation();
+            if (CurrentPage?.BackButton?.useNavigation != false)
+            {
+                _page--;
+                UpdateNavigation();
+            }
         });
 
         _currentPage = Pages[0];
@@ -99,6 +131,7 @@ public class MainViewModel : ViewModelBase
     int _page = 0;
     private PageViewModelBase[] Pages;
 
+    public UninstallConfirmViewModel UninstallWelcome { get; private set; }
     public ProgressViewModel ProgressPage { get; init; }
 
     PageViewModelBase _currentPage;
@@ -145,6 +178,63 @@ public class MainViewModel : ViewModelBase
     {
         get => _enableBack;
         set => this.RaiseAndSetIfChanged(ref _enableBack, value);
+    }
+
+    void OnInstallFinish()
+    {
+        switch (Installer.AppMode)
+        {
+            default:
+                Installer.OnException -= _ => OnInstallFail();
+                break;
+        };
+
+        Pages =
+        [
+            new FinishPageViewModel()
+                {
+                    Header = "Installation Finished",
+                    Text = "SL: Translation Magizmo was successfully installed :)",
+                },
+            ];
+
+        UpdateNavigation();
+    }
+
+    void OnInstallFail()
+    {
+        ProgressPage.OnFinish -= OnInstallFinish;
+
+        Pages =
+        [
+            new FinishPageViewModel()
+            {
+                Header = "Installation Unsuccessfull",
+                Text = "There was an error :(\nPlease restart the wizzard and try again or report the issue.",
+            },
+        ];
+
+        UpdateNavigation();
+    }
+
+    void OnUninstallFinish()
+    {
+        Installer.OnException -= _ => OnUninstallFail();
+    }
+
+    void OnUninstallFail()
+    {
+        UninstallWelcome.OnFinishUninstall -= OnUninstallFinish;
+        Pages =
+        [
+            new FinishPageViewModel()
+            {
+                Header = "Uninstalling Unsuccessfull",
+                Text = "There was an error :(\nPlease restart the wizzard and try again or report the issue.",
+            },
+        ];
+
+        UpdateNavigation();
     }
 
     void UpdateNavigation()

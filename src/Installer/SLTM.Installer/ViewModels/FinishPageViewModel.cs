@@ -11,11 +11,13 @@ namespace SLTM.Installer.ViewModels
             {
                 content = "Finish",
                 overriteEnable = true,
+                useNavigation = false,
             };
 
             _backButton = new ButtonData()
             {
                 overriteEnable = false,
+                useNavigation = false,
             };
 
             _nextButton.OnClick += () =>

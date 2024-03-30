@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
 using System.IO;
 using System.IO.Compression;
@@ -83,12 +82,20 @@ namespace SLTM.Installer.Services
                 {
                     foreach (var item in zip.Entries)
                     {
-                        var path = $"{OutputPath}/{item.FullName}";
+                        const string FolderPath = "SL Translation Magizmo/";
+
+                        var zipPath = item.FullName.Replace('\\', '/');
+
+                        if (zipPath.StartsWith(FolderPath))
+                            zipPath = zipPath.Substring(FolderPath.Length, zipPath.Length - FolderPath.Length);
+
+                        var path = $"{OutputPath}/{zipPath}";
 
                         if (Path.GetFullPath(path) == Path.GetFullPath(Environment.ProcessPath))
                             continue;
 
-                        if (!Path.EndsInDirectorySeparator(item.FullName))
+                        if (!string.IsNullOrWhiteSpace(zipPath) && 
+                            !Path.EndsInDirectorySeparator(zipPath))
                         {
                             var dirPath = Path.GetDirectoryName(path);
 
