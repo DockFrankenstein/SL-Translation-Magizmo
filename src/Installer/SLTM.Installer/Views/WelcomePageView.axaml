@@ -1,0 +1,13 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SLTM.Installer.Views.WelcomePageView"
+			 xmlns:vm="clr-namespace:SLTM.Installer.ViewModels"
+			 d:DesignWidth="400" d:DesignHeight="560">
+	<StackPanel>
+		<TextBlock>Welcome to the SL: Translation Magizmo Installer! <LineBreak/>
+		This wizard is going to install necesary files required for the app to function. Click "Next" to continue or close the window to exit.</TextBlock>
+	</StackPanel>
+</UserControl>

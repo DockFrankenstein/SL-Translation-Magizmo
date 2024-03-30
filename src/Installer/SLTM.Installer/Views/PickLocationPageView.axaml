@@ -1,0 +1,15 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SLTM.Installer.Views.PickLocationPageView"
+			 xmlns:vm="clr-namespace:SLTM.Installer.ViewModels"
+			 d:DesignWidth="400" d:DesignHeight="560">
+	<StackPanel>
+		<TextBlock TextWrapping="Wrap">Choose your save location to which SLTM will be downloaded.</TextBlock>
+		<Panel Height="16"/>
+		<Label Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">Instal path</Label>
+		<TextBox Grid.Column="1" Grid.Row="0" VerticalAlignment="Center"  HorizontalAlignment="Stretch" Text="{Binding InstalLocation}"></TextBox>
+	</StackPanel>
+</UserControl>

@@ -1,0 +1,30 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:SLTM.Installer.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="560"
+             x:Class="SLTM.Installer.Views.MainView"
+             x:DataType="vm:MainViewModel"
+			 xmlns:views="clr-namespace:SLTM.Installer.Views">
+
+	<Panel Background="#212121">
+		<DockPanel>
+			<StackPanel DockPanel.Dock="Bottom">
+				<Separator Margin="0"/>
+				<StackPanel Spacing="2" Margin="10" Orientation="Horizontal" HorizontalAlignment="Right" >
+					<Button Content="{Binding BackButtonContent}" IsEnabled="{Binding EnableBack}" Command="{Binding BackCommand}"></Button>
+					<Button Content="{Binding NextButtonContent}" IsEnabled="{Binding EnableNext}" Command="{Binding NextCommand}"></Button>
+				</StackPanel>		
+			</StackPanel>
+			<Panel DockPanel.Dock="Top">
+				<StackPanel>
+					<Image Margin="10">/Assets/Images/sltm full logo-final.png</Image>
+					<Separator Margin="0"></Separator>
+					<ContentControl Content="{Binding CurrentPage}" Margin="4"/>
+				</StackPanel>
+			</Panel>
+		</DockPanel>
+	</Panel>
+
+</UserControl>
