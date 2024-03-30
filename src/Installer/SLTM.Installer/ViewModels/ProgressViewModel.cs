@@ -12,6 +12,7 @@ namespace SLTM.Installer.ViewModels
         public ProgressViewModel(InstallerApp installer)
         {
             this.installer = installer;
+            installer.Updater.Progress.ProgressChanged += (_, x) => Progress = x;
         }
 
         public override ButtonData BackButton => ButtonData.ForceDisabled;
@@ -19,8 +20,8 @@ namespace SLTM.Installer.ViewModels
 
         InstallerApp installer;
 
-        public event Action OnBegin;
-        public event Action OnFinish;
+        //public event Action OnBegin;
+        //public event Action OnFinish;
 
         private float _progress;
         public float Progress
@@ -31,18 +32,23 @@ namespace SLTM.Installer.ViewModels
 
         public override void OnOpenPage()
         {
-            _ = DownloadUpdate();
+            Progress = 0f;
+            //_ = DownloadUpdate();
         }
 
-        async Task DownloadUpdate()
-        {
-            OnBegin?.Invoke();
+        //public override void OnClosePage()
+        //{
+        //}
 
-            installer.Updater.Progress.ProgressChanged += (_, x) => Progress = x;
-            await installer.Install();
-            installer.Updater.Progress.ProgressChanged -= (_, x) => Progress = x;
+        //async Task DownloadUpdate()
+        //{
+        //    OnBegin?.Invoke();
 
-            OnFinish?.Invoke();
-        }
+        //    installer.Updater.Progress.ProgressChanged += (_, x) => Progress = x;
+        //    await installer.Install();
+        //    installer.Updater.Progress.ProgressChanged -= (_, x) => Progress = x;
+
+        //    OnFinish?.Invoke();
+        //}
     }
 }

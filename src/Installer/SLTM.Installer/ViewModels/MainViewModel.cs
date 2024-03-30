@@ -32,10 +32,13 @@ public class MainViewModel : ViewModelBase
 
         ProgressPage = new ProgressViewModel(installer);
 
-        ProgressPage.OnBegin += () =>
+        Installer.OnProcessBegin += () =>
         {
             switch (installer.AppMode)
             {
+                case InstallerApp.Mode.Uninstall:
+                    installer.OnException += _ => OnUpdateFail();
+                    break;
                 default:
                     installer.OnException += _ => OnInstallFail();
                     break;
@@ -44,8 +47,11 @@ public class MainViewModel : ViewModelBase
 
         switch (installer.AppMode)
         {
+            case InstallerApp.Mode.Update:
+                Installer.OnProcessFinish += OnUpdateFinish;
+                break;
             default:
-                ProgressPage.OnFinish += OnInstallFinish;
+                Installer.OnProcessFinish += OnInstallFinish;
                 break;
         }
 
@@ -73,11 +79,7 @@ public class MainViewModel : ViewModelBase
             case InstallerApp.Mode.Update:
                 Pages =
                 [
-                    new FinishPageViewModel()
-                    {
-                        Header = "Update",
-                        Text = "Updating doesn't work yet :/",
-                    },
+                    ProgressPage,
                 ];
                 break;
             default:
@@ -192,18 +194,18 @@ public class MainViewModel : ViewModelBase
         Pages =
         [
             new FinishPageViewModel()
-                {
-                    Header = "Installation Finished",
-                    Text = "SL: Translation Magizmo was successfully installed :)",
-                },
-            ];
+            {
+                Header = "Installation Finished",
+                Text = "SL: Translation Magizmo was successfully installed :)",
+            },
+        ];
 
         UpdateNavigation();
     }
 
     void OnInstallFail()
     {
-        ProgressPage.OnFinish -= OnInstallFinish;
+        Installer.OnProcessFinish -= OnInstallFinish;
 
         Pages =
         [
@@ -231,6 +233,38 @@ public class MainViewModel : ViewModelBase
             {
                 Header = "Uninstalling Unsuccessfull",
                 Text = "There was an error :(\nPlease restart the wizzard and try again or report the issue.",
+            },
+        ];
+
+        UpdateNavigation();
+    }
+
+    void OnUpdateFinish()
+    {
+        Installer.OnException -= _ => OnUpdateFail();
+
+        Pages =
+        [
+            new FinishPageViewModel()
+            {
+                Header = "Update Completed",
+                Text = "Application has been successfully updated to the latest version!",
+            },
+        ];
+
+        UpdateNavigation();
+    }
+
+    void OnUpdateFail()
+    {
+        Installer.OnProcessFinish -= OnUpdateFinish;
+
+        Pages =
+        [
+            new FinishPageViewModel()
+            {
+                Header = "Updating Unsuccessfull",
+                Text = "There was an error :(\nPlease try again or report the issue.",
             },
         ];
 

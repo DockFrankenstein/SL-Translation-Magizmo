@@ -8,9 +8,19 @@ namespace SLTM.Installer.ViewModels
         public OptionsSelectViewModel(InstallerApp installer)
         {
             this.installer = installer;
+
+            _nextButton = new ButtonData();
+
+            _nextButton.OnClick += () =>
+            {
+                _ = installer.Install();
+            };
         }
 
         public InstallerApp installer;
+
+        ButtonData _nextButton;
+        public override ButtonData NextButton => _nextButton;
 
         public override void OnOpenPage()
         {

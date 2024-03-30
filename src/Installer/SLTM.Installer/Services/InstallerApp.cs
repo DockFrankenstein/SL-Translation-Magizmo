@@ -36,7 +36,17 @@ namespace SLTM.Installer.Services
             };
 
             Arguments = new HashSet<string>(Environment.GetCommandLineArgs().Distinct());
+            DetermineMode();
 
+            if (AppMode == Mode.Update)
+            {
+                Updater.OutputPath = Path.GetDirectoryName(Environment.ProcessPath);
+                _ = Update();
+            }
+        }
+
+        void DetermineMode()
+        {
             AppMode = Mode.Install;
 
             var appPath = Path.GetDirectoryName(Environment.ProcessPath);
@@ -49,7 +59,7 @@ namespace SLTM.Installer.Services
             }
         }
 
-        public Mode AppMode { get; }
+        public Mode AppMode { get; private set; }
 
         public AutoUpdater Updater { get; set; }
 
@@ -60,14 +70,21 @@ namespace SLTM.Installer.Services
         public string RootPath => $"{Updater.OutputPath}/SL Translation Magizmo";
         public string ExePath => $"{RootPath}/SL Translation Magizmo.exe";
 
+        public Action OnProcessBegin;
+        public Action OnProcessFinish;
         public Action<Exception> OnException;
 
         public void Uninstall()
         {
             try
             {
+                OnProcessBegin?.Invoke();
+
                 if (Arguments.Contains(ARGS_DEBUG_UNINSTALL))
+                {
+                    OnProcessFinish?.Invoke();
                     return;
+                }
 
                 DeregisterAppInSystem();
 
@@ -86,6 +103,8 @@ namespace SLTM.Installer.Services
             {
                 OnException?.Invoke(e);
             }
+
+            OnProcessFinish?.Invoke();
         }
 
         public void ExitAndFinalizeUninstall()
@@ -106,6 +125,8 @@ namespace SLTM.Installer.Services
         {
             try
             {
+                OnProcessBegin?.Invoke();
+
                 await Updater.DownloadUpdate();
 
                 var exePath = $"{Updater.OutputPath}/SL Translation Magizmo/SL Translation Magizmo.exe"
@@ -128,6 +149,23 @@ namespace SLTM.Installer.Services
             {
                 OnException?.Invoke(e);
             }
+
+            OnProcessFinish?.Invoke();
+        }
+
+        public async Task Update()
+        {
+            try
+            {
+                OnProcessBegin?.Invoke();
+                await Updater.DownloadUpdate();
+            }
+            catch (Exception e)
+            {
+                OnException?.Invoke(e);
+            }
+
+            OnProcessFinish?.Invoke();
         }
 
         public void RegisterAppInSystem()
