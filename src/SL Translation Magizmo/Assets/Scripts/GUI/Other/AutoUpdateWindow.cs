@@ -3,8 +3,8 @@ using Project.AutoUpdate;
 using UnityEngine.UIElements;
 using qASIC.SettingsSystem;
 using System.Collections;
-using UnityEngine.PlayerLoop;
 using qASIC.Files;
+using System.Diagnostics;
 
 namespace Project.GUI.Other
 {
@@ -77,12 +77,10 @@ namespace Project.GUI.Other
         {
             _updater = new AutoUpdater()
             {
-                TargetFileName = "Windows.zip",
-                ResultPath = $"{FileManager.TrimPathEnd(Application.dataPath, 1)}/update.zip",
+                TargetFileName = "Installer.zip",
+                ResultPath = $"{FileManager.TrimPathEnd(Application.dataPath, 1)}/Uninstall.exe",
                 CurrentVersion = Application.version,
             };
-
-            Debug.Log($"{FileManager.TrimPathEnd(Application.dataPath, 1)}/update.zip");
 
             var root = document.rootVisualElement;
             root.ChangeDispaly(false);
@@ -112,6 +110,20 @@ namespace Project.GUI.Other
             updateButton.clicked += UpdateApp;
 
             StartCoroutine(CheckForUpdates());
+
+            Application.quitting += () =>
+            {
+                if (_updater.UpdaterStatus == AutoUpdater.Status.ReadyToFinalizeUpdate)
+                {
+                    Process.Start(new ProcessStartInfo()
+                    {
+                        Arguments = $"/C choice /C Y /D Y /T 1 & \"{_updater.ResultPath}\" --update",
+                        WindowStyle = ProcessWindowStyle.Hidden,
+                        CreateNoWindow = true,
+                        FileName = "cmd.exe",
+                    });
+                }
+            };
         }
 
         IEnumerator CheckForUpdates()
