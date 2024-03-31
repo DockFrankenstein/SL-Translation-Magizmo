@@ -2,6 +2,7 @@
 using Project.Translation.Mapping;
 using UnityEditor;
 using UnityEditor.AssetImporters;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 namespace Project.GUI.Editor.Hierarchy
@@ -9,10 +10,15 @@ namespace Project.GUI.Editor.Hierarchy
     [CustomEditor(typeof(MappingLayoutImporter))]
     internal class MappingLayoutImporterInspector : AssetImporterEditor
     {
+        MappingLayout file;
+
         public override void OnInspectorGUI()
         {
-            var file = assetTarget as MappingLayout;
+            if (file == null)
+                file = assetTarget as MappingLayout;
+
             file.version = (TranslationVersion)EditorGUILayout.ObjectField("Version", file.version, typeof(TranslationVersion), false);
+            file.versionId = AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(file.version));
 
             GUILayout.Space(18f);
 
@@ -24,6 +30,8 @@ namespace Project.GUI.Editor.Hierarchy
 
         public override bool HasModified()
         {
+            var currentAsset = assetTarget as MappingLayout;
+
             var relativePath = AssetDatabase.GetAssetPath(assetTarget);
             var path = $"{Application.dataPath}/{relativePath.Remove(0, 7)}";
             var unmodified = qASIC.Files.FileManager.LoadFileWriter(path);
@@ -42,6 +50,7 @@ namespace Project.GUI.Editor.Hierarchy
 
             var relativePath = AssetDatabase.GetAssetPath(assetTarget);
             var path = $"{Application.dataPath}/{relativePath.Remove(0, 7)}";
+
             qASIC.Files.FileManager.SaveFileJSON(path, assetTarget, true);
             AssetDatabase.ImportAsset(relativePath);
         }

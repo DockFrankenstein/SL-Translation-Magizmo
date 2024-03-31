@@ -5,6 +5,7 @@ using UnityEditor.AssetImporters;
 
 using TargetFile = Project.GUI.Hierarchy.MappingLayout;
 using UnityEngine;
+using Project.Translation.Mapping;
 
 namespace Project.GUI.Editor.Hierarchy
 {
@@ -34,6 +35,10 @@ namespace Project.GUI.Editor.Hierarchy
             try
             {
                 JsonUtility.FromJsonOverwrite(text, asset);
+
+                var versionPath = AssetDatabase.GUIDToAssetPath(asset.versionId);
+
+                asset.version = AssetDatabase.LoadAssetAtPath<TranslationVersion>(versionPath);
             }
             catch (Exception e)
             {
