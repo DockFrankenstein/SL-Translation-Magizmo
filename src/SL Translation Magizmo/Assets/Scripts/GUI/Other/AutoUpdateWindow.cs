@@ -110,7 +110,7 @@ namespace Project.GUI.Other
             updateButton.clicked += UpdateApp;
 
 #if !UNITY_EDITOR
-            StartCoroutine(CheckForUpdates());
+            StartCoroutine(CheckForUpdatesStartup());
 #endif
 
             Application.quitting += () =>
@@ -128,13 +128,19 @@ namespace Project.GUI.Other
             };
         }
 
-        IEnumerator CheckForUpdates()
+        IEnumerator CheckForUpdatesStartup()
         {
             yield return _updater.CheckForUpdates();
 
             if (!Sett_AutoUpdate) yield break;
             if (_updater.UpdaterStatus == AutoUpdater.Status.UpdateAvaliable)
                 Open(true);
+        }
+
+        IEnumerator CheckForUpdates()
+        {
+            yield return _updater.CheckForUpdates();
+            UpdateContent();
         }
 
         void UpdateApp()
@@ -166,6 +172,11 @@ namespace Project.GUI.Other
 
         public void Open(bool auto = false)
         {
+            if (_updater.UpdaterStatus == AutoUpdater.Status.NotPrepared ||
+                _updater.UpdaterStatus == AutoUpdater.Status.CheckingForUpdates ||
+                _updater.UpdaterStatus == AutoUpdater.Status.CheckingForUpdatesError)
+                StartCoroutine(CheckForUpdates());
+
             UpdateContent();
 
             dontShowButton.ChangeDispaly(auto && Sett_AutoUpdate);

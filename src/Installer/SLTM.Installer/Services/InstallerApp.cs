@@ -67,7 +67,7 @@ namespace SLTM.Installer.Services
 
         public HashSet<string> Arguments { get; }
 
-        public string RootPath => $"{Updater.OutputPath}/SL Translation Magizmo";
+        public string RootPath => Updater.OutputPath;
         public string ExePath => $"{RootPath}/SL Translation Magizmo.exe";
 
         public Action OnProcessBegin;
@@ -129,7 +129,7 @@ namespace SLTM.Installer.Services
 
                 await Updater.DownloadUpdate();
 
-                var exePath = $"{Updater.OutputPath}/SL Translation Magizmo/SL Translation Magizmo.exe"
+                var exePath = ExePath
                     .Replace('\\', '/');
 
                 RegisterAppInSystem();
