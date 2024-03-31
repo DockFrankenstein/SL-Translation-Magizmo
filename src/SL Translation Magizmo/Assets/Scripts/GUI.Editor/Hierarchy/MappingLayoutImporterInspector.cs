@@ -30,8 +30,6 @@ namespace Project.GUI.Editor.Hierarchy
 
         public override bool HasModified()
         {
-            var currentAsset = assetTarget as MappingLayout;
-
             var relativePath = AssetDatabase.GetAssetPath(assetTarget);
             var path = $"{Application.dataPath}/{relativePath.Remove(0, 7)}";
             var unmodified = qASIC.Files.FileManager.LoadFileWriter(path);

@@ -109,7 +109,9 @@ namespace Project.GUI.Other
 
             updateButton.clicked += UpdateApp;
 
+#if !UNITY_EDITOR
             StartCoroutine(CheckForUpdates());
+#endif
 
             Application.quitting += () =>
             {
