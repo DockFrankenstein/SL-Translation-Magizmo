@@ -1,15 +1,12 @@
-﻿using Project.Translation;
+﻿using System.Linq;
 
 namespace Project.GUI.Preview
 {
     public class MappedIdArrayContent : MappedIdContent
     {
-        public override string[] GetContent(TranslationManager manager, string id)
-        {
-            if (!manager.File.Entries.TryGetValue(id, out var txt))
-                return new string[0];
-
-            return txt.content.EntryContentToArray();
-        }
+        public override string[] GetContent(GetContentArgs args, object context) =>
+            args.normalContent
+                .SelectMany(x => x.EntryContentToArray())
+                .ToArray();
     }
 }

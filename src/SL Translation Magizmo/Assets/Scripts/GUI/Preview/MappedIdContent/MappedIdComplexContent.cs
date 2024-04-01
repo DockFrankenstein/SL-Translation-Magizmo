@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using Project.GUI.Preview;
 using Project.Translation;
 using System;
 using System.Collections.Generic;
@@ -10,9 +9,9 @@ namespace Project.GUI.Preview
     {
         public Element element;
 
-        public override string[] GetContent(TranslationManager manager, string id)
+        public override string[] GetContent(GetContentArgs args, object context)
         {
-            return new string[] { GetContent(manager, element) };
+            return new string[] { GetContent(args.manager, element) };
         }
 
         string GetContent(TranslationManager manager, Element element)

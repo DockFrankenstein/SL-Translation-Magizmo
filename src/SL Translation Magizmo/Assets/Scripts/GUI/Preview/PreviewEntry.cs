@@ -1,18 +1,16 @@
-using Project.GUI.Hierarchy;
-using Project.Translation;
-using Project.Translation.Data;
+using Project.GUI.Preview.Interfaces;
 using qASIC;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Xml.Schema;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Project.GUI.Preview
 {
-    public class PreviewEntry : MonoBehaviour
+    public class PreviewEntry : PreviewElement, IHasMappedTargets
     {
         [Label("Assign")]
         public TMP_Text text;
@@ -24,19 +22,22 @@ namespace Project.GUI.Preview
         [Label("Settings")]
         [SerializeField] bool interactable = true;
         public MappedIdTarget mainId = new MappedIdTarget(string.Empty, true);
-        public MappedIdTarget[] otherIds;
+        [ReorderableList] public MappedIdTarget[] otherIds;
 
-        [HideInInspector] public TranslationManager manager;
-        [HideInInspector] public HierarchyController hierarchy;
+        [Label("Replace Ids")]
+        [SerializeField] [InspectorName("From")] string idReplaceFrom;
+        [SerializeField] [InspectorName("To")] string idReplaceTo;
+        [EditorButton(nameof(ReplaceIdsTool))]
+        [SerializeField] [InspectorName("Use Regex")] bool idReplaceRegex;
 
-        int targetIndex;
-        int targetValueIndex;
+        int SelectedIndex { get; set; }
+        int SelectedValueIndex { get; set; }
 
         string[] currentValues = new string[0];
 
         MappedIdTarget GetCurrentTarget()
         {
-            var i = targetIndex % (otherIds.Length + 1);
+            var i = SelectedIndex % (otherIds.Length + 1);
             return i == 0 ?
                 mainId :
                 otherIds[i - 1];
@@ -65,12 +66,30 @@ namespace Project.GUI.Preview
                 multiEntryPanel.SetActive(interactable && otherIds.Length > 0);
         }
 
-        private void Awake()
+        void ReplaceIdsTool()
         {
-            Reload();
+            mainId = ReplaceInField(mainId);
+            for (int i = 0; i < otherIds.Length; i++)
+                otherIds[i] = ReplaceInField(otherIds[i]);
+
+#if UNITY_EDITOR
+            UnityEditor.EditorUtility.SetDirty(this);
+#endif
+
+            MappedIdTarget ReplaceInField(MappedIdTarget target)
+            {
+                if (idReplaceRegex)
+                {
+                    target.entryId = Regex.Replace(target.entryId, idReplaceFrom, idReplaceTo);
+                    return target;
+                }
+
+                target.entryId = target.entryId.Replace(idReplaceFrom, idReplaceTo);
+                return target;
+            }
         }
 
-        public void Reload()
+        public override void Reload()
         {
             if (text == null || manager == null) return;
 
@@ -81,11 +100,11 @@ namespace Project.GUI.Preview
             var txt = currTarget.defaultValue;
             if (currentValues.Length > 0)
             {
-                if (!currentValues.IndexInRange(targetValueIndex))
-                    targetValueIndex = currentValues.Length - 1;
+                if (!currentValues.IndexInRange(SelectedValueIndex))
+                    SelectedValueIndex = currentValues.Length - 1;
 
-                if (!string.IsNullOrWhiteSpace(currentValues[targetValueIndex])) 
-                    txt = currentValues[targetValueIndex];
+                if (!string.IsNullOrWhiteSpace(currentValues[SelectedValueIndex])) 
+                    txt = currentValues[SelectedValueIndex];
             }
 
             text.text = txt;
@@ -93,7 +112,7 @@ namespace Project.GUI.Preview
             if (idNameText != null)
             {
                 idNameText.text = currentValues.Length > 1 ?
-                    $"{currTarget.entryId}:{targetValueIndex}" :
+                    $"{currTarget.entryId}:{SelectedValueIndex}" :
                     currTarget.entryId;
             }
 
@@ -112,44 +131,63 @@ namespace Project.GUI.Preview
             currentValues = new string[0];
             var currTarget = GetCurrentTarget();
 
+            if (manager.File.Entries.TryGetValue(currTarget.entryId, out var content))
+                currentValues = new string[] { content.content };
+
             switch (currTarget.content)
             {
                 case null:
-                    if (manager.File.Entries.TryGetValue(currTarget.entryId, out var content))
-                            currentValues = new string[] { content.content };
-
                     break;
                 default:
-                    currentValues = currTarget.content.GetContent(manager, currTarget.entryId);
+                    var args = new MappedIdContent.GetContentArgs()
+                    {
+                        manager = manager,
+                        id = currTarget.entryId,
+                        normalContent = currentValues,
+                        defaultContent = currTarget.defaultValue,
+                    };
+
+                    currentValues = currTarget.content.GetContent(args, currTarget.contentContext);
                     break;
             }
         }
 
-        public void Select()
+        public override void Select()
         {
             if (hierarchy == null) return;
             hierarchy.Select(GetCurrentTarget().entryId, true);
         }
 
+        public override void ChangeIndex(int newIndex, bool silent = false)
+        {
+            base.ChangeIndex(newIndex, silent);
+
+            SelectedIndex = Mathf.Clamp(newIndex, 0, otherIds.Length);
+            SelectedValueIndex = 0;
+
+            Reload();
+        }
+
         public void ChangeTarget(string id)
         {
-            targetValueIndex = id.GetIdIndex();
+            SelectedValueIndex = id.GetIdIndex();
             id = id.GetBaseId();
 
             var target = otherIds
                 .Where(x => x.entryId == id)
                 .FirstOrDefault();
 
-            targetIndex = Array.IndexOf(otherIds, target) + 1;
+            SelectedIndex = Array.IndexOf(otherIds, target) + 1;
 
             LoadTargetValues();
 
-            if (targetValueIndex < 0)
-                targetValueIndex = 0;
+            if (SelectedValueIndex < 0)
+                SelectedValueIndex = 0;
 
-            if (targetValueIndex >= currentValues.Length)
-                targetValueIndex = currentValues.Length - 1;
+            if (SelectedValueIndex >= currentValues.Length)
+                SelectedValueIndex = currentValues.Length - 1;
 
+            ChangeIndexInLinked(SelectedIndex);
             Reload();
         }
 
@@ -162,32 +200,33 @@ namespace Project.GUI.Preview
             {
                 moveAmountAbs--;
 
-                targetValueIndex += isNegative ? -1 : 1;
+                SelectedValueIndex += isNegative ? -1 : 1;
 
-                if (targetValueIndex >= currentValues.Length)
+                if (SelectedValueIndex >= currentValues.Length)
                 {
-                    targetValueIndex = 0;
-                    targetIndex++;
+                    SelectedValueIndex = 0;
+                    SelectedIndex++;
 
-                    if (targetIndex >= otherIds.Length + 1)
-                        targetIndex = 0;
+                    if (SelectedIndex >= otherIds.Length + 1)
+                        SelectedIndex = 0;
 
                     LoadTargetValues();
                     continue;
                 }
 
-                if (targetValueIndex < 0)
+                if (SelectedValueIndex < 0)
                 {
-                    targetIndex--;
+                    SelectedIndex--;
 
-                    if (targetIndex < 0)
-                        targetIndex = otherIds.Length;
+                    if (SelectedIndex < 0)
+                        SelectedIndex = otherIds.Length;
 
                     LoadTargetValues();
-                    targetValueIndex = currentValues.Length - 1;
+                    SelectedValueIndex = currentValues.Length - 1;
                 }
             }
 
+            ChangeIndexInLinked(SelectedIndex);
             Reload();
         }
     }

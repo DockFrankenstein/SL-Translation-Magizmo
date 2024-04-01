@@ -3,7 +3,7 @@ using System.Linq;
 using Project.Translation.Data;
 using Project.Utility.UI;
 using System.Collections.Generic;
-using System.Windows.Forms;
+using Project.GUI.Preview.Interfaces;
 
 namespace Project.GUI.Preview
 {
@@ -14,15 +14,16 @@ namespace Project.GUI.Preview
 #if UNITY_EDITOR
         [EditorButton(nameof(AutoDetectEntries), "Populate")]
 #endif
-        public PreviewEntry[] entries = new PreviewEntry[0];
+        public PreviewElement[] entries = new PreviewElement[0];
 
-        public Dictionary<string, PreviewEntry> EntriesForIds { get; private set; } = new Dictionary<string, PreviewEntry>();
+        public Dictionary<string, IHasMappedTargets> EntriesForIds { get; private set; } = new Dictionary<string, IHasMappedTargets>();
 
         public void Initialize()
         {
             EntriesForIds = entries
-                .Where(x => x != null)
-                .SelectMany(x => x.GetListOfTargets().Select(y => new KeyValuePair<string, PreviewEntry>(y.entryId, x)))
+                .Where(x => x is IHasMappedTargets)
+                .Select(x => x as IHasMappedTargets)
+                .SelectMany(x => x.GetListOfTargets().Select(y => new KeyValuePair<string, IHasMappedTargets>(y.entryId, x)))
                 .GroupBy(x => x.Key)
                 .ToDictionary(x => x.Key, x => x.First().Value);
         }
@@ -44,12 +45,13 @@ namespace Project.GUI.Preview
 #if UNITY_EDITOR
         void AutoDetectEntries()
         {
-            var detectedEntries = GetComponentsInChildren<PreviewEntry>()
+            var detectedEntries = GetComponentsInChildren<PreviewElement>()
                 .Except(entries);
 
             if (detectedEntries.Count() == 0) return;
 
             entries = entries
+                .Where(x => x != null)
                 .Concat(detectedEntries)
                 .ToArray();
 

@@ -20,6 +20,7 @@ namespace Project.GUI.Preview
         [TextArea] public string defaultValue;
 
         public MappedIdContent content;
+        [SerializeReference] public object contentContext;
 
         public static implicit operator string(MappedIdTarget target) =>
             target.entryId;
