@@ -2,6 +2,7 @@
 using System.Linq;
 using UnityEngine;
 using System.Text.RegularExpressions;
+using System;
 
 namespace Project.AppTools.Tools
 {
@@ -15,6 +16,7 @@ namespace Project.AppTools.Tools
         Toggle _useRegex;
         Button _regexTutorial;
         TextField _from;
+        Label _regexError;
         TextField _to;
 
         Button _applyButton;
@@ -29,6 +31,7 @@ namespace Project.AppTools.Tools
             _useRegex = root.Q<Toggle>("regex");
             _regexTutorial = root.Q<Button>("regex-tut");
             _from = root.Q<TextField>("from");
+            _regexError = root.Q<Label>("regex-error");
             _to = root.Q<TextField>("to");
 
             _applyButton = root.Q<Button>("apply");
@@ -36,13 +39,46 @@ namespace Project.AppTools.Tools
 
             _regexTutorial.clicked += OpenRegexTutorial;
 
+            _useRegex.RegisterValueChangedCallback(args =>
+            {
+                if (args.target == _useRegex)
+                    UpdateRegexError();
+            });
+
+            _from.RegisterValueChangedCallback(args =>
+            {
+                if (args.target == _from)
+                    UpdateRegexError();
+            });
+
             _applyButton.clicked += RunTool;
             _cancelButton.clicked += CloseTool;
+
+            UpdateRegexError();
         }
 
         void OpenRegexTutorial()
         {
             Application.OpenURL(regexTutorialLink);
+        }
+
+        void UpdateRegexError()
+        {
+            bool enabled = false;
+
+            if (_useRegex.value)
+            {
+                try
+                {
+                    Regex.Match("", _from.value);
+                }
+                catch (ArgumentException)
+                {
+                    enabled = true;
+                }
+            }
+
+            _regexError.ChangeDispaly(enabled);
         }
 
         public override void RunTool()
@@ -63,9 +99,13 @@ namespace Project.AppTools.Tools
 
                 var entry = file.Entries[item.id];
 
-                entry.content = useRegex ?
-                    Regex.Replace(entry.content, from, to) :
-                    entry.content.Replace(from, to);
+                try
+                {
+                    entry.content = useRegex ?
+                        Regex.Replace(entry.content, from, to) :
+                        entry.content.Replace(from, to);
+                }
+                catch { }
             }
 
             base.RunTool();

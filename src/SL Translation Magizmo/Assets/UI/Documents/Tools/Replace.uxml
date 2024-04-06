@@ -11,6 +11,7 @@
             </ui:VisualElement>
             <ui:VisualElement style="flex-grow: 1; height: 4px;" />
             <ui:TextField picking-mode="Ignore" label="From" name="from" multiline="true" class="text-area" />
+            <ui:Label tabindex="-1" text="Invalid regex pattern!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="regex-error" enable-rich-text="true" class="error" />
             <ui:TextField picking-mode="Ignore" label="To" name="to" multiline="true" class="text-area" />
         </ui:ScrollView>
         <ui:Button text="Cancel" display-tooltip-when-elided="true" name="cancel" />
