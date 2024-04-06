@@ -1,6 +1,7 @@
 ﻿using Fab.UITKDropdown;
 using JetBrains.Annotations;
 using Project.UI;
+using qASIC.Files;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,7 +71,7 @@ namespace Project.GUI.Preview
                 .Select(x => x.path)
                 .Where(x => x.StartsWith(Path))
                 .Select(x => x.Substring(Path.Length, x.Length - Path.Length))
-                .Select(x => Path.Length == 0 ? x : x.Substring(1, x.Length - 1))
+                .Select(x => Path.Length == 0 ? x : (x.Length == 0 ? x : x.Substring(1, x.Length - 1)))
                 .Select(x =>
                 {
                     var splits = x.Split('/');
@@ -94,16 +95,9 @@ namespace Project.GUI.Preview
         void ChangePath(string newPath)
         {
             var scenes = preview.CurrentVersion.scenes
-                .Where(x => x.path.StartsWith(newPath));
+                .Where(x => x.path.StartsWith($"{newPath}/"));
 
-            var isDirection = true;
-
-            if (scenes.Count() == 1)
-            {
-                var singleScene = scenes.First();
-                var nextPath = singleScene.path.Substring(newPath.Length, singleScene.path.Length - newPath.Length);
-                isDirection &= nextPath.Contains('/');
-            }
+            var isDirection = scenes.Count() != 0;
 
             //Button leads to another directory
             if (isDirection)
@@ -113,8 +107,10 @@ namespace Project.GUI.Preview
                 return;
             }
 
-            var scene = scenes.First();
-            preview.CurrentVersion.SelectScene(scene);
+            var scene = preview.CurrentVersion.scenes.Where(x => x.path == newPath).FirstOrDefault();
+            if (scene != null)
+                preview.CurrentVersion.SelectScene(scene);
+
             _popupButton.ChangeOpenedState(false);
         }
 

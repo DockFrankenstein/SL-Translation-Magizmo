@@ -8,16 +8,50 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 828035607451709419, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 470.69998
+      objectReference: {fileID: 0}
+    - target: {fileID: 828035607451709419, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -7.6
+      objectReference: {fileID: 0}
     - target: {fileID: 850513170866098113, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: m_text
-      value: Foundation personnel tasked with research of the anomalous objects.
-        Their primary goal is to escape the facility, evading <color=#F00>SCPs</color>
-        and <color=#008F1E>Chaos Insurgency</color>. <color=#0096FF>MTF</color> assist
-        them in escaping.
+      value: Slow and fragile, SCP-049 specializes as an ambush predator, able to
+        quickly turn the tide of a game with hordes of "cured" personnel.
+      objectReference: {fileID: 0}
+    - target: {fileID: 850513170866098113, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 38.6
       objectReference: {fileID: 0}
     - target: {fileID: 1053025517140655989, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166792683530933500, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166792683530933500, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_049_ability_no_waste
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166792683530933500, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Waste Not, Want Not
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350083462795433339, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350083462795433339, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_049_ability_good_sense
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350083462795433339, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Good Sense of the Doctor
       objectReference: {fileID: 0}
     - target: {fileID: 1930375027071107008, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: mainId.isMain
@@ -25,11 +59,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1930375027071107008, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: mainId.entryId
-      value: f1_ability_access_card_description
+      value: f1_049_ability_doctors_call_description
       objectReference: {fileID: 0}
     - target: {fileID: 1930375027071107008, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: mainId.defaultValue
-      value: You have an access card, it's not the best but don't lose it.
+      value: You signal your location to your cured personnel. As they stand near
+        you, their bodies toughen up to tolerate more damage. A great doctor always
+        checks up on their patients, after all.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994491204228739991, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: You reach out your gloved hand to touch the hearts of those who suffer
+        from the Pestilence, causing their bodily functions to fail rapidly; giving
+        you the chance to administer your cure.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994491204228739991, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 19.3
       objectReference: {fileID: 0}
     - target: {fileID: 2621158820406441029, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: m_IsActive
@@ -41,30 +87,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3664003018347819277, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: m_text
-      value: '"Scientist"'
+      value: SCP-049  -  "The Plague Doctor"
       objectReference: {fileID: 0}
     - target: {fileID: 3667195956062937749, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: m_text
-      value: Access Card
+      value: The Doctor's Call
       objectReference: {fileID: 0}
     - target: {fileID: 3667195956062937749, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: m_fontSize
-      value: 35.85
+      value: 26.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691433671485429961, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712010319871815362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712010319871815362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_049_ability_cardiac_attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712010319871815362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Cardiac Attack
       objectReference: {fileID: 0}
     - target: {fileID: 4001904896658915769, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4043996436882786729, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Your medical instincts are not without a need for efficiency; you can
+        revive the cured again and again to provide more insights. It's not every
+        day that the dead rise twice.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043996436882786729, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 19.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220465863158384686, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: "You shift your full focus to a tainted soul. You move faster, determined
+        to rid them of the Pestilence. You\u2019re able to gauge a victim\u2019s
+        distance using the foul aroma of the disease."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220465863158384686, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 19.3
+      objectReference: {fileID: 0}
     - target: {fileID: 4678472126441386788, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: mainId.entryId
-      value: f1_classd_description
+      value: f1_049_description
       objectReference: {fileID: 0}
     - target: {fileID: 4678472126441386788, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: mainId.defaultValue
-      value: Foundation personnel tasked with research of the anomalous objects.
-        Their primary goal is to escape the facility, evading <color=#F00>SCPs</color>
-        and <color=#008F1E>Chaos Insurgency</color>. <color=#0096FF>MTF</color> assist
-        them in escaping.
+      value: Slow and fragile, SCP-049 specializes as an ambush predator, able to
+        quickly turn the tide of a game with hordes of "cured" personnel.
       objectReference: {fileID: 0}
     - target: {fileID: 5147245196166485493, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: m_IsActive
@@ -72,11 +152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: path
-      value: Gameplay/F1/Scientist
+      value: Gameplay/F1/SCP-049
       objectReference: {fileID: 0}
     - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: entries.Array.size
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: entries.Array.data[0]
@@ -118,17 +198,33 @@ PrefabInstance:
       propertyPath: entries.Array.data[9]
       value: 
       objectReference: {fileID: 2431448248419781149}
-    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
-      propertyPath: entries.Array.data[10]
-      value: 
-      objectReference: {fileID: 2383744901092757735}
     - target: {fileID: 5365015231394721367, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5804365362357653362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804365362357653362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_049_ability_cardiac_attack_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804365362357653362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: You reach out your gloved hand to touch the hearts of those who suffer
+        from the Pestilence, causing their bodily functions to fail rapidly; giving
+        you the chance to administer your cure.
+      objectReference: {fileID: 0}
     - target: {fileID: 5902800164036444965, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: m_text
-      value: You have an access card, it's not the best but don't lose it.
+      value: You signal your location to your cured personnel. As they stand near
+        you, their bodies toughen up to tolerate more damage. A great doctor always
+        checks up on their patients, after all.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902800164036444965, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 19.3
       objectReference: {fileID: 0}
     - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: m_LocalPosition.x
@@ -172,19 +268,139 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6417197260139422037, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: m_Name
-      value: 13.4.1_f1_scientist
+      value: 13.4.1_f1_049
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457195825085032862, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Good Sense of the Doctor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457195825085032862, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 21.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6562205790574995481, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Waste Not, Want Not
+      objectReference: {fileID: 0}
+    - target: {fileID: 6562205790574995481, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 21.95
       objectReference: {fileID: 0}
     - target: {fileID: 6616283257887153755, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 05f58ad516794914bb9f9ab3a4393147, type: 3}
+      objectReference: {fileID: 21300000, guid: fe43a3a1d5a7b9a479fb95401e8f4428, type: 3}
+    - target: {fileID: 7099953209452668263, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 470.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099953209452668263, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -227.70001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617611214327746263, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 599.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617611214327746263, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -161
+      objectReference: {fileID: 0}
+    - target: {fileID: 7958613278963157567, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192892091121988811, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192892091121988811, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_049_ability_good_sense_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192892091121988811, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: "You shift your full focus to a tainted soul. You move faster, determined
+        to rid them of the Pestilence. You\u2019re able to gauge a victim\u2019s
+        distance using the foul aroma of the disease."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304582672110400844, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304582672110400844, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_049_ability_no_waste_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304582672110400844, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Your medical instincts are not without a need for efficiency; you can
+        revive the cured again and again to provide more insights. It's not every
+        day that the dead rise twice.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692880892912341543, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Cardiac Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692880892912341543, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 30.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[-2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: element.defaultContent
+      value: A  -  "B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: element.dynamicValues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: element.dynamicValues.Array.data[1]
+      value: 3493013344674643969
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643968]
+      value: Project.GUI Project.GUI.Preview.MappedIdComplexContent/Element/StaticValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969]
+      value: Project.GUI Project.GUI.Preview.MappedIdComplexContent/Element/EntryValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643968].tag
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969].tag
+      value: B
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643968].staticContent
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: managedReferences[3493013256487043073].entryContent.id
-      value: scientist_name
+      value: 049_name
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969].entryContent.id
+      value: 049_nickname
       objectReference: {fileID: 0}
     - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: managedReferences[3493013256487043073].entryContent.defaultContent
-      value: Scientist
+      value: SCP-049
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969].entryContent.defaultContent
+      value: The Plague Doctor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969].entryContent.dynamicValues.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8774309426379644528, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: mainId.isMain
@@ -192,19 +408,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8774309426379644528, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: mainId.entryId
-      value: f1_ability_access_card
+      value: f1_049_ability_doctors_call
       objectReference: {fileID: 0}
     - target: {fileID: 8774309426379644528, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: mainId.defaultValue
-      value: Access Card
+      value: The Doctor's Call
       objectReference: {fileID: 0}
     - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: mainId.entryId
-      value: scientist_name
+      value: 049_name
       objectReference: {fileID: 0}
     - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: mainId.defaultValue
-      value: '"Scientist"'
+      value: SCP-049  -  "The Plague Doctor"
       objectReference: {fileID: 0}
     - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: otherIds.Array.size
@@ -218,6 +434,10 @@ PrefabInstance:
       propertyPath: linkedElements.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 9170731144705368665, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4f6ca4e5c8dd696489309ae42c4081da, type: 3}
     m_RemovedComponents:
     - {fileID: 4620692168201409341, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
     - {fileID: 2472685859335829325, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
@@ -225,24 +445,14 @@ PrefabInstance:
     - {fileID: 923094591139761777, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
     - {fileID: 5490056248236004210, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
     - {fileID: 9169706051500755527, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1709197308250798701, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
 --- !u!114 &646153471809952543 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3712010319871815362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
-  m_PrefabInstance: {fileID: 4284098145661826525}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2383744901092757735 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1900782698375243066, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
   m_PrefabInstance: {fileID: 4284098145661826525}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

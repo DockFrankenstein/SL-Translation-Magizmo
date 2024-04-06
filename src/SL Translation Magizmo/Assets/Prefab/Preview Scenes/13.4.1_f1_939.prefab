@@ -1,0 +1,1394 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &795991042417141894
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8080747050937986286}
+    m_Modifications:
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 184.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 144
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -148.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 285.352
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 160.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 470.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -204.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_939_ability_cloud
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Amnestic Cloud
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098896828225331329, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Name
+      value: F1 Ability_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: Fill your air sacs with a dangerous neurochemical gas, projecting it
+        in a radius which is determined by the time it was charged. Humans who inhale
+        the gas lose perception of SCP-939, and cannot perform certain actions. Beware
+        though, attacking or being attacked will reveal you for a short time.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 17.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 17.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: Amnestic Cloud
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 28.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 41.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -33.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_939_ability_cloud_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Fill your air sacs with a dangerous neurochemical gas, projecting it
+        in a radius which is determined by the time it was charged. Humans who inhale
+        the gas lose perception of SCP-939, and cannot perform certain actions. Beware
+        though, attacking or being attacked will reveal you for a short time.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+--- !u!224 &42482186306147417 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 795991042417141894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2007039103256047438 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 795991042417141894}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8706836168962395902 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 795991042417141894}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &2625779375036555652
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8080747050937986286}
+    m_Modifications:
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 124.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 144
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -118.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 285.352
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 160.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -90.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -281.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_939_ability_voices
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: With Many Voices
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098896828225331329, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Name
+      value: F1 Ability_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: Humans you kill have a chance at giving you their last words, allowing
+        you to steal their voice and utilize it to deceive others. In addition, SCP-939
+        can also mimic some basic sounds, such as disguising their footsteps to match
+        humans.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 15.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 17.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: With Many Voices
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 41.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -33.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_939_ability_voices_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Humans you kill have a chance at giving you their last words, allowing
+        you to steal their voice and utilize it to deceive others. In addition, SCP-939
+        can also mimic some basic sounds, such as disguising their footsteps to match
+        humans.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+--- !u!224 &3453597485832609115 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 2625779375036555652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3792354836231906892 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 2625779375036555652}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6318458546039392252 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 2625779375036555652}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &4284098145661826525
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 828035607451709419, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 470.69998
+      objectReference: {fileID: 0}
+    - target: {fileID: 828035607451709419, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -7.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 850513170866098113, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: SCP-939 is blind, and sees through sound. It capitalizes on mistakes,
+        using its silent steps and frightening speed to set up ambushes and go in
+        for the kill.
+      objectReference: {fileID: 0}
+    - target: {fileID: 850513170866098113, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 34.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053025517140655989, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166792683530933500, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166792683530933500, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_106_ability_hunters_atlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166792683530933500, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Hunter's Atlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350083462795433339, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350083462795433339, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_106_ability_stalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350083462795433339, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Stalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930375027071107008, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930375027071107008, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_106_ability_blissful_agony_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930375027071107008, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: While Stalking, you can only see injured humans. The greater their agony,
+        the greater the distance you can spot them from. Escapees of the pocket dimension
+        are traumatized, leaving them visible from anywhere.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994491204228739991, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Click to swipe your claw in a wide arc in front of you, ripping flesh
+        and bone from your chosen victim. Whilst focusing, your primary attack will
+        allow you to lunge at your prey.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994491204228739991, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 18.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2547596248940815519, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 124.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 2547596248940815519, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 144
+      objectReference: {fileID: 0}
+    - target: {fileID: 2547596248940815519, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -118.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621158820406441029, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2940630125821122005, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -90.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2940630125821122005, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 68.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988937555421188071, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664003018347819277, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: SCP-939  -  "With Many Voices"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667195956062937749, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Blissful Agony
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667195956062937749, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 31.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691433671485429961, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 909.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691433671485429961, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 98.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691433671485429961, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691433671485429961, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -31.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712010319871815362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712010319871815362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_939_ability_claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712010319871815362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 4001904896658915769, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043996436882786729, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Quickly move to a nearby room, at a great Vigor cost. Such movement
+        is instinct to you, having prowled through the Site's corridors for as long
+        as you have.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043996436882786729, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 19.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220465863158384686, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Submerges you into the floor. Move around quickly and invisibly, regenerate,
+        and prepare to strike your prey. Uses Vigor, which regenerates slowly while
+        Stalk is inactive.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220465863158384686, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 19.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635448084952761647, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 219.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635448084952761647, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 41.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635448084952761647, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -33.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678472126441386788, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_939_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678472126441386788, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: SCP-939 is blind, and sees through sound. It capitalizes on mistakes,
+        using its silent steps and frightening speed to set up ambushes and go in
+        for the kill.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147245196166485493, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: path
+      value: Gameplay/F1/SCP-939
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[0]
+      value: 
+      objectReference: {fileID: 4795752374383196213}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[1]
+      value: 
+      objectReference: {fileID: 8906265239420389113}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[2]
+      value: 
+      objectReference: {fileID: 646153471809952543}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[3]
+      value: 
+      objectReference: {fileID: 7780270841886800559}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[4]
+      value: 
+      objectReference: {fileID: 2383744901092757735}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[5]
+      value: 
+      objectReference: {fileID: 5983474255238876054}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[6]
+      value: 
+      objectReference: {fileID: 3460761301919640102}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[7]
+      value: 
+      objectReference: {fileID: 3792354836231906892}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[8]
+      value: 
+      objectReference: {fileID: 6318458546039392252}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[9]
+      value: 
+      objectReference: {fileID: 8237720819593572500}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[10]
+      value: 
+      objectReference: {fileID: 1251096090360746276}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[11]
+      value: 
+      objectReference: {fileID: 2007039103256047438}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[12]
+      value: 
+      objectReference: {fileID: 8706836168962395902}
+    - target: {fileID: 5365015231394721367, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804365362357653362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804365362357653362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_939_ability_claw_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804365362357653362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Click to swipe your claw in a wide arc in front of you, ripping flesh
+        and bone from your chosen victim. Whilst focusing, your primary attack will
+        allow you to lunge at your prey.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902800164036444965, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: While Stalking, you can only see injured humans. The greater their agony,
+        the greater the distance you can spot them from. Escapees of the pocket dimension
+        are traumatized, leaving them visible from anywhere.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902800164036444965, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 17.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417197260139422037, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Name
+      value: 13.4.1_f1_939
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457195825085032862, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Stalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 6562205790574995481, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Hunter's Atlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6562205790574995481, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 31.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6616283257887153755, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 447f8911b3f49524db479e5afa799ef1, type: 3}
+    - target: {fileID: 7099953209452668263, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 470.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099953209452668263, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -227.70001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617611214327746263, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 599.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617611214327746263, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7958613278963157567, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192892091121988811, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192892091121988811, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_106_ability_stalk_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192892091121988811, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Submerges you into the floor. Move around quickly and invisibly, regenerate,
+        and prepare to strike your prey. Uses Vigor, which regenerates slowly while
+        Stalk is inactive.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304582672110400844, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304582672110400844, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_106_ability_hunters_atlas_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304582672110400844, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Quickly move to a nearby room, at a great Vigor cost. Such movement
+        is instinct to you, having prowled through the Site's corridors for as long
+        as you have.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692880892912341543, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692880892912341543, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 35.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[-2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: element.defaultContent
+      value: A  -  "B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: element.dynamicValues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: element.dynamicValues.Array.data[1]
+      value: 3493013344674643969
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643968]
+      value: Project.GUI Project.GUI.Preview.MappedIdComplexContent/Element/StaticValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969]
+      value: Project.GUI Project.GUI.Preview.MappedIdComplexContent/Element/EntryValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643968].tag
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969].tag
+      value: B
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643968].staticContent
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013256487043073].entryContent.id
+      value: 939_name
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969].entryContent.id
+      value: 939_nickname
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013256487043073].entryContent.defaultContent
+      value: SCP-939
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969].entryContent.defaultContent
+      value: With Many Voices
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969].entryContent.dynamicValues.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774309426379644528, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774309426379644528, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_106_ability_blissful_agony
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774309426379644528, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Blissful Agony
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: 939_name
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: SCP-939  -  "With Many Voices"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: linkedElements.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: linkedElements.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170731144705368665, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9240e5f5c1392be42896bb22acf8c963, type: 3}
+    m_RemovedComponents:
+    - {fileID: 4620692168201409341, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 2472685859335829325, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 488850217685607366, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 923094591139761777, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 5490056248236004210, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 9169706051500755527, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 4219806879747551794, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 4036054288453465013, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 5906239812354931001, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5427040074424686899, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 5207586268747083905}
+    - targetCorrespondingSourceObject: {fileID: 5427040074424686899, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 3453597485832609115}
+    - targetCorrespondingSourceObject: {fileID: 5427040074424686899, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 7574704157011774339}
+    - targetCorrespondingSourceObject: {fileID: 5427040074424686899, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      insertIndex: 7
+      addedObject: {fileID: 42482186306147417}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+--- !u!114 &646153471809952543 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3712010319871815362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2383744901092757735 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1900782698375243066, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4795752374383196213 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7780270841886800559 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5804365362357653362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &8080747050937986286 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5427040074424686899, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8906265239420389113 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4678472126441386788, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &4888676012624890974
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8080747050937986286}
+    m_Modifications:
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 124.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 144
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -118.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 285.352
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 160.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -90.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -106.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_939_ability_focus
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Focus
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098896828225331329, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Name
+      value: F1 Ability_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: Devoting your full energy to your senses, you can see prey from farther
+        away, as well as being able to tell what type of prey they are, through the
+        actions they perform.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 19.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: Focus
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 35.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 41.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -33.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_939_ability_focus_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Devoting your full energy to your senses, you can see prey from farther
+        away, as well as being able to tell what type of prey they are, through the
+        actions they perform.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+--- !u!114 &3460761301919640102 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 4888676012624890974}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &5207586268747083905 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 4888676012624890974}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5983474255238876054 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 4888676012624890974}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &7098730451585038172
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8080747050937986286}
+    m_Modifications:
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 159.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 144
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -136.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 285.352
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 160.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 470.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 33.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_939_ability_ultrasensitive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Ultrasensitive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098896828225331329, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Name
+      value: F1 Ability_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: SCP-939 is able to sense nearby heat sources, represented by a small
+        radius of normal vision. Outside of this however, you must rely on sound
+        in order to track nearby prey. The louder the sound, the further away you
+        can hear it from. The range of your vision is affected by your stamina levels.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 16.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: Ultrasensitive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 32.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 41.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -33.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_939_ability_ultrasensitive_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: SCP-939 is able to sense nearby heat sources, represented by a small
+        radius of normal vision. Outside of this however, you must rely on sound
+        in order to track nearby prey. The louder the sound, the further away you
+        can hear it from. The range of your vision is affected by your stamina levels.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+--- !u!114 &1251096090360746276 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 7098730451585038172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &7574704157011774339 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 7098730451585038172}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8237720819593572500 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 7098730451585038172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

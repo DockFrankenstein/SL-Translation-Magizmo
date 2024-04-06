@@ -37,7 +37,7 @@ namespace Project.GUI.Preview
         public class Element
         {
             public string id;
-            public string defaultContent;
+            [TextArea] public string defaultContent;
 
             [SerializeReference, Subclass(IsList = true)]
             public List<DynamicValue> dynamicValues = new List<DynamicValue>();

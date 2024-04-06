@@ -1,0 +1,1262 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2238314983978709022
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8080747050937986286}
+    m_Modifications:
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 389.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 105.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 194.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -120.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 285.352
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 160.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -191.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -65.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_3114_ability_catch_hands
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Catch These Hands
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098896828225331329, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Name
+      value: F1 Ability_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: Unleash a flurry of light attacks that slowly scrape health from whomever
+        you hit. These microscopic layers of allegedly calcium-rich skin somehow
+        give you dexterity and strengthen your resolve, restoring a small amount
+        of Hume Shield on each hit.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 16.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 16.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_wordWrappingRatios
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: Catch These Hands
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 30.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 30.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 295.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 147.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_3114_ability_catch_hands_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Unleash a flurry of light attacks that slowly scrape health from whomever
+        you hit. These microscopic layers of allegedly calcium-rich skin somehow
+        give you dexterity and strengthen your resolve, restoring a small amount
+        of Hume Shield on each hit.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+--- !u!114 &1135352764439967702 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 2238314983978709022}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &1480865614172638401 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 2238314983978709022}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7840519980906993254 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 2238314983978709022}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &4284098145661826525
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 828035607451709419, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 470.69998
+      objectReference: {fileID: 0}
+    - target: {fileID: 828035607451709419, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -7.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 850513170866098113, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: An unstoppable force capable of easily bypassing any door in the facility.
+      objectReference: {fileID: 0}
+    - target: {fileID: 850513170866098113, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 52.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053025517140655989, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166792683530933500, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166792683530933500, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_106_ability_hunters_atlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166792683530933500, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Hunter's Atlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350083462795433339, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350083462795433339, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_106_ability_stalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350083462795433339, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Stalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930375027071107008, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930375027071107008, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_106_ability_blissful_agony_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930375027071107008, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: While Stalking, you can only see injured humans. The greater their agony,
+        the greater the distance you can spot them from. Escapees of the pocket dimension
+        are traumatized, leaving them visible from anywhere.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994491204228739991, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: "Your name and identity are hidden. You are but a blank canvas and the
+        world is your muse. While disguised as a human, your basic strength allows
+        for you to hold onto certain objects \u2014 but your lack of noticeable muscle
+        prevents you from effectively using items."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994491204228739991, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 16.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994491204228739991, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 16.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994491204228739991, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2547596248940815519, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 389.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2547596248940815519, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 105.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2547596248940815519, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 194.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2547596248940815519, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -120.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621158820406441029, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2940630125821122005, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -191.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2940630125821122005, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 147.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988937555421188071, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664003018347819277, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: SCP-3114  -  "Wouldn't it be Chilly?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667195956062937749, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Blissful Agony
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667195956062937749, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 31.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691433671485429961, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712010319871815362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712010319871815362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_3114_ability_skeleton_in_closet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712010319871815362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Skeletons In Your Closet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4001904896658915769, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043996436882786729, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Quickly move to a nearby room, at a great Vigor cost. Such movement
+        is instinct to you, having prowled through the Site's corridors for as long
+        as you have.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043996436882786729, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 19.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220465863158384686, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Submerges you into the floor. Move around quickly and invisibly, regenerate,
+        and prepare to strike your prey. Uses Vigor, which regenerates slowly while
+        Stalk is inactive.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220465863158384686, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 19.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635448084952761647, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 295.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635448084952761647, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 147.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678472126441386788, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_106_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678472126441386788, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: An unstoppable force capable of easily bypassing any door in the facility.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147245196166485493, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: path
+      value: Gameplay/F1/SCP-3114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[0]
+      value: 
+      objectReference: {fileID: 4795752374383196213}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[1]
+      value: 
+      objectReference: {fileID: 646153471809952543}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[2]
+      value: 
+      objectReference: {fileID: 7780270841886800559}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[3]
+      value: 
+      objectReference: {fileID: 2383744901092757735}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[4]
+      value: 
+      objectReference: {fileID: 1135352764439967702}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[5]
+      value: 
+      objectReference: {fileID: 7840519980906993254}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[6]
+      value: 
+      objectReference: {fileID: 7357124230854720577}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[7]
+      value: 
+      objectReference: {fileID: 366845119508274673}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[8]
+      value: 
+      objectReference: {fileID: 5713764731550446541}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[9]
+      value: 
+      objectReference: {fileID: 3190190053172957821}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[10]
+      value: 
+      objectReference: {fileID: 2383744901092757735}
+    - target: {fileID: 5365015231394721367, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804365362357653362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804365362357653362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_3114_ability_skeleton_in_closet_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804365362357653362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: "Your name and identity are hidden. You are but a blank canvas and the
+        world is your muse. While disguised as a human, your basic strength allows
+        for you to hold onto certain objects \u2014 but your lack of noticeable muscle
+        prevents you from effectively using items."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902800164036444965, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: While Stalking, you can only see injured humans. The greater their agony,
+        the greater the distance you can spot them from. Escapees of the pocket dimension
+        are traumatized, leaving them visible from anywhere.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902800164036444965, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 17.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417197260139422037, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Name
+      value: 13.4.1_f1_3114
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457195825085032862, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Stalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 6562205790574995481, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Hunter's Atlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6562205790574995481, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 31.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6616283257887153755, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a8764a3823032b04ca43a0c3122c33a7, type: 3}
+    - target: {fileID: 7099953209452668263, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 470.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099953209452668263, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -227.70001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617611214327746263, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 39.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617611214327746263, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 217.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7958613278963157567, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192892091121988811, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192892091121988811, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_106_ability_stalk_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192892091121988811, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Submerges you into the floor. Move around quickly and invisibly, regenerate,
+        and prepare to strike your prey. Uses Vigor, which regenerates slowly while
+        Stalk is inactive.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304582672110400844, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304582672110400844, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_106_ability_hunters_atlas_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304582672110400844, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Quickly move to a nearby room, at a great Vigor cost. Such movement
+        is instinct to you, having prowled through the Site's corridors for as long
+        as you have.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692880892912341543, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Skeletons In Your Closet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692880892912341543, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 24.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692880892912341543, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 30.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[-2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: element.defaultContent
+      value: A  -  "B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: element.dynamicValues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: element.dynamicValues.Array.data[1]
+      value: 3493013344674643969
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643968]
+      value: Project.GUI Project.GUI.Preview.MappedIdComplexContent/Element/StaticValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969]
+      value: Project.GUI Project.GUI.Preview.MappedIdComplexContent/Element/EntryValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643968].tag
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969].tag
+      value: B
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643968].staticContent
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013256487043073].entryContent.id
+      value: 3114_name
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969].entryContent.id
+      value: 3114_nickname
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013256487043073].entryContent.defaultContent
+      value: SCP-3114
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969].entryContent.defaultContent
+      value: Wouldn't it be Chilly?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013344674643969].entryContent.dynamicValues.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774309426379644528, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774309426379644528, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_106_ability_blissful_agony
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774309426379644528, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Blissful Agony
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: 3114_name
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: SCP-3114  -  "Wouldn't it be Chilly?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: linkedElements.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: linkedElements.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170731144705368665, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 81aa9029980986845865d712dee65afe, type: 3}
+    m_RemovedComponents:
+    - {fileID: 4620692168201409341, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 2472685859335829325, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 488850217685607366, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 923094591139761777, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 5490056248236004210, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 9169706051500755527, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 5563603272466443379, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 5906239812354931001, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 4036054288453465013, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 4219806879747551794, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5427040074424686899, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 1480865614172638401}
+    - targetCorrespondingSourceObject: {fileID: 5427040074424686899, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 9031199115033823062}
+    - targetCorrespondingSourceObject: {fileID: 5427040074424686899, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 6055051202500118746}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+--- !u!114 &646153471809952543 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3712010319871815362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2383744901092757735 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1900782698375243066, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4795752374383196213 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7780270841886800559 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5804365362357653362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &8080747050937986286 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5427040074424686899, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6889060526840067077
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8080747050937986286}
+    m_Modifications:
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 389.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 105.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 194.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -120.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 285.352
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 160.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 298.59998
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -65.69998
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_3114_ability_strangulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Strangulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098896828225331329, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Name
+      value: F1 Ability_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: Grab them by the neck and choke the life out of them. Look them in the
+        eyes as they draw their last breaths. Their lives are but candles to be blown
+        out, taking all but a mere few seconds. This attack can be interrupted.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 16.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 16.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_wordWrappingRatios
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: Strangulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 30.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 30.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 295.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 147.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_3114_ability_strangulation_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Grab them by the neck and choke the life out of them. Look them in the
+        eyes as they draw their last breaths. Their lives are but candles to be blown
+        out, taking all but a mere few seconds. This attack can be interrupted.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+--- !u!114 &3190190053172957821 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 6889060526840067077}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5713764731550446541 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 6889060526840067077}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &6055051202500118746 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 6889060526840067077}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8559165096734768009
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8080747050937986286}
+    m_Modifications:
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 389.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 105.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 194.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487365616045461, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -120.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 285.352
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 160.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 298.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 147.79999
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_3114_ability_under_skin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Under Their Skin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098896828225331329, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_Name
+      value: F1 Ability_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: "Steal yourself a nice, warm jacket (their skin) by interacting with
+        their corpse. Temporarily embrace the warmth and wear their fleshy \u2018meat
+        suit\u2019, mimicking the ability to hold certain items. Hold [ R ] to remove
+        it abruptly!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 16.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 16.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_wordWrappingRatios
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107261257843038877, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_text
+      value: Under Their Skin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSize
+      value: 30.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625189128098462509, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 30.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 295.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135491873616653349, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 147.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.content
+      value: 
+      objectReference: {fileID: 7559773969050386035}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_3114_ability_under_skin_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      propertyPath: mainId.defaultValue
+      value: "Steal yourself a nice, warm jacket (their skin) by interacting with
+        their corpse. Temporarily embrace the warmth and wear their fleshy \u2018meat
+        suit\u2019, mimicking the ability to hold certain items. Hold [ R ] to remove
+        it abruptly!"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9081419389066459439, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7559773969050386035}
+  m_SourcePrefab: {fileID: 100100000, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+--- !u!114 &366845119508274673 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8349402129087882872, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 8559165096734768009}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634987340601393830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &634987340601393830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9081419389066459439, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 8559165096734768009}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7559773969050386035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634987340601393830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a6bd15d2d142247bda2d6454ed7d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s: 
+  element:
+    id: f1_3114_ability_under_skin_description
+    defaultContent: "Steal yourself a nice, warm jacket (their skin) by interacting
+      with their corpse. Temporarily embrace the warmth and wear their fleshy \u2018meat
+      suit\u2019, mimicking the ability to hold certain items. Hold [key] to remove
+      it abruptly!"
+    dynamicValues:
+    - rid: 3493013344674643970
+  references:
+    version: 2
+    RefIds:
+    - rid: 3493013344674643970
+      type: {class: MappedIdComplexContent/Element/StaticValue, ns: Project.GUI.Preview, asm: Project.GUI}
+      data:
+        tag: '[key]'
+        staticContent: '[ R ]'
+--- !u!114 &7357124230854720577 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1211893589577009096, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 8559165096734768009}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &9031199115033823062 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 836826138560298207, guid: d944f8df05aa6f84883cfcb2f5de4b1f, type: 3}
+  m_PrefabInstance: {fileID: 8559165096734768009}
+  m_PrefabAsset: {fileID: 0}
