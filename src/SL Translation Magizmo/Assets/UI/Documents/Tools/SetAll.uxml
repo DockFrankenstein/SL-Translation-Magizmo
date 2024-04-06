@@ -4,7 +4,7 @@
     <ui:VisualElement class="popup-narrow" style="flex-direction: column;">
         <ui:Label tabindex="-1" text="Set All Tool" parse-escape-sequences="true" display-tooltip-when-elided="true" class="header" style="flex-shrink: 1;" />
         <ui:ScrollView style="flex-grow: 1; flex-shrink: 1;">
-            <ui:TextField picking-mode="Ignore" label="Content" name="content" />
+            <ui:TextField picking-mode="Ignore" label="Content" name="content" multiline="true" class="text-area" />
         </ui:ScrollView>
         <ui:Button text="Cancel" display-tooltip-when-elided="true" name="cancel" />
         <ui:Button text="Apply" display-tooltip-when-elided="true" name="apply" class="apply-button colored" />
