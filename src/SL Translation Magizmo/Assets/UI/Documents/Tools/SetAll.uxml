@@ -7,6 +7,6 @@
             <ui:TextField picking-mode="Ignore" label="Content" name="content" multiline="true" class="text-area" />
         </ui:ScrollView>
         <ui:Button text="Cancel" display-tooltip-when-elided="true" name="cancel" />
-        <ui:Button text="Apply" display-tooltip-when-elided="true" name="apply" class="apply-button colored" />
+        <ui:Button text="Apply" display-tooltip-when-elided="true" name="apply" class="colored big" />
     </ui:VisualElement>
 </ui:UXML>

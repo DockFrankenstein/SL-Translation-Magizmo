@@ -107,7 +107,7 @@ namespace Project.GUI.Preview
                     txt = currentValues[SelectedValueIndex];
             }
 
-            text.text = txt;
+            text.text = txt.Replace("\\n", "\n");
 
             if (idNameText != null)
             {

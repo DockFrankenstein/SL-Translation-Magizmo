@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
+    <ui:VisualElement name="fade" class="fade" />
+    <ui:VisualElement name="window" class="popup-narrow">
+        <ui:Label text="Replace" display-tooltip-when-elided="true" class="header" />
+        <ui:ScrollView style="flex-grow: 1;">
+            <ui:Toggle label="Use Regex" name="regex" />
+            <ui:VisualElement class="unity-base-field" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Regex Tutorial" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                <ui:Button text="Open Link" parse-escape-sequences="true" display-tooltip-when-elided="true" name="regex-tut" style="flex-shrink: 1; flex-grow: 1;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; height: 4px;" />
+            <ui:TextField picking-mode="Ignore" label="From" name="from" multiline="true" class="text-area" />
+            <ui:TextField picking-mode="Ignore" label="To" name="to" multiline="true" class="text-area" />
+        </ui:ScrollView>
+        <ui:Button text="Cancel" display-tooltip-when-elided="true" name="cancel" />
+        <ui:Button text="Replace" display-tooltip-when-elided="true" name="apply" class="big colored" />
+    </ui:VisualElement>
+</ui:UXML>
