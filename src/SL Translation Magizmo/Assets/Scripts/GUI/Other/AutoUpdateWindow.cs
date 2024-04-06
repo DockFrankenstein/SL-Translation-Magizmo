@@ -77,7 +77,7 @@ namespace Project.GUI.Other
         {
             _updater = new AutoUpdater()
             {
-                TargetFileName = "Installer.zip",
+                TargetFileName = "Installer.exe",
                 ResultPath = $"{FileManager.TrimPathEnd(Application.dataPath, 1)}/Uninstall.exe",
                 CurrentVersion = Application.version,
             };
