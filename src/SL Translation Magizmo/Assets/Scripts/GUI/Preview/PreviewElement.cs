@@ -46,6 +46,7 @@ namespace Project.GUI.Preview
                 elements.AddRange(newElements);
 
                 newElements = newElements
+                    .Where(x => x != null)
                     .SelectMany(x => x.linkedElements)
                     .Except(elements)
                     .ToList();

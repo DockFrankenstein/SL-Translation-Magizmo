@@ -279,6 +279,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linkedElements: []
+  manager: {fileID: 0}
+  hierarchy: {fileID: 0}
   text: {fileID: 5869341147563832517}
   idNameText: {fileID: 1823422134509536311}
   multiEntryPanel: {fileID: 6063163089769251953}
@@ -286,13 +289,21 @@ MonoBehaviour:
   button: {fileID: 2419085112562963132}
   interactable: 1
   mainId:
-    entryId: 
+    entryId: guard_name
     isMain: 1
     defaultValue: 
     content: {fileID: 0}
+    contentContext:
+      rid: -2
   otherIds: []
-  manager: {fileID: 0}
-  hierarchy: {fileID: 0}
+  idReplaceFrom: 
+  idReplaceTo: 
+  idReplaceRegex: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!114 &2419085112562963132
 MonoBehaviour:
   m_ObjectHideFlags: 0

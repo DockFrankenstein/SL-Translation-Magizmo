@@ -48,8 +48,6 @@ namespace Project.GUI.Preview
             var detectedEntries = GetComponentsInChildren<PreviewElement>()
                 .Except(entries);
 
-            if (detectedEntries.Count() == 0) return;
-
             entries = entries
                 .Where(x => x != null)
                 .Concat(detectedEntries)

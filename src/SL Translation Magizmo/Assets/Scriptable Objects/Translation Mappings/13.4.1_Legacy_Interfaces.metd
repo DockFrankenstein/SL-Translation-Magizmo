@@ -247,9 +247,9 @@
             "guid": "8fb0a2d1-ef94-4b46-94bd-5855b85986d5",
             "fields": [
                 {
-                    "id": "",
-                    "autoDisplayName": true,
-                    "displayName": "",
+                    "id": "f1_passive",
+                    "autoDisplayName": false,
+                    "displayName": "Passive",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "72318fed-8c5c-41f9-9ce0-47703b7013de"

@@ -16,9 +16,12 @@ namespace Project.GUI.Preview
 
         string GetContent(TranslationManager manager, Element element)
         {
-            var txt = manager.File.Entries.TryGetValue(element.id, out var val) && !string.IsNullOrWhiteSpace(val.content) ?
-                val.content :
-                element.defaultContent;
+            var txt = element.defaultContent;
+
+            if (!string.IsNullOrEmpty(element.id) &&
+                manager.File.Entries.TryGetValue(element.id, out var val) &&
+                !string.IsNullOrWhiteSpace(val.content))
+                txt = val.content;
 
             foreach (var item in element.dynamicValues)
             {

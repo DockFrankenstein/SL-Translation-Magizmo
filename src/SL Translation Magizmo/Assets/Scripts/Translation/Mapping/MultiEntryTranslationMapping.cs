@@ -41,15 +41,16 @@ namespace Project.Translation.Mapping
                     .Replace("\r\n", "\n")
                     .Replace('\r', '\n')
                     .Split('\n')
+                    .Select(x => x.Replace("\\n", "\n"))
                     .ToArray();
 
             for (int i = 0; i < lines.Count; i++)
             {
                 var line = lines[i];
 
-                foreach (var mappedFields in line.fields)
-                    if (!file.Entries.ContainsKey(mappedFields.id))
-                        file.Entries.Add(mappedFields.id, new SaveFile.EntryData(mappedFields));
+                foreach (var mappedField in line.fields)
+                    if (!file.Entries.ContainsKey(mappedField.id) && mappedField.Status == MappedField.SetupStatus.Used)
+                        file.Entries.Add(mappedField.id, new SaveFile.EntryData(mappedField));
 
                 string lineTxt;
 
@@ -83,14 +84,14 @@ namespace Project.Translation.Mapping
 
                         for (int x = 0; x < Mathf.Min(line.fields.Count, splitLine.Length); x++)
                         {
-                            if (!line.fields[x].addToList) continue;
+                            if (line.fields[x].Status != MappedField.SetupStatus.Used) continue;
                             file.Entries[line.fields[x].id].content = splitLine[x];
                         }
 
                         break;
                     case false:
                         if (line.fields.Count == 0) break;
-                        if (!line.fields[0].addToList) break;
+                        if (line.fields[0].Status != MappedField.SetupStatus.Used) break;
 
                         file.Entries[line.fields[0].id].content = lineTxt;
                         break;
@@ -106,7 +107,8 @@ namespace Project.Translation.Mapping
                 var line = lines[i];
 
                 var values = line.fields
-                    .Select(x => getTextContent(i, x));
+                    .Select(x => getTextContent(i, x))
+                    .Select(x => x.Replace("\n", "\\n"));
 
                 switch (identificationType)
                 {

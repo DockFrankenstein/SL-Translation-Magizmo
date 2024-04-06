@@ -1,0 +1,507 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4284098145661826525
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 850513170866098113, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: A member of an undercover organisation whose primary goal is to disrupt
+        Foundation operations and utilise SCPs for their own advantage. They are
+        tasked with eliminating <color=#FFFF7CFF>Scientists</color> and <color=#0096FF>Foundation
+        Staff</color>, and escorting <color=#FF8E00>D-Class</color> to safety.
+      objectReference: {fileID: 0}
+    - target: {fileID: 850513170866098113, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 32.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053025517140655989, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930375027071107008, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930375027071107008, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_ability_dangerous_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930375027071107008, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: You have been consigned with heavy weaponry, an Access Device, and medical
+        supplies.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621158820406441029, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988937555421188071, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664003018347819277, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: '"Chaos Insurgency Conscript"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667195956062937749, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: Armed & Dangerous
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667195956062937749, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_fontSize
+      value: 22.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4001904896658915769, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678472126441386788, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_chaos_description
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678472126441386788, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: A member of an undercover organisation whose primary goal is to disrupt
+        Foundation operations and utilise SCPs for their own advantage. They are
+        tasked with eliminating <color=#FFFF7CFF>Scientists</color> and <color=#0096FF>Foundation
+        Staff</color>, and escorting <color=#FF8E00>D-Class</color> to safety.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147245196166485493, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: path
+      value: Gameplay/F1/Chaos Insurgency
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[0]
+      value: 
+      objectReference: {fileID: 4795752374383196213}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[1]
+      value: 
+      objectReference: {fileID: 8906265239420389113}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[2]
+      value: 
+      objectReference: {fileID: 646153471809952543}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[3]
+      value: 
+      objectReference: {fileID: 7780270841886800559}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[4]
+      value: 
+      objectReference: {fileID: 3010754555762188454}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[5]
+      value: 
+      objectReference: {fileID: 5388226423355588886}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[6]
+      value: 
+      objectReference: {fileID: 3118016322315215137}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[7]
+      value: 
+      objectReference: {fileID: 5209505198163361937}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[8]
+      value: 
+      objectReference: {fileID: 4805542562379951021}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[9]
+      value: 
+      objectReference: {fileID: 2431448248419781149}
+    - target: {fileID: 5248870508777064813, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: entries.Array.data[10]
+      value: 
+      objectReference: {fileID: 2383744901092757735}
+    - target: {fileID: 5365015231394721367, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902800164036444965, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_text
+      value: You have been consigned with heavy weaponry, an Access Device, and medical
+        supplies.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417197260139422037, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Name
+      value: 13.4.1_f1_chaos
+      objectReference: {fileID: 0}
+    - target: {fileID: 6616283257887153755, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f6938f1748b6b2e4ba7bb273c93d0a53, type: 3}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013256487043073].entryContent.id
+      value: chaos_conscript_name
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741323936451469347, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: managedReferences[3493013256487043073].entryContent.defaultContent
+      value: Chaos Insurgency Conscript
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774309426379644528, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774309426379644528, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: f1_ability_dangerous
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774309426379644528, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Armed & Dangerous
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.entryId
+      value: chaos_conscript_name
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: mainId.defaultValue
+      value: '"Chaos Insurgency Conscript"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: linkedElements.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: linkedElements.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.data[0].content
+      value: 
+      objectReference: {fileID: 8376403069628950854}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.data[0].entryId
+      value: chaos_rifleman_name
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.data[1].content
+      value: 
+      objectReference: {fileID: 2130760910836598141}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.data[1].entryId
+      value: chaos_marauder_name
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.data[2].content
+      value: 
+      objectReference: {fileID: 6916821465317635160}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.data[2].entryId
+      value: chaos_repressor_name
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.data[0].defaultValue
+      value: '"Chaos Insurgency Rifleman"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.data[1].defaultValue
+      value: '"Chaos Insurgency Marauder"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.data[2].defaultValue
+      value: '"Chaos Insurgency Repressor"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.data[0].contentContext
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.data[1].contentContext
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      propertyPath: otherIds.Array.data[2].contentContext
+      value: -2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4620692168201409341, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 2472685859335829325, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 488850217685607366, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 923094591139761777, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 5490056248236004210, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    - {fileID: 9169706051500755527, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8368081590685225663, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8376403069628950854}
+    - targetCorrespondingSourceObject: {fileID: 8368081590685225663, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2130760910836598141}
+    - targetCorrespondingSourceObject: {fileID: 8368081590685225663, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6916821465317635160}
+  m_SourcePrefab: {fileID: 100100000, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+--- !u!114 &646153471809952543 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3712010319871815362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2383744901092757735 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1900782698375243066, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2431448248419781149 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1930375027071107008, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3010754555762188454 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1350083462795433339, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3118016322315215137 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1166792683530933500, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4795752374383196213 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8789271585946963432, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716555902770898786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4805542562379951021 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8774309426379644528, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5209505198163361937 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8304582672110400844, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5388226423355588886 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8192892091121988811, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5716555902770898786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8368081590685225663, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8376403069628950854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716555902770898786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a6bd15d2d142247bda2d6454ed7d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s: 
+  element:
+    id: 
+    defaultContent: '"A"'
+    dynamicValues:
+    - rid: 3493013256487043073
+  references:
+    version: 2
+    RefIds:
+    - rid: 3493013256487043073
+      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Project.GUI.Preview, asm: Project.GUI}
+      data:
+        tag: A
+        entryContent:
+          id: chaos_rifleman_name
+          defaultContent: Chaos Insurgency Rifleman
+          dynamicValues: []
+--- !u!114 &2130760910836598141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716555902770898786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a6bd15d2d142247bda2d6454ed7d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s: 
+  element:
+    id: 
+    defaultContent: '"A"'
+    dynamicValues:
+    - rid: 3493013256487043073
+  references:
+    version: 2
+    RefIds:
+    - rid: 3493013256487043073
+      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Project.GUI.Preview, asm: Project.GUI}
+      data:
+        tag: A
+        entryContent:
+          id: chaos_marauder_name
+          defaultContent: Chaos Insurgency Marauder
+          dynamicValues: []
+--- !u!114 &6916821465317635160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716555902770898786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a6bd15d2d142247bda2d6454ed7d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s: 
+  element:
+    id: 
+    defaultContent: '"A"'
+    dynamicValues:
+    - rid: 3493013256487043073
+  references:
+    version: 2
+    RefIds:
+    - rid: 3493013256487043073
+      type: {class: MappedIdComplexContent/Element/EntryValue, ns: Project.GUI.Preview, asm: Project.GUI}
+      data:
+        tag: A
+        entryContent:
+          id: chaos_repressor_name
+          defaultContent: Chaos Insurgency Repressor
+          dynamicValues: []
+--- !u!114 &7780270841886800559 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5804365362357653362, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8906265239420389113 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4678472126441386788, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
+  m_PrefabInstance: {fileID: 4284098145661826525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
