@@ -155,7 +155,11 @@ namespace Project.GUI.Preview
         public override void Select()
         {
             if (hierarchy == null) return;
-            hierarchy.Select(GetCurrentTarget().entryId, true);
+
+            var current = GetCurrentTarget();
+
+
+            hierarchy.Select(current.useCustomSelectId ? current.customSelectId : current.entryId, true);
         }
 
         public override void ChangeIndex(int newIndex, bool silent = false)

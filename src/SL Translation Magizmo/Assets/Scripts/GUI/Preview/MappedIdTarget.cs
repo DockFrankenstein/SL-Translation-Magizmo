@@ -18,6 +18,8 @@ namespace Project.GUI.Preview
         public string entryId;
         [FormerlySerializedAs("isDefault")] public bool isMain;
         [TextArea] public string defaultValue;
+        public bool useCustomSelectId;
+        public string customSelectId;
 
         public MappedIdContent content;
         [SerializeReference] public object contentContext;

@@ -12,7 +12,7 @@ namespace Project.GUI.Editor.Preview
     public class MappedIdTargetDrawer : PropertyDrawer
     {
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label) =>
-            EditorGUIUtility.singleLineHeight * 8f + EditorGUIUtility.standardVerticalSpacing * 9f - 2f + contextHeight;
+            EditorGUIUtility.singleLineHeight * 9f + EditorGUIUtility.standardVerticalSpacing * 10f - 2f + contextHeight;
 
         float contextHeight;
 
@@ -28,6 +28,8 @@ namespace Project.GUI.Editor.Preview
             contentContextProperty.isExpanded = true;
             var contentContextValue = contentContextProperty.managedReferenceValue;
 
+            var useSelectIdProperty = property.FindPropertyRelative("useCustomSelectId");
+
             contextHeight = contentContextValue != null ?
                 EditorGUI.GetPropertyHeight(contentContextProperty, includeChildren: true) - singleLine :
                 0f;
@@ -38,7 +40,12 @@ namespace Project.GUI.Editor.Preview
             var labelRect = labelBackgroundRect.Border(separator, 0f);
 
             var idRect = labelRect.NextLine();
-            var isMainRect = idRect.NextLine();
+            var selectIdRect = idRect.NextLine();
+            var selectIdLabelRect = selectIdRect.SetWidth(EditorGUIUtility.labelWidth);
+            var selectIdToggleRect = selectIdLabelRect.ResizeToRight(singleLine).MoveX(singleLine + separator);
+            var selectIdValueRect = selectIdRect.BorderLeft(EditorGUIUtility.labelWidth + separator + singleLine);
+
+            var isMainRect = selectIdRect.NextLine();
             var contentLabelRect = isMainRect.NextLine();
             var lineRect = contentLabelRect.ResizeToTop(0f).Border(-2f, 0f);
             var defaultValueRect = contentLabelRect.NextLine().SetHeight(singleLine * 3 + separator * 2).MoveY(-2f);
@@ -63,6 +70,11 @@ namespace Project.GUI.Editor.Preview
 
             EditorGUI.LabelField(labelRect, label);
             EditorGUI.PropertyField(idRect, property.FindPropertyRelative("entryId"));
+            EditorGUI.LabelField(selectIdLabelRect, new GUIContent("Select Id", "Id used for selecting an item."));
+            EditorGUI.PropertyField(selectIdToggleRect, useSelectIdProperty, GUIContent.none);
+            using (new EditorGUI.DisabledGroupScope(!useSelectIdProperty.boolValue))
+                EditorGUI.PropertyField(selectIdValueRect, property.FindPropertyRelative("customSelectId"), GUIContent.none);
+
             EditorGUI.PropertyField(isMainRect, property.FindPropertyRelative("isMain"));
             qGUIEditorUtility.HorizontalLine(lineRect);
             EditorGUI.LabelField(contentLabelRect, "Content", EditorStyles.boldLabel);
