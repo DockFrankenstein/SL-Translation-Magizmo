@@ -51,7 +51,9 @@ namespace Project.GUI.Inspector
             hierarchy.OnSelect += Hierarchy_OnSelect;
             manager.OnFileChanged += context =>
             {
-                if (context as Object == this) return;
+                if (context is InspectorDisplay ||
+                    context is InspectorDisplayPanel) return;
+
                 ReloadInspector();
             };
 
