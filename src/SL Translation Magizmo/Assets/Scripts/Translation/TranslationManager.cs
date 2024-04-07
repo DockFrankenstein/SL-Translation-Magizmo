@@ -172,6 +172,7 @@ namespace Project.Translation
             }
 
             AddPathToRecents(FilePath);
+            PUtility.ChangeWindowTitle(Application.productName);
             Debug.Log("Saved file");
             OnSave.Invoke();
         }
@@ -237,11 +238,13 @@ namespace Project.Translation
             IsLoading = false;
             OnLoad.Invoke();
             MarkFileDirty(this);
+            PUtility.ChangeWindowTitle(Application.productName);
             AddPathToRecents(FilePath);
         }
 
         public void MarkFileDirty(object fromContext)
         {
+            PUtility.ChangeWindowTitle($"*{Application.productName}");
             OnFileChanged?.Invoke(fromContext);
         }
     }
