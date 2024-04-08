@@ -8,5 +8,6 @@
 	<StackPanel>
 		<TextBlock Classes="header" Text="{Binding Header}"/>
 		<TextBlock Text="{Binding Text}"/>
+		<CheckBox IsVisible="{Binding ShowLaunch}" IsChecked="{Binding Launch}">Launch SL Translation Magizmo</CheckBox>
 	</StackPanel>
 </UserControl>

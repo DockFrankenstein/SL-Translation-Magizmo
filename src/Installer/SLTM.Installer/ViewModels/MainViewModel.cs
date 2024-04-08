@@ -69,10 +69,11 @@ public class MainViewModel : ViewModelBase
                 Pages =
                 [
                     UninstallWelcome,
-                    new FinishPageViewModel()
+                    new FinishPageViewModel(installer)
                     {
                         Header = "Uninstall Successfull",
                         Text = "Successfully uninstalled SL: Translation Magizmo. Please close this application to finalize.",
+                        ShowLaunch = false,
                     },
                 ];
                 break;
@@ -193,7 +194,7 @@ public class MainViewModel : ViewModelBase
 
         Pages =
         [
-            new FinishPageViewModel()
+            new FinishPageViewModel(Installer)
             {
                 Header = "Installation Finished",
                 Text = "SL: Translation Magizmo was successfully installed :)",
@@ -209,10 +210,11 @@ public class MainViewModel : ViewModelBase
 
         Pages =
         [
-            new FinishPageViewModel()
+            new FinishPageViewModel(Installer)
             {
                 Header = "Installation Unsuccessfull",
                 Text = "There was an error :(\nPlease restart the wizzard and try again or report the issue.",
+                ShowLaunch = false,
             },
         ];
 
@@ -229,10 +231,11 @@ public class MainViewModel : ViewModelBase
         UninstallWelcome.OnFinishUninstall -= OnUninstallFinish;
         Pages =
         [
-            new FinishPageViewModel()
+            new FinishPageViewModel(Installer)
             {
                 Header = "Uninstalling Unsuccessfull",
                 Text = "There was an error :(\nPlease restart the wizzard and try again or report the issue.",
+                ShowLaunch = false,
             },
         ];
 
@@ -245,7 +248,7 @@ public class MainViewModel : ViewModelBase
 
         Pages =
         [
-            new FinishPageViewModel()
+            new FinishPageViewModel(Installer)
             {
                 Header = "Update Completed",
                 Text = "Application has been successfully updated to the latest version!",
@@ -261,10 +264,11 @@ public class MainViewModel : ViewModelBase
 
         Pages =
         [
-            new FinishPageViewModel()
+            new FinishPageViewModel(Installer)
             {
                 Header = "Updating Unsuccessfull",
                 Text = "There was an error :(\nPlease try again or report the issue.",
+                ShowLaunch = false,
             },
         ];
 

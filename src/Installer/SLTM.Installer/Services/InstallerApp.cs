@@ -121,6 +121,15 @@ namespace SLTM.Installer.Services
             });
         }
 
+        public void LaunchApp()
+        {
+            try
+            {
+                Process.Start(ExePath);
+            }
+            catch { }
+        }
+
         public async Task Install()
         {
             try
