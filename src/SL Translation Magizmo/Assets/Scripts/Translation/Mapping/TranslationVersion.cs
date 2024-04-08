@@ -35,6 +35,12 @@ namespace Project.Translation.Mapping
             }
         }
 
+        public MappedField GetNameField() =>
+            containers
+                .Where(x => x.NameField != null)
+                .Select(x => x.NameField)
+                .FirstOrDefault();
+
         public void Initialize()
         {
             foreach (var container in containers)

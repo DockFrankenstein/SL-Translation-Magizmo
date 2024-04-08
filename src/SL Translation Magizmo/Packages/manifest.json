@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.browar.editor-toolbox": "https://github.com/arimger/Unity-Editor-Toolbox.git#upm",
+    "com.discord.game-sdk": "https://github.com/HouraiTeahouse/Discord-Game-SDK.git",
     "com.fab.uitk-runtime-dropdown": "https://github.com/fabSchneider/fab.uitk-runtime-dropdown.git#upm",
     "com.unity.feature.2d": "1.0.0",
     "com.unity.ide.rider": "3.0.27",

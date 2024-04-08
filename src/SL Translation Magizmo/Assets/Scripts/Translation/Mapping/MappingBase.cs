@@ -8,6 +8,8 @@ namespace Project.Translation.Mapping
     {
         public string fileName;
 
+        public virtual MappedField NameField { get => null; }
+
         public abstract MappedField[] GetMappedFields();
 
         public abstract void Import(SaveFile file, string txt);

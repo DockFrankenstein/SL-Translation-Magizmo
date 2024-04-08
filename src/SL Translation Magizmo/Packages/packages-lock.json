@@ -9,6 +9,13 @@
       },
       "hash": "b7861dadfbc7b73b61a77b51c6ac01c2990d79d0"
     },
+    "com.discord.game-sdk": {
+      "version": "https://github.com/HouraiTeahouse/Discord-Game-SDK.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "02bb804c67b98dfb26fda79eb2bc197bdbb59403"
+    },
     "com.fab.uitk-runtime-dropdown": {
       "version": "https://github.com/fabSchneider/fab.uitk-runtime-dropdown.git#upm",
       "depth": 0,

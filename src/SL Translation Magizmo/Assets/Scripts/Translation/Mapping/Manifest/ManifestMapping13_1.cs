@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using Project.Translation.Mapping.Attributes;
 
 namespace Project.Translation.Mapping.Manifest
 {
@@ -9,6 +10,7 @@ namespace Project.Translation.Mapping.Manifest
         [Serializable]
         public class ManifestData
         {
+            [TranslationName]
             [MappedFieldName("manifest_name", "Name")] public string Name;
             [MappedFieldName("manifest_authors", "Authors")] public string[] Authors;
             [MappedFieldName("manifest_interface_locales", "Interface Locales")] public string[] InterfaceLocales;

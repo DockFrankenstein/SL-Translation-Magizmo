@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using System.Reflection;
+using Project.Translation.Mapping.Attributes;
 
 namespace Project.Translation.Mapping.Manifest
 {
@@ -25,6 +26,34 @@ namespace Project.Translation.Mapping.Manifest
             }
 
             return _fieldsCache;
+        }
+
+        bool _nameFieldInit = false;
+        MappedField _nameField = null;
+        public override MappedField NameField
+        { 
+            get
+            {
+                if (!_nameFieldInit)
+                {
+                    string id = DataType.GetFields()
+                        .Where(x => x.GetCustomAttribute(typeof(TranslationNameAttribute), false) != null)
+                        .Select(x => x.GetCustomAttribute<MappedFieldNameAttribute>(false))
+                        .Select(x => x.GetMappedField())
+                        .FirstOrDefault().id;
+
+                    if (id != null)
+                    {
+                        _nameField = GetMappedFields()
+                            .Where(x => x.id == id)
+                            .FirstOrDefault();
+                    }
+
+                    _nameFieldInit = true;
+                }
+
+                return _nameField;
+            }
         }
 
         public IEnumerable<MappedFieldNameAttribute> GetFieldAttributes() =>
