@@ -86,27 +86,27 @@ namespace Project.AutoUpdate
 
             UpdaterStatus = Status.DownloadingUpdate;
 
-            using (var request = UnityWebRequest.Get(url))
-            {
-                yield return request.SendWebRequest();
-                if (request.result != UnityWebRequest.Result.Success)
-                {
-                    error = $"Couldn't get web request from {url}.";
-                    UpdaterStatus = Status.DownloadingUpdateError;
-                    yield break;
-                }
+            //using (var request = UnityWebRequest.Get(url))
+            //{
+            //    yield return request.SendWebRequest();
+            //    if (request.result != UnityWebRequest.Result.Success)
+            //    {
+            //        error = $"Couldn't get web request from {url}.";
+            //        UpdaterStatus = Status.DownloadingUpdateError;
+            //        yield break;
+            //    }
 
-                try
-                {
-                    System.IO.File.WriteAllBytes(ResultPath, request.downloadHandler.data);
-                }
-                catch (Exception e)
-                {
-                    error = $"Error while saving new update to disk, {e}";
-                    UpdaterStatus = Status.DownloadingUpdateError;
-                    yield break;
-                }
-            }
+            //    try
+            //    {
+            //        System.IO.File.WriteAllBytes(ResultPath, request.downloadHandler.data);
+            //    }
+            //    catch (Exception e)
+            //    {
+            //        error = $"Error while saving new update to disk, {e}";
+            //        UpdaterStatus = Status.DownloadingUpdateError;
+            //        yield break;
+            //    }
+            //}
 
             UpdaterStatus = Status.ReadyToFinalizeUpdate;
         }

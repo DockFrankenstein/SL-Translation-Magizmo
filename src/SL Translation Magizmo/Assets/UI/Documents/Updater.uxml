@@ -4,7 +4,7 @@
         <ui:VisualElement class="popup-prompt" style="flex-grow: 1; flex-shrink: 1; align-self: center; left: auto; top: auto; right: auto; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; justify-content: flex-start;">
             <ui:Label tabindex="-1" text="New Update Avaliable" parse-escape-sequences="true" display-tooltip-when-elided="true" name="header" class="prompt-header" />
             <ui:Label tabindex="-1" text="A new version of SL Translation Magizmo is avaliable.\nYou can download the update later by going to `Help/Check For Updates`." parse-escape-sequences="true" display-tooltip-when-elided="true" name="description" class="prompt-description" />
-            <ui:ProgressBar value="21.7" name="progress" low-value="0" style="height: 34px;" />
+            <ui:ProgressBar value="21.7" name="progress" low-value="0" style="height: 34px; display: none;" />
             <ui:VisualElement name="buttons" class="button-bar">
                 <ui:Button text="Cancel" parse-escape-sequences="true" display-tooltip-when-elided="true" name="cancel" />
                 <ui:Button text="Don&apos;t show again" parse-escape-sequences="true" display-tooltip-when-elided="true" name="dont-show" />

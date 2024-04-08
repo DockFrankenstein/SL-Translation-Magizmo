@@ -147,7 +147,7 @@ namespace Project.GUI.Other
         {
             StartCoroutine(DownloadUpdate());
             UpdateContent();
-            progress.ChangeDispaly(true);
+            //progress.ChangeDispaly(true);
         }
 
         IEnumerator DownloadUpdate()
@@ -213,11 +213,11 @@ namespace Project.GUI.Other
 
             bool isUpdating = _updater.UpdaterStatus == AutoUpdater.Status.DownloadingUpdate;
 
-            progress.ChangeDispaly(isUpdating);
+            //progress.ChangeDispaly(isUpdating);
             buttons.ChangeDispaly(!isUpdating);
             updateButton.ChangeDispaly(_updater.UpdaterStatus == AutoUpdater.Status.UpdateAvaliable);
             dontShowButton.ChangeDispaly(false);
-            progress.ChangeDispaly(false);
+            //progress.ChangeDispaly(false);
         }
 
         void Close()
