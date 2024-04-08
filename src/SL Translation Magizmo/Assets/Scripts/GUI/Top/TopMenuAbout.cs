@@ -12,7 +12,7 @@ namespace Project.GUI.Top
 
         protected override void CreateMenu()
         {
-            menu.AppendAction("About", _ =>
+            menu.AppendAction("About App", _ =>
             {
                 aboutWindow.Open();
             });
