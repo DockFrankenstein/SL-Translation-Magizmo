@@ -23,12 +23,19 @@ namespace Project.GUI.Preview
                 !string.IsNullOrWhiteSpace(val.content))
                 txt = val.content;
 
+            List<string> vals = new List<string>();
+
             foreach (var item in element.dynamicValues)
             {
                 if (item == null) continue;
-                var dynamicVal = item.GetContent(manager);
-                txt = txt.Replace(item.tag, dynamicVal);
+                while (txt.Contains($"{{{vals.Count - 1}}}"))
+                    vals.Add($"{{{vals.Count - 1}}}");
+
+                vals.Add(item.GetContent(manager));
+                txt = txt.Replace(item.tag, $"{{{vals.Count - 1}}}");
             }
+
+            txt = string.Format(txt, vals.ToArray());
 
             return txt;
         }
