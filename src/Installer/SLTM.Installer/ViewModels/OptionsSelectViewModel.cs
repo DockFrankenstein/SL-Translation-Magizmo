@@ -9,7 +9,7 @@ namespace SLTM.Installer.ViewModels
         {
             this.installer = installer;
 
-            _nextButton = new ButtonData();
+            _nextButton = new ButtonData("Install");
 
             _nextButton.OnClick += () =>
             {

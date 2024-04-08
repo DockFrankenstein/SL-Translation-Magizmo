@@ -31,7 +31,7 @@ namespace SLTM.Installer.Services
         {
             Updater = new AutoUpdater()
             {
-                OutputPath = $"{Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles)}/SL Translation Magizmo",
+                OutputPath = $"{Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles)}\\SL Translation Magizmo",
                 TargetFileName = "Windows.zip",
             };
 

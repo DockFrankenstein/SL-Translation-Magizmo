@@ -13,8 +13,6 @@ namespace SLTM.Installer.ViewModels
 
         InstallerApp _installer;
 
-        public override ButtonData NextButton => new ButtonData("Instal");
-
         string _installLocation;
         public string InstalLocation
         {
