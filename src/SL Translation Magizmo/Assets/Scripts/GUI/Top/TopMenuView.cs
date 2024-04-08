@@ -35,6 +35,10 @@ namespace Project.GUI.Top
                     _ => manager.ComparisonManager.ChangeCurrent(item.Key),
                     status);
             }
+
+            menu.AppendSeparator();
+
+            menu.AppendAction("Launch SCPSL", _ => Application.OpenURL("steam://rungameid/700330"));
         }
     }
 }
