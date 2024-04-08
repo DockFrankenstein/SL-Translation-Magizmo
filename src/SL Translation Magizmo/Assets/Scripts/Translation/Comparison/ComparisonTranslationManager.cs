@@ -70,7 +70,7 @@ namespace Project.Translation.Comparison
         }
 
         static string SettV_CacheLocation() =>
-            $"{Application.persistentDataPath}/comparison-cache";
+            $"{Application.persistentDataPath.Replace('/', '\\')}\\comparison-cache";
         #endregion
 
         public bool TryGetEntryData(string id, out string content)

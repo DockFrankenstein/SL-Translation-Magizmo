@@ -118,7 +118,7 @@ namespace qASIC.SettingsSystem
                         TryGetValueOfMethodFromName(setting, attr.enableMethodName, out bool isEnabled) &&
                         !isEnabled) continue;
 
-                    object defaultValue = attr.DefaultValue != null ? attr.DefaultValue.ToString() : null;
+                    object defaultValue = attr.DefaultValue;
                     if (!string.IsNullOrWhiteSpace(attr.defaultValueMethodName) &&
                         TryGetValueOfMethodFromName(setting, attr.defaultValueMethodName, out object obj))
                             defaultValue = obj.ToString();
