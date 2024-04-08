@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
+    <ui:VisualElement class="fade" style="flex-grow: 1; justify-content: center;">
+        <ui:VisualElement class="popup-prompt" style="flex-grow: 1; align-self: center;">
+            <ui:Label tabindex="-1" text="Save Changes?" parse-escape-sequences="true" display-tooltip-when-elided="true" class="prompt-header" />
+            <ui:Label tabindex="-1" text="You have unsaved changes. Do you want to save before quitting?" parse-escape-sequences="true" display-tooltip-when-elided="true" class="prompt-description" />
+            <ui:VisualElement class="button-bar" style="flex-grow: 1; flex-direction: row;">
+                <ui:Button text="Cancel" parse-escape-sequences="true" display-tooltip-when-elided="true" name="cancel" />
+                <ui:Button text="Discard Changes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="discard" />
+                <ui:Button text="Save" parse-escape-sequences="true" display-tooltip-when-elided="true" name="save" class="colored" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

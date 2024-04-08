@@ -1167,3 +1167,38 @@ Label.error {
     flex-shrink: 1;
     width: auto;
 }
+
+.prompt-description {
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: auto;
+    align-self: center;
+    flex-wrap: wrap;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.button-bar {
+    flex-grow: 1;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-around;
+    align-self: center;
+    align-items: stretch;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    flex-shrink: 1;
+    max-width: 100%;
+}
+
+.button-bar > * {
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    flex-basis: 1px;
+}

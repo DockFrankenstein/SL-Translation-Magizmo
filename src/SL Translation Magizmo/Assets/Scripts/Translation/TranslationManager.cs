@@ -35,6 +35,7 @@ namespace Project.Translation
 
         [Label("Events")]
         public UnityEvent OnSave;
+        public UnityEvent OnCancelSave;
         public UnityEvent OnLoad;
 
         public event Action<object> OnFileChanged;
@@ -60,6 +61,7 @@ namespace Project.Translation
         public event Action<TranslationVersion> OnCurrentVersionChanged;
 
         public bool IsLoading { get; private set; }
+        public bool IsDirty { get; private set; }
 
         public TranslationVersion GetVersion(Version version) =>
             versions
@@ -156,30 +158,40 @@ namespace Project.Translation
             if (File == null)
             {
                 errorWindow.CreatePrompt("Save Error", "Cannot save file, file is null. This is an error in the program, please report this issue.");
+                OnCancelSave.Invoke();
                 return;
             }
 
-            if (!CheckPath()) return;
+            if (!CheckPath())
+            {
+                OnCancelSave.Invoke();
+                return;
+            }
 
             try
             {
                 Serializer.Save(FilePath, File);
+                AddPathToRecents(FilePath);
+                ClearDirty();
+                Debug.Log("Saved file");
+                OnSave.Invoke();
             }
             catch (Exception e)
             {
                 errorWindow.CreatePrompt("Save Error", $"Application ran into a problem while saving file.\n {e}");
+                OnCancelSave.Invoke();
                 return;
             }
-
-            AddPathToRecents(FilePath);
-            PUtility.ChangeWindowTitle(Application.productName);
-            Debug.Log("Saved file");
-            OnSave.Invoke();
         }
 
         public void SaveAs()
         {
-            if (!ChangePath()) return;
+            if (!ChangePath())
+            {
+                OnCancelSave.Invoke();
+                return;
+            }
+
             Save();
         }
 
@@ -238,14 +250,21 @@ namespace Project.Translation
             IsLoading = false;
             OnLoad.Invoke();
             MarkFileDirty(this);
-            PUtility.ChangeWindowTitle(Application.productName);
+            ClearDirty();
             AddPathToRecents(FilePath);
         }
 
         public void MarkFileDirty(object fromContext)
         {
             PUtility.ChangeWindowTitle($"*{Application.productName}");
+            IsDirty = true;
             OnFileChanged?.Invoke(fromContext);
+        }
+
+        private void ClearDirty()
+        {
+            IsDirty = false;
+            PUtility.ChangeWindowTitle(Application.productName);
         }
     }
 }
