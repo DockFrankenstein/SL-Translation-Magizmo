@@ -91,6 +91,8 @@ namespace Project.GUI.Settings
             var panel = GetPanel(index);
             if (panel == null) return;
 
+            _menuSelection.SetValueWithoutNotify(index);
+
             panel.panel.style.display = DisplayStyle.Flex;
             _contentScroll.scrollOffset = Vector2.zero;
         }
