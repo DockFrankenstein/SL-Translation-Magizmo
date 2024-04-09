@@ -1,9 +1,11 @@
 using Project.Translation;
 using UnityEngine;
 using Discord;
+using qASIC.SettingsSystem;
 
 using DiscordClient = Discord.Discord;
 using Project.GUI.Hierarchy;
+using System;
 
 namespace Project.DiscordIntegration
 {
@@ -21,8 +23,22 @@ namespace Project.DiscordIntegration
         [SerializeField] string smallImage = "logo";
         [SerializeField] string largeImage = "logo";
 
-        public DiscordClient Client { get; private set; }
+
+        public DiscordClient Client { get; private set; } = null;
         public ActivityManager ActivityManager { get; private set; }
+
+        #region Settings
+        private static event Action SettA_UseActivity;
+
+        [OptionsSetting("discord_use_activity", true)]
+        private static void SettM_UseActivity(bool value)
+        {
+            Sett_UseActivity = value;
+            SettA_UseActivity?.Invoke();
+        }
+
+        private static bool Sett_UseActivity { get; set; } = true;
+        #endregion
 
         private void Reset()
         {
@@ -32,10 +48,21 @@ namespace Project.DiscordIntegration
 
         private void Awake()
         {
-            StartIntegration();
+            UpdateIntegrationStatus();
+        }
 
+        private void OnEnable()
+        {
+            SettA_UseActivity += UpdateIntegrationStatus;
             hierarchy.OnSelect += _ => UpdateActivity();
             manager.OnFileChanged += _ => UpdateActivity();
+        }
+
+        private void OnDisable()
+        {
+            SettA_UseActivity -= UpdateIntegrationStatus;
+            hierarchy.OnSelect -= _ => UpdateActivity();
+            manager.OnFileChanged -= _ => UpdateActivity();
         }
 
         private void OnDestroy()
@@ -43,18 +70,41 @@ namespace Project.DiscordIntegration
             StopIntegration();
         }
 
+        void UpdateIntegrationStatus()
+        {
+            switch (Sett_UseActivity)
+            {
+                case true:
+                    StartIntegration();
+                    break;
+                case false:
+                    StopIntegration();
+                    break;
+            }
+        }
+
         void StartIntegration()
         {
+            if (Client != null)
+                return;
+
             Client = new DiscordClient(clientId, (ulong)CreateFlags.NoRequireDiscord);
             ActivityManager = Client.GetActivityManager();
             UpdateActivity();
+            
+            Debug.Log("Discord integration started");
         }
 
         void StopIntegration()
         {
+            if (Client == null)
+                return;
+
             Client.Dispose();
             Client = null;
             ActivityManager = null;
+
+            Debug.Log("Discord integration stopped");
         }
 
         void UpdateActivity()
@@ -97,7 +147,7 @@ namespace Project.DiscordIntegration
 
         private void Update()
         {
-            Client.RunCallbacks();
+            Client?.RunCallbacks();
         }
     }
 }
