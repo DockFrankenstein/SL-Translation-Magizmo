@@ -206,6 +206,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: Menu/Settings/Video/Page 1
+  version:
+    releases: 0d0000000400000001000000
   entries:
   - {fileID: 457610222875750731}
   - {fileID: 8863528033268792232}
@@ -248,6 +250,9 @@ MonoBehaviour:
   - {fileID: 7128796515474781815}
   - {fileID: 3935327553425457766}
   - {fileID: 8703759992535295417}
+  scenes: []
+  manager: {fileID: 0}
+  hierarchy: {fileID: 0}
 --- !u!1 &7192707712300811115
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,6 +2450,22 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[0].contentContext
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[1].contentContext
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[2].contentContext
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[3].contentContext
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 3935797998950721021, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_MinWidth
       value: 300
@@ -3584,6 +3605,18 @@ PrefabInstance:
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: otherIds.Array.data[2].defaultValue
       value: Ultra
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[0].contentContext
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[1].contentContext
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[2].contentContext
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3935797998950721021, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_MinWidth
@@ -5216,6 +5249,10 @@ PrefabInstance:
       propertyPath: otherIds.Array.data[2].defaultValue
       value: Ultra
       objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[0].contentContext
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_text
       value: Selected aspect ratio is not supported by your monitor
@@ -6001,6 +6038,18 @@ PrefabInstance:
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: otherIds.Array.data[2].defaultValue
       value: Exclusive Fullscreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[0].contentContext
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[1].contentContext
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[2].contentContext
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3935797998950721021, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_MinWidth

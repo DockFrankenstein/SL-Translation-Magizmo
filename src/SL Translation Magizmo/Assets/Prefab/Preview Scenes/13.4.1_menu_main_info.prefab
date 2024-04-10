@@ -120,7 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9a50ea23bcd4249aa37087017b42fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: menu/news
+  path: Menu/News
+  version:
+    releases: 0d0000000400000001000000
   entries:
   - {fileID: 6773936695410245878}
   - {fileID: 2547219155074026005}
@@ -131,6 +133,9 @@ MonoBehaviour:
   - {fileID: 2386684744515265126}
   - {fileID: 5801902902293102813}
   - {fileID: 5914110347272657114}
+  scenes: []
+  manager: {fileID: 0}
+  hierarchy: {fileID: 0}
 --- !u!1 &8955995073257926757
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,20 +4,26 @@ using UnityEngine;
 using System.Linq;
 using Project.Translation;
 using Project.GUI.Hierarchy;
-using qASIC.Files;
+using Project.Translation.Mapping;
 
 namespace Project.GUI.Preview
 {
     public class PreviewManager : MonoBehaviour
     {
+        [Label("References")]
         [SerializeField] TranslationManager manager;
         [SerializeField] HierarchyController hierarchy;
 
-        [EditorButton(nameof(PopulateVersions), activityType: ButtonActivityType.OnEditMode)]
-        [EditorButton(nameof(SortVersions), activityType: ButtonActivityType.OnEditMode)]
-        public List<PreviewVersion> versions = new List<PreviewVersion>();
+        [Label("Scenes")]
+        [SerializeField] Transform sceneHolder;
+        [EditorButton(nameof(AutoDetectScenes), "Populate")]
+        [SerializeField] PreviewScene[] scenes = new PreviewScene[0];
 
-        public PreviewVersion CurrentVersion { get; private set; }
+        public Dictionary<string, PreviewScene> ScenesForIds { get; private set; } = new Dictionary<string, PreviewScene>();
+        public List<PreviewScene> VersionScenes { get; private set; } = new List<PreviewScene>();
+        public PreviewScene CurrentScene { get; private set; }
+
+        public Version CurrentVersion { get; private set; }
 
         public TranslationManager TranslationManager =>
             manager;
@@ -27,42 +33,61 @@ namespace Project.GUI.Preview
 
         public void ChangeVersion(Version version)
         {
-            var previewVersion = versions.FirstOrDefault();
-            foreach (var item in versions)
-            {
-                if (item.version == null) continue;
-                if (item.version.version > version) break;
-                previewVersion = item;
-            }
-
-            ChangeVersion(previewVersion);
-        }
-
-        public void ChangeVersion(PreviewVersion version)
-        {
-            PreviewScene previousScene = null;
-            if (CurrentVersion != null)
-            {
-                previousScene = CurrentVersion.CurrentScene;
-                CurrentVersion.gameObject.SetActive(false);
-            }
-
             CurrentVersion = version;
 
-            if (CurrentVersion != null)
+            Dictionary<string, PreviewScene> newScenes = new Dictionary<string, PreviewScene>();
+            VersionScenes.Clear();
+            string selectedPath = CurrentScene?.path;
+
+            //Disable selected scene
+            if (CurrentScene != null)
+                CurrentScene.gameObject.SetActive(false);
+
+            //Generate scene list
+            //This includes scenes for this version and
+            //older. We use the newest scene if possible
+            foreach (var item in scenes)
             {
-                CurrentVersion.gameObject.SetActive(true);
-                if (previousScene != null)
-                    CurrentVersion.SelectScene(previousScene.path);
+                if (item == null) continue;
+
+                //Ignore if scene is for a newer version
+                if (item.version > version)
+                    continue;
+
+                var path = item.path.ToLower();
+                if (!newScenes.ContainsKey(path))
+                {
+                    newScenes.Add(path, item);
+                    continue;
+                }
+
+                if (newScenes[path].version < item.version)
+                    newScenes[path] = item;
             }
+
+            VersionScenes = newScenes
+                .Select(x => x.Value)
+                .ToList();
+
+            ScenesForIds = scenes
+                .SelectMany(x => x.EntriesForIds.Select(y => new KeyValuePair<string, PreviewScene>(y.Key, x)))
+                .GroupBy(x => x.Key)
+                .ToDictionary(x => x.Key, x => x.First().Value);
+
+            SelectScene(TryGetSceneByPath(selectedPath, out var scene) ? scene : VersionScenes[0]);
         }
 
         private void Awake()
         {
-            foreach (var ver in versions)
+            foreach (var scene in scenes)
             {
-                ver.PreviewManager = this;
-                ver.Initialize();
+                if (scene == null) continue;
+                scene.gameObject.SetActive(false);
+
+                scene.manager = TranslationManager;
+                scene.hierarchy = Hierarchy;
+
+                scene.Initialize();
             }
 
             ChangeVersion(manager.CurrentVersion.version);
@@ -72,7 +97,7 @@ namespace Project.GUI.Preview
             hierarchy.OnSelect += Hierarchy_OnSelect;
         }
 
-        private void Manager_OnCurrentVersionChanged(Translation.Mapping.TranslationVersion obj)
+        private void Manager_OnCurrentVersionChanged(TranslationVersion obj)
         {
             ChangeVersion(obj.version);
         }
@@ -82,15 +107,15 @@ namespace Project.GUI.Preview
             if (CurrentVersion == null) return;
             if (!(obj?.Item is SaveFile.EntryData entry)) return;
 
-            if (CurrentVersion.CurrentScene.EntriesForIds.TryGetValue(entry.entryId, out var previewEntry))
+            if (CurrentScene.EntriesForIds.TryGetValue(entry.entryId, out var previewEntry))
             {
                 previewEntry.ChangeTarget(entry.entryId);
                 return;
             }
 
-            if (CurrentVersion.ScenesForIds.TryGetValue(entry.entryId, out var newScene))
+            if (ScenesForIds.TryGetValue(entry.entryId, out var newScene))
             {
-                CurrentVersion?.SelectScene(newScene);
+                SelectScene(newScene);
                 newScene.EntriesForIds[entry.entryId].ChangeTarget(entry.entryId);
             }
         }
@@ -98,26 +123,53 @@ namespace Project.GUI.Preview
         private void Manager_OnFileChanged(object context)
         {
             if (context as Object == this) return;
-            CurrentVersion?.Reload();
+            Reload();
         }
 
-        void PopulateVersions()
+        public void Reload()
         {
-            var a = FindObjectsByType<PreviewVersion>(FindObjectsInactive.Include, FindObjectsSortMode.None)
-                .Except(versions);
-
-            versions.AddRange(a);
-
-#if UNITY_EDITOR
-            UnityEditor.EditorUtility.SetDirty(this);
-#endif
+            if (CurrentScene == null) return;
+            CurrentScene.Reload();
         }
 
-        void SortVersions()
+        public void SelectScene(string path)
         {
-            versions = versions
-                .OrderBy(x => x?.version?.version)
-                .ToList();
+            if (TryGetSceneByPath(path, out var scene))
+                SelectScene(scene);
+        }
+
+        public bool TryGetSceneByPath(string path, out PreviewScene scene)
+        {
+            path = path?.ToLower();
+
+            scene = VersionScenes
+                .Where(x => x.path.ToLower() == path)
+                .FirstOrDefault();
+
+            return scene != null;
+        }
+
+        public void SelectScene(PreviewScene scene)
+        {
+            if (CurrentScene != null)
+                CurrentScene.gameObject.SetActive(false);
+
+            CurrentScene = scene;
+
+            if (CurrentScene != null)
+                CurrentScene.gameObject.SetActive(true);
+        }
+
+        void AutoDetectScenes()
+        {
+            var detected = sceneHolder.GetComponentInShallowChildren<PreviewScene>();
+
+            scenes = scenes
+                .Except(detected)
+                .Where(x => x != null)
+                .Concat(detected)
+                .ToArray();
+
 #if UNITY_EDITOR
             UnityEditor.EditorUtility.SetDirty(this);
 #endif

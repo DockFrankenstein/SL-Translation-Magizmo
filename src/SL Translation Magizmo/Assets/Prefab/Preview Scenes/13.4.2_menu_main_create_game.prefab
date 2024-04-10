@@ -84,6 +84,10 @@ PrefabInstance:
       propertyPath: scenes.Array.data[0]
       value: 
       objectReference: {fileID: 4444533820561664951}
+    - target: {fileID: 2066548913514627363, guid: a62279cf627b4f54883b86d85aa70775, type: 3}
+      propertyPath: version.releases.Array.data[2]
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3068642185948469431, guid: a62279cf627b4f54883b86d85aa70775, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -897,6 +901,10 @@ PrefabInstance:
     - target: {fileID: 7207855018792646110, guid: e0477b3ea024a2b4bb561253e3bb3b87, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349006235477253305, guid: e0477b3ea024a2b4bb561253e3bb3b87, type: 3}
+      propertyPath: version.releases.Array.data[2]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7670523745242127874, guid: e0477b3ea024a2b4bb561253e3bb3b87, type: 3}
       propertyPath: m_AnchorMax.y

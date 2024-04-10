@@ -11,7 +11,9 @@ namespace Project.GUI.Preview
     public class PreviewScene : MonoBehaviour
     {
         public string path;
+        public Version version;
 
+        [Space]
         [EditorButton(nameof(AutoDetectEntries), "Populate")]
         public PreviewElement[] entries = new PreviewElement[0];
 

@@ -91,6 +91,7 @@ MonoBehaviour:
   linkedElements: []
   manager: {fileID: 0}
   hierarchy: {fileID: 0}
+  scene: {fileID: 0}
   image: {fileID: 6616283257887153755}
   backgrounds:
   - {fileID: 21300000, guid: ee257ddc48aca704b92cdc9868847407, type: 3}
@@ -144,6 +145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: Gameplay/F1/MTF
+  version:
+    releases: 0d0000000400000001000000
   entries:
   - {fileID: 9169706051500755527}
   - {fileID: 8789271585946963432}
@@ -157,6 +160,9 @@ MonoBehaviour:
   - {fileID: 8774309426379644528}
   - {fileID: 1930375027071107008}
   - {fileID: 1900782698375243066}
+  scenes: []
+  manager: {fileID: 0}
+  hierarchy: {fileID: 0}
 --- !u!1 &7958613278963157567
 GameObject:
   m_ObjectHideFlags: 0

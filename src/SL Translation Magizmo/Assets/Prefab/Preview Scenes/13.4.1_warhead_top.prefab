@@ -499,6 +499,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: Gameplay/Heavy Containment Zone/Warhead/Top
+  version:
+    releases: 0d0000000400000001000000
   entries:
   - {fileID: 7382786237685243085}
   scenes: []

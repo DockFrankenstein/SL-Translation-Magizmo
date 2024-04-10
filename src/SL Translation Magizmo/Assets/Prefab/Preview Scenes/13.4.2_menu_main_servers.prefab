@@ -440,6 +440,10 @@ PrefabInstance:
       propertyPath: path
       value: Menu/Servers
       objectReference: {fileID: 0}
+    - target: {fileID: 6870332538261812993, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
+      propertyPath: version.releases.Array.data[2]
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7359194023225109472, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -483,6 +487,10 @@ PrefabInstance:
     - target: {fileID: 7387698665518067798, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
       propertyPath: otherIds.Array.data[0].defaultValue
       value: Create Server
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387698665518067798, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
+      propertyPath: otherIds.Array.data[0].contentContext
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 7736839897178058497, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
       propertyPath: m_Name

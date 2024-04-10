@@ -70,7 +70,7 @@ namespace Project.GUI.Inspector
         {
             var appFile = manager.File;
             if (appFile != null)
-                preview.CurrentVersion?.Reload();
+                preview.Reload();
         }
 
         public void ReloadInspector()

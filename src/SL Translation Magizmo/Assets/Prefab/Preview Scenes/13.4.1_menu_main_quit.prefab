@@ -1000,6 +1000,22 @@ PrefabInstance:
       propertyPath: entries.Array.data[11]
       value: 
       objectReference: {fileID: 3282612339659540636}
+    - target: {fileID: 3732315292105007297, guid: 40ef62dfce23d594ca4f52fcbf63eaaf, type: 3}
+      propertyPath: version.releases.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3732315292105007297, guid: 40ef62dfce23d594ca4f52fcbf63eaaf, type: 3}
+      propertyPath: version.releases.Array.data[0]
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3732315292105007297, guid: 40ef62dfce23d594ca4f52fcbf63eaaf, type: 3}
+      propertyPath: version.releases.Array.data[1]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3732315292105007297, guid: 40ef62dfce23d594ca4f52fcbf63eaaf, type: 3}
+      propertyPath: version.releases.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3837764654056285638, guid: 40ef62dfce23d594ca4f52fcbf63eaaf, type: 3}
       propertyPath: m_Enabled
       value: 0

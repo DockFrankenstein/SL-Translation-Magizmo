@@ -60,14 +60,14 @@ namespace Project.GUI.Preview
 
         void Reload()
         {
-            _popupButton.text = PUtility.GenerateDisplayName(preview.CurrentVersion.CurrentScene.path.Split('/').Last());
+            _popupButton.text = PUtility.GenerateDisplayName(preview.CurrentScene.path.Split('/').Last());
 
             while (_items.Count > 0)
                 RemoveItem(_items[0]);
 
             _backButton.visible = !string.IsNullOrEmpty(Path);
 
-            var directories = preview.CurrentVersion.scenes
+            var directories = preview.VersionScenes
                 .Select(x => x.path)
                 .Where(x => x.StartsWith(Path))
                 .Select(x => x.Substring(Path.Length, x.Length - Path.Length))
@@ -94,7 +94,7 @@ namespace Project.GUI.Preview
 
         void ChangePath(string newPath)
         {
-            var scenes = preview.CurrentVersion.scenes
+            var scenes = preview.VersionScenes
                 .Where(x => x.path.StartsWith($"{newPath}/"));
 
             var isDirection = scenes.Count() != 0;
@@ -107,9 +107,9 @@ namespace Project.GUI.Preview
                 return;
             }
 
-            var scene = preview.CurrentVersion.scenes.Where(x => x.path == newPath).FirstOrDefault();
+            var scene = preview.VersionScenes.Where(x => x.path == newPath).FirstOrDefault();
             if (scene != null)
-                preview.CurrentVersion.SelectScene(scene);
+                preview.SelectScene(scene);
 
             _popupButton.ChangeOpenedState(false);
         }

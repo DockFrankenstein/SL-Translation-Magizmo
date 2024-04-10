@@ -832,6 +832,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: Menu/Servers
+  version:
+    releases: 0d0000000400000001000000
   entries:
   - {fileID: 5665792157967572520}
   - {fileID: 3744952174693749963}
@@ -854,6 +856,9 @@ MonoBehaviour:
   - {fileID: 3250439079993727720}
   - {fileID: 1290700547548022588}
   - {fileID: 8313277870446853784}
+  scenes: []
+  manager: {fileID: 0}
+  hierarchy: {fileID: 0}
 --- !u!1 &5848183302708654025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,6 +1350,22 @@ PrefabInstance:
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: otherIds.Array.data[4].defaultValue
       value: <color=red>Discord authentication failure (Check console for details)</color>
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[0].contentContext
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[1].contentContext
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[2].contentContext
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[3].contentContext
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 2548299558055248114, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_RootOrder

@@ -6469,6 +6469,10 @@ PrefabInstance:
       propertyPath: otherIds.Array.data[2].defaultValue
       value: Ultra
       objectReference: {fileID: 0}
+    - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: otherIds.Array.data[0].contentContext
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 3935797998950721021, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_MinWidth
       value: 300
