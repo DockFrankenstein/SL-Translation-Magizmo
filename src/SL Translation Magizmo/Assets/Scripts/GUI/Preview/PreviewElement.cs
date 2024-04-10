@@ -13,6 +13,7 @@ namespace Project.GUI.Preview
 
         [HideInInspector] public TranslationManager manager;
         [HideInInspector] public HierarchyController hierarchy;
+        [HideInInspector] public PreviewScene scene;
 
         protected virtual void Awake()
         {

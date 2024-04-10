@@ -116,14 +116,16 @@ namespace Project.GUI.Preview
                     currTarget.entryId;
             }
 
+            var canInteract = interactable && scene.ParentScene == null;
+
             if (outlineGroup != null)
-                outlineGroup.SetActive(interactable);
+                outlineGroup.SetActive(canInteract);
 
             if (button != null)
-                button.enabled = interactable;
+                button.enabled = canInteract;
 
             if (multiEntryPanel != null)
-                multiEntryPanel.SetActive(interactable && (otherIds.Length > 0 || currentValues.Length > 1));
+                multiEntryPanel.SetActive(canInteract && (otherIds.Length > 0 || currentValues.Length > 1));
         }
 
         void LoadTargetValues()

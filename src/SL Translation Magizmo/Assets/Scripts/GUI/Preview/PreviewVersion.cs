@@ -21,12 +21,9 @@ namespace Project.GUI.Preview
             foreach (var scene in scenes)
             {
                 scene.gameObject.SetActive(false);
-                foreach (var entry in scene.entries)
-                {
-                    if (entry == null) continue;
-                    entry.manager = PreviewManager.TranslationManager;
-                    entry.hierarchy = PreviewManager.Hierarchy;
-                }
+
+                scene.manager = PreviewManager.TranslationManager;
+                scene.hierarchy = PreviewManager.Hierarchy;
 
                 scene.Initialize();
             }

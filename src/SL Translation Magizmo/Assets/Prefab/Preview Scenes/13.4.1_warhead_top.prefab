@@ -501,6 +501,9 @@ MonoBehaviour:
   path: Gameplay/Heavy Containment Zone/Warhead/Top
   entries:
   - {fileID: 7382786237685243085}
+  scenes: []
+  manager: {fileID: 0}
+  hierarchy: {fileID: 0}
 --- !u!1 &7265901972845382235
 GameObject:
   m_ObjectHideFlags: 0
