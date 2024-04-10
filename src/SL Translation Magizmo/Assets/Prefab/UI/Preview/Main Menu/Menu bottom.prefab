@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2557743614312520427}
   - component: {fileID: 2557743614312520341}
   - component: {fileID: 2557743614312520426}
+  - component: {fileID: 5746422214324017803}
   m_Layer: 5
   m_Name: Version
   m_TagString: Untagged
@@ -134,6 +135,23 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5746422214324017803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557743614312520424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77b65f2948b76d46923b7b248da87c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedElements: []
+  manager: {fileID: 0}
+  hierarchy: {fileID: 0}
+  scene: {fileID: 0}
+  text: {fileID: 2557743614312520426}
 --- !u!1 &2557743614753505936
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6a6bd15d2d142247bda2d6454ed7d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s: 
   element:
     id: menu_based_on_cb
     defaultContent: 'BASED ON <i>SCP: CONTAINMENT BREACH</i>'

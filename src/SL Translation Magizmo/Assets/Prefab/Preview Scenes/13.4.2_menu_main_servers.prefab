@@ -442,7 +442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6870332538261812993, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
       propertyPath: version.releases.Array.data[2]
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7359194023225109472, guid: 99c9d41b6d4cc62478867f10e3aadb5e, type: 3}
       propertyPath: m_AnchorMax.y

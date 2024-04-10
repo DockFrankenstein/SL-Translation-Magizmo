@@ -856,6 +856,7 @@ MonoBehaviour:
   - {fileID: 3250439079993727720}
   - {fileID: 1290700547548022588}
   - {fileID: 8313277870446853784}
+  - {fileID: 6166891895135570300}
   scenes: []
   manager: {fileID: 0}
   hierarchy: {fileID: 0}
@@ -1955,6 +1956,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 74941897061004255, guid: c9f9978eaec173942a3e7ad7ef50fef7, type: 3}
   m_PrefabInstance: {fileID: 1885415118493766647}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6166891895135570300 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5746422214324017803, guid: c9f9978eaec173942a3e7ad7ef50fef7, type: 3}
+  m_PrefabInstance: {fileID: 1885415118493766647}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77b65f2948b76d46923b7b248da87c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8313277870446853784 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7598950409312497007, guid: c9f9978eaec173942a3e7ad7ef50fef7, type: 3}
