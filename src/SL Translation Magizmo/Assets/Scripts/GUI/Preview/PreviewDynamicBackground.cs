@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Project.GUI.Preview
@@ -7,11 +8,24 @@ namespace Project.GUI.Preview
     {
         [Label("Background")]
         public Image image;
-        public Sprite[] backgrounds;
+        [AssetPreview] public Sprite[] backgrounds;
 
         private void Reset()
         {
             image = GetComponent<Image>();
+        }
+
+        protected override void Awake()
+        {
+            base.Awake();
+
+            if (backgrounds.Length > 0)
+                image.sprite = backgrounds[0];
+        }
+
+        public override void Reload()
+        {
+            base.Reload();
         }
 
         public override void ChangeIndex(int newIndex, bool silent = false)
