@@ -1089,7 +1089,7 @@
                 {
                     "id": "inv_lantern",
                     "autoDisplayName": false,
-                    "displayName": "Googles",
+                    "displayName": "Lantern",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "04027ea9-bcc4-425e-a2d6-64eeaa910937"
@@ -1097,7 +1097,7 @@
                 {
                     "id": "inv_lantern_description",
                     "autoDisplayName": false,
-                    "displayName": "Googles Description",
+                    "displayName": "Lantern Description",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "b2266f7d-1349-4944-b7a6-5759d55ce522"
