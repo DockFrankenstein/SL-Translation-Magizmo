@@ -852,6 +852,12 @@
         },
         {
             "type": 0,
+            "id": "inv_scp207_description",
+            "displayText": "Inv Scp207 Description",
+            "guid": "4768487b-5b01-4493-9015-849975951aa3"
+        },
+        {
+            "type": 0,
             "id": "inv_scp207_anti",
             "displayText": "Inv Scp207 Anti",
             "guid": "1587482f-34ca-4731-b6e3-4f64769cf6c5"
@@ -861,12 +867,6 @@
             "id": "inv_scp207_anti_description",
             "displayText": "Inv Scp207 Anti Description",
             "guid": "8874a78e-bcab-4cd1-8d9f-5458bfc0e751"
-        },
-        {
-            "type": 0,
-            "id": "inv_scp207_description",
-            "displayText": "Inv Scp207 Description",
-            "guid": "4768487b-5b01-4493-9015-849975951aa3"
         },
         {
             "type": 0,
