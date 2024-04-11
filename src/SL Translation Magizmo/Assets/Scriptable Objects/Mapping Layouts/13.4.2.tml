@@ -1,7 +1,7 @@
 {
     "versionId": "81f2a7716ca4794458f1f0d7d4bc88d3",
     "version": {
-        "instanceID": 22232
+        "instanceID": 22268
     },
     "items": [
         {
@@ -390,21 +390,9 @@
         },
         {
             "type": 0,
-            "id": "inv_keycard_janitor_description",
-            "displayText": "Keycard Janitor Description",
-            "guid": "7edea0e3-7784-49b6-a144-2a676cfd741c"
-        },
-        {
-            "type": 0,
             "id": "inv_keycard_scientist",
             "displayText": "Keycard Scientist",
             "guid": "74010aaf-7b5c-46f8-a829-64dc6dc7518c"
-        },
-        {
-            "type": 0,
-            "id": "inv_keycard_scientist_description",
-            "displayText": "Keycard Scientist Description",
-            "guid": "d2dbb52e-53c9-4007-b543-114f964ab94a"
         },
         {
             "type": 0,
@@ -414,21 +402,9 @@
         },
         {
             "type": 0,
-            "id": "inv_keycard_scientist2_description",
-            "displayText": "Keycard Scientist2 Description",
-            "guid": "f4a2ef80-e487-4cd5-bb6f-2e15753ba919"
-        },
-        {
-            "type": 0,
             "id": "inv_keycard_zone_manager",
             "displayText": "Keycard Zone Manager",
             "guid": "73799d2c-dd67-4b45-9481-4deccfc885f0"
-        },
-        {
-            "type": 0,
-            "id": "inv_keycard_zone_manager_description",
-            "displayText": "Keycard Zone Manager Description",
-            "guid": "a2beea36-b3c9-4125-90f4-db65a2c22bce"
         },
         {
             "type": 0,
@@ -438,21 +414,9 @@
         },
         {
             "type": 0,
-            "id": "inv_keycard_containment_engineer_description",
-            "displayText": "Keycard Containment Engineer Description",
-            "guid": "038a3c9a-3619-46ed-aaf3-35f05bd726af"
-        },
-        {
-            "type": 0,
             "id": "inv_keycard_facility_manager",
             "displayText": "Keycard Facility Manager",
             "guid": "c667e027-730e-4ed0-8af9-80a7f17fb1de"
-        },
-        {
-            "type": 0,
-            "id": "inv_keycard_facility_manager_description",
-            "displayText": "Keycard Facility Manager Description",
-            "guid": "d22fbca3-05f0-47fb-996a-d1e224fce95a"
         },
         {
             "type": 0,
@@ -462,21 +426,9 @@
         },
         {
             "type": 0,
-            "id": "inv_keycard_guard_description",
-            "displayText": "Keycard Guard Description",
-            "guid": "6b0f34ed-4956-455a-8df4-1a580569e714"
-        },
-        {
-            "type": 0,
             "id": "inv_keycard_mtf_private",
             "displayText": "Keycard Mtf Private",
             "guid": "6ba17de1-f47e-4b61-a6b7-d9a1d2ac4484"
-        },
-        {
-            "type": 0,
-            "id": "inv_keycard_mtf_private_description",
-            "displayText": "Keycard Mtf Private Description",
-            "guid": "6e75f70f-f3d2-43e4-a38d-c96891d701d5"
         },
         {
             "type": 0,
@@ -486,21 +438,9 @@
         },
         {
             "type": 0,
-            "id": "inv_keycard_mtf_sergeant_description",
-            "displayText": "Keycard Mtf Sergeant Description",
-            "guid": "a21ac929-c42c-4273-bc8c-f319011c1e6c"
-        },
-        {
-            "type": 0,
             "id": "inv_keycard_mtf_captain",
             "displayText": "Keycard Mtf Captain",
             "guid": "e53aa796-53fe-4203-b515-87c7680ad23e"
-        },
-        {
-            "type": 0,
-            "id": "inv_keycard_mtf_captain_description",
-            "displayText": "Keycard Mtf Captain Description",
-            "guid": "1d922c0f-579f-4f86-94bd-4e093596379c"
         },
         {
             "type": 0,
@@ -510,21 +450,9 @@
         },
         {
             "type": 0,
-            "id": "inv_keycard_chaos_description",
-            "displayText": "Keycard Chaos Description",
-            "guid": "6efaaeaf-f232-4008-8ac3-5cb7d21e02aa"
-        },
-        {
-            "type": 0,
             "id": "inv_keycard_o5",
             "displayText": "Keycard O5",
             "guid": "fc73baac-6ef6-490f-ae11-bb82456344ef"
-        },
-        {
-            "type": 0,
-            "id": "inv_keycard_o5_description",
-            "displayText": "Keycard O5 Description",
-            "guid": "e99c68c8-7eb7-4304-ba96-82397bba6ea3"
         },
         {
             "type": 1,
@@ -582,21 +510,9 @@
         },
         {
             "type": 0,
-            "id": "inv_com15_description",
-            "displayText": "Inv Com15 Description",
-            "guid": "8e160a8f-846d-4445-8ec8-ea83b4a25224"
-        },
-        {
-            "type": 0,
             "id": "inv_com18",
             "displayText": "Inv Com18",
             "guid": "76b95c7c-1211-43dd-be1c-03830454c3de"
-        },
-        {
-            "type": 0,
-            "id": "inv_com18_description",
-            "displayText": "Inv Com18 Description",
-            "guid": "1463dc4d-9139-4d50-8685-74b117c63ce3"
         },
         {
             "type": 0,
@@ -606,21 +522,9 @@
         },
         {
             "type": 0,
-            "id": "inv_com45_description",
-            "displayText": "Inv Com45 Description",
-            "guid": "1ac97c19-1838-4cc4-97a0-223aeab871c1"
-        },
-        {
-            "type": 0,
             "id": "inv_fsp9",
             "displayText": "Inv Fsp9",
             "guid": "a5b5a427-be05-4930-856b-8073f09bd457"
-        },
-        {
-            "type": 0,
-            "id": "inv_fsp9_description",
-            "displayText": "Inv Fsp9 Description",
-            "guid": "eb9180a8-5eae-41fe-9558-dd1b2ac6c42c"
         },
         {
             "type": 0,
@@ -630,21 +534,9 @@
         },
         {
             "type": 0,
-            "id": "inv_crossvec_description",
-            "displayText": "Inv Crossvec Description",
-            "guid": "794640f9-bc85-4b7e-a86d-5427be175679"
-        },
-        {
-            "type": 0,
             "id": "inv_e11sr",
             "displayText": "Inv E11sr",
             "guid": "5794d1e2-2389-40e0-89ff-b0b1d1bad134"
-        },
-        {
-            "type": 0,
-            "id": "inv_e11sr_description",
-            "displayText": "Inv E11sr Description",
-            "guid": "51f2f3de-bbee-45d2-8ff4-6d7cdc11ef99"
         },
         {
             "type": 0,
@@ -654,21 +546,9 @@
         },
         {
             "type": 0,
-            "id": "inv_fr_mg0_description",
-            "displayText": "Inv Fr Mg0 Description",
-            "guid": "67ea38d6-47bc-4d06-b75d-816ce487f1f0"
-        },
-        {
-            "type": 0,
             "id": "inv_ak",
             "displayText": "Inv Ak",
             "guid": "275a4a90-bc94-4816-914e-89fe232df090"
-        },
-        {
-            "type": 0,
-            "id": "inv_ak_description",
-            "displayText": "Inv Ak Description",
-            "guid": "b096a28c-50cc-4696-a7f7-4e3377f2a8cc"
         },
         {
             "type": 0,
@@ -678,21 +558,9 @@
         },
         {
             "type": 0,
-            "id": "inv_a7_description",
-            "displayText": "Inv A7 Description",
-            "guid": "56b5c69e-c551-45c2-b4c1-2d7e2da3c007"
-        },
-        {
-            "type": 0,
             "id": "inv_revolver",
             "displayText": "Inv Revolver",
             "guid": "a0b55a3f-80e9-48af-a16b-256490618040"
-        },
-        {
-            "type": 0,
-            "id": "inv_revolver_description",
-            "displayText": "Inv Revolver Description",
-            "guid": "bd77ec9d-3e56-48a6-b9da-0e006766ce69"
         },
         {
             "type": 0,
@@ -702,21 +570,9 @@
         },
         {
             "type": 0,
-            "id": "inv_shotgun_description",
-            "displayText": "Inv Shotgun Description",
-            "guid": "3e321a42-535d-468f-9e1b-4fd23316456c"
-        },
-        {
-            "type": 0,
             "id": "inv_logicer",
             "displayText": "Inv Logicer",
             "guid": "74660219-1a4f-4d79-a04e-383e0a64ef10"
-        },
-        {
-            "type": 0,
-            "id": "inv_logicer_description",
-            "displayText": "Inv Logicer Description",
-            "guid": "9e4e11ec-6109-4511-8326-12adb1ca7cd8"
         },
         {
             "type": 1,
@@ -816,33 +672,15 @@
         },
         {
             "type": 0,
-            "id": "inv_armor_light_description",
-            "displayText": "Inv Armor Light Description",
-            "guid": "55f95291-fd06-4393-b664-634307f3672e"
-        },
-        {
-            "type": 0,
             "id": "inv_armor_combat",
             "displayText": "Inv Armor Combat",
             "guid": "18708352-8d67-4aa8-aadb-0d9c29e0cc51"
         },
         {
             "type": 0,
-            "id": "inv_armor_combat_description",
-            "displayText": "Inv Armor Combat Description",
-            "guid": "3fc26fa2-7b67-4923-8637-48455f44b8fd"
-        },
-        {
-            "type": 0,
             "id": "inv_armor_heavy",
             "displayText": "Inv Armor Heavy",
             "guid": "358611b8-b8e7-4020-96c4-97666bdca48d"
-        },
-        {
-            "type": 0,
-            "id": "inv_armor_heavy_description",
-            "displayText": "Inv Armor Heavy Description",
-            "guid": "9e2725ca-51e9-45b9-ae57-95cd728152d1"
         },
         {
             "type": 1,
