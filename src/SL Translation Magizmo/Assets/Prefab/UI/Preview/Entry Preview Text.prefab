@@ -282,6 +282,7 @@ MonoBehaviour:
   linkedElements: []
   manager: {fileID: 0}
   hierarchy: {fileID: 0}
+  scene: {fileID: 0}
   text: {fileID: 5869341147563832517}
   idNameText: {fileID: 1823422134509536311}
   multiEntryPanel: {fileID: 6063163089769251953}

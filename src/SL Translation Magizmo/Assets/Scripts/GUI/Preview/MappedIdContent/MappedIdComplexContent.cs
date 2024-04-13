@@ -11,7 +11,7 @@ namespace Project.GUI.Preview
 
         public override string[] GetContent(GetContentArgs args, object context)
         {
-            return new string[] { GetContent(args.manager, element) };
+            return new string[] { GetContent(args.manager, element).Replace("{{", "{").Replace("}}", "}") };
         }
 
         string GetContent(TranslationManager manager, Element element)
@@ -25,14 +25,25 @@ namespace Project.GUI.Preview
 
             List<string> vals = new List<string>();
 
+            txt = txt.Replace("{", "{{{{")
+                .Replace("}", "}}}}");
+
             foreach (var item in element.dynamicValues)
             {
                 if (item == null) continue;
-                while (txt.Contains($"{{{vals.Count - 1}}}"))
-                    vals.Add($"{{{vals.Count - 1}}}");
+                while (txt.Contains($"{{{vals.Count}}}"))
+                    vals.Add($"{{{vals.Count}}}");
 
-                vals.Add(item.GetContent(manager));
-                txt = txt.Replace(item.tag, $"{{{vals.Count - 1}}}");
+                var content = item switch
+                {
+                    Element.EntryValue entryVal => GetContent(manager, entryVal.entryContent),
+                    Element.StaticValue staticVal => staticVal.staticContent.Replace("{", "{{{{").Replace("}", "}}}}"),
+                    _ => string.Empty
+                };
+
+                vals.Add(content);
+                txt = txt.Replace(item.tag.Replace("{", "{{{{").Replace("}", "}}}}"), $"{{{vals.Count - 1}}}");
+                Debug.Log($"Replacing {item.tag} to {{{vals.Count - 1}}}");
             }
 
             txt = string.Format(txt, vals.ToArray());
@@ -53,26 +64,16 @@ namespace Project.GUI.Preview
             public abstract class DynamicValue
             {
                 public string tag;
-
-                public abstract string GetContent(TranslationManager manager);
             }
 
             public class StaticValue : DynamicValue
             {
                 public string staticContent;
-
-                public override string GetContent(TranslationManager manager) =>
-                    staticContent;
             }
 
             public class EntryValue : DynamicValue
             {
                 public Element entryContent;
-
-                public override string GetContent(TranslationManager manager) =>
-                    manager.File.Entries.TryGetValue(entryContent.id, out var val) && !string.IsNullOrWhiteSpace(val.content) ?
-                            val.content :
-                            entryContent.defaultContent;
             }
         }
     }
