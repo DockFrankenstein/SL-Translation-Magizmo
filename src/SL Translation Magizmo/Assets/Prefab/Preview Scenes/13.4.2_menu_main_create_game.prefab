@@ -86,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 4444533820561664951}
     - target: {fileID: 2066548913514627363, guid: a62279cf627b4f54883b86d85aa70775, type: 3}
       propertyPath: version.releases.Array.data[2]
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3068642185948469431, guid: a62279cf627b4f54883b86d85aa70775, type: 3}
       propertyPath: m_AnchorMax.y

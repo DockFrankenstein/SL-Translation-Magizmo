@@ -45,7 +45,7 @@ namespace Project.GUI.Preview
 
             //Generate scene list
             //This includes scenes for this version and
-            //older. We use the newest scene if possible
+            //older. We use the newest scene avaliable
             foreach (var item in scenes)
             {
                 if (item == null) continue;

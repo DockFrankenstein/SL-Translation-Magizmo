@@ -16,13 +16,21 @@ namespace Project.Utility.Editor
 
             position = EditorGUI.PrefixLabel(position, label);
 
-            var text = EditorGUI.TextField(position, string.Join(".", releases));
-
-            if (Version.TryParse(text, out var newVersion))
+            using (var change = new EditorGUI.ChangeCheckScope())
             {
-                releasesProperty.arraySize = newVersion.releases.Length;
-                for (int i = 0; i < releasesProperty.arraySize; i++)
-                    releasesProperty.GetArrayElementAtIndex(i).intValue = (int)newVersion.releases[i];
+                var showMixedPrev = EditorGUI.showMixedValue;
+                EditorGUI.showMixedValue = property.hasMultipleDifferentValues;
+
+                var text = EditorGUI.TextField(position, string.Join(".", releases));
+
+                EditorGUI.showMixedValue = showMixedPrev;
+
+                if (change.changed && Version.TryParse(text, out var newVersion))
+                {
+                    releasesProperty.arraySize = newVersion.releases.Length;
+                    for (int i = 0; i < releasesProperty.arraySize; i++)
+                        releasesProperty.GetArrayElementAtIndex(i).intValue = (int)newVersion.releases[i];
+                }
             }
 
             if (property.serializedObject.hasModifiedProperties)
