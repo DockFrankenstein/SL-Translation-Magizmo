@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4678472126441386788, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: mainId.entryId
-      value: f1_classd_description
+      value: f1_scientist_description
       objectReference: {fileID: 0}
     - target: {fileID: 4678472126441386788, guid: c924d4aeba8f84a449881b0973b3ae03, type: 3}
       propertyPath: mainId.defaultValue

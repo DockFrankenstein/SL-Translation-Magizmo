@@ -1173,7 +1173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 866911431351304284, guid: 035f5750e02fd4d4da77cf21239a8649, type: 3}
       propertyPath: mainId.isMain
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 866911431351304284, guid: 035f5750e02fd4d4da77cf21239a8649, type: 3}
       propertyPath: otherIds.Array.size
@@ -1187,6 +1187,22 @@ PrefabInstance:
       propertyPath: linkedElements.Array.data[0]
       value: 
       objectReference: {fileID: 9169706051500755527}
+    - target: {fileID: 866911431351304284, guid: 035f5750e02fd4d4da77cf21239a8649, type: 3}
+      propertyPath: otherIds.Array.data[0].isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 866911431351304284, guid: 035f5750e02fd4d4da77cf21239a8649, type: 3}
+      propertyPath: otherIds.Array.data[1].isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 866911431351304284, guid: 035f5750e02fd4d4da77cf21239a8649, type: 3}
+      propertyPath: otherIds.Array.data[2].isMain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 866911431351304284, guid: 035f5750e02fd4d4da77cf21239a8649, type: 3}
+      propertyPath: otherIds.Array.data[3].isMain
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 866911431351304284, guid: 035f5750e02fd4d4da77cf21239a8649, type: 3}
       propertyPath: otherIds.Array.data[0].content
       value: 
