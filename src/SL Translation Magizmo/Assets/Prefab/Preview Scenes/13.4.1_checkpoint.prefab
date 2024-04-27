@@ -53,7 +53,7 @@ MonoBehaviour:
   BL: {x: -0.55, y: 0.155, z: 0}
   BR: {x: -0.06, y: 0.155, z: 0}
   material: {fileID: 2100000, guid: 23df4d510edbc644eb1cb711cdd1f832, type: 2}
-  size: {x: 789, y: 159}
+  size: {x: 233, y: 49}
   meshRenderer: {fileID: 3632265402076754269}
   meshFilter: {fileID: 6794466881634705097}
   cam: {fileID: 7370386315602184461}
@@ -599,7 +599,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 81.5
+  m_fontSize: 24
   m_fontSizeBase: 81.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
