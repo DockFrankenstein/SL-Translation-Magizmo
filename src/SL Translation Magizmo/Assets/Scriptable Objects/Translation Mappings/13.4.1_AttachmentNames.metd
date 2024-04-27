@@ -385,7 +385,7 @@
                 {
                     "id": "attachment_barel_standard",
                     "autoDisplayName": false,
-                    "displayName": "Standard Barel",
+                    "displayName": "Standard Barrel",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "7ce63a55-6937-494d-a512-06f2f64c323e"
@@ -393,7 +393,7 @@
                 {
                     "id": "attachment_barel_standard_description",
                     "autoDisplayName": false,
-                    "displayName": "Standard Barel Description",
+                    "displayName": "Standard Barrel Description",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "fba129a0-cb2f-4b35-8f74-70a67893c89a"
@@ -407,7 +407,7 @@
                 {
                     "id": "attachment_barel_extended",
                     "autoDisplayName": false,
-                    "displayName": "Extended Barel",
+                    "displayName": "Extended Barrel",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "164bfcb0-9230-425c-b64c-2e298a901c90"
@@ -415,7 +415,7 @@
                 {
                     "id": "attachment_barel_extended_description",
                     "autoDisplayName": false,
-                    "displayName": "Extended Barel Description",
+                    "displayName": "Extended Barrel Description",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "8d31ab06-1b06-4a5d-999a-893477d73a33"
