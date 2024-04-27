@@ -2,7 +2,7 @@
   "profiles": {
     "Uninstaller": {
       "commandName": "Project",
-      "commandLineArgs": "--debug-uninstall"
+      "commandLineArgs": "--debug-uninstall \"h h h h h\""
     },
     "Installer": {
       "commandName": "Project"

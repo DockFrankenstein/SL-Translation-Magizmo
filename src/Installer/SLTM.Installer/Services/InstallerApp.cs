@@ -17,8 +17,9 @@ namespace SLTM.Installer.Services
         const string APP_REGISTRY_KEY = "SL Translation Magizmo";
         public const string APP_FILE_NAME = "SL Translation Magizmo.exe";
 
-        public const string ARGS_UPDATE = "--update";
-        public const string ARGS_DEBUG_UNINSTALL = "--debug-uninstall";
+        public const string ARGS_UPDATE = "update";
+        public const string ARGS_DEBUG_UNINSTALL = "debug-uninstall";
+        public const string ARGS_DELETE_AFTER = "delete-after";
 
         public enum Mode
         {
@@ -35,12 +36,42 @@ namespace SLTM.Installer.Services
                 TargetFileName = "Windows.zip",
             };
 
-            Arguments = new HashSet<string>(Environment.GetCommandLineArgs().Distinct());
+            AppDomain.CurrentDomain.ProcessExit += (_, _) => OnExit();
+
+            Arguments = new HashSet<Argument>();
+            var args = Environment.GetCommandLineArgs();
+            for (int i = 0; i < args.Length; i++)
+            {
+                if (!args[i].StartsWith("-"))
+                {
+                    Arguments.Add(new Argument() { value = args[i], });
+                    continue;
+                }
+
+                var arg = new Argument()
+                {
+                    argument = args[i],
+                    value = null,
+                };
+
+                while (arg.argument.StartsWith("-"))
+                    arg.argument = arg.argument.Substring(1, arg.argument.Length - 1);
+
+                if (i + 1 < args.Length)
+                {
+                    i++;
+                    arg.value = args[i];
+                }
+
+                Arguments.Add(arg);
+            }
+
+            DeleteAfter = Arguments.Any(x => x.argument == ARGS_DELETE_AFTER);
+
             DetermineMode();
 
             if (AppMode == Mode.Update)
             {
-                Updater.OutputPath = Path.GetDirectoryName(Environment.ProcessPath);
                 _ = Update();
             }
         }
@@ -51,11 +82,17 @@ namespace SLTM.Installer.Services
 
             var appPath = Path.GetDirectoryName(Environment.ProcessPath);
 
-            if (File.Exists($"{appPath}/{APP_FILE_NAME}") || Arguments.Contains(ARGS_DEBUG_UNINSTALL))
+            if (Arguments.Any(x => x.argument == ARGS_UPDATE))
             {
-                AppMode = Arguments.Contains(ARGS_UPDATE) ?
-                    Mode.Update :
-                    Mode.Uninstall;
+                AppMode = Mode.Update;
+                Updater.OutputPath = Arguments.Where(x => x.argument == ARGS_UPDATE).First().value
+                    ?? Path.GetDirectoryName(Environment.ProcessPath);
+                return;
+            }
+
+            if (File.Exists($"{appPath}/{APP_FILE_NAME}") || Arguments.Any(x => x.argument == ARGS_DEBUG_UNINSTALL))
+            {
+                AppMode = Mode.Uninstall;
             }
         }
 
@@ -65,7 +102,7 @@ namespace SLTM.Installer.Services
 
         public bool CreateDesktopShortcut { get; set; }
 
-        public HashSet<string> Arguments { get; }
+        public HashSet<Argument> Arguments { get; }
 
         public string RootPath => Updater.OutputPath;
         public string ExePath => $"{RootPath}/SL Translation Magizmo.exe";
@@ -74,13 +111,15 @@ namespace SLTM.Installer.Services
         public Action OnProcessFinish;
         public Action<Exception> OnException;
 
+        public bool DeleteAfter { get; private set; }
+
         public void Uninstall()
         {
             try
             {
                 OnProcessBegin?.Invoke();
 
-                if (Arguments.Contains(ARGS_DEBUG_UNINSTALL))
+                if (Arguments.Any(x => x.argument == ARGS_DEBUG_UNINSTALL))
                 {
                     OnProcessFinish?.Invoke();
                     return;
@@ -97,7 +136,7 @@ namespace SLTM.Installer.Services
                 foreach (var item in Directory.GetDirectories(rootPath))
                     Directory.Delete(item, true);
 
-                AppDomain.CurrentDomain.ProcessExit += (_, _) => ExitAndFinalizeUninstall();
+                DeleteAfter = true;
             }
             catch (Exception e)
             {
@@ -107,10 +146,12 @@ namespace SLTM.Installer.Services
             OnProcessFinish?.Invoke();
         }
 
-        public void ExitAndFinalizeUninstall()
+        public void OnExit()
         {
-            if (Arguments.Contains(ARGS_DEBUG_UNINSTALL))
+            if (Arguments.Any(x => x.argument == ARGS_DEBUG_UNINSTALL))
                 return;
+
+            if (!DeleteAfter) return;
 
             Process.Start(new ProcessStartInfo()
             {
@@ -208,5 +249,11 @@ namespace SLTM.Installer.Services
                     .OpenSubKey("Windows")
                     .OpenSubKey("CurrentVersion")
                     .OpenSubKey("Uninstall", true);
+
+        public struct Argument
+        {
+            public string argument;
+            public string value;
+        }
     }
 }

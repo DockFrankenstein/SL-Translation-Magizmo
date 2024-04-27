@@ -5,6 +5,8 @@ using qASIC.SettingsSystem;
 using System.Collections;
 using qASIC.Files;
 using System.Diagnostics;
+using System.IO;
+using System.Threading;
 
 namespace Project.GUI.Other
 {
@@ -78,7 +80,7 @@ namespace Project.GUI.Other
             _updater = new AutoUpdater()
             {
                 TargetFileName = "Installer.exe",
-                ResultPath = $"{FileManager.TrimPathEnd(Application.dataPath, 1)}/Uninstall.exe",
+                ResultPath = $"{FileManager.GetGenericFolderPath(GenericFolder.UserProfile)}\\Downloads\\SL Translation Magizmo Installer v{{0}}.exe",
                 CurrentVersion = Application.version,
             };
 
@@ -117,13 +119,19 @@ namespace Project.GUI.Other
             {
                 if (_updater.UpdaterStatus == AutoUpdater.Status.ReadyToFinalizeUpdate)
                 {
-                    Process.Start(new ProcessStartInfo()
+                    //We have to put this on a different thread or else
+                    //we will create an infinite loop of admin prompts
+                    //that can only be stopped by force closing sltm
+                    //via the task manager
+                    //John Riccitiello my beloved
+                    new Thread(() =>
                     {
-                        Arguments = $"/C choice /C Y /D Y /T 1 & \"{_updater.ResultPath}\" --update",
-                        WindowStyle = ProcessWindowStyle.Hidden,
-                        CreateNoWindow = true,
-                        FileName = "cmd.exe",
-                    });
+                        Process.Start(new ProcessStartInfo()
+                        {
+                            FileName = _updater.GetFinalOutputPath(),
+                            Arguments = $"--update \"{FileManager.TrimPathEnd(Application.dataPath, 1)}\" --delete-after",
+                        });
+                    }).Start();
                 }
             };
         }
@@ -147,7 +155,6 @@ namespace Project.GUI.Other
         {
             StartCoroutine(DownloadUpdate());
             UpdateContent();
-            //progress.ChangeDispaly(true);
         }
 
         IEnumerator DownloadUpdate()
@@ -211,13 +218,24 @@ namespace Project.GUI.Other
                 _ => upToDateDescription,
             };
 
+            cancelButton.text = _updater.UpdaterStatus switch
+            {
+                AutoUpdater.Status.UpToDate or
+                AutoUpdater.Status.ReadyToFinalizeUpdate or
+                AutoUpdater.Status.CheckingForUpdatesError or
+                AutoUpdater.Status.UpdateAvaliable or
+                AutoUpdater.Status.DownloadingUpdateError => "Close",
+                AutoUpdater.Status.DownloadingUpdate or
+                AutoUpdater.Status.NotPrepared or
+                AutoUpdater.Status.CheckingForUpdates or
+                _ => "Cancel",
+            };
+
             bool isUpdating = _updater.UpdaterStatus == AutoUpdater.Status.DownloadingUpdate;
 
-            //progress.ChangeDispaly(isUpdating);
             buttons.ChangeDispaly(!isUpdating);
             updateButton.ChangeDispaly(_updater.UpdaterStatus == AutoUpdater.Status.UpdateAvaliable);
             dontShowButton.ChangeDispaly(false);
-            //progress.ChangeDispaly(false);
         }
 
         void Close()
@@ -227,6 +245,12 @@ namespace Project.GUI.Other
 
             IsOpened = false;
             document.rootVisualElement.ChangeDispaly(false);
+        }
+
+        [ContextMenu("Set as ready to finalize")]
+        void SetToFinalize()
+        {
+            _updater.UpdaterStatus = AutoUpdater.Status.ReadyToFinalizeUpdate;
         }
     }
 }
