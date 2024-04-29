@@ -6,7 +6,7 @@ namespace Project.GUI.Preview
 {
     public class MappedIdColored : MappedIdContent<MappedIdColored.Context>
     {
-        public bool useRichText;
+        public bool useRichText = true;
 
         public override string[] GetContentWithContext(GetContentArgs args, Context context) =>
             args.normalContent
