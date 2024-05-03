@@ -51,9 +51,9 @@
             "guid": "960ff7a4-27a2-40e9-a47e-47bf7bc95142",
             "fields": [
                 {
-                    "id": "voicechat_indicator_muted_privacy",
-                    "autoDisplayName": false,
-                    "displayName": "Disabled In Privacy Indicator",
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "11f0010a-8b56-4849-817e-3cab8270d655"
@@ -67,7 +67,7 @@
                 {
                     "id": "voicechat_indicator_muted_privacy_header",
                     "autoDisplayName": false,
-                    "displayName": "Disabled In Privacy Indicator Description",
+                    "displayName": "Disabled In Privacy Indicator",
                     "addToList": true,
                     "dynamicValues": [],
                     "guid": "d73f912f-5d8c-4eb3-9d73-e505de687473"

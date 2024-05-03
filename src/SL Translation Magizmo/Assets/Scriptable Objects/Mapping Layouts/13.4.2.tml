@@ -3642,12 +3642,6 @@
         },
         {
             "type": 0,
-            "id": "voicechat_indicator_muted_privacy",
-            "displayText": "Voicechat Indicator Muted Privacy",
-            "guid": "aaa25cb8-4e42-4ca6-8c0b-773c8fb7c636"
-        },
-        {
-            "type": 0,
             "id": "voicechat_indicator_muted_privacy_header",
             "displayText": "Voicechat Indicator Muted Privacy Header",
             "guid": "9d7bbb96-f306-4a61-b6df-d35177a1f728"
