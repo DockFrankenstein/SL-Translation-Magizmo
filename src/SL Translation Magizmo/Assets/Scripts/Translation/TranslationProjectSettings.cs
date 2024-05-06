@@ -2,6 +2,8 @@ using UnityEngine;
 using Project.Translation.Mapping;
 using System.Collections.Generic;
 using UnityEngine.Windows;
+using System.Linq;
+
 
 
 #if UNITY_EDITOR
@@ -16,7 +18,17 @@ namespace Project.Translation
 
         public List<TranslationVersion> translationVersions = new List<TranslationVersion>();
 
-        public static TranslationProjectSettings _instance;
+        public Version NewestVersion =>
+            translationVersions
+            .Select(x => x.version)
+            .Max();
+
+        public TranslationVersion NewestTranslationVersion =>
+            translationVersions
+            .Where(x => x.version == NewestVersion)
+            .First();
+
+        private static TranslationProjectSettings _instance;
         public static TranslationProjectSettings Instance
         {
             get

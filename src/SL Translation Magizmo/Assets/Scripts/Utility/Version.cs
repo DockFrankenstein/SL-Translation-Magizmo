@@ -53,8 +53,9 @@ namespace Project
             a < b || a == b;
 
         public static bool operator ==(Version a, Version b) =>
-            (a.Equals(null) && b.Equals(null)) ||
-                Enumerable.SequenceEqual(a.releases, b.releases);
+            (a.releases == null || b.releases == null) ?
+            (a.releases == null && b.releases == null) :
+            Enumerable.SequenceEqual(a.releases, b.releases);
 
         public static bool operator !=(Version a, Version b) =>
             !(a == b);

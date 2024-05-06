@@ -1,23 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Project.Translation.Data
 {
     public class SaveFileSerializer
     {
+        public SaveFileSerializer()
+        {
+
+        }
+
         public SaveFileSerializer(TranslationManager manager)
         {
-            Manager = manager;
             Updater = new TranslationFileUpdater(manager);
         }
 
-        public TranslationManager Manager { get; private set; }
-        public TranslationFileUpdater Updater { get; private set; }
+        public TranslationFileUpdater Updater { get; private set; } = null;
 
         public SaveFile Load(string path)
         {
@@ -40,7 +40,9 @@ namespace Project.Translation.Data
             }
 
             var file = JsonUtility.FromJson<SaveFile>(txt);
-            Updater.EnsureFileIsUpToDate(file, fileVersion);
+
+            if (Updater != null)
+                Updater.EnsureFileIsUpToDate(file, fileVersion);
 
             return file;
         }

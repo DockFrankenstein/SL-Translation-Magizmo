@@ -51,7 +51,7 @@ namespace Project.GUI.Preview
             text = GetComponent<TMP_Text>();
         }
 
-        private void OnValidate()
+        public void OnValidate()
         {
             if (Application.isPlaying) return;
             text.text = mainId.defaultValue;
