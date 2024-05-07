@@ -1,6 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
+    <Style src="project://database/Assets/UI/Styles/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
     <ui:VisualElement class="dock" style="height: 100%; width: 100%;">
-        <ui:ScrollView name="hierarchy-list" mouse-wheel-scroll-size="1000" class="tree" />
+        <ui:VisualElement class="toolbar" style="flex-basis: 50px;">
+            <ui:TextField picking-mode="Ignore" name="search" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-grow: 1; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+        </ui:VisualElement>
+        <ui:ScrollView name="hierarchy-list" mouse-wheel-scroll-size="1000" class="tree" style="flex-basis: auto; flex-grow: 1;" />
     </ui:VisualElement>
 </ui:UXML>

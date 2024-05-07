@@ -5,7 +5,7 @@
     <ui:Template name="Preview" src="project://database/Assets/UI/Documents/Preview.uxml?fileID=9197481963319205126&amp;guid=eba6b7d510c7927409ab4153e4e7677b&amp;type=3#Preview" />
     <Style src="project://database/Assets/UI/Styles/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
     <ui:Instance template="Generic Menu" name="Generic Menu" style="flex-basis: 35px; margin-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0;" />
-    <ui:Instance template="Inspector" name="Inspector" style="width: 500px; flex-basis: 500px; right: 0; position: absolute; bottom: 0; top: 35px;" />
-    <ui:Instance template="Hierarchy" name="Hierarchy" style="width: 400px; flex-basis: 400px; position: absolute; top: 35px; left: 0; bottom: 0;" />
+    <ui:Instance template="Inspector" name="Inspector" style="width: 500px; flex-basis: 500px; right: 0; position: absolute; bottom: 0; top: 35px; border-left-width: 2px; border-left-color: rgba(13, 13, 13, 255); border-right-color: rgba(13, 13, 13, 255); border-top-color: rgba(13, 13, 13, 255); border-bottom-color: rgba(13, 13, 13, 255);" />
+    <ui:Instance template="Hierarchy" name="Hierarchy" style="width: 400px; flex-basis: 400px; position: absolute; top: 35px; left: 0; bottom: 0; border-right-width: 2px; border-left-color: rgba(13, 13, 13, 255); border-right-color: rgba(13, 13, 13, 255); border-top-color: rgba(13, 13, 13, 255); border-bottom-color: rgba(13, 13, 13, 255);" />
     <ui:Instance template="Preview" name="Preview" style="position: absolute; left: 400px; top: 35px; right: 500px; bottom: auto; height: 50px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
 </ui:UXML>

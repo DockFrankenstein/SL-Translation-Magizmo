@@ -972,6 +972,51 @@ Scroller {
     border-bottom-width: 2px;
     white-space: nowrap;
     flex-direction: row;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    background-color: rgb(51, 51, 51);
+    height: 50px;
+}
+
+.toolbar TextField > #unity-text-input {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    max-height: none;
+    min-height: auto;
+    align-self: auto;
+    flex-shrink: 1;
+    -unity-text-align: middle-left;
+    border-left-color: rgb(33, 33, 33);
+    border-right-color: rgb(33, 33, 33);
+    border-top-color: rgb(33, 33, 33);
+    border-bottom-color: rgb(33, 33, 33);
+}
+
+.toolbar TextField {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    height: 100%;
+    max-height: none;
+    min-height: auto;
+    align-self: auto;
+    flex-shrink: 1;
+    -unity-text-align: middle-left;
 }
 
 .toolbar .unity-button {
