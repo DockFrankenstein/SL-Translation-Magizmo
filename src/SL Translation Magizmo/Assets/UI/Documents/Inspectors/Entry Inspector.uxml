@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Styles/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
     <Style src="project://database/Assets/UI/Styles/Inspector.uss?fileID=7433441132597879392&amp;guid=de24a727e02077c449f311c0c7e4f258&amp;type=3#Inspector" />
-    <ui:VisualElement style="height: 100%;">
+    <ui:VisualElement name="VisualElement" style="height: 100%;">
         <ui:TextField picking-mode="Ignore" label="Content" multiline="true" name="content" is-delayed="false" class="text-area" />
         <ui:TextField picking-mode="Ignore" label="Original" value="Lorem Ipsum dolor sit amet decontamination sequence will begin in t-minus 90 seconds" multiline="true" readonly="true" name="content-comparison" class="content-compare-content" />
     </ui:VisualElement>
