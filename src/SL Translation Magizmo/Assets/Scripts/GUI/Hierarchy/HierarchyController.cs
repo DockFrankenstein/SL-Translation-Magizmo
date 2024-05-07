@@ -78,7 +78,6 @@ namespace Project.GUI.Hierarchy
 
             UiItems.Clear();
             ItemIds.Clear();
-            Select(null as HierarchyItem, false);
 
             var foldoutIndex = -1;
             var itemIndex = 0;
@@ -217,6 +216,10 @@ namespace Project.GUI.Hierarchy
 
                 Foldouts.RemoveAt(foldoutIndex);
             }
+
+            Select(UiItems.Reverse.ContainsKey(_selectedButton) ?
+                UiItems.Reverse[_selectedButton] :
+                null);
         }
 
         void ButtonClicked(Button btn)
