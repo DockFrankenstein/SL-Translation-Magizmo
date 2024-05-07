@@ -217,7 +217,7 @@ namespace Project.GUI.Hierarchy
                 Foldouts.RemoveAt(foldoutIndex);
             }
 
-            Select(UiItems.Reverse.ContainsKey(_selectedButton) ?
+            Select(_selectedButton != null && UiItems.Reverse.ContainsKey(_selectedButton) ?
                 UiItems.Reverse[_selectedButton] :
                 null);
         }
