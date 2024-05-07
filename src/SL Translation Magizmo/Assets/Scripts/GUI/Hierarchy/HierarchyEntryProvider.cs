@@ -50,7 +50,8 @@ namespace Project.GUI.Hierarchy
                 .Where(x => !x.Hide)
                 .SelectMany(x => x.GetMappedFields())
                 .GroupBy(x => x.id)
-                .Select(x => x.First());
+                .Select(x => x.First())
+                .ToDictionary(x => x.id);
 
             var items = layout.items
                 .Select(x =>
@@ -59,9 +60,7 @@ namespace Project.GUI.Hierarchy
 
                     if (x.type == HierarchyItem.ItemType.Normal)
                     {
-                        var field = fields.Where(y => y.id == x.id).FirstOrDefault();
-
-                        if (field != null)
+                        if (fields.TryGetValue(x.id, out var field))
                         {
                             if (!manager.File.Entries.ContainsKey(x.id))
                                 manager.File.Entries.Add(x.id, new Translation.Data.SaveFile.EntryData(field));

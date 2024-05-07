@@ -72,8 +72,6 @@ namespace Project.GUI.Hierarchy
 
         public void Refresh()
         {
-            scroll.contentContainer.Clear();
-
             Items = itemProviders
                 .SelectMany(x => x.GetItems())
                 .ToList();
@@ -82,87 +80,158 @@ namespace Project.GUI.Hierarchy
             ItemIds.Clear();
             Select(null as HierarchyItem, false);
 
-            Foldout currentHeader = null;
-            VisualElement currentContent = null;
+            var foldoutIndex = -1;
+            var itemIndex = 0;
 
             foreach (var item in Items)
             {
                 if (item.type == HierarchyItem.ItemType.Header)
                 {
-                    var header = new Foldout()
+                    if (Foldouts.IndexInRange(foldoutIndex))
                     {
-                        text = item.displayText,
-                        value = item.IsExpanded,
-                    };
+                        var prevContent = Foldouts[foldoutIndex].Value;
+                        var childCount = prevContent.childCount;
+                        for (int i = itemIndex; i < childCount; i++)
+                            prevContent.RemoveAt(prevContent.childCount - 1);
+                    }
 
-                    header.RegisterValueChangedCallback(args =>
+                    foldoutIndex++;
+                    itemIndex = 0;
+                    if (!Foldouts.IndexInRange(foldoutIndex))
                     {
-                        if (args.target == header)
-                            item.IsExpanded = header.value;
-                    });
+                        var header = new Foldout()
+                        {
+                            text = item.displayText,
+                            value = item.IsExpanded,
+                        };
 
-                    currentHeader = header;
-                    RegisterUiItem(item, currentHeader);
-                    scroll.contentContainer.Add(header);
-                    currentContent = null;
+                        var newContent = new VisualElement();
+
+                        header.RegisterValueChangedCallback(args =>
+                        {
+                            if (args.target == header)
+                            {
+                                item.IsExpanded = header.value;
+                                newContent.ChangeDispaly(header.value);
+                            }
+                        });
+
+                        Foldouts.Add(new KeyValuePair<Foldout, VisualElement>(header, newContent));
+
+                        RegisterUiItem(item, Foldouts[foldoutIndex].Key);
+                        scroll.contentContainer.Add(header);
+                        scroll.contentContainer.Add(newContent);
+
+                        newContent.ChangeDispaly(header.value);
+                    }
+
+                    if (Foldouts.IndexInRange(foldoutIndex))
+                    {
+                        Foldouts[foldoutIndex].Key.text = item.displayText;
+                        item.IsExpanded = Foldouts[foldoutIndex].Key.value;
+                    }
+
                     continue;
                 }
 
-                if (currentContent == null)
+                if (foldoutIndex == -1)
                 {
-                    currentContent = new VisualElement();
-                    scroll.contentContainer.Add(currentContent);
+                    foldoutIndex++;
+                    if (Foldouts.IndexInRange(foldoutIndex))
+                        scroll.contentContainer.Remove(Foldouts[foldoutIndex].Key);
 
-                    var head = currentHeader;
-                    var content = currentContent;
-
-                    Foldouts.Add(new KeyValuePair<Foldout, VisualElement>(head, content));
-
-                    head?.RegisterValueChangedCallback(args =>
+                    if (!Foldouts.IndexInRange(foldoutIndex))
                     {
-                        if (args.target == head)
-                            content.ChangeDispaly(head.value);
-                    });
-
-                    content.ChangeDispaly(head.value);
+                        var container = new VisualElement();
+                        Foldouts.Add(new KeyValuePair<Foldout, VisualElement>(null, container));
+                        scroll.contentContainer.Add(container);
+                    }
                 }
 
-                VisualElement element;
+                var content = Foldouts[foldoutIndex].Value;
 
                 switch (item.type)
                 {
                     default:
-                        var button = new Button()
+                        while (itemIndex < content.childCount &&
+                            !(content.ElementAt(itemIndex) is Button))
                         {
-                            text = item.displayText,
-                            tooltip = item.displayText,
-                        };
+                            content.RemoveAt(itemIndex);
+                        }
 
-                        button.clicked += () =>
+                        if (itemIndex >= content.childCount)
                         {
-                            const string selectedClass = "hierarchy-selected";
+                            var button = new Button()
+                            {
+                                text = item.displayText,
+                                tooltip = item.displayText,
+                            };
 
-                            Select(item, false);
+                            button.clicked += () => ButtonClicked(button);
 
-                            if (_selectedButton != null)
-                                _selectedButton.RemoveFromClassList(selectedClass);
+                            content.Add(button);
+                            RegisterUiItem(item, button);
+                            itemIndex++;
+                            break;
+                        }
 
-                            _selectedButton = button;
-                            _selectedButton.AddToClassList(selectedClass);
-                        };
+                        var oldButton = content.ElementAt(itemIndex) as Button;
 
-                        element = button;
+                        oldButton.text = item.displayText;
+                        oldButton.tooltip = item.displayText;
+                        itemIndex++;
+                        RegisterUiItem(item, oldButton);
                         break;
                     case HierarchyItem.ItemType.Separator:
-                        element = new VisualElement()
+                        if (content.Children().IndexInRange(itemIndex) &&
+                            content.ElementAt(itemIndex).ClassListContains("separator"))
+                        {
+                            RegisterUiItem(item, content.ElementAt(itemIndex));
+                            itemIndex++;
+                            break;
+                        }
+
+                        var separator = new VisualElement()
                             .WithClass("separator");
+
+                        content.Add(separator);
+                        RegisterUiItem(item, separator);
+                        itemIndex++;
 
                         break;
                 }
-
-                currentContent.Add(element);
-                RegisterUiItem(item, element);
             }
+
+            var lastFoldoutContent = Foldouts[foldoutIndex].Value;
+            while (itemIndex < lastFoldoutContent.childCount)
+                lastFoldoutContent.RemoveAt(itemIndex);
+
+            foldoutIndex++;
+            while (foldoutIndex < Foldouts.Count)
+            {
+                if (scroll.contentContainer.Contains(Foldouts[foldoutIndex].Key))
+                    scroll.contentContainer.Remove(Foldouts[foldoutIndex].Key);
+
+                if (scroll.contentContainer.Contains(Foldouts[foldoutIndex].Value))
+                    scroll.contentContainer.Remove(Foldouts[foldoutIndex].Value);
+
+                Foldouts.RemoveAt(foldoutIndex);
+            }
+        }
+
+        void ButtonClicked(Button btn)
+        {
+            const string selectedClass = "hierarchy-selected";
+
+            var item = UiItems.Reverse[btn];
+
+            Select(item, false);
+
+            if (_selectedButton != null)
+                _selectedButton.RemoveFromClassList(selectedClass);
+
+            _selectedButton = btn;
+            _selectedButton.AddToClassList(selectedClass);
         }
 
         public void ExpandAll()

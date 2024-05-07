@@ -56,5 +56,8 @@ namespace qASIC
 
                 return matchesCriteria;
             });
+
+        public static bool IndexInRange<TSource>(this IEnumerable<TSource> source, int index) =>
+            index >= 0 && index < source.Count();
     }
 }
