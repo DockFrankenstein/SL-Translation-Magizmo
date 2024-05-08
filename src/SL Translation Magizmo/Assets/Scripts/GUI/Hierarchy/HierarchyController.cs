@@ -241,6 +241,10 @@ namespace Project.GUI.Hierarchy
 
         void ButtonClicked(Button btn)
         {
+            if (Foldouts.Reverse.TryGetValue(btn.parent, out var foldout) &&
+                _tempFoldout == foldout)
+                _tempFoldout = null;
+
             var item = UiItems.Reverse[btn];
             Select(item, false);
         }
@@ -288,18 +292,15 @@ namespace Project.GUI.Hierarchy
             {
                 ChangeSelectedButton(uiItem as Button);
 
-                if (_tempFoldout != null)
+                if (_tempFoldout != null &&
+                    Foldouts.Reverse.TryGetValue(uiItem.parent, out var btnFoldout) &&
+                    btnFoldout != _tempFoldout)
                 {
-                    //If new foldout is not the same as the temporarly expanded one
-                    if (Foldouts.Reverse.TryGetValue(uiItem.parent, out var btnFoldout) &&
-                        btnFoldout != _tempFoldout)
-                    {
-                        _tempFoldout.value = false;
+                    _tempFoldout.value = false;
 
-                        //If new button is below, move scroll so it will stay on the same level that it was clicked
-                        if (Foldouts.Forward.IndexOf(x => x.Key == btnFoldout) > Foldouts.Forward.IndexOf(x => x.Key == _tempFoldout))
-                            scroll.scrollOffset -= Vector2.up * Foldouts.Forward[_tempFoldout].worldBound.height;
-                    }
+                    //If new button is below, move scroll so it will stay on the same level that it was clicked
+                    if (Foldouts.Forward.IndexOf(x => x.Key == btnFoldout) > Foldouts.Forward.IndexOf(x => x.Key == _tempFoldout))
+                        scroll.scrollOffset -= Vector2.up * Foldouts.Forward[_tempFoldout].worldBound.height;
 
                     _tempFoldout = null;
                 }
