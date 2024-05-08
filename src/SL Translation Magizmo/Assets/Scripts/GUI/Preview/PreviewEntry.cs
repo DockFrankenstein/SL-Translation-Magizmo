@@ -159,8 +159,6 @@ namespace Project.GUI.Preview
             if (hierarchy == null) return;
 
             var current = GetCurrentTarget();
-
-
             hierarchy.Select(current.useCustomSelectId ? current.customSelectId : current.entryId, true);
         }
 
@@ -233,6 +231,8 @@ namespace Project.GUI.Preview
             }
 
             ChangeIndexInLinked(SelectedIndex);
+
+            Select();
             Reload();
         }
     }
