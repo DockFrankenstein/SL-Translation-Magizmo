@@ -7,8 +7,6 @@ using System;
 using UnityEngine.Serialization;
 using qASIC.SettingsSystem;
 using qASIC;
-using UnityEditor.Profiling.Memory.Experimental;
-using UnityEngine.TextCore.Text;
 
 namespace Project.GUI.Hierarchy
 {
@@ -45,7 +43,6 @@ namespace Project.GUI.Hierarchy
         Action _onNextFrame;
 
         Foldout _tempFoldout;
-        int _searchItemCount = 0;
 
         Map<HierarchyItem, Button> _searchButtons = new Map<HierarchyItem, Button>();
 
