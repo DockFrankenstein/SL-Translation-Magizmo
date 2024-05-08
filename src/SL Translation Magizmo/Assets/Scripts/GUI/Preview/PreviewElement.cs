@@ -17,7 +17,6 @@ namespace Project.GUI.Preview
 
         protected virtual void Awake()
         {
-            Reload();
         }
 
         public virtual void Reload() { }

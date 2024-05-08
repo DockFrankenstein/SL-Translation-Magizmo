@@ -12,6 +12,8 @@ namespace Project.GUI.Hierarchy
 {
     public class HierarchyController : MonoBehaviour
     {
+        const string SELECTED_CLASS = "hierarchy-selected";
+
         [EditorButton(nameof(Refresh), activityType: ButtonActivityType.OnPlayMode)]
         public UIDocument document;
         [FormerlySerializedAs("providers")] 
@@ -30,7 +32,11 @@ namespace Project.GUI.Hierarchy
         Dictionary<string, List<HierarchyItem>> ItemIds { get; set; } = new Dictionary<string, List<HierarchyItem>>();
         Map<HierarchyItem, VisualElement> UiItems { get; set; } = new Map<HierarchyItem, VisualElement>();
 
-        public List<KeyValuePair<Foldout, VisualElement>> Foldouts { get; private set; } = new List<KeyValuePair<Foldout, VisualElement>>();
+        public Map<Foldout, VisualElement> Foldouts { get; private set; } = new Map<Foldout, VisualElement>();
+
+        Action _onNextFrame;
+
+        Foldout _tempFoldout;
 
         private void Reset()
         {
@@ -57,6 +63,16 @@ namespace Project.GUI.Hierarchy
 
             if (Sett_CollapsedByDefault)
                 CollapseAll();
+        }
+
+        private void Update()
+        {
+            if (_onNextFrame != null)
+            {
+                var a = _onNextFrame;
+                _onNextFrame = null;
+                a.Invoke();
+            }
         }
 
         void RegisterUiItem(HierarchyItem item, VisualElement element)
@@ -88,7 +104,7 @@ namespace Project.GUI.Hierarchy
                 {
                     if (Foldouts.IndexInRange(foldoutIndex))
                     {
-                        var prevContent = Foldouts[foldoutIndex].Value;
+                        var prevContent = Foldouts.ElementAt(foldoutIndex).Value;
                         var childCount = prevContent.childCount;
                         for (int i = itemIndex; i < childCount; i++)
                             prevContent.RemoveAt(prevContent.childCount - 1);
@@ -115,9 +131,9 @@ namespace Project.GUI.Hierarchy
                             }
                         });
 
-                        Foldouts.Add(new KeyValuePair<Foldout, VisualElement>(header, newContent));
+                        Foldouts.Add(header, newContent);
 
-                        RegisterUiItem(item, Foldouts[foldoutIndex].Key);
+                        RegisterUiItem(item, Foldouts.ElementAt(foldoutIndex).Key);
                         scroll.contentContainer.Add(header);
                         scroll.contentContainer.Add(newContent);
 
@@ -126,8 +142,8 @@ namespace Project.GUI.Hierarchy
 
                     if (Foldouts.IndexInRange(foldoutIndex))
                     {
-                        Foldouts[foldoutIndex].Key.text = item.displayText;
-                        item.IsExpanded = Foldouts[foldoutIndex].Key.value;
+                        Foldouts.ElementAt(foldoutIndex).Key.text = item.displayText;
+                        item.IsExpanded = Foldouts.ElementAt(foldoutIndex).Key.value;
                     }
 
                     continue;
@@ -137,17 +153,17 @@ namespace Project.GUI.Hierarchy
                 {
                     foldoutIndex++;
                     if (Foldouts.IndexInRange(foldoutIndex))
-                        scroll.contentContainer.Remove(Foldouts[foldoutIndex].Key);
+                        scroll.contentContainer.Remove(Foldouts.ElementAt(foldoutIndex).Key);
 
                     if (!Foldouts.IndexInRange(foldoutIndex))
                     {
                         var container = new VisualElement();
-                        Foldouts.Add(new KeyValuePair<Foldout, VisualElement>(null, container));
+                        Foldouts.Add(null, container);
                         scroll.contentContainer.Add(container);
                     }
                 }
 
-                var content = Foldouts[foldoutIndex].Value;
+                var content = Foldouts.ElementAt(foldoutIndex).Value;
 
                 switch (item.type)
                 {
@@ -201,20 +217,21 @@ namespace Project.GUI.Hierarchy
                 }
             }
 
-            var lastFoldoutContent = Foldouts[foldoutIndex].Value;
+            var lastFoldoutContent = Foldouts.ElementAt(foldoutIndex).Value;
             while (itemIndex < lastFoldoutContent.childCount)
                 lastFoldoutContent.RemoveAt(itemIndex);
 
             foldoutIndex++;
             while (foldoutIndex < Foldouts.Count)
             {
-                if (scroll.contentContainer.Contains(Foldouts[foldoutIndex].Key))
-                    scroll.contentContainer.Remove(Foldouts[foldoutIndex].Key);
+                var foldout = Foldouts.ElementAt(foldoutIndex);
+                if (scroll.contentContainer.Contains(foldout.Key))
+                    scroll.contentContainer.Remove(foldout.Key);
 
-                if (scroll.contentContainer.Contains(Foldouts[foldoutIndex].Value))
-                    scroll.contentContainer.Remove(Foldouts[foldoutIndex].Value);
+                if (scroll.contentContainer.Contains(foldout.Value))
+                    scroll.contentContainer.Remove(foldout.Value);
 
-                Foldouts.RemoveAt(foldoutIndex);
+                Foldouts.RemoveForward(foldout.Key);
             }
 
             Select(_selectedButton != null && UiItems.Reverse.ContainsKey(_selectedButton) ?
@@ -224,17 +241,19 @@ namespace Project.GUI.Hierarchy
 
         void ButtonClicked(Button btn)
         {
-            const string selectedClass = "hierarchy-selected";
-
             var item = UiItems.Reverse[btn];
-
             Select(item, false);
+        }
 
+        void ChangeSelectedButton(Button btn)
+        {
             if (_selectedButton != null)
-                _selectedButton.RemoveFromClassList(selectedClass);
+                _selectedButton.RemoveFromClassList(SELECTED_CLASS);
 
             _selectedButton = btn;
-            _selectedButton.AddToClassList(selectedClass);
+
+            if (_selectedButton != null)
+                _selectedButton.AddToClassList(SELECTED_CLASS);
         }
 
         public void ExpandAll()
@@ -264,6 +283,57 @@ namespace Project.GUI.Hierarchy
         {
             if (SelectedItem == item) return;
             SelectedItem = item;
+
+            if (UiItems.Forward.TryGetValue(item, out var uiItem))
+            {
+                ChangeSelectedButton(uiItem as Button);
+
+                if (_tempFoldout != null)
+                {
+                    //If new foldout is not the same as the temporarly expanded one
+                    if (Foldouts.Reverse.TryGetValue(uiItem.parent, out var btnFoldout) &&
+                        btnFoldout != _tempFoldout)
+                    {
+                        _tempFoldout.value = false;
+
+                        //If new button is below, move scroll so it will stay on the same level that it was clicked
+                        if (Foldouts.Forward.IndexOf(x => x.Key == btnFoldout) > Foldouts.Forward.IndexOf(x => x.Key == _tempFoldout))
+                            scroll.scrollOffset -= Vector2.up * Foldouts.Forward[_tempFoldout].worldBound.height;
+                    }
+
+                    _tempFoldout = null;
+                }
+
+                if (Foldouts.Reverse.TryGetValue(uiItem.parent, out var foldout))
+                {
+                    if (foldout.value == false)
+                    {
+                        foldout.value = true;
+                        _tempFoldout = foldout;
+                    }
+                }
+
+                if (autoScroll)
+                {
+                    //TODO: God forgive me
+                    _onNextFrame += () =>
+                    {
+                        _onNextFrame += () =>
+                        {
+                            var rect = UiItems.Forward[item].worldBound;
+                            var scrollRect = scroll.worldBound;
+                            rect.position -= scrollRect.position;
+
+                            if (rect.y < 0)
+                                scroll.scrollOffset += Vector2.up * (rect.y);
+
+                            if (rect.y + rect.height > scrollRect.height)
+                                scroll.scrollOffset += Vector2.up * (rect.y + rect.height - scrollRect.height);
+                        };
+                    };
+                }
+            }
+
             OnSelect?.Invoke(item);
         }
     }

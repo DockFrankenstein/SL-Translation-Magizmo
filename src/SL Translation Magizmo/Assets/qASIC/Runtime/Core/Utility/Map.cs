@@ -2,13 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
 
 namespace qASIC
 {
-    public class Map<T0, T1> : IEnumerable<KeyValuePair<T0, T1>>, IEnumerable
+    public class Map<T0, T1> : IEnumerable<KeyValuePair<T0, T1>>
     {
         public Map()
         {
@@ -74,7 +71,7 @@ namespace qASIC
         public bool Contains(KeyValuePair<T0, T1> item) =>
             _forwardDictionary.Contains(item);
 
-        public class Indexer<T, t>
+        public class Indexer<T, t> : IEnumerable<KeyValuePair<T, t>>
         {
             private readonly Dictionary<T, t> _dictionary;
 
@@ -93,6 +90,15 @@ namespace qASIC
             {
                 return _dictionary.ContainsKey(key);
             }
+
+            public bool TryGetValue(T key, out t value) =>
+                _dictionary.TryGetValue(key, out value);
+
+            public IEnumerator<KeyValuePair<T, t>> GetEnumerator() =>
+                _dictionary.GetEnumerator();
+
+            IEnumerator IEnumerable.GetEnumerator() =>
+                GetEnumerator();
         }
     }
 }
