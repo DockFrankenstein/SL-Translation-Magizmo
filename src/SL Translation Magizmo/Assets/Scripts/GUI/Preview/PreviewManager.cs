@@ -5,6 +5,9 @@ using System.Linq;
 using Project.Translation;
 using Project.GUI.Hierarchy;
 using Project.Translation.Mapping;
+using System;
+
+using UObject = UnityEngine.Object;
 
 namespace Project.GUI.Preview
 {
@@ -30,6 +33,8 @@ namespace Project.GUI.Preview
 
         public HierarchyController Hierarchy =>
             hierarchy;
+
+        public event Action OnChangeScene;
 
         public void ChangeVersion(Version version)
         {
@@ -122,7 +127,7 @@ namespace Project.GUI.Preview
 
         private void Manager_OnFileChanged(object context)
         {
-            if (context as Object == this) return;
+            if (context as UObject == this) return;
             Reload();
         }
 
@@ -158,6 +163,8 @@ namespace Project.GUI.Preview
 
             if (CurrentScene != null)
                 CurrentScene.gameObject.SetActive(true);
+
+            OnChangeScene?.Invoke();
         }
 
         void AutoDetectScenes()

@@ -1,14 +1,8 @@
 ﻿using Fab.UITKDropdown;
-using JetBrains.Annotations;
 using Project.UI;
-using qASIC.Files;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
@@ -18,6 +12,7 @@ namespace Project.GUI.Preview
     {
         [SerializeField] UIDocument document;
         [FormerlySerializedAs("sceneManager")]
+        [DynamicHelp(nameof(Path))]
         [SerializeField] PreviewManager preview;
 
         PopupButton _popupButton;
@@ -52,6 +47,12 @@ namespace Project.GUI.Preview
                         .ToArray();
 
                 Path = string.Join('/', parts);
+                Reload();
+            };
+
+            preview.OnChangeScene += () =>
+            {
+                Path = string.Join("/", preview.CurrentScene.path.Split('/').SkipLast(1));
                 Reload();
             };
 
