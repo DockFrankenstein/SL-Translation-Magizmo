@@ -7,6 +7,8 @@ using System;
 using UnityEngine.Serialization;
 using qASIC.SettingsSystem;
 using qASIC;
+using UnityEditor.Profiling.Memory.Experimental;
+using UnityEngine.TextCore.Text;
 
 namespace Project.GUI.Hierarchy
 {
@@ -19,7 +21,13 @@ namespace Project.GUI.Hierarchy
         [FormerlySerializedAs("providers")] 
         public HierarchyItemProvider[] itemProviders;
 
+        [Header("Search")]
+        [SerializeField][Min(0)] int startSearchItemCount = 600;
+
         ScrollView scroll;
+        TextField search;
+        VisualElement contentSearch;
+        VisualElement contentNormal;
 
         public HierarchyItem SelectedItem { get; private set; }
         public string SelectedId => SelectedItem?.id;
@@ -37,6 +45,9 @@ namespace Project.GUI.Hierarchy
         Action _onNextFrame;
 
         Foldout _tempFoldout;
+        int _searchItemCount = 0;
+
+        Map<HierarchyItem, Button> _searchButtons = new Map<HierarchyItem, Button>();
 
         private void Reset()
         {
@@ -51,18 +62,86 @@ namespace Project.GUI.Hierarchy
 
         private static bool Sett_CollapsedByDefault { get; set; }
 
+        public bool IsSearching { get; private set; } = false;
+
         private void Awake()
         {
             var root = document.rootVisualElement;
             scroll = root.Q<ScrollView>("hierarchy-list");
+            search = root.Q<TextField>("search");
+            contentSearch = root.Q("content-search");
+            contentNormal = root.Q("content-normal");
+
+            search.RegisterValueChangedCallback(_ => UpdateSearch());
 
             foreach (var provider in itemProviders)
                 provider.Hierarchy = this;
+
+            EnsureSearchItemCount(startSearchItemCount);
 
             Refresh();
 
             if (Sett_CollapsedByDefault)
                 CollapseAll();
+        }
+
+        void UpdateSearch()
+        {
+            bool prevIsSearching = IsSearching;
+            IsSearching = !string.IsNullOrWhiteSpace(search.value);
+
+            contentNormal.ChangeDispaly(!IsSearching);
+            contentSearch.ChangeDispaly(IsSearching);
+
+            _searchButtons.Clear();
+
+            if (!IsSearching)
+            {
+                ChangeSelectedButton(SelectedItem != null && UiItems.Forward.TryGetValue(SelectedItem, out var selectedEl) ?
+                    selectedEl as Button :
+                    null);
+                return;
+            }
+
+            //When searching
+            var items = Items
+                .SortSearchList(x => x.displayText, search.value)
+                .ToArray();
+
+            EnsureSearchItemCount(items.Length);
+
+            var buttons = contentSearch.Children().ToArray();
+
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                var exists = i < items.Length;
+                buttons[i].ChangeDispaly(exists);
+                if (exists)
+                {
+                    var btn = buttons[i] as Button;
+                    btn.text = items[i].displayText;
+                    _searchButtons.Add(items[i], btn);
+                }
+            }
+
+            ChangeSelectedButton(SelectedItem != null && _searchButtons.Forward.TryGetValue(SelectedItem, out Button selectedBtn) ?
+                selectedBtn :
+                null);
+        }
+
+        void EnsureSearchItemCount(int itemCount)
+        {
+            while (contentSearch.childCount < itemCount)
+            {
+                var btn = new Button();
+                btn.style.display = DisplayStyle.None;
+                contentSearch.Add(btn);
+
+                btn.clicked += () =>
+                {
+                    ButtonClicked(btn);
+                };
+            }
         }
 
         private void Update()
@@ -134,8 +213,8 @@ namespace Project.GUI.Hierarchy
                         Foldouts.Add(header, newContent);
 
                         RegisterUiItem(item, Foldouts.ElementAt(foldoutIndex).Key);
-                        scroll.contentContainer.Add(header);
-                        scroll.contentContainer.Add(newContent);
+                        contentNormal.Add(header);
+                        contentNormal.Add(newContent);
 
                         newContent.ChangeDispaly(header.value);
                     }
@@ -153,13 +232,13 @@ namespace Project.GUI.Hierarchy
                 {
                     foldoutIndex++;
                     if (Foldouts.IndexInRange(foldoutIndex))
-                        scroll.contentContainer.Remove(Foldouts.ElementAt(foldoutIndex).Key);
+                        contentNormal.Remove(Foldouts.ElementAt(foldoutIndex).Key);
 
                     if (!Foldouts.IndexInRange(foldoutIndex))
                     {
                         var container = new VisualElement();
                         Foldouts.Add(null, container);
-                        scroll.contentContainer.Add(container);
+                        contentNormal.Add(container);
                     }
                 }
 
@@ -225,11 +304,11 @@ namespace Project.GUI.Hierarchy
             while (foldoutIndex < Foldouts.Count)
             {
                 var foldout = Foldouts.ElementAt(foldoutIndex);
-                if (scroll.contentContainer.Contains(foldout.Key))
-                    scroll.contentContainer.Remove(foldout.Key);
+                if (contentNormal.Contains(foldout.Key))
+                    contentNormal.Remove(foldout.Key);
 
-                if (scroll.contentContainer.Contains(foldout.Value))
-                    scroll.contentContainer.Remove(foldout.Value);
+                if (contentNormal.Contains(foldout.Value))
+                    contentNormal.Remove(foldout.Value);
 
                 Foldouts.RemoveForward(foldout.Key);
             }
@@ -241,12 +320,20 @@ namespace Project.GUI.Hierarchy
 
         void ButtonClicked(Button btn)
         {
-            if (Foldouts.Reverse.TryGetValue(btn.parent, out var foldout) &&
-                _tempFoldout == foldout)
-                _tempFoldout = null;
+            switch (IsSearching)
+            {
+                case true:
+                    Select(_searchButtons.Reverse[btn], false);
+                    break;
+                case false:
+                    if (Foldouts.Reverse.TryGetValue(btn.parent, out var foldout) &&
+                        _tempFoldout == foldout)
+                        _tempFoldout = null;
 
-            var item = UiItems.Reverse[btn];
-            Select(item, false);
+                    Select(UiItems.Reverse[btn], false);
+                    break;
+            }
+
         }
 
         void ChangeSelectedButton(Button btn)
@@ -288,7 +375,7 @@ namespace Project.GUI.Hierarchy
             if (SelectedItem == item) return;
             SelectedItem = item;
 
-            if (UiItems.Forward.TryGetValue(item, out var uiItem))
+            if (!IsSearching && UiItems.Forward.TryGetValue(item, out var uiItem))
             {
                 ChangeSelectedButton(uiItem as Button);
 
@@ -333,6 +420,11 @@ namespace Project.GUI.Hierarchy
                         };
                     };
                 }
+            }
+
+            if (IsSearching && _searchButtons.Forward.TryGetValue(item, out var btn))
+            {
+                ChangeSelectedButton(btn);
             }
 
             OnSelect?.Invoke(item);
