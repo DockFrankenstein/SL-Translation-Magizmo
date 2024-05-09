@@ -10,6 +10,7 @@
   --ifm-color-primary-lighter: #3ac646;
   --ifm-color-primary-lightest: #54ce5e;
   --ifm-code-font-size: 95%;
+  --ifm-leading: 0.6rem;
 }
 
 [data-theme='dark'] {
@@ -97,3 +98,10 @@ html[data-theme='dark'] .navbar-github-link:before
   background: url("https://media.qasictools.com/files/social/gt-white.svg")
     no-repeat;
 }
+
+.markdown > *   { margin-left: 1.2rem; margin-top: 0.3rem; margin-bottom: 0.6rem; }
+.markdown > nav { margin-left: 0.0rem; margin-top: 0.3rem; margin-bottom: 0.6rem; }
+.markdown > h1  { margin-left: 0.0rem; margin-top: 0.3rem; margin-bottom: 0.6rem; }
+.markdown > h2  { margin-left: 0.4rem; margin-top: 0.3rem; margin-bottom: 0.6rem; }
+.markdown > h3  { margin-left: 0.8rem; margin-top: 0.3rem; margin-bottom: 0.6rem; }
+.markdown > h4  { margin-left: 1.2rem; margin-top: 0.3rem; margin-bottom: 0.6rem; }
