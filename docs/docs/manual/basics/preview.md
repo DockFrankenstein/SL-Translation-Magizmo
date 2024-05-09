@@ -6,13 +6,9 @@ sidebar_position: 1
 
 The preview panel is located in the middle of the application. It's used for displaying an approximate preview of how your translation will look like in the game.
 
-:::caution
-Preview panel is still in development, there are currently only a few scenes implemented.
-:::
-
 ## Accuracy
 
-<u>**SLTM does not use decompiled assets from SCP: Secret Laboratory!**</u>
+<u>**SLTM does not use decompiled assets from SCPSL!**</u>
 
 Instead it uses screenshots and rough reconstructions to simulate the look of the game. The result tends to be inaccurate when:
 - using the `<size>` tag
@@ -31,6 +27,10 @@ The preview panel separates different parts of the game into scenes. These scene
 :::info Note
 Scenes will be automatically changed when selecting an item in the hierarchy. This won't happen if item is in the currently loaded scene or if it doesn't exist in any of them.
 :::
+
+## Scenes
+
+Not every entry has it's scene. They are created for items that would benefit from having a preview or when they are easy to make. They also need to be possible to reconstruct (e.g. SCP-079 uses a lot of post processing effects on it's UI, so there is no way to preview it in SLTM).
 
 ## Elements
 

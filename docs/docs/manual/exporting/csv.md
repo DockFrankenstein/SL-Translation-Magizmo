@@ -34,7 +34,7 @@ Here's a detailed explanation of each column:
 | :-- | :-- |
 | Id | The id used by sltm to recognize which row corresponds to which entry. |
 | Display Name | Name of the entry that's typically displayed in the app. |
-| Original Translation | Original value of the entry from the translation on which you're basing your own (doesn't work yet, so it's empty). |
+| Original Translation | Original value of the entry from the translation you're currently comparing. |
 | Value | Value of the entry. |
 | Dynamic Values | List of dynamic values available for the entry. These tags will be replaced by SCPSL with a different value. |
 

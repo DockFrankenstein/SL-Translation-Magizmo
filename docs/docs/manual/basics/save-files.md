@@ -5,7 +5,7 @@ sidebar_position: 2
 # Save Files
 
 SLTM uses it's own file format for saving translations. This is due to multiple reasons:
-1. Ability for implementing a non-destructive workflow in the future.
+1. Non-destructive workflow.
 2. Faster loading.
 3. Better integration with the editor.
 4. Less likely to cause issues.
