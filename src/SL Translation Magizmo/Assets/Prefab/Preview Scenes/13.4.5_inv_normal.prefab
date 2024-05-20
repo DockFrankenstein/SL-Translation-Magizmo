@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8919090007128644794
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 561596661624579184, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: m_text
+      value: Slowly restores health over time.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248870508777064813, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: version.releases.Array.data[2]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542758605380688021, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: mainId.defaultValue
+      value: Slowly restores health over time.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542758605380688021, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: otherIds.Array.data[1].defaultValue
+      value: Provides a temporary health boost and a short burst of stamina.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542758605380688021, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: otherIds.Array.data[5].defaultValue
+      value: Blinds and disorients your enemies. Detonates after a brief delay once
+        thrown.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542758605380688021, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: otherIds.Array.data[6].defaultValue
+      value: A high explosive dealing significant damage. Detonates after a brief
+        delay once thrown.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542758605380688021, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: otherIds.Array.data[7].defaultValue
+      value: Allows communication over long distances between devices. Range can
+        be adjusted.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542758605380688021, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: otherIds.Array.data[8].defaultValue
+      value: Superball with the ability to bounce with extreme efficiency. Deadly
+        ricochet at high speeds.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542758605380688021, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: otherIds.Array.data[14].defaultValue
+      value: 'Panacea. Instantly restores all health and cures most afflictions. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542758605380688021, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: otherIds.Array.data[15].defaultValue
+      value: Allows temporary communication with the dead. Can be used again after
+        some time passes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542758605380688021, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: otherIds.Array.data[16].defaultValue
+      value: 'Your very own Ghostlight! Caution: Fragile. Disrupts electronics when
+        broken.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154416263247702125, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417197260139422037, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
+      propertyPath: m_Name
+      value: 13.4.5_inv_normal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
