@@ -1034,6 +1034,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7796250771204109375}
   m_SourcePrefab: {fileID: 100100000, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+--- !u!114 &40228093398639523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+  m_PrefabInstance: {fileID: 1934886702405217155}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961040312670534900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &961040312670534900 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1696823685068085111, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
@@ -3565,7 +3576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8339137916312320038, guid: c19da35627616c445b77a7e8f2b61c0c, type: 3}
       propertyPath: entries.Array.size
-      value: 33
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 8339137916312320038, guid: c19da35627616c445b77a7e8f2b61c0c, type: 3}
       propertyPath: entries.Array.data[11]
@@ -3655,6 +3666,10 @@ PrefabInstance:
       propertyPath: entries.Array.data[32]
       value: 
       objectReference: {fileID: 5036514272306735985}
+    - target: {fileID: 8339137916312320038, guid: c19da35627616c445b77a7e8f2b61c0c, type: 3}
+      propertyPath: entries.Array.data[33]
+      value: 
+      objectReference: {fileID: 40228093398639523}
     - target: {fileID: 8339137916312320038, guid: c19da35627616c445b77a7e8f2b61c0c, type: 3}
       propertyPath: entries.Array.data[35]
       value: 
