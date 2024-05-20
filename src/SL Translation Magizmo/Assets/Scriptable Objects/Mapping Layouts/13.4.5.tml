@@ -1,7 +1,7 @@
 {
-    "versionId": "81f2a7716ca4794458f1f0d7d4bc88d3",
+    "versionId": "7b70790d2e59747468799587042babec",
     "version": {
-        "instanceID": 22278
+        "instanceID": 120198
     },
     "items": [
         {
@@ -1503,6 +1503,12 @@
             "id": "menu_warning_okay",
             "displayText": "Menu Warning Okay",
             "guid": "4a922a41-7886-4ae2-9a65-fecc3cf38579"
+        },
+        {
+            "type": 0,
+            "id": "menu_warning_photosensitivity",
+            "displayText": "Menu Warning Photosensitivity",
+            "guid": "30f78622-2d1b-4ac9-a7db-d0a1c5e62b52"
         },
         {
             "type": 1,
@@ -3093,6 +3099,78 @@
             "id": "settings_interface_taskbar_spawn",
             "displayText": "Settings Interface Taskbar Spawn",
             "guid": "99ea2136-9a73-489e-9322-66243a32139f"
+        },
+        {
+            "type": 1,
+            "id": "",
+            "displayText": "Header",
+            "guid": "6f0a54d0-e3d7-499b-a2a3-09ff7825b872"
+        },
+        {
+            "type": 0,
+            "id": "settings_interface_photosensitivity",
+            "displayText": "Settings Interface Photosensitivity",
+            "guid": "5d4bde01-8d77-4a9d-8bc1-9234793e14ca"
+        },
+        {
+            "type": 1,
+            "id": "",
+            "displayText": "Header",
+            "guid": "db9146da-f259-4cdf-ba6e-81eaf0da3327"
+        },
+        {
+            "type": 0,
+            "id": "settings_interface_units",
+            "displayText": "Settings Interface Units",
+            "guid": "6116b309-6599-43eb-b8d9-e72c12e3b6f9"
+        },
+        {
+            "type": 0,
+            "id": "settings_interface_units_metric",
+            "displayText": "Settings Interface Units Metric",
+            "guid": "5ccb7916-e1f6-4c7a-8e5a-ca00445ad23c"
+        },
+        {
+            "type": 0,
+            "id": "settings_interface_units_imperial",
+            "displayText": "Settings Interface Units Imperial",
+            "guid": "06240f96-d95f-40d9-b6a1-dde47e656dea"
+        },
+        {
+            "type": 0,
+            "id": "settings_interface_tooltip",
+            "displayText": "Settings Interface Tooltip",
+            "guid": "95c3de0b-68bb-4e56-9f48-e990a5c2db65"
+        },
+        {
+            "type": 0,
+            "id": "settings_interface_weapon_accuracy_display",
+            "displayText": "Settings Interface Weapon Accuracy Display",
+            "guid": "09235720-3b66-465b-bca4-ff9a4322efdf"
+        },
+        {
+            "type": 0,
+            "id": "settings_interface_weapon_accuracy_display_accurate",
+            "displayText": "Settings Interface Weapon Accuracy Display Accurate",
+            "guid": "c7713757-6f2f-4e2a-ab23-e53463dd2ee4"
+        },
+        {
+            "type": 0,
+            "id": "settings_interface_weapon_accuracy_display_dispersion",
+            "displayText": "Settings Interface Weapon Accuracy Display Dispersion",
+            "guid": "5bb60882-7abe-4610-9990-6efd73462452"
+        },
+        {
+            "type": 0,
+            "id": "settings_interface_weapon_accuracy_display_tooltip",
+            "displayText": "Settings Interface Weapon Accuracy Display Tooltip",
+            "guid": "ad734e73-a0c1-4244-878e-7676d3c170aa"
+        },
+        {
+            "type": 0,
+            "id": "079_notif_door_lock_unlock",
+            "displayText": "079 Notif Door Lock Unlock",
+            "guid": "511709c3-702a-4f2c-93a9-976c0baf0539"
         },
         {
             "type": 2,

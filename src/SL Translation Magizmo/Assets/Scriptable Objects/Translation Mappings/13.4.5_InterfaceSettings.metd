@@ -1,0 +1,344 @@
+{
+    "fileName": "InterfaceSettings.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 126,
+    "lines": [
+        {
+            "lineId": "settings_interface_intro_animation",
+            "guid": "3e575107-a184-45de-81bc-e536b5428bc4",
+            "fields": [
+                {
+                    "id": "settings_interface_ip_display",
+                    "autoDisplayName": false,
+                    "displayName": "IP Display Mode",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "5f95387a-958b-409e-ab8c-2e80a9b10ec7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0bd3a8f7-fdb0-47c9-b018-ad9d72f40242",
+            "fields": [
+                {
+                    "id": "settings_interface_language_interface",
+                    "autoDisplayName": false,
+                    "displayName": "Interface Language",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "3f7beb47-833d-4f21-a475-10cfb0164828"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9885ed7a-e885-49f4-8a8d-153f22cc3ffc",
+            "fields": [
+                {
+                    "id": "settings_interface_language_interface_warning",
+                    "autoDisplayName": false,
+                    "displayName": "Interface Language Warning",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "0d2ab203-11ac-40cf-909e-8ef3b4e80617"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "166e35e5-f16a-460f-98b6-a8ebdbb92856",
+            "fields": [
+                {
+                    "id": "settings_interface_language_interface_loading",
+                    "autoDisplayName": false,
+                    "displayName": "Interface Language Loading",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "0bfeac65-4e10-490f-838b-20d984cee5a7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0a2c8fd5-c342-428f-8111-23dad8f954a8",
+            "fields": [
+                {
+                    "id": "settings_interface_subtitles",
+                    "autoDisplayName": false,
+                    "displayName": "Subtitles",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "5a115e3c-68b4-418d-abee-f13db4fb1090"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "bb7f3ce5-b357-499a-b049-9e8f6f97fde7",
+            "fields": [
+                {
+                    "id": "settings_interface_healthbar_mode",
+                    "autoDisplayName": false,
+                    "displayName": "Healthbar Mode",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "bdfc870a-cd5c-47af-ad5a-667638e0148a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "07a844e5-3fff-46e7-87ed-75dca939bdd9",
+            "fields": [
+                {
+                    "id": "settings_interface_exact",
+                    "autoDisplayName": false,
+                    "displayName": "Exact",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "d5148189-6e2d-42f8-a339-802ee1fbe2b8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "eeac5fd4-4f88-4ce6-be57-6059ad20958f",
+            "fields": [
+                {
+                    "id": "settings_interface_percentage",
+                    "autoDisplayName": false,
+                    "displayName": "Percentage",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "31a6b961-49be-4c28-af7c-cb0bb5ac6f80"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "fffb36a9-11a4-44f6-a49d-97a2a6aa8ffd",
+            "fields": [
+                {
+                    "id": "settings_interface_intro_animation",
+                    "autoDisplayName": false,
+                    "displayName": "Intro Animation",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "74f1803c-b5d2-4afe-9492-edbd4b518db9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "858f10c1-3737-4eba-88c5-0ba732438b33",
+            "fields": [
+                {
+                    "id": "settings_interface_regular",
+                    "autoDisplayName": false,
+                    "displayName": "Regular",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "357f5327-2267-42a8-b6df-3388630a3732"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d4f12bb5-44ac-4cc6-94b7-64d11d5f7bb0",
+            "fields": [
+                {
+                    "id": "settings_interface_fast",
+                    "autoDisplayName": false,
+                    "displayName": "Fast",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "3d1b3205-45bd-4d84-9b4f-7b10dccfbd6a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "38fefbda-4cbd-4f57-b7a1-9b0efb88147a",
+            "fields": [
+                {
+                    "id": "settings_interface_intro_animation_tooltip",
+                    "autoDisplayName": false,
+                    "displayName": "Intro Animation Tooltip",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "5db5e9e5-bf49-4b9d-b2c1-41335c278f3b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "757d4e0f-f05c-465b-ba1e-393b21499a3b",
+            "fields": [
+                {
+                    "id": "settings_interface_hidden",
+                    "autoDisplayName": false,
+                    "displayName": "Hidden",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "5b403195-068a-486a-99b7-2b60c58d4aa3"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "fc570741-a0dd-4c85-ba35-be05472bc33b",
+            "fields": [
+                {
+                    "id": "settings_interface_ip_display_tooltip",
+                    "autoDisplayName": false,
+                    "displayName": "IP Display Mode Tooltip",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "3409d8ce-ac87-478f-a0d7-b7127ca17ccb"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "98703e2c-77d6-41cc-87c7-ba9cf29a568e",
+            "fields": [
+                {
+                    "id": "settings_interface_taskbar_spawn",
+                    "autoDisplayName": false,
+                    "displayName": "Flash Taskbar On Respawn",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "1b6bf8ad-c163-4890-841c-a7c257fb5849"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "6a218103-d05b-44f0-b9e7-42d09ecd7828",
+            "fields": [
+                {
+                    "id": "settings_interface_photosensitivity",
+                    "autoDisplayName": false,
+                    "displayName": "Show Photosensitivity Warning",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "3c728446-66c0-4a68-b147-753f8800cf7d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "db35cede-5ebb-4ce6-9fe6-5eccb3d6917a",
+            "fields": [
+                {
+                    "id": "settings_interface_units",
+                    "autoDisplayName": false,
+                    "displayName": "Preferred System of Units",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "80c357aa-33da-43ca-a469-011c15013875"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "47a62880-f69d-43de-b642-0221417b37b1",
+            "fields": [
+                {
+                    "id": "settings_interface_units_metric",
+                    "autoDisplayName": false,
+                    "displayName": "Metric",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "2fbe7845-4373-44f6-9aa5-ac68d5c858d7"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "60002ac4-8a3c-4588-8156-6d63dce10f59",
+            "fields": [
+                {
+                    "id": "settings_interface_units_imperial",
+                    "autoDisplayName": false,
+                    "displayName": "Imperial",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "c95e82a3-f688-42b7-b08a-4bb822239964"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "62de4563-adda-4577-bcc6-ddfede31e799",
+            "fields": [
+                {
+                    "id": "settings_interface_tooltip",
+                    "autoDisplayName": false,
+                    "displayName": "Preferred System of Units Tooltip",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "f2184359-e605-478e-854c-0e21027aa4e6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "149bc0e8-a855-4a04-8112-74777d51b89a",
+            "fields": [
+                {
+                    "id": "settings_interface_weapon_accuracy_display",
+                    "autoDisplayName": false,
+                    "displayName": "Gun Accuracy Display Mode",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "4631940a-293f-4c87-808f-b7f79634525c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2dcd5171-3b26-46d7-b4dd-bb13e5658e2c",
+            "fields": [
+                {
+                    "id": "settings_interface_weapon_accuracy_display_accurate",
+                    "autoDisplayName": false,
+                    "displayName": "Accurate Range",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "a0e29312-3f43-4825-89ac-e6b75bc5273f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d7b7b39b-0503-46e4-b8b0-31906b683d17",
+            "fields": [
+                {
+                    "id": "settings_interface_weapon_accuracy_display_dispersion",
+                    "autoDisplayName": false,
+                    "displayName": "Dispersion",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "e156f4c4-c22d-4738-9eb1-8dea9be15cf8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b3e396ca-4934-4d08-ac2e-24f01f73461a",
+            "fields": [
+                {
+                    "id": "settings_interface_weapon_accuracy_display_tooltip",
+                    "autoDisplayName": false,
+                    "displayName": "Gun Accuracy Display Mode Tooltip",
+                    "addToList": true,
+                    "dynamicValues": [],
+                    "guid": "7ed666bf-692c-4083-8322-d926b7266207"
+                }
+            ]
+        }
+    ]
+}
