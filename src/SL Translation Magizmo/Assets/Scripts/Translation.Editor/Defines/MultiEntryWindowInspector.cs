@@ -138,6 +138,7 @@ namespace Project.Editor.Translation.Defines
             EditorGUILayout.Space();
 
             item.field.addToList = EditorGUILayout.Toggle("Add To List", item.field.addToList);
+            item.field.notYetAddedToSL = EditorGUILayout.Toggle("Not Yet Added To SL", item.field.notYetAddedToSL);
 
             l_dynamicValues.DoLayoutList();
         }

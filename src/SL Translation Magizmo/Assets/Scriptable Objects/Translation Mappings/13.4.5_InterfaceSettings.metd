@@ -13,6 +13,7 @@
                     "autoDisplayName": false,
                     "displayName": "IP Display Mode",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "5f95387a-958b-409e-ab8c-2e80a9b10ec7"
                 }
@@ -27,6 +28,7 @@
                     "autoDisplayName": false,
                     "displayName": "Interface Language",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "3f7beb47-833d-4f21-a475-10cfb0164828"
                 }
@@ -41,6 +43,7 @@
                     "autoDisplayName": false,
                     "displayName": "Interface Language Warning",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "0d2ab203-11ac-40cf-909e-8ef3b4e80617"
                 }
@@ -55,6 +58,7 @@
                     "autoDisplayName": false,
                     "displayName": "Interface Language Loading",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "0bfeac65-4e10-490f-838b-20d984cee5a7"
                 }
@@ -69,6 +73,7 @@
                     "autoDisplayName": false,
                     "displayName": "Subtitles",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "5a115e3c-68b4-418d-abee-f13db4fb1090"
                 }
@@ -83,6 +88,7 @@
                     "autoDisplayName": false,
                     "displayName": "Healthbar Mode",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "bdfc870a-cd5c-47af-ad5a-667638e0148a"
                 }
@@ -97,6 +103,7 @@
                     "autoDisplayName": false,
                     "displayName": "Exact",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "d5148189-6e2d-42f8-a339-802ee1fbe2b8"
                 }
@@ -111,6 +118,7 @@
                     "autoDisplayName": false,
                     "displayName": "Percentage",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "31a6b961-49be-4c28-af7c-cb0bb5ac6f80"
                 }
@@ -125,6 +133,7 @@
                     "autoDisplayName": false,
                     "displayName": "Intro Animation",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "74f1803c-b5d2-4afe-9492-edbd4b518db9"
                 }
@@ -139,6 +148,7 @@
                     "autoDisplayName": false,
                     "displayName": "Regular",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "357f5327-2267-42a8-b6df-3388630a3732"
                 }
@@ -153,6 +163,7 @@
                     "autoDisplayName": false,
                     "displayName": "Fast",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "3d1b3205-45bd-4d84-9b4f-7b10dccfbd6a"
                 }
@@ -167,6 +178,7 @@
                     "autoDisplayName": false,
                     "displayName": "Intro Animation Tooltip",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "5db5e9e5-bf49-4b9d-b2c1-41335c278f3b"
                 }
@@ -181,6 +193,7 @@
                     "autoDisplayName": false,
                     "displayName": "Hidden",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "5b403195-068a-486a-99b7-2b60c58d4aa3"
                 }
@@ -195,6 +208,7 @@
                     "autoDisplayName": false,
                     "displayName": "IP Display Mode Tooltip",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "3409d8ce-ac87-478f-a0d7-b7127ca17ccb"
                 }
@@ -209,6 +223,7 @@
                     "autoDisplayName": false,
                     "displayName": "Flash Taskbar On Respawn",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "1b6bf8ad-c163-4890-841c-a7c257fb5849"
                 }
@@ -223,6 +238,7 @@
                     "autoDisplayName": false,
                     "displayName": "Show Photosensitivity Warning",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "3c728446-66c0-4a68-b147-753f8800cf7d"
                 }
@@ -237,6 +253,7 @@
                     "autoDisplayName": false,
                     "displayName": "Preferred System of Units",
                     "addToList": true,
+                    "notYetAddedToSL": true,
                     "dynamicValues": [],
                     "guid": "80c357aa-33da-43ca-a469-011c15013875"
                 }
@@ -251,6 +268,7 @@
                     "autoDisplayName": false,
                     "displayName": "Metric",
                     "addToList": true,
+                    "notYetAddedToSL": true,
                     "dynamicValues": [],
                     "guid": "2fbe7845-4373-44f6-9aa5-ac68d5c858d7"
                 }
@@ -265,6 +283,7 @@
                     "autoDisplayName": false,
                     "displayName": "Imperial",
                     "addToList": true,
+                    "notYetAddedToSL": true,
                     "dynamicValues": [],
                     "guid": "c95e82a3-f688-42b7-b08a-4bb822239964"
                 }
@@ -279,6 +298,7 @@
                     "autoDisplayName": false,
                     "displayName": "Preferred System of Units Tooltip",
                     "addToList": true,
+                    "notYetAddedToSL": true,
                     "dynamicValues": [],
                     "guid": "f2184359-e605-478e-854c-0e21027aa4e6"
                 }
@@ -293,6 +313,7 @@
                     "autoDisplayName": false,
                     "displayName": "Gun Accuracy Display Mode",
                     "addToList": true,
+                    "notYetAddedToSL": true,
                     "dynamicValues": [],
                     "guid": "4631940a-293f-4c87-808f-b7f79634525c"
                 }
@@ -307,6 +328,7 @@
                     "autoDisplayName": false,
                     "displayName": "Accurate Range",
                     "addToList": true,
+                    "notYetAddedToSL": true,
                     "dynamicValues": [],
                     "guid": "a0e29312-3f43-4825-89ac-e6b75bc5273f"
                 }
@@ -321,6 +343,7 @@
                     "autoDisplayName": false,
                     "displayName": "Dispersion",
                     "addToList": true,
+                    "notYetAddedToSL": true,
                     "dynamicValues": [],
                     "guid": "e156f4c4-c22d-4738-9eb1-8dea9be15cf8"
                 }
@@ -335,6 +358,7 @@
                     "autoDisplayName": false,
                     "displayName": "Gun Accuracy Display Mode Tooltip",
                     "addToList": true,
+                    "notYetAddedToSL": true,
                     "dynamicValues": [],
                     "guid": "7ed666bf-692c-4083-8322-d926b7266207"
                 }

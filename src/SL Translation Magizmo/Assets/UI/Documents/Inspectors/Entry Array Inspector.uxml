@@ -2,5 +2,6 @@
     <Style src="project://database/Assets/UI/Styles/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
     <ui:VisualElement>
         <ui:ListView focusable="true" header-title="Items" reorderable="true" name="content" show-add-remove-footer="true" show-foldout-header="true" fixed-item-height="50" show-border="true" reorder-mode="Animated" show-alternating-row-backgrounds="None" show-bound-collection-size="false" virtualization-method="FixedHeight" />
+        <ui:Label tabindex="-1" text="WARNING\nThis entry has not been implemented in SCPSL yet. It currently only exists in the translation files and will not be used at any point by the game." parse-escape-sequences="true" display-tooltip-when-elided="true" name="unused-warning" class="description warning" />
     </ui:VisualElement>
 </ui:UXML>

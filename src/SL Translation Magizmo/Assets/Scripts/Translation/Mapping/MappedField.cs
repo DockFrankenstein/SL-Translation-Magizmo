@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace Project.Translation.Mapping
 {
@@ -38,6 +37,9 @@ namespace Project.Translation.Mapping
 
         /// <summary>If disabled, application will ignore this definition and will only use it for exporting to SL's format.</summary>
         public bool addToList = true;
+
+        /// <summary>If this field exists in the translations, but isn't used by SL yet.</summary>
+        public bool notYetAddedToSL = false;
 
         /// <summary>List of avaliable tags for this field representing dynamic values (e.g. [name] or {0})</summary>
         public List<DynamicValue> dynamicValues = new List<DynamicValue>();

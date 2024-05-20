@@ -13,8 +13,10 @@ namespace Project.GUI.Inspector
 
         TextField _contentField;
         TextField _contentComparisonField;
+        Label _unusedBySLField;
 
         SaveFile.EntryData entry;
+        MappedField entryField;
 
         protected override void Awake()
         {
@@ -22,6 +24,7 @@ namespace Project.GUI.Inspector
 
             _contentField = Container.Q<TextField>("content");
             _contentComparisonField = Container.Q<TextField>("content-comparison");
+            _unusedBySLField = Container.Q<Label>("unused-warning");
 
             _contentField.RegisterValueChangedCallback(args =>
             {
@@ -37,7 +40,12 @@ namespace Project.GUI.Inspector
             base.Initialize();
 
             entry = inspector.SelectedObject as SaveFile.EntryData;
+            entryField = manager.CurrentVersion.MappedFields.TryGetValue(entry.entryId, out var f) ?
+                f :
+                null;
+
             _contentField.SetValueWithoutNotify(entry.content);
+            _unusedBySLField.ChangeDispaly(entryField?.notYetAddedToSL ?? false);
 
             UpdateContentComparison();
 

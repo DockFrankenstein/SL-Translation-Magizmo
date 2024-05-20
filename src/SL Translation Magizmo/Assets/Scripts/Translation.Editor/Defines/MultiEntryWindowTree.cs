@@ -1,15 +1,11 @@
 using qASIC.EditorTools;
-using qASIC.Input.Prompts.Internal;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using qASIC;
-using System.Linq;
 using Project.Translation.Mapping;
 using static Project.Translation.Mapping.MultiEntryTranslationMapping;
-using JetBrains.Annotations;
-using static Project.Editor.Translation.Defines.MultiEntryWindowTree;
 
 namespace Project.Editor.Translation.Defines
 {

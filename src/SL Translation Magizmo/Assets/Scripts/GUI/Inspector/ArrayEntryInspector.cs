@@ -1,8 +1,4 @@
-using System.Collections.Generic;
-using UnityEngine;
-using System.Linq;
 using Project.Translation.Mapping;
-using Project.Utility.UI;
 using UnityEngine.UIElements;
 using Project.Translation.Data;
 using Project.UI;
@@ -19,11 +15,15 @@ namespace Project.GUI.Inspector
         AppReorderableList<string> _contentList;
 
         SaveFile.EntryData entry;
+        MappedField entryField;
+        Label _unusedBySLField;
 
         protected override void Awake()
         {
             base.Awake();
             _contentList = new AppReorderableList<string>(Container.Q<ListView>("content"));
+            _unusedBySLField = Container.Q<Label>("unused-warning");
+
             _contentList.MakeItem += () => new TextField();
 
             _contentList.OnChanged += () =>
@@ -40,6 +40,11 @@ namespace Project.GUI.Inspector
         {
             base.Initialize();
             entry = inspector.SelectedObject as SaveFile.EntryData;
+            entryField = manager.CurrentVersion.MappedFields.TryGetValue(entry.entryId, out var f) ?
+                f :
+                null;
+
+            _unusedBySLField.ChangeDispaly(entryField?.notYetAddedToSL ?? false);
             _contentList.Source.AddRange(entry.content.EntryContentToArray());
             _contentList.List.RefreshItems();
         }

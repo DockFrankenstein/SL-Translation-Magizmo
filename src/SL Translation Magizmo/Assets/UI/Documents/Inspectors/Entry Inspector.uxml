@@ -4,5 +4,6 @@
     <ui:VisualElement name="VisualElement" style="height: 100%;">
         <ui:TextField picking-mode="Ignore" label="Content" multiline="true" name="content" is-delayed="false" class="text-area" />
         <ui:TextField picking-mode="Ignore" label="Original" value="Lorem Ipsum dolor sit amet decontamination sequence will begin in t-minus 90 seconds" multiline="true" readonly="true" name="content-comparison" class="content-compare-content" />
+        <ui:Label tabindex="-1" text="WARNING\nThis entry has not been implemented in SCPSL yet. It currently only exists in the translation files and will not be used at any point by the game." parse-escape-sequences="true" display-tooltip-when-elided="true" name="unused-warning" class="description warning" />
     </ui:VisualElement>
 </ui:UXML>

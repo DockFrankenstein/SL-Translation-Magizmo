@@ -1281,3 +1281,14 @@ Label.error {
     margin-left: 4px;
     flex-basis: 1px;
 }
+
+.description {
+    font-size: 20px;
+    color: rgb(157, 157, 157);
+    width: auto;
+    white-space: normal;
+}
+
+.description.warning {
+    color: rgb(209, 184, 0);
+}
