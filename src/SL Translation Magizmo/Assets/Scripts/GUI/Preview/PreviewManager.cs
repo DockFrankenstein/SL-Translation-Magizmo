@@ -8,6 +8,9 @@ using Project.Translation.Mapping;
 using System;
 
 using UObject = UnityEngine.Object;
+using qASIC.Input;
+using System.Collections;
+using qASIC;
 
 namespace Project.GUI.Preview
 {
@@ -20,7 +23,13 @@ namespace Project.GUI.Preview
         [Label("Scenes")]
         [SerializeField] Transform sceneHolder;
         [EditorButton(nameof(AutoDetectScenes), "Populate")]
-        [SerializeField] PreviewScene[] scenes = new PreviewScene[0];
+        [SerializeField] List<PreviewScene> scenes = new List<PreviewScene>();
+
+        [Label("Input")]
+        [SerializeField] float repeatWaitTime = 1f;
+        [SerializeField] float repeatTime = 0.1f;
+        [SerializeField] InputMapItemReference i_previous;
+        [SerializeField] InputMapItemReference i_next;
 
         public Dictionary<string, PreviewScene> ScenesForIds { get; private set; } = new Dictionary<string, PreviewScene>();
         public List<PreviewScene> VersionScenes { get; private set; } = new List<PreviewScene>();
@@ -100,6 +109,63 @@ namespace Project.GUI.Preview
             manager.OnFileChanged += Manager_OnFileChanged;
             manager.OnCurrentVersionChanged += Manager_OnCurrentVersionChanged;
             hierarchy.OnSelect += Hierarchy_OnSelect;
+
+            StartCoroutine(HandleInput());
+        }
+
+        float _inputPressTime;
+        InputEventType _previousInput;
+        InputEventType _nextInput;
+
+        private void Update()
+        {
+            _previousInput = i_previous.GetInputEvent();
+            _nextInput = i_next.GetInputEvent();
+
+            var inputs = new InputEventType[]
+            {
+                _previousInput,
+                _nextInput,
+            };
+
+            if (inputs.Where(x => x.HasFlag(InputEventType.Pressed) && !x.HasFlag(InputEventType.Down)).Count() != 1)
+            {
+                _inputPressTime = 0f;
+                return;
+            }
+
+            _inputPressTime += Time.deltaTime;
+        }
+
+        IEnumerator HandleInput()
+        {
+            while (true)
+            {
+                RunInput();
+                yield return null;
+
+                if (_inputPressTime == 0f)
+                    continue;
+
+                while (_inputPressTime != 0f)
+                {
+                    yield return new WaitForSecondsRealtime(repeatTime);
+
+                    if (_inputPressTime < repeatWaitTime)
+                        continue;
+
+                    RunInput();
+                }
+            }
+
+            void RunInput()
+            {
+                if (_previousInput.HasFlag(InputEventType.Pressed))
+                    SelectBy(-1);
+
+                if (_nextInput.HasFlag(InputEventType.Pressed))
+                    SelectBy(1);
+            }
         }
 
         private void Manager_OnCurrentVersionChanged(TranslationVersion obj)
@@ -135,6 +201,26 @@ namespace Project.GUI.Preview
         {
             if (CurrentScene == null) return;
             CurrentScene.Reload();
+        }
+
+        public void SelectBy(int amount)
+        {
+            if (amount == 0)
+                return;
+
+            if (VersionScenes.Count == 0)
+                return;
+
+            var index = VersionScenes.IndexOf(CurrentScene);
+            index += amount;
+
+            while (index < 0)
+                index += VersionScenes.Count;
+
+            while (index >= VersionScenes.Count)
+                index -= VersionScenes.Count;
+
+            SelectScene(VersionScenes[index]);
         }
 
         public void SelectScene(string path)
@@ -175,7 +261,7 @@ namespace Project.GUI.Preview
                 .Except(detected)
                 .Where(x => x != null)
                 .Concat(detected)
-                .ToArray();
+                .ToList();
 
 #if UNITY_EDITOR
             UnityEditor.EditorUtility.SetDirty(this);

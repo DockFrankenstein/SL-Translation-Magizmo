@@ -264,7 +264,7 @@ namespace qASIC.Input
             Players[0].GetInputValueFromGUID<T>(guid);
 
         public static InputEventType GetInputEventFromGUID(string guid) =>
-            Players[0].GetInputEvent(guid);
+            Players[0].GetInputEventFromGUID(guid);
         #endregion
     }
 }

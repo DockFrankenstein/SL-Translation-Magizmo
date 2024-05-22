@@ -23,6 +23,10 @@ MonoBehaviour:
     - rid: 5174576954111426562
     - rid: 5174576954111426563
     - rid: 5174576954111426564
+    - rid: 8343636803427500032
+    - rid: 8343636803427500033
+    - rid: 8343636803427500035
+    - rid: 8343636803427500034
   references:
     version: 2
     RefIds:
@@ -75,3 +79,35 @@ MonoBehaviour:
         - key_keyboard/LeftControl
         - key_keyboard/LeftShift
         - key_keyboard/S
+    - rid: 8343636803427500032
+      type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
+      data:
+        itemName: Hierarchy Previous
+        guid: bdc4df82-2f6a-4c6d-a8de-8fbefbc9457b
+        keys:
+        - key_keyboard/RightControl
+        - key_keyboard/UpArrow
+    - rid: 8343636803427500033
+      type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
+      data:
+        itemName: Hierarchy Next
+        guid: e6550411-7594-4b6d-9add-a0fe889b5ebf
+        keys:
+        - key_keyboard/RightControl
+        - key_keyboard/DownArrow
+    - rid: 8343636803427500034
+      type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
+      data:
+        itemName: Preview Next
+        guid: ab7db284-9b66-45b2-ac41-e474b52f8b49
+        keys:
+        - key_keyboard/RightControl
+        - key_keyboard/RightArrow
+    - rid: 8343636803427500035
+      type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
+      data:
+        itemName: Preview Previous
+        guid: c4b0df9b-9f6d-4bd7-86fe-60ec18530c82
+        keys:
+        - key_keyboard/RightControl
+        - key_keyboard/LeftArrow

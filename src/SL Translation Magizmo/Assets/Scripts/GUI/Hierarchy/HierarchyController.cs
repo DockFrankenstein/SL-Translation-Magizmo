@@ -1,12 +1,14 @@
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
+using System.Collections;
 using System.Collections.Generic;
 using Fab.UITKDropdown;
 using System;
 using UnityEngine.Serialization;
 using qASIC.SettingsSystem;
 using qASIC;
+using qASIC.Input;
 
 namespace Project.GUI.Hierarchy
 {
@@ -21,6 +23,12 @@ namespace Project.GUI.Hierarchy
 
         [Header("Search")]
         [SerializeField][Min(0)] int startSearchItemCount = 600;
+
+        [Header("Shortcuts")]
+        [SerializeField] float repeatWaitTime = 1f;
+        [SerializeField] float repeatTime = 0.1f;
+        [SerializeField] InputMapItemReference i_previous;
+        [SerializeField] InputMapItemReference i_next;
 
         ScrollView scroll;
         TextField search;
@@ -75,6 +83,8 @@ namespace Project.GUI.Hierarchy
                 provider.Hierarchy = this;
 
             EnsureSearchItemCount(startSearchItemCount);
+
+            StartCoroutine(HandleInput());
 
             Refresh();
 
@@ -141,6 +151,10 @@ namespace Project.GUI.Hierarchy
             }
         }
 
+        float _inputPressTime;
+        InputEventType _previousInput;
+        InputEventType _nextInput;
+
         private void Update()
         {
             if (_onNextFrame != null)
@@ -149,6 +163,78 @@ namespace Project.GUI.Hierarchy
                 _onNextFrame = null;
                 a.Invoke();
             }
+
+            _previousInput = i_previous.GetInputEvent();
+            _nextInput = i_next.GetInputEvent();
+
+            var inputs = new InputEventType[]
+            {
+                _previousInput,
+                _nextInput,
+            };
+
+            if (inputs.Where(x => x.HasFlag(InputEventType.Pressed) && !x.HasFlag(InputEventType.Down)).Count() != 1)
+            {
+                _inputPressTime = 0f;
+                return;
+            }
+
+            _inputPressTime += Time.deltaTime;
+        }
+
+        IEnumerator HandleInput()
+        {
+            while (true)
+            {
+                RunInput();
+                yield return null;
+
+                if (_inputPressTime == 0f)
+                    continue;
+
+                while (_inputPressTime != 0f)
+                {
+                    yield return new WaitForSecondsRealtime(repeatTime);
+
+                    if (_inputPressTime < repeatWaitTime)
+                        continue;
+
+                    RunInput();
+                }
+            }
+
+            void RunInput()
+            {
+                if (_previousInput.HasFlag(InputEventType.Pressed))
+                    SelectBy(-1);
+
+                if (_nextInput.HasFlag(InputEventType.Pressed))
+                    SelectBy(1);
+            }
+        }
+
+        public void SelectBy(int amount)
+        {
+            if (amount == 0)
+                return;
+
+            var items = Items
+                .Where(x => x.type == HierarchyItem.ItemType.Normal)
+                .ToList();
+
+            if (items.Count == 0)
+                return;
+
+            var index = items.IndexOf(SelectedItem);
+            index += amount;
+
+            while (index < 0)
+                index += items.Count;
+
+            while (index >= items.Count)
+                index -= items.Count;
+
+            Select(items[index]);
         }
 
         void RegisterUiItem(HierarchyItem item, VisualElement element)

@@ -48,6 +48,7 @@ namespace Project.DiscordIntegration
 
         private void Awake()
         {
+            SetTimestampsToNow();
             UpdateIntegrationStatus();
         }
 
@@ -107,6 +108,10 @@ namespace Project.DiscordIntegration
             Debug.Log("Discord integration stopped");
         }
 
+        HierarchyItem currentItem;
+
+        ActivityTimestamps timestamps;
+
         void UpdateActivity()
         {
             if (ActivityManager == null)
@@ -124,6 +129,13 @@ namespace Project.DiscordIntegration
                     "None" :
                     hierarchy.SelectedId;
 
+            if (currentItem != hierarchy.SelectedItem)
+            {
+                SetTimestampsToNow();
+            }
+
+            currentItem = hierarchy.SelectedItem;
+
             var activity = new Activity()
             {
                 Name = "SL Translation Magizmo",
@@ -132,7 +144,7 @@ namespace Project.DiscordIntegration
                 State = string.IsNullOrWhiteSpace(fileName) ?
                     "Editing a file" :
                     $"Editing {fileName}",
-                
+
                 Details = $"Id: {selectedId}",
 
                 Assets = new ActivityAssets()
@@ -140,9 +152,25 @@ namespace Project.DiscordIntegration
                     SmallImage = smallImage,
                     LargeImage = largeImage,
                 },
+
+                Timestamps = timestamps,
             };
 
             ActivityManager.UpdateActivity(activity, _ => { });
+        }
+
+        void SetTimestampsToNow()
+        {
+            timestamps = new ActivityTimestamps()
+            {
+                Start = ToUnixMilliseconds(DateTime.UtcNow),
+            };
+        }
+
+        static long ToUnixMilliseconds(DateTime date)
+        {
+            var epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            return Convert.ToInt64((date - epoch).TotalMilliseconds);
         }
 
         private void Update()
