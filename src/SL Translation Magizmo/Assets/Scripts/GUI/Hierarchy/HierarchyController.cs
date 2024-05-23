@@ -117,6 +117,7 @@ namespace Project.GUI.Hierarchy
 
             //When searching
             var items = Items
+                .Where(x => x.type == HierarchyItem.ItemType.Normal)
                 .AsEnumerable();
 
             var providersDictionary = searchProviders
