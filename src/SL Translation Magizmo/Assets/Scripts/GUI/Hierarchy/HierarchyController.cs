@@ -42,6 +42,7 @@ namespace Project.GUI.Hierarchy
         public event Action<HierarchyItem> OnSelect;
 
         public List<HierarchyItem> Items { get; private set; } = new List<HierarchyItem>();
+        public List<HierarchyItem> SearchItems { get; private set; } = new List<HierarchyItem>();
 
         Button _selectedButton;
 
@@ -165,6 +166,7 @@ namespace Project.GUI.Hierarchy
                 }
             }
 
+            SearchItems = items.ToList();
             Select(SelectedItem);
         }
 
@@ -286,7 +288,7 @@ namespace Project.GUI.Hierarchy
             if (amount == 0)
                 return;
 
-            var items = Items
+            var items = (IsSearching ? SearchItems : Items)
                 .Where(x => x.type == HierarchyItem.ItemType.Normal)
                 .ToList();
 
