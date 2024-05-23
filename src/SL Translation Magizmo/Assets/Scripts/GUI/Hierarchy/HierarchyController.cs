@@ -9,6 +9,7 @@ using UnityEngine.Serialization;
 using qASIC.SettingsSystem;
 using qASIC;
 using qASIC.Input;
+using Project.GUI.Top;
 
 namespace Project.GUI.Hierarchy
 {
@@ -126,7 +127,7 @@ namespace Project.GUI.Hierarchy
                 if (exists)
                 {
                     var btn = buttons[i] as Button;
-                    btn.text = items[i].displayText;
+                    btn.text = GetItemDisplayName(items[i]);
                     _searchButtons.Add(items[i], btn);
                 }
             }
@@ -340,7 +341,7 @@ namespace Project.GUI.Hierarchy
                         {
                             var button = new Button()
                             {
-                                text = item.displayText,
+                                text = GetItemDisplayName(item),
                                 tooltip = item.displayText,
                             };
 
@@ -354,7 +355,7 @@ namespace Project.GUI.Hierarchy
 
                         var oldButton = content.ElementAt(itemIndex) as Button;
 
-                        oldButton.text = item.displayText;
+                        oldButton.text = GetItemDisplayName(item);
                         oldButton.tooltip = item.displayText;
                         itemIndex++;
                         RegisterUiItem(item, oldButton);
@@ -512,5 +513,8 @@ namespace Project.GUI.Hierarchy
 
             OnSelect?.Invoke(item);
         }
+
+        string GetItemDisplayName(HierarchyItem item) =>
+            TopMenuView.Sett_ShowIds ? item.id : item.displayText;
     }
 }

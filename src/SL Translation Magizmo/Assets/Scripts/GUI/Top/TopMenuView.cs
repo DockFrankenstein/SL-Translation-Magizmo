@@ -1,5 +1,7 @@
 ﻿using Project.GUI.Hierarchy;
+using Project.GUI.Inspector;
 using Project.GUI.Preview;
+using qASIC.SettingsSystem;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -9,6 +11,15 @@ namespace Project.GUI.Top
     {
         [SerializeField] HierarchyController hierarchy;
         [SerializeField] PreviewManager preview;
+        [SerializeField] InspectorDisplay inspector;
+
+        [OptionsSetting("view_show_ids", false)]
+        private static void SettM_CollapsedByDefault(bool value)
+        {
+            Sett_ShowIds = value;
+        }
+
+        public static bool Sett_ShowIds { get; private set; }
 
         protected override string ButtonName => "view";
 
@@ -45,6 +56,16 @@ namespace Project.GUI.Top
             menu.AppendAction("Next Entry", _ => hierarchy.SelectBy(1));
             menu.AppendAction("Previous Scene", _ => preview.SelectBy(-1));
             menu.AppendAction("Next Scene", _ => preview.SelectBy(1));
+
+            menu.AppendSeparator();
+
+            menu.AppendAction("Show Ids Instead Of Names", _ =>
+            {
+                OptionsController.ChangeOption("view_show_ids", !Sett_ShowIds);
+                hierarchy.Refresh();
+                inspector.ReloadName();
+
+            }, Sett_ShowIds ? DropdownMenuAction.Status.Checked : DropdownMenuAction.Status.Normal);
         }
     }
 }

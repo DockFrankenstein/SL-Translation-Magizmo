@@ -26,7 +26,7 @@ namespace Project.GUI.Inspector
             set
             {
                 _selectedObject = value;
-                SelectedObjectName = GetNameForObject(_selectedObject);
+                ReloadName();
                 ReloadInspector();
             }
         }
@@ -102,6 +102,11 @@ namespace Project.GUI.Inspector
                 CurrentPanel.Initialize();
                 break;
             }
+        }
+
+        public void ReloadName()
+        {
+            SelectedObjectName = GetNameForObject(_selectedObject);
         }
 
         private void Hierarchy_OnSelect(HierarchyItem item)
