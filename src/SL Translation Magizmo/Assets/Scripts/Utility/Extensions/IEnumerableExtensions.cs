@@ -88,9 +88,6 @@ namespace Project
                     string s = x.Value;
                     var newS = Regex.Replace(s, searchPattern, string.Empty);
 
-                    if (newS.Length != s.Length)
-                        UnityEngine.Debug.Log($"{s} : {1f - (float)newS.Length / s.Length}");
-
                     return 1f - (float)newS.Length / s.Length;
                 })
                 .Where(x => x.Key > 0f)
