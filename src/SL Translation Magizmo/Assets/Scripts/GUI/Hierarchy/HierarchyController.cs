@@ -164,9 +164,7 @@ namespace Project.GUI.Hierarchy
                 }
             }
 
-            ChangeSelectedButton(SelectedItem != null && _searchButtons.Forward.TryGetValue(SelectedItem, out Button selectedBtn) ?
-                selectedBtn :
-                null);
+            Select(SelectedItem);
         }
 
         List<KeyValuePair<string, string>> CreateSearchPairs(string searchString)
@@ -468,12 +466,7 @@ namespace Project.GUI.Hierarchy
             UpdateSearch();
 
             if (IsSearching)
-            {
-                Select(_selectedButton != null && _searchButtons.Reverse.ContainsKey(_selectedButton) ?
-                    _searchButtons.Reverse[_selectedButton] :
-                    null);
                 return;
-            }
 
             Select(_selectedButton != null && UiItems.Reverse.ContainsKey(_selectedButton) ?
                 UiItems.Reverse[_selectedButton] :
