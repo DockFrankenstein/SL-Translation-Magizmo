@@ -24,6 +24,7 @@ namespace Project.GUI.Hierarchy
 
         [Header("Search")]
         [SerializeField][Min(0)] int startSearchItemCount = 600;
+        public HierarchySearchProvider[] searchProviders;
 
         [Header("Shortcuts")]
         [SerializeField] float repeatWaitTime = 1f;
@@ -95,8 +96,11 @@ namespace Project.GUI.Hierarchy
 
         void UpdateSearch()
         {
+            var searchPairs = CreateSearchPairs(search.value);
+
             bool prevIsSearching = IsSearching;
-            IsSearching = !string.IsNullOrWhiteSpace(search.value);
+            IsSearching = searchPairs
+                .Any(x => !string.IsNullOrWhiteSpace(x.Value));
 
             contentNormal.ChangeDispaly(!IsSearching);
             contentSearch.ChangeDispaly(IsSearching);
@@ -113,28 +117,82 @@ namespace Project.GUI.Hierarchy
 
             //When searching
             var items = Items
-                .SortSearchList(x => x.displayText, search.value)
-                .ToArray();
+                .AsEnumerable();
 
-            EnsureSearchItemCount(items.Length);
+            var providersDictionary = searchProviders
+                .SelectMany(x => x.Names.Select(y => new KeyValuePair<string, HierarchySearchProvider>(y, x)))
+                .GroupBy(x => x.Key)
+                .ToDictionary(x => x.Key, x => x.First().Value);
+
+            foreach (var pair in searchPairs)
+            {
+                if (!providersDictionary.TryGetValue(pair.Key, out var provider))
+                    continue;
+
+                items = items
+                    .SortSearchList(provider.GetSearchString, pair.Value);
+            }
+
+            var itemArray = items.ToArray();
+            EnsureSearchItemCount(itemArray.Length);
 
             var buttons = contentSearch.Children().ToArray();
 
             for (int i = 0; i < buttons.Length; i++)
             {
-                var exists = i < items.Length;
+                var exists = i < itemArray.Length;
                 buttons[i].ChangeDispaly(exists);
                 if (exists)
                 {
                     var btn = buttons[i] as Button;
-                    btn.text = GetItemDisplayName(items[i]);
-                    _searchButtons.Add(items[i], btn);
+                    btn.text = GetItemDisplayName(itemArray[i]);
+                    _searchButtons.Add(itemArray[i], btn);
                 }
             }
 
             ChangeSelectedButton(SelectedItem != null && _searchButtons.Forward.TryGetValue(SelectedItem, out Button selectedBtn) ?
                 selectedBtn :
                 null);
+        }
+
+        List<KeyValuePair<string, string>> CreateSearchPairs(string searchString)
+        {
+            IEnumerable<string> searchStringItems = new string[] { searchString };
+
+            string[] names = searchProviders
+                .SelectMany(x => x.Names)
+                .Select(x => $"{x}:")
+                .ToArray();
+
+            foreach (var name in names)
+                searchStringItems = searchStringItems
+                    .SplitWithSplits(name);
+
+            var items = searchStringItems
+                .ToArray();
+
+            var list = new List<KeyValuePair<string, string>>();
+
+            for (int i = 0; i < items.Length; i++)
+            {
+                var val = items[i];
+                if (names.Contains(val))
+                {
+                    list.Add(new KeyValuePair<string, string>(val.Substring(0, val.Length - 1), string.Empty));
+                    continue;
+                }
+
+                if (list.Count == 0)
+                    list.Add(new KeyValuePair<string, string>("name", string.Empty));
+
+                list[list.Count - 1] = new KeyValuePair<string, string>(list[list.Count - 1].Key, val);
+            }
+
+            var rootItem = new TextTreeItem();
+            foreach (var item in list)
+                rootItem.Add($"{item.Key}: {item.Value}");
+
+            return list;
         }
 
         void EnsureSearchItemCount(int itemCount)
@@ -400,6 +458,8 @@ namespace Project.GUI.Hierarchy
             Select(_selectedButton != null && UiItems.Reverse.ContainsKey(_selectedButton) ?
                 UiItems.Reverse[_selectedButton] :
                 null);
+
+            UpdateSearch();
         }
 
         void ButtonClicked(Button btn)
