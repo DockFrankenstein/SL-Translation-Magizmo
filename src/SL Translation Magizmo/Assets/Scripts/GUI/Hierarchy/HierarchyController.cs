@@ -121,6 +121,11 @@ namespace Project.GUI.Hierarchy
 
             var providersDictionary = searchProviders
                 .SelectMany(x => x.Names.Select(y => new KeyValuePair<string, HierarchySearchProvider>(y, x)))
+                .SelectMany(x => new KeyValuePair<string, HierarchySearchProvider>[] 
+                { 
+                    new KeyValuePair<string, HierarchySearchProvider>(x.Key, x.Value), 
+                    new KeyValuePair<string, HierarchySearchProvider>($"{x.Key}*", x.Value) 
+                })
                 .GroupBy(x => x.Key)
                 .ToDictionary(x => x.Key, x => x.First().Value);
 
@@ -129,8 +134,17 @@ namespace Project.GUI.Hierarchy
                 if (!providersDictionary.TryGetValue(pair.Key, out var provider))
                     continue;
 
-                items = items
-                    .SortSearchList(provider.GetSearchString, pair.Value);
+                switch (pair.Key.EndsWith("*"))
+                {
+                    case true:
+                        items = items
+                            .SortSearchListRegex(provider.GetSearchString, pair.Value);
+                        break;
+                    case false:
+                        items = items
+                            .SortSearchList(provider.GetSearchString, pair.Value);
+                        break;
+                }
             }
 
             var itemArray = items.ToArray();
@@ -161,7 +175,7 @@ namespace Project.GUI.Hierarchy
 
             string[] names = searchProviders
                 .SelectMany(x => x.Names)
-                .Select(x => $"{x}:")
+                .SelectMany(x => new string[] { $"{x}:", $"{x}*:" })
                 .ToArray();
 
             foreach (var name in names)
@@ -187,10 +201,6 @@ namespace Project.GUI.Hierarchy
 
                 list[list.Count - 1] = new KeyValuePair<string, string>(list[list.Count - 1].Key, val);
             }
-
-            var rootItem = new TextTreeItem();
-            foreach (var item in list)
-                rootItem.Add($"{item.Key}: {item.Value}");
 
             return list;
         }
@@ -455,11 +465,19 @@ namespace Project.GUI.Hierarchy
                 Foldouts.RemoveForward(foldout.Key);
             }
 
+            UpdateSearch();
+
+            if (IsSearching)
+            {
+                Select(_selectedButton != null && _searchButtons.Reverse.ContainsKey(_selectedButton) ?
+                    _searchButtons.Reverse[_selectedButton] :
+                    null);
+                return;
+            }
+
             Select(_selectedButton != null && UiItems.Reverse.ContainsKey(_selectedButton) ?
                 UiItems.Reverse[_selectedButton] :
                 null);
-
-            UpdateSearch();
         }
 
         void ButtonClicked(Button btn)
@@ -566,7 +584,9 @@ namespace Project.GUI.Hierarchy
                 }
             }
 
-            if (IsSearching && _searchButtons.Forward.TryGetValue(item, out var btn))
+            if (IsSearching &&
+                item != null &&
+                _searchButtons.Forward.TryGetValue(item, out var btn))
             {
                 ChangeSelectedButton(btn);
             }
