@@ -83,7 +83,7 @@ namespace Project.GUI.Preview
                 .Select(x => x.Value)
                 .ToList();
 
-            ScenesForIds = scenes
+            ScenesForIds = VersionScenes
                 .SelectMany(x => x.EntriesForIds.Select(y => new KeyValuePair<string, PreviewScene>(y.Key, x)))
                 .GroupBy(x => x.Key)
                 .ToDictionary(x => x.Key, x => x.First().Value);
