@@ -110,9 +110,10 @@ namespace Project.GUI.Hierarchy
 
             if (!IsSearching)
             {
-                ChangeSelectedButton(SelectedItem != null && UiItems.Forward.TryGetValue(SelectedItem, out var selectedEl) ?
-                    selectedEl as Button :
-                    null);
+                if (prevIsSearching)
+                    ChangeSelectedButton(SelectedItem != null && UiItems.Forward.TryGetValue(SelectedItem, out var selectedEl) ?
+                        selectedEl as Button :
+                        null);
                 return;
             }
 
