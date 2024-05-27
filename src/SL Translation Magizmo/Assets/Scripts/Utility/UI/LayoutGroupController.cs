@@ -1,6 +1,7 @@
 using UnityEngine.UI;
 using UnityEngine;
 using System;
+using qASIC.Internal;
 
 namespace Project.Utility.UI
 {
@@ -60,6 +61,11 @@ namespace Project.Utility.UI
         public static void Refresh()
         {
             _OnRefresh?.Invoke();
+        }
+
+        public static void RefreshNextFrame()
+        {
+            
         }
     }
 }

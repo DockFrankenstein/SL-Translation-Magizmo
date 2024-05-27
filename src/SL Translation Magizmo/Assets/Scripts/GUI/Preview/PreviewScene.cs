@@ -68,7 +68,10 @@ namespace Project.GUI.Preview
         public void Reload()
         {
             ReloadContent();
-            LayoutGroupController.Refresh();
+            DelayExecute.NextFrame(() =>
+            {
+                LayoutGroupController.Refresh();
+            });
         }
 
         internal void ReloadContent()
