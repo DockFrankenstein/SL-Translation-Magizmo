@@ -533,7 +533,9 @@ namespace Project.GUI.Hierarchy
             if (SelectedItem == item) return;
             SelectedItem = item;
 
-            if (!IsSearching && UiItems.Forward.TryGetValue(item, out var uiItem))
+            if (!IsSearching && 
+                item != null && 
+                UiItems.Forward.TryGetValue(item, out var uiItem))
             {
                 ChangeSelectedButton(uiItem as Button);
 
