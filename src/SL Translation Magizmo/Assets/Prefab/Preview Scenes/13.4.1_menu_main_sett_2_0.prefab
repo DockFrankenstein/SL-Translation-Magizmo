@@ -4903,8 +4903,8 @@ MonoBehaviour:
       data:
         tag: '[hotkey]'
         entryContent:
-          id: hotkey_medical
-          defaultContent: Medical
+          id: hotkey_grenade
+          defaultContent: Grenade
           dynamicValues: []
 --- !u!114 &7860904795179455054 stripped
 MonoBehaviour:
