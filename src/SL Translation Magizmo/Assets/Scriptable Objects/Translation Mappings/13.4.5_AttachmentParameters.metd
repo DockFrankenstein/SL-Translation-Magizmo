@@ -1,0 +1,353 @@
+{
+    "fileName": "AttachmentParameters.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 126,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "07bcd6f7-add6-4811-bc0c-5e833f78d610",
+            "fields": [
+                {
+                    "id": "attachment_param_ads",
+                    "autoDisplayName": false,
+                    "displayName": "ADS",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "38b22b72-bef1-4ecf-b6f0-7573f633aba0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "1cc52e65-6416-47d8-bdc0-7053c7817b5e",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "f6d0c1df-d4d3-4a8b-90a6-fcabfb7e5e17"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "45f8f191-54a0-43fb-b55f-150dcdbe8e30",
+            "fields": [
+                {
+                    "id": "attachment_param_damage",
+                    "autoDisplayName": false,
+                    "displayName": "Damage",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "d1766874-f456-43f1-95b6-cda1068f2c70"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ac145f48-a077-4661-b965-67b99b1ad4ff",
+            "fields": [
+                {
+                    "id": "attachment_param_penetration",
+                    "autoDisplayName": false,
+                    "displayName": "Penetration",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "ab589677-150e-41d3-b8e4-14eeb2f6259f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "17a7d3c8-a605-4b6e-bf10-600110c800ed",
+            "fields": [
+                {
+                    "id": "attachment_param_fire_rate",
+                    "autoDisplayName": false,
+                    "displayName": "Fire Rate",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "0c4b6559-18f5-464f-83d7-fe6bce02f1e8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2d01b7c3-9e39-4d58-b0ec-0f5c9ff22a9d",
+            "fields": [
+                {
+                    "id": "attachment_param_recoil",
+                    "autoDisplayName": false,
+                    "displayName": "Recoil",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "8d990f61-d20a-4795-8dd9-886112abd8e9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "832d0955-dd7c-4492-a31d-9525479f39d0",
+            "fields": [
+                {
+                    "id": "attachment_param_recoilt_ads",
+                    "autoDisplayName": false,
+                    "displayName": "Recoilt Ads",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "588f6b67-ab2f-4934-baf5-a291c594f54c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "951dc3b3-0fa3-4d12-9c94-c4c5f5a2f227",
+            "fields": [
+                {
+                    "id": "attachment_param_accuracy",
+                    "autoDisplayName": false,
+                    "displayName": "Accuracy",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "f4dee2e2-8db1-4414-8a0f-635c7c15cf0e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "946489fc-8733-45e5-942f-f77bd1b5d0fe",
+            "fields": [
+                {
+                    "id": "attachment_param_accuracy_hip_fire",
+                    "autoDisplayName": false,
+                    "displayName": "Accuracy Hip Fire",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "b583bb50-39ea-4adf-9f83-eb33407c7450"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4c699c8a-5198-4cb7-bf28-1e47a233aaa8",
+            "fields": [
+                {
+                    "id": "attachment_param_accuracy_ads",
+                    "autoDisplayName": false,
+                    "displayName": "Accuracy Ads",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "aae52d6a-ae0a-4bd9-97b2-2eace50f40b2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ab8ccf98-2a78-41f5-99cf-bb597cde9ec2",
+            "fields": [
+                {
+                    "id": "attachment_param_equip_time",
+                    "autoDisplayName": false,
+                    "displayName": "Equip Time",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "4d8d4b48-4a2a-4c6f-b6cd-aeee9a78b6c2"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "8951143e-5e52-4e4b-b413-e1a3607cb15e",
+            "fields": [
+                {
+                    "id": "attachment_param_gunshot_loudness",
+                    "autoDisplayName": false,
+                    "displayName": "Gunshot Loudness",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "661c6f36-4a50-4044-8b83-31207302b0b4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "681e79b3-df9f-4e51-95b0-fa2b9454222d",
+            "fields": [
+                {
+                    "id": "attachment_param_magazine_capacity",
+                    "autoDisplayName": false,
+                    "displayName": "Magazine Capacity",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "e99bcd26-be01-430a-ade2-2e973302d905"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "073860d7-98a3-432e-8ad1-de06739a912e",
+            "fields": [
+                {
+                    "id": "attachment_param_equip_time",
+                    "autoDisplayName": false,
+                    "displayName": "Equip Time",
+                    "addToList": false,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "65ce1e29-6462-4883-8e14-a3ab532c9401"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a141a93e-9f57-4a2d-a3bc-6ff28eaf2aba",
+            "fields": [
+                {
+                    "id": "attachment_param_reload_time",
+                    "autoDisplayName": false,
+                    "displayName": "Reload Time",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "28f0a31e-efe8-4431-8f08-0c1ef1657368"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c46f14da-d4b5-4d38-bee6-0861dbd1ed6f",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "f6bf5965-de6b-45a0-92dc-b56489dc8de6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "cd8995b8-fec0-4f4b-a6c2-605e5022d403",
+            "fields": [
+                {
+                    "id": "attachment_param_ads_speed",
+                    "autoDisplayName": false,
+                    "displayName": "Ads Speed",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "cbff1e73-9a39-4e21-97bd-990dd2a7a37e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "56202a19-4a47-4c71-9d60-9cdcf4bb5e42",
+            "fields": [
+                {
+                    "id": "attachment_param_pellet_spread",
+                    "autoDisplayName": false,
+                    "displayName": "Pellet Spread",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "da6c877e-fe1b-4043-a24a-bb084c9916c6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "24a74343-0d86-420e-be64-7fc964faee45",
+            "fields": [
+                {
+                    "id": "attachment_param_pattern_consistency",
+                    "autoDisplayName": false,
+                    "displayName": "Pattern Consistency",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "e8fc4504-11ba-4c06-8c03-b225a9e15f08"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "3d4479b3-634e-4bae-8b24-2ad897748ff3",
+            "fields": [
+                {
+                    "id": "attachment_param_projectiles_count",
+                    "autoDisplayName": false,
+                    "displayName": "Projectiles Count",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "cb4a60ac-8cfd-4ebe-ba43-1dc8ce547140"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e5c97936-860a-4ad5-b8e2-445f470ef6d3",
+            "fields": [
+                {
+                    "id": "attachment_param_reload_speed",
+                    "autoDisplayName": false,
+                    "displayName": "Reload Speed",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "dbf2b9d7-c5c9-4470-a0e6-9feaa8360589"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "673fa6a0-eb60-4452-83d8-4173fb086eb2",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "6be0a51e-e3e4-4051-856d-cd95ce2c9334"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "971169eb-072b-4f82-aa22-6b3da426849b",
+            "fields": [
+                {
+                    "id": "attachment_param_accuracy_running",
+                    "autoDisplayName": false,
+                    "displayName": "Running Accuracy",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "6bd657b2-7ef0-4f09-8f67-3f8b9d3c8523"
+                }
+            ]
+        }
+    ]
+}

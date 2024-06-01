@@ -1,7 +1,7 @@
 {
     "versionId": "7b70790d2e59747468799587042babec",
     "version": {
-        "instanceID": 120198
+        "instanceID": 22340
     },
     "items": [
         {
@@ -1509,6 +1509,18 @@
             "id": "menu_warning_photosensitivity",
             "displayText": "Menu Warning Photosensitivity",
             "guid": "30f78622-2d1b-4ac9-a7db-d0a1c5e62b52"
+        },
+        {
+            "type": 0,
+            "id": "menu_warning_photosensitivity_press_any_button",
+            "displayText": "Menu Warning Photosensitivity Press Any Button",
+            "guid": "6e422aa6-c52a-4e45-803c-fcb4ebe84b9b"
+        },
+        {
+            "type": 0,
+            "id": "menu_warning_photosensitivity_do_not_show_again",
+            "displayText": "Menu Warning Photosensitivity Do Not Show Again",
+            "guid": "772b78fa-3df0-410f-97d7-8eca23232032"
         },
         {
             "type": 1,
