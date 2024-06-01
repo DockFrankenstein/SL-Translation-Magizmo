@@ -128,6 +128,7 @@ MonoBehaviour:
   - {fileID: 8275490517574410692}
   - {fileID: 8368161106474286200}
   - {fileID: 5974640205480627100}
+  - {fileID: 4935773696116961276}
   scenes: []
   manager: {fileID: 0}
   hierarchy: {fileID: 0}
@@ -333,7 +334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.entryId
-      value: 
+      value: menu_warning_photosensitivity_do_not_show_again
       objectReference: {fileID: 0}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.isDefault
@@ -517,6 +518,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7602969840024675277, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
   m_PrefabInstance: {fileID: 6785682251121010652}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4935773696116961276 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+  m_PrefabInstance: {fileID: 6785682251121010652}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a4781f923ddbf47a81d639f1d14d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6923767055170269639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -915,7 +927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.entryId
-      value: 
+      value: menu_warning_photosensitivity_press_any_button
       objectReference: {fileID: 0}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: mainId.isDefault
