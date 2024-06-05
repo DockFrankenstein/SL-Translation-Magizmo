@@ -16,7 +16,7 @@ namespace Project.Translation.Mapping.Manifest
         public virtual Type DataType { get; }
 
         [NonSerialized] private MappedField[] _fieldsCache = null;
-        public override MappedField[] GetMappedFields()
+        public override MappedField[] GetAllMappedFields()
         {
             if (_fieldsCache == null)
             {

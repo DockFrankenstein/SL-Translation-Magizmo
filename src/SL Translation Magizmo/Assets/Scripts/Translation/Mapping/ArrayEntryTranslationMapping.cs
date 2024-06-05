@@ -22,7 +22,7 @@ namespace Project.Translation.Mapping
             return txt;
         }
 
-        public override MappedField[] GetMappedFields() => new MappedField[] { field };
+        public override MappedField[] GetAllMappedFields() => new MappedField[] { field };
 
         public override void Import(SaveFile file, string txt)
         {

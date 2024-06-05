@@ -28,10 +28,9 @@ namespace Project.Translation.Mapping
         [FormerlySerializedAs("defines")]
         public List<Line> lines = new List<Line>();
 
-        public override MappedField[] GetMappedFields() =>
+        public override MappedField[] GetAllMappedFields() =>
             lines
             .SelectMany(x => x.fields)
-            .Where(x => x.Status == MappedField.SetupStatus.Used)
             .Select(x => { x.mappingContainer = this; return x; })
             .ToArray();
 

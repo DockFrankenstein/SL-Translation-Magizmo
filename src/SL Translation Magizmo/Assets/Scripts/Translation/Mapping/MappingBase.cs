@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using Project.Translation.Data;
 using System;
+using System.Linq;
 
 namespace Project.Translation.Mapping
 {
@@ -10,7 +11,12 @@ namespace Project.Translation.Mapping
 
         public virtual MappedField NameField { get => null; }
 
-        public abstract MappedField[] GetMappedFields();
+        public virtual MappedField[] GetMappedFields() =>
+            GetAllMappedFields()
+            .Where(x => x.Status == MappedField.SetupStatus.Used)
+            .ToArray();
+
+        public abstract MappedField[] GetAllMappedFields();
 
         public abstract void Import(SaveFile file, string txt);
 
