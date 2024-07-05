@@ -76,6 +76,9 @@ namespace Project
         {
             version = new Version();
 
+            if (s == null)
+                return false;
+
             var releaseStrings = s.Split('.');
 
             uint[] releases = new uint[releaseStrings.Length];

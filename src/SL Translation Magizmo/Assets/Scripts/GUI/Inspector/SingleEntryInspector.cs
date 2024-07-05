@@ -49,7 +49,7 @@ namespace Project.GUI.Inspector
 
             UpdateContentComparison();
 
-            manager.ComparisonManager.OnChangeCurrent += _ => UpdateContentComparison();
+            manager.ComparisonManager.OnChangeCurrent += () => UpdateContentComparison();
         }
 
         void UpdateContentComparison()
@@ -58,7 +58,7 @@ namespace Project.GUI.Inspector
 
             bool exists = manager.ComparisonManager.TryGetEntryData(entry.entryId, out string content);
             _contentComparisonField.SetValueWithoutNotify(content);
-            _contentComparisonField.label = manager.ComparisonManager.CurrentTranslation?.displayName ?? string.Empty;
+            _contentComparisonField.label = manager.ComparisonManager.CurrentName ?? string.Empty;
             _contentComparisonField.ChangeDispaly(exists);
         }
 
@@ -67,7 +67,7 @@ namespace Project.GUI.Inspector
             base.Uninitialize();
 
             entry = null;
-            manager.ComparisonManager.OnChangeCurrent -= _ => UpdateContentComparison();
+            manager.ComparisonManager.OnChangeCurrent -= () => UpdateContentComparison();
         }
     }
 }

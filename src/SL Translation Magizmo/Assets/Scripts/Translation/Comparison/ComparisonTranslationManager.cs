@@ -3,8 +3,7 @@ using Project.Translation.Data;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using qASIC.SettingsSystem;
-using UnityEngine;
+using System.Linq;
 
 namespace Project.Translation.Comparison
 {
@@ -15,67 +14,25 @@ namespace Project.Translation.Comparison
             Manager = manager;
             Serializer = new SaveFileSerializer(manager);
 
-            OnSettingsChanged += CheckAndImportTranslations;
-
-            CheckAndImportTranslations();
-            ChangeCurrent(Sett_CurrentName);
+            RefreshTranslationList();
         }
 
-        private ComparisonTranslation _currentTranslation;
-        public ComparisonTranslation CurrentTranslation
-        {
-            get => _currentTranslation;
-            private set
-            {
-                _currentTranslation = value;
-                OnChangeCurrent?.Invoke(value);
-            }
-        }
+        public const string TRANSLATION_FOLDER_PREFIX = "TRANS";
 
 
-        public Dictionary<string, ComparisonTranslation> translations = new Dictionary<string, ComparisonTranslation>();
+        public List<string> AvaliableTranslations = new List<string>();
 
-        public event Action<ComparisonTranslation> OnChangeCurrent;
+        public event Action OnChangeCurrent;
 
         public TranslationManager Manager { get; set; }
         public SaveFileSerializer Serializer { get; set; }
 
-        #region Settings
-        static Action OnSettingsChanged;
-
-        static bool Sett_UseCache { get; set; } = true;
-
-        [OptionsSetting("comparison_use_cache", true)]
-        static void SettM_UseCache(bool val)
-        {
-            Sett_UseCache = val;
-            OnSettingsChanged?.Invoke();
-        }
-
-        static string Sett_CurrentName { get; set; } = string.Empty;
-
-        [OptionsSetting("comparison_name", true)]
-        static void SettM_CurrentName(string val)
-        {
-            Sett_CurrentName = val;
-        }
-
-        static string Sett_CacheLocation { get; set; } = SettV_CacheLocation();
-
-        [OptionsSetting("comparison_cache_location", defaultValueMethodName = nameof(SettV_CacheLocation))]
-        static void SettM_CacheLocation(string val)
-        {
-            Sett_CacheLocation = val;
-            OnSettingsChanged?.Invoke();
-        }
-
-        static string SettV_CacheLocation() =>
-            $"{Application.persistentDataPath.Replace('/', '\\')}\\comparison-cache";
-        #endregion
+        public string CurrentName { get; private set; } = "IDK";
+        public SaveFile Current { get; private set; }
 
         public bool TryGetEntryData(string id, out string content)
         {
-            if (CurrentTranslation?.file != null && CurrentTranslation.file.Entries.TryGetValue(id, out var data))
+            if (Current != null && Current.Entries.TryGetValue(id, out var data))
             {
                 content = data.content;
                 return true;
@@ -85,80 +42,68 @@ namespace Project.Translation.Comparison
             return false;
         }
 
-        public void CheckAndImportTranslations()
+        public void RefreshTranslationList()
         {
-            translations.Clear();
+            AvaliableTranslations.Clear();
 
-            var translationsPath = GeneralSettings.TranslationPath;
-            if (!Directory.Exists(translationsPath)) return;
-
-            var paths = Directory.GetDirectories(translationsPath);
-
-            foreach (var item in paths)
+            if (Directory.Exists(GeneralSettings.TranslationPath))
             {
-                try
+                foreach (var folder in Directory.GetDirectories(GeneralSettings.TranslationPath))
                 {
-                    var name = Path.GetFileName(item);
-                    var file = GetFile(item);
+                    var folderName = Path.GetFileName(folder);
+                    var files = Directory.GetFiles(folder)
+                        .Where(x => Path.GetExtension(x).ToLower() == SaveFile.FILE_EXTENSION);
 
-                    translations.Add(name, new ComparisonTranslation()
+                    var fileCount = files.Count();
+                    if (fileCount != 1)
                     {
-                        file = file,
-                        displayName = file.Entries.TryGetValue("manifest_name", out var value) ?
-                            value.content.Replace("/", "\\\\") :
-                            name,
-                    });
+                        AvaliableTranslations.Add($"{TRANSLATION_FOLDER_PREFIX}/{folderName}");
+                    }            
+                    
+                    foreach (var file in files)
+                    {
+                        AvaliableTranslations.Add($"{TRANSLATION_FOLDER_PREFIX}/{folderName}/{Path.GetFileName(file)}");
+                    }
                 }
-                catch { }
             }
         }
 
-        public void ChangeCurrent(string name)
+        public void ChangeCurrent(string path)
         {
-            OptionsController.ChangeOption("comparison_name", name);
+            path = path.Replace('\\', '/');
 
-            if (!translations.ContainsKey(name))
+            if (path.StartsWith($"{TRANSLATION_FOLDER_PREFIX}/"))
+                path = $"{GeneralSettings.TranslationPath}/{path.Substring(TRANSLATION_FOLDER_PREFIX.Length + 1, path.Length - TRANSLATION_FOLDER_PREFIX.Length - 1)}";
+
+            SaveFile file = new SaveFile()
             {
-                CurrentTranslation = null;
-                return;
-            }
+                SlVersion = Manager.CurrentVersion.version,
+            };
 
-            CurrentTranslation = translations[name];
-        }
-
-        SaveFile GetFile(string path)
-        {
-            var name = Path.GetFileName(path);
-
-            try
+            if (!string.IsNullOrWhiteSpace(path))
             {
-                if (!Directory.Exists(Sett_CacheLocation))
-                    Directory.CreateDirectory(Sett_CacheLocation);
+                if (Directory.Exists(path))
+                {
+                    Manager.CurrentVersion.Import(file, path);
+                }
+
+                if (File.Exists(path))
+                {
+                    switch (Path.GetExtension(path).ToLower())
+                    {
+                        case SaveFile.FILE_EXTENSION:
+                            file = Serializer.Load(path);
+                            break;
+                    }
+                }
             }
-            catch { }
 
-            var cachePath = Directory.Exists(Sett_CacheLocation) ?
-                $"{Sett_CacheLocation.TrimEnd('/')}/{name}.{SaveFile.FILE_EXTENSION}" :
-                null;
 
-            //File exists
-            if (File.Exists(cachePath))
-                return Serializer.Load(cachePath);
-
-            //File doesn't exist
-            var file = new SaveFile();
-            Manager.CurrentVersion.Import(file, path);
-
-            if (cachePath != null)
-                Serializer.Save(cachePath, file);
-
-            return file;
-        }
-
-        public class ComparisonTranslation
-        {
-            public SaveFile file;
-            public string displayName;
+            Current = file;
+            CurrentName = Current.Entries.TryGetValue(Manager.GetVersion(Current.SlVersion).GetNameField().id, out var name) ?
+                name.content :
+                Path.GetFileNameWithoutExtension(path);
+            OnChangeCurrent?.Invoke();
         }
     }
 }

@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/Main%20Style.uss?fileID=7433441132597879392&amp;guid=a01f009f48e1528468e8c92e6bb1538c&amp;type=3#Main Style" />
+    <ui:VisualElement class="fade" style="flex-grow: 1;" />
+    <ui:VisualElement class="popup-narrow" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+        <ui:VisualElement style="flex-grow: 1; flex-direction: column; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+            <ui:Label tabindex="-1" text="Comparison Manager" parse-escape-sequences="true" display-tooltip-when-elided="true" class="header" />
+            <ui:ScrollView mouse-wheel-scroll-size="1000" class="tree" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-grow: 1;">
+                <ui:VisualElement name="list" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement class="separator" style="flex-grow: 0; flex-basis: auto;" />
+        <ui:VisualElement style="flex-grow: 0; flex-direction: row; flex-basis: 60px; align-items: center; justify-content: flex-end;">
+            <ui:Button text="Close" parse-escape-sequences="true" display-tooltip-when-elided="true" name="close" style="width: 200px;" />
+            <ui:Button text="Load New" parse-escape-sequences="true" display-tooltip-when-elided="true" name="load" style="width: 200px; margin-left: 4px;" />
+            <ui:Button text="Use" parse-escape-sequences="true" display-tooltip-when-elided="true" name="use" class="colored" style="width: 200px; margin-left: 4px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

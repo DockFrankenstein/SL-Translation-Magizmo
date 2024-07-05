@@ -1,4 +1,5 @@
-﻿using Project.GUI.Hierarchy;
+﻿using Assets.Scripts.GUI;
+using Project.GUI.Hierarchy;
 using Project.GUI.Inspector;
 using Project.GUI.Preview;
 using qASIC.SettingsSystem;
@@ -12,6 +13,7 @@ namespace Project.GUI.Top
         [SerializeField] HierarchyController hierarchy;
         [SerializeField] PreviewManager preview;
         [SerializeField] InspectorDisplay inspector;
+        [SerializeField] ComparisonManagerUI comparison;
 
         [OptionsSetting("view_show_ids", false)]
         private static void SettM_CollapsedByDefault(bool value)
@@ -41,17 +43,6 @@ namespace Project.GUI.Top
 
             menu.AppendSeparator();
 
-            foreach (var item in manager.ComparisonManager.translations)
-            {
-                var status = manager.ComparisonManager.CurrentTranslation == item.Value ?
-                    DropdownMenuAction.Status.Checked :
-                    DropdownMenuAction.Status.Normal;
-
-                menu.AppendAction($"Translation Comparison/{item.Value.displayName}", 
-                    _ => manager.ComparisonManager.ChangeCurrent(item.Key),
-                    status);
-            }
-
             menu.AppendAction("Previous Entry", _ => hierarchy.SelectBy(-1));
             menu.AppendAction("Next Entry", _ => hierarchy.SelectBy(1));
             menu.AppendAction("Previous Scene", _ => preview.SelectBy(-1));
@@ -66,6 +57,13 @@ namespace Project.GUI.Top
                 inspector.ReloadName();
 
             }, Sett_ShowIds ? DropdownMenuAction.Status.Checked : DropdownMenuAction.Status.Normal);
+
+            menu.AppendSeparator();
+
+            menu.AppendAction("Comparison Manager", _ =>
+            {
+                comparison.Open();
+            });
         }
     }
 }

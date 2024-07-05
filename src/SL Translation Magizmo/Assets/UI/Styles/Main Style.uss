@@ -1296,3 +1296,9 @@ Label.error {
 .description.warning {
     color: rgb(209, 184, 0);
 }
+
+.separator-horizontal {
+    background-color: rgb(13, 13, 13);
+    height: auto;
+    width: 4px;
+}
