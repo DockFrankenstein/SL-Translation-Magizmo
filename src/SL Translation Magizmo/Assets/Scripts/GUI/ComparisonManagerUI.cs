@@ -82,11 +82,7 @@ namespace Assets.Scripts.GUI
             loadedFoldout = new Foldout() { text = "Loaded" };
             loadedContent = new VisualElement();
 
-            var noneButton = new Button()
-            {
-                text = "None",
-            };
-
+            var noneButton = CreateItemForPath("None", "");
             standardContent.Add(noneButton);
 
             listContent.Add(standardContent);
@@ -95,8 +91,7 @@ namespace Assets.Scripts.GUI
             listContent.Add(loadedFoldout);
             listContent.Add(loadedContent);
 
-            _selected = noneButton;
-            InitializeTreeItem(noneButton, "");
+            Select(noneButton, "");
 
             InitializeFoldout(slFoldout, slContent);
             InitializeFoldout(loadedFoldout, loadedContent);
