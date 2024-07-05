@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using Fab.UITKDropdown;
 using System;
 using UnityEngine.Serialization;
-using qASIC.SettingsSystem;
+using qASIC.Options;
 using qASIC;
 using qASIC.Input;
 using Project.GUI.Top;
@@ -62,12 +62,7 @@ namespace Project.GUI.Hierarchy
             document = GetComponent<UIDocument>();
         }
 
-        [OptionsSetting("hierarchy_collapsed_default", false)]
-        private static void SettM_CollapsedByDefault(bool value)
-        {
-            Sett_CollapsedByDefault = value;
-        }
-
+        [Option("hierarchy_collapsed_default")]
         private static bool Sett_CollapsedByDefault { get; set; }
 
         public bool IsSearching { get; private set; } = false;
@@ -163,7 +158,7 @@ namespace Project.GUI.Hierarchy
                 {
                     var btn = buttons[i] as Button;
                     btn.text = GetItemDisplayName(itemArray[i]);
-                    _searchButtons.Add(itemArray[i], btn);
+                    _searchButtons.Set(itemArray[i], btn);
                 }
             }
 
@@ -311,7 +306,7 @@ namespace Project.GUI.Hierarchy
         void RegisterUiItem(HierarchyItem item, VisualElement element)
         {
             if (!UiItems.Forward.ContainsKey(item))
-                UiItems.Add(item, element);
+                UiItems.Set(item, element);
 
             if (!ItemIds.ContainsKey(item.id))
                 ItemIds.Add(item.id, new List<HierarchyItem>());
@@ -364,7 +359,7 @@ namespace Project.GUI.Hierarchy
                             }
                         });
 
-                        Foldouts.Add(header, newContent);
+                        Foldouts.Set(header, newContent);
 
                         RegisterUiItem(item, Foldouts.ElementAt(foldoutIndex).Key);
                         contentNormal.Add(header);
@@ -391,7 +386,7 @@ namespace Project.GUI.Hierarchy
                     if (!Foldouts.IndexInRange(foldoutIndex))
                     {
                         var container = new VisualElement();
-                        Foldouts.Add(null, container);
+                        Foldouts.Set(null, container);
                         contentNormal.Add(container);
                     }
                 }
@@ -472,8 +467,8 @@ namespace Project.GUI.Hierarchy
             if (IsSearching)
                 return;
 
-            Select(_selectedButton != null && UiItems.Reverse.ContainsKey(_selectedButton) ?
-                UiItems.Reverse[_selectedButton] :
+            Select(_selectedButton != null && UiItems.Backward.ContainsKey(_selectedButton) ?
+                UiItems.Backward[_selectedButton] :
                 null);
         }
 
@@ -482,14 +477,14 @@ namespace Project.GUI.Hierarchy
             switch (IsSearching)
             {
                 case true:
-                    Select(_searchButtons.Reverse[btn], false);
+                    Select(_searchButtons.Backward[btn], false);
                     break;
                 case false:
-                    if (Foldouts.Reverse.TryGetValue(btn.parent, out var foldout) &&
+                    if (Foldouts.Backward.TryGetValue(btn.parent, out var foldout) &&
                         _tempFoldout == foldout)
                         _tempFoldout = null;
 
-                    Select(UiItems.Reverse[btn], false);
+                    Select(UiItems.Backward[btn], false);
                     break;
             }
 
@@ -541,7 +536,7 @@ namespace Project.GUI.Hierarchy
                 ChangeSelectedButton(uiItem as Button);
 
                 if (_tempFoldout != null &&
-                    Foldouts.Reverse.TryGetValue(uiItem.parent, out var btnFoldout) &&
+                    Foldouts.Backward.TryGetValue(uiItem.parent, out var btnFoldout) &&
                     btnFoldout != _tempFoldout)
                 {
                     _tempFoldout.value = false;
@@ -553,7 +548,7 @@ namespace Project.GUI.Hierarchy
                     _tempFoldout = null;
                 }
 
-                if (Foldouts.Reverse.TryGetValue(uiItem.parent, out var foldout))
+                if (Foldouts.Backward.TryGetValue(uiItem.parent, out var foldout))
                 {
                     if (foldout.value == false)
                     {

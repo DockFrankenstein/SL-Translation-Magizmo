@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UIElements;
-using qASIC.SettingsSystem;
+using qASIC.Options;
 using System.Collections.Generic;
 using System;
 using SFB;
@@ -56,8 +56,8 @@ namespace Project.GUI.Settings
             internal override void Initialize(VisualElement root)
             {
                 element = root.Q<BaseField<T>>(elementName);
-                if (OptionsController.TryGetOptionValue(targetOption, out object value) && value is T val)
-                    element.SetValueWithoutNotify(val);
+                //if (.TryGetOptionValue(targetOption, out object value) && value is T val)
+                //    element.SetValueWithoutNotify(val);
 
                 element.RegisterValueChangedCallback(args =>
                 {
@@ -80,7 +80,7 @@ namespace Project.GUI.Settings
 
             protected void Apply()
             {
-                OptionsController.ChangeOption(targetOption, element.value);
+                //OptionsController.ChangeOption(targetOption, element.value);
             }
         }
 

@@ -204,7 +204,7 @@ namespace qASIC.Input.Map.Internal
         #region Utility
         public void RebuildInspectors()
         {
-            _inspectors = TypeFinder.CreateConstructorsFromTypesList<InputMapItemInspector>(TypeFinder.FindAllTypes<InputMapItemInspector>())
+            _inspectors = TypeFinder.CreateConstructorsFromTypes<InputMapItemInspector>(TypeFinder.FindAllTypes<InputMapItemInspector>())
                         .Where(x => x.ItemType != null)
                         .ToDictionary(x => x.ItemType);
         }

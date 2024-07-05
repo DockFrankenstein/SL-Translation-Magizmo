@@ -1,44 +1,30 @@
-﻿using UnityEngine;
+﻿using System;
 
-using static qASIC.Internal.qLogger;
+using GameLog = qASIC.qLog;
 
 namespace qASIC
 {
     public static partial class qDebug
     {
+        public const string DEFAULT_COLOR_TAG = "default";
+        public const string WARNING_COLOR_TAG = "warning";
+        public const string ERROR_COLOR_TAG = "error";
+        
+        public static event Action<GameLog> OnLog;
+
         public static void Log(object message) =>
-            OnLogColorTag?.Invoke(message?.ToString() ?? "null", "default");
-
-        public static void Log(object message, string color) =>
-            OnLogColorTag?.Invoke(message?.ToString() ?? "null", color);
-
-        public static void Log(object message, Color color) =>
-            OnLogColor?.Invoke(message?.ToString() ?? "null", color);
-
+            OnLog?.Invoke(GameLog.CreateNow(message?.ToString() ?? "NULL", DEFAULT_COLOR_TAG));
 
         public static void LogWarning(object message) =>
-            OnLogColorTag?.Invoke(message?.ToString() ?? "null", "warning");
+            OnLog?.Invoke(GameLog.CreateNow(message?.ToString() ?? "NULL", WARNING_COLOR_TAG));
 
         public static void LogError(object message) =>
-            OnLogColorTag?.Invoke(message?.ToString() ?? "null", "error");
+            OnLog?.Invoke(GameLog.CreateNow(message?.ToString() ?? "NULL", ERROR_COLOR_TAG));
 
+        public static void Log(object message, string colorTag) =>
+            OnLog?.Invoke(GameLog.CreateNow(message?.ToString() ?? "NULL", colorTag));
 
-        #region Internal
-        public static void LogInternal(object message) =>
-            OnLogColorTagInternal?.Invoke(message?.ToString() ?? "null", "default");
-
-        public static void LogInternal(object message, string color) =>
-            OnLogColorTagInternal?.Invoke(message?.ToString() ?? "null", color);
-
-        public static void LogInternal(object message, Color color) =>
-            OnLogColorInternal?.Invoke(message?.ToString() ?? "null", color);
-
-
-        public static void LogWarningInternal(object message) =>
-            OnLogColorTagInternal?.Invoke(message?.ToString() ?? "null", "warning");
-
-        public static void LogErrorInternal(object message) =>
-            OnLogColorTagInternal?.Invoke(message?.ToString() ?? "null", "error");
-        #endregion
+        public static void Log(object message, qColor color) =>
+            OnLog?.Invoke(GameLog.CreateNow(message?.ToString() ?? "NULL", color));
     }
 }

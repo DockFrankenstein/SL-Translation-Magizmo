@@ -33,7 +33,7 @@ namespace qASIC.Input.Devices
 #endif
 
             _initialized = true;
-            qDebug.LogInternal("[Device Manager] Initializing...");
+            qDebug.Log("[Device Manager] Initializing...");
 
             InputUpdateManager.OnUpdate += Update;
 
@@ -50,7 +50,7 @@ namespace qASIC.Input.Devices
                 InputUpdateManager.OnUpdate += item.Update;
             }
 
-            qDebug.LogInternal("[Device Manager] Initialization complete");
+            qDebug.Log("[Device Manager] Initialization complete");
         }
 
         public static void Shutdown()
@@ -59,7 +59,7 @@ namespace qASIC.Input.Devices
                 return;
 
             _initialized = false;
-            qDebug.LogInternal("[Device Manager] Shutdown initiated...");
+            qDebug.Log("[Device Manager] Shutdown initiated...");
 
             InputUpdateManager.OnUpdate -= Update;
 
@@ -75,7 +75,7 @@ namespace qASIC.Input.Devices
                 DeregisterDevice(item);
             }
 
-            qDebug.LogInternal("[Device Manager] Shutdown complete");
+            qDebug.Log("[Device Manager] Shutdown complete");
         }
 
         public static void Reload()

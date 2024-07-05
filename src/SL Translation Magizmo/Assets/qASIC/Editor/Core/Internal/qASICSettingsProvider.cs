@@ -16,7 +16,7 @@ namespace qASIC.Internal
 
             qGUIInternalUtility.BeginGroup("Version");
 
-            EditorGUILayout.LabelField($"qASIC: {qInfo.Version}");
+            EditorGUILayout.LabelField($"qASIC");
             //EditorGUILayout.LabelField($"Game Console: {Info.ConsoleVersion}");
             //EditorGUILayout.LabelField($"Info Displayer: {Info.DisplayerVersion}");
             //EditorGUILayout.LabelField($"Options System: {Info.OptionsVersion}");

@@ -90,7 +90,7 @@ namespace qASIC.Input.DebugTools
                 case 1:
                     string[] joystickNames = UInput.GetJoystickNames();
 
-                    TextTree uimJoysticksTree = new TextTree(TextTreeStyle.Fancy);
+                    TextTree uimJoysticksTree = TextTree.Fancy;
                     TextTreeItem uimJoysticksRoot = new TextTreeItem($"UIM Joysticks (count: {joystickNames.Length})");
 
                     for (int i = 0; i < joystickNames.Length; i++)
@@ -111,7 +111,7 @@ namespace qASIC.Input.DebugTools
 
                     _mapDataSelectedPlayer = EditorGUILayout.Popup("Selected Player", _mapDataSelectedPlayer, playerNames);
 
-                    TextTree mapDataTree = new TextTree(TextTreeStyle.Fancy);
+                    TextTree mapDataTree = TextTree.Fancy;
                     TextTreeItem mapDataTreeRoot = new TextTreeItem("Map Data");
 
                     var player = InputManager.Players[_mapDataSelectedPlayer];
@@ -156,7 +156,7 @@ namespace qASIC.Input.DebugTools
                     var items = qGUIEditorUtility.SortSearchList(KeyTypeManager.KeyPaths, _keySearch)
                         .ToList();
 
-                    TextTree keyTextTree = new TextTree(TextTreeStyle.Fancy);
+                    TextTree keyTextTree = TextTree.Fancy;
                     TextTreeItem keyTextTreeRootItem = new TextTreeItem("Keys");
 
                     foreach (var key in items)

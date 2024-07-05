@@ -92,7 +92,7 @@ namespace qASIC.Input.Internal
 
             groupBar.Select(_selectedItem == null ?
                 0 :
-                Map.groups.IndexOf(x => x.items.Contains(_selectedItem)));
+                Map.groups.IndexOf(Map.groups.Where(x => x.items.Contains(_selectedItem)).FirstOrDefault()));
 
             _selectedItemIndex = groupBar.GetSelectedGroup()?.items.IndexOf(_selectedItem) ?? -1;
         }

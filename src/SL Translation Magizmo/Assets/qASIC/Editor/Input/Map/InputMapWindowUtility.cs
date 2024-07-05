@@ -43,7 +43,7 @@ namespace qASIC.Input.Map.Internal
                 typeof(InputMapItem<>),
             };
 
-            var types = TypeFinder.FindAllTypesList<InputMapItem>();
+            var types = TypeFinder.FindAllTypes<InputMapItem>().ToList();
 
             foreach (var type in excludedTypes)
                 types.Remove(type);

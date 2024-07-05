@@ -8,6 +8,10 @@ using qASIC.Input;
 using System.Linq;
 using System;
 using Project.Translation.Comparison;
+using qASIC.Options;
+using qASIC.Files;
+using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace Project.Translation
 {
@@ -18,6 +22,9 @@ namespace Project.Translation
 
         [Label("Saving")]
         [SerializeField] RecentsManager recentFiles = new RecentsManager();
+
+        [Label("Settings")]
+        [SerializeField] AdvancedGenericFilePath settingsPath = new AdvancedGenericFilePath(GenericFolder.PersistentDataPath, "settings.txt");
 
         [Label("Comparisons")]
         [SerializeField] ComparisonManager comparisonManager;
@@ -39,6 +46,8 @@ namespace Project.Translation
         public UnityEvent OnLoad;
 
         public event Action<object> OnFileChanged;
+
+        public OptionsManager Options { get; private set; }
 
         public SaveFileSerializer Serializer { get; private set; }
         public ComparisonManager ComparisonManager => comparisonManager;
@@ -80,6 +89,35 @@ namespace Project.Translation
 
         private void Awake()
         {
+            var optionsSerializer = new OptionsSerializer(settingsPath.GetFullPath());
+            optionsSerializer.OnSave += data =>
+            {
+                var txt = string.Empty;
+                foreach (var item in data)
+                    txt = ConfigController.SetSetting(txt, item.Key, item.Value?.ToString());
+
+                return txt;
+            };
+
+            optionsSerializer.OnLoad += txt =>
+            {
+                Dictionary<string, object> data = new Dictionary<string, object>();
+                foreach (var item in Options.OptionsList)
+                {
+                    try
+                    {
+                        var txtVal = ConfigController.GetSetting(txt, item.Key);
+                        data.Add(item.Key, Convert.ChangeType(txtVal, item.Value.Value.GetType()));
+                    }
+                    catch { }
+                }
+
+                return data;
+            };
+
+            Options = new OptionsManager(qApplication.QasicInstance, optionsSerializer);
+            Options.Initialize();
+
             foreach (var version in versions)
                 version.Initialize();
 

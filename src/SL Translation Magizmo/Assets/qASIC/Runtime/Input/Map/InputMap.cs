@@ -44,11 +44,14 @@ namespace qASIC.Input.Map
         public void Initialize()
         {
             RebuildItemCache();
-            ItemsDictionary.ForEach(x => x.Value.map = this);
-            GroupsDictionary.ForEach(x => x.Value.map = this);
+            foreach (var item in ItemsDictionary)
+                item.Value.map = this;
+
+            foreach (var item in GroupsDictionary)
+                item.Value.map = this;
 
             _initialized = true;
-            qDebug.LogInternal($"[Cablebox] Initialized Input Map '{name}:{GetInstanceID()}'", "input");
+            qDebug.Log($"[Cablebox] Initialized Input Map '{name}:{GetInstanceID()}'", "input");
         }
 
         /// <summary>Rebuilds items and groups dictionary</summary>

@@ -24,7 +24,7 @@ namespace qASIC.Input.Map
         public string Guid { get => guid; set => guid = value; }
         public bool MapLoaded => map != null;
 
-        public virtual Color ItemColor => qASIC.qInfo.qASICColor;
+        public virtual Color ItemColor => new Color(0f, 0.7019607843137255f, 1f);
 
 
         public abstract Type ValueType { get; }

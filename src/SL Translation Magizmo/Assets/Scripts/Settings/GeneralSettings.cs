@@ -1,4 +1,4 @@
-﻿using qASIC.SettingsSystem;
+﻿using qASIC.Options;
 using System.IO;
 
 namespace Project.Settings
@@ -7,17 +7,20 @@ namespace Project.Settings
     {
         public const string DEFAULT_TRANSLATION_PATH = @"C:\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory\Translations";
 
-        public static string TranslationPath { get; set; } = GetDefaultTranslationPath();
-
-        [OptionsSetting("translation_path", defaultValueMethodName = nameof(GetDefaultTranslationPath))]
-        static void HandleTranslationPath(string newValue)
+        private static string _translationPath = null;
+        [Option("translation_path")]
+        public static string TranslationPath 
         {
-            TranslationPath = newValue;
-        }
+            get
+            {
+                if (_translationPath == null)
+                    _translationPath = Directory.Exists(DEFAULT_TRANSLATION_PATH) ?
+                    DEFAULT_TRANSLATION_PATH :
+                    string.Empty;
 
-        public static string GetDefaultTranslationPath() =>
-            Directory.Exists(DEFAULT_TRANSLATION_PATH) ?
-            DEFAULT_TRANSLATION_PATH :
-            string.Empty;
+                return _translationPath;
+            }
+            set => _translationPath = value;
+        }
     }
 }

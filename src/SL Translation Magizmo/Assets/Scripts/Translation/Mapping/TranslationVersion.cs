@@ -17,7 +17,12 @@ namespace Project.Translation.Mapping
 
         public MappedField[] GetMappedFields() =>
             containers
-            .SelectMany(x => x.GetMappedFields().ForEach(y => y.mappingContainer = x))
+            .SelectMany(x => x.GetMappedFields()
+                .Where(y =>
+                {
+                    y.mappingContainer = x;
+                    return true;
+                }))
             .GroupBy(x => x.id)
             .Select(x => x.First())
             .ToArray();

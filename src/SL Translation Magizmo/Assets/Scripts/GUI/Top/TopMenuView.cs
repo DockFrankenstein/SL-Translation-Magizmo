@@ -2,7 +2,7 @@
 using Project.GUI.Hierarchy;
 using Project.GUI.Inspector;
 using Project.GUI.Preview;
-using qASIC.SettingsSystem;
+using qASIC.Options;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -15,13 +15,8 @@ namespace Project.GUI.Top
         [SerializeField] InspectorDisplay inspector;
         [SerializeField] ComparisonManagerUI comparison;
 
-        [OptionsSetting("view_show_ids", false)]
-        private static void SettM_CollapsedByDefault(bool value)
-        {
-            Sett_ShowIds = value;
-        }
-
-        public static bool Sett_ShowIds { get; private set; }
+        [Option("view_show_ids")]
+        public static bool Sett_ShowIds { get; private set; } = false;
 
         protected override string ButtonName => "view";
 
@@ -52,7 +47,7 @@ namespace Project.GUI.Top
 
             menu.AppendAction("Show Ids Instead Of Names", _ =>
             {
-                OptionsController.ChangeOption("view_show_ids", !Sett_ShowIds);
+                manager.Options.SetOptionAndApply("view_show_ids", !Sett_ShowIds);
                 hierarchy.Refresh();
                 inspector.ReloadName();
 

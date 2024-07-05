@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
-using qASIC.SettingsSystem;
+using qASIC.Options;
 using System;
 
 namespace Project.GUI
@@ -11,12 +11,16 @@ namespace Project.GUI
         [SerializeField] CanvasScaler canvasScaler;
         [SerializeField] PanelSettings panelSettings;
 
-        public static float ScaleFactor { get; set; } = 1f;
-        [OptionsSetting("ui_scale_factor", 1f)]
-        static void SettM_ScaleFactor(float value)
+        private static float _scaleFactor = 1f;
+        [Option("ui_scale_factor")]
+        public static float ScaleFactor 
         {
-            ScaleFactor = value;
-            OnChangeScale?.Invoke();
+            get => _scaleFactor;
+            set
+            {
+                _scaleFactor = value;
+                OnChangeScale?.Invoke();
+            }
         }
 
         static event Action OnChangeScale;

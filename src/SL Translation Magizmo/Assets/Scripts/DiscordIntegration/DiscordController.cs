@@ -1,7 +1,7 @@
 using Project.Translation;
 using UnityEngine;
 using Discord;
-using qASIC.SettingsSystem;
+using qASIC.Options;
 
 using DiscordClient = Discord.Discord;
 using Project.GUI.Hierarchy;
@@ -30,7 +30,7 @@ namespace Project.DiscordIntegration
         #region Settings
         private static event Action SettA_UseActivity;
 
-        [OptionsSetting("discord_use_activity", true)]
+        [OptionAttribute("discord_use_activity", true)]
         private static void SettM_UseActivity(bool value)
         {
             Sett_UseActivity = value;

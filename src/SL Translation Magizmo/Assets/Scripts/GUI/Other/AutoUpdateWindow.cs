@@ -1,12 +1,13 @@
 using UnityEngine;
 using Project.AutoUpdate;
 using UnityEngine.UIElements;
-using qASIC.SettingsSystem;
+using qASIC.Options;
 using System.Collections;
 using qASIC.Files;
 using System.Diagnostics;
 using System.IO;
 using System.Threading;
+using Project.Translation;
 
 namespace Project.GUI.Other
 {
@@ -14,6 +15,7 @@ namespace Project.GUI.Other
     {
         [SerializeField] UIDocument document;
         [SerializeField] ErrorWindow errorWindow;
+        [SerializeField] TranslationManager manager;
 
         [Label("Text")]
         [SerializeField] string checkingHeader;
@@ -64,15 +66,8 @@ namespace Project.GUI.Other
         //
         //It must be destroyed.
         #region Settings
-        const string SHOW_AUTO_UPDATE_KEY = "show_auto_update";
-
+        [Option("show_auto_update")]
         public static bool Sett_AutoUpdate { get; set; } = true;
-
-        [OptionsSetting("show_auto_update", true)]
-        static void SettM_AutoUpdate(bool value)
-        {
-            Sett_AutoUpdate = value;
-        }
         #endregion
 
         private void Awake()
@@ -105,7 +100,7 @@ namespace Project.GUI.Other
             cancelButton.clicked += Close;
             dontShowButton.clicked += () =>
             {
-                OptionsController.ChangeOption(SHOW_AUTO_UPDATE_KEY, false);
+                manager.Options.SetOptionAndApply("show_auto_update", false);
                 Close();
             };
 

@@ -69,8 +69,8 @@ namespace qASIC.Input.KeyProviders
                         .ToArray();
 
                     //Add key paths from 
-                    _keyPaths = TypeFinder.FindAllAttributes<KeyPathsAttribute>()
-                        .WhereLog(x => x.ReturnType == typeof(string[]) && x.IsStatic, $"[Key Type] Key Path Attribute can only be used on a static string[] field or parameter")
+                    _keyPaths = TypeFinder.FindMethodsWithAttribute<KeyPathsAttribute>()
+                        .Where(x => x.ReturnType == typeof(string[]) && x.IsStatic)
                         .Select(x => (string[])x.Invoke(null, new object[0]))
                         .SelectMany(x => x)
                         .Where(x => IsKeyPathCorrectlyFormatted(x, true))
