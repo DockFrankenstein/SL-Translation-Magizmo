@@ -70,7 +70,7 @@ namespace Project
             releases.GetHashCode();
 
         public override string ToString() =>
-            releases != null ? string.Join(".", releases) : "NULL";
+            releases != null ? string.Join(".", releases) : "";
 
         public static bool TryParse(string s, out Version version)
         {

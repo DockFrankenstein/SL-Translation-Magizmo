@@ -4,12 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using UnityEngine;
 
 namespace Project.Translation.Comparison
 {
-    public class ComparisonTranslationManager
+    [Serializable]
+    public class ComparisonManager
     {
-        public ComparisonTranslationManager(TranslationManager manager)
+        public void Initialize(TranslationManager manager)
         {
             Manager = manager;
             Serializer = new SaveFileSerializer(manager);
@@ -19,13 +21,16 @@ namespace Project.Translation.Comparison
 
         public const string TRANSLATION_FOLDER_PREFIX = "TRANS";
 
+        [SerializeField] RecentsManager loadedFiles;
 
-        public List<string> AvaliableTranslations = new List<string>();
+
+        public List<string> AvaliableTranslations { get; private set; } = new List<string>();
 
         public event Action OnChangeCurrent;
 
-        public TranslationManager Manager { get; set; }
-        public SaveFileSerializer Serializer { get; set; }
+        public TranslationManager Manager { get; private set; }
+
+        public SaveFileSerializer Serializer { get; private set; }
 
         public string CurrentName { get; private set; } = "IDK";
         public SaveFile Current { get; private set; }
@@ -58,13 +63,20 @@ namespace Project.Translation.Comparison
                     if (fileCount != 1)
                     {
                         AvaliableTranslations.Add($"{TRANSLATION_FOLDER_PREFIX}/{folderName}");
-                    }            
+                    }
                     
                     foreach (var file in files)
                     {
                         AvaliableTranslations.Add($"{TRANSLATION_FOLDER_PREFIX}/{folderName}/{Path.GetFileName(file)}");
                     }
                 }
+            }
+
+            loadedFiles.Load();
+
+            foreach (var item in loadedFiles)
+            {
+                AvaliableTranslations.Add(item);
             }
         }
 
@@ -89,7 +101,11 @@ namespace Project.Translation.Comparison
 
                 if (File.Exists(path))
                 {
-                    switch (Path.GetExtension(path).ToLower())
+                    var extension = Path.GetExtension(path).ToLower();
+                    if (extension.Length > 0)
+                        extension = extension.Substring(1, extension.Length - 1);
+
+                    switch (extension)
                     {
                         case SaveFile.FILE_EXTENSION:
                             file = Serializer.Load(path);
@@ -100,10 +116,17 @@ namespace Project.Translation.Comparison
 
 
             Current = file;
-            CurrentName = Current.Entries.TryGetValue(Manager.GetVersion(Current.SlVersion).GetNameField().id, out var name) ?
+            CurrentName = Current.Entries.TryGetValue(Manager.GetSlVersion(Current).GetNameField().id, out var name) ?
                 name.content :
                 Path.GetFileNameWithoutExtension(path);
+
             OnChangeCurrent?.Invoke();
+        }
+
+        public void AddPath(string path)
+        {
+            AvaliableTranslations.Add(path);
+            loadedFiles.Add(path);
         }
     }
 }

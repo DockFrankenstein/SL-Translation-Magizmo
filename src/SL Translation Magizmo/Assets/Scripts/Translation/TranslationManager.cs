@@ -7,9 +7,6 @@ using UnityEngine.Events;
 using qASIC.Input;
 using System.Linq;
 using System;
-using qASIC.Files;
-using System.Collections.Generic;
-using System.IO;
 using Project.Translation.Comparison;
 
 namespace Project.Translation
@@ -20,7 +17,10 @@ namespace Project.Translation
         public TranslationVersion[] versions;
 
         [Label("Saving")]
-        [SerializeField] GenericFilePath recentFilesCachePath;
+        [SerializeField] RecentsManager recentFiles = new RecentsManager();
+
+        [Label("Comparisons")]
+        [SerializeField] ComparisonManager comparisonManager;
 
         [Label("Application")]
         [SerializeField] ErrorWindow errorWindow;
@@ -40,11 +40,10 @@ namespace Project.Translation
 
         public event Action<object> OnFileChanged;
 
-        public List<string> RecentPaths { get; private set; }
-        public event Action<string> OnRecentPathAdded;
-
         public SaveFileSerializer Serializer { get; private set; }
-        public ComparisonTranslationManager ComparisonManager { get; private set; }
+        public ComparisonManager ComparisonManager => comparisonManager;
+        public RecentsManager RecentFiles =>
+            recentFiles;
 
         TranslationVersion _currentVersion;
         public TranslationVersion CurrentVersion 
@@ -88,9 +87,9 @@ namespace Project.Translation
             CurrentVersion = GetNewestVersion();
             File = new SaveFile(CurrentVersion);
 
-            ComparisonManager = new ComparisonTranslationManager(this);
+            ComparisonManager.Initialize(this);
 
-            LoadRecentsCache();
+            recentFiles.Load();
         }
 
         private void Update()
@@ -103,54 +102,6 @@ namespace Project.Translation
 
             if (i_load.GetInputDown())
                 Open();
-        }
-
-        public void LoadRecentsCache()
-        {
-            var cachePath = recentFilesCachePath.GetFullPath();
-
-            if (!System.IO.File.Exists(cachePath))
-                return;
-
-            using (var stream = new StreamReader(cachePath))
-            {
-                var txt = stream.ReadToEnd();
-                RecentPaths = txt
-                    .SplitByLines()
-                    .Where(x => !string.IsNullOrWhiteSpace(x))
-                    .ToList();
-            }
-        }
-
-        public void SaveRecentsCache()
-        {
-            var cachePath = recentFilesCachePath.GetFullPath();
-
-            using (var stream = new StreamWriter(cachePath))
-            {
-                var txt = string.Join("\n", RecentPaths);
-                stream.Write(txt);
-            }
-        }
-
-        public void AddPathToRecents(string path)
-        {
-            if (RecentPaths == null)
-            {
-                RecentPaths = new List<string>(new string[] { path });
-                SaveRecentsCache();
-                return;
-            }
-
-            if (RecentPaths.FirstOrDefault() == path)
-                return;
-
-            if (RecentPaths.Contains(path))
-                RecentPaths.Remove(path);
-
-            RecentPaths.Insert(0, path);
-            OnRecentPathAdded?.Invoke(path);
-            SaveRecentsCache();
         }
 
         public void Save()
@@ -171,7 +122,7 @@ namespace Project.Translation
             try
             {
                 Serializer.Save(FilePath, File);
-                AddPathToRecents(FilePath);
+                recentFiles.Add(FilePath);
                 ClearDirty();
                 Debug.Log("Saved file");
                 OnSave.Invoke();
@@ -251,7 +202,7 @@ namespace Project.Translation
             OnLoad.Invoke();
             MarkFileDirty(this);
             ClearDirty();
-            AddPathToRecents(FilePath);
+            recentFiles.Add(path);
         }
 
         public void MarkFileDirty(object fromContext)

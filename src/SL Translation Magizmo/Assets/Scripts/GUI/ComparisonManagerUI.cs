@@ -6,6 +6,9 @@ using UnityEngine.UIElements;
 using System.Linq;
 using Project.Translation.Comparison;
 using System.IO;
+using Project.Settings;
+using Project.Translation.Data;
+using SFB;
 
 namespace Assets.Scripts.GUI
 {
@@ -56,6 +59,23 @@ namespace Assets.Scripts.GUI
                 root.ChangeDispaly(false);
             };
 
+            loadButton.clicked += () =>
+            {
+                var extensions = new ExtensionFilter[]
+                {
+                    new ExtensionFilter("", SaveFile.FILE_EXTENSION),
+                    new ExtensionFilter("", "csv"),
+                };
+
+                var results = StandaloneFileBrowser.OpenFilePanel("Select File To Load", GeneralSettings.TranslationPath, extensions, false);
+
+                if (results.Length == 0)
+                    return;
+
+                manager.ComparisonManager.AddPath(results[0]);
+                Refresh();
+            };
+
             standardContent = new VisualElement();
             slFoldout = new Foldout() { text = "From SL Translation Folder" };
             slContent = new VisualElement();
@@ -93,29 +113,34 @@ namespace Assets.Scripts.GUI
             content.ChangeDispaly(foldout.value);
         }
 
-        void CreateItemForPath(VisualElement container, string path) =>
-            CreateItemForPath(container, path, path);
+        Button CreateItemForPath(string path) =>
+            CreateItemForPath(path, path);
 
-        void CreateItemForPath(VisualElement container, string displayName, string path)
+        void Select(Button button, string path)
+        {
+            if (button == _selected) return;
+            _selected?.RemoveFromClassList("hierarchy-selected");
+            _selected = button;
+            _selected.AddToClassList("hierarchy-selected");
+            _selectedPath = path;
+        }
+
+        Button CreateItemForPath(string displayName, string path)
         {
             var button = new Button()
             {
                 text = displayName,
             };
 
-            container.Add(button);
             InitializeTreeItem(button, path);
+            return button;
         }
 
         void InitializeTreeItem(Button button, string path)
         {
             button.clicked += () =>
             {
-                if (button == _selected) return;
-                _selected?.RemoveFromClassList("hierarchy-selected");
-                _selected = button;
-                _selected.AddToClassList("hierarchy-selected");
-                _selectedPath = path;
+                Select(button, path);
             };
 
             if (button == _selected)
@@ -128,29 +153,29 @@ namespace Assets.Scripts.GUI
             document.rootVisualElement.ChangeDispaly(true);
         }
 
-
-
         void Refresh()
         {
             slContent.Clear();
             loadedContent.Clear();
 
             var slItems = manager.ComparisonManager.AvaliableTranslations
-                .Where(x => x.Replace('\\', '/').StartsWith($"{ComparisonTranslationManager.TRANSLATION_FOLDER_PREFIX}/"));
+                .Where(x => x.Replace('\\', '/').StartsWith($"{ComparisonManager.TRANSLATION_FOLDER_PREFIX}/"))
+                .OrderBy(x => x);
             var loadedItems = manager.ComparisonManager.AvaliableTranslations
-                .Except(slItems);
+                .Except(slItems)
+                .OrderBy(x => x);
 
             slFoldout.ChangeDispaly(slItems.Count() > 0);
             loadedFoldout.ChangeDispaly(loadedItems.Count() > 0);
 
             foreach (var path in slItems)
             {
-                var displayName = path.Substring(ComparisonTranslationManager.TRANSLATION_FOLDER_PREFIX.Length + 1, path.Length - ComparisonTranslationManager.TRANSLATION_FOLDER_PREFIX.Length - 1);
-                CreateItemForPath(slContent, displayName, path);
+                var displayName = path.Substring(ComparisonManager.TRANSLATION_FOLDER_PREFIX.Length + 1, path.Length - ComparisonManager.TRANSLATION_FOLDER_PREFIX.Length - 1);
+                slContent.Add(CreateItemForPath(displayName, path));
             }
 
             foreach (var path in loadedItems)
-                CreateItemForPath(loadedContent, Path.GetFileName(path), path);
+                loadedContent.Add(CreateItemForPath(Path.GetFileName(path), path));
         }
     }
 }

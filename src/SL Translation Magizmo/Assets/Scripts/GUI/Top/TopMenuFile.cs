@@ -22,8 +22,8 @@ namespace Project.GUI.Top
             menu.AppendAction("Save As", _ => manager.SaveAs());
             menu.AppendAction("Open", _ => manager.Open());
 
-            if (manager.RecentPaths != null)
-                foreach (var item in manager.RecentPaths)
+            if (manager.RecentFiles != null)
+                foreach (var item in manager.RecentFiles)
                     menu.AppendAction($"Open Recent/{item.Replace("/", "\\").Replace("\\", "\\\\")}", _ => manager.Open(item));
 
             menu.AppendSeparator();
