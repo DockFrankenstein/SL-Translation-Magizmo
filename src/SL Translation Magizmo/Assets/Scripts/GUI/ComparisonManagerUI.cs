@@ -35,6 +35,8 @@ namespace Assets.Scripts.GUI
         Foldout loadedFoldout;
         VisualElement loadedContent;
 
+        Button noneButton;
+
         Button _selected;
         string _selectedPath;
 
@@ -82,7 +84,7 @@ namespace Assets.Scripts.GUI
             loadedFoldout = new Foldout() { text = "Loaded" };
             loadedContent = new VisualElement();
 
-            var noneButton = CreateItemForPath("None", "");
+            noneButton = CreateItemForPath("None", "");
             standardContent.Add(noneButton);
 
             listContent.Add(standardContent);
@@ -90,8 +92,6 @@ namespace Assets.Scripts.GUI
             listContent.Add(slContent);
             listContent.Add(loadedFoldout);
             listContent.Add(loadedContent);
-
-            Select(noneButton, "");
 
             InitializeFoldout(slFoldout, slContent);
             InitializeFoldout(loadedFoldout, loadedContent);
@@ -127,6 +127,9 @@ namespace Assets.Scripts.GUI
                 text = displayName,
             };
 
+            if (path == manager.ComparisonManager.CurrentPath)
+                Select(button, path);
+
             InitializeTreeItem(button, path);
             return button;
         }
@@ -145,11 +148,14 @@ namespace Assets.Scripts.GUI
         public void Open()
         {
             Refresh();
+
             document.rootVisualElement.ChangeDispaly(true);
         }
 
         void Refresh()
         {
+            Select(noneButton, "");
+
             slContent.Clear();
             loadedContent.Clear();
 

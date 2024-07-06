@@ -1,5 +1,7 @@
 ﻿using Project.Settings;
 using Project.Translation.Data;
+using qASIC;
+using qASIC.Options;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -17,6 +19,13 @@ namespace Project.Translation.Comparison
             Serializer = new SaveFileSerializer(manager);
 
             RefreshTranslationList();
+
+            qApplication.QasicInstance.RegisteredObjects.Register(this);
+
+            //FIXME: this is a temporary fix
+            CurrentPath = manager.Options.GetOption("comparison_path", "");
+
+            ChangeCurrent(CurrentPath);
         }
 
         public const string TRANSLATION_FOLDER_PREFIX = "TRANS";
@@ -34,6 +43,9 @@ namespace Project.Translation.Comparison
 
         public string CurrentName { get; private set; } = "IDK";
         public SaveFile Current { get; private set; }
+
+        [Option("comparison_path", "")]
+        public string CurrentPath { get; set; } = string.Empty;
 
         public bool TryGetEntryData(string id, out string content)
         {
@@ -82,7 +94,12 @@ namespace Project.Translation.Comparison
 
         public void ChangeCurrent(string path)
         {
+            path ??= string.Empty;
+
             path = path.Replace('\\', '/');
+
+            CurrentPath = path;
+            Manager.Options.SetOptionAndApply("comparison_path", CurrentPath);
 
             if (path.StartsWith($"{TRANSLATION_FOLDER_PREFIX}/"))
                 path = $"{GeneralSettings.TranslationPath}/{path.Substring(TRANSLATION_FOLDER_PREFIX.Length + 1, path.Length - TRANSLATION_FOLDER_PREFIX.Length - 1)}";

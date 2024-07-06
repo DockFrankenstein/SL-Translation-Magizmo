@@ -86,7 +86,7 @@ namespace qASIC.Options
         /// <returns>The value.</returns>
         public object GetOption(string optionName, object defaultValue) =>
             OptionsList.TryGetValue(optionName, out var val) ?
-            val :
+            val.Value :
             defaultValue;
 
         /// <summary>Gets the value of an option.</summary>
@@ -161,9 +161,9 @@ namespace qASIC.Options
         /// <summary>Reverts options from the save file.</summary>
         public void Revert()
         {
-                Serializer.Load(OptionsList);
             try
             {
+                Serializer.Load(OptionsList);
             }
             catch (Exception e)
             {
