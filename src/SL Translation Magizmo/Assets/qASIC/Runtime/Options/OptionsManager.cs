@@ -10,15 +10,15 @@ namespace qASIC.Options
             this(new OptionTargetList().FindOptions(), serializer: serializer)
         { }
 
-        public OptionsManager(OptionTargetList targetList, bool ensureListHasAllTargets = true, OptionsSerializer serializer = null) :
-            this(null, targetList, ensureListHasAllTargets, serializer)
+        public OptionsManager(OptionTargetList targetList, OptionsSerializer serializer = null) :
+            this(null, targetList, serializer)
         { }
 
         public OptionsManager(qInstance instance, OptionsSerializer serializer = null) :
             this(instance, new OptionTargetList().FindOptions(), serializer: serializer)
         { }
 
-        public OptionsManager(qInstance instance, OptionTargetList targetList, bool ensureListHasAllTargets = true, OptionsSerializer serializer = null)
+        public OptionsManager(qInstance instance, OptionTargetList targetList, OptionsSerializer serializer = null)
         {
             Instance = instance;
 
@@ -46,14 +46,6 @@ namespace qASIC.Options
             }
         }
 
-        public void Initialize()
-        {
-            EnsureListHasAllTargets();
-
-            Revert();
-            Apply();
-        }
-
         public LogManager Logs { get; set; } = new LogManager();
         public ILoggable[] Loggables => new ILoggable[0];
 
@@ -68,6 +60,14 @@ namespace qASIC.Options
         /// <summary>List of found options and registered objects.</summary>
         public OptionTargetList TargetList { get; private set; }
 
+        /// <summary>Initializes the options manager.</summary>
+        public void Initialize()
+        {
+            EnsureListHasAllTargets();
+            Revert();
+            Apply();
+        }
+
         /// <summary>Formats a <c>string</c> to be used as a key for an option.</summary>
         /// <param name="text">String to format.</param>
         /// <returns>The formatted string.</returns>
@@ -78,7 +78,7 @@ namespace qASIC.Options
         /// <param name="optionName">Name of the option.</param>
         /// <returns>The value.</returns>
         public object GetOption(string optionName) =>
-            OptionsList[optionName];
+            OptionsList[optionName].Value;
 
         /// <summary>Gets the value of an option.</summary>
         /// <param name="optionName">Name of the option.</param>

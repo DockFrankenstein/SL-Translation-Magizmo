@@ -9,34 +9,6 @@
             </ui:Button>
             <ui:RadioButtonGroup value="0" choices="Apperance,Translation Comparison,Updates,Discord" name="menu-selection" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
         </ui:VisualElement>
-        <ui:ScrollView name="content-scroll" style="flex-basis: 100%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;">
-            <ui:VisualElement name="panel-apperance">
-                <ui:Label text="Apperance" display-tooltip-when-elided="true" class="header" />
-                <ui:Slider label="UI Scale Factor" high-value="3" low-value="0.2" show-input-field="true" name="ui-scale-factor" style="min-height: auto; height: 35px;" />
-                <ui:Toggle label="Collapse By Default" name="hierarchy-collapse-by-default" />
-            </ui:VisualElement>
-            <ui:VisualElement name="panel-comparison">
-                <ui:Label text="Translation Comparison" display-tooltip-when-elided="true" class="header" />
-                <ui:TextField picking-mode="Ignore" label="SL Translations Path" name="translation-path">
-                    <ui:Button display-tooltip-when-elided="true" name="translation-path-open" class="file-path-open">
-                        <ui:VisualElement />
-                    </ui:Button>
-                </ui:TextField>
-                <ui:Toggle label="Use Cache" name="comparison-use-cache" />
-                <ui:TextField picking-mode="Ignore" label="Cache Path" name="comparison-cache-path">
-                    <ui:Button display-tooltip-when-elided="true" name="comparison-cache-path-open" class="file-path-open">
-                        <ui:VisualElement />
-                    </ui:Button>
-                </ui:TextField>
-            </ui:VisualElement>
-            <ui:VisualElement name="panel-updates">
-                <ui:Label text="Updates" display-tooltip-when-elided="true" class="header" />
-                <ui:Toggle label="New Release Notification" name="show-auto-update" />
-            </ui:VisualElement>
-            <ui:VisualElement name="panel-discord">
-                <ui:Label text="Discord" display-tooltip-when-elided="true" class="header" />
-                <ui:Toggle label="Use Activity" name="discord-use-activity" />
-            </ui:VisualElement>
-        </ui:ScrollView>
+        <ui:ScrollView name="content-scroll" style="flex-basis: 100%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
     </ui:VisualElement>
 </ui:UXML>
