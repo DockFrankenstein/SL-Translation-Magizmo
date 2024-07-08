@@ -54,7 +54,16 @@ namespace Project.GUI.Hierarchy
         [GUID] public string guid = Guid.NewGuid().ToString();
 
         public object Item { get; set; }
-        public bool IsExpanded { get; set; } = true;
+
+        //Since Hierarchy Items are serialized by Unity,
+        //property keeps being set to false, so we have
+        //to do this horribleness
+        private bool _isNotExpanded = false;
+        public bool IsExpanded 
+        {
+            get => !_isNotExpanded;
+            set => _isNotExpanded = !value;
+        }
 
         string IApplicationObject.Name => displayText;
 
