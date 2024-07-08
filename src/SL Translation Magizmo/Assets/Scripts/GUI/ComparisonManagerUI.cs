@@ -66,7 +66,6 @@ namespace Assets.Scripts.GUI
                 var extensions = new ExtensionFilter[]
                 {
                     new ExtensionFilter("", SaveFile.FILE_EXTENSION),
-                    new ExtensionFilter("", "csv"),
                 };
 
                 var results = StandaloneFileBrowser.OpenFilePanel("Select File To Load", GeneralSettings.TranslationPath, extensions, false);

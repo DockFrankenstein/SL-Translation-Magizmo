@@ -41,7 +41,7 @@ namespace Project.Translation.Comparison
 
         public SaveFileSerializer Serializer { get; private set; }
 
-        public string CurrentName { get; private set; } = "IDK";
+        public string CurrentName { get; private set; }
         public SaveFile Current { get; private set; }
 
         [Option("comparison_path", "")]
