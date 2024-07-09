@@ -148,7 +148,9 @@ namespace Project.GUI.Inspector
         {
             public TargetFieldArray()
             {
-                _list.MakeItem += MakeItem;
+                _list.MakeItem += () =>
+                    MakeItem().WithMargin(4f);
+
                 _list.OnChanged += () =>
                 {
                     entry.content = _list.Source

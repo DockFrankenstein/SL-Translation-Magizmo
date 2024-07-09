@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UIElements;
 using UnityEngine;
+using System.Linq;
 
 namespace Project.UI
 {
@@ -30,7 +31,7 @@ namespace Project.UI
                 fields[e] = i;
                 var val = Source[i];
 
-                if (e is BaseField<T> valItem)
+                if (e.Children().FirstOrDefault() is BaseField<T> valItem)
                     valItem.SetValueWithoutNotify(val);
 
                 OnBindItem?.Invoke(e, val);
@@ -53,33 +54,41 @@ namespace Project.UI
 
         VisualElement CreateItem()
         {
+            var root = new VisualElement();
             var item = MakeItem();
 
-            item.style.marginBottom = 0f;
-            item.style.marginLeft = 0f;
-            item.style.marginRight = 0f;
-            item.style.marginTop = 0f;
-            item.style.width = new StyleLength(new Length(100, LengthUnit.Percent));
+            root.style.flexDirection = FlexDirection.Row;
 
-            var btn = new Button();
+            root.Add(item);
 
-            btn.AddToClassList("minus-button");
-
-            btn.style.position = RemoveButtonPosition;
-            btn.style.right = 0f;
-            btn.style.width = 42f;
-            btn.style.height = 42f;
-            btn.transform.scale = Vector3.one * 0.6f;
-
-            item.style.height = 42f;
-            var transformVal = item.style.translate.value;
-            transformVal.y = 4f;
-            item.transform.position += new Vector3(0f, 4f);
+            //item.style.width = new StyleLength(new Length(100, LengthUnit.Percent));
+            item.style.flexGrow = 1f;
+            item.style.flexShrink = 1f;
 
             if (List.showAddRemoveFooter)
-                item.Add(btn);
+            {
+                var removeButton = new Button();
 
-            fields.Add(item, -1);
+                removeButton.AddToClassList("minus-button");
+
+                removeButton.style.position = RemoveButtonPosition;
+                removeButton.style.right = 0f;
+                removeButton.style.width = 42f;
+                removeButton.style.height = 42f;
+                removeButton.transform.scale = Vector3.one * 0.6f;
+                removeButton.style.alignSelf = Align.Center;
+
+                removeButton.clicked += () =>
+                {
+                    Source.RemoveAt(fields[root]);
+                    List.RefreshItems();
+                    OnChanged?.Invoke();
+                };
+
+                root.Add(removeButton);
+            }
+
+            fields.Add(root, -1);
 
             if (item is BaseField<T> valItem)
             {
@@ -87,20 +96,13 @@ namespace Project.UI
                 {
                     if (args.target == valItem)
                     {
-                        Source[fields[item]] = valItem.value;
+                        Source[fields[root]] = valItem.value;
                         OnChanged?.Invoke();
                     }
                 });
             }
 
-            btn.clicked += () =>
-            {
-                Source.RemoveAt(fields[item]);
-                List.RefreshItems();
-                OnChanged?.Invoke();
-            };
-
-            return item;
+            return root;
         }
 
         public ListView List { get; private set; }

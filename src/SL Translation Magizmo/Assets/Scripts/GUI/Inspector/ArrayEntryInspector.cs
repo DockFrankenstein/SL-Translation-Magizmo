@@ -24,7 +24,8 @@ namespace Project.GUI.Inspector
             _contentList = new AppReorderableList<string>(Container.Q<ListView>("content"));
             _unusedBySLField = Container.Q<Label>("unused-warning");
 
-            _contentList.MakeItem += () => new TextField();
+            _contentList.MakeItem += () =>
+                new TextField().WithMargin(4f);
 
             _contentList.OnChanged += () =>
             {
