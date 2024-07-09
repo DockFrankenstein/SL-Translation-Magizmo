@@ -24,6 +24,8 @@ namespace Project.UI
             {
                 if (fields.ContainsKey(a))
                     fields.Remove(a);
+
+                OnDestroyItem?.Invoke(a.Children().FirstOrDefault());
             };
 
             List.bindItem += (e, i) =>
@@ -31,15 +33,23 @@ namespace Project.UI
                 fields[e] = i;
                 var val = Source[i];
 
-                if (e.Children().FirstOrDefault() is BaseField<T> valItem)
-                    valItem.SetValueWithoutNotify(val);
+                var item = e.Children().FirstOrDefault();
+                var field = GetField == null ?
+                    item as BaseField<T> :
+                    GetField(item);
 
-                OnBindItem?.Invoke(e, val);
+                if (field != null)
+                {
+                    field.SetValueWithoutNotify(val);
+                }
+
+                OnBindItem?.Invoke(item, i, val);
             };
 
             List.unbindItem += (e, i) =>
             {
                 fields[e] = -1;
+                OnUnbindItem?.Invoke(e.Children().FirstOrDefault());
             };
 
             List.itemsAdded += _ =>
@@ -49,6 +59,11 @@ namespace Project.UI
             List.itemsRemoved += _ => OnChanged?.Invoke();
             List.itemIndexChanged += (_, _) => OnChanged?.Invoke();
         }
+
+        public IEnumerable<VisualElement> GetElements() =>
+            fields
+            .OrderBy(x => x.Value)
+            .Select(x => x.Key.Children().FirstOrDefault());
 
         public Position RemoveButtonPosition { get; set; } = Position.Relative;
 
@@ -61,7 +76,6 @@ namespace Project.UI
 
             root.Add(item);
 
-            //item.style.width = new StyleLength(new Length(100, LengthUnit.Percent));
             item.style.flexGrow = 1f;
             item.style.flexShrink = 1f;
 
@@ -90,13 +104,17 @@ namespace Project.UI
 
             fields.Add(root, -1);
 
-            if (item is BaseField<T> valItem)
+            var field = GetField == null ?
+                item as BaseField<T> :
+                GetField(item);
+
+            if (field != null)
             {
-                valItem.RegisterValueChangedCallback(args =>
+                field.RegisterValueChangedCallback(args =>
                 {
-                    if (args.target == valItem)
+                    if (args.target == field)
                     {
-                        Source[fields[root]] = valItem.value;
+                        Source[fields[root]] = field.value;
                         OnChanged?.Invoke();
                     }
                 });
@@ -107,9 +125,12 @@ namespace Project.UI
 
         public ListView List { get; private set; }
 
-        public Func<VisualElement> MakeItem;
-        public Action<VisualElement, T> OnBindItem;
-        public Action OnChanged;
+        public event Func<VisualElement> MakeItem;
+        public event Action<VisualElement> OnDestroyItem;
+        public event Func<VisualElement, BaseField<T>> GetField;
+        public event Action<VisualElement, int, T> OnBindItem;
+        public event Action<VisualElement> OnUnbindItem;
+        public event Action OnChanged;
 
         List<T> _source;
         public List<T> Source

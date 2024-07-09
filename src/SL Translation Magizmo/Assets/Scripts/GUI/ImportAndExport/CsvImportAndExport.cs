@@ -184,7 +184,7 @@ namespace Project.Translation.ImportAndExport
             };
 
             _exportColumnsOrder.MakeItem += () => new Label();
-            _exportColumnsOrder.OnBindItem += (e, v) => (e as Label).text = v switch
+            _exportColumnsOrder.OnBindItem += (e, i, v) => (e as Label).text = v switch
             {
                 ColumnOrder.Id => "Id",
                 ColumnOrder.DisplayName => "Display Name",

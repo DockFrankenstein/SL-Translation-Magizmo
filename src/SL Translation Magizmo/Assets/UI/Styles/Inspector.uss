@@ -21,6 +21,9 @@
     border-left-width: 0;
     background-color: rgba(0, 0, 0, 0);
     padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .content-compare-content #unity-text-input > * {
@@ -49,4 +52,7 @@
     color: rgb(157, 157, 157);
     font-size: 20px;
     margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
