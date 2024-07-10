@@ -32,7 +32,7 @@
                     "dynamicValues": [
                         {
                             "tag": "{0}",
-                            "description": "Remaining time of using the intercom in seconds"
+                            "description": "Remaining time of using the intercom in seconds."
                         }
                     ],
                     "guid": "5650a294-76c8-4865-a7e7-7fe7c2bb90bd"
@@ -67,7 +67,7 @@
                     "dynamicValues": [
                         {
                             "tag": "{0}",
-                            "description": "Time until restart in seconds"
+                            "description": "Time until restart in seconds."
                         }
                     ],
                     "guid": "4fc46531-bb76-4dbe-bcb6-31965e4b963c"
