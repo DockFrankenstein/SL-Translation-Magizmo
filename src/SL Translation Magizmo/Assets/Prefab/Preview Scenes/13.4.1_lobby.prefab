@@ -1470,7 +1470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   s: 
   element:
-    id: start_starts_paused
+    id: start_starts_in
     defaultContent: 'ROUND STARTS IN: <color=yellow>{0}</color>s'
     dynamicValues:
     - rid: 8343636372553728000
