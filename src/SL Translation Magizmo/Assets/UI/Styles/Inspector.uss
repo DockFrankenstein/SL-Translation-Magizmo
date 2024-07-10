@@ -56,3 +56,32 @@
     margin-right: 0;
     margin-left: 0;
 }
+
+.dynamic-values {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.dynamic-values-buttons {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.dynamic-values-buttons Button {
+    -unity-text-align: middle-left;
+    height: auto;
+    background-color: rgb(51, 51, 51);
+    border-left-color: rgb(33, 33, 33);
+    border-right-color: rgb(33, 33, 33);
+    border-top-color: rgb(33, 33, 33);
+    border-bottom-color: rgb(33, 33, 33);
+    min-height: 50px;
+    max-height: none;
+    white-space: normal;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

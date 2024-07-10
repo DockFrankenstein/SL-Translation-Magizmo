@@ -1,6 +1,9 @@
 using Project.Translation.Mapping;
 using Project.Translation.Data;
 using UnityEngine.UIElements;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System;
 
 namespace Project.GUI.Inspector
 {
@@ -14,9 +17,15 @@ namespace Project.GUI.Inspector
         TextField _contentField;
         TextField _contentComparisonField;
         Label _unusedBySLField;
+        VisualElement _dynamicValues;
+        VisualElement _dynamicValuesContent;
 
         SaveFile.EntryData entry;
         MappedField entryField;
+
+        List<Button> _dynamicValuesButtons = new List<Button>();
+
+        Action _onNextUpdate;
 
         protected override void Awake()
         {
@@ -25,6 +34,8 @@ namespace Project.GUI.Inspector
             _contentField = Container.Q<TextField>("content");
             _contentComparisonField = Container.Q<TextField>("content-comparison");
             _unusedBySLField = Container.Q<Label>("unused-warning");
+            _dynamicValues = Container.Q("dynamic-values");
+            _dynamicValuesContent = Container.Q("dynamic-values-content");
 
             _contentField.RegisterValueChangedCallback(args =>
             {
@@ -33,6 +44,15 @@ namespace Project.GUI.Inspector
 
                 MarkFileDirty();
             });
+        }
+
+        private void Update()
+        {
+            if (_onNextUpdate != null)
+            {
+                _onNextUpdate();
+                _onNextUpdate = null;
+            }
         }
 
         public override void Initialize()
@@ -50,6 +70,27 @@ namespace Project.GUI.Inspector
             UpdateContentComparison();
 
             manager.ComparisonManager.OnChangeCurrent += () => UpdateContentComparison();
+
+            _dynamicValues.ChangeDispaly(entryField.dynamicValues.Count > 0);
+            foreach (var item in entryField.dynamicValues)
+            {
+                var button = new Button();
+                button.text = $"{item.tag} <color=#aaaaaa><size=18>- {item.description}</size></color>";
+                button.clicked += () => InsertTextAtCarret(item.tag);
+                _dynamicValuesButtons.Add(button);
+                _dynamicValuesContent.Add(button);
+            }
+        }
+
+        public void InsertTextAtCarret(string text)
+        {
+            var index = _contentField.cursorIndex;
+            var val = _contentField.value;
+            _contentField.value = $"{val.Substring(0, index)}{text}{val.Substring(index, val.Length - index)}";
+            _contentField.Focus();
+
+            _onNextUpdate += () =>
+                _contentField.SelectRange(index + text.Length, index + text.Length);
         }
 
         void UpdateContentComparison()
@@ -68,6 +109,11 @@ namespace Project.GUI.Inspector
 
             entry = null;
             manager.ComparisonManager.OnChangeCurrent -= () => UpdateContentComparison();
+
+            foreach (var item in _dynamicValuesButtons)
+                _dynamicValuesContent.Remove(item);
+
+            _dynamicValuesButtons.Clear();
         }
     }
 }
