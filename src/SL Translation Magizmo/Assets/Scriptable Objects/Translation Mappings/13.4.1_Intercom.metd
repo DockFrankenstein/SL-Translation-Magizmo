@@ -13,6 +13,7 @@
                     "autoDisplayName": false,
                     "displayName": "Ready",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "38dce8d3-40c0-4edd-b33b-73a4f5265d55"
                 }
@@ -27,7 +28,13 @@
                     "autoDisplayName": false,
                     "displayName": "Used",
                     "addToList": true,
-                    "dynamicValues": [],
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [
+                        {
+                            "tag": "{0}",
+                            "description": "Remaining time of using the intercom in seconds"
+                        }
+                    ],
                     "guid": "5650a294-76c8-4865-a7e7-7fe7c2bb90bd"
                 }
             ]
@@ -41,6 +48,7 @@
                     "autoDisplayName": false,
                     "displayName": "Used Using Bypass",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "205aca84-dff5-4109-b269-62bbf0ba62f5"
                 }
@@ -55,7 +63,13 @@
                     "autoDisplayName": false,
                     "displayName": "Restarting",
                     "addToList": true,
-                    "dynamicValues": [],
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [
+                        {
+                            "tag": "{0}",
+                            "description": "Time until restart in seconds"
+                        }
+                    ],
                     "guid": "4fc46531-bb76-4dbe-bcb6-31965e4b963c"
                 }
             ]
@@ -69,6 +83,7 @@
                     "autoDisplayName": false,
                     "displayName": "Used By Admin",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "4855f964-bbca-4173-ac68-f1423c08636b"
                 }
@@ -83,6 +98,7 @@
                     "autoDisplayName": false,
                     "displayName": "Muted",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "cdeef3fa-e9dd-41b2-82c1-3c4aa4042575"
                 }
@@ -97,6 +113,7 @@
                     "autoDisplayName": false,
                     "displayName": "Unknown",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "3091773f-f65b-443d-b41e-686de98166c8"
                 }
@@ -111,6 +128,7 @@
                     "autoDisplayName": false,
                     "displayName": "Wait",
                     "addToList": true,
+                    "notYetAddedToSL": false,
                     "dynamicValues": [],
                     "guid": "e1b31d6e-3411-409b-b680-8485bac8e3fe"
                 }
