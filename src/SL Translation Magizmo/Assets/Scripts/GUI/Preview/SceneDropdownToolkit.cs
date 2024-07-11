@@ -70,7 +70,7 @@ namespace Project.GUI.Preview
 
             var directories = preview.VersionScenes
                 .Select(x => x.path)
-                .Where(x => x.StartsWith(Path))
+                .Where(x => x.StartsWith(string.IsNullOrEmpty(Path) ? Path : $"{Path}/"))
                 .Select(x => x.Substring(Path.Length, x.Length - Path.Length))
                 .Select(x => Path.Length == 0 ? x : (x.Length == 0 ? x : x.Substring(1, x.Length - 1)))
                 .Select(x =>
