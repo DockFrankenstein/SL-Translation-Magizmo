@@ -1,6 +1,7 @@
 using Project.GUI.Settings;
 using Project.Translation.ImportAndExport;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Project.GUI.Top
@@ -23,7 +24,7 @@ namespace Project.GUI.Top
             menu.AppendAction("Open", _ => manager.Open());
 
             if (manager.RecentFiles != null)
-                foreach (var item in manager.RecentFiles)
+                foreach (var item in manager.RecentFiles.Take(10))
                     menu.AppendAction($"Open Recent/{item.Replace("/", "\\").Replace("\\", "\\\\")}", _ => manager.Open(item));
 
             menu.AppendSeparator();
