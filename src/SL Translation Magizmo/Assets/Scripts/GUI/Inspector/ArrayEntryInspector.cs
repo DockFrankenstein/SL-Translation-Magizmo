@@ -62,24 +62,31 @@ namespace Project.GUI.Inspector
             var preview = new TextField();
             var comparisonContent = new TextField();
 
+            field.AddToClassList("text-area");
+            field.AddToClassList("expanding");
+            field.multiline = true;
+            field.label = "Content";
+
+            field.RegisterValueChangedCallback(args =>
+            {
+                UpdatePreview(root);
+            });
+
+            preview.label = "Preview";
+            preview.AddToClassList("text-area");
+            preview.AddToClassList("preview");
+            preview.multiline = true;
+            preview.isReadOnly = true;
+            preview.Query<TextElement>()
+                .Build()
+                .ForEach(x => x.enableRichText = true);
+
             comparisonContent.multiline = true;
             comparisonContent.isReadOnly = true;
             comparisonContent.ChangeDispaly(false);
             comparisonContent.style.marginTop = 4f;
 
             comparisonContent.AddToClassList("content-compare-content");
-
-            preview.label = "Preview";
-            preview.AddToClassList("text-area");
-            preview.AddToClassList("preview");
-            preview.Query<TextElement>()
-                .Build()
-                .ForEach(x => x.enableRichText = true);
-
-            field.RegisterValueChangedCallback(args =>
-            {
-                UpdatePreview(root);
-            });
 
             _items.Add(root, new ArrayItem()
             {

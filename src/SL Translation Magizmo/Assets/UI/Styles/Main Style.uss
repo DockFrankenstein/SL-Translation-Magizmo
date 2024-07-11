@@ -1302,3 +1302,13 @@ Label.error {
     height: auto;
     width: 4px;
 }
+
+.text-area.expanding #unity-text-input {
+    height: auto;
+    max-height: 200px;
+}
+
+.unity-list-view__reorderable-item {
+    border-bottom-color: rgba(13, 13, 13, 255);
+    border-bottom-width: 2px;
+}
