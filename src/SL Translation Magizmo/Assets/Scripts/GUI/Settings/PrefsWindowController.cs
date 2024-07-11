@@ -1,3 +1,4 @@
+using Project.GUI.Preview;
 using Project.Translation;
 using qASIC;
 using qASIC.Options.Menu;
@@ -50,6 +51,10 @@ namespace Project.GUI.Settings
                 .StartNewSection("Apperance")
                     .AddOption(new OptionsMenuSlider<float>("ui_scale_factor", "UI Scale Factor", 0.2f, 2f))
                     .AddOption(new OptionsMenuToggle("hierarchy_collapsed_default", "Collapse By Default"))
+                .FinishSection()
+                .StartNewSection("Preview")
+                    .AddOption(new OptionsMenuSlider<float>(nameof(TranslationPreviewCamera.ScrollMultiplier), "Scroll Speed", 0.1f, 5f))
+                    .AddOption(new OptionsMenuToggle(nameof(TranslationPreviewCamera.UseZoomLimit), "Limit Zoom"))
                 .FinishSection()
                 .StartNewSection("Comparing")
                     .AddOption(new OptionsMenuFieldPath("translation_path", "SL Translation Path"))

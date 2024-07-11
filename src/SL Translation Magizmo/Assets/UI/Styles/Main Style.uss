@@ -1312,3 +1312,7 @@ Label.error {
     border-bottom-color: rgba(13, 13, 13, 255);
     border-bottom-width: 2px;
 }
+
+.unity-base-field__label {
+    width: 300px;
+}

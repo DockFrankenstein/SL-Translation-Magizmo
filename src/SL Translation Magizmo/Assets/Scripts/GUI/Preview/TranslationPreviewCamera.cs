@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using qASIC.Input;
 using Project.UI;
+using qASIC.Options;
 
 namespace Project.GUI.Preview
 {
@@ -9,8 +10,22 @@ namespace Project.GUI.Preview
         public PanelCamera cam;
         public float scrollSpeed = 0.2f;
 
+        [SerializeField] float defaultZoom;
+        [SerializeField] Vector2 zoomMinMax;
+
         [Label("Input")]
         [SerializeField][MapItemType(MapItemType.InputBinding)] InputMapItemReference i_drag;
+
+        [Option]
+        public static bool UseZoomLimit { get; set; } = true;
+
+        [Option]
+        public static float ScrollMultiplier { get; set; } = 1f;
+
+        private void Awake()
+        {
+            cam.Cam.orthographicSize = defaultZoom;
+        }
 
         private void LateUpdate()
         {
@@ -27,11 +42,17 @@ namespace Project.GUI.Preview
                 if (i_drag.GetInputDown())
                     BeginDrag();
 
-                _scroll = Input.mouseScrollDelta.y;
+                _scroll = Input.mouseScrollDelta.y * ScrollMultiplier;
             }
 
             if (i_drag.GetInputUp())
                 EndDrag();
+        }
+
+        public void ResetPosition()
+        {
+            transform.position = new Vector3(0f, 0f, transform.position.z);
+            cam.Cam.orthographicSize = defaultZoom;
         }
 
         #region Drag
@@ -68,7 +89,12 @@ namespace Project.GUI.Preview
 
         void HandleScroll()
         {
-            cam.Cam.orthographicSize *= Mathf.Pow(scrollSpeed, -_scroll);
+            var size = cam.Cam.orthographicSize * Mathf.Pow(scrollSpeed, -_scroll);
+
+            if (UseZoomLimit)
+                size = Mathf.Clamp(size, zoomMinMax.x, zoomMinMax.y);
+
+            cam.Cam.orthographicSize = size;
         }
         #endregion
     }

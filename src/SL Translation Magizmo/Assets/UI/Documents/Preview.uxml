@@ -10,5 +10,6 @@
                 <ui:ScrollView mouse-wheel-scroll-size="1000" name="scene-dropdown-items" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; border-top-width: 1px; border-left-color: rgb(13, 13, 13); border-right-color: rgb(13, 13, 13); border-top-color: rgb(13, 13, 13); border-bottom-color: rgb(13, 13, 13);" />
             </ui:VisualElement>
         </Project.UI.PopupButton>
+        <ui:Button text="Reset" parse-escape-sequences="true" display-tooltip-when-elided="true" name="preview-reset" />
     </ui:VisualElement>
 </ui:UXML>

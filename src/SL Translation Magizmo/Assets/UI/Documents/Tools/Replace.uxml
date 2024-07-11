@@ -6,7 +6,7 @@
         <ui:ScrollView style="flex-grow: 1;">
             <ui:Toggle label="Use Regex" name="regex" />
             <ui:VisualElement class="unity-base-field" style="flex-grow: 1;">
-                <ui:Label tabindex="-1" text="Regex Tutorial" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                <ui:Label tabindex="-1" text="Regex Tutorial" parse-escape-sequences="true" display-tooltip-when-elided="true" class="unity-base-field__label" />
                 <ui:Button text="Open Link" parse-escape-sequences="true" display-tooltip-when-elided="true" name="regex-tut" style="flex-shrink: 1; flex-grow: 1;" />
             </ui:VisualElement>
             <ui:VisualElement style="flex-grow: 1; height: 4px;" />
