@@ -1,4 +1,5 @@
 using Project.GUI.Preview.Interfaces;
+using Project.Text;
 using qASIC;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,9 @@ namespace Project.GUI.Preview
         public GameObject multiEntryPanel;
         public GameObject outlineGroup;
         public Button button;
+
+        [Label("Post Processing")]
+        [SerializeField] TextPostProcessing postProcessing;
 
         [Label("Settings")]
         [SerializeField] bool interactable = true;
@@ -107,7 +111,7 @@ namespace Project.GUI.Preview
                     txt = currentValues[SelectedValueIndex];
             }
 
-            text.text = txt.Replace("\\n", "\n");
+            text.text = postProcessing.ProcessText(txt.Replace("\\n", "\n"));
 
             if (idNameText != null)
             {

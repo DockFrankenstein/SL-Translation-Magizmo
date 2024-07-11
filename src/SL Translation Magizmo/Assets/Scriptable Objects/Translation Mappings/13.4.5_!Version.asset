@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version:
     releases: 0d0000000400000005000000
+  exportPostProcessing: {fileID: 11400000, guid: e10d201d125fedc4e907399a6410859f, type: 2}
   containers:
   - {fileID: -944628639613478452, guid: 2ae5c6bc4ebc20f44afc52701530f29e, type: 3}
   - {fileID: -944628639613478452, guid: 58d07b440c8038b4b94ed48a2b2e98b5, type: 3}

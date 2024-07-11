@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50afa7bf08701fc41bece7e8a98ab50d, type: 3}
+  m_Name: Main Text Post Processing
+  m_EditorClassIdentifier: 
+  postProcessors:
+  - {fileID: 11400000, guid: 238449e9d3424c54eb41b7019de03fb6, type: 2}

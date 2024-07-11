@@ -288,6 +288,7 @@ MonoBehaviour:
   multiEntryPanel: {fileID: 6063163089769251953}
   outlineGroup: {fileID: 3209023394066540830}
   button: {fileID: 2419085112562963132}
+  postProcessing: {fileID: 11400000, guid: e10d201d125fedc4e907399a6410859f, type: 2}
   interactable: 1
   mainId:
     entryId: guard_name

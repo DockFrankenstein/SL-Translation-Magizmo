@@ -4,7 +4,8 @@ using Project.Translation.Data;
 using Project.UI;
 using System.Collections.Generic;
 using qASIC;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using UnityEngine;
+using Project.Text;
 
 namespace Project.GUI.Inspector
 {
@@ -14,6 +15,8 @@ namespace Project.GUI.Inspector
             obj is SaveFile.EntryData data &&
             manager.CurrentVersion.MappedFields.TryGetValue(data.entryId, out MappedField field) &&
             field.mappingContainer is ArrayEntryTranslationMapping;
+
+        [SerializeField] TextPostProcessing previewPostProcessing;
 
         AppReorderableList<string> _contentList;
 
@@ -125,7 +128,7 @@ namespace Project.GUI.Inspector
             var data = _items[element];
 
             data.preview.ChangeDispaly(!string.IsNullOrWhiteSpace(data.field.value));
-            data.preview.value = data.field.value;
+            data.preview.value = previewPostProcessing.ProcessText(data.field.value);
         }
 
         void UpdateComparison(VisualElement element, int index)

@@ -6,6 +6,7 @@ using Project.Translation.Data;
 using qASIC.Files;
 using qASIC;
 using System;
+using Project.Text;
 
 namespace Project.Translation.Mapping
 {
@@ -13,6 +14,7 @@ namespace Project.Translation.Mapping
     public class TranslationVersion : ScriptableObject
     {
         public Version version;
+        public TextPostProcessing exportPostProcessing;
         public MappingBase[] containers = new MappingBase[0];
 
         public MappedField[] GetMappedFields() =>
@@ -75,12 +77,18 @@ namespace Project.Translation.Mapping
         {
             foreach (var container in containers)
             {
-                var txt = container.Export((i, x) => prepareData(new PrepareExportDataArgs()
+                var txt = container.Export((i, x) =>
                 {
-                    container = container,
-                    index = i,
-                    field = x,
-                }));
+                    var txt = prepareData(new PrepareExportDataArgs()
+                    {
+                        container = container,
+                        index = i,
+                        field = x,
+                    });
+
+                    txt ??= exportPostProcessing.ProcessText(txt);
+                    return txt;
+                });
 
                 FileManager.SaveFileWriter($"{path}/{container.fileName}", txt);
             }
@@ -93,7 +101,7 @@ namespace Project.Translation.Mapping
                 var txt = definesFile.Export((i, x) =>
                 {
                     return file.Entries.TryGetValue(x.id, out var val) && !x.IsBlank ?
-                        val.content :
+                        (exportPostProcessing.ProcessText(val.content) ?? val.content) :
                         emptyEntryContent;
                 });
 

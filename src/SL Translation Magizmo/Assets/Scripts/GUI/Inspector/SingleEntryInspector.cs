@@ -2,8 +2,9 @@ using Project.Translation.Mapping;
 using Project.Translation.Data;
 using UnityEngine.UIElements;
 using System.Collections.Generic;
-using System.Diagnostics;
+using UnityEngine;
 using System;
+using Project.Text;
 
 namespace Project.GUI.Inspector
 {
@@ -13,6 +14,8 @@ namespace Project.GUI.Inspector
             obj is SaveFile.EntryData data &&
             manager.CurrentVersion.MappedFields.TryGetValue(data.entryId, out MappedField field) &&
             field.mappingContainer is MultiEntryTranslationMapping;
+
+        [SerializeField] TextPostProcessing previewPostProcessing;
 
         TextField _contentField;
         TextField _contentComparisonField;
@@ -57,7 +60,7 @@ namespace Project.GUI.Inspector
         void UpdatePreview()
         {
             _preview.ChangeDispaly(!string.IsNullOrWhiteSpace(_contentField.value));
-            _preview.value = _contentField.value;
+            _preview.value = previewPostProcessing.ProcessText(_contentField.value);
         }
 
         private void Update()
