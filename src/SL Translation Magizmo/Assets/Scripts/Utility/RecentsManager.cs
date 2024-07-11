@@ -28,6 +28,7 @@ namespace Project
             var txt = File.ReadAllText(fullPath);
 
             Recents = txt.SplitByLines()
+                .Distinct()
                 .ToList();
 
             EnsureCorrectSize();
@@ -36,6 +37,7 @@ namespace Project
 
         public void Add(string item)
         {
+            Recents.Remove(item);
             Recents.Insert(0, item);
 
             EnsureCorrectSize();
