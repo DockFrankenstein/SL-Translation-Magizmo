@@ -19,6 +19,7 @@ namespace Project.GUI.Inspector
         Label _unusedBySLField;
         VisualElement _dynamicValues;
         VisualElement _dynamicValuesContent;
+        TextField _preview;
 
         SaveFile.EntryData entry;
         MappedField entryField;
@@ -36,14 +37,27 @@ namespace Project.GUI.Inspector
             _unusedBySLField = Container.Q<Label>("unused-warning");
             _dynamicValues = Container.Q("dynamic-values");
             _dynamicValuesContent = Container.Q("dynamic-values-content");
+            _preview = Container.Q<TextField>("preview");
 
             _contentField.RegisterValueChangedCallback(args =>
             {
                 if (args.target == _contentField && entry != null)
                     entry.content = _contentField.value;
 
+                UpdatePreview();
+
                 MarkFileDirty();
             });
+
+            _preview.Query<TextElement>()
+                .Build()
+                .ForEach(x => x.enableRichText = true);
+        }
+
+        void UpdatePreview()
+        {
+            _preview.ChangeDispaly(!string.IsNullOrWhiteSpace(_contentField.value));
+            _preview.value = _contentField.value;
         }
 
         private void Update()
@@ -80,6 +94,8 @@ namespace Project.GUI.Inspector
                 _dynamicValuesButtons.Add(button);
                 _dynamicValuesContent.Add(button);
             }
+
+            UpdatePreview();
         }
 
         public void InsertTextAtCarret(string text)

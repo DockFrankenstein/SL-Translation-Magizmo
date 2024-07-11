@@ -85,3 +85,8 @@
     padding-top: 8px;
     padding-bottom: 8px;
 }
+
+.preview > #unity-text-input {
+    height: auto;
+    max-height: 200px;
+}

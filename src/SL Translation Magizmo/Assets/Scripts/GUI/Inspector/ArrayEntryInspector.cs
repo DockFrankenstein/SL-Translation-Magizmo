@@ -4,6 +4,7 @@ using Project.Translation.Data;
 using Project.UI;
 using System.Collections.Generic;
 using qASIC;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Project.GUI.Inspector
 {
@@ -58,6 +59,7 @@ namespace Project.GUI.Inspector
                 .WithMargin(4f);
             
             var field = new TextField();
+            var preview = new TextField();
             var comparisonContent = new TextField();
 
             comparisonContent.multiline = true;
@@ -67,13 +69,27 @@ namespace Project.GUI.Inspector
 
             comparisonContent.AddToClassList("content-compare-content");
 
+            preview.label = "Preview";
+            preview.AddToClassList("text-area");
+            preview.AddToClassList("preview");
+            preview.Query<TextElement>()
+                .Build()
+                .ForEach(x => x.enableRichText = true);
+
+            field.RegisterValueChangedCallback(args =>
+            {
+                UpdatePreview(root);
+            });
+
             _items.Add(root, new ArrayItem()
             {
                 field = field,
+                preview = preview,
                 comparisonField = comparisonContent,
             });
 
             root.Add(field);
+            root.Add(preview);
             root.Add(comparisonContent);
 
             return root;
@@ -81,7 +97,8 @@ namespace Project.GUI.Inspector
 
         void OnBindItem(VisualElement element, int index, string value)
         {
-            UpdateTranslationPreview(element, index);
+            UpdateComparison(element, index);
+            UpdatePreview(element);
         }
 
         void UpdateComponentTranslation()
@@ -89,12 +106,22 @@ namespace Project.GUI.Inspector
             int index = 0;
             foreach (var item in _contentList.GetElements())
             {
-                UpdateTranslationPreview(item, index);
+                UpdateComparison(item, index);
+                UpdatePreview(item);
                 index++;
             }
         }
 
-        void UpdateTranslationPreview(VisualElement element, int index)
+        void UpdatePreview(VisualElement element)
+        {
+            if (!_items.ContainsKey(element)) return;
+            var data = _items[element];
+
+            data.preview.ChangeDispaly(!string.IsNullOrWhiteSpace(data.field.value));
+            data.preview.value = data.field.value;
+        }
+
+        void UpdateComparison(VisualElement element, int index)
         {
             if (!_items.ContainsKey(element)) return;
             var data = _items[element];
@@ -143,6 +170,7 @@ namespace Project.GUI.Inspector
         class ArrayItem
         {
             public TextField field;
+            public TextField preview;
             public TextField comparisonField;
         }
     }

@@ -3,6 +3,7 @@
     <Style src="project://database/Assets/UI/Styles/Inspector.uss?fileID=7433441132597879392&amp;guid=de24a727e02077c449f311c0c7e4f258&amp;type=3#Inspector" />
     <ui:VisualElement name="VisualElement" style="height: 100%;">
         <ui:TextField picking-mode="Ignore" label="Content" multiline="true" name="content" is-delayed="false" class="text-area" />
+        <ui:TextField picking-mode="Ignore" label="Preview" name="preview" multiline="true" readonly="true" class="text-area preview" />
         <ui:VisualElement name="dynamic-values" class="dynamic-values">
             <ui:Label tabindex="-1" text="Dynamic Values" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: auto;" />
             <ui:VisualElement name="dynamic-values-content" class="dynamic-values-buttons" style="flex-grow: 1;" />
