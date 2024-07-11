@@ -45,6 +45,7 @@ namespace Project.Translation
         public UnityEvent OnCancelSave;
         public UnityEvent OnLoad;
 
+        public event Func<string, bool> OnWantToLoad;
         public event Action<object> OnFileChanged;
 
         public OptionsManager Options { get; private set; }
@@ -215,6 +216,9 @@ namespace Project.Translation
 
         public void Open(string path)
         {
+            if (OnWantToLoad?.Invoke(path) == false)
+                return;
+
             IsLoading = true;
             FilePath = path;
 

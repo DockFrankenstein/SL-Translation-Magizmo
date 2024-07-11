@@ -1,4 +1,6 @@
 ﻿using Project.Translation;
+using System;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -19,6 +21,8 @@ namespace Project.GUI.Other
         Button _discard;
         Button _save;
 
+        Action _onContinue;
+
         private void Awake()
         {
             var root = document.rootVisualElement;
@@ -31,19 +35,21 @@ namespace Project.GUI.Other
             _cancel.clicked += () =>
             {
                 root.ChangeDispaly(false);
+                _onContinue = null;
             };
 
             _discard.clicked += () =>
             {
-                _forceQuit = true;
-                Application.Quit();
+                root.ChangeDispaly(false);
+                _onContinue?.Invoke();
+                _onContinue = null;
             };
 
             _save.clicked += () =>
             {
                 root.ChangeDispaly(false);
-                manager.OnSave.AddListener(CloseAfterSave);
-                manager.OnCancelSave.AddListener(OnCloseAfterSaveSaveFail);
+                manager.OnSave.AddListener(OnSave);
+                manager.OnCancelSave.AddListener(OnCancelSave);
 
                 manager.Save();
             };
@@ -52,22 +58,48 @@ namespace Project.GUI.Other
         private void OnEnable()
         {
             Application.wantsToQuit += WantsToQuit;
+            manager.OnWantToLoad += WantsToLoad;
         }
 
         private void OnDisable()
         {
             Application.wantsToQuit -= WantsToQuit;
+            manager.OnWantToLoad -= WantsToLoad;
         }
 
-        void CloseAfterSave()
+        void OnSave()
         {
-            Application.Quit();
+            _onContinue?.Invoke();
+            _onContinue = null;
         }
 
-        void OnCloseAfterSaveSaveFail()
+        void OnCancelSave()
         {
-            manager.OnSave.RemoveListener(CloseAfterSave);
-            manager.OnCancelSave.RemoveListener(OnCloseAfterSaveSaveFail);
+            manager.OnSave.RemoveListener(OnSave);
+            manager.OnCancelSave.RemoveListener(OnCancelSave);
+            _onContinue = null;
+        }
+
+        bool _forceLoad;
+        string _lastPath;
+        bool WantsToLoad(string path)
+        {
+            _lastPath = path;
+
+            if (!_forceLoad && manager.IsDirty)
+            {
+                document.rootVisualElement.ChangeDispaly(true);
+                _onContinue += () =>
+                {
+                    _forceLoad = true;
+                    manager.Open(path);
+                };
+
+                return false;
+            }
+
+            _forceLoad = false;
+            return true;
         }
 
         bool _forceQuit;
@@ -76,9 +108,16 @@ namespace Project.GUI.Other
             if (!_forceQuit && manager.IsDirty)
             {
                 document.rootVisualElement.ChangeDispaly(true);
+                _onContinue += () =>
+                {
+                    _forceQuit = true;
+                    Application.Quit();
+                };
+
                 return false;
             }
 
+            _forceQuit = false;
             return true;
         }
     }
