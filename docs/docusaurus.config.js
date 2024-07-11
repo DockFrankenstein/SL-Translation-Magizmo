@@ -40,7 +40,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          path: "docs/main",
+          path: "docs/manual",
           routeBasePath: '/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -55,14 +55,6 @@ const config = {
   ],
 
   plugins: [
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "manual",
-        path: "docs/manual",
-        routeBasePath: "manual",
-      }
-    ],
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -87,16 +79,10 @@ const config = {
         },
         items: [
           {
-            label: 'Welcome',
-            type: 'doc',
-            docId: 'index',
-            docsPluginId: "default",
-          },
-          {
             label: 'Manual',
             type: 'doc',
             docId: 'index',
-            docsPluginId: "manual",
+            docsPluginId: "default",
           },
           {
             label: 'Contributing',
