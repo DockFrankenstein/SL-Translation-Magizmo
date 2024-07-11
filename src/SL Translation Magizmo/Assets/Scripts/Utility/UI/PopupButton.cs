@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
+using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 
 namespace Project.UI
@@ -70,11 +72,12 @@ namespace Project.UI
             hierarchy.Add(ContentContainer);
 
             style.overflow = Overflow.Visible;
-            
-            clicked += () =>
+
+            RegisterCallback<ClickEvent>(args =>
             {
-                ChangeOpenedState(!Opened);
-            };
+                if (args.target == this)
+                    ChangeOpenedState(!Opened);
+            });
         }
 
         public void ChangeOpenedState(bool state)
