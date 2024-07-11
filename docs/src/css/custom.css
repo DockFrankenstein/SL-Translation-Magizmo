@@ -11,6 +11,8 @@
   --ifm-color-primary-lightest: #54ce5e;
   --ifm-code-font-size: 95%;
   --ifm-leading: 0.6rem;
+
+  --header-border-color: #dddedf;
 }
 
 [data-theme='dark'] {
@@ -21,6 +23,8 @@
   --ifm-color-primary-light: #37be42;
   --ifm-color-primary-lighter: #3ac646;
   --ifm-color-primary-lightest: #54ce5e;
+
+  --header-border-color: #323234;
 }
 
 *
@@ -101,7 +105,7 @@ html[data-theme='dark'] .navbar-github-link:before
 
 .markdown > *   { margin-left: 1.2rem; margin-top: 0.3rem; margin-bottom: 0.6rem; }
 .markdown > nav { margin-left: 0.0rem; margin-top: 0.3rem; margin-bottom: 0.6rem; }
-.markdown > h1  { margin-left: 0.0rem; margin-top: 0.3rem; margin-bottom: 0.6rem; }
-.markdown > h2  { margin-left: 0.4rem; margin-top: 0.3rem; margin-bottom: 0.6rem; }
-.markdown > h3  { margin-left: 0.8rem; margin-top: 0.3rem; margin-bottom: 0.6rem; }
-.markdown > h4  { margin-left: 1.2rem; margin-top: 0.3rem; margin-bottom: 0.6rem; }
+.markdown > h1  { margin-left: 0.0rem; margin-top: 0.3rem; margin-bottom: 0.6rem; border: 0px solid var(--header-border-color); border-bottom-width: 2px; }
+.markdown > h2  { margin-left: 0.4rem; margin-top: 0.3rem; margin-bottom: 0.6rem; border: 0px solid var(--header-border-color); border-bottom-width: 2px; }
+.markdown > h3  { margin-left: 0.8rem; margin-top: 0.3rem; margin-bottom: 0.6rem; border: 0px solid var(--header-border-color); border-bottom-width: 2px; }
+.markdown > h4  { margin-left: 1.2rem; margin-top: 0.3rem; margin-bottom: 0.6rem; border: 0px solid var(--header-border-color); border-bottom-width: 2px; }
