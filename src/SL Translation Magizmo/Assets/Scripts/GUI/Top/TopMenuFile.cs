@@ -1,8 +1,10 @@
 using Project.GUI.Settings;
 using Project.Translation.ImportAndExport;
+using qASIC.Input.Prompts;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Project.GUI.Top
 {
@@ -10,6 +12,7 @@ namespace Project.GUI.Top
     {
         [Space]
         [SerializeField] FilePropertiesWindow properties;
+        [SerializeField] PromptLibrary prompts;
 
         [Label("Import And Export")]
         public List<ImportAndExportBase> importers = new List<ImportAndExportBase>();
@@ -19,9 +22,9 @@ namespace Project.GUI.Top
 
         protected override void CreateMenu()
         {
-            menu.AppendAction("Save", _ => manager.Save());
-            menu.AppendAction("Save As", _ => manager.SaveAs());
-            menu.AppendAction("Open", _ => manager.Open());
+            menu.AppendAction("Save", _ => manager.Save(), DropdownMenuAction.AlwaysEnabled, CreateDataForInput(prompts, manager.i_save));
+            menu.AppendAction("Save As", _ => manager.SaveAs(), DropdownMenuAction.AlwaysEnabled, userData: CreateDataForInput(prompts, manager.i_saveAs));
+            menu.AppendAction("Open", _ => manager.Open(), DropdownMenuAction.AlwaysEnabled, CreateDataForInput(prompts, manager.i_load));
 
             if (manager.RecentFiles != null)
                 foreach (var item in manager.RecentFiles.Take(10))

@@ -1,0 +1,2284 @@
+{
+    "defaultVariant": 0,
+    "variants": [
+        {
+            "keyTypes": [
+                "key_keyboard"
+            ],
+            "deviceTypes": [
+                ""
+            ],
+            "name": "Main",
+            "prompts": [
+                {
+                    "key": "key_keyboard/None",
+                    "displayName": "None",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Backspace",
+                    "displayName": "Backspace",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Tab",
+                    "displayName": "Tab",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Clear",
+                    "displayName": "Clear",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Return",
+                    "displayName": "Return",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Pause",
+                    "displayName": "Pause",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Escape",
+                    "displayName": "Escape",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Space",
+                    "displayName": "Space",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Exclaim",
+                    "displayName": "Exclaim",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/DoubleQuote",
+                    "displayName": "Double Quote",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Hash",
+                    "displayName": "Hash",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Dollar",
+                    "displayName": "Dollar",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Percent",
+                    "displayName": "Percent",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Ampersand",
+                    "displayName": "Ampersand",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Quote",
+                    "displayName": "Quote",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/LeftParen",
+                    "displayName": "Left Paren",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/RightParen",
+                    "displayName": "Right Paren",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Asterisk",
+                    "displayName": "Asterisk",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Plus",
+                    "displayName": "Plus",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Comma",
+                    "displayName": "Comma",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Minus",
+                    "displayName": "Minus",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Period",
+                    "displayName": "Period",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Slash",
+                    "displayName": "Slash",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Alpha0",
+                    "displayName": "0",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Alpha1",
+                    "displayName": "1",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Alpha2",
+                    "displayName": "2",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Alpha3",
+                    "displayName": "3",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Alpha4",
+                    "displayName": "4",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Alpha5",
+                    "displayName": "5",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Alpha6",
+                    "displayName": "6",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Alpha7",
+                    "displayName": "7",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Alpha8",
+                    "displayName": "8",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Alpha9",
+                    "displayName": "9",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Colon",
+                    "displayName": "Colon",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Semicolon",
+                    "displayName": "Semicolon",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Less",
+                    "displayName": "Less",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Equals",
+                    "displayName": "Equals",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Greater",
+                    "displayName": "Greater",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Question",
+                    "displayName": "Question",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/At",
+                    "displayName": "At",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/LeftBracket",
+                    "displayName": "Bracket",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Backslash",
+                    "displayName": "Backslash",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/RightBracket",
+                    "displayName": "Bracket",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Caret",
+                    "displayName": "Caret",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Underscore",
+                    "displayName": "Underscore",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/BackQuote",
+                    "displayName": "Back Quote",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/A",
+                    "displayName": "A",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/B",
+                    "displayName": "B",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/C",
+                    "displayName": "C",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/D",
+                    "displayName": "D",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/E",
+                    "displayName": "E",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F",
+                    "displayName": "F",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/G",
+                    "displayName": "G",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/H",
+                    "displayName": "H",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/I",
+                    "displayName": "I",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/J",
+                    "displayName": "J",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/K",
+                    "displayName": "K",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/L",
+                    "displayName": "L",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/M",
+                    "displayName": "M",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/N",
+                    "displayName": "N",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/O",
+                    "displayName": "O",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/P",
+                    "displayName": "P",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Q",
+                    "displayName": "Q",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/R",
+                    "displayName": "R",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/S",
+                    "displayName": "S",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/T",
+                    "displayName": "T",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/U",
+                    "displayName": "U",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/V",
+                    "displayName": "V",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/W",
+                    "displayName": "W",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/X",
+                    "displayName": "X",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Y",
+                    "displayName": "Y",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Z",
+                    "displayName": "Z",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/LeftCurlyBracket",
+                    "displayName": "Left Curly Bracket",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Pipe",
+                    "displayName": "Pipe",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/RightCurlyBracket",
+                    "displayName": "Right Curly Bracket",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Tilde",
+                    "displayName": "Tilde",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Delete",
+                    "displayName": "Delete",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Keypad0",
+                    "displayName": "0",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Keypad1",
+                    "displayName": "1",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Keypad2",
+                    "displayName": "2",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Keypad3",
+                    "displayName": "3",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Keypad4",
+                    "displayName": "4",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Keypad5",
+                    "displayName": "5",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Keypad6",
+                    "displayName": "6",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Keypad7",
+                    "displayName": "7",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Keypad8",
+                    "displayName": "8",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Keypad9",
+                    "displayName": "9",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/KeypadPeriod",
+                    "displayName": ".",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/KeypadDivide",
+                    "displayName": "/",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/KeypadMultiply",
+                    "displayName": "*",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/KeypadMinus",
+                    "displayName": "-",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/KeypadPlus",
+                    "displayName": "+",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/KeypadEnter",
+                    "displayName": "Enter",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/KeypadEquals",
+                    "displayName": "=",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/UpArrow",
+                    "displayName": "Up",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/DownArrow",
+                    "displayName": "Down",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/RightArrow",
+                    "displayName": "Right",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/LeftArrow",
+                    "displayName": "Left",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Insert",
+                    "displayName": "Insert",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Home",
+                    "displayName": "Home",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/End",
+                    "displayName": "End",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/PageUp",
+                    "displayName": "Page Up",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/PageDown",
+                    "displayName": "Page Down",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F1",
+                    "displayName": "F1",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F2",
+                    "displayName": "F2",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F3",
+                    "displayName": "F3",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F4",
+                    "displayName": "F4",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F5",
+                    "displayName": "F5",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F6",
+                    "displayName": "F6",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F7",
+                    "displayName": "F7",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F8",
+                    "displayName": "F8",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F9",
+                    "displayName": "F9",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F10",
+                    "displayName": "F10",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F11",
+                    "displayName": "F11",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F12",
+                    "displayName": "F12",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F13",
+                    "displayName": "F13",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F14",
+                    "displayName": "F14",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/F15",
+                    "displayName": "F15",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Numlock",
+                    "displayName": "Numlock",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/CapsLock",
+                    "displayName": "Caps Lock",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/ScrollLock",
+                    "displayName": "Scroll Lock",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/RightShift",
+                    "displayName": "Shift",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/LeftShift",
+                    "displayName": "Shift",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/RightControl",
+                    "displayName": "Ctrl",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/LeftControl",
+                    "displayName": "Ctrl",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/RightAlt",
+                    "displayName": "Alt",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/LeftAlt",
+                    "displayName": "Alt",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/RightMeta",
+                    "displayName": "Meta",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/LeftApple",
+                    "displayName": "Apple",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/LeftWindows",
+                    "displayName": "Windows",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/RightWindows",
+                    "displayName": "Windows",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/AltGr",
+                    "displayName": "Alt Gr",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Help",
+                    "displayName": "Help",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Print",
+                    "displayName": "Print",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/SysReq",
+                    "displayName": "Sys Req",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Break",
+                    "displayName": "Break",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Menu",
+                    "displayName": "Menu",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Mouse0",
+                    "displayName": "RMB",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Mouse1",
+                    "displayName": "LMB",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Mouse2",
+                    "displayName": "MMB",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Mouse3",
+                    "displayName": "Mouse3",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Mouse4",
+                    "displayName": "Mouse4",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Mouse5",
+                    "displayName": "Mouse5",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Mouse6",
+                    "displayName": "Mouse6",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton0",
+                    "displayName": "Joystick Button0",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton1",
+                    "displayName": "Joystick Button1",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton2",
+                    "displayName": "Joystick Button2",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton3",
+                    "displayName": "Joystick Button3",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton4",
+                    "displayName": "Joystick Button4",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton5",
+                    "displayName": "Joystick Button5",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton6",
+                    "displayName": "Joystick Button6",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton7",
+                    "displayName": "Joystick Button7",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton8",
+                    "displayName": "Joystick Button8",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton9",
+                    "displayName": "Joystick Button9",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton10",
+                    "displayName": "Joystick Button10",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton11",
+                    "displayName": "Joystick Button11",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton12",
+                    "displayName": "Joystick Button12",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton13",
+                    "displayName": "Joystick Button13",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton14",
+                    "displayName": "Joystick Button14",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton15",
+                    "displayName": "Joystick Button15",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton16",
+                    "displayName": "Joystick Button16",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton17",
+                    "displayName": "Joystick Button17",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton18",
+                    "displayName": "Joystick Button18",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/JoystickButton19",
+                    "displayName": "Joystick Button19",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button0",
+                    "displayName": "Joystick1 Button0",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button1",
+                    "displayName": "Joystick1 Button1",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button2",
+                    "displayName": "Joystick1 Button2",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button3",
+                    "displayName": "Joystick1 Button3",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button4",
+                    "displayName": "Joystick1 Button4",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button5",
+                    "displayName": "Joystick1 Button5",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button6",
+                    "displayName": "Joystick1 Button6",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button7",
+                    "displayName": "Joystick1 Button7",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button8",
+                    "displayName": "Joystick1 Button8",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button9",
+                    "displayName": "Joystick1 Button9",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button10",
+                    "displayName": "Joystick1 Button10",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button11",
+                    "displayName": "Joystick1 Button11",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button12",
+                    "displayName": "Joystick1 Button12",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button13",
+                    "displayName": "Joystick1 Button13",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button14",
+                    "displayName": "Joystick1 Button14",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button15",
+                    "displayName": "Joystick1 Button15",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button16",
+                    "displayName": "Joystick1 Button16",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button17",
+                    "displayName": "Joystick1 Button17",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button18",
+                    "displayName": "Joystick1 Button18",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick1Button19",
+                    "displayName": "Joystick1 Button19",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button0",
+                    "displayName": "Joystick2 Button0",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button1",
+                    "displayName": "Joystick2 Button1",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button2",
+                    "displayName": "Joystick2 Button2",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button3",
+                    "displayName": "Joystick2 Button3",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button4",
+                    "displayName": "Joystick2 Button4",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button5",
+                    "displayName": "Joystick2 Button5",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button6",
+                    "displayName": "Joystick2 Button6",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button7",
+                    "displayName": "Joystick2 Button7",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button8",
+                    "displayName": "Joystick2 Button8",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button9",
+                    "displayName": "Joystick2 Button9",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button10",
+                    "displayName": "Joystick2 Button10",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button11",
+                    "displayName": "Joystick2 Button11",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button12",
+                    "displayName": "Joystick2 Button12",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button13",
+                    "displayName": "Joystick2 Button13",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button14",
+                    "displayName": "Joystick2 Button14",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button15",
+                    "displayName": "Joystick2 Button15",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button16",
+                    "displayName": "Joystick2 Button16",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button17",
+                    "displayName": "Joystick2 Button17",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button18",
+                    "displayName": "Joystick2 Button18",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick2Button19",
+                    "displayName": "Joystick2 Button19",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button0",
+                    "displayName": "Joystick3 Button0",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button1",
+                    "displayName": "Joystick3 Button1",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button2",
+                    "displayName": "Joystick3 Button2",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button3",
+                    "displayName": "Joystick3 Button3",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button4",
+                    "displayName": "Joystick3 Button4",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button5",
+                    "displayName": "Joystick3 Button5",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button6",
+                    "displayName": "Joystick3 Button6",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button7",
+                    "displayName": "Joystick3 Button7",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button8",
+                    "displayName": "Joystick3 Button8",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button9",
+                    "displayName": "Joystick3 Button9",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button10",
+                    "displayName": "Joystick3 Button10",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button11",
+                    "displayName": "Joystick3 Button11",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button12",
+                    "displayName": "Joystick3 Button12",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button13",
+                    "displayName": "Joystick3 Button13",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button14",
+                    "displayName": "Joystick3 Button14",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button15",
+                    "displayName": "Joystick3 Button15",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button16",
+                    "displayName": "Joystick3 Button16",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button17",
+                    "displayName": "Joystick3 Button17",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button18",
+                    "displayName": "Joystick3 Button18",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick3Button19",
+                    "displayName": "Joystick3 Button19",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button0",
+                    "displayName": "Joystick4 Button0",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button1",
+                    "displayName": "Joystick4 Button1",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button2",
+                    "displayName": "Joystick4 Button2",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button3",
+                    "displayName": "Joystick4 Button3",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button4",
+                    "displayName": "Joystick4 Button4",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button5",
+                    "displayName": "Joystick4 Button5",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button6",
+                    "displayName": "Joystick4 Button6",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button7",
+                    "displayName": "Joystick4 Button7",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button8",
+                    "displayName": "Joystick4 Button8",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button9",
+                    "displayName": "Joystick4 Button9",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button10",
+                    "displayName": "Joystick4 Button10",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button11",
+                    "displayName": "Joystick4 Button11",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button12",
+                    "displayName": "Joystick4 Button12",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button13",
+                    "displayName": "Joystick4 Button13",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button14",
+                    "displayName": "Joystick4 Button14",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button15",
+                    "displayName": "Joystick4 Button15",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button16",
+                    "displayName": "Joystick4 Button16",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button17",
+                    "displayName": "Joystick4 Button17",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button18",
+                    "displayName": "Joystick4 Button18",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick4Button19",
+                    "displayName": "Joystick4 Button19",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button0",
+                    "displayName": "Joystick5 Button0",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button1",
+                    "displayName": "Joystick5 Button1",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button2",
+                    "displayName": "Joystick5 Button2",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button3",
+                    "displayName": "Joystick5 Button3",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button4",
+                    "displayName": "Joystick5 Button4",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button5",
+                    "displayName": "Joystick5 Button5",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button6",
+                    "displayName": "Joystick5 Button6",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button7",
+                    "displayName": "Joystick5 Button7",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button8",
+                    "displayName": "Joystick5 Button8",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button9",
+                    "displayName": "Joystick5 Button9",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button10",
+                    "displayName": "Joystick5 Button10",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button11",
+                    "displayName": "Joystick5 Button11",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button12",
+                    "displayName": "Joystick5 Button12",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button13",
+                    "displayName": "Joystick5 Button13",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button14",
+                    "displayName": "Joystick5 Button14",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button15",
+                    "displayName": "Joystick5 Button15",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button16",
+                    "displayName": "Joystick5 Button16",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button17",
+                    "displayName": "Joystick5 Button17",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button18",
+                    "displayName": "Joystick5 Button18",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick5Button19",
+                    "displayName": "Joystick5 Button19",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button0",
+                    "displayName": "Joystick6 Button0",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button1",
+                    "displayName": "Joystick6 Button1",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button2",
+                    "displayName": "Joystick6 Button2",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button3",
+                    "displayName": "Joystick6 Button3",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button4",
+                    "displayName": "Joystick6 Button4",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button5",
+                    "displayName": "Joystick6 Button5",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button6",
+                    "displayName": "Joystick6 Button6",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button7",
+                    "displayName": "Joystick6 Button7",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button8",
+                    "displayName": "Joystick6 Button8",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button9",
+                    "displayName": "Joystick6 Button9",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button10",
+                    "displayName": "Joystick6 Button10",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button11",
+                    "displayName": "Joystick6 Button11",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button12",
+                    "displayName": "Joystick6 Button12",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button13",
+                    "displayName": "Joystick6 Button13",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button14",
+                    "displayName": "Joystick6 Button14",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button15",
+                    "displayName": "Joystick6 Button15",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button16",
+                    "displayName": "Joystick6 Button16",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button17",
+                    "displayName": "Joystick6 Button17",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button18",
+                    "displayName": "Joystick6 Button18",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick6Button19",
+                    "displayName": "Joystick6 Button19",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button0",
+                    "displayName": "Joystick7 Button0",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button1",
+                    "displayName": "Joystick7 Button1",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button2",
+                    "displayName": "Joystick7 Button2",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button3",
+                    "displayName": "Joystick7 Button3",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button4",
+                    "displayName": "Joystick7 Button4",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button5",
+                    "displayName": "Joystick7 Button5",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button6",
+                    "displayName": "Joystick7 Button6",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button7",
+                    "displayName": "Joystick7 Button7",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button8",
+                    "displayName": "Joystick7 Button8",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button9",
+                    "displayName": "Joystick7 Button9",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button10",
+                    "displayName": "Joystick7 Button10",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button11",
+                    "displayName": "Joystick7 Button11",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button12",
+                    "displayName": "Joystick7 Button12",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button13",
+                    "displayName": "Joystick7 Button13",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button14",
+                    "displayName": "Joystick7 Button14",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button15",
+                    "displayName": "Joystick7 Button15",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button16",
+                    "displayName": "Joystick7 Button16",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button17",
+                    "displayName": "Joystick7 Button17",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button18",
+                    "displayName": "Joystick7 Button18",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick7Button19",
+                    "displayName": "Joystick7 Button19",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button0",
+                    "displayName": "Joystick8 Button0",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button1",
+                    "displayName": "Joystick8 Button1",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button2",
+                    "displayName": "Joystick8 Button2",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button3",
+                    "displayName": "Joystick8 Button3",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button4",
+                    "displayName": "Joystick8 Button4",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button5",
+                    "displayName": "Joystick8 Button5",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button6",
+                    "displayName": "Joystick8 Button6",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button7",
+                    "displayName": "Joystick8 Button7",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button8",
+                    "displayName": "Joystick8 Button8",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button9",
+                    "displayName": "Joystick8 Button9",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button10",
+                    "displayName": "Joystick8 Button10",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button11",
+                    "displayName": "Joystick8 Button11",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button12",
+                    "displayName": "Joystick8 Button12",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button13",
+                    "displayName": "Joystick8 Button13",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button14",
+                    "displayName": "Joystick8 Button14",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button15",
+                    "displayName": "Joystick8 Button15",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button16",
+                    "displayName": "Joystick8 Button16",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button17",
+                    "displayName": "Joystick8 Button17",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button18",
+                    "displayName": "Joystick8 Button18",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "key": "key_keyboard/Joystick8Button19",
+                    "displayName": "Joystick8 Button19",
+                    "sprite": {
+                        "instanceID": 0
+                    }
+                }
+            ]
+        }
+    ]
+}

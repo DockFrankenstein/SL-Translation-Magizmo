@@ -280,6 +280,9 @@
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
+    min-width: 300px;
+    max-width: 800px;
+    padding-left: 4px;
 }
 
 .fab-dropdown__item:hover {
@@ -324,14 +327,12 @@
     padding-top: 0;
     padding-bottom: 0;
     -unity-text-align: middle-left;
-    min-width: 300px;
     flex-grow: 1;
     font-size: 24px;
     color: rgb(0, 0, 0);
     width: auto;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 800px;
     overflow: hidden;
     -unity-text-overflow-position: middle;
 }

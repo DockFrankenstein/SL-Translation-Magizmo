@@ -36,9 +36,9 @@ namespace Project.Translation
         public string FilePath { get; private set; } = null;
 
         [Label("Shortcuts")]
-        [SerializeField] InputMapItemReference i_save;
-        [SerializeField] InputMapItemReference i_saveAs;
-        [SerializeField] InputMapItemReference i_load;
+        public InputMapItemReference i_save;
+        public InputMapItemReference i_saveAs;
+        public InputMapItemReference i_load;
 
         [Label("Events")]
         public UnityEvent OnSave;

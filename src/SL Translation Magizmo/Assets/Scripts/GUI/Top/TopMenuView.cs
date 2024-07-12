@@ -2,6 +2,7 @@
 using Project.GUI.Hierarchy;
 using Project.GUI.Inspector;
 using Project.GUI.Preview;
+using qASIC.Input.Prompts;
 using qASIC.Options;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -14,6 +15,8 @@ namespace Project.GUI.Top
         [SerializeField] PreviewManager preview;
         [SerializeField] InspectorDisplay inspector;
         [SerializeField] ComparisonManagerUI comparison;
+
+        [SerializeField] PromptLibrary prompts;
 
         [Option("view_show_ids")]
         public static bool Sett_ShowIds { get; private set; } = false;
@@ -38,10 +41,10 @@ namespace Project.GUI.Top
 
             menu.AppendSeparator();
 
-            menu.AppendAction("Previous Entry", _ => hierarchy.SelectBy(-1));
-            menu.AppendAction("Next Entry", _ => hierarchy.SelectBy(1));
-            menu.AppendAction("Previous Scene", _ => preview.SelectBy(-1));
-            menu.AppendAction("Next Scene", _ => preview.SelectBy(1));
+            menu.AppendAction("Previous Entry", _ => hierarchy.SelectBy(-1), DropdownMenuAction.AlwaysEnabled, CreateDataForInput(prompts, hierarchy.i_previous));
+            menu.AppendAction("Next Entry", _ => hierarchy.SelectBy(1), DropdownMenuAction.AlwaysEnabled, CreateDataForInput(prompts, hierarchy.i_next));
+            menu.AppendAction("Previous Scene", _ => preview.SelectBy(-1), DropdownMenuAction.AlwaysEnabled, CreateDataForInput(prompts, preview.i_previous));
+            menu.AppendAction("Next Scene", _ => preview.SelectBy(1), DropdownMenuAction.AlwaysEnabled, CreateDataForInput(prompts, preview.i_next));
 
             menu.AppendSeparator();
 

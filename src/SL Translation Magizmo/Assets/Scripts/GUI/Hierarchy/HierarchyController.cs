@@ -29,8 +29,8 @@ namespace Project.GUI.Hierarchy
         [Header("Shortcuts")]
         [SerializeField] float repeatWaitTime = 1f;
         [SerializeField] float repeatTime = 0.1f;
-        [SerializeField] InputMapItemReference i_previous;
-        [SerializeField] InputMapItemReference i_next;
+        public InputMapItemReference i_previous;
+        public InputMapItemReference i_next;
 
         ScrollView scroll;
         TextField search;

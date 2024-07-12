@@ -28,8 +28,8 @@ namespace Project.GUI.Preview
         [Label("Input")]
         [SerializeField] float repeatWaitTime = 1f;
         [SerializeField] float repeatTime = 0.1f;
-        [SerializeField] InputMapItemReference i_previous;
-        [SerializeField] InputMapItemReference i_next;
+        public InputMapItemReference i_previous;
+        public InputMapItemReference i_next;
 
         public Dictionary<string, PreviewScene> ScenesForIds { get; private set; } = new Dictionary<string, PreviewScene>();
         public List<PreviewScene> VersionScenes { get; private set; } = new List<PreviewScene>();
