@@ -27,6 +27,8 @@ MonoBehaviour:
     - rid: 8343636803427500033
     - rid: 8343636803427500035
     - rid: 8343636803427500034
+    - rid: 7054820926352523264
+    - rid: 7054820926352523265
   references:
     version: 2
     RefIds:
@@ -79,6 +81,22 @@ MonoBehaviour:
         - key_keyboard/LeftControl
         - key_keyboard/LeftShift
         - key_keyboard/S
+    - rid: 7054820926352523264
+      type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
+      data:
+        itemName: Undo
+        guid: d5380c00-6cf2-4528-8435-d447ecb72624
+        keys:
+        - key_keyboard/LeftControl
+        - key_keyboard/Z
+    - rid: 7054820926352523265
+      type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
+      data:
+        itemName: Redo
+        guid: 5902e109-7ec1-4a3b-bbaf-0319350d17fd
+        keys:
+        - key_keyboard/LeftControl
+        - key_keyboard/Y
     - rid: 8343636803427500032
       type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
       data:

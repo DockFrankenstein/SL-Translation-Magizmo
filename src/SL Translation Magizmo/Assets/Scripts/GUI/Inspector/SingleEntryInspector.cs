@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Project.Text;
+using Project.Undo;
 
 namespace Project.GUI.Inspector
 {
@@ -31,6 +32,8 @@ namespace Project.GUI.Inspector
 
         Action _onNextUpdate;
 
+        UndoItem<string> _undoItem;
+
         protected override void Awake()
         {
             base.Awake();
@@ -49,12 +52,35 @@ namespace Project.GUI.Inspector
 
                 UpdatePreview();
 
+                if (entry != null)
+                {
+                    if (!undo.IsLatest(_undoItem))
+                    {
+                        _undoItem = new UndoItem<string>(args.previousValue, a => manager.File.Entries[entry.entryId].content = a);
+                        undo.AddStep(_undoItem);
+                    }
+
+                    _undoItem.newValue = _contentField.value;
+                }
+
                 MarkFileDirty();
             });
 
             _preview.Query<TextElement>()
                 .Build()
                 .ForEach(x => x.enableRichText = true);
+
+            undo.OnUndo.AddListener(OnUndoChanged);
+            undo.OnRedo.AddListener(OnUndoChanged);
+        }
+
+        void OnUndoChanged()
+        {
+            if (entry == null)
+                return;
+
+            _contentField.SetValueWithoutNotify(entry.content);
+            UpdatePreview();
         }
 
         void UpdatePreview()
@@ -125,6 +151,8 @@ namespace Project.GUI.Inspector
         public override void Uninitialize()
         {
             base.Uninitialize();
+
+            _undoItem = null;
 
             entry = null;
             manager.ComparisonManager.OnChangeCurrent -= () => UpdateContentComparison();

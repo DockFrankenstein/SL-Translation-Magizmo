@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using Project.Translation;
 using UnityEngine.UIElements;
+using Project.Undo;
 
 namespace Project.GUI.Inspector
 {
@@ -10,6 +11,7 @@ namespace Project.GUI.Inspector
 
         [HideInInspector] public TranslationManager manager;
         [HideInInspector] public InspectorDisplay inspector;
+        [HideInInspector] public UndoManager undo;
 
         public TemplateContainer Container { get; protected set; }
 

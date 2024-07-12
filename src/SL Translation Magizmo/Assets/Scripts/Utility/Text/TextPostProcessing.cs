@@ -17,6 +17,9 @@ namespace Project.Text
         /// <returns>Processed text.</returns>
         public string ProcessText(string text)
         {
+            if (text == null)
+                return text;
+
             List<SectionData> data = new List<SectionData>();
 
             StringBuilder normalText = new StringBuilder();

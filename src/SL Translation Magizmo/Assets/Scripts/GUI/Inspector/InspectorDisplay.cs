@@ -4,6 +4,7 @@ using Project.GUI.Preview;
 using Project.GUI.Hierarchy;
 using UnityEngine.UIElements;
 using UnityEngine.Serialization;
+using Project.Undo;
 
 namespace Project.GUI.Inspector
 {
@@ -14,6 +15,7 @@ namespace Project.GUI.Inspector
         [Space]
         public TranslationManager manager;
         public HierarchyController hierarchy;
+        public UndoManager undo;
         public InspectorDisplayPanel[] inspectors;
         public InspectorNameProvider[] nameProviders;
         [FormerlySerializedAs("previewSceneManager")]
@@ -61,6 +63,7 @@ namespace Project.GUI.Inspector
             {
                 item.manager = manager;
                 item.inspector = this;
+                item.undo = undo;
             }
 
             ReloadInspector();

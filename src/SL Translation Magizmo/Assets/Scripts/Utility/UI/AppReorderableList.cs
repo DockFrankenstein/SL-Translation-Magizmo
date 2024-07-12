@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UIElements;
 using UnityEngine;
 using System.Linq;
+using Project.Undo;
 
 namespace Project.UI
 {
@@ -55,9 +56,23 @@ namespace Project.UI
             List.itemsAdded += _ =>
             {
                 OnChanged?.Invoke();
+                _lastEditedItem = -1;
+                OnUndoEvent?.Invoke();
             };
-            List.itemsRemoved += _ => OnChanged?.Invoke();
-            List.itemIndexChanged += (_, _) => OnChanged?.Invoke();
+
+            List.itemsRemoved += _ =>
+            {
+                OnUndoEvent?.Invoke();
+                OnChanged?.Invoke();
+                _lastEditedItem = -1;
+            };
+
+            List.itemIndexChanged += (_, _) =>
+            {
+                OnChanged?.Invoke();
+                _lastEditedItem = -1;
+                OnUndoEvent?.Invoke();
+            };
         }
 
         public IEnumerable<VisualElement> GetElements() =>
@@ -97,6 +112,8 @@ namespace Project.UI
                     Source.RemoveAt(fields[root]);
                     List.RefreshItems();
                     OnChanged?.Invoke();
+                    _lastEditedItem = -1;
+                    OnUndoEvent?.Invoke();
                 };
 
                 root.Add(removeButton);
@@ -114,8 +131,15 @@ namespace Project.UI
                 {
                     if (args.target == field)
                     {
-                        Source[fields[root]] = field.value;
+                        var index = fields[root];
+                        Source[index] = field.value;
                         OnChanged?.Invoke();
+
+                        if (_lastEditedItem != index)
+                        {
+                            _lastEditedItem = index;
+                            OnUndoEvent?.Invoke();
+                        }
                     }
                 });
             }
@@ -131,6 +155,9 @@ namespace Project.UI
         public event Action<VisualElement, int, T> OnBindItem;
         public event Action<VisualElement> OnUnbindItem;
         public event Action OnChanged;
+        public event Action OnUndoEvent;
+
+        int _lastEditedItem = -1;
 
         List<T> _source;
         public List<T> Source

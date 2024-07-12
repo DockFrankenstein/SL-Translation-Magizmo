@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using qASIC;
 using UnityEngine;
 using Project.Text;
+using Project.Undo;
 
 namespace Project.GUI.Inspector
 {
@@ -24,6 +25,10 @@ namespace Project.GUI.Inspector
         MappedField entryField;
         Label _unusedBySLField;
 
+        UndoItem<string> _lastUndo;
+
+        string prevContent;
+
         Dictionary<VisualElement, ArrayItem> _items = new Dictionary<VisualElement, ArrayItem>();
 
         protected override void Awake()
@@ -40,9 +45,23 @@ namespace Project.GUI.Inspector
             {
                 if (entry != null)
                 {
+                    prevContent = entry.content;
                     entry.content = _contentList.Source.ToEntryContent();
+
+                    if (_lastUndo != null)
+                        _lastUndo.newValue = entry.content;
+
                     MarkFileDirty();
                 }
+            };
+
+            _contentList.OnUndoEvent += () =>
+            {
+                if (entry == null)
+                    return;
+
+                _lastUndo = new UndoItem<string>(prevContent, entry.content, a => manager.File.Entries[entry.entryId].content = a);
+                undo.AddStep(_lastUndo);
             };
 
             _contentList.OnDestroyItem += x =>
@@ -51,6 +70,17 @@ namespace Project.GUI.Inspector
             };
 
             manager.ComparisonManager.OnChangeCurrent += UpdateComponentTranslation;
+
+            undo.OnUndo.AddListener(OnUndoChange);
+            undo.OnRedo.AddListener(OnUndoChange);
+        }
+
+        void OnUndoChange()
+        {
+            _contentList.Source.Clear();
+            _contentList.Source.AddRange(entry.content.EntryContentToArray());
+            _contentList.List.RefreshItems();
+            UpdateComponentTranslation();
         }
 
         BaseField<string> GetField(VisualElement el) =>
@@ -158,12 +188,12 @@ namespace Project.GUI.Inspector
         {
             base.Initialize();
 
-            _items.Clear();
-
             entry = inspector.SelectedObject as SaveFile.EntryData;
             entryField = manager.CurrentVersion.MappedFields.TryGetValue(entry.entryId, out var f) ?
                 f :
                 null;
+
+            prevContent = entry?.content ?? string.Empty;
 
             _unusedBySLField.ChangeDispaly(entryField?.notYetAddedToSL ?? false);
             _contentList.Source.AddRange(entry.content.EntryContentToArray());
@@ -175,6 +205,7 @@ namespace Project.GUI.Inspector
             base.Uninitialize();
             entry = null;
             _contentList.Source.Clear();
+            _lastUndo = null;
         }
 
         class ArrayItem
