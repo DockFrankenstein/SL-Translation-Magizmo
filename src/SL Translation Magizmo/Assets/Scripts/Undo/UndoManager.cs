@@ -99,11 +99,18 @@ namespace Project.Undo
         }
 
 
-        public bool IsDirty { get; }
+        public bool IsDirty => Items.Count != 0 &&
+            !(Items[GetHeadPosition() - 1] is SaveUndoItem);
 
         public void ClearDirty()
         {
+            AddStep(new SaveUndoItem(), this);
+        }
 
+        public void ClearAll(object context = null)
+        {
+            Items.Clear();
+            OnChanged?.Invoke(context);
         }
 
         public bool IsLatest(UndoItem item) =>

@@ -241,7 +241,7 @@ namespace Project.Translation
 
             IsLoading = false;
             OnLoad.Invoke();
-            undo.ClearDirty();
+            undo.ClearAll();
             recentFiles.Add(path);
         }
     }
