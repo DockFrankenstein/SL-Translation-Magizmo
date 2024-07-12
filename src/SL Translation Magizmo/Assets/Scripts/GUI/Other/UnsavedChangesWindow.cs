@@ -1,4 +1,5 @@
 ﻿using Project.Translation;
+using Project.Undo;
 using System;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
@@ -9,12 +10,14 @@ namespace Project.GUI.Other
     public class UnsavedChangesWindow : MonoBehaviour
     {
         [SerializeField] TranslationManager manager;
+        [SerializeField] UndoManager undo;
         [SerializeField] UIDocument document;
 
         private void Reset()
         {
             document = GetComponent<UIDocument>();
             manager = FindObjectOfType<TranslationManager>();
+            undo = FindObjectOfType<UndoManager>();
         }
 
         Button _cancel;
@@ -86,7 +89,7 @@ namespace Project.GUI.Other
         {
             _lastPath = path;
 
-            if (!_forceLoad && manager.IsDirty)
+            if (!_forceLoad && undo.IsDirty)
             {
                 document.rootVisualElement.ChangeDispaly(true);
                 _onContinue += () =>
@@ -105,7 +108,7 @@ namespace Project.GUI.Other
         bool _forceQuit;
         bool WantsToQuit()
         {
-            if (!_forceQuit && manager.IsDirty)
+            if (!_forceQuit && undo.IsDirty)
             {
                 document.rootVisualElement.ChangeDispaly(true);
                 _onContinue += () =>

@@ -11,7 +11,7 @@ using Project.Translation.Comparison;
 using qASIC.Options;
 using qASIC.Files;
 using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
+using Project.Undo;
 
 namespace Project.Translation
 {
@@ -31,6 +31,7 @@ namespace Project.Translation
 
         [Label("Application")]
         [SerializeField] ErrorWindow errorWindow;
+        [SerializeField] UndoManager undo;
 
         public SaveFile File { get; private set; } = null;
         public string FilePath { get; private set; } = null;
@@ -46,7 +47,6 @@ namespace Project.Translation
         public UnityEvent OnLoad;
 
         public event Func<string, bool> OnWantToLoad;
-        public event Action<object> OnFileChanged;
 
         public OptionsManager Options { get; private set; }
 
@@ -70,7 +70,6 @@ namespace Project.Translation
         public event Action<TranslationVersion> OnCurrentVersionChanged;
 
         public bool IsLoading { get; private set; }
-        public bool IsDirty { get; private set; }
 
         public TranslationVersion GetVersion(Version version) =>
             versions
@@ -162,7 +161,7 @@ namespace Project.Translation
             {
                 Serializer.Save(FilePath, File);
                 recentFiles.Add(FilePath);
-                ClearDirty();
+                undo.ClearDirty();
                 Debug.Log("Saved file");
                 OnSave.Invoke();
             }
@@ -242,22 +241,8 @@ namespace Project.Translation
 
             IsLoading = false;
             OnLoad.Invoke();
-            MarkFileDirty(this);
-            ClearDirty();
+            undo.ClearDirty();
             recentFiles.Add(path);
-        }
-
-        public void MarkFileDirty(object fromContext)
-        {
-            PUtility.ChangeWindowTitle($"*{Application.productName}");
-            IsDirty = true;
-            OnFileChanged?.Invoke(fromContext);
-        }
-
-        private void ClearDirty()
-        {
-            IsDirty = false;
-            PUtility.ChangeWindowTitle(Application.productName);
         }
     }
 }

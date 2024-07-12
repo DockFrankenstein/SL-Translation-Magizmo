@@ -8,6 +8,8 @@ namespace Project.Undo
         public abstract void Undo();
 
         public abstract void Redo();
+
+        public virtual bool Skip => false;
     }
 
     public class UndoItem<T> : UndoItem
@@ -36,5 +38,13 @@ namespace Project.Undo
         {
             ApplyValue.Invoke(newValue);
         }
+    }
+
+    public class SaveUndoItem : UndoItem
+    {
+        public override void Undo() { }
+        public override void Redo() { }
+
+        public override bool Skip => true;
     }
 }

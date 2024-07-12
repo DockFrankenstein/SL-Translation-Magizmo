@@ -49,9 +49,10 @@ namespace Project.GUI.Inspector
                     entry.content = _contentList.Source.ToEntryContent();
 
                     if (_lastUndo != null)
+                    {
                         _lastUndo.newValue = entry.content;
-
-                    MarkFileDirty();
+                        undo.UpdateLatestStep();
+                    }
                 }
             };
 
@@ -61,7 +62,7 @@ namespace Project.GUI.Inspector
                     return;
 
                 _lastUndo = new UndoItem<string>(prevContent, entry.content, a => manager.File.Entries[entry.entryId].content = a);
-                undo.AddStep(_lastUndo);
+                undo.AddStep(_lastUndo, this);
             };
 
             _contentList.OnDestroyItem += x =>
@@ -70,17 +71,6 @@ namespace Project.GUI.Inspector
             };
 
             manager.ComparisonManager.OnChangeCurrent += UpdateComponentTranslation;
-
-            undo.OnUndo.AddListener(OnUndoChange);
-            undo.OnRedo.AddListener(OnUndoChange);
-        }
-
-        void OnUndoChange()
-        {
-            _contentList.Source.Clear();
-            _contentList.Source.AddRange(entry.content.EntryContentToArray());
-            _contentList.List.RefreshItems();
-            UpdateComponentTranslation();
         }
 
         BaseField<string> GetField(VisualElement el) =>

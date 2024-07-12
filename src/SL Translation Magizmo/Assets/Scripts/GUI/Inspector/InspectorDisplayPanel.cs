@@ -31,10 +31,5 @@ namespace Project.GUI.Inspector
         }
 
         public virtual bool ShouldOpen(IApplicationObject obj) => false;
-
-        public void MarkFileDirty()
-        {
-            manager.MarkFileDirty(this);
-        }
     }
 }

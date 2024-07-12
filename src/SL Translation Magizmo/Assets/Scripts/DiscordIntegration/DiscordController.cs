@@ -6,6 +6,7 @@ using qASIC.Options;
 using DiscordClient = Discord.Discord;
 using Project.GUI.Hierarchy;
 using System;
+using Project.Undo;
 
 namespace Project.DiscordIntegration
 {
@@ -14,6 +15,7 @@ namespace Project.DiscordIntegration
         [Label("Assign")]
         [SerializeField] TranslationManager manager;
         [SerializeField] HierarchyController hierarchy;
+        [SerializeField] UndoManager undo;
 
         [Label("Client")]
         [EditorButton(nameof(UpdateActivity))]
@@ -56,14 +58,14 @@ namespace Project.DiscordIntegration
         {
             SettA_UseActivity += UpdateIntegrationStatus;
             hierarchy.OnSelect += _ => UpdateActivity();
-            manager.OnFileChanged += _ => UpdateActivity();
+            undo.OnChanged += _ => UpdateActivity();
         }
 
         private void OnDisable()
         {
             SettA_UseActivity -= UpdateIntegrationStatus;
             hierarchy.OnSelect -= _ => UpdateActivity();
-            manager.OnFileChanged -= _ => UpdateActivity();
+            undo.OnChanged -= _ => UpdateActivity();
         }
 
         private void OnDestroy()

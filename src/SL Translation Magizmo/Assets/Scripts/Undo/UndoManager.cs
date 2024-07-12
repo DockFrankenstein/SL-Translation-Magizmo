@@ -1,4 +1,5 @@
 ﻿using qASIC.Input;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,8 @@ namespace Project.Undo
 
         public UnityEvent OnUndo;
         public UnityEvent OnRedo;
+
+        public event Action<object> OnChanged;
 
         string DebugText() =>
             $"Undo items count: {Items.Count}\n" +
@@ -44,34 +47,63 @@ namespace Project.Undo
         public int GetHeadPosition() =>
             Items.Count - Offset;
 
-        public void AddStep(UndoItem item)
+        public void UpdateLatestStep(object context = null)
+        {
+            OnChanged?.Invoke(context);
+        }
+
+        public void AddStep(UndoItem item, object context = null)
         {
             Items.RemoveRange(Items.Count - Offset, Offset);
             Offset = 0;
             Items.Add(item);
+            OnChanged?.Invoke(context);
         }
 
-        public void Undo()
+        public void Undo(object context = null)
         {
-            if (Items.Count == 0)
-                return;
+            if (!CanUndo()) return;
 
             Offset = Mathf.Clamp(Offset + 1, 0, Items.Count);
             var index = GetHeadPosition();
 
             Items[index].Undo();
 
+            if (Items[index].Skip && CanUndo())
+            {
+                Undo(context);
+                return;
+            }
+
             OnUndo.Invoke();
+            OnChanged?.Invoke(context);
         }
 
-        public void Redo()
+        public void Redo(object context = null)
         {
+            if (!CanRedo()) return;
+
             Offset = Mathf.Clamp(Offset - 1, 0, Items.Count);
             var index = GetHeadPosition();
 
             Items[index - 1].Redo();
 
+            if (Items[index - 1].Skip && CanRedo())
+            {
+                Redo(context);
+                return;
+            }
+
             OnRedo.Invoke();
+            OnChanged?.Invoke(context);
+        }
+
+
+        public bool IsDirty { get; }
+
+        public void ClearDirty()
+        {
+
         }
 
         public bool IsLatest(UndoItem item) =>

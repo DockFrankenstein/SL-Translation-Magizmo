@@ -54,33 +54,24 @@ namespace Project.GUI.Inspector
 
                 if (entry != null)
                 {
-                    if (!undo.IsLatest(_undoItem))
+                    bool createNew = !undo.IsLatest(_undoItem);
+
+                    if (createNew)
                     {
                         _undoItem = new UndoItem<string>(args.previousValue, a => manager.File.Entries[entry.entryId].content = a);
-                        undo.AddStep(_undoItem);
+                        undo.AddStep(_undoItem, this);
                     }
 
                     _undoItem.newValue = _contentField.value;
-                }
 
-                MarkFileDirty();
+                    if (!createNew)
+                        undo.UpdateLatestStep(this);
+                }
             });
 
             _preview.Query<TextElement>()
                 .Build()
                 .ForEach(x => x.enableRichText = true);
-
-            undo.OnUndo.AddListener(OnUndoChanged);
-            undo.OnRedo.AddListener(OnUndoChanged);
-        }
-
-        void OnUndoChanged()
-        {
-            if (entry == null)
-                return;
-
-            _contentField.SetValueWithoutNotify(entry.content);
-            UpdatePreview();
         }
 
         void UpdatePreview()

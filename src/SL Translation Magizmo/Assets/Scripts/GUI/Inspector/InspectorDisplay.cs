@@ -51,7 +51,7 @@ namespace Project.GUI.Inspector
             ContentContainer = root.Q("inspector-content");
 
             hierarchy.OnSelect += Hierarchy_OnSelect;
-            manager.OnFileChanged += context =>
+            undo.OnChanged += context =>
             {
                 if (context is InspectorDisplay ||
                     context is InspectorDisplayPanel) return;

@@ -1,4 +1,5 @@
 ﻿using Project.Translation;
+using Project.Undo;
 using System;
 using System.Linq;
 using UnityEngine;
@@ -10,6 +11,7 @@ namespace Project.GUI.Settings
     {
         [SerializeField] UIDocument document;
         [SerializeField] TranslationManager manager;
+        [SerializeField] UndoManager undo;
 
         private void Reset()
         {
@@ -49,7 +51,7 @@ namespace Project.GUI.Settings
                     manager.File.UseNewestSlVersion = true;
                     manager.LoadCurrentVersionFromFile();
                     manager.File.CleanupToVersion(manager.CurrentVersion);
-                    manager.MarkFileDirty(this);
+                    undo.ClearDirty();
                     return;
                 }
 
@@ -59,10 +61,10 @@ namespace Project.GUI.Settings
                 manager.File.SlVersion = ver.version;
                 manager.LoadCurrentVersionFromFile();
                 manager.File.CleanupToVersion(ver);
-                manager.MarkFileDirty(this);
+                undo.ClearDirty();
             });
 
-            manager.OnFileChanged += OnFileChanged;
+            undo.OnChanged += OnFileChanged;
         }
 
         void OnFileChanged(object fromContext)

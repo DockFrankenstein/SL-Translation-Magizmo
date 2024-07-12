@@ -1,4 +1,5 @@
 using Project.Translation;
+using Project.Undo;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -11,8 +12,12 @@ namespace Project.AppTools
         public abstract string ToolName { get; }
 
         protected AppToolManager Manager { get; private set; }
+        
         protected TranslationManager TranslationManager =>
             Manager.translationManager;
+        
+        protected UndoManager Undo =>
+            Manager.undo;
 
         internal void SetManager(AppToolManager manager)
         {
@@ -51,7 +56,7 @@ namespace Project.AppTools
 
         public virtual void RunTool()
         {
-            TranslationManager.MarkFileDirty(this);
+            Undo.ClearDirty();
             CloseTool();
         }
     }

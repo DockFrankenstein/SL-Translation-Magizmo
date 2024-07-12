@@ -11,6 +11,7 @@ using UObject = UnityEngine.Object;
 using qASIC.Input;
 using System.Collections;
 using qASIC;
+using Project.Undo;
 
 namespace Project.GUI.Preview
 {
@@ -19,6 +20,7 @@ namespace Project.GUI.Preview
         [Label("References")]
         [SerializeField] TranslationManager manager;
         [SerializeField] HierarchyController hierarchy;
+        [SerializeField] UndoManager undo;
 
         [Label("Scenes")]
         [SerializeField] Transform sceneHolder;
@@ -106,7 +108,7 @@ namespace Project.GUI.Preview
 
             ChangeVersion(manager.CurrentVersion.version);
 
-            manager.OnFileChanged += Manager_OnFileChanged;
+            undo.OnChanged += Undo_OnChanged;
             manager.OnCurrentVersionChanged += Manager_OnCurrentVersionChanged;
             hierarchy.OnSelect += Hierarchy_OnSelect;
 
@@ -191,7 +193,7 @@ namespace Project.GUI.Preview
             }
         }
 
-        private void Manager_OnFileChanged(object context)
+        private void Undo_OnChanged(object context)
         {
             if (context as UObject == this) return;
             Reload();
