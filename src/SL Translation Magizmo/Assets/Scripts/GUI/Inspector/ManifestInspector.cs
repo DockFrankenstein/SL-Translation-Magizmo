@@ -9,6 +9,7 @@ using Project.Translation.Mapping;
 using System.Collections.Generic;
 using System.Reflection;
 using System.ComponentModel;
+using Project.Undo;
 
 namespace Project.GUI.Inspector
 {
@@ -70,16 +71,13 @@ namespace Project.GUI.Inspector
                     if (!file.Entries.ContainsKey(mappedField.id))
                         file.Entries.Add(mappedField.id, new SaveFile.EntryData(mappedField));
 
+                    field.inspector = this;
+                    field.undo = undo;
                     field.entry = file.Entries[mappedField.id];
                     mappedFields.Add(field);
                     Container.Add(field.UiItem);
                     field.LabelText = mappedField.GetFinalName();
                     field.LoadValue(field.entry.content);
-
-                    field.OnChanged += () =>
-                    {
-                        //TODO: undo
-                    };
                 }
             }
         }
@@ -99,8 +97,9 @@ namespace Project.GUI.Inspector
             public FieldInfo field;
             public MappedFieldNameAttribute attr;
             public SaveFile.EntryData entry;
+            public ManifestInspector inspector;
 
-            public Action OnChanged;
+            public UndoManager undo;
 
             public abstract VisualElement UiItem { get; }
             public abstract string LabelText { get; set; }
@@ -114,13 +113,23 @@ namespace Project.GUI.Inspector
             {
                 Field.RegisterValueChangedCallback(args =>
                 {
-                    if (args.target == Field)
+                    if (args.target != Field) return;
+
+                    entry.content = Field.value.ToString();
+
+                    if (!undo.IsLatest(_contentUndo))
                     {
-                        entry.content = Field.value.ToString();
-                        OnChanged?.Invoke();
+                        var tempEntry = entry;
+                        _contentUndo = new UndoItem<T>(args.previousValue, a => tempEntry.content = a.ToString());
+                        undo.AddStep(_contentUndo, inspector);
                     }
+
+                    _contentUndo.newValue = Field.value;
+                    undo.UpdateLatestStep(inspector);
                 });
             }
+
+            UndoItem<T> _contentUndo;
 
             public abstract BaseField<T> Field { get; }
             public override VisualElement UiItem => Field;
@@ -153,13 +162,31 @@ namespace Project.GUI.Inspector
 
                 _list.OnChanged += () =>
                 {
-                    entry.content = _list.Source
-                        .Select(x => x?.ToString())
-                        .ToEntryContent();
+                    if (entry != null)
+                    {
+                        entry.content = _list.Source
+                            .Select(x => x?.ToString())
+                            .ToEntryContent();
 
-                    OnChanged?.Invoke();
+                        if (_lastUndo != null)
+                        {
+                            _lastUndo.newValue = entry.content;
+                            undo.UpdateLatestStep(inspector);
+                        }
+                    }
+                };
+
+                _list.OnUndoEvent += () =>
+                {
+                    if (entry == null)
+                        return;
+
+                    _lastUndo = new UndoItem<string>(entry.content, a => entry.content = a.ToString());
+                    undo.AddStep(_lastUndo, inspector);
                 };
             }
+
+            UndoItem<string> _lastUndo;
 
             AppReorderableList<T> _list = new AppReorderableList<T>(new ListView()
             {

@@ -55,23 +55,23 @@ namespace Project.UI
 
             List.itemsAdded += _ =>
             {
-                OnChanged?.Invoke();
                 _lastEditedItem = -1;
                 OnUndoEvent?.Invoke();
+                OnChanged?.Invoke();
             };
 
             List.itemsRemoved += _ =>
             {
+                _lastEditedItem = -1;
                 OnUndoEvent?.Invoke();
                 OnChanged?.Invoke();
-                _lastEditedItem = -1;
             };
 
             List.itemIndexChanged += (_, _) =>
             {
-                OnChanged?.Invoke();
                 _lastEditedItem = -1;
                 OnUndoEvent?.Invoke();
+                OnChanged?.Invoke();
             };
         }
 
@@ -111,9 +111,9 @@ namespace Project.UI
                 {
                     Source.RemoveAt(fields[root]);
                     List.RefreshItems();
-                    OnChanged?.Invoke();
                     _lastEditedItem = -1;
                     OnUndoEvent?.Invoke();
+                    OnChanged?.Invoke();
                 };
 
                 root.Add(removeButton);
@@ -133,13 +133,14 @@ namespace Project.UI
                     {
                         var index = fields[root];
                         Source[index] = field.value;
-                        OnChanged?.Invoke();
 
                         if (_lastEditedItem != index)
                         {
                             _lastEditedItem = index;
                             OnUndoEvent?.Invoke();
                         }
+
+                        OnChanged?.Invoke();
                     }
                 });
             }

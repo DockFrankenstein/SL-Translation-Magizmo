@@ -27,8 +27,6 @@ namespace Project.GUI.Inspector
 
         UndoItem<string> _lastUndo;
 
-        string prevContent;
-
         Dictionary<VisualElement, ArrayItem> _items = new Dictionary<VisualElement, ArrayItem>();
 
         protected override void Awake()
@@ -45,13 +43,12 @@ namespace Project.GUI.Inspector
             {
                 if (entry != null)
                 {
-                    prevContent = entry.content;
                     entry.content = _contentList.Source.ToEntryContent();
 
                     if (_lastUndo != null)
                     {
                         _lastUndo.newValue = entry.content;
-                        undo.UpdateLatestStep();
+                        undo.UpdateLatestStep(this);
                     }
                 }
             };
@@ -61,7 +58,7 @@ namespace Project.GUI.Inspector
                 if (entry == null)
                     return;
 
-                _lastUndo = new UndoItem<string>(prevContent, entry.content, a => manager.File.Entries[entry.entryId].content = a);
+                _lastUndo = new UndoItem<string>(entry.content, a => manager.File.Entries[entry.entryId].content = a);
                 undo.AddStep(_lastUndo, this);
             };
 
@@ -182,8 +179,6 @@ namespace Project.GUI.Inspector
             entryField = manager.CurrentVersion.MappedFields.TryGetValue(entry.entryId, out var f) ?
                 f :
                 null;
-
-            prevContent = entry?.content ?? string.Empty;
 
             _unusedBySLField.ChangeDispaly(entryField?.notYetAddedToSL ?? false);
             _contentList.Source.AddRange(entry.content.EntryContentToArray());
