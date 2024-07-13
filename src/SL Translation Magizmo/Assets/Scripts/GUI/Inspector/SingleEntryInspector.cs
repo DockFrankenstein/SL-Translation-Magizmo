@@ -58,7 +58,8 @@ namespace Project.GUI.Inspector
 
                     if (createNew)
                     {
-                        _undoItem = new UndoItem<string>(args.previousValue, a => manager.File.Entries[entry.entryId].content = a);
+                        var entryId = entry.entryId;
+                        _undoItem = new UndoItem<string>(args.previousValue, a => manager.File.Entries[entryId].content = a);
                         undo.AddStep(_undoItem, this);
                     }
 
