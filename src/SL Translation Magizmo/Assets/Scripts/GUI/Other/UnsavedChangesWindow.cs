@@ -56,6 +56,13 @@ namespace Project.GUI.Other
 
                 manager.Save();
             };
+
+            undo.OnChanged += Undo_OnChanged;
+        }
+
+        void Undo_OnChanged(object context)
+        {
+            PUtility.ChangeWindowTitle($"{(undo.IsDirty ? "*" : "")}{Application.productName}");
         }
 
         private void OnEnable()

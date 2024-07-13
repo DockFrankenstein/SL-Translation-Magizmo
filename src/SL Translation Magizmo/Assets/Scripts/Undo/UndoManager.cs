@@ -1,4 +1,5 @@
-﻿using qASIC.Input;
+﻿using qASIC;
+using qASIC.Input;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -47,6 +48,9 @@ namespace Project.Undo
         public int GetHeadPosition() =>
             Items.Count - Offset;
 
+        private void ClampOffset() =>
+            Mathf.Clamp(Offset + 1, 0, Items.Count);
+
         public void UpdateLatestStep(object context = null)
         {
             OnChanged?.Invoke(context);
@@ -64,7 +68,8 @@ namespace Project.Undo
         {
             if (!CanUndo()) return;
 
-            Offset = Mathf.Clamp(Offset + 1, 0, Items.Count);
+            Offset++;
+            ClampOffset();
             var index = GetHeadPosition();
 
             Items[index].Undo();
@@ -83,12 +88,15 @@ namespace Project.Undo
         {
             if (!CanRedo()) return;
 
-            Offset = Mathf.Clamp(Offset - 1, 0, Items.Count);
+            Offset--;
+            ClampOffset();
             var index = GetHeadPosition();
 
             Items[index - 1].Redo();
 
-            if (Items[index - 1].Skip && CanRedo())
+            if (Items.IndexInRange(index) &&
+                Items[index].Skip && 
+                CanRedo())
             {
                 Redo(context);
                 return;
@@ -99,17 +107,37 @@ namespace Project.Undo
         }
 
 
-        public bool IsDirty => Items.Count != 0 &&
-            !(Items[GetHeadPosition() - 1] is SaveUndoItem);
+        public bool IsDirty => Items.Any(x => x is SaveUndoItem) ?
+            !(Items[Mathf.Max(0, GetHeadPosition() - 1)] is SaveUndoItem) :
+            GetHeadPosition() > 0;
 
-        public void ClearDirty()
+        public void ClearDirty(object context = null)
         {
-            AddStep(new SaveUndoItem(), this);
+            var saveItems = Items.Where(x => x is SaveUndoItem)
+                .ToList();
+
+            foreach (var item in saveItems)
+            {
+                var index = Items.IndexOf(item);
+                var headPos = GetHeadPosition();
+
+                if (index > headPos)
+                {
+                    Offset--;
+                }
+
+                Items.Remove(item);
+                ClampOffset();
+            }
+
+            Items.Insert(GetHeadPosition(), new SaveUndoItem());
+            OnChanged?.Invoke(context);
         }
 
         public void ClearAll(object context = null)
         {
             Items.Clear();
+            Offset = 0;
             OnChanged?.Invoke(context);
         }
 
