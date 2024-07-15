@@ -7,6 +7,7 @@ using DiscordClient = Discord.Discord;
 using Project.GUI.Hierarchy;
 using System;
 using Project.Undo;
+using System.Text.RegularExpressions;
 
 namespace Project.DiscordIntegration
 {
@@ -126,6 +127,8 @@ namespace Project.DiscordIntegration
             {
                 fileName = content.content;
             }
+
+            fileName = Regex.Replace(fileName, "<([^>]*)>", "");
 
             var selectedId = string.IsNullOrWhiteSpace(hierarchy.SelectedId) ?
                     "None" :
