@@ -25,7 +25,7 @@ namespace Project.GUI.Inspector
         MappedField entryField;
         Label _unusedBySLField;
 
-        UndoItem<string> _lastUndo;
+        UndoStep<string> _lastUndo;
 
         Dictionary<VisualElement, ArrayItem> _items = new Dictionary<VisualElement, ArrayItem>();
 
@@ -58,7 +58,11 @@ namespace Project.GUI.Inspector
                 if (entry == null)
                     return;
 
-                _lastUndo = new UndoItem<string>(entry.content, a => manager.File.Entries[entry.entryId].content = a);
+                _lastUndo = new UndoStep<string>(entry.content, a => manager.File.Entries[entry.entryId].content = a)
+                {
+                    Context = inspector.SelectedObject,
+                };
+
                 undo.AddStep(_lastUndo, this);
             };
 

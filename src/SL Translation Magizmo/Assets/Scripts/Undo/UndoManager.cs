@@ -9,9 +9,9 @@ using UnityEngine.Events;
 
 namespace Project.Undo
 {
-    public class UndoManager : MonoBehaviour, IEnumerable<UndoItem>
+    public class UndoManager : MonoBehaviour, IEnumerable<UndoStep>
     {
-        public List<UndoItem> Items { get; private set; } = new List<UndoItem>();
+        public List<UndoStep> Steps { get; private set; } = new List<UndoStep>();
         public int Offset { get; private set; }
 
         [DynamicHelp(nameof(DebugText))]
@@ -24,7 +24,7 @@ namespace Project.Undo
         public event Action<object> OnChanged;
 
         string DebugText() =>
-            $"Undo items count: {Items.Count}\n" +
+            $"Undo items count: {Steps.Count}\n" +
             $"offset: {Offset}\n" +
             $"position: {GetHeadPosition()}";
 
@@ -38,29 +38,29 @@ namespace Project.Undo
         }
 
         public bool CanRedo() =>
-            Items.Count > 0 &&
+            Steps.Count > 0 &&
             Offset > 0;
 
         public bool CanUndo() =>
-            Items.Count > 0 &&
-            Offset < Items.Count;
+            Steps.Count > 0 &&
+            Offset < Steps.Count;
 
         public int GetHeadPosition() =>
-            Items.Count - Offset;
+            Steps.Count - Offset;
 
         private void ClampOffset() =>
-            Mathf.Clamp(Offset + 1, 0, Items.Count);
+            Mathf.Clamp(Offset + 1, 0, Steps.Count);
 
         public void UpdateLatestStep(object context = null)
         {
             OnChanged?.Invoke(context);
         }
 
-        public void AddStep(UndoItem item, object context = null)
+        public void AddStep(UndoStep item, object context = null)
         {
-            Items.RemoveRange(Items.Count - Offset, Offset);
+            Steps.RemoveRange(Steps.Count - Offset, Offset);
             Offset = 0;
-            Items.Add(item);
+            Steps.Add(item);
             OnChanged?.Invoke(context);
         }
 
@@ -72,9 +72,9 @@ namespace Project.Undo
             ClampOffset();
             var index = GetHeadPosition();
 
-            Items[index].Undo();
+            Steps[index].Undo();
 
-            if (Items[index].Skip && CanUndo())
+            if (Steps[index].Skip && CanUndo())
             {
                 Undo(context);
                 return;
@@ -92,10 +92,10 @@ namespace Project.Undo
             ClampOffset();
             var index = GetHeadPosition();
 
-            Items[index - 1].Redo();
+            Steps[index - 1].Redo();
 
-            if (Items.IndexInRange(index) &&
-                Items[index].Skip && 
+            if (Steps.IndexInRange(index) &&
+                Steps[index].Skip && 
                 CanRedo())
             {
                 Redo(context);
@@ -107,18 +107,18 @@ namespace Project.Undo
         }
 
 
-        public bool IsDirty => Items.Any(x => x is SaveUndoItem) ?
-            !(Items[Mathf.Max(0, GetHeadPosition() - 1)] is SaveUndoItem) :
+        public bool IsDirty => Steps.Any(x => x is UndoSaveStep) ?
+            !(Steps[Mathf.Max(0, GetHeadPosition() - 1)] is UndoSaveStep) :
             GetHeadPosition() > 0;
 
         public void ClearDirty(object context = null)
         {
-            var saveItems = Items.Where(x => x is SaveUndoItem)
+            var saveItems = Steps.Where(x => x is UndoSaveStep)
                 .ToList();
 
             foreach (var item in saveItems)
             {
-                var index = Items.IndexOf(item);
+                var index = Steps.IndexOf(item);
                 var headPos = GetHeadPosition();
 
                 if (index > headPos)
@@ -126,27 +126,27 @@ namespace Project.Undo
                     Offset--;
                 }
 
-                Items.Remove(item);
+                Steps.Remove(item);
                 ClampOffset();
             }
 
-            Items.Insert(GetHeadPosition(), new SaveUndoItem());
+            Steps.Insert(GetHeadPosition(), new UndoSaveStep());
             OnChanged?.Invoke(context);
         }
 
         public void ClearAll(object context = null)
         {
-            Items.Clear();
+            Steps.Clear();
             Offset = 0;
             OnChanged?.Invoke(context);
         }
 
-        public bool IsLatest(UndoItem item) =>
+        public bool IsLatest(UndoStep item) =>
             item != null &&
-            Items.LastOrDefault() == item;
+            Steps.LastOrDefault() == item;
 
-        public IEnumerator<UndoItem> GetEnumerator() =>
-            Items.GetEnumerator();
+        public IEnumerator<UndoStep> GetEnumerator() =>
+            Steps.GetEnumerator();
 
         IEnumerator IEnumerable.GetEnumerator() =>
             GetEnumerator();

@@ -120,7 +120,11 @@ namespace Project.GUI.Inspector
                     if (!undo.IsLatest(_contentUndo))
                     {
                         var tempEntry = entry;
-                        _contentUndo = new UndoItem<T>(args.previousValue, a => tempEntry.content = a.ToString());
+                        _contentUndo = new UndoStep<T>(args.previousValue, a => tempEntry.content = a.ToString())
+                        {
+                            Context = inspector.inspector.SelectedObject,
+                        };
+
                         undo.AddStep(_contentUndo, inspector);
                     }
 
@@ -129,7 +133,7 @@ namespace Project.GUI.Inspector
                 });
             }
 
-            UndoItem<T> _contentUndo;
+            UndoStep<T> _contentUndo;
 
             public abstract BaseField<T> Field { get; }
             public override VisualElement UiItem => Field;
@@ -181,12 +185,16 @@ namespace Project.GUI.Inspector
                     if (entry == null)
                         return;
 
-                    _lastUndo = new UndoItem<string>(entry.content, a => entry.content = a.ToString());
+                    _lastUndo = new UndoStep<string>(entry.content, a => entry.content = a.ToString())
+                    {
+                        Context = inspector.inspector.SelectedObject,
+                    };
+
                     undo.AddStep(_lastUndo, inspector);
                 };
             }
 
-            UndoItem<string> _lastUndo;
+            UndoStep<string> _lastUndo;
 
             AppReorderableList<T> _list = new AppReorderableList<T>(new ListView()
             {

@@ -54,7 +54,7 @@ namespace Project.GUI.Settings
                     if (manager.File.UseNewestSlVersion)
                         return;
 
-                    undo.AddStep(new UndoItem<bool>(false, true, a => manager.File.UseNewestSlVersion = a), this);
+                    undo.AddStep(new UndoStep<bool>(false, true, a => manager.File.UseNewestSlVersion = a), this);
                     manager.File.UseNewestSlVersion = true;
                     manager.LoadCurrentVersionFromFile();
                     manager.File.CleanupToVersion(manager.CurrentVersion);
@@ -63,7 +63,7 @@ namespace Project.GUI.Settings
 
                 var ver = manager.versions[manager.versions.Length - _slVersion.index];
 
-                undo.AddStep(new UndoItem<KeyValuePair<Version, bool>>(
+                undo.AddStep(new UndoStep<KeyValuePair<Version, bool>>(
                     new KeyValuePair<Version, bool>(manager.File.SlVersion, manager.File.UseNewestSlVersion),
                     new KeyValuePair<Version, bool>(ver.version, false),
                     a =>

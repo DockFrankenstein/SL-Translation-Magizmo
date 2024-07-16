@@ -10,6 +10,8 @@ using qASIC.Options;
 using qASIC;
 using qASIC.Input;
 using Project.GUI.Top;
+using Project.Undo;
+using Project.Translation.Data;
 
 namespace Project.GUI.Hierarchy
 {
@@ -31,6 +33,9 @@ namespace Project.GUI.Hierarchy
         [SerializeField] float repeatTime = 0.1f;
         public InputMapItemReference i_previous;
         public InputMapItemReference i_next;
+
+        [Header("Undo")]
+        [SerializeField] UndoManager undo;
 
         ScrollView scroll;
         TextField search;
@@ -88,6 +93,40 @@ namespace Project.GUI.Hierarchy
 
             if (Sett_CollapsedByDefault)
                 CollapseAll();
+
+            undo.OnUndo.AddListener(OnUndo);
+            undo.OnRedo.AddListener(OnRedo);
+        }
+
+        void OnUndo()
+        {
+            var index = undo.GetHeadPosition();
+            if (!undo.Steps.IndexInRange(index)) return;
+
+            var step = undo.Steps[index];
+            SelectFromUndoStep(step);
+        }
+
+        void OnRedo()
+        {
+            var index = undo.GetHeadPosition() - 1;
+            if (!undo.Steps.IndexInRange(index)) return;
+
+            var step = undo.Steps[index];
+            SelectFromUndoStep(step);
+        }
+
+        void SelectFromUndoStep(UndoStep step)
+        {
+            if (step.Context is HierarchyItem obj && SelectedId != obj.id)
+            {
+                Select(obj.id);
+            }
+
+            if (step.Context is SaveFile.EntryData data && SelectedId != data.entryId)
+            {
+                Select(data.entryId);
+            }
         }
 
         void UpdateSearch()

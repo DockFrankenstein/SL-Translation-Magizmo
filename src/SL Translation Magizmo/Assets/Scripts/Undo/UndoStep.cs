@@ -3,27 +3,29 @@
 namespace Project.Undo
 {
     [Serializable]
-    public abstract class UndoItem
+    public abstract class UndoStep
     {
         public abstract void Undo();
 
         public abstract void Redo();
 
+        public object Context { get; set; }
+
         public virtual bool Skip => false;
     }
 
-    public class UndoItem<T> : UndoItem
+    public class UndoStep<T> : UndoStep
     {
-        public UndoItem() { }
-        public UndoItem(T oldValue, T newValue, Action<T> applyValue)
+        public UndoStep() { }
+        public UndoStep(T oldValue, T newValue, Action<T> applyValue)
         {
             this.oldValue = oldValue;
             this.newValue = newValue;
             ApplyValue = applyValue;
         }
 
-        public UndoItem(Action<T> applyValue) : this(default, default, applyValue) { }
-        public UndoItem(T oldValue, Action<T> applyValue) : this(oldValue, default, applyValue) { }
+        public UndoStep(Action<T> applyValue) : this(default, default, applyValue) { }
+        public UndoStep(T oldValue, Action<T> applyValue) : this(oldValue, default, applyValue) { }
 
         public event Action<T> ApplyValue;
         public T oldValue;
@@ -40,7 +42,7 @@ namespace Project.Undo
         }
     }
 
-    public class SaveUndoItem : UndoItem
+    public class UndoSaveStep : UndoStep
     {
         public override void Undo() { }
         public override void Redo() { }

@@ -32,7 +32,7 @@ namespace Project.GUI.Inspector
 
         Action _onNextUpdate;
 
-        UndoItem<string> _undoItem;
+        UndoStep<string> _undoItem;
 
         protected override void Awake()
         {
@@ -59,7 +59,11 @@ namespace Project.GUI.Inspector
                     if (createNew)
                     {
                         var entryId = entry.entryId;
-                        _undoItem = new UndoItem<string>(args.previousValue, a => manager.File.Entries[entryId].content = a);
+                        _undoItem = new UndoStep<string>(args.previousValue, a => manager.File.Entries[entryId].content = a)
+                        {
+                            Context = inspector.SelectedObject,
+                        };
+
                         undo.AddStep(_undoItem, this);
                     }
 
