@@ -30,6 +30,7 @@ namespace Project.Translation
         [SerializeField] ComparisonManager comparisonManager;
 
         [Label("Application")]
+        [SerializeField] NotificationManager notifications;
         [SerializeField] ErrorWindow errorWindow;
         [SerializeField] UndoManager undo;
 
@@ -163,6 +164,7 @@ namespace Project.Translation
                 recentFiles.Add(FilePath);
                 undo.ClearDirty();
                 Debug.Log("Saved file");
+                notifications.Notify("File saved.");
                 OnSave.Invoke();
             }
             catch (Exception e)
@@ -241,6 +243,7 @@ namespace Project.Translation
 
             IsLoading = false;
             OnLoad.Invoke();
+            notifications.Notify($"Loaded file {FilePath}");
             undo.ClearAll();
             recentFiles.Add(path);
         }
