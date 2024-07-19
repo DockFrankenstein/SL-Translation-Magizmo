@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System;
+using System.Diagnostics;
+using UnityEngine.UIElements;
 
 namespace qASIC.Options
 {
@@ -89,6 +91,27 @@ namespace qASIC.Options
             }
 
             return this;
+        }
+
+        public void SetValuesForObject(object obj, OptionsList list)
+        {
+            var type = obj.GetType();
+
+            foreach (var target in Targets)
+            {
+                if (!list.TryGetValue(target.Key, out var val)) continue;
+
+                var args = new ChangeOptionArgs()
+                {
+                    value = val.Value,
+                };
+
+                foreach (var item in target.Value)
+                {
+                    if (item.DeclaringType != type) continue;
+                    item.SetValue(obj, args);
+                }
+            }
         }
 
         public bool TryGetValue(qRegisteredObjects registeredObjects, string name, out object value)

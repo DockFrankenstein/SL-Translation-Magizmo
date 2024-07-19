@@ -8,6 +8,7 @@ namespace Project.Utility.UI
     public class LayoutGroupController : MonoBehaviour
     {
         private static event Action _OnRefresh;
+        private static event Action _OnRefreshNextFrame;
 
         [SerializeField] RectTransform target;
 
@@ -15,6 +16,8 @@ namespace Project.Utility.UI
         [SerializeField] bool refreshOnAwake;
         [SerializeField] bool refreshOnStart;
         [SerializeField] bool refreshOnEnable;
+
+        bool _refreshNextFrame;
 
         #region Unity
         private void Reset()
@@ -34,9 +37,19 @@ namespace Project.Utility.UI
                 RefreshSingle();
         }
 
+        private void LateUpdate()
+        {
+            if (_refreshNextFrame)
+            {
+                _refreshNextFrame = false;
+                RefreshSingle();
+            }
+        }
+
         private void OnEnable()
         {
             _OnRefresh += HandleRefresh;
+            _OnRefreshNextFrame += HandleRefreshNextFrame;
 
             if (refreshOnEnable)
                 RefreshSingle();
@@ -45,6 +58,7 @@ namespace Project.Utility.UI
         private void OnDisable()
         {
             _OnRefresh -= HandleRefresh;
+            _OnRefreshNextFrame -= HandleRefreshNextFrame;
         }
         #endregion
 
@@ -53,9 +67,19 @@ namespace Project.Utility.UI
             RefreshSingle();
         }
 
+        void HandleRefreshNextFrame()
+        {
+            RefreshSingleNextFrame();
+        }
+
         public void RefreshSingle()
         {
             LayoutRebuilder.ForceRebuildLayoutImmediate(target);
+        }
+
+        public void RefreshSingleNextFrame()
+        {
+            _refreshNextFrame = true;
         }
 
         public static void Refresh()
@@ -65,7 +89,7 @@ namespace Project.Utility.UI
 
         public static void RefreshNextFrame()
         {
-            
+            _OnRefreshNextFrame?.Invoke();
         }
     }
 }

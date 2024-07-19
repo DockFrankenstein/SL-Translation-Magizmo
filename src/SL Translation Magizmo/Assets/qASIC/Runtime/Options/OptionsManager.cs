@@ -26,6 +26,13 @@ namespace qASIC.Options
             Serializer = serializer ?? new OptionsSerializer();
 
             OptionsList.OnValueSet += List_OnChanged;
+
+            RegisteredObjects.OnObjectRegistered += RegisteredObjects_OnObjectRegistered;
+        }
+
+        private void RegisteredObjects_OnObjectRegistered(object obj)
+        {
+            TargetList.SetValuesForObject(obj, OptionsList);
         }
 
         private void List_OnChanged(OptionsList.ListItem[] items)

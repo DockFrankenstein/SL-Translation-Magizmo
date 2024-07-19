@@ -51,6 +51,8 @@ namespace Project.GUI.Settings
                 .StartNewSection("Apperance")
                     .AddOption(new OptionsMenuSlider<float>("ui_scale_factor", "UI Scale Factor", 0.2f, 2f))
                     .AddOption(new OptionsMenuToggle("hierarchy_collapsed_default", "Collapse By Default"))
+                    .AddOption(new OptionsMenuField<float>("notif_duration", "Notification Duration"))
+                    .AddOption(new OptionsMenuField<float>("notif_fadeout_duration", "Notification Fade Duration"))
                 .FinishSection()
                 .StartNewSection("Preview")
                     .AddOption(new OptionsMenuSlider<float>(nameof(TranslationPreviewCamera.ScrollMultiplier), "Scroll Speed", 0.1f, 5f))
@@ -222,10 +224,15 @@ namespace Project.GUI.Settings
                         ApplyOnMouseLeave = true,
                         ApplyOnLostFocus = true,
                     };
-                case OptionsMenuField<string> floatField:
+                case OptionsMenuField<string> field:
                     return new Page.Item<string>()
                     {
-                        Element = new TextField(floatField.displayName)
+                        Element = new TextField(field.displayName)
+                    };
+                case OptionsMenuField<float> floatField:
+                    return new Page.Item<float>()
+                    {
+                        Element = new FloatField(floatField.displayName)
                     };
                 default:
                     throw new NotImplementedException();
@@ -268,7 +275,8 @@ namespace Project.GUI.Settings
 
                 public override void SetValueWithoutNotify(object val)
                 {
-                    (Element as BaseField<T>).SetValueWithoutNotify((T)val);
+                    if (val != null)
+                        (Element as BaseField<T>).SetValueWithoutNotify((T)val);
                 }
 
                 public override void RegisterApplying()
