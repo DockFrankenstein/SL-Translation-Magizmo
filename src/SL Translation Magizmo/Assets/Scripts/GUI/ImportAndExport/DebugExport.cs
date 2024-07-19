@@ -7,6 +7,8 @@ namespace Project.Translation.ImportAndExport
 {
     public class DebugExport : ImportAndExportBase, IExporter
     {
+        [SerializeField] NotificationManager notifications;
+
         public event Action OnExport;
 
         public string Name => "Debug";
@@ -23,6 +25,7 @@ namespace Project.Translation.ImportAndExport
                 return $"{string.Join(".", args.container.fileName.Split('.').SkipLast(1))}_{args.index + 1}";
             });
 
+            notifications.NotifyExport(paths[0]);
             OnExport?.Invoke();
         }
     }

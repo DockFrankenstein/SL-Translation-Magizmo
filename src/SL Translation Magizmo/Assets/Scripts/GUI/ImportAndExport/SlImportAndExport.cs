@@ -9,6 +9,7 @@ namespace Project.Translation.ImportAndExport
     public class SlImportAndExport : ImportAndExportBase, IImporter, IExporter
     {
         [SerializeField] ErrorWindow error;
+        [SerializeField] NotificationManager notifications;
 
         [Label("Exporting")]
         [SerializeField] UIDocument exportDocument;
@@ -75,6 +76,7 @@ namespace Project.Translation.ImportAndExport
                     return;
                 }
 
+                notifications.NotifyExport(path);
                 root.ChangeDispaly(false);
                 OnExport?.Invoke();
             };

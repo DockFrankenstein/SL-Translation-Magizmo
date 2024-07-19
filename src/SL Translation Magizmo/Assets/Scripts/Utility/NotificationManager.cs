@@ -36,6 +36,9 @@ namespace Project
             OnNewNotification?.Invoke(notification);
         }
 
+        public void NotifyExport(string path) =>
+            Notify($"Exported to {path}");
+
         void DebugNotification()
         {
             Notify("This is a debug notification");

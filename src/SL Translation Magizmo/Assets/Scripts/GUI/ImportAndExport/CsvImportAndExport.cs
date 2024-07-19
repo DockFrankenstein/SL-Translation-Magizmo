@@ -32,6 +32,7 @@ namespace Project.Translation.ImportAndExport
         }
 
         [SerializeField] HierarchyEntryProvider entryProvider;
+        [SerializeField] NotificationManager notifications;
         [SerializeField] ErrorWindow error;
 
         [Label("Exporting")]
@@ -164,6 +165,7 @@ namespace Project.Translation.ImportAndExport
                     return;
                 }
 
+                notifications.NotifyExport(path);
                 exportRoot.ChangeDispaly(false);
                 OnExport?.Invoke();
             };
