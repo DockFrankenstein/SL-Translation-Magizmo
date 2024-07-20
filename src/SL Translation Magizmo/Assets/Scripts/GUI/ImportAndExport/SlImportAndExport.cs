@@ -6,6 +6,10 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Project.Settings;
+using Project.Translation.Data;
+using System.Linq;
+using Project.Undo;
+using System.Collections.Generic;
 
 namespace Project.GUI.ImportAndExport
 {
@@ -13,6 +17,7 @@ namespace Project.GUI.ImportAndExport
     {
         [Label("Exporting")]
         [SerializeField] UIDocument exportDocument;
+        [SerializeField] UIDocument importDocument;
 
         public Action OnImport;
         public Action OnExport;
@@ -20,22 +25,36 @@ namespace Project.GUI.ImportAndExport
         public string Name => "SCPSL";
 
         TextField _exportBlank;
-
         Button _exportButton;
         Button _exportCloseButton;
 
+        Toggle _importEmpty;
+        Toggle _overwriteOld;
+        Button _importButton;
+        Button _importCloseButton;
+
+        SaveFile _importedFile;
+
         private void Awake()
         {
-            var root = exportDocument.rootVisualElement;
-            root.ChangeDispaly(false);
+            var exportRoot = exportDocument.rootVisualElement;
+            exportRoot.ChangeDispaly(false);
 
-            _exportBlank = root.Q<TextField>("blank-entry");
-            _exportButton = root.Q<Button>("export-button");
-            _exportCloseButton = root.Q<Button>("close");
+            var importRoot = importDocument.rootVisualElement;
+            importRoot.ChangeDispaly(false);
+
+            _exportBlank = exportRoot.Q<TextField>("blank-entry");
+            _exportButton = exportRoot.Q<Button>("export-button");
+            _exportCloseButton = exportRoot.Q<Button>("close");
+
+            _importEmpty = importRoot.Q<Toggle>("import-empty");
+            _overwriteOld = importRoot.Q<Toggle>("overwrite-old");
+            _importButton = importRoot.Q<Button>("import-button");
+            _importCloseButton = importRoot.Q<Button>("close");
 
             _exportCloseButton.clicked += () =>
             {
-                root.ChangeDispaly(false);
+                exportRoot.ChangeDispaly(false);
             };
 
             _exportButton.clicked += () =>
@@ -58,6 +77,59 @@ namespace Project.GUI.ImportAndExport
                 {
                     Error.CreateExportExceptionPrompt(e);
                 }
+            };
+
+            _importCloseButton.clicked += () =>
+            {
+                importRoot.ChangeDispaly(false);
+            };
+
+            _importButton.clicked += () =>
+            {
+                var entries = _importedFile.Entries
+                    .AsEnumerable();
+
+                if (!_importEmpty.value)
+                    entries = entries.Where(x => !string.IsNullOrWhiteSpace(x.Value.content));
+
+                if (!_overwriteOld.value)
+                    entries = entries.Where(x => !TranslationManager.File.Entries.TryGetValue(x.Key, out var content) || string.IsNullOrWhiteSpace(content.content));
+
+                var oldValues = TranslationManager.File.Entries
+                    .ToDictionary(x => x.Key, x => x.Value.content);
+
+                foreach (var item in entries)
+                {
+                    if (!TranslationManager.File.Entries.ContainsKey(item.Key))
+                        TranslationManager.File.Entries.Add(item.Key, new SaveFile.EntryData(item.Key));
+
+                    TranslationManager.File.Entries[item.Key].content = item.Value.content;
+                }
+
+                var newValues = TranslationManager.File.Entries
+                    .ToDictionary(x => x.Key, x => x.Value.content);
+
+                Undo.AddStep(new UndoStep<Dictionary<string, string>>(oldValues, newValues, a =>
+                {
+                    foreach (var item in a)
+                    {
+                        if (!TranslationManager.File.Entries.ContainsKey(item.Key))
+                            TranslationManager.File.Entries.Add(item.Key, new SaveFile.EntryData(item.Key));
+
+                        TranslationManager.File.Entries[item.Key].content = item.Value;
+                    }
+
+                    var unusedKeys = TranslationManager.File.Entries
+                        .Select(x => x.Key)
+                        .Except(a.Select(x => x.Key));
+
+                    foreach (var item in unusedKeys)
+                        TranslationManager.File.Entries.Remove(item);
+                }));
+
+                importRoot.ChangeDispaly(false);
+                FinalizeImport();
+                OnImport?.Invoke();
             };
         }
 
@@ -87,9 +159,9 @@ namespace Project.GUI.ImportAndExport
 
         public void Import()
         {
-            TranslationManager.CurrentVersion.Import(TranslationManager.File, ImportPath);
-            FinalizeImport();
-            OnImport?.Invoke();
+            _importedFile = new SaveFile(TranslationManager.CurrentVersion);
+            TranslationManager.CurrentVersion.Import(_importedFile, ImportPath);
+            importDocument.rootVisualElement.ChangeDispaly(true);
         }
 
         public void Export()

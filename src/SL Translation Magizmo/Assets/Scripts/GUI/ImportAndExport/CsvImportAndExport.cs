@@ -14,6 +14,8 @@ using Fab.UITKDropdown;
 using System.Threading;
 using System.Threading.Tasks;
 using Project.GUI.ImportAndExport;
+using Project.Undo;
+using Project.Translation.Data;
 
 namespace Project.Translation.ImportAndExport
 {
@@ -146,6 +148,9 @@ namespace Project.Translation.ImportAndExport
                     return;
                 }
 
+                var oldValues = TranslationManager.File.Entries
+                    .ToDictionary(x => x.Key, x => x.Value.content);
+
                 bool _ignoreNext = false;
                 for (int i = _ignoreFirstTableRow ? 1 : 0; i < _currentImportTable.RowsCount; i++)
                 {
@@ -174,6 +179,27 @@ namespace Project.Translation.ImportAndExport
 
                     TranslationManager.File.Entries[id].content = value;
                 }
+
+                var newValues = TranslationManager.File.Entries
+                    .ToDictionary(x => x.Key, x => x.Value.content);
+
+                Undo.AddStep(new UndoStep<Dictionary<string, string>>(oldValues, newValues, a =>
+                {
+                    foreach (var item in a)
+                    {
+                        if (!TranslationManager.File.Entries.ContainsKey(item.Key))
+                            TranslationManager.File.Entries.Add(item.Key, new SaveFile.EntryData(item.Key));
+
+                        TranslationManager.File.Entries[item.Key].content = item.Value;
+                    }
+
+                    var unusedKeys = TranslationManager.File.Entries
+                        .Select(x => x.Key)
+                        .Except(a.Select(x => x.Key));
+
+                    foreach (var item in unusedKeys)
+                        TranslationManager.File.Entries.Remove(item);
+                }));
 
                 FinalizeImport();
                 importRoot.ChangeDispaly(false);

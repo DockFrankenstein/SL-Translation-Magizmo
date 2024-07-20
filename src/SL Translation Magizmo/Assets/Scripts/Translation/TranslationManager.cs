@@ -34,7 +34,7 @@ namespace Project.Translation
         [SerializeField] ErrorWindow errorWindow;
         [SerializeField] UndoManager undo;
 
-        public SaveFile File { get; private set; } = null;
+        public SaveFile File { get; set; } = null;
         public string FilePath { get; private set; } = null;
 
         [Label("Shortcuts")]
@@ -68,6 +68,7 @@ namespace Project.Translation
                 OnCurrentVersionChanged?.Invoke(value);
             }
         }
+
         public event Action<TranslationVersion> OnCurrentVersionChanged;
 
         public bool IsLoading { get; private set; }

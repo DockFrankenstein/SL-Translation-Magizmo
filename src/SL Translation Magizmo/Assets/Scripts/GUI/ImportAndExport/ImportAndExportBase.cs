@@ -17,7 +17,7 @@ namespace Project.GUI.ImportAndExport
 
         public void FinalizeImport()
         {
-            Undo.ClearDirty();
+            
         }
 
         public void FinalizeExport()

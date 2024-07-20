@@ -19,6 +19,17 @@ namespace Project.Translation.Data
             CleanupToVersion(version);
         }
 
+        /// <summary>Creates a copy of another <see cref="SaveFile"/>,</summary>
+        /// <param name="other"><see cref="SaveFile"/> to copy.</param>
+        public SaveFile(SaveFile other)
+        {
+            UseNewestSlVersion = other.UseNewestSlVersion;
+            SlVersion = other.SlVersion;
+            Entries = other.Entries
+                .Select(x => new KeyValuePair<string, EntryData>(x.Key, new EntryData(x.Value)))
+                .ToDictionary(x => x.Key, x => x.Value);
+        }
+
         public const string FILE_EXTENSION = "sltmf";
 
         #region Serialization
@@ -101,6 +112,12 @@ namespace Project.Translation.Data
             }
 
             public EntryData(MappedField field, string content) : this(field.id, content) { }
+
+            public EntryData(EntryData other)
+            {
+                entryId = other.entryId;
+                content = other.content;
+            }
 
             string IApplicationObject.Name => entryId;
 
