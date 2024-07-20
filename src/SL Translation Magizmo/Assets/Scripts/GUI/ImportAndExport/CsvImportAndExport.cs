@@ -47,20 +47,15 @@ namespace Project.Translation.ImportAndExport
 
         Button _exportButton;
         Button _exportCloseButton;
-        TextField _exportPath;
-        Button _exportPathOpen;
         Toggle _exportCreateCategories;
         AppReorderableList<ColumnOrder> _exportColumnsOrder;
 
         Button _importButton;
         Button _importCloseButton;
-        TextField _importPath;
-        Button _importPathOpen;
         DropdownField _importIdColumn;
         DropdownField _importValueColumn;
         ScrollView _importPreview;
 
-        string _importFileTxt;
         bool _ignoreFirstTableRow;
         Table2D _currentImportTable;
         ErrorWindow.Prompt _importError;
@@ -83,8 +78,6 @@ namespace Project.Translation.ImportAndExport
 
             _exportButton = exportRoot.Q<Button>("export-button");
             _exportCloseButton = exportRoot.Q<Button>("close");
-            _exportPath = exportRoot.Q<TextField>("path");
-            _exportPathOpen = exportRoot.Q<Button>("path-open");
             _exportCreateCategories = exportRoot.Q<Toggle>("create-categories");
             _exportColumnsOrder = new AppReorderableList<ColumnOrder>(exportRoot.Q<ListView>("columns-order"), columnsOrder)
             {
@@ -93,96 +86,28 @@ namespace Project.Translation.ImportAndExport
 
             _exportButton.clicked += () =>
             {
-                var path = _exportPath.value;
+                var path = StandaloneFileBrowser.SaveFilePanel("", ExportPath, "translation", "csv");
 
-                if (string.IsNullOrWhiteSpace(path))
-                {
-                    error.CreatePrompt("Invalid Path", "Please set an export path.");
+                if (string.IsNullOrEmpty(path))
                     return;
-                }
 
-                if (new ColumnOrder[]
-                    {
-                        ColumnOrder.Id,
-                        ColumnOrder.DisplayName,
-                        ColumnOrder.OriginalTranslation,
-                        ColumnOrder.Value,
-                        ColumnOrder.DynamicValues,
-                    }.Except(columnsOrder).Count() > 0)
-                {
-                    error.CreatePrompt("Export Error", "There are missing items in the column order. This is an application error, please report this issue.");
-                    return;
-                }
+                ExportPath = path;
 
                 try
                 {
-                    Table2D table = new Table2D();
-                    uint row = 0;
-                    var sections = ProvideItems();
-
-                    foreach (var section in sections)
-                    {
-                        //Create category header
-                        if (_exportCreateCategories.value)
-                        {
-                            if (row != 0) row++;
-
-
-                            if (!string.IsNullOrEmpty(section.sectionName))
-                            {
-                                for (uint i = 0; i < 5; i++)
-                                    table.SetCell(i, row, IGNORE_NEXT_CONTENT);
-
-                                row++;
-
-                                table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.Id), row, "Id");
-                                table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.DisplayName), row, section.sectionName);
-                                table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.OriginalTranslation), row, "Original");
-                                table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.Value), row, "Translation");
-                                table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.DynamicValues), row, "Dynamic Values");
-                                row++;
-                            }
-                        }
-
-                        foreach (var item in section.items)
-                        {
-                            table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.Id), row, item.id);
-                            table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.DisplayName), row, item.displayName);
-                            table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.OriginalTranslation), row, item.originalTranslation);
-                            table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.Value), row, item.value);
-                            table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.DynamicValues), row, item.dynamicValues);
-                            row++;
-                        }
-                    }
-
-                    var txt = _parser.Serialize(table);
-
-                    File.WriteAllText(path, txt);
+                    Export();
+                    exportRoot.ChangeDispaly(false);
                 }
                 catch (Exception e)
                 {
                     error.CreatePrompt("Export Error", $"There was a problem while exporting to CSV.\n{e}");
                     return;
                 }
-
-                notifications.NotifyExport(path);
-                exportRoot.ChangeDispaly(false);
-                OnExport?.Invoke();
             };
 
             _exportCloseButton.clicked += () =>
             {
                 exportRoot.ChangeDispaly(false);
-            };
-
-            _exportPathOpen.clicked += () =>
-            {
-                var path = StandaloneFileBrowser.SaveFilePanel("", _exportPath.value, "translation", "csv");
-
-                if (string.IsNullOrEmpty(path))
-                    return;
-
-                _exportPath.value = path;
             };
 
             _exportColumnsOrder.MakeItem += () => new Label();
@@ -202,25 +127,12 @@ namespace Project.Translation.ImportAndExport
 
             _importButton = importRoot.Q<Button>("import-button");
             _importCloseButton = importRoot.Q<Button>("close");
-            _importPath = importRoot.Q<TextField>("path");
-            _importPathOpen = importRoot.Q<Button>("path-open");
             _importIdColumn = importRoot.Q<DropdownField>("id-column");
             _importValueColumn = importRoot.Q<DropdownField>("value-column");
             _importPreview = importRoot.Q<ScrollView>("preview");
 
             _importButton.clicked += () =>
             {
-                if (_currentImportTable == null)
-                {
-                    Import();
-
-                    if (_importError != null)
-                    {
-                        error.CreatePrompt(_importError);
-                        return;
-                    }
-                }
-
                 if (_importIdColumn.index < 0 ||
                     _importIdColumn.index >= _currentImportTable.RowsCount)
                 {
@@ -273,61 +185,8 @@ namespace Project.Translation.ImportAndExport
                 importRoot.ChangeDispaly(false);
             };
 
-            _importPath.RegisterValueChangedCallback(args =>
-            {
-                if (args.target != _importPath) return;
-
-                //Ignore if it's the same path
-                if (args.previousValue == args.newValue)
-                    return;
-
-                var path = args.newValue;
-
-                if (!File.Exists(path))
-                {
-                    ClearImportPreview();
-                    return;
-                }
-
-                Import();
-
-                UpdatePreview();
-
-                for (int i = 0; i < _currentImportTable.ColumnsCount; i++)
-                {
-                    var content = _currentImportTable.GetCell(i, 0);
-
-                    switch (content)
-                    {
-                        case ID_COLUMN_ID:
-                            _importIdColumn.index = i;
-                            break;
-                        case VALUE_COLUMN_ID:
-                            _importValueColumn.index = i;
-                            break;
-                    }
-                }
-            });
-
-            _importPathOpen.clicked += () =>
-            {
-                var paths = StandaloneFileBrowser.OpenFilePanel("", _exportPath.value, "csv", false);
-
-                if (paths.Length == 0)
-                    return;
-
-                _importPath.value = paths[0];
-            };
-
             _importIdColumn.choices = new List<string>();
             _importValueColumn.choices = new List<string>();
-        }
-
-        void ClearImportPreview()
-        {
-            _importFileTxt = string.Empty;
-            _currentImportTable = null;
-            UpdatePreview();
         }
 
         void UpdatePreview()
@@ -380,27 +239,61 @@ namespace Project.Translation.ImportAndExport
             }
         }
 
-        void Import()
+        public void Import()
         {
-            _importError = null;
-
-            try
+            using (var stream = new StreamReader(ImportPath))
             {
-                var path = _importPath.value;
+                var txt = stream.ReadToEnd();
+                _currentImportTable = _parser.Deserialize(txt);
+            }
+        }
 
-                using (var stream = new StreamReader(path))
+        public void Export()
+        {
+            Table2D table = new Table2D();
+            uint row = 0;
+            var sections = ProvideItems();
+
+            foreach (var section in sections)
+            {
+                //Create category header
+                if (_exportCreateCategories.value)
                 {
-                    var txt = stream.ReadToEnd();
-                    if (_importFileTxt == txt) return;
+                    if (row != 0) row++;
 
-                    _importFileTxt = txt;
-                    _currentImportTable = _parser.Deserialize(txt);
+
+                    if (!string.IsNullOrEmpty(section.sectionName))
+                    {
+                        for (uint i = 0; i < 5; i++)
+                            table.SetCell(i, row, IGNORE_NEXT_CONTENT);
+
+                        row++;
+
+                        table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.Id), row, "Id");
+                        table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.DisplayName), row, section.sectionName);
+                        table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.OriginalTranslation), row, "Original");
+                        table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.Value), row, "Translation");
+                        table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.DynamicValues), row, "Dynamic Values");
+                        row++;
+                    }
+                }
+
+                foreach (var item in section.items)
+                {
+                    table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.Id), row, item.id);
+                    table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.DisplayName), row, item.displayName);
+                    table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.OriginalTranslation), row, item.originalTranslation);
+                    table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.Value), row, item.value);
+                    table.SetCell((uint)columnsOrder.IndexOf(ColumnOrder.DynamicValues), row, item.dynamicValues);
+                    row++;
                 }
             }
-            catch (Exception e)
-            {
-                _importError = new ErrorWindow.Prompt("Import Error", $"There was an error while loading the file:\n{e}");
-            }
+
+            var txt = _parser.Serialize(table);
+
+            File.WriteAllText(ExportPath, txt);
+            notifications.NotifyExport(ExportPath);
+            OnExport?.Invoke();
         }
 
         List<Section> ProvideItems()
@@ -513,7 +406,39 @@ namespace Project.Translation.ImportAndExport
 
         public void BeginImport()
         {
-            importDocument.rootVisualElement.ChangeDispaly(true);
+            var paths = StandaloneFileBrowser.OpenFilePanel("", ImportPath, "csv", false);
+
+            if (paths.Length == 0)
+                return;
+
+            ImportPath = paths[0];
+
+            try
+            {
+                Import();
+                UpdatePreview();
+
+                for (int i = 0; i < _currentImportTable.ColumnsCount; i++)
+                {
+                    var content = _currentImportTable.GetCell(i, 0);
+
+                    switch (content)
+                    {
+                        case ID_COLUMN_ID:
+                            _importIdColumn.index = i;
+                            break;
+                        case VALUE_COLUMN_ID:
+                            _importValueColumn.index = i;
+                            break;
+                    }
+                }
+
+                importDocument.rootVisualElement.ChangeDispaly(true);
+            }
+            catch (Exception e)
+            {
+                error.CreateImportExceptionPrompt(e);
+            }
         }
 
         public class Section

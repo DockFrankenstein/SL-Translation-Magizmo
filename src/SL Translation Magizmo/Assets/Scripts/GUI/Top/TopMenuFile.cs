@@ -23,7 +23,7 @@ namespace Project.GUI.Top
         protected override void CreateMenu()
         {
             menu.AppendAction("Save", _ => manager.Save(), DropdownMenuAction.AlwaysEnabled, CreateDataForInput(prompts, manager.i_save));
-            menu.AppendAction("Save As", _ => manager.SaveAs(), DropdownMenuAction.AlwaysEnabled, userData: CreateDataForInput(prompts, manager.i_saveAs));
+            menu.AppendAction("Save As", _ => manager.SaveAs(), DropdownMenuAction.AlwaysEnabled, CreateDataForInput(prompts, manager.i_saveAs));
             menu.AppendAction("Open", _ => manager.Open(), DropdownMenuAction.AlwaysEnabled, CreateDataForInput(prompts, manager.i_load));
 
             if (manager.RecentFiles != null)
@@ -32,13 +32,15 @@ namespace Project.GUI.Top
 
             menu.AppendSeparator();
 
-            foreach (var item in importers)
-                if (item is IImporter importer)
-                    menu.AppendAction($"Import/{importer.Name}", _ => importer.BeginImport());
+            menu.AppendAction("Export", _ => { }, status: DropdownMenuAction.Status.Disabled);
 
             foreach (var item in exporters)
                 if (item is IExporter exporter)
-                    menu.AppendAction($"Export/{exporter.Name}", _ => exporter.BeginExport());
+                    menu.AppendAction($"Export As/{exporter.Name}", _ => exporter.BeginExport());
+
+            foreach (var item in importers)
+                if (item is IImporter importer)
+                    menu.AppendAction($"Import/{importer.Name}", _ => importer.BeginImport());
 
             menu.AppendSeparator();
             menu.AppendAction("Properties", _ => properties.Open());

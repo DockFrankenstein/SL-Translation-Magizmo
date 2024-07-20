@@ -8,6 +8,9 @@ namespace Project.Translation.ImportAndExport
         [SerializeField] protected TranslationManager manager;
         [SerializeField] protected UndoManager undo;
 
+        public string ImportPath { get; set; }
+        public string ExportPath { get; set; }
+
         public void FinalizeImport()
         {
             undo.ClearDirty();

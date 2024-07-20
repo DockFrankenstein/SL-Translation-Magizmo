@@ -5,5 +5,6 @@
         string Name { get; }
 
         void BeginImport();
+        void Import();
     }
 }

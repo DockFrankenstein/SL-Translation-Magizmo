@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 namespace Project
@@ -7,7 +8,7 @@ namespace Project
     public class ErrorWindow : MonoBehaviour
     {
         public string defaultHeader = "There was an error";
-        [EditorButton(nameof(DebugPrompt))]
+        [EditorButton(nameof(CreateDebugPrompt), activityType: ButtonActivityType.OnPlayMode)]
         [TextArea(3, 5)]
         public string defaultContent = "Application ran into a problem";
 
@@ -26,16 +27,14 @@ namespace Project
             OnPromptCreated?.Invoke(prompt);
         }
 
-        void DebugPrompt()
-        {
-            if (Application.isPlaying)
-            {
-                var header = $"Debug Error ({PromptsQueue.Count})";
-                var content = "This is a debug error.";
+        public void CreateImportExceptionPrompt(Exception e) =>
+            CreatePrompt("Import Error", $"There was an error while importing.\n{e}");
 
-                CreatePrompt(header, content);
-            }
-        }
+        public void CreateExportExceptionPrompt(Exception e) =>
+            CreatePrompt("Export Error", $"There was an error while exporting.\n{e}");
+
+        void CreateDebugPrompt() =>
+            CreatePrompt($"Debug Error ({PromptsQueue.Count})", "This is a debug error.");
 
         [Serializable]
         public class Prompt

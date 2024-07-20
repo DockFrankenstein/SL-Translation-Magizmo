@@ -19,8 +19,6 @@ namespace Project.Translation.ImportAndExport
 
         public string Name => "SCPSL";
 
-        TextField _exportPath;
-        Button _exportPathOpen;
         TextField _exportBlank;
 
         Button _exportButton;
@@ -31,25 +29,9 @@ namespace Project.Translation.ImportAndExport
             var root = exportDocument.rootVisualElement;
             root.ChangeDispaly(false);
 
-            _exportPath = root.Q<TextField>("path");
-            _exportPathOpen = root.Q<Button>("path-open");
             _exportBlank = root.Q<TextField>("blank-entry");
             _exportButton = root.Q<Button>("export-button");
             _exportCloseButton = root.Q<Button>("close");
-
-            _exportPathOpen.clicked += () =>
-            {
-                bool exists = Directory.Exists(_exportPath.value);
-
-                var paths = StandaloneFileBrowser.OpenFolderPanel("", exists ? 
-                    _exportPath.value : 
-                    Settings.GeneralSettings.TranslationPath, false);
-
-                if (paths.Length == 0)
-                    return;
-
-                _exportPath.value = paths[0];
-            };
 
             _exportCloseButton.clicked += () =>
             {
@@ -58,33 +40,25 @@ namespace Project.Translation.ImportAndExport
 
             _exportButton.clicked += () =>
             {
-                var path = _exportPath.value;
+                var paths = StandaloneFileBrowser.OpenFolderPanel("", Directory.Exists(ExportPath) ?
+                    ExportPath :
+                    Settings.GeneralSettings.TranslationPath, false);
 
-                if (string.IsNullOrWhiteSpace(path))
-                {
-                    error.CreatePrompt("Invalid Path", "Please set an export path.");
+                if (paths.Length == 0)
                     return;
-                }
+
+                ExportPath = paths[0];
 
                 try
                 {
-                    manager.CurrentVersion.Export(manager.File, path, _exportBlank.value);
+                    Export();
+                    exportDocument.rootVisualElement.ChangeDispaly(false);
                 }
-                catch (Exception e)
+                catch(Exception e)
                 {
-                    error.CreatePrompt("Export Error", $"There was a problem while exporting to SCPSL.\n{e}");
-                    return;
+                    error.CreateExportExceptionPrompt(e);
                 }
-
-                notifications.NotifyExport(path);
-                root.ChangeDispaly(false);
-                OnExport?.Invoke();
             };
-        }
-
-        public void BeginExport()
-        {
-            exportDocument.rootVisualElement.ChangeDispaly(true);
         }
 
         public void BeginImport()
@@ -94,9 +68,35 @@ namespace Project.Translation.ImportAndExport
             if (paths.Length == 0)
                 return;
 
-            manager.CurrentVersion.Import(manager.File, paths[0]);
+            ImportPath = paths[0];
+
+            try
+            {
+                Import();
+            }
+            catch (Exception e)
+            {
+                error.CreateImportExceptionPrompt(e);
+            }
+        }
+
+        public void BeginExport()
+        {
+            exportDocument.rootVisualElement.ChangeDispaly(true);
+        }
+
+        public void Import()
+        {
+            manager.CurrentVersion.Import(manager.File, ImportPath);
             FinalizeImport();
             OnImport?.Invoke();
+        }
+
+        public void Export()
+        {
+            manager.CurrentVersion.Export(manager.File, ExportPath, _exportBlank.value);
+            notifications.NotifyExport(ExportPath);
+            OnExport?.Invoke();
         }
     }
 }

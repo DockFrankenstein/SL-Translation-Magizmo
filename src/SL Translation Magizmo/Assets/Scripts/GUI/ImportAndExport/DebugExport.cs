@@ -8,6 +8,7 @@ namespace Project.Translation.ImportAndExport
     public class DebugExport : ImportAndExportBase, IExporter
     {
         [SerializeField] NotificationManager notifications;
+        [SerializeField] ErrorWindow error;
 
         public event Action OnExport;
 
@@ -20,12 +21,25 @@ namespace Project.Translation.ImportAndExport
             if (paths.Length == 0)
                 return;
 
-            manager.CurrentVersion.Export(manager.File, paths[0], args =>
+            ExportPath = paths[0];
+            try
+            {
+                Export();
+            }
+            catch (Exception e)
+            {
+                error.CreateExportExceptionPrompt(e);
+            }
+        }
+
+        public void Export()
+        {
+            manager.CurrentVersion.Export(manager.File, ExportPath, args =>
             {
                 return $"{string.Join(".", args.container.fileName.Split('.').SkipLast(1))}_{args.index + 1}";
             });
 
-            notifications.NotifyExport(paths[0]);
+            notifications.NotifyExport(ExportPath);
             OnExport?.Invoke();
         }
     }
