@@ -1,3 +1,4 @@
+using Project.GUI.ImportAndExport;
 using Project.GUI.Settings;
 using Project.Translation.ImportAndExport;
 using qASIC.Input.Prompts;
@@ -13,10 +14,7 @@ namespace Project.GUI.Top
         [Space]
         [SerializeField] FilePropertiesWindow properties;
         [SerializeField] PromptLibrary prompts;
-
-        [Label("Import And Export")]
-        public List<ImportAndExportBase> importers = new List<ImportAndExportBase>();
-        public List<ImportAndExportBase> exporters = new List<ImportAndExportBase>();
+        [SerializeField] ImportAndExportManager importAndExport;
 
         protected override string ButtonName => "file";
 
@@ -32,15 +30,24 @@ namespace Project.GUI.Top
 
             menu.AppendSeparator();
 
-            menu.AppendAction("Export", _ => { }, status: DropdownMenuAction.Status.Disabled);
+            switch (importAndExport.QuickExportAvaliable)
+            {
+                case false:
+                    menu.AppendAction("Export", _ => { }, DropdownMenuAction.AlwaysDisabled, userData: CreateDataForInput(prompts, importAndExport.i_quickExport));
+                    break;
+                case true:
+                    menu.AppendAction($"Export {importAndExport.LastExporter.Name}", _ => importAndExport.QuickExport(), DropdownMenuAction.AlwaysEnabled, userData: CreateDataForInput(prompts, importAndExport.i_quickExport));
+                    break;
+            }
 
-            foreach (var item in exporters)
+
+            foreach (var item in importAndExport.Components)
                 if (item is IExporter exporter)
-                    menu.AppendAction($"Export As/{exporter.Name}", _ => exporter.BeginExport());
+                    menu.AppendAction($"Export As/{exporter.Name}", _ => importAndExport.BeginExport(exporter));
 
-            foreach (var item in importers)
+            foreach (var item in importAndExport.Components)
                 if (item is IImporter importer)
-                    menu.AppendAction($"Import/{importer.Name}", _ => importer.BeginImport());
+                    menu.AppendAction($"Import/{importer.Name}", _ => importAndExport.BeginImport(importer));
 
             menu.AppendSeparator();
             menu.AppendAction("Properties", _ => properties.Open());

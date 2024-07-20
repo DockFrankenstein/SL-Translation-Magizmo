@@ -13,6 +13,7 @@ using Project.Translation.Mapping.Manifest;
 using Fab.UITKDropdown;
 using System.Threading;
 using System.Threading.Tasks;
+using Project.GUI.ImportAndExport;
 
 namespace Project.Translation.ImportAndExport
 {
@@ -32,8 +33,6 @@ namespace Project.Translation.ImportAndExport
         }
 
         [SerializeField] HierarchyEntryProvider entryProvider;
-        [SerializeField] NotificationManager notifications;
-        [SerializeField] ErrorWindow error;
 
         [Label("Exporting")]
         [SerializeField] UIDocument exportDocument;
@@ -100,7 +99,7 @@ namespace Project.Translation.ImportAndExport
                 }
                 catch (Exception e)
                 {
-                    error.CreatePrompt("Export Error", $"There was a problem while exporting to CSV.\n{e}");
+                    Error.CreatePrompt("Export Error", $"There was a problem while exporting to CSV.\n{e}");
                     return;
                 }
             };
@@ -136,14 +135,14 @@ namespace Project.Translation.ImportAndExport
                 if (_importIdColumn.index < 0 ||
                     _importIdColumn.index >= _currentImportTable.RowsCount)
                 {
-                    error.CreatePrompt("Import Error", "Please set a valid id column.");
+                    Error.CreatePrompt("Import Error", "Please set a valid id column.");
                     return;
                 }
 
                 if (_importValueColumn.index < 0 ||
                     _importValueColumn.index >= _currentImportTable.RowsCount)
                 {
-                    error.CreatePrompt("Import Error", "Please set a valid value column.");
+                    Error.CreatePrompt("Import Error", "Please set a valid value column.");
                     return;
                 }
 
@@ -167,13 +166,13 @@ namespace Project.Translation.ImportAndExport
                     }
 
                     //Ignore if id is not valid
-                    if (!manager.CurrentVersion.MappedFields.ContainsKey(id))
+                    if (!TranslationManager.CurrentVersion.MappedFields.ContainsKey(id))
                         continue;
 
-                    if (!manager.File.Entries.ContainsKey(id))
-                        manager.File.Entries.Add(id, new Data.SaveFile.EntryData(id));
+                    if (!TranslationManager.File.Entries.ContainsKey(id))
+                        TranslationManager.File.Entries.Add(id, new Data.SaveFile.EntryData(id));
 
-                    manager.File.Entries[id].content = value;
+                    TranslationManager.File.Entries[id].content = value;
                 }
 
                 FinalizeImport();
@@ -292,7 +291,7 @@ namespace Project.Translation.ImportAndExport
             var txt = _parser.Serialize(table);
 
             File.WriteAllText(ExportPath, txt);
-            notifications.NotifyExport(ExportPath);
+            FinalizeExport();
             OnExport?.Invoke();
         }
 
@@ -340,7 +339,7 @@ namespace Project.Translation.ImportAndExport
                         //Manifest
                         if (item.id == ManifestInspector.MANIFEST_ITEM_ID)
                         {
-                            var manifest = manager.CurrentVersion.containers
+                            var manifest = TranslationManager.CurrentVersion.containers
                                 .Where(x => x is ManifestMappingBase)
                                 .Select(x => x as ManifestMappingBase)
                                 .FirstOrDefault();
@@ -377,15 +376,15 @@ namespace Project.Translation.ImportAndExport
                 var item = new Item()
                 {
                     id = hierarchyItem.id,
-                    originalTranslation = manager.ComparisonManager.TryGetEntryData(hierarchyItem.id, out string content) ?
+                    originalTranslation = TranslationManager.ComparisonManager.TryGetEntryData(hierarchyItem.id, out string content) ?
                         content :
                         string.Empty,
                 };
 
-                if (manager.File.Entries.TryGetValue(hierarchyItem.id, out var val))
+                if (TranslationManager.File.Entries.TryGetValue(hierarchyItem.id, out var val))
                     item.value = val.content;
 
-                if (manager.CurrentVersion.MappedFields.TryGetValue(hierarchyItem.id, out var field))
+                if (TranslationManager.CurrentVersion.MappedFields.TryGetValue(hierarchyItem.id, out var field))
                 {
                     item.displayName = field.GetFinalName();
 
@@ -437,7 +436,7 @@ namespace Project.Translation.ImportAndExport
             }
             catch (Exception e)
             {
-                error.CreateImportExceptionPrompt(e);
+                Error.CreateImportExceptionPrompt(e);
             }
         }
 

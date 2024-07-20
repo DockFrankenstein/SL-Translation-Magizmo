@@ -1,16 +1,16 @@
-﻿using SFB;
+﻿using Project.Translation;
+using Project.Translation.ImportAndExport;
+using SFB;
 using System;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Project.Settings;
 
-namespace Project.Translation.ImportAndExport
+namespace Project.GUI.ImportAndExport
 {
     public class SlImportAndExport : ImportAndExportBase, IImporter, IExporter
     {
-        [SerializeField] ErrorWindow error;
-        [SerializeField] NotificationManager notifications;
-
         [Label("Exporting")]
         [SerializeField] UIDocument exportDocument;
 
@@ -42,7 +42,7 @@ namespace Project.Translation.ImportAndExport
             {
                 var paths = StandaloneFileBrowser.OpenFolderPanel("", Directory.Exists(ExportPath) ?
                     ExportPath :
-                    Settings.GeneralSettings.TranslationPath, false);
+                    GeneralSettings.TranslationPath, false);
 
                 if (paths.Length == 0)
                     return;
@@ -54,16 +54,16 @@ namespace Project.Translation.ImportAndExport
                     Export();
                     exportDocument.rootVisualElement.ChangeDispaly(false);
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
-                    error.CreateExportExceptionPrompt(e);
+                    Error.CreateExportExceptionPrompt(e);
                 }
             };
         }
 
         public void BeginImport()
         {
-            var paths = StandaloneFileBrowser.OpenFolderPanel("", Settings.GeneralSettings.TranslationPath, false);
+            var paths = StandaloneFileBrowser.OpenFolderPanel("", GeneralSettings.TranslationPath, false);
 
             if (paths.Length == 0)
                 return;
@@ -76,7 +76,7 @@ namespace Project.Translation.ImportAndExport
             }
             catch (Exception e)
             {
-                error.CreateImportExceptionPrompt(e);
+                Error.CreateImportExceptionPrompt(e);
             }
         }
 
@@ -87,15 +87,15 @@ namespace Project.Translation.ImportAndExport
 
         public void Import()
         {
-            manager.CurrentVersion.Import(manager.File, ImportPath);
+            TranslationManager.CurrentVersion.Import(TranslationManager.File, ImportPath);
             FinalizeImport();
             OnImport?.Invoke();
         }
 
         public void Export()
         {
-            manager.CurrentVersion.Export(manager.File, ExportPath, _exportBlank.value);
-            notifications.NotifyExport(ExportPath);
+            TranslationManager.CurrentVersion.Export(TranslationManager.File, ExportPath, _exportBlank.value);
+            FinalizeExport();
             OnExport?.Invoke();
         }
     }

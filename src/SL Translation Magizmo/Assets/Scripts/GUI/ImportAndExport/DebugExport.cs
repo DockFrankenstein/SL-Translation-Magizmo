@@ -1,22 +1,21 @@
-using UnityEngine;
+using Project.Settings;
 using SFB;
 using System;
 using System.Linq;
+using Project.Translation;
+using Project.Translation.ImportAndExport;
 
-namespace Project.Translation.ImportAndExport
+namespace Project.GUI.ImportAndExport
 {
     public class DebugExport : ImportAndExportBase, IExporter
     {
-        [SerializeField] NotificationManager notifications;
-        [SerializeField] ErrorWindow error;
-
         public event Action OnExport;
 
         public string Name => "Debug";
 
         public void BeginExport()
         {
-            var paths = StandaloneFileBrowser.OpenFolderPanel("", Settings.GeneralSettings.TranslationPath, false);
+            var paths = StandaloneFileBrowser.OpenFolderPanel("", GeneralSettings.TranslationPath, false);
 
             if (paths.Length == 0)
                 return;
@@ -28,18 +27,18 @@ namespace Project.Translation.ImportAndExport
             }
             catch (Exception e)
             {
-                error.CreateExportExceptionPrompt(e);
+                Error.CreateExportExceptionPrompt(e);
             }
         }
 
         public void Export()
         {
-            manager.CurrentVersion.Export(manager.File, ExportPath, args =>
+            TranslationManager.CurrentVersion.Export(TranslationManager.File, ExportPath, args =>
             {
                 return $"{string.Join(".", args.container.fileName.Split('.').SkipLast(1))}_{args.index + 1}";
             });
 
-            notifications.NotifyExport(ExportPath);
+            FinalizeExport();
             OnExport?.Invoke();
         }
     }
