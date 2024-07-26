@@ -1324,3 +1324,7 @@ Label.error {
 .unity-base-field__label {
     width: 300px;
 }
+
+.unity-base-dropdown__checkmark {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}

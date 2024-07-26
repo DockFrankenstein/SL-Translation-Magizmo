@@ -30,7 +30,7 @@
     background-color: rgb(35, 123, 42);
 }
 
-.unity-base-dropdown__checkmark {
+.unity-base-dropdown__item:checked > .unity-base-dropdown__item-content > .unity-base-dropdown__checkmark {
     background-image: url("project://database/Assets/Sprites/UI/sltm%20check.png?fileID=2800000&guid=ee338fb03e3e73c4ca9c354dd0e852d6&type=3#sltm check");
     -unity-background-image-tint-color: rgb(255, 255, 255);
 }
