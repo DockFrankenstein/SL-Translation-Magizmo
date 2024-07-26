@@ -129,6 +129,7 @@
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
+    width: 100%;
 }
 
 .unity-button {
@@ -722,6 +723,11 @@
     background-color: rgb(76, 76, 76);
 }
 
+.unity-list-view__reorderable-item__container {
+    justify-content: center;
+    align-content: center;
+}
+
 .unity-button.big {
     height: 55px;
 }
@@ -1310,7 +1316,7 @@ Label.error {
 }
 
 .unity-list-view__reorderable-item {
-    border-bottom-color: rgba(13, 13, 13, 255);
+    border-bottom-color: rgb(13, 13, 13);
     border-bottom-width: 2px;
 }
 

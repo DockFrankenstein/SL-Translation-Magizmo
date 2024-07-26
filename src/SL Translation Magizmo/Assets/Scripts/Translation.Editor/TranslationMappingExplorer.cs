@@ -86,7 +86,7 @@ namespace Project.Translation.EditorWindows
 
         void RefreshMappings()
         {
-            defines = currentVersion.GetMappedFields().ToList();
+            defines = currentVersion?.GetMappedFields().ToList() ?? new List<MappedField>();
             tree.Reload();
         }
 

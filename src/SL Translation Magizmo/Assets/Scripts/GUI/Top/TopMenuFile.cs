@@ -26,7 +26,7 @@ namespace Project.GUI.Top
 
             if (manager.RecentFiles != null)
                 foreach (var item in manager.RecentFiles.Take(10))
-                    menu.AppendAction($"Open Recent/{item.Replace("/", "\\").Replace("\\", "\\\\")}", _ => manager.Open(item));
+                    menu.AppendAction($"Open Recent/{item.Replace("/", "\\")}", _ => manager.Open(item));
 
             menu.AppendSeparator();
 
