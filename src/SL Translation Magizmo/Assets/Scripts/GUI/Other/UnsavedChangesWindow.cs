@@ -16,8 +16,8 @@ namespace Project.GUI.Other
         private void Reset()
         {
             document = GetComponent<UIDocument>();
-            manager = FindObjectOfType<TranslationManager>();
-            undo = FindObjectOfType<UndoManager>();
+            manager = FindFirstObjectByType<TranslationManager>();
+            undo = FindFirstObjectByType<UndoManager>();
         }
 
         Button _cancel;

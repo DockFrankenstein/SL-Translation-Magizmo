@@ -78,7 +78,7 @@ namespace Project.GUI.Hierarchy
 
         private void Reset()
         {
-            manager = FindObjectOfType<TranslationManager>();
+            manager = FindFirstObjectByType<TranslationManager>();
         }
     }
 }

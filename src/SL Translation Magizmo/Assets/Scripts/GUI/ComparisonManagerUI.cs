@@ -20,7 +20,7 @@ namespace Assets.Scripts.GUI
         private void Reset()
         {
             document = GetComponent<UIDocument>();
-            manager = FindObjectOfType<TranslationManager>();
+            manager = FindFirstObjectByType<TranslationManager>();
         }
 
         Button closeButton;

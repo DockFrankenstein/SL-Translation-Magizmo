@@ -15,7 +15,7 @@ MonoBehaviour:
   assetVersion: 2
   m_TextWrappingMode: 1
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   m_enableTintAllSprites: 0
   m_enableParseEscapeCharacters: 1
@@ -33,7 +33,19 @@ MonoBehaviour:
   m_defaultTextMeshProUITextContainerSize: {x: 200, y: 50}
   m_autoSizeTextContainer: 0
   m_IsTextObjectScaleStatic: 0
-  m_fallbackFontAssets: []
+  m_fallbackFontAssets:
+  - {fileID: 11400000, guid: 451bd7270624f71479c0a837ad954e82, type: 2}
+  - {fileID: 11400000, guid: fcfd8e9280ddcff43829ccaf6851e857, type: 2}
+  - {fileID: 11400000, guid: b4079a68f6013ff4f9f20faf5c05b48e, type: 2}
+  - {fileID: 11400000, guid: bf044e620dfe9bd44b8b15c9b2f12215, type: 2}
+  - {fileID: 11400000, guid: 4014d8fb3eb3dbe459454d631dd0281d, type: 2}
+  - {fileID: 11400000, guid: 5ead66d08c6f1964cb5254c8a87e0910, type: 2}
+  - {fileID: 11400000, guid: cc6d550f125cbf644b87421504a50938, type: 2}
+  - {fileID: 11400000, guid: ee2d3d68ce63c63488d3b932520d8bfa, type: 2}
+  - {fileID: 11400000, guid: c7e16ecc57e9bdd4d88cac523ce5a339, type: 2}
+  - {fileID: 11400000, guid: af22f069b16fbdd4e841d44a9224393a, type: 2}
+  - {fileID: 11400000, guid: 62a18c55402c1c243987d665d0382f78, type: 2}
+  - {fileID: 11400000, guid: 45519b20b267f594797eda18259b51fb, type: 2}
   m_matchMaterialPreset: 1
   m_HideSubTextObjects: 1
   m_defaultSpriteAsset: {fileID: 11400000, guid: c41005c129ba4d66911b75229fd70b45, type: 2}
