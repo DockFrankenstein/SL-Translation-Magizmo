@@ -29,6 +29,7 @@ MonoBehaviour:
     - rid: 8343636803427500034
     - rid: 7054820926352523264
     - rid: 7054820926352523265
+    - rid: 8005936722754142208
   references:
     version: 2
     RefIds:
@@ -97,6 +98,13 @@ MonoBehaviour:
         keys:
         - key_keyboard/LeftControl
         - key_keyboard/Y
+    - rid: 8005936722754142208
+      type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
+      data:
+        itemName: Fullscreen
+        guid: 7bcfb8d4-fc17-4617-ba1d-0891403b1774
+        keys:
+        - key_keyboard/F11
     - rid: 8343636803427500032
       type: {class: Shortcut, ns: qASIC.Input.Map, asm: qASIC}
       data:

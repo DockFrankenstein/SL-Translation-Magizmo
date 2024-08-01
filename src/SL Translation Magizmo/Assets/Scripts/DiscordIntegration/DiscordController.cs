@@ -45,8 +45,8 @@ namespace Project.DiscordIntegration
 
         private void Reset()
         {
-            manager = FindObjectOfType<TranslationManager>();
-            hierarchy = FindObjectOfType<HierarchyController>();
+            manager = FindAnyObjectByType<TranslationManager>();
+            hierarchy = FindAnyObjectByType<HierarchyController>();
         }
 
         private void Awake()

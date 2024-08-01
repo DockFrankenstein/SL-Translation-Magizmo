@@ -15,6 +15,7 @@ namespace Project.GUI.Top
         [SerializeField] PreviewManager preview;
         [SerializeField] InspectorDisplay inspector;
         [SerializeField] ComparisonManagerUI comparison;
+        [SerializeField] FullscreenControl fullscreen;
 
         [SerializeField] PromptLibrary prompts;
 
@@ -55,6 +56,10 @@ namespace Project.GUI.Top
                 inspector.ReloadName();
 
             }, Sett_ShowIds ? DropdownMenuAction.Status.Checked : DropdownMenuAction.Status.Normal);
+
+            menu.AppendAction("Fullscreen", 
+                _ => fullscreen.ToggleFullscreen(),
+                fullscreen.IsFullscreen ? DropdownMenuAction.Status.Checked : DropdownMenuAction.Status.Normal);
 
             menu.AppendSeparator();
 
