@@ -3,7 +3,7 @@
     <ui:VisualElement class="fade" />
     <ui:VisualElement class="popup-narrow" style="flex-direction: column;">
         <ui:Label tabindex="-1" text="Set All Tool" parse-escape-sequences="true" display-tooltip-when-elided="true" class="header" style="flex-shrink: 1;" />
-        <ui:ScrollView style="flex-grow: 1; flex-shrink: 1;">
+        <ui:ScrollView mouse-wheel-scroll-size="20" style="flex-grow: 1; flex-shrink: 1;">
             <ui:TextField picking-mode="Ignore" label="Content" name="content" multiline="true" class="text-area" />
         </ui:ScrollView>
         <ui:Button text="Cancel" display-tooltip-when-elided="true" name="cancel" />

@@ -7,7 +7,7 @@
             </ui:VisualElement>
             <ui:TextField picking-mode="Ignore" name="search" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-grow: 1; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
         </ui:VisualElement>
-        <ui:ScrollView name="hierarchy-list" mouse-wheel-scroll-size="1000" class="tree" style="flex-basis: auto; flex-grow: 1;">
+        <ui:ScrollView name="hierarchy-list" mouse-wheel-scroll-size="20" class="tree" style="flex-basis: auto; flex-grow: 1;">
             <ui:VisualElement name="content-search" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
             <ui:VisualElement name="content-normal" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
         </ui:ScrollView>

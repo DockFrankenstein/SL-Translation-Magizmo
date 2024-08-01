@@ -4,7 +4,7 @@
     <ui:VisualElement class="popup-narrow" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
         <ui:VisualElement style="flex-grow: 1; flex-direction: column; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-basis: 100%;">
             <ui:Label tabindex="-1" text="Comparison Manager" parse-escape-sequences="true" display-tooltip-when-elided="true" class="header" />
-            <ui:ScrollView mouse-wheel-scroll-size="1000" class="tree" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-grow: 1;">
+            <ui:ScrollView mouse-wheel-scroll-size="20" class="tree" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-grow: 1;">
                 <ui:VisualElement name="list" />
             </ui:ScrollView>
         </ui:VisualElement>

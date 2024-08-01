@@ -3,7 +3,7 @@
     <ui:VisualElement name="fade" class="fade" />
     <ui:VisualElement name="window" class="popup-narrow">
         <ui:Label text="Replace" display-tooltip-when-elided="true" class="header" />
-        <ui:ScrollView style="flex-grow: 1;">
+        <ui:ScrollView mouse-wheel-scroll-size="20" style="flex-grow: 1;">
             <ui:Toggle label="Use Regex" name="regex" />
             <ui:VisualElement class="unity-base-field" style="flex-grow: 1;">
                 <ui:Label tabindex="-1" text="Regex Tutorial" parse-escape-sequences="true" display-tooltip-when-elided="true" class="unity-base-field__label" />

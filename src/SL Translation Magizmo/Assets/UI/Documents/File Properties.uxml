@@ -3,7 +3,7 @@
     <ui:VisualElement class="fade" style="flex-grow: 1;" />
     <ui:VisualElement class="popup-narrow" style="flex-grow: 1;">
         <ui:Label tabindex="-1" text="File Properties" parse-escape-sequences="true" display-tooltip-when-elided="true" class="header" />
-        <ui:ScrollView style="flex-grow: 1;">
+        <ui:ScrollView mouse-wheel-scroll-size="20" style="flex-grow: 1;">
             <ui:DropdownField label="Target SL Version" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="sl-version" />
         </ui:ScrollView>
         <ui:Button text="Close" parse-escape-sequences="true" display-tooltip-when-elided="true" name="close" />

@@ -3,7 +3,7 @@
     <ui:VisualElement focusable="true" class="fade" />
     <ui:VisualElement focusable="true" class="popup-narrow">
         <ui:Label text="Export To CSV" display-tooltip-when-elided="true" class="header" />
-        <ui:ScrollView style="flex-grow: 1;">
+        <ui:ScrollView mouse-wheel-scroll-size="20" style="flex-grow: 1;">
             <ui:Toggle label="Create Categories" value="true" name="create-categories" />
             <ui:ListView focusable="true" name="columns-order" header-title="Columns Order" reorderable="true" show-foldout-header="true" show-bound-collection-size="false" reorder-mode="Animated" fixed-item-height="50" />
         </ui:ScrollView>

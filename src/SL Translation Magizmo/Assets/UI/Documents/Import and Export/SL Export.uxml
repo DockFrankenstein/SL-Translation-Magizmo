@@ -3,8 +3,8 @@
     <ui:VisualElement name="fade" class="fade" />
     <ui:VisualElement name="window" class="popup-narrow">
         <ui:Label text="Export To SCPSL" display-tooltip-when-elided="true" class="header" />
-        <ui:ScrollView style="flex-grow: 1;">
-            <ui:TextField picking-mode="Ignore" label="Blank Entry" value="-" text="-" name="blank-entry" />
+        <ui:ScrollView mouse-wheel-scroll-size="20" style="flex-grow: 1;">
+            <ui:TextField picking-mode="Ignore" label="Blank Entry" value="-" name="blank-entry" />
         </ui:ScrollView>
         <ui:Button text="Cancel" display-tooltip-when-elided="true" name="close" />
         <ui:Button text="Export" display-tooltip-when-elided="true" name="export-button" class="big colored" />

@@ -4,7 +4,7 @@
     <ui:VisualElement focusable="true" class="popup">
         <ui:VisualElement style="height: 100%; margin-left: 4px; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-basis: 700px; min-width: auto; min-height: auto;">
             <ui:Label text="Import To CSV" display-tooltip-when-elided="true" class="header" />
-            <ui:ScrollView mouse-wheel-scroll-size="1000" style="flex-grow: 1;">
+            <ui:ScrollView mouse-wheel-scroll-size="20" style="flex-grow: 1;">
                 <ui:DropdownField label="Id Column" index="0" choices="A,B,C" name="id-column" />
                 <ui:DropdownField label="Value Column" index="0" choices="A,B,C" name="value-column" />
             </ui:ScrollView>

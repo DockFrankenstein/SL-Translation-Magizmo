@@ -3,7 +3,7 @@
     <ui:VisualElement name="fade" class="fade" />
     <ui:VisualElement name="window" class="popup-narrow">
         <ui:Label text="Import From SCPSL" display-tooltip-when-elided="true" class="header" />
-        <ui:ScrollView style="flex-grow: 1;">
+        <ui:ScrollView mouse-wheel-scroll-size="20" style="flex-grow: 1;">
             <ui:Toggle label="Import Empty Entries" name="import-empty" />
             <ui:Toggle label="Overwrite Old Values" name="overwrite-old" value="true" />
         </ui:ScrollView>
