@@ -61,6 +61,8 @@ namespace Project.GUI.Top
         {
             var ve = new VisualElement();
 
+            ve.Add(new VisualElement().WithClass(Dropdown.itemIconClassname).WithName("icon"));
+
             ve.Add(new Label()
                 .WithClass(Dropdown.itemTextClassname)
                 .WithName("text"));

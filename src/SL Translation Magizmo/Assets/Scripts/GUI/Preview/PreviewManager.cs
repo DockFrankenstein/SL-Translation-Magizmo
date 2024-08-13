@@ -12,6 +12,7 @@ using qASIC.Input;
 using System.Collections;
 using qASIC;
 using Project.Undo;
+using System.Windows.Forms;
 
 namespace Project.GUI.Preview
 {
@@ -46,6 +47,18 @@ namespace Project.GUI.Preview
             hierarchy;
 
         public event Action OnChangeScene;
+
+        bool _showFinal = false;
+        /// <summary>If the preview should show the final version of the translation without any controls.</summary>
+        public bool ShowFinal
+        {
+            get => _showFinal;
+            set
+            {
+                _showFinal = value;
+                Reload();
+            }
+        }
 
         public void ChangeVersion(Version version)
         {
@@ -202,6 +215,10 @@ namespace Project.GUI.Preview
         public void Reload()
         {
             if (CurrentScene == null) return;
+
+            foreach (var item in CurrentScene.entries)
+                item.ShowFinal = ShowFinal;
+
             CurrentScene.Reload();
         }
 
@@ -252,6 +269,7 @@ namespace Project.GUI.Preview
             if (CurrentScene != null)
                 CurrentScene.gameObject.SetActive(true);
 
+            Reload();
             OnChangeScene?.Invoke();
         }
 

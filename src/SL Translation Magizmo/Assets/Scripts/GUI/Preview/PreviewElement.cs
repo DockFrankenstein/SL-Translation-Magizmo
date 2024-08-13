@@ -15,6 +15,9 @@ namespace Project.GUI.Preview
         [HideInInspector] public HierarchyController hierarchy;
         [HideInInspector] public PreviewScene scene;
 
+        /// <summary>If the element should show the final version of the translation without any controls.</summary>
+        public bool ShowFinal { get; set; }
+
         protected virtual void Awake()
         {
         }

@@ -7,6 +7,7 @@ namespace Project.GUI.Preview
     {
         [SerializeField] UIDocument document;
         [SerializeField] TranslationPreviewCamera cam;
+        [SerializeField] PreviewManager preview;
 
         private void Reset()
         {

@@ -83,11 +83,6 @@ namespace Project.GUI.Preview
                 scene?.ReloadContent();
         }
 
-        private void OnEnable()
-        {
-            Reload();
-        }
-
         void AutoDetectEntries()
         {
 #if UNITY_EDITOR

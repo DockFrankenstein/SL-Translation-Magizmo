@@ -123,7 +123,7 @@ namespace Project.GUI.Preview
             var canInteract = interactable && scene.ParentScene == null;
 
             if (outlineGroup != null)
-                outlineGroup.SetActive(canInteract);
+                outlineGroup.SetActive(canInteract && !ShowFinal);
 
             if (button != null)
                 button.enabled = canInteract;

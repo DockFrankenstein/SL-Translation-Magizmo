@@ -57,6 +57,11 @@ namespace Project.GUI.Top
 
             }, Sett_ShowIds ? DropdownMenuAction.Status.Checked : DropdownMenuAction.Status.Normal);
 
+            menu.AppendAction("Show Final Version", _ =>
+            {
+                preview.ShowFinal = !preview.ShowFinal;
+            }, preview.ShowFinal ? DropdownMenuAction.Status.Checked : DropdownMenuAction.Status.Normal);
+
             menu.AppendAction("Fullscreen", 
                 _ => fullscreen.ToggleFullscreen(),
                 fullscreen.IsFullscreen ? DropdownMenuAction.Status.Checked : DropdownMenuAction.Status.Normal);
