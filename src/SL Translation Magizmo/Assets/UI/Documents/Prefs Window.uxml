@@ -3,12 +3,14 @@
     <ui:VisualElement class="fade" />
     <ui:VisualElement class="popup">
         <ui:VisualElement style="border-right-width: 2px; border-right-color: rgb(13, 13, 13); flex-basis: 350px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;">
-            <ui:Button text="Back" display-tooltip-when-elided="true" name="back-button" style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 4px; height: 60px; font-size: 36px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; -unity-font-style: bold; justify-content: center; flex-direction: row; align-items: center;">
-                <ui:VisualElement style="position: absolute; width: 35px; height: 35px; background-image: url(&quot;project://database/Assets/Sprites/UI/sltm%20arrow.png?fileID=2800000&amp;guid=dbe03015a912f3741a56734140e149e2&amp;type=3#sltm arrow&quot;); rotate: 90deg; left: 4px; translate: 0 -2px; -unity-background-image-tint-color: rgb(51, 51, 51);" />
-                <ui:VisualElement style="position: absolute; width: 35px; height: 35px; background-image: url(&quot;project://database/Assets/Sprites/UI/sltm%20arrow.png?fileID=2800000&amp;guid=dbe03015a912f3741a56734140e149e2&amp;type=3#sltm arrow&quot;); rotate: 90deg; right: 4px; translate: 0 -2px; -unity-background-image-tint-color: rgb(51, 51, 51);" />
-            </ui:Button>
             <ui:RadioButtonGroup value="0" choices="Apperance,Translation Comparison,Updates,Discord" name="menu-selection" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
         </ui:VisualElement>
-        <ui:ScrollView name="content-scroll" mouse-wheel-scroll-size="20" style="flex-basis: 100%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+        <ui:VisualElement style="flex-grow: 1; flex-basis: 100px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+            <ui:ScrollView name="content-scroll" mouse-wheel-scroll-size="20" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-grow: 1; flex-basis: 100%;" />
+            <ui:VisualElement class="separator" />
+            <ui:VisualElement style="flex-grow: 1; flex-basis: 60px; flex-direction: row; justify-content: flex-end;">
+                <ui:Button text="Close" name="back-button" style="width: 200px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
