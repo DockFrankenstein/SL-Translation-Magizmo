@@ -21,6 +21,9 @@ namespace SLTM.Installer.Services
         public const string ARGS_DEBUG_UNINSTALL = "debug-uninstall";
         public const string ARGS_DELETE_AFTER = "delete-after";
 
+        public const string START_MENU_PATH = "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs";
+        public const string START_MENU_SHORTCUT_PATH = START_MENU_PATH + "\\SL Translation Magizmo.lnk";
+
         public enum Mode
         {
             Install,
@@ -185,15 +188,7 @@ namespace SLTM.Installer.Services
                 RegisterAppInSystem();
 
                 if (CreateDesktopShortcut)
-                {
-                    var shortcutPath = $"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/SL Translation Magizmo.lnk";
-
-                    var shell = new WshShell();
-                    var shortcut = (IWshShortcut)shell.CreateShortcut(shortcutPath);
-
-                    shortcut.TargetPath = exePath;
-                    shortcut.Save();
-                }
+                    CreateShortcut($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/SL Translation Magizmo.lnk");
             }
             catch (Exception e)
             {
@@ -230,6 +225,8 @@ namespace SLTM.Installer.Services
                 newappkey.SetValue("DisplayVersion", Updater.NewVersion);
                 newappkey.SetValue("Publisher", "Dock Frankenstein");
                 newappkey.SetValue("UninstallString", $"{RootPath}/Uninstall.exe");
+
+                CreateShortcut(START_MENU_SHORTCUT_PATH);
             }
         }
 
@@ -239,7 +236,19 @@ namespace SLTM.Installer.Services
             {
                 var key = GetWindowsUninstallRegistryKey();
                 key.DeleteSubKeyTree(APP_REGISTRY_KEY, false);
+                if (File.Exists(START_MENU_SHORTCUT_PATH))
+                    File.Delete(START_MENU_SHORTCUT_PATH);
             }
+        }
+
+        void CreateShortcut(string shortcutPath)
+        {
+            var shell = new WshShell();
+            var shortcut = (IWshShortcut)shell.CreateShortcut(shortcutPath);
+
+            shortcut.TargetPath = ExePath
+                .Replace('\\', '/');
+            shortcut.Save();
         }
 
         [SupportedOSPlatform("windows")]
