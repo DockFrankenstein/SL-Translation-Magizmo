@@ -109,7 +109,15 @@ namespace Project.Translation
                     try
                     {
                         var txtVal = ConfigController.GetSetting(txt, item.Key);
-                        data.Add(item.Key, Convert.ChangeType(txtVal, item.Value.Value.GetType()));
+                        var type = item.Value.Value.GetType();
+
+                        if (type.IsEnum)
+                        {
+                            data.Add(item.Key, Enum.Parse(type, txtVal));
+                            continue;
+                        }
+
+                        data.Add(item.Key, Convert.ChangeType(txtVal, type));
                     }
                     catch { }
                 }

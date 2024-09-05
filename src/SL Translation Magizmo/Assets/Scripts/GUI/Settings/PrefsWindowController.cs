@@ -1,7 +1,9 @@
+using Project.AutoUpdate;
 using Project.GUI.Preview;
 using Project.Translation;
 using qASIC;
 using qASIC.Options.Menu;
+using qASIC.Options.Menu.BuiltIn;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -62,6 +64,7 @@ namespace Project.GUI.Settings
                     .AddOption(new OptionsMenuFieldPath("translation_path", "SL Translation Path"))
                 .FinishSection()
                 .StartNewSection("Updates")
+                    .AddOption(new OptionsMenuDropdown<AutoUpdater.Channel>("update_channel", "Channel", AutoUpdater.Channel.Release, AutoUpdater.Channel.Beta))
                     .AddOption(new OptionsMenuToggle("show_auto_update", "New Release Notification"))
                 .FinishSection()
                 .StartNewSection("Discord")
@@ -234,6 +237,8 @@ namespace Project.GUI.Settings
                     {
                         Element = new FloatField(floatField.displayName)
                     };
+                case OptionsMenuDropdown dropdown:
+                    return new Page.DropdownItem(dropdown);
                 default:
                     throw new NotImplementedException();
             }
@@ -255,9 +260,6 @@ namespace Project.GUI.Settings
                 public abstract Type ValueType { get; }
 
                 public VisualElement Element { get; set; }
-                public bool ApplyOnChanged { get; set; } = true;
-                public bool ApplyOnMouseLeave { get; set; } = false;
-                public bool ApplyOnLostFocus { get; set; } = false;
 
                 public event Action<object> OnApply;
 
@@ -272,6 +274,10 @@ namespace Project.GUI.Settings
             public class Item<T> : Item
             {
                 public override Type ValueType => typeof(T);
+
+                public bool ApplyOnChanged { get; set; } = true;
+                public bool ApplyOnMouseLeave { get; set; } = false;
+                public bool ApplyOnLostFocus { get; set; } = false;
 
                 public override void SetValueWithoutNotify(object val)
                 {
@@ -291,6 +297,37 @@ namespace Project.GUI.Settings
 
                     if (ApplyOnLostFocus)
                         field.RegisterCallback<FocusOutEvent>(args => Apply(field.value));
+                }
+            }
+
+            public class DropdownItem : Item
+            {
+                public DropdownItem(OptionsMenuDropdown dropdown)
+                {
+                    this.dropdown = dropdown;
+                    valueType = dropdown.ValueType;
+                    Element = new DropdownField(dropdown.displayName, dropdown.values.Select(x => x.ToString()).ToList(), 0);
+                }
+
+                OptionsMenuDropdown dropdown;
+                Type valueType;
+                public override Type ValueType => valueType;
+
+                public override void SetValueWithoutNotify(object val)
+                {
+                    if (val != null)
+                        (Element as DropdownField).SetValueWithoutNotify(val.ToString());
+                }
+
+                public override void RegisterApplying()
+                {
+                    var field = Element as DropdownField;
+
+                    field.RegisterValueChangedCallback(args =>
+                    {
+                        var val = dropdown.values[field.index];
+                        Apply(val);
+                    });
                 }
             }
         }

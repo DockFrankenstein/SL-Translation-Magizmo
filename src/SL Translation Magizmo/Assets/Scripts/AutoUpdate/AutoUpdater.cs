@@ -1,3 +1,5 @@
+using qASIC.Files;
+using qASIC.Options;
 using System;
 using System.Collections;
 using System.Linq;
@@ -24,10 +26,31 @@ namespace Project.AutoUpdate
             UpToDate,
         }
 
+        public enum Channel
+        {
+            Release,
+            Beta,
+        }
+
         [field: SerializeField] public string CurrentVersion { get; set; }
         [field: SerializeField] public string NewVersion { get; set; } = null;
         [field: SerializeField] public string TargetFileName { get; set; }
         [field: SerializeField] public string ResultPath { get; set; }
+
+        [Option("update_channel")]
+        public static Channel UpdateChannel { get; set; } = Channel.Release;
+
+        public string[] GetUpdaterArgsForUpdate() =>
+            new string[]
+            {
+                $"--update \"{FileManager.TrimPathEnd(Application.dataPath, 1)}\"",
+                "--delete-after",
+                UpdateChannel switch
+                {
+                    Channel.Beta => "beta",
+                    _ => "release",
+                },
+            };
 
         public IEnumerator GetVersion()
         {
@@ -47,14 +70,19 @@ namespace Project.AutoUpdate
                 var txt = $"{{\"items\":{request.downloadHandler.text}}}";
                 var json = JsonUtility.FromJson<Response>(txt);
 
-                if (json.items.Length == 0)
+                for (int i = 0; i < json.items.Length; i++)
                 {
-                    error = "Web request contained no items.";
-                    UpdaterStatus = Status.CheckingForUpdatesError;
+                    if (UpdateChannel == Channel.Release &&
+                        json.items[i].prerelease)
+                        continue;
+
+                    NewVersion = json.items[i].tag_name;
                     yield break;
                 }
 
-                NewVersion = json.items.First().tag_name;
+                error = $"Couldn't find any releases in update channel '{UpdateChannel}'.";
+                UpdaterStatus = Status.UpToDate;
+                yield break;
             }
         }
 

@@ -124,7 +124,7 @@ namespace Project.GUI.Other
                         Process.Start(new ProcessStartInfo()
                         {
                             FileName = _updater.GetFinalOutputPath(),
-                            Arguments = $"--update \"{FileManager.TrimPathEnd(Application.dataPath, 1)}\" --delete-after",
+                            Arguments = string.Join(" ", _updater.GetUpdaterArgsForUpdate()),
                         });
                     }).Start();
                 }
@@ -176,7 +176,8 @@ namespace Project.GUI.Other
         {
             if (_updater.UpdaterStatus == AutoUpdater.Status.NotPrepared ||
                 _updater.UpdaterStatus == AutoUpdater.Status.CheckingForUpdates ||
-                _updater.UpdaterStatus == AutoUpdater.Status.CheckingForUpdatesError)
+                _updater.UpdaterStatus == AutoUpdater.Status.CheckingForUpdatesError ||
+                _updater.UpdaterStatus == AutoUpdater.Status.UpToDate)
                 StartCoroutine(CheckForUpdates());
 
             UpdateContent();

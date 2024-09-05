@@ -13,10 +13,42 @@ namespace SLTM.Installer.Services
         const string DOWNLOAD_URL = "https://github.com/DockFrankenstein/SL-Translation-Magizmo/releases/download/{0}/{1}";
         const string RELEASES_URL = "https://api.github.com/repos/DockFrankenstein/SL-Translation-Magizmo/releases";
 
+        public const string ARGS_RELEASE = "release";
+        public const string ARGS_BETA = "beta";
+        
+
         public string CurrentVersion { get; set; }
         public string NewVersion { get; set; } = null;
         public string TargetFileName { get; set; }
         public string OutputPath { get; set; }
+
+        public enum Channel
+        {
+            Release,
+            Beta,
+            Any,
+        }
+
+        static Channel? _updateChannel = null;
+        public static Channel UpdateChannel
+        {
+            get
+            {
+                if (_updateChannel == null)
+                {
+                    var args = Environment.GetCommandLineArgs();
+                    _updateChannel = Channel.Any;
+
+                    if (args.Any(x => x == ARGS_RELEASE))
+                        _updateChannel = Channel.Release;
+
+                    if (args.Any(x => x == ARGS_BETA))
+                        _updateChannel = Channel.Beta;
+                }
+
+                return _updateChannel ?? Channel.Any;
+            }
+        }
 
         public async Task GetVersion()
         {
@@ -37,10 +69,17 @@ namespace SLTM.Installer.Services
 
                 var json = JsonConvert.DeserializeObject<Response>(txt);
 
-                if (json.items.Length == 0)
-                    throw new Exception("Web request contained no items.");
+                foreach (var item in json.items)
+                {
+                    if (UpdateChannel == Channel.Release &&
+                        item.prerelease)
+                        continue;
 
-                NewVersion = json.items.First().tag_name;
+                    NewVersion = item.tag_name;
+                    return;
+                }
+
+                throw new Exception($"Couldn't find any releases in update channel '{UpdateChannel}'.");
             }
         }
 
