@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9a50ea23bcd4249aa37087017b42fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: Remote Admin/Role Management
+  path: Remote Admin
   version:
     releases: 0d0000000400000001000000
   entries:

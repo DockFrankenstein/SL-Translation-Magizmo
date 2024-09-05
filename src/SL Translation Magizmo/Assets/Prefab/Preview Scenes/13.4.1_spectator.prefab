@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9a50ea23bcd4249aa37087017b42fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: Spectator/Spectator
+  path: In-Game/HUD/Spectator
   version:
     releases: 0d0000000400000001000000
   entries:
@@ -200,6 +200,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2860625436134847874, guid: 2f371beefe591284293f3c78c0018e56, type: 2}
+    - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_characterSpacing
       value: -2.9
@@ -417,6 +421,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2860625436134847874, guid: 2f371beefe591284293f3c78c0018e56, type: 2}
+    - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_characterSpacing
       value: -2.5
@@ -652,6 +660,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2860625436134847874, guid: 2f371beefe591284293f3c78c0018e56, type: 2}
+    - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_characterSpacing
       value: -2.9

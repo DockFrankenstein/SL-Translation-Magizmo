@@ -37,7 +37,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
-      propertyPath: linkedElements.Array.data[0]
+      propertyPath: 'linkedElements.Array.data[0]'
       value: 
       objectReference: {fileID: 9084383280662881451}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
@@ -735,26 +735,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5248870508777064813, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
       propertyPath: path
-      value: Gameplay/Human/Inventory/Candy
+      value: In-Game/Inventory/Candy
       objectReference: {fileID: 0}
     - target: {fileID: 5248870508777064813, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
       propertyPath: entries.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5248870508777064813, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: entries.Array.data[0]
+      propertyPath: 'entries.Array.data[0]'
       value: 
       objectReference: {fileID: 3540673114640317759}
     - target: {fileID: 5248870508777064813, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: entries.Array.data[1]
+      propertyPath: 'entries.Array.data[1]'
       value: 
       objectReference: {fileID: 4809736043744239576}
     - target: {fileID: 5248870508777064813, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: entries.Array.data[2]
+      propertyPath: 'entries.Array.data[2]'
       value: 
       objectReference: {fileID: 1645987736965486391}
     - target: {fileID: 5248870508777064813, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: entries.Array.data[3]
+      propertyPath: 'entries.Array.data[3]'
       value: 
       objectReference: {fileID: 9084383280662881451}
     - target: {fileID: 5542758605380688021, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
@@ -842,31 +842,31 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7042183233388322289, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: backgrounds.Array.data[0]
+      propertyPath: 'backgrounds.Array.data[0]'
       value: 
       objectReference: {fileID: 321849576, guid: 376159dbb14cd6b42add9625440dbd64, type: 3}
     - target: {fileID: 7042183233388322289, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: backgrounds.Array.data[1]
+      propertyPath: 'backgrounds.Array.data[1]'
       value: 
       objectReference: {fileID: -12739013, guid: 376159dbb14cd6b42add9625440dbd64, type: 3}
     - target: {fileID: 7042183233388322289, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: backgrounds.Array.data[2]
+      propertyPath: 'backgrounds.Array.data[2]'
       value: 
       objectReference: {fileID: -254890592, guid: 376159dbb14cd6b42add9625440dbd64, type: 3}
     - target: {fileID: 7042183233388322289, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: backgrounds.Array.data[3]
+      propertyPath: 'backgrounds.Array.data[3]'
       value: 
       objectReference: {fileID: -411414316, guid: 376159dbb14cd6b42add9625440dbd64, type: 3}
     - target: {fileID: 7042183233388322289, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: backgrounds.Array.data[4]
+      propertyPath: 'backgrounds.Array.data[4]'
       value: 
       objectReference: {fileID: -1549805478, guid: 376159dbb14cd6b42add9625440dbd64, type: 3}
     - target: {fileID: 7042183233388322289, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: backgrounds.Array.data[5]
+      propertyPath: 'backgrounds.Array.data[5]'
       value: 
       objectReference: {fileID: -442744667, guid: 376159dbb14cd6b42add9625440dbd64, type: 3}
     - target: {fileID: 7042183233388322289, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: backgrounds.Array.data[6]
+      propertyPath: 'backgrounds.Array.data[6]'
       value: 
       objectReference: {fileID: 705155714, guid: 376159dbb14cd6b42add9625440dbd64, type: 3}
     - target: {fileID: 7042183233388322289, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
@@ -874,15 +874,15 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7042183233388322289, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: linkedElements.Array.data[0]
+      propertyPath: 'linkedElements.Array.data[0]'
       value: 
       objectReference: {fileID: 3540673114640317759}
     - target: {fileID: 7042183233388322289, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: linkedElements.Array.data[1]
+      propertyPath: 'linkedElements.Array.data[1]'
       value: 
       objectReference: {fileID: 4809736043744239576}
     - target: {fileID: 7042183233388322289, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: linkedElements.Array.data[2]
+      propertyPath: 'linkedElements.Array.data[2]'
       value: 
       objectReference: {fileID: 1645987736965486391}
     - target: {fileID: 7809375279568904331, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
@@ -970,7 +970,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
-      propertyPath: linkedElements.Array.data[0]
+      propertyPath: 'linkedElements.Array.data[0]'
       value: 
       objectReference: {fileID: 9084383280662881451}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
@@ -1589,7 +1589,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
-      propertyPath: linkedElements.Array.data[0]
+      propertyPath: 'linkedElements.Array.data[0]'
       value: 
       objectReference: {fileID: 9084383280662881451}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}

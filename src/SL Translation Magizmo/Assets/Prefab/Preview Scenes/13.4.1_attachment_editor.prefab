@@ -375,7 +375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9a50ea23bcd4249aa37087017b42fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: Attachments/Editor
+  path: In-Game/Attachments
   version:
     releases: 0d0000000400000001000000
   entries:
@@ -717,6 +717,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -3907992229369517385, guid: 38b7e77f0c07a574c8fb1a97599a3384, type: 2}
+    - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
@@ -1230,6 +1234,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -3907992229369517385, guid: 38b7e77f0c07a574c8fb1a97599a3384, type: 2}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
       objectReference: {fileID: 0}
@@ -1529,6 +1537,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -3907992229369517385, guid: 38b7e77f0c07a574c8fb1a97599a3384, type: 2}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
       objectReference: {fileID: 0}
@@ -1668,7 +1680,7 @@ MonoBehaviour:
   s: 
   element:
     id: workstation_preset_label
-    defaultContent: Preset #[index]
+    defaultContent: 'Preset #[index]'
     dynamicValues:
     - rid: 8343636418164948993
   references:
@@ -1803,6 +1815,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -3907992229369517385, guid: 38b7e77f0c07a574c8fb1a97599a3384, type: 2}
+    - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
@@ -2103,6 +2119,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -3907992229369517385, guid: 38b7e77f0c07a574c8fb1a97599a3384, type: 2}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
       objectReference: {fileID: 0}
@@ -2247,7 +2267,7 @@ MonoBehaviour:
   s: 
   element:
     id: workstation_preset_label
-    defaultContent: Preset #[index]
+    defaultContent: 'Preset #[index]'
     dynamicValues:
     - rid: 8343636418164948993
   references:
@@ -2381,6 +2401,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -3907992229369517385, guid: 38b7e77f0c07a574c8fb1a97599a3384, type: 2}
+    - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
@@ -2526,7 +2550,7 @@ MonoBehaviour:
   s: 
   element:
     id: workstation_preset_label
-    defaultContent: Preset #[index]
+    defaultContent: 'Preset #[index]'
     dynamicValues:
     - rid: 8343636418164948993
   references:
@@ -2601,7 +2625,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
-      propertyPath: linkedElements.Array.data[0]
+      propertyPath: 'linkedElements.Array.data[0]'
       value: 
       objectReference: {fileID: 8789271585946963432}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
@@ -3713,7 +3737,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
-      propertyPath: linkedElements.Array.data[0]
+      propertyPath: 'linkedElements.Array.data[0]'
       value: 
       objectReference: {fileID: 4969831949069862284}
     - target: {fileID: 1897407462164203552, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}

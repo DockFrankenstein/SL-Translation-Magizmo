@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9a50ea23bcd4249aa37087017b42fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: Gameplay/F1/MTF
+  path: In-Game/F1/MTF
   version:
     releases: 0d0000000400000001000000
   entries:
@@ -1184,7 +1184,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 866911431351304284, guid: 035f5750e02fd4d4da77cf21239a8649, type: 3}
-      propertyPath: linkedElements.Array.data[0]
+      propertyPath: 'linkedElements.Array.data[0]'
       value: 
       objectReference: {fileID: 9169706051500755527}
     - target: {fileID: 866911431351304284, guid: 035f5750e02fd4d4da77cf21239a8649, type: 3}

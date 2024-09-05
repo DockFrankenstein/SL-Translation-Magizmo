@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9a50ea23bcd4249aa37087017b42fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: Gameplay/Human/HUD
+  path: In-Game/HUD/Human
   version:
     releases: 0d0000000400000001000000
   entries:
@@ -238,15 +238,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -509,6 +511,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2100000, guid: f6f32f3c4fc5fa64ab5589d1a5951759, type: 2}
+    - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4291443968
@@ -814,6 +820,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2724104784279023462, guid: 43dad2d43100e4f4ba3c47cdbd712a74, type: 2}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
@@ -1108,6 +1118,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2100000, guid: f6f32f3c4fc5fa64ab5589d1a5951759, type: 2}
+    - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5869341147563832517, guid: 1d10aedeb3a452246ba0a58644e06809, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4291443968

@@ -126,22 +126,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5248870508777064813, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
       propertyPath: path
-      value: Gameplay/Human/Inventory/Candy Bag
+      value: In-Game/Inventory/Candy Bag
       objectReference: {fileID: 0}
     - target: {fileID: 5248870508777064813, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
       propertyPath: entries.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5248870508777064813, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: entries.Array.data[1]
+      propertyPath: 'entries.Array.data[1]'
       value: 
       objectReference: {fileID: 8975844785659217686}
     - target: {fileID: 5248870508777064813, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: entries.Array.data[2]
+      propertyPath: 'entries.Array.data[2]'
       value: 
       objectReference: {fileID: 5465907446327667644}
     - target: {fileID: 5248870508777064813, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: entries.Array.data[3]
+      propertyPath: 'entries.Array.data[3]'
       value: 
       objectReference: {fileID: 5465907446327667644}
     - target: {fileID: 5542758605380688021, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
@@ -217,7 +217,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: e68f9edffa3e83f48b337a94afa21f65, type: 3}
     - target: {fileID: 7042183233388322289, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
-      propertyPath: linkedElements.Array.data[1]
+      propertyPath: 'linkedElements.Array.data[1]'
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7809375279568904331, guid: 0a2fa218b8250c2419ef7a0129d61056, type: 3}
