@@ -15,17 +15,6 @@ Tool for creating translations for [SCP: Secret Laboratory](https://store.steamp
 
 SL Translation Magizmo is a translation editor for [SCP: Secret Laboratory](https://store.steampowered.com/app/700330/SCP_Secret_Laboratory/). It labels and cathegorizes entries, while providing a live preview of how they will look like in the game.
 
-# ⚠️ Work In Progress ⚠️
-
-This tool isn't finished. If you want to follow development, you can join my [discord server](https://discord.gg/fs3SBprvbA).
-
-Things that still aren't finished:
-* Preview
-* Comparing array entries to other translations
-* Updating translations used for Comparing
-* Auto correct
-* Font fallback for other languages
-
 # How To Use
 
 ![Editor with labeled panels](/docs/static/img/docs-editor-layout.png)
