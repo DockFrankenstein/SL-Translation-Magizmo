@@ -1,0 +1,608 @@
+{
+    "fileName": "SCP330.txt",
+    "identificationType": 0,
+    "useSeparationCharacter": false,
+    "separationCharacter": 126,
+    "lines": [
+        {
+            "lineId": "",
+            "guid": "93ce519f-4590-4d77-8767-b1d0773bf6c0",
+            "fields": [
+                {
+                    "id": "",
+                    "autoDisplayName": true,
+                    "displayName": "",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "ff331fb9-ec99-4de2-b5fd-f620f3f97dbd"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "32007bfd-6749-4abf-8202-68010b2bd592",
+            "fields": [
+                {
+                    "id": "inv_candybag_rainbow",
+                    "autoDisplayName": false,
+                    "displayName": "Rainbow",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "54346d6c-46ef-421c-b231-2eb376455053"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "cb36153d-86bd-4cb1-802b-27785f937081",
+            "fields": [
+                {
+                    "id": "inv_candybag_rainbow_description",
+                    "autoDisplayName": false,
+                    "displayName": "Rainbow Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "0b2a5aa4-e0f5-48d6-bf22-46b27a790c8a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a70c12dd-908f-407e-a778-18cff6e7b1c7",
+            "fields": [
+                {
+                    "id": "inv_candybag_rainbow_effects",
+                    "autoDisplayName": false,
+                    "displayName": "Rainbow Effects",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "92217b83-e3d0-4b5d-9b01-4f2382894c36"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "946d1fa5-2168-4b7a-aec8-a16d7917f28b",
+            "fields": [
+                {
+                    "id": "inv_candybag_yellow",
+                    "autoDisplayName": false,
+                    "displayName": "Yellow",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "d39f5fa3-c376-40c2-a483-d5edd0be83b4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ca0a6e0a-b9e1-4746-a7ea-ebd18a0938cf",
+            "fields": [
+                {
+                    "id": "inv_candybag_yellow_description",
+                    "autoDisplayName": false,
+                    "displayName": "Yellow Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "f0ec588b-cd6b-48ae-81d2-959edba932d0"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2b6492d7-d67e-4e91-8e76-d7105965248b",
+            "fields": [
+                {
+                    "id": "inv_candybag_yellow_effects",
+                    "autoDisplayName": false,
+                    "displayName": "Yellow Effects",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "08bbe8ea-617a-43e1-a4f0-387daa59941a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "1db1c2e4-74d8-4961-a134-b7f184562201",
+            "fields": [
+                {
+                    "id": "inv_candybag_purple",
+                    "autoDisplayName": false,
+                    "displayName": "Purple",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "7e9d13ba-3c6d-4e2f-a2cb-b64efc209d04"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "4964b196-96b1-4adf-b11b-42a9f835942f",
+            "fields": [
+                {
+                    "id": "inv_candybag_purple_description",
+                    "autoDisplayName": false,
+                    "displayName": "Purple Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "c33b9290-2d2f-43f4-ba44-5a600eb0dd71"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e3bd5dad-a31a-4b97-ac43-4ef56ccaf6d8",
+            "fields": [
+                {
+                    "id": "inv_candybag_purple_effects",
+                    "autoDisplayName": false,
+                    "displayName": "Purple Effects",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "134611a2-833b-41f3-8337-de4dded723ea"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "938df755-e013-4b6d-bc44-28a401c73fa6",
+            "fields": [
+                {
+                    "id": "inv_candybag_red",
+                    "autoDisplayName": false,
+                    "displayName": "Red",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "b026c37e-bfe2-45b7-9249-b0ca2ff3f33c"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "a8b567ee-b3de-40b1-bf12-bcaef4cd3160",
+            "fields": [
+                {
+                    "id": "inv_candybag_red_description",
+                    "autoDisplayName": false,
+                    "displayName": "Red Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "bb9442ce-ffcc-4d2b-aac0-ab99b0f3303f"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d650f85d-0cc8-4941-bf92-bc17dff2b4f8",
+            "fields": [
+                {
+                    "id": "inv_candybag_red_effects",
+                    "autoDisplayName": false,
+                    "displayName": "Red Effects",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "4a656994-f1fc-44bc-bd6d-1f9a449e2380"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e39ac120-451b-46c4-a989-eb907d84733f",
+            "fields": [
+                {
+                    "id": "inv_candybag_green",
+                    "autoDisplayName": false,
+                    "displayName": "Green",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "69a0c2e4-29fb-4e32-a3cd-5454fee8046b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7a1a8725-6015-4836-93ae-9052dff4eac1",
+            "fields": [
+                {
+                    "id": "inv_candybag_green_description",
+                    "autoDisplayName": false,
+                    "displayName": "Green Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "e8c9228a-c033-4c0e-aff9-bdfe9a3b3036"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9ff009a7-77d6-41f3-9521-d578cdd45ce6",
+            "fields": [
+                {
+                    "id": "inv_candybag_green_effects",
+                    "autoDisplayName": false,
+                    "displayName": "Green Effects",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "0c87de64-be35-4237-8007-ca0accd98803"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "cb9a69fb-4643-42ed-82dc-547e5ce27e95",
+            "fields": [
+                {
+                    "id": "inv_candybag_blue",
+                    "autoDisplayName": false,
+                    "displayName": "Blue",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "41dc871b-14a9-422d-a1ea-c372a946e7a6"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "fdffce31-3604-49be-9453-e8e26a7a0bca",
+            "fields": [
+                {
+                    "id": "inv_candybag_blue_description",
+                    "autoDisplayName": false,
+                    "displayName": "Blue Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "15c13168-6b1b-476d-85a7-ab9a34b09df1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "7facc9ba-a9f3-4fd8-aae4-649cfafbe069",
+            "fields": [
+                {
+                    "id": "inv_candybag_blue_effects",
+                    "autoDisplayName": false,
+                    "displayName": "Blue Effects",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "1d79e337-6877-4168-ac98-2dc301c458b5"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ac81aea5-d938-4478-9a08-5983eb935fbd",
+            "fields": [
+                {
+                    "id": "inv_candybag_pink",
+                    "autoDisplayName": false,
+                    "displayName": "Pink",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "644c4483-8378-4cce-baed-a088a107ac82"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "dd231c98-a494-4230-b8f9-8363c9ed2cc6",
+            "fields": [
+                {
+                    "id": "inv_candybag_pink_description",
+                    "autoDisplayName": false,
+                    "displayName": "Pink Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "354ba832-f819-4345-9da5-d660fa808f45"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "b95d3874-4ed0-4dc8-9c6f-34b07493c748",
+            "fields": [
+                {
+                    "id": "inv_candybag_pink_effects",
+                    "autoDisplayName": false,
+                    "displayName": "Pink Effects",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "bb0bdf79-9782-4e82-8ef2-28499b725655"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "807c866b-bd58-49a4-83bb-e83ecd077971",
+            "fields": [
+                {
+                    "id": "inv_candybag_orange",
+                    "autoDisplayName": false,
+                    "displayName": "Orange",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "98bab0f4-1567-432e-9814-81d43bcd6ee9"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0e193759-acdf-4959-bab4-ffeba2a9fa4d",
+            "fields": [
+                {
+                    "id": "inv_candybag_orange_description",
+                    "autoDisplayName": false,
+                    "displayName": "Orange Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "ef9f6e4a-59fa-4ff8-9a33-aafc764708ca"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d63cd949-f6fc-4402-ace4-7ab46d9f6d2f",
+            "fields": [
+                {
+                    "id": "inv_candybag_orange_effects",
+                    "autoDisplayName": false,
+                    "displayName": "Orange Effects",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "14dc3f94-f88e-4390-a95e-883ab8f171cb"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ffa097d6-a9b3-4e14-b914-55078c3468b0",
+            "fields": [
+                {
+                    "id": "inv_candybag_white",
+                    "autoDisplayName": false,
+                    "displayName": "White",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "c5f35398-9106-4492-94d7-f945e3c0ab14"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2cdfe273-68fe-489f-b1ad-781a69f81ceb",
+            "fields": [
+                {
+                    "id": "inv_candybag_white_description",
+                    "autoDisplayName": false,
+                    "displayName": "White Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "3070c294-8060-4877-abf6-86fcebf32fb4"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "d971287f-6376-4e59-8fc3-bcf3eb69e16a",
+            "fields": [
+                {
+                    "id": "inv_candybag_white_effects",
+                    "autoDisplayName": false,
+                    "displayName": "White Effects",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "358e6840-08bd-45a9-a849-a5967854bdbf"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "82087fa0-3e4f-4a07-9f3a-4b8d613870dc",
+            "fields": [
+                {
+                    "id": "inv_candybag_gray",
+                    "autoDisplayName": false,
+                    "displayName": "Gray",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "7407464a-6300-4a17-b4d0-42a1af1b85cf"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "cb7221c3-828a-4bb8-bce6-3bfee64a3a96",
+            "fields": [
+                {
+                    "id": "inv_candybag_gray_description",
+                    "autoDisplayName": false,
+                    "displayName": "Gray Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "98daeb02-be73-48d2-bb47-8b1e5d39361e"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "0bda58b2-db5e-44ee-82bc-1d40682f5ff5",
+            "fields": [
+                {
+                    "id": "inv_candybag_gray_effects",
+                    "autoDisplayName": false,
+                    "displayName": "Gray Effects",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "e065361b-03ea-45b8-a981-7d2f8dc457f1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "9c7e7c40-618c-429a-a3be-0b01b855e181",
+            "fields": [
+                {
+                    "id": "inv_candybag_black",
+                    "autoDisplayName": false,
+                    "displayName": "Black",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "18bf6495-502f-472b-8039-e21276b3225b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "f236d4d2-998a-4c4d-9c0d-3ec5fc1223b2",
+            "fields": [
+                {
+                    "id": "inv_candybag_black_description",
+                    "autoDisplayName": false,
+                    "displayName": "Black Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "5cba01e2-4267-408e-8641-50c584d56f34"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "ee9eeda6-e486-4a5a-9bed-5ffc94338462",
+            "fields": [
+                {
+                    "id": "inv_candybag_black_effects",
+                    "autoDisplayName": false,
+                    "displayName": "Black Effects",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "fb9cff5d-98a1-4ece-9355-51ce2c5e1317"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "e26a5558-3228-4ea6-a871-d0302972f5c5",
+            "fields": [
+                {
+                    "id": "inv_candybag_brown",
+                    "autoDisplayName": false,
+                    "displayName": "Brown",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "7c21df63-88de-4267-b953-63d53c3e375a"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "2f099460-3a4f-4777-8300-cf80a0ea2d4d",
+            "fields": [
+                {
+                    "id": "inv_candybag_black_description",
+                    "autoDisplayName": false,
+                    "displayName": "Brown Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "3b7eb104-547f-4d0f-a95c-41885cb0f05b"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "651949b3-aa02-4f67-98b9-b534f5c54e50",
+            "fields": [
+                {
+                    "id": "inv_candybag_black_effects",
+                    "autoDisplayName": false,
+                    "displayName": "Brown Effects",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "d80fe8e8-4353-449f-9a5d-8956f560e485"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "5af404d4-d2cb-4e41-bf49-7a534d3ae24a",
+            "fields": [
+                {
+                    "id": "inv_candybag_evil",
+                    "autoDisplayName": false,
+                    "displayName": "Evil",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "c370c94e-e397-40ee-a26c-203051bfbbbd"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "bd11b244-8523-4944-aca3-e0cc5093ec87",
+            "fields": [
+                {
+                    "id": "inv_candybag_evil_description",
+                    "autoDisplayName": false,
+                    "displayName": "Evil Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "ba62aaef-1fdf-4c10-9b86-66cc463d8bb1"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "de522cd6-69df-4daf-a8fb-ccdce342e19c",
+            "fields": [
+                {
+                    "id": "inv_candybag_evil_effects",
+                    "autoDisplayName": false,
+                    "displayName": "Evil Effects",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "673773b8-dd0e-4a1d-a084-7e9dc1857566"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1085 @@
+{
+    "fileName": "Items.txt",
+    "identificationType": 1,
+    "useSeparationCharacter": true,
+    "separationCharacter": 126,
+    "lines": [
+        {
+            "lineId": "0",
+            "guid": "bf557323-f3fa-4312-99ea-9f61ac0863ed",
+            "fields": [
+                {
+                    "id": "inv_keycard_janitor",
+                    "autoDisplayName": false,
+                    "displayName": "Janitor Keycard",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "de572e30-d010-4c27-aae9-0ea66349e857"
+                }
+            ]
+        },
+        {
+            "lineId": "1",
+            "guid": "c41b69b6-1a43-4c8f-81fe-68c2e68c2729",
+            "fields": [
+                {
+                    "id": "inv_keycard_scientist",
+                    "autoDisplayName": false,
+                    "displayName": "Scientist Keycard",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "d014660f-c378-4326-ac89-c472c0b57ec2"
+                }
+            ]
+        },
+        {
+            "lineId": "2",
+            "guid": "ed1f8aac-d55b-4ecf-83cf-26b84250902e",
+            "fields": [
+                {
+                    "id": "inv_keycard_scientist2",
+                    "autoDisplayName": false,
+                    "displayName": "Research Supervisor Keycard",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "43b8fed0-9d5a-4b9c-9456-c36d89d8e720"
+                }
+            ]
+        },
+        {
+            "lineId": "3",
+            "guid": "ae46b42b-a7fe-4f74-b375-a012bb1c23f8",
+            "fields": [
+                {
+                    "id": "inv_keycard_zone_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Zone Manager Keycard",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "a3fdcb16-e53b-494f-9e64-f3e2dc7bb5ee"
+                }
+            ]
+        },
+        {
+            "lineId": "4",
+            "guid": "a0bbc8ac-29bd-4576-9fad-173df0cf7ec3",
+            "fields": [
+                {
+                    "id": "inv_keycard_guard",
+                    "autoDisplayName": false,
+                    "displayName": "Guard Keycard",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "cd8ba32b-cdbe-4078-b0a0-00e6d07b556d"
+                }
+            ]
+        },
+        {
+            "lineId": "5",
+            "guid": "db32a695-4479-496c-b2ca-596b37daa5a3",
+            "fields": [
+                {
+                    "id": "inv_keycard_mtf_private",
+                    "autoDisplayName": false,
+                    "displayName": "MTF Private Keycard",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "4565d3ca-059d-4e75-9f23-379c1578c52a"
+                }
+            ]
+        },
+        {
+            "lineId": "6",
+            "guid": "11e0bb53-816a-420f-bf63-9abbbe9f62db",
+            "fields": [
+                {
+                    "id": "inv_keycard_containment_engineer",
+                    "autoDisplayName": false,
+                    "displayName": "Containment Engineer Keycard",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "ba1f5865-38bb-47cf-adb5-39abea911ca0"
+                }
+            ]
+        },
+        {
+            "lineId": "7",
+            "guid": "77d7fc3b-0cc7-49dc-912f-b4719286b0c9",
+            "fields": [
+                {
+                    "id": "inv_keycard_mtf_sergeant",
+                    "autoDisplayName": false,
+                    "displayName": "MTF Operative Keycard",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "b4856a5d-5da8-4e6f-9fb4-2aa87ef0c37d"
+                }
+            ]
+        },
+        {
+            "lineId": "8",
+            "guid": "a6e63928-5f70-41bb-afc1-0e180032f6e1",
+            "fields": [
+                {
+                    "id": "inv_keycard_mtf_captain",
+                    "autoDisplayName": false,
+                    "displayName": "MTF Captain Keycard",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "de3b15bf-05d1-4842-a9d7-79130908d1ac"
+                }
+            ]
+        },
+        {
+            "lineId": "9",
+            "guid": "2eec2623-f1b7-497f-8cf7-0bad2cc89e32",
+            "fields": [
+                {
+                    "id": "inv_keycard_facility_manager",
+                    "autoDisplayName": false,
+                    "displayName": "Facility Manager",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "6c3355c0-7795-49f9-9dab-fab3750c4bd9"
+                }
+            ]
+        },
+        {
+            "lineId": "10",
+            "guid": "1f02e6f3-4404-44c3-b891-6473dbd3ffb6",
+            "fields": [
+                {
+                    "id": "inv_keycard_chaos",
+                    "autoDisplayName": false,
+                    "displayName": "Chaos Insurgency Keycard",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "f39d63d1-1456-40ba-b8fe-4d12734db687"
+                }
+            ]
+        },
+        {
+            "lineId": "11",
+            "guid": "bc24cffa-cbac-4997-b1bf-4cfc0730eb86",
+            "fields": [
+                {
+                    "id": "inv_keycard_o5",
+                    "autoDisplayName": false,
+                    "displayName": "O5-Level Keycard",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "4e47002a-ac46-44d4-a7fc-2486e8617323"
+                }
+            ]
+        },
+        {
+            "lineId": "12",
+            "guid": "30196365-5a98-4e62-9433-ff8f6180f3cb",
+            "fields": [
+                {
+                    "id": "inv_radio",
+                    "autoDisplayName": false,
+                    "displayName": "Radio",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "27fa115d-f3bd-4573-b6b0-e6eb48d585fa"
+                },
+                {
+                    "id": "inv_radio_description",
+                    "autoDisplayName": false,
+                    "displayName": "Radio Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "fad1c1e6-aa7d-4e0b-b13b-574343ae0f0c"
+                }
+            ]
+        },
+        {
+            "lineId": "13",
+            "guid": "47d79b25-2149-44cf-8517-65eba1a43f0b",
+            "fields": [
+                {
+                    "id": "inv_com15",
+                    "autoDisplayName": false,
+                    "displayName": "Com-15",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "2e5bf9c1-5ccd-48b9-ad88-18290e5c7a3b"
+                }
+            ]
+        },
+        {
+            "lineId": "14",
+            "guid": "8e4065e9-f460-4458-a50e-d617f6974280",
+            "fields": [
+                {
+                    "id": "inv_medkit",
+                    "autoDisplayName": false,
+                    "displayName": "Medkit",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "f5eb32ab-a778-400d-bd6c-08a001f4a9b6"
+                },
+                {
+                    "id": "inv_medkit_description",
+                    "autoDisplayName": false,
+                    "displayName": "Medkit Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "c52e0c46-e260-46f7-943b-4ff6a2db2071"
+                }
+            ]
+        },
+        {
+            "lineId": "15",
+            "guid": "bcc6a59b-6d8e-4015-8263-e1d9783bb4ab",
+            "fields": [
+                {
+                    "id": "inv_flashlight",
+                    "autoDisplayName": false,
+                    "displayName": "Flashlight",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "3354d5cc-a6f6-4324-86dc-e093002dcbde"
+                },
+                {
+                    "id": "inv_flashlight_description",
+                    "autoDisplayName": false,
+                    "displayName": "Flashlight Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "44611b54-31a3-4d98-9a9c-197183606e20"
+                }
+            ]
+        },
+        {
+            "lineId": "16",
+            "guid": "3456dba7-b51e-41ef-a551-1dd102831b01",
+            "fields": [
+                {
+                    "id": "inv_microhid",
+                    "autoDisplayName": false,
+                    "displayName": "Micro-HID",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "734861dc-632b-4f3b-ab1f-8260e0175e88"
+                },
+                {
+                    "id": "inv_microhid_description",
+                    "autoDisplayName": false,
+                    "displayName": "Micro-HID Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "f0dd7951-a533-41e8-8191-9bad56dcc626"
+                }
+            ]
+        },
+        {
+            "lineId": "17",
+            "guid": "922bd91f-3621-4276-8254-d603090c47c3",
+            "fields": [
+                {
+                    "id": "inv_scp500",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-500",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "42e3f187-b566-49d8-9511-b711fc5b7d70"
+                },
+                {
+                    "id": "inv_scp500_description",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-500 Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "ba46ac84-3a62-4d3c-8b7b-94fe1b91b3b3"
+                }
+            ]
+        },
+        {
+            "lineId": "18",
+            "guid": "08f6d8a2-06d7-41a8-b75f-d5236798ff79",
+            "fields": [
+                {
+                    "id": "inv_scp207",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-207",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "483050f2-b42a-4a47-b543-c8aa1cebbaca"
+                },
+                {
+                    "id": "inv_scp207_description",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-207 Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "6d4878d0-bf89-4196-95d1-5f235a9d0d5d"
+                }
+            ]
+        },
+        {
+            "lineId": "20",
+            "guid": "574b0281-4f99-479e-acc3-e36e7d1a6ea5",
+            "fields": [
+                {
+                    "id": "inv_e11sr",
+                    "autoDisplayName": false,
+                    "displayName": "MTF-E11-SR",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "92bdfd37-d84b-4df1-82b1-64bce22275f1"
+                }
+            ]
+        },
+        {
+            "lineId": "21",
+            "guid": "3cc0f09b-9240-4a01-99dc-e13e890f8441",
+            "fields": [
+                {
+                    "id": "inv_crossvec",
+                    "autoDisplayName": false,
+                    "displayName": "Crossvec",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "348eb76a-8bdf-4f19-a520-9cc954ffcaca"
+                }
+            ]
+        },
+        {
+            "lineId": "23",
+            "guid": "5e3cf436-27a6-42c8-b9e5-18dfa3119150",
+            "fields": [
+                {
+                    "id": "inv_fsp9",
+                    "autoDisplayName": false,
+                    "displayName": "FSP-9",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "b183f7c8-af1b-45eb-8b97-b39ad722dd1b"
+                }
+            ]
+        },
+        {
+            "lineId": "24",
+            "guid": "8ef6abe5-6086-4cbd-93d0-639da569a32d",
+            "fields": [
+                {
+                    "id": "inv_logicer",
+                    "autoDisplayName": false,
+                    "displayName": "Logicer",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "9b8c010a-78fd-447a-9ca4-074d1e6657a2"
+                }
+            ]
+        },
+        {
+            "lineId": "25",
+            "guid": "d89865b9-86ae-412c-a72e-e34d900eb273",
+            "fields": [
+                {
+                    "id": "inv_grenade_he",
+                    "autoDisplayName": false,
+                    "displayName": "Grenade",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "50eb7339-9872-4c37-af78-27d68fef3cb7"
+                },
+                {
+                    "id": "inv_grenade_he_description",
+                    "autoDisplayName": false,
+                    "displayName": "Grenade Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "66a6dcb9-45a0-4b0b-ac61-710d3871694c"
+                }
+            ]
+        },
+        {
+            "lineId": "26",
+            "guid": "270911ee-d6db-4c33-8db3-a4febdf44e35",
+            "fields": [
+                {
+                    "id": "inv_flashbang",
+                    "autoDisplayName": false,
+                    "displayName": "Flashbang",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "90493dd3-fe53-481e-b9d0-21027a0a478a"
+                },
+                {
+                    "id": "inv_flashbang_description",
+                    "autoDisplayName": false,
+                    "displayName": "Flashbang Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "833c591f-ce05-4d67-b100-8cc4d4ff2622"
+                }
+            ]
+        },
+        {
+            "lineId": "30",
+            "guid": "511f4904-e949-4dd4-81db-f7d4ad9526b4",
+            "fields": [
+                {
+                    "id": "inv_com18",
+                    "autoDisplayName": false,
+                    "displayName": "COM-18",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "6f5183cc-6445-442f-bf8c-ac38f77731c6"
+                }
+            ]
+        },
+        {
+            "lineId": "31",
+            "guid": "dcb25a60-e9df-4a05-ab2b-36c5847e997a",
+            "fields": [
+                {
+                    "id": "inv_scp018",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-018",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "76534fcf-72e8-422b-886b-f9a1642a370c"
+                },
+                {
+                    "id": "inv_scp018_description",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-018 Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "6abb31c5-89c6-46bb-b86b-b9aba1604dc2"
+                }
+            ]
+        },
+        {
+            "lineId": "32",
+            "guid": "8d165460-c569-449f-82c7-d096d091d078",
+            "fields": [
+                {
+                    "id": "inv_scp268",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-268",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "a1aabe88-3b04-4a6a-b3d6-4350f52ce7f0"
+                },
+                {
+                    "id": "inv_scp268_description",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-268 Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "1a8917ef-fa9e-4c12-a6d1-710cf2e117aa"
+                }
+            ]
+        },
+        {
+            "lineId": "33",
+            "guid": "45b5c067-7d09-47cd-aaa8-ee17a9d66365",
+            "fields": [
+                {
+                    "id": "inv_adrenaline",
+                    "autoDisplayName": false,
+                    "displayName": "Adrenaline",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "e5d5aaca-bd44-4510-aef5-6633afdae809"
+                },
+                {
+                    "id": "inv_adrenaline_description",
+                    "autoDisplayName": false,
+                    "displayName": "Adrenaline Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "d14bd9d1-cb96-410f-aa0a-f75896b7e4f9"
+                }
+            ]
+        },
+        {
+            "lineId": "34",
+            "guid": "f0565d80-43db-433c-91cd-ed5e9d5c5e44",
+            "fields": [
+                {
+                    "id": "inv_painkillers",
+                    "autoDisplayName": false,
+                    "displayName": "Painkillers",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "e8fb3d68-7eaf-4483-8f56-90e9568f84b3"
+                },
+                {
+                    "id": "inv_painkillers_description",
+                    "autoDisplayName": false,
+                    "displayName": "Painkillers Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "489a2c20-97a3-44a1-b057-e9f553c8b2ce"
+                }
+            ]
+        },
+        {
+            "lineId": "35",
+            "guid": "1305031a-d54c-4f16-b37b-acf1a40645de",
+            "fields": [
+                {
+                    "id": "inv_coin",
+                    "autoDisplayName": false,
+                    "displayName": "Coin",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "ad168bfa-eb42-4ca5-bea2-ebcc617d4054"
+                },
+                {
+                    "id": "inv_coin_description",
+                    "autoDisplayName": false,
+                    "displayName": "Coin Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "72da5071-68d3-4a44-830b-2ffac0ba9b53"
+                }
+            ]
+        },
+        {
+            "lineId": "36",
+            "guid": "f8e549f3-7b29-4dab-9bdd-45a1cc3a143a",
+            "fields": [
+                {
+                    "id": "inv_armor_light",
+                    "autoDisplayName": false,
+                    "displayName": "Light Armor",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "24aa89a7-e44f-4385-bd21-6fb13206e0ec"
+                }
+            ]
+        },
+        {
+            "lineId": "37",
+            "guid": "73f7df43-c482-40e1-be29-f2dd930d1f32",
+            "fields": [
+                {
+                    "id": "inv_armor_combat",
+                    "autoDisplayName": false,
+                    "displayName": "Combat Armor",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "ba485a65-39a1-4a53-884c-713a4dd03735"
+                }
+            ]
+        },
+        {
+            "lineId": "38",
+            "guid": "f9dcf0d8-e48f-4e04-991d-64e093688ac9",
+            "fields": [
+                {
+                    "id": "inv_armor_heavy",
+                    "autoDisplayName": false,
+                    "displayName": "Heavy Armor",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "e1860978-32c2-47eb-bd39-ef3ed364cd8b"
+                }
+            ]
+        },
+        {
+            "lineId": "39",
+            "guid": "cadc62cb-3711-4996-bba2-a7fa703abdac",
+            "fields": [
+                {
+                    "id": "inv_revolver",
+                    "autoDisplayName": false,
+                    "displayName": "Revolver",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "bc78baa6-bdad-44bb-a4e1-93d8ab948d65"
+                }
+            ]
+        },
+        {
+            "lineId": "40",
+            "guid": "12165b51-aa7f-4f91-915d-4c70a7731a2f",
+            "fields": [
+                {
+                    "id": "inv_ak",
+                    "autoDisplayName": false,
+                    "displayName": "AK",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "6026e027-19a2-49ab-a85c-d45007e8add1"
+                }
+            ]
+        },
+        {
+            "lineId": "41",
+            "guid": "1fea6513-b599-4968-b8d6-f0879a5b78ac",
+            "fields": [
+                {
+                    "id": "inv_shotgun",
+                    "autoDisplayName": false,
+                    "displayName": "Shotgun",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "d8c94171-a688-4230-a1d5-a46292cf65c1"
+                }
+            ]
+        },
+        {
+            "lineId": "42",
+            "guid": "5aa1e748-44b9-45ac-9f24-32387ff3095a",
+            "fields": [
+                {
+                    "id": "inv_candybag",
+                    "autoDisplayName": false,
+                    "displayName": "Candybag",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "dbf52dfd-20e0-4cbc-a5cf-d1e83ffb0f39"
+                },
+                {
+                    "id": "inv_candybag_description",
+                    "autoDisplayName": false,
+                    "displayName": "Candybag Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "9d90dbf9-b0a3-4697-acd5-40338eff4c35"
+                }
+            ]
+        },
+        {
+            "lineId": "43",
+            "guid": "711931b0-27f3-431c-82fe-c716e5e5735f",
+            "fields": [
+                {
+                    "id": "inv_scp2176",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-2176",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "678cf007-d6bc-443f-83ac-80c0483e9235"
+                },
+                {
+                    "id": "inv_scp2176_description",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-2176 Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "39f54b9f-7b24-4c97-9aad-b74121514201"
+                }
+            ]
+        },
+        {
+            "lineId": "44",
+            "guid": "75d1a33f-7b30-4ab0-827d-f61673fb1b75",
+            "fields": [
+                {
+                    "id": "inv_scp244a",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-244A",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "20f119d0-8d2c-4b23-8161-84057bc63c0c"
+                },
+                {
+                    "id": "inv_scp244a_description",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-244A Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "29b81824-858b-4dcb-8ae2-b479704feddb"
+                }
+            ]
+        },
+        {
+            "lineId": "45",
+            "guid": "e549bd4b-ea86-403a-be22-0d1b43d05413",
+            "fields": [
+                {
+                    "id": "inv_scp244b",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-244B",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "c3641957-7692-4d75-9c33-cb776ea759ce"
+                },
+                {
+                    "id": "inv_scp244b_description",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-244B Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "9dcc1592-558a-4b64-8f4f-ab3aed69c8fa"
+                }
+            ]
+        },
+        {
+            "lineId": "46",
+            "guid": "55a99d06-3aaa-4dc2-9890-c7f6bd8af9fb",
+            "fields": [
+                {
+                    "id": "inv_scp1853",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-1853",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "2473dcff-5791-424c-907e-ab6918a9a476"
+                },
+                {
+                    "id": "inv_scp1853_description",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-1853 Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "9c4ff6c8-54b1-4c2e-bb1b-7bfdf698da9b"
+                }
+            ]
+        },
+        {
+            "lineId": "47",
+            "guid": "4b380517-29fe-4884-9abe-15bfe282950a",
+            "fields": [
+                {
+                    "id": "inv_3x_particle_disruptor",
+                    "autoDisplayName": false,
+                    "displayName": "3-X Particle Disruptor",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "cef111e9-3b7f-451c-b70c-0912fa919df7"
+                },
+                {
+                    "id": "inv_3x_particle_disruptor_description",
+                    "autoDisplayName": false,
+                    "displayName": "3-X Particle Disruptor Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "d57dfda1-71b3-4d19-be87-95a080459019"
+                }
+            ]
+        },
+        {
+            "lineId": "48",
+            "guid": "bb58f6b9-017a-49c7-a9d0-b0258c574fd0",
+            "fields": [
+                {
+                    "id": "inv_com45",
+                    "autoDisplayName": false,
+                    "displayName": "COM-45",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "3848b948-1f63-404b-bc5e-a727d39d72aa"
+                }
+            ]
+        },
+        {
+            "lineId": "49",
+            "guid": "58551893-551a-49b1-ac8a-e0fb89d5f0dd",
+            "fields": [
+                {
+                    "id": "inv_scp1576",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-1576",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "d14e55e5-3037-4553-a4cc-f6b4d21b9ec0"
+                },
+                {
+                    "id": "inv_scp1576_description",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-1576 Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "13d8b29b-a35a-4575-84b4-d4d38d13884c"
+                }
+            ]
+        },
+        {
+            "lineId": "50",
+            "guid": "4fe801bc-8cf9-4673-8631-b629d83c2673",
+            "fields": [
+                {
+                    "id": "inv_jailbird",
+                    "autoDisplayName": false,
+                    "displayName": "Jailbird",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "c78c32ce-4b84-48b9-b531-fda3c0f0f455"
+                },
+                {
+                    "id": "inv_jailbird_description",
+                    "autoDisplayName": false,
+                    "displayName": "Jailbird Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "fc0ac0f6-4c90-4c8e-88c9-86dd4ab6dc9c"
+                }
+            ]
+        },
+        {
+            "lineId": "51",
+            "guid": "cba93f59-ef38-425a-b2fc-fb2efe7ee5f9",
+            "fields": [
+                {
+                    "id": "inv_scp207_anti",
+                    "autoDisplayName": false,
+                    "displayName": "Anti SCP-207",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "7b14e2d0-872e-421e-b252-4a3ed380101a"
+                },
+                {
+                    "id": "inv_scp207_anti_description",
+                    "autoDisplayName": false,
+                    "displayName": "Anti SCP-207 Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "86a4dba9-e980-4de5-baa4-673f87fcfc10"
+                }
+            ]
+        },
+        {
+            "lineId": "52",
+            "guid": "481c5caa-ad35-486d-84ec-5f2f874acbd2",
+            "fields": [
+                {
+                    "id": "inv_fr_mg0",
+                    "autoDisplayName": false,
+                    "displayName": "FR-MG-0",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "5398ea3f-495e-4af4-a35c-601c316b30dc"
+                }
+            ]
+        },
+        {
+            "lineId": "53",
+            "guid": "f90c1cbc-5db4-47b8-a93c-59be62cba3e2",
+            "fields": [
+                {
+                    "id": "inv_a7",
+                    "autoDisplayName": false,
+                    "displayName": "A7",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "0ad07385-e9f5-437f-b983-ebf0f19018cb"
+                }
+            ]
+        },
+        {
+            "lineId": "54",
+            "guid": "2c31b621-e447-49a8-ba44-83a19b92be5c",
+            "fields": [
+                {
+                    "id": "inv_lantern",
+                    "autoDisplayName": false,
+                    "displayName": "Lantern",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "04027ea9-bcc4-425e-a2d6-64eeaa910937"
+                },
+                {
+                    "id": "inv_lantern_description",
+                    "autoDisplayName": false,
+                    "displayName": "Lantern Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "b2266f7d-1349-4944-b7a6-5759d55ce522"
+                }
+            ]
+        },
+        {
+            "lineId": "55",
+            "guid": "e0edb79e-1844-4fae-a2ad-9f36e5443c83",
+            "fields": [
+                {
+                    "id": "inv_scp1344",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-1344",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "ebe18d7c-0e24-4985-b0ae-9d81c07ec9cc"
+                },
+                {
+                    "id": "inv_scp1344_description",
+                    "autoDisplayName": false,
+                    "displayName": "SCP-1344 Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "db5cee55-46b5-4f1b-bc9a-ce135df973ae"
+                }
+            ]
+        },
+        {
+            "lineId": "56",
+            "guid": "85790498-e82a-483a-a462-0979f6c8bd78",
+            "fields": [
+                {
+                    "id": "inv_snowball",
+                    "autoDisplayName": false,
+                    "displayName": "Snowball",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "f3d2120d-ec92-4c63-ac86-0699181160aa"
+                },
+                {
+                    "id": "inv_snowball_description",
+                    "autoDisplayName": false,
+                    "displayName": "Snowball Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "10e90310-9852-4637-b131-9b8e20c673db"
+                }
+            ]
+        },
+        {
+            "lineId": "57",
+            "guid": "29f75570-eb82-4020-a1e4-0df537d81cfd",
+            "fields": [
+                {
+                    "id": "inv_coal",
+                    "autoDisplayName": false,
+                    "displayName": "Coal",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "ec79c759-75a8-4794-b010-a4f394211696"
+                },
+                {
+                    "id": "inv_coal_description",
+                    "autoDisplayName": false,
+                    "displayName": "Coal Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "7e90da1c-c3d3-4399-8f09-2a98accf8ee4"
+                }
+            ]
+        },
+        {
+            "lineId": "58",
+            "guid": "d3bea16f-bf46-4ef1-b325-666c8497223a",
+            "fields": [
+                {
+                    "id": "inv_coal_special",
+                    "autoDisplayName": false,
+                    "displayName": "Coal?",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "d0aa1ca6-e045-4861-b1b9-0d21bbb2dea7"
+                },
+                {
+                    "id": "inv_coal_special_description",
+                    "autoDisplayName": false,
+                    "displayName": "Coal? Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "56a1675a-d2db-435b-b0a0-5024ca651661"
+                }
+            ]
+        },
+        {
+            "lineId": "59",
+            "guid": "5e58aca4-c456-4abd-ba0e-4e4a2296a1cb",
+            "fields": [
+                {
+                    "id": "inv_tape_player",
+                    "autoDisplayName": false,
+                    "displayName": "Tape Player",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "dee4948f-4d0e-4736-92dc-840cb0f65ac7"
+                },
+                {
+                    "id": "inv_tape_player_description",
+                    "autoDisplayName": false,
+                    "displayName": "Tape Player Description",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [],
+                    "guid": "29dccb09-fc03-421f-a5fa-0c7b8a97dd86"
+                }
+            ]
+        }
+    ]
+}
