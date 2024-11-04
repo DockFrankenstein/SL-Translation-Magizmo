@@ -1,7 +1,7 @@
 {
-    "versionId": "7b70790d2e59747468799587042babec",
+    "versionId": "be0b5372d29c5c84daf69e579874630c",
     "version": {
-        "instanceID": 31064
+        "instanceID": 137030
     },
     "items": [
         {
@@ -827,6 +827,102 @@
             "guid": "e14643c7-63db-4772-ac46-4006f3b002d4"
         },
         {
+            "type": 0,
+            "id": "inv_candybag_orange",
+            "displayText": "Inv Candybag Orange",
+            "guid": "86f0d425-4135-4b6a-8be0-d1ff93918fe4"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_orange_description",
+            "displayText": "Inv Candybag Orange Description",
+            "guid": "e1fb52c7-7f4d-44db-9671-7ae07ddd9989"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_orange_effects",
+            "displayText": "Inv Candybag Orange Effects",
+            "guid": "0b069291-24ec-4ef7-9607-2ac211a0eff6"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_white",
+            "displayText": "Inv Candybag White",
+            "guid": "192aab64-ef94-48b1-85d5-c074195886e5"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_white_description",
+            "displayText": "Inv Candybag White Description",
+            "guid": "799b98c6-0ce7-429e-9de3-8e2094951d5b"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_white_effects",
+            "displayText": "Inv Candybag White Effects",
+            "guid": "598133be-5188-4d1f-9900-7be02e18a139"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_gray",
+            "displayText": "Inv Candybag Gray",
+            "guid": "2ef5b2f9-0e49-4c1d-a077-0b9dd78ef968"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_gray_description",
+            "displayText": "Inv Candybag Gray Description",
+            "guid": "f873c99e-45b0-4476-872c-a5ecebe21792"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_gray_effects",
+            "displayText": "Inv Candybag Gray Effects",
+            "guid": "fa9f77bd-9bbb-46c0-8e6c-8b6c46a73fa7"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_black",
+            "displayText": "Inv Candybag Black",
+            "guid": "519888ba-cba2-4603-bc48-489c522d5966"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_black_description",
+            "displayText": "Inv Candybag Black Description",
+            "guid": "47f70a61-4734-4b09-a7e9-df716405790b"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_black_effects",
+            "displayText": "Inv Candybag Black Effects",
+            "guid": "592dec67-dd19-4cc4-a6b2-de109b1f6c04"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_brown",
+            "displayText": "Inv Candybag Brown",
+            "guid": "2446e412-1f1c-4462-bb37-d45e22c70310"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_evil",
+            "displayText": "Inv Candybag Evil",
+            "guid": "f329a5eb-cc59-4444-8907-f3a08af944d8"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_evil_description",
+            "displayText": "Inv Candybag Evil Description",
+            "guid": "057dda58-aa4f-4f38-abfc-a53c4d7c4eae"
+        },
+        {
+            "type": 0,
+            "id": "inv_candybag_evil_effects",
+            "displayText": "Inv Candybag Evil Effects",
+            "guid": "67302cde-0920-460f-b6b3-2d27c3c19cd9"
+        },
+        {
             "type": 1,
             "id": "",
             "displayText": "Header",
@@ -915,6 +1011,18 @@
             "id": "inv_scp500_description",
             "displayText": "Inv Scp500 Description",
             "guid": "1e7796df-03c0-4007-8fe2-d7ece645a59f"
+        },
+        {
+            "type": 0,
+            "id": "inv_scp1344",
+            "displayText": "Inv Scp1344",
+            "guid": "deee9df3-de9b-49dc-86f1-b6209fb03718"
+        },
+        {
+            "type": 0,
+            "id": "inv_scp1344_description",
+            "displayText": "Inv Scp1344 Description",
+            "guid": "6e80b865-ea13-44b6-a9ab-9ad782397dcd"
         },
         {
             "type": 0,
@@ -5189,6 +5297,12 @@
             "guid": "7af24909-6603-4ff9-b0aa-d969260532b1"
         },
         {
+            "type": 0,
+            "id": "death_body_metal_pipe",
+            "displayText": "Death Body Metal Pipe",
+            "guid": "13fc2317-65a8-4ae4-9b6f-f354661b17a6"
+        },
+        {
             "type": 2,
             "id": "",
             "displayText": "Reporting",
@@ -7554,15 +7668,45 @@
         },
         {
             "type": 0,
+            "id": "badge_northwood_wiki_supervisor",
+            "displayText": "Badge Northwood Wiki Supervisor",
+            "guid": "c7b3d4c7-1c2d-486d-bd5c-e964c1cdb498"
+        },
+        {
+            "type": 0,
             "id": "badge_sl_animator",
             "displayText": "Sl Animator",
             "guid": "31ece3eb-82c8-4bdf-a82f-009e97595f74"
         },
         {
             "type": 0,
+            "id": "badge_sl_anti_cheat_manager",
+            "displayText": "Badge Sl Anti Cheat Manager",
+            "guid": "563ab6d0-3b4d-41d8-8ea9-256f2d83e900"
+        },
+        {
+            "type": 0,
+            "id": "badge_sl_anti_cheat_supervisor",
+            "displayText": "Badge Sl Anti Cheat Supervisor",
+            "guid": "8eb0fb8a-feb3-4554-93a1-7263e8c5baba"
+        },
+        {
+            "type": 0,
             "id": "badge_sl_anti-cheat_developer",
             "displayText": "Sl Anti-cheat Developer",
             "guid": "b4cfb8ef-bad3-4284-8d9b-844a1193506d"
+        },
+        {
+            "type": 0,
+            "id": "badge_sl_api_lead",
+            "displayText": "Badge Sl Api Lead",
+            "guid": "4c4e0f39-8290-4196-8669-27ec37b73a28"
+        },
+        {
+            "type": 0,
+            "id": "badge_sl_api_maintainer",
+            "displayText": "Badge Sl Api Maintainer",
+            "guid": "29446a61-bbab-4d1d-a09d-9c5e01b261f7"
         },
         {
             "type": 0,
@@ -7704,6 +7848,12 @@
         },
         {
             "type": 0,
+            "id": "badge_sl_level_design_manager",
+            "displayText": "Badge Sl Level Design Manager",
+            "guid": "7f263e7e-6b5f-428e-a86d-3db3c80623de"
+        },
+        {
+            "type": 0,
             "id": "badge_sl_level_designer",
             "displayText": "Sl Level Designer",
             "guid": "643bf795-c509-487f-9d44-8ed0013248ab"
@@ -7803,6 +7953,12 @@
             "id": "candles_prompt",
             "displayText": "Candles Prompt",
             "guid": "c48bfc4d-22a9-4f2f-a5b5-14e35caec778"
+        },
+        {
+            "type": 0,
+            "id": "cackle_prompt",
+            "displayText": "Cackle Prompt",
+            "guid": "15195ec4-bbed-46dc-950d-acc4e9aa02f3"
         }
     ]
 }
