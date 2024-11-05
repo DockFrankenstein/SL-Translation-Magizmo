@@ -36,7 +36,7 @@ namespace Project.GUI.Settings
             };
 
             _slVersion.choices = manager.versions
-                .Select(x => x.version.ToString())
+                .Select(x => x.DisplayName)
                 .Reverse()
                 .Prepend("Newest")
                 .ToList();

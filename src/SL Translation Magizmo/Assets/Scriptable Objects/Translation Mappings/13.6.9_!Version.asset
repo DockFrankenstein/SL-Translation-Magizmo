@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad5f9fcd0d7862499ea7d9e1304ee04, type: 3}
   m_Name: 13.6.9_!Version
   m_EditorClassIdentifier: 
+  displayName: 13.6.9 - Halloween Event 2024
   version:
     releases: 0d0000000600000009000000
   exportPostProcessing: {fileID: 11400000, guid: e10d201d125fedc4e907399a6410859f, type: 2}

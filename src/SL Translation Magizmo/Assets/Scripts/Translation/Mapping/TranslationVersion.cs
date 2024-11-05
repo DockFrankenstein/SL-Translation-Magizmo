@@ -13,6 +13,7 @@ namespace Project.Translation.Mapping
     [CreateAssetMenu(fileName = "New Project Version", menuName = "Scriptable Objects/Translation/Version", order = 20)]
     public class TranslationVersion : ScriptableObject
     {
+        [SerializeField] string displayName;
         public Version version;
         public TextPostProcessing exportPostProcessing;
         public MappingBase[] containers = new MappingBase[0];
@@ -47,6 +48,9 @@ namespace Project.Translation.Mapping
                 .Where(x => x.NameField != null)
                 .Select(x => x.NameField)
                 .FirstOrDefault();
+
+        public string DisplayName =>
+            string.IsNullOrWhiteSpace(displayName) ? version.ToString() : displayName;
 
         public void Initialize()
         {
