@@ -16,15 +16,15 @@
                     "notYetAddedToSL": false,
                     "dynamicValues": [
                         {
-                            "tag": "{0}",
+                            "tag": "[loaded]",
                             "description": "Ammo that's currently loaded into the gun."
                         },
                         {
-                            "tag": "{1}",
+                            "tag": "[capacity]",
                             "description": "Ammo capacity of the gun."
                         },
                         {
-                            "tag": "{2}",
+                            "tag": "[type]",
                             "description": "Type of ammunition used by the gun."
                         }
                     ],
@@ -239,7 +239,7 @@
                     "notYetAddedToSL": false,
                     "dynamicValues": [
                         {
-                            "tag": "{0}",
+                            "tag": "[amount]",
                             "description": "The total amount."
                         }
                     ],
@@ -294,6 +294,146 @@
                         }
                     ],
                     "guid": "95e137c7-7c40-430e-a9f1-08a06ab346fb"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "013c9de6-732d-4e67-b8ef-30a9358ed058",
+            "fields": [
+                {
+                    "id": "prompt_stat_charge_remaining",
+                    "autoDisplayName": false,
+                    "displayName": "Remaining Charge",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [
+                        {
+                            "tag": "[percent]",
+                            "description": "The remaining charge in percentages."
+                        }
+                    ],
+                    "guid": "4c26933b-994b-48b2-9fe2-66d48d43c6ed"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "48c26a61-796f-4c8c-972f-53c9a6baa656",
+            "fields": [
+                {
+                    "id": "prompt_stat_ammo_remaining",
+                    "autoDisplayName": false,
+                    "displayName": "Remaining Ammo",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [
+                        {
+                            "tag": "[rem]",
+                            "description": "The amount of ammo remaining."
+                        }
+                    ],
+                    "guid": "156d3ffc-8eee-4793-ac08-f3ce794b4c46"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "459aa645-edd8-4e6a-ba2c-66151162ca5f",
+            "fields": [
+                {
+                    "id": "prompt_quick_fire",
+                    "autoDisplayName": false,
+                    "displayName": "Quick Fire Prompt",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [
+                        {
+                            "tag": "[primary]",
+                            "description": "The primary mouse key."
+                        }
+                    ],
+                    "guid": "5e6781ba-bfe5-44fa-893c-0d878a04a6db"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "842ef888-01d0-4bc8-aec8-4a6ac777bf4e",
+            "fields": [
+                {
+                    "id": "prompt_high_power_charge",
+                    "autoDisplayName": false,
+                    "displayName": "High-Powered Charge Prompt",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [
+                        {
+                            "tag": "secondary]",
+                            "description": "The secondary mouse key."
+                        }
+                    ],
+                    "guid": "988b2f19-1ff9-457a-a0c9-cf302bd268d8"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "c49a3248-1270-4279-8e5c-c489e5d40cb9",
+            "fields": [
+                {
+                    "id": "prompt_firing_mode",
+                    "autoDisplayName": false,
+                    "displayName": "Firing Mode Prompt",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "Key used for cycling firing modes."
+                        }
+                    ],
+                    "guid": "3baf0d6d-1eef-4e11-b3e0-c01680bbba5d"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "6c9bc85d-9038-4fb1-a24f-8e2848ee01e8",
+            "fields": [
+                {
+                    "id": "prompt_attack",
+                    "autoDisplayName": false,
+                    "displayName": "Attack Prompt",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "Key used for attacking."
+                        }
+                    ],
+                    "guid": "41e9e256-0c61-4bad-ac84-5c0b7f617652"
+                }
+            ]
+        },
+        {
+            "lineId": "",
+            "guid": "02a336f4-f28d-4d0d-80f2-377cf0f29452",
+            "fields": [
+                {
+                    "id": "prompt_charge",
+                    "autoDisplayName": false,
+                    "displayName": "Charge Prompt",
+                    "addToList": true,
+                    "notYetAddedToSL": false,
+                    "dynamicValues": [
+                        {
+                            "tag": "[key]",
+                            "description": "Key used for charging."
+                        }
+                    ],
+                    "guid": "6116f396-7691-436f-9680-7d3c8c962497"
                 }
             ]
         }

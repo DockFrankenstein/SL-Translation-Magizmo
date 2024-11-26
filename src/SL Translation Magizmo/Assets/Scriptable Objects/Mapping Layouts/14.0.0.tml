@@ -1,7 +1,7 @@
 {
-    "versionId": "be0b5372d29c5c84daf69e579874630c",
+    "versionId": "cd5ee17643f0d404cba610368d38a766",
     "version": {
-        "instanceID": 30732
+        "instanceID": 137220
     },
     "items": [
         {
@@ -7947,6 +7947,60 @@
             "id": "item_cooldown",
             "displayText": "Item Cooldown",
             "guid": "31c32fd7-180a-4e73-987b-2352e32fe150"
+        },
+        {
+            "type": 1,
+            "id": "",
+            "displayText": "Header",
+            "guid": "7dc3e47e-df37-4ecc-95d8-1c6f012b44e1"
+        },
+        {
+            "type": 0,
+            "id": "prompt_stat_charge_remaining",
+            "displayText": "Prompt Stat Charge Remaining",
+            "guid": "747bde62-c173-4bed-8b01-3cd07aef0257"
+        },
+        {
+            "type": 0,
+            "id": "prompt_stat_ammo_remaining",
+            "displayText": "Prompt Stat Ammo Remaining",
+            "guid": "1ad83b59-786d-4585-845e-dfeb68851dbb"
+        },
+        {
+            "type": 0,
+            "id": "prompt_quick_fire",
+            "displayText": "Prompt Quick Fire",
+            "guid": "1e5c5dd7-708c-41d5-ad31-990047d75430"
+        },
+        {
+            "type": 0,
+            "id": "prompt_high_power_charge",
+            "displayText": "Prompt High Power Charge",
+            "guid": "0852e864-48a0-4455-a517-692db06bed3b"
+        },
+        {
+            "type": 0,
+            "id": "prompt_firing_mode",
+            "displayText": "Prompt Firing Mode",
+            "guid": "32cad71e-1191-4b56-80eb-63566fa76fab"
+        },
+        {
+            "type": 0,
+            "id": "prompt_attack",
+            "displayText": "Prompt Attack",
+            "guid": "5df40b70-418d-4bd0-ad2c-eb2ed901e909"
+        },
+        {
+            "type": 0,
+            "id": "prompt_charge",
+            "displayText": "Prompt Charge",
+            "guid": "bed6871a-5aa8-4166-88e8-fdfd39393202"
+        },
+        {
+            "type": 1,
+            "id": "",
+            "displayText": "Header",
+            "guid": "7fbef802-b4c4-44d1-9d80-71e8362657f2"
         },
         {
             "type": 0,
