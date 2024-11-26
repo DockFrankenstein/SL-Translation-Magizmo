@@ -237,7 +237,13 @@ namespace Project.Translation
                 var file = Serializer.Load(path);
 
                 File = file;
+                var prevVersionData = GetVersion(File.SlVersion);
                 LoadCurrentVersionFromFile();
+
+                file.SlVersion = CurrentVersion.version;
+
+                if (prevVersionData != CurrentVersion)
+                    file.UpgradeToVersion(prevVersionData, CurrentVersion);
             }
             catch (SaveFileSerializer.SerializerException e)
             {

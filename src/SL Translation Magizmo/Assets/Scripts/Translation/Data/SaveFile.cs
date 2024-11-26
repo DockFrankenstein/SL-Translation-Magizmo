@@ -70,6 +70,25 @@ namespace Project.Translation.Data
         }
         #endregion
 
+        public void UpgradeToVersion(TranslationVersion prev, TranslationVersion current)
+        {
+            if (prev == null || current == null)
+                return;
+
+            foreach (var field in current.MappedFields)
+            {
+                if (!prev.MappedFields.TryGetValue(field.Key, out var prevField))
+                    continue;
+
+                if (!Entries.ContainsKey(field.Key))
+                    continue;
+
+                var length = Mathf.Min(field.Value.dynamicValues.Count, prevField.dynamicValues.Count);
+                for (int i = 0; i < length; i++)
+                    Entries[field.Key].content = Entries[field.Key].content.Replace(prevField.dynamicValues[i].tag, field.Value.dynamicValues[i].tag);
+            }
+        }
+
         /// <summary>Removes unused empty entries that aren't included in the version and adds missing ones.</summary>
         public void CleanupToVersion(TranslationVersion version)
         {

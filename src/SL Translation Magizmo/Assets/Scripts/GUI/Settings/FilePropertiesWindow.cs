@@ -49,34 +49,47 @@ namespace Project.GUI.Settings
 
                 if (args.newValue == args.previousValue) return;
 
+                var prevVersion = manager.CurrentVersion;
+                var prevUseNewest = manager.File.UseNewestSlVersion;
+
                 if (_slVersion.index == 0)
                 {
                     if (manager.File.UseNewestSlVersion)
                         return;
 
-                    undo.AddStep(new UndoStep<bool>(false, true, a => manager.File.UseNewestSlVersion = a), this);
                     manager.File.UseNewestSlVersion = true;
                     manager.LoadCurrentVersionFromFile();
-                    manager.File.CleanupToVersion(manager.CurrentVersion);
+                    manager.File.SlVersion = manager.CurrentVersion.version;
+
+                    Finalize();
                     return;
                 }
 
                 var ver = manager.versions[manager.versions.Length - _slVersion.index];
 
-                undo.AddStep(new UndoStep<KeyValuePair<Version, bool>>(
-                    new KeyValuePair<Version, bool>(manager.File.SlVersion, manager.File.UseNewestSlVersion),
-                    new KeyValuePair<Version, bool>(ver.version, false),
-                    a =>
-                    {
-                        manager.File.SlVersion = a.Key;
-                        manager.File.UseNewestSlVersion = a.Value;
-                    }),
-                    this);
-
                 manager.File.UseNewestSlVersion = false;
                 manager.File.SlVersion = ver.version;
-                manager.LoadCurrentVersionFromFile();
-                manager.File.CleanupToVersion(ver);
+
+                Finalize();
+
+
+                void Finalize()
+                {
+                    manager.LoadCurrentVersionFromFile();
+                    manager.File.SlVersion = manager.CurrentVersion.version;
+                    manager.File.CleanupToVersion(manager.CurrentVersion);
+                    manager.File.UpgradeToVersion(prevVersion, manager.CurrentVersion);
+
+                    undo.AddStep(new UndoStep<KeyValuePair<Version, bool>>(
+                        new KeyValuePair<Version, bool>(prevVersion.version, prevUseNewest),
+                        new KeyValuePair<Version, bool>(manager.CurrentVersion.version, false),
+                        a =>
+                        {
+                            manager.File.SlVersion = a.Key;
+                            manager.File.UseNewestSlVersion = a.Value;
+                        }),
+                        this);
+                }
             });
 
             undo.OnChanged += OnFileChanged;
